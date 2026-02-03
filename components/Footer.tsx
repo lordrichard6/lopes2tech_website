@@ -48,6 +48,7 @@ export default function Footer() {
                     <div className="flex flex-wrap justify-center gap-8 justify-self-center w-full">
                         {['Impressum', 'Privacy Policy', 'Terms of Service'].map((item) => (
                             <Link
+                                key={item}
                                 href={`/${item.toLowerCase().replace(/ /g, '-')}`}
                                 className="relative text-white/85 text-[0.95rem] font-medium transition-all duration-300 hover:text-white hover:-translate-y-1 group"
                             >
