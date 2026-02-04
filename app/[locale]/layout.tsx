@@ -8,6 +8,7 @@ import { Analytics } from '@vercel/analytics/react';
 import JsonLd from '@/components/JsonLd';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
 import CookieConsent from '@/components/CookieConsent';
+import Clarity from '@/components/Clarity';
 
 const inter = Inter({
   variable: "--font-inter",
@@ -112,6 +113,7 @@ export default async function RootLayout({
           {children}
           <Analytics />
           <GoogleAnalytics />
+          <Clarity />
           <CookieConsent />
         </NextIntlClientProvider>
       </body>
