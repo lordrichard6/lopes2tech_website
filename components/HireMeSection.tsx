@@ -5,16 +5,18 @@ import { motion } from "framer-motion";
 import { Clock, Calendar, ArrowRight, Briefcase, Zap, HelpCircle } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 type HireMode = "hourly" | "daily" | "custom";
 
 export default function HireMeSection() {
+    const t = useTranslations('HireMe');
     const [mode, setMode] = useState<HireMode>("hourly");
 
     const pricing = {
-        hourly: { price: 120, unit: "hour", description: "Perfect for small tasks, consultations, or quick fixes" },
-        daily: { price: 800, unit: "day", description: "Best value for focused, full-day collaboration on your project" },
-        custom: { price: null, unit: null, description: "Not sure how long you need? Don't worry—let's figure it out together." }
+        hourly: { price: 120, unit: t('pricing.hourly.unit'), description: t('pricing.hourly.description') },
+        daily: { price: 800, unit: t('pricing.daily.unit'), description: t('pricing.daily.description') },
+        custom: { price: null, unit: null, description: t('pricing.custom.description') }
     };
 
     const current = pricing[mode];
@@ -57,13 +59,15 @@ export default function HireMeSection() {
                             <div className="text-center md:text-left lg:text-center xl:text-left">
                                 <div className="inline-flex items-center gap-2 px-3 py-1 mb-4 text-xs font-semibold text-orange-400 bg-orange-400/10 border border-orange-400/20 rounded-full">
                                     <Briefcase className="w-3 h-3" />
-                                    Available for Hire
+                                    {t('badge')}
                                 </div>
                                 <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-3">
-                                    Need a <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-pink-500">Dedicated Expert?</span>
+                                    {t.rich('title', {
+                                        highlight: (chunks) => <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-pink-500">{chunks}</span>
+                                    })}
                                 </h2>
                                 <p className="text-slate-400 leading-relaxed">
-                                    Whether you need hands-on development, technical consultation, or project leadership—I'm available to work directly with your team.
+                                    {t('description')}
                                 </p>
                             </div>
                         </div>
@@ -89,7 +93,7 @@ export default function HireMeSection() {
                                         )}
                                         <span className="relative z-10 flex items-center gap-2">
                                             <Clock className="w-4 h-4" />
-                                            Hourly
+                                            {t('modes.hourly')}
                                         </span>
                                     </motion.button>
                                     <motion.button
@@ -108,7 +112,7 @@ export default function HireMeSection() {
                                         )}
                                         <span className="relative z-10 flex items-center gap-2">
                                             <Calendar className="w-4 h-4" />
-                                            Full Day
+                                            {t('modes.daily')}
                                         </span>
                                     </motion.button>
                                     <motion.button
@@ -127,7 +131,7 @@ export default function HireMeSection() {
                                         )}
                                         <span className="relative z-10 flex items-center gap-2">
                                             <HelpCircle className="w-4 h-4" />
-                                            Custom
+                                            {t('modes.custom')}
                                         </span>
                                     </motion.button>
                                 </div>
@@ -158,7 +162,7 @@ export default function HireMeSection() {
                                         {mode === "daily" && (
                                             <div className="inline-flex items-center gap-2 mt-3 px-3 py-1 text-xs font-medium text-green-400 bg-green-400/10 rounded-full border border-green-400/20">
                                                 <Zap className="w-3 h-3" />
-                                                Save CHF 160 compared to 8 hourly
+                                                {t('pricing.daily.save')}
                                             </div>
                                         )}
                                     </>
@@ -166,7 +170,7 @@ export default function HireMeSection() {
                                     <>
                                         <div className="flex items-center justify-center lg:justify-start gap-3 mb-3">
                                             <span className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-pink-500">
-                                                Let's Talk
+                                                {t('pricing.custom.title')}
                                             </span>
                                         </div>
                                         <p className="text-slate-400 text-lg">
@@ -177,13 +181,15 @@ export default function HireMeSection() {
                             </motion.div>
 
                             {/* CTA */}
-                            <Link
-                                href="/contact"
+                            <a
+                                href="https://cal.com/lopes2tech/initial-consult"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-semibold bg-gradient-to-r from-orange-500 to-pink-500 text-white shadow-[0_0_30px_rgba(249,115,22,0.3)] hover:shadow-[0_0_40px_rgba(249,115,22,0.5)] hover:-translate-y-0.5 transition-all duration-300"
                             >
-                                Book a Consultation
+                                {t('cta')}
                                 <ArrowRight className="w-5 h-5" />
-                            </Link>
+                            </a>
                         </div>
                     </div>
                 </motion.div>

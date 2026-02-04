@@ -675,6 +675,32 @@
         },
         "requestQuote": "Request Quote"
     },
+    "HireMe": {
+        "badge": "Available for Hire",
+        "title": "Need a <highlight>Dedicated Expert?</highlight>",
+        "description": "Whether you need hands-on development, technical consultation, or project leadership—I'm available to work directly with your team.",
+        "modes": {
+            "hourly": "Hourly",
+            "daily": "Full Day",
+            "custom": "Custom"
+        },
+        "pricing": {
+            "hourly": {
+                "unit": "/hour",
+                "description": "Perfect for small tasks, consultations, or quick fixes"
+            },
+            "daily": {
+                "unit": "/day",
+                "description": "Best value for focused, full-day collaboration on your project",
+                "save": "Save CHF 160 compared to 8 hourly"
+            },
+            "custom": {
+                "title": "Let's Talk",
+                "description": "Not sure how long you need? Don't worry—let's figure it out together."
+            }
+        },
+        "cta": "Book a Consultation"
+    },
     "Services": {
         "defaultDescription": "Comprehensive implementation of {title} tailored to your specific business needs. We ensure high performance, scalability, and seamless user experience.",
         "close": "Close",

@@ -665,6 +665,32 @@
         },
         "requestQuote": "Angebot anfordern"
     },
+    "HireMe": {
+        "badge": "Verfügbar für Aufträge",
+        "title": "Brauchen Sie einen <highlight>Dedizierten Experten?</highlight>",
+        "description": "Ob Sie praktische Entwicklung, technische Beratung oder Projektleitung benötigen – ich stehe bereit, um direkt mit Ihrem Team zu arbeiten.",
+        "modes": {
+            "hourly": "Stündlich",
+            "daily": "Ganzer Tag",
+            "custom": "Individuell"
+        },
+        "pricing": {
+            "hourly": {
+                "unit": "/Stunde",
+                "description": "Perfekt für kleine Aufgaben, Beratungen oder schnelle Reparaturen"
+            },
+            "daily": {
+                "unit": "/Tag",
+                "description": "Bester Wert für fokussierte, ganztägige Zusammenarbeit an Ihrem Projekt",
+                "save": "Sparen Sie CHF 160 im Vergleich zu 8 Stunden"
+            },
+            "custom": {
+                "title": "Lassen Sie uns sprechen",
+                "description": "Nicht sicher, wie lange Sie benötigen? Keine Sorge – wir finden es gemeinsam heraus."
+            }
+        },
+        "cta": "Beratung buchen"
+    },
     "Services": {
         "defaultDescription": "Umfassende Implementierung von {title}, zugeschnitten auf Ihre spezifischen Geschäftsanforderungen. Wir sorgen für hohe Leistung, Skalierbarkeit und ein nahtloses Benutzererlebnis.",
         "close": "Schließen",

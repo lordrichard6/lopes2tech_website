@@ -665,6 +665,32 @@
         },
         "requestQuote": "Pedir Orçamento"
     },
+    "HireMe": {
+        "badge": "Disponível para Contratar",
+        "title": "Precisa de um <highlight>Especialista Dedicado?</highlight>",
+        "description": "Quer precise de desenvolvimento prático, consultoria técnica ou liderança de projeto - estou disponível para trabalhar diretamente com a sua equipa.",
+        "modes": {
+            "hourly": "À Hora",
+            "daily": "Dia Completo",
+            "custom": "Personalizado"
+        },
+        "pricing": {
+            "hourly": {
+                "unit": "/hora",
+                "description": "Perfeito para pequenas tarefas, consultas ou correções rápidas"
+            },
+            "daily": {
+                "unit": "/dia",
+                "description": "Melhor valor para colaboração focada e de dia inteiro no seu projeto",
+                "save": "Poupe CHF 160 comparado a 8 horas"
+            },
+            "custom": {
+                "title": "Vamos Falar",
+                "description": "Não tem a certeza de quanto tempo precisa? Não se preocupe - vamos descobrir juntos."
+            }
+        },
+        "cta": "Marcar Consulta"
+    },
     "Services": {
         "defaultDescription": "Implementação abrangente de {title} adaptada às suas necessidades de negócio específicas. Garantimos alto desempenho, escalabilidade e uma experiência de utilizador perfeita.",
         "close": "Fechar",
