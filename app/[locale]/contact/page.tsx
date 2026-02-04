@@ -44,7 +44,7 @@ export default function ContactPage() {
         setIsSubmitting(true);
 
         try {
-            const platformUrl = process.env.NEXT_PUBLIC_PLATFORM_URL || 'http://localhost:3000';
+            const platformUrl = process.env.NEXT_PUBLIC_PLATFORM_URL || (process.env.NODE_ENV === 'production' ? 'https://app.lopes2tech.ch' : 'http://localhost:3000');
             const response = await fetch(`${platformUrl}/api/external/tickets`, {
                 method: 'POST',
                 headers: {
