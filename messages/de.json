@@ -821,6 +821,20 @@
             "title": "Bereit, Ihr Projekt zu starten?",
             "subtitle": "Lassen Sie uns besprechen, wie wir Ihnen helfen können, etwas Außergewöhnliches zu bauen.",
             "button": "Loslegen"
+        },
+        "ServiceRequest": {
+            "title": "Dienstleistung anfragen",
+            "subtitle": "Beginnen Sie mit {package}",
+            "name": "Vollständiger Name",
+            "email": "E-Mail-Adresse",
+            "company": "Firma (Optional)",
+            "message": "Nachricht",
+            "defaultMessage": "Ich interessiere mich für das Paket {package}. Bitte kontaktieren Sie mich mit weiteren Details.",
+            "submit": "Anfrage senden",
+            "sending": "Senden...",
+            "successTitle": "Anfrage gesendet!",
+            "successMessage": "Wir haben Ihre Anfrage erhalten und werden uns in Kürze bei Ihnen melden.",
+            "error": "Etwas ist schief gelaufen. Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt."
         }
     }
 }

@@ -6,6 +6,7 @@ import { Check, Star, ArrowRight, Package, CreditCard, Calendar, Server, Headpho
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { packagesData } from "@/lib/packages-data";
+import ServiceRequestDialog from "./ServiceRequestDialog";
 
 type PaymentPlan = "onetime" | "3months" | "6months";
 
@@ -66,6 +67,13 @@ export default function PackagesSection() {
     const [selectedPlan, setSelectedPlan] = useState<PaymentPlan>("onetime");
     const t = useTranslations();
     const tNav = useTranslations('Navigation'); // If I need other namespaces
+    const [isDialogOpen, setIsDialogOpen] = useState(false);
+    const [selectedPackageContext, setSelectedPackageContext] = useState("");
+
+    const handleRequest = (pkgName: string) => {
+        setSelectedPackageContext(pkgName);
+        setIsDialogOpen(true);
+    };
 
     // Show main 3 packages by default
     const mainPackages = packagesData.slice(0, 3);
@@ -255,8 +263,8 @@ export default function PackagesSection() {
                                 </div>
 
                                 {/* CTA Button */}
-                                <Link
-                                    href="/contact"
+                                <button
+                                    onClick={() => handleRequest(t(pkg.name))}
                                     className={`w-full flex items-center justify-center gap-2 py-3 rounded-xl font-semibold transition-all duration-300 ${pkg.isPopular
                                         ? 'bg-gradient-to-r from-purple-500 to-cyan-500 text-white shadow-[0_0_20px_rgba(168,85,247,0.3)] hover:shadow-[0_0_30px_rgba(168,85,247,0.5)] hover:-translate-y-0.5'
                                         : 'bg-white/10 text-white hover:bg-white/20'
@@ -264,7 +272,7 @@ export default function PackagesSection() {
                                 >
                                     Get Started
                                     <ArrowRight className="w-4 h-4" />
-                                </Link>
+                                </button>
                             </motion.div>
                         );
                     })}
@@ -371,8 +379,8 @@ export default function PackagesSection() {
                                     {t('Packages.section.defaultPlan')}
                                 </div>
                             ) : (
-                                <Link
-                                    href="/contact"
+                                <button
+                                    onClick={() => handleRequest(`Hosting: ${t(pkg.name)}`)}
                                     className={`w-full flex items-center justify-center gap-2 py-3 rounded-xl font-semibold transition-all duration-300 ${pkg.isPopular
                                         ? 'bg-gradient-to-r from-cyan-500 to-green-500 text-white shadow-[0_0_20px_rgba(6,182,212,0.3)] hover:shadow-[0_0_30px_rgba(6,182,212,0.5)] hover:-translate-y-0.5'
                                         : 'bg-white/10 text-white hover:bg-white/20'
@@ -380,7 +388,7 @@ export default function PackagesSection() {
                                 >
                                     <Headphones className="w-4 h-4" />
                                     {t('Packages.section.upgradePlan')}
-                                </Link>
+                                </button>
                             )}
                         </motion.div>
                     ))}
@@ -399,6 +407,13 @@ export default function PackagesSection() {
                     </p>
                 </motion.div>
             </div>
+
+            <ServiceRequestDialog
+                isOpen={isDialogOpen}
+                onClose={() => setIsDialogOpen(false)}
+                packageContext={selectedPackageContext}
+            />
+
         </section>
     );
 }

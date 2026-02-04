@@ -820,6 +820,20 @@
             "title": "Pronto para Iniciar o seu Projeto?",
             "subtitle": "Vamos discutir como podemos ajudá-lo a construir algo extraordinário.",
             "button": "Começar"
+        },
+        "ServiceRequest": {
+            "title": "Solicitar Serviço",
+            "subtitle": "Comece com {package}",
+            "name": "Nome Completo",
+            "email": "Endereço de Email",
+            "company": "Empresa (Opcional)",
+            "message": "Mensagem",
+            "defaultMessage": "Estou interessado no pacote {package}. Por favor, contactem-me com mais detalhes.",
+            "submit": "Enviar Pedido",
+            "sending": "A enviar...",
+            "successTitle": "Pedido Enviado!",
+            "successMessage": "Recebemos o seu pedido e entraremos em contacto brevemente.",
+            "error": "Algo correu mal. Por favor tente novamente ou contacte-nos diretamente."
         }
     }
 }
