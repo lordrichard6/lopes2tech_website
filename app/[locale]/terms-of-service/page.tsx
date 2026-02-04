@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "@/navigation";
 import { ArrowLeft } from "lucide-react";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
@@ -133,6 +133,15 @@ export default function TermsOfService() {
                                     {t('sections.pricing.recurring.text')}
                                 </p>
                             </div>
+
+                            <div>
+                                <h3 className="text-xl font-medium text-white mb-4">{t('sections.pricing.cancellation.title')}</h3>
+                                <ul className="list-disc pl-6 space-y-2 text-slate-300">
+                                    <li>{t('sections.pricing.cancellation.list.beforeWork')}</li>
+                                    <li>{t('sections.pricing.cancellation.list.afterWork')}</li>
+                                    <li>{t('sections.pricing.cancellation.list.contractorTermination')}</li>
+                                </ul>
+                            </div>
                         </div>
                     </section>
 
@@ -175,12 +184,17 @@ export default function TermsOfService() {
                             <div>
                                 <h3 className="text-lg font-medium text-white mb-2">{t('sections.warranty.warranty.title')}</h3>
                                 <p className="mb-2">{t('sections.warranty.warranty.text')}</p>
-                                <p className="text-slate-400 text-sm">{t('sections.warranty.warranty.note')}</p>
+                                <p className="text-slate-400 text-sm mb-2">{t('sections.warranty.warranty.note')}</p>
+                                <p className="text-cyan-400 text-sm font-medium">{t('sections.warranty.warranty.postWarranty')}</p>
                             </div>
                             <div>
                                 <h3 className="text-lg font-medium text-white mb-2">{t('sections.warranty.liability.title')}</h3>
                                 <p className="mb-2">{t('sections.warranty.liability.text')}</p>
                                 <p className="text-slate-400 text-sm">{t('sections.warranty.liability.note')}</p>
+                            </div>
+                            <div>
+                                <h3 className="text-lg font-medium text-white mb-2">{t('sections.warranty.forceMajeure.title')}</h3>
+                                <p className="text-slate-300">{t('sections.warranty.forceMajeure.text')}</p>
                             </div>
                         </div>
                     </section>
@@ -188,15 +202,18 @@ export default function TermsOfService() {
                     {/* 9. Data Protection */}
                     <section>
                         <h2 className="text-2xl font-semibold text-white mb-6">{t('sections.dataProtection.title')}</h2>
-                        <p>
+                        <p className="mb-4">
                             {t('sections.dataProtection.text')}
+                        </p>
+                        <p className="text-cyan-400 text-sm font-medium">
+                            {t('sections.dataProtection.retention')}
                         </p>
                     </section>
 
                     {/* 10. Final Provisions */}
                     <section>
                         <h2 className="text-2xl font-semibold text-white mb-6">{t('sections.final.title')}</h2>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
                                 <h4 className="font-medium text-white mb-1">{t('sections.final.severability.title')}</h4>
                                 <p className="text-sm text-slate-400">{t('sections.final.severability.text')}</p>
@@ -208,6 +225,10 @@ export default function TermsOfService() {
                             <div>
                                 <h4 className="font-medium text-white mb-1">{t('sections.final.law.title')}</h4>
                                 <p className="text-sm text-slate-400">{t('sections.final.law.text')}</p>
+                            </div>
+                            <div>
+                                <h4 className="font-medium text-white mb-1">{t('sections.final.contact.title')}</h4>
+                                <p className="text-sm text-slate-400">{t('sections.final.contact.text')}</p>
                             </div>
                         </div>
                     </section>

@@ -600,6 +600,14 @@
                 "recurring": {
                     "title": "5.2 Recurring Services",
                     "text": "Fees for ongoing maintenance or SaaS components (e.g., Chatbot hosting) are billed monthly or annually in advance. The cancellation period for recurring services is 30 days to the end of the month, unless a minimum contract term was agreed upon."
+                },
+                "cancellation": {
+                    "title": "5.3 Project Cancellation",
+                    "list": {
+                        "beforeWork": "The Client may cancel the contract before work begins and receive a full deposit refund.",
+                        "afterWork": "If work has already started, the Client is obligated to pay for all work completed to date, calculated at the hourly rate agreed upon or a pro-rated portion of the total fee.",
+                        "contractorTermination": "The Contractor may terminate the contract if the Client fails to provide necessary materials or feedback for more than 30 days despite reminders."
+                    }
                 }
             },
             "ip": {
@@ -631,17 +639,23 @@
                 "warranty": {
                     "title": "8.1 Warranty",
                     "text": "The Contractor warrants that the software/website is functional and free of critical defects at the time of acceptance. The warranty period is 3 months from delivery.",
-                    "note": "The warranty does not cover defects caused by third-party updates (e.g., a WordPress plugin update breaking the site) or unauthorized changes by the Client."
+                    "note": "The warranty does not cover defects caused by third-party updates (e.g., a WordPress plugin update breaking the site) or unauthorized changes by the Client.",
+                    "postWarranty": "After the warranty period expires, bug fixes and updates are provided under the active maintenance plan or billed hourly at CHF 120/hour."
                 },
                 "liability": {
                     "title": "8.2 Liability",
                     "text": "To the extent permitted by Swiss law, the Contractor's liability is limited to intent and gross negligence. Liability for slight negligence, indirect damages, or consequential damages (e.g., loss of profit, data loss) is excluded.",
                     "note": "The Contractor is not liable for data privacy violations caused by the Client's misuse of the provided tools (e.g., entering patient data into a non-secure field)."
+                },
+                "forceMajeure": {
+                    "title": "8.3 Force Majeure",
+                    "text": "Neither party shall be held liable for delays or failures in performance resulting from events beyond their reasonable control, including but not limited to natural disasters, pandemics, wars, strikes, governmental actions, or infrastructure failures."
                 }
             },
             "dataProtection": {
                 "title": "9. Data Protection and Confidentiality",
-                "text": "Both parties agree to treat all business secrets and confidential information obtained during the business relationship as strictly confidential. The Contractor processes personal data in accordance with the Swiss Federal Act on Data Protection (nDSG)."
+                "text": "Both parties agree to treat all business secrets and confidential information obtained during the business relationship as strictly confidential. The Contractor processes personal data in accordance with the Swiss Federal Act on Data Protection (nDSG).",
+                "retention": "Project files, backups, and related data are retained for 12 months after project completion. Clients are responsible for downloading and archiving their project files before this period expires."
             },
             "final": {
                 "title": "10. Final Provisions",
@@ -656,6 +670,10 @@
                 "law": {
                     "title": "Applicable Law",
                     "text": "Swiss law applies exclusively."
+                },
+                "contact": {
+                    "title": "Contact for Legal Inquiries",
+                    "text": "For questions regarding these terms and conditions, please contact: Email: paulo@lopes2tech.ch | Phone: +41 78 798 95 33"
                 }
             }
         }

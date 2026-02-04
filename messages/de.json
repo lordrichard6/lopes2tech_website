@@ -590,6 +590,14 @@
                 "recurring": {
                     "title": "5.2 Wiederkehrende Leistungen",
                     "text": "Entgelte für laufende Wartung oder SaaS-Komponenten (z.B. Chatbot-Hosting) werden monatlich oder jährlich im Voraus verrechnet. Die Kündigungsfrist für wiederkehrende Leistungen beträgt 30 Tage auf Monatsende, sofern keine Mindestvertragsdauer vereinbart wurde."
+                },
+                "cancellation": {
+                    "title": "5.3 Projektstornierung",
+                    "list": {
+                        "beforeWork": "Der Auftraggeber kann den Vertrag vor Beginn der Arbeiten stornieren und erhält eine volle Rückerstattung der Anzahlung.",
+                        "afterWork": "Sind die Arbeiten bereits begonnen, ist der Auftraggeber verpflichtet, alle bis dahin erbrachten Leistungen zu bezahlen, berechnet zum vereinbarten Stundensatz oder einem anteiligen Teil des Gesamthonorars.",
+                        "contractorTermination": "Der Auftragnehmer kann den Vertrag kündigen, wenn der Auftraggeber trotz Mahnung länger als 30 Tage notwendige Materialien oder Feedback nicht liefert."
+                    }
                 }
             },
             "ip": {
@@ -621,17 +629,23 @@
                 "warranty": {
                     "title": "8.1 Gewährleistung",
                     "text": "Der Auftragnehmer gewährleistet, dass die Software/Webseite zum Zeitpunkt der Abnahme funktionstüchtig und frei von kritischen Mängeln ist. Die Gewährleistungsfrist beträgt 3 Monate ab Übergabe.",
-                    "note": "Die Gewährleistung deckt keine Mängel ab, die durch Updates Dritter (z.B. ein WordPress-Plugin-Update, das die Seite 'zerschiesst') oder durch unsachgemässe Änderungen des Auftraggebers entstehen."
+                    "note": "Die Gewährleistung deckt keine Mängel ab, die durch Updates Dritter (z.B. ein WordPress-Plugin-Update, das die Seite 'zerschiesst') oder durch unsachgemässe Änderungen des Auftraggebers entstehen.",
+                    "postWarranty": "Nach Ablauf der Gewährleistungsfrist werden Fehlerbehebungen und Updates im Rahmen des aktiven Wartungsplans oder nach Aufwand zu CHF 120/Stunde berechnet."
                 },
                 "liability": {
                     "title": "8.2 Haftung",
                     "text": "Soweit gesetzlich zulässig, ist die Haftung des Auftragnehmers auf Vorsatz und grobe Fahrlässigkeit beschränkt. Die Haftung für leichte Fahrlässigkeit, indirekte Schäden oder Folgeschäden (z.B. entgangener Gewinn, Datenverlust) wird wegbedungen.",
                     "note": "Der Auftragnehmer haftet nicht für Datenschutzverletzungen, die durch unsachgemässe Nutzung der bereitgestellten Tools durch den Auftraggeber entstehen (z.B. Eingabe von Patientendaten in ein nicht gesichertes Feld)."
+                },
+                "forceMajeure": {
+                    "title": "8.3 Höhere Gewalt",
+                    "text": "Keine der Parteien haftet für Leistungsverzögerungen oder -ausfälle, die auf Ereignisse ausserhalb ihrer vernünftigen Kontrolle zurückzuführen sind, einschliesslich, aber nicht beschränkt auf Naturkatastrophen, Pandemien, Kriege, Streiks, behördliche Massnahmen oder Infrastrukturausfälle."
                 }
             },
             "dataProtection": {
                 "title": "9. Datenschutz und Vertraulichkeit",
-                "text": "Beide Parteien verpflichten sich, alle im Rahmen der Geschäftsbeziehung erlangten Geschäftsgeheimnisse und vertraulichen Informationen streng vertraulich zu behandeln. Der Auftragnehmer bearbeitet Personendaten im Einklang mit dem Schweizer Datenschutzgesetz (nDSG)."
+                "text": "Beide Parteien verpflichten sich, alle im Rahmen der Geschäftsbeziehung erlangten Geschäftsgeheimnisse und vertraulichen Informationen streng vertraulich zu behandeln. Der Auftragnehmer bearbeitet Personendaten im Einklang mit dem Schweizer Datenschutzgesetz (nDSG).",
+                "retention": "Projektdateien, Backups und zugehörige Daten werden 12 Monate nach Projektabschluss aufbewahrt. Der Auftraggeber ist dafür verantwortlich, seine Projektdateien vor Ablauf dieser Frist herunterzuladen und zu archivieren."
             },
             "final": {
                 "title": "10. Schlussbestimmungen",
@@ -646,6 +660,10 @@
                 "law": {
                     "title": "Anwendbares Recht",
                     "text": "Es gilt ausschliesslich Schweizer Recht."
+                },
+                "contact": {
+                    "title": "Kontakt für rechtliche Anfragen",
+                    "text": "Für Fragen zu diesen Geschäftsbedingungen kontaktieren Sie bitte: E-Mail: paulo@lopes2tech.ch | Telefon: +41 78 798 95 33"
                 }
             }
         }

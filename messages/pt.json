@@ -590,6 +590,14 @@
                 "recurring": {
                     "title": "5.2 Serviços Recorrentes",
                     "text": "As taxas para manutenção contínua ou componentes SaaS (por exemplo, alojamento de Chatbot) são faturadas mensalmente ou anualmente com antecedência. O período de cancelamento para serviços recorrentes é de 30 dias até ao final do mês, a menos que tenha sido acordado um prazo mínimo de contrato."
+                },
+                "cancellation": {
+                    "title": "5.3 Cancelamento de Projeto",
+                    "list": {
+                        "beforeWork": "O Cliente pode cancelar o contrato antes do início dos trabalhos e receber o reembolso total do depósito.",
+                        "afterWork": "Se o trabalho já tiver começado, o Cliente é obrigado a pagar por todo o trabalho concluído até à data, calculado à taxa horária acordada ou uma parte proporcional da taxa total.",
+                        "contractorTermination": "O Contratado pode rescindir o contrato se o Cliente não fornecer materiais ou feedback necessários por mais de 30 dias, apesar dos lembretes."
+                    }
                 }
             },
             "ip": {
@@ -621,17 +629,23 @@
                 "warranty": {
                     "title": "8.1 Garantia",
                     "text": "O Contratado garante que o software/website está funcional e livre de defeitos críticos no momento da aceitação. O período de garantia é de 3 meses a partir da entrega.",
-                    "note": "A garantia não cobre defeitos causados por atualizações de terceiros (por exemplo, uma atualização de plugin WordPress que danifique o site) ou alterações não autorizadas pelo Cliente."
+                    "note": "A garantia não cobre defeitos causados por atualizações de terceiros (por exemplo, uma atualização de plugin WordPress que danifique o site) ou alterações não autorizadas pelo Cliente.",
+                    "postWarranty": "Após o término do período de garantia, correções de bugs e atualizações são fornecidas sob o plano de manutenção ativo ou faturadas por hora a CHF 120/hora."
                 },
                 "liability": {
                     "title": "8.2 Responsabilidade",
                     "text": "Na medida do permitido pela lei suíça, a responsabilidade do Contratado limita-se a dolo e negligência grave. A responsabilidade por negligência ligeira, danos indiretos ou danos consequenciais (por exemplo, perda de lucro, perda de dados) é excluída.",
                     "note": "O Contratado não é responsável por violações de privacidade de dados causadas pelo uso indevido das ferramentas fornecidas pelo Cliente (por exemplo, inserir dados de pacientes num campo não seguro)."
+                },
+                "forceMajeure": {
+                    "title": "8.3 Força Maior",
+                    "text": "Nenhuma das partes será responsável por atrasos ou falhas no desempenho resultantes de eventos fora do seu controlo razoável, incluindo, mas não se limitando a catástrofes naturais, pandemias, guerras, greves, ações governamentais ou falhas de infraestrutura."
                 }
             },
             "dataProtection": {
                 "title": "9. Proteção de Dados e Confidencialidade",
-                "text": "Ambas as partes concordam em tratar todos os segredos comerciais e informações confidenciais obtidos durante a relação comercial como estritamente confidenciais. O Contratado processa dados pessoais de acordo com a Lei Federal Suíça sobre Proteção de Dados (nDSG)."
+                "text": "Ambas as partes concordam em tratar todos os segredos comerciais e informações confidenciais obtidos durante a relação comercial como estritamente confidenciais. O Contratado processa dados pessoais de acordo com a Lei Federal Suíça sobre Proteção de Dados (nDSG).",
+                "retention": "Ficheiros do projeto, cópias de segurança e dados relacionados são retidos por 12 meses após a conclusão do projeto. Os Clientes são responsáveis por descarregar e arquivar os seus ficheiros de projeto antes que este período expire."
             },
             "final": {
                 "title": "10. Disposições Finais",
@@ -646,6 +660,10 @@
                 "law": {
                     "title": "Lei Aplicável",
                     "text": "Aplica-se exclusivamente a lei suíça."
+                },
+                "contact": {
+                    "title": "Contacto para Questões Legais",
+                    "text": "Para questões relacionadas com estes termos e condições, por favor contacte: Email: paulo@lopes2tech.ch | Telefone: +41 78 798 95 33"
                 }
             }
         }
