@@ -4,12 +4,14 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { servicesData, colorMap, ServiceOffering } from "@/lib/services-data";
 import { Sparkles, X } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function InteractiveServices() {
     const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
     const [selectedSubcategory, setSelectedSubcategory] = useState<string | null>(null);
     const [selectedOffering, setSelectedOffering] = useState<ServiceOffering | null>(null);
     const [detailsOpen, setDetailsOpen] = useState(false);
+    const t = useTranslations();
 
     const handleCategoryClick = (categoryId: string) => {
         if (selectedCategory === categoryId) {
@@ -224,7 +226,7 @@ export default function InteractiveServices() {
                                 fontWeight="bold"
                                 className="pointer-events-none"
                             >
-                                {category.title.split(' ').map((word, i) => (
+                                {t(category.title).split(' ').map((word, i) => (
                                     <tspan key={i} x={pos.x} dy={i === 0 ? 0 : 12}>{word}</tspan>
                                 ))}
                             </text>
@@ -284,7 +286,7 @@ export default function InteractiveServices() {
                                             fontWeight="600"
                                             className="pointer-events-none"
                                         >
-                                            {sub.title.split(' ').map((word, i) => (
+                                            {t(sub.title).split(' ').map((word, i) => (
                                                 <tspan key={i} x={subPos.x} dy={i === 0 ? 0 : 9}>{word}</tspan>
                                             ))}
                                         </text>
@@ -338,11 +340,11 @@ export default function InteractiveServices() {
                                             fontWeight="500"
                                             className="pointer-events-none"
                                         >
-                                            {offering.title.length > 12
-                                                ? offering.title.split(' ').slice(0, 2).map((word, i) => (
+                                            {t(offering.title).length > 12
+                                                ? t(offering.title).split(' ').slice(0, 2).map((word, i) => (
                                                     <tspan key={i} x={offeringPos.x} dy={i === 0 ? -4 : 9}>{word}</tspan>
                                                 ))
-                                                : offering.title
+                                                : t(offering.title)
                                             }
                                         </text>
                                     </motion.g>
@@ -377,11 +379,11 @@ export default function InteractiveServices() {
                                 <X className="w-5 h-5" />
                             </button>
 
-                            <h3 className="text-2xl font-bold text-white mb-2">{selectedOffering.title}</h3>
+                            <h3 className="text-2xl font-bold text-white mb-2">{t(selectedOffering.title)}</h3>
                             <div className="h-1 w-20 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full mb-4" />
 
                             <p className="text-slate-300 leading-relaxed">
-                                {selectedOffering.description || `Comprehensive implementation of ${selectedOffering.title} tailored to your specific business needs. We ensure high performance, scalability, and seamless user experience.`}
+                                {selectedOffering.description ? t(selectedOffering.description) : t('Services.defaultDescription', { title: t(selectedOffering.title) })}
                             </p>
 
                             <div className="mt-8 flex justify-end">
@@ -389,14 +391,13 @@ export default function InteractiveServices() {
                                     onClick={() => setDetailsOpen(false)}
                                     className="px-6 py-2 rounded-full bg-white text-slate-900 font-semibold hover:bg-slate-200 transition-colors"
                                 >
-                                    Close
+                                    {t('Services.close')}
                                 </button>
                             </div>
                         </motion.div>
                     </motion.div>
                 )}
             </AnimatePresence>
-
         </div>
     );
 }

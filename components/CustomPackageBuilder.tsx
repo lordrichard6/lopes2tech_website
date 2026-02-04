@@ -78,13 +78,15 @@ export default function CustomPackageBuilder() {
                 >
                     <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 text-sm font-semibold text-green-400 bg-green-400/10 border border-green-400/20 rounded-full backdrop-blur-sm">
                         <Settings2 className="w-4 h-4" />
-                        Build Your Own
+                        {t('CustomBuilder.badge')}
                     </div>
                     <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-4">
-                        Custom <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-cyan-500">Package Builder</span>
+                        {t.rich('CustomBuilder.title', {
+                            highlight: (chunks) => <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-cyan-500">{chunks}</span>
+                        })}
                     </h2>
                     <p className="text-lg text-slate-400 max-w-2xl mx-auto">
-                        Need something tailored? Select a base service and add the features you need. Get an instant estimate.
+                        {t('CustomBuilder.description')}
                     </p>
                 </motion.div>
 
@@ -101,7 +103,7 @@ export default function CustomPackageBuilder() {
                         >
                             <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-3">
                                 <span className="w-8 h-8 rounded-full bg-gradient-to-r from-cyan-500 to-purple-500 flex items-center justify-center text-sm font-bold">1</span>
-                                Choose Your Base Service
+                                {t('CustomBuilder.step1')}
                             </h3>
                             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
                                 {builderServicesData.map((service) => {
@@ -169,7 +171,7 @@ export default function CustomPackageBuilder() {
                                 >
                                     <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-3">
                                         <span className="w-8 h-8 rounded-full bg-gradient-to-r from-cyan-500 to-purple-500 flex items-center justify-center text-sm font-bold">2</span>
-                                        Add Features & Enhancements
+                                        {t('CustomBuilder.step2')}
                                     </h3>
 
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -255,8 +257,8 @@ export default function CustomPackageBuilder() {
                                     <Calculator className="w-5 h-5 text-white" />
                                 </div>
                                 <div>
-                                    <h3 className="text-lg font-bold text-white">Your Package</h3>
-                                    <p className="text-xs text-slate-500">Instant estimate</p>
+                                    <h3 className="text-lg font-bold text-white">{t('CustomBuilder.summary.title')}</h3>
+                                    <p className="text-xs text-slate-500">{t('CustomBuilder.summary.subtitle')}</p>
                                 </div>
                             </div>
 
@@ -267,7 +269,7 @@ export default function CustomPackageBuilder() {
                                         <Sparkles className="w-8 h-8 text-slate-600" />
                                     </div>
                                     <p className="text-slate-500 text-sm">
-                                        Select a base service to start building your custom package
+                                        {t('CustomBuilder.summary.empty')}
                                     </p>
                                 </div>
                             )}
@@ -319,7 +321,7 @@ export default function CustomPackageBuilder() {
                                     <div className="mb-4">
                                         <p className="text-xs text-slate-400 mb-2 flex items-center gap-2">
                                             <CreditCard className="w-3 h-3" />
-                                            Payment Plan
+                                            {t('CustomBuilder.summary.paymentPlan')}
                                         </p>
                                         <div className="flex gap-2">
                                             {[
@@ -346,7 +348,7 @@ export default function CustomPackageBuilder() {
                                     {/* Total */}
                                     <div className="flex items-center justify-between mb-2">
                                         <span className="text-lg font-bold text-white">
-                                            {paymentPlan === "onetime" ? "Total" : t("Packages.payment.monthly")}
+                                            {paymentPlan === "onetime" ? t('CustomBuilder.summary.total') : t("Packages.payment.monthly")}
                                         </span>
                                         <motion.span
                                             key={`${totalPrice}-${paymentPlan}`}
@@ -395,7 +397,7 @@ export default function CustomPackageBuilder() {
                                         href="/contact"
                                         className="w-full flex items-center justify-center gap-2 py-3 rounded-xl font-semibold bg-gradient-to-r from-cyan-500 to-purple-500 text-white shadow-[0_0_20px_rgba(6,182,212,0.3)] hover:shadow-[0_0_30px_rgba(6,182,212,0.5)] hover:-translate-y-0.5 transition-all duration-300"
                                     >
-                                        {t('Packages.payment.requestQuote')}
+                                        {t('CustomBuilder.requestQuote')}
                                         <ArrowRight className="w-4 h-4" />
                                     </Link>
                                 </>

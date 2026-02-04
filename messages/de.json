@@ -90,11 +90,60 @@
             "onetime": "Einmalig",
             "3months": "3 Monate",
             "6months": "6 Monate",
-            "monthly": "Monatlich",
-            "total": "Gesamt",
-            "estimatedTotal": "Geschätzte Gesamtsumme",
-            "requestQuote": "Angebot anfordern",
-            "disclaimer": "* Endpreis kann je nach Projektumfang variieren"
+            "disclaimer": "* Endpreis kann je nach Projektumfang variieren",
+            "requestQuote": "Angebot anfordern"
+        },
+        "section": {
+            "readyToGo": "Sofort Startklar",
+            "easyTitle": "Einfache",
+            "packagesTitle": "Pakete",
+            "intro": "Vorkonfigurierte Lösungen für gängige Geschäftsanforderungen. Starten Sie schnell mit transparenter Preisgestaltung.",
+            "mostPopular": "Beliebtest",
+            "recommended": "Empfohlen",
+            "hostingTitle": "Hosting &",
+            "supportTitle": "Support",
+            "hostingBadge": "Monatliche Pläne",
+            "hostingIntro": "Sobald Ihre Website online ist, halten wir sie schnell, sicher und aktuell mit unseren Hosting-Plänen.",
+            "defaultPlan": "Standardplan",
+            "upgradePlan": "Upgrade-Plan",
+            "perMonth": "/Monat",
+            "billedMonthly": "Monatliche Abrechnung",
+            "installmentNote": "Hinweis: Wenn Sie die Entwicklung in Raten zahlen, kommen die Hosting- und Supportgebühren zu Ihren Ratenzahlungen hinzu, sobald Ihr Projekt online und vollständig abgeschlossen ist."
+        },
+        "hosting": {
+            "basic": {
+                "name": "Basic",
+                "description": "Essentielles Hosting und Support für Ihre Website.",
+                "features": {
+                    "0": "Sicheres Hosting auf unserer Plattform",
+                    "1": "Bis zu 2 kleine Änderungen pro Monat",
+                    "2": "Max. 30 Minuten Arbeit inklusive",
+                    "3": "Monatlicher Google Analytics Bericht",
+                    "4": "E-Mail-Support"
+                }
+            },
+            "professional": {
+                "name": "Professional",
+                "description": "Erweiterter Support mit priorisierter Antwort und mehr Flexibilität.",
+                "features": {
+                    "0": "Alles in Basic",
+                    "1": "Bis zu 5 Änderungen pro Monat",
+                    "2": "Max. 2 Stunden Arbeit inklusive",
+                    "3": "Priorisierter E-Mail- & Chat-Support",
+                    "4": "Leistungsüberwachung"
+                }
+            },
+            "enterprise": {
+                "name": "Enterprise",
+                "description": "Full-Service-Support für Unternehmen, die mehr brauchen.",
+                "features": {
+                    "0": "Alles in Professional",
+                    "1": "Unbegrenzte kleine Änderungen",
+                    "2": "Max. 4 Stunden Arbeit inklusive",
+                    "3": "Dedizierter Support-Kontakt",
+                    "4": "24/7 Uptime-Überwachung"
+                }
+            }
         }
     },
     "BuilderServices": {
@@ -599,6 +648,135 @@
                     "text": "Es gilt ausschliesslich Schweizer Recht."
                 }
             }
+        }
+    },
+    "CustomBuilder": {
+        "badge": "Eigenes Paket",
+        "title": "Individueller <highlight>Paket-Konfigurator</highlight>",
+        "description": "Brauchen Sie etwas Maßgeschneidertes? Wählen Sie einen Basisdienst und fügen Sie Funktionen hinzu. Sofortige Schätzung.",
+        "step1": "Wählen Sie Ihren Basisdienst",
+        "step2": "Funktionen hinzufügen",
+        "summary": {
+            "title": "Ihr Paket",
+            "subtitle": "Sofortige Schätzung",
+            "empty": "Wählen Sie einen Basisdienst",
+            "paymentPlan": "Zahlungsplan",
+            "total": "Gesamt"
+        },
+        "requestQuote": "Angebot anfordern"
+    },
+    "Services": {
+        "defaultDescription": "Umfassende Implementierung von {title}, zugeschnitten auf Ihre spezifischen Geschäftsanforderungen. Wir sorgen für hohe Leistung, Skalierbarkeit und ein nahtloses Benutzererlebnis.",
+        "close": "Schließen",
+        "gotIt": "Verstanden",
+        "requestQuote": "Angebot anfordern",
+        "map": {
+            "websites": {
+                "title": "Professionelle Websites",
+                "corporate": {
+                    "title": "Firmenwebsites",
+                    "1page": "Website mit 1 Seite",
+                    "5pages": "Bis zu 5 Seiten",
+                    "10pages": "10+ Seiten",
+                    "multipage": "Mehrseitige Firmenwebsite"
+                },
+                "specialized": {
+                    "title": "Spezialisierte Websites",
+                    "portfolio": "Portfolio-Website",
+                    "agency": "Agentur-Website",
+                    "service": "Dienstleistungs-Website"
+                },
+                "advanced": {
+                    "title": "Erweiterte Funktionen",
+                    "cms": "Website mit CMS",
+                    "multilang": "Mehrsprachige Website",
+                    "integrations": "Individuelle Integrationen"
+                }
+            },
+            "landing": {
+                "title": "Landingpages",
+                "conversion": {
+                    "title": "Conversion-Seiten",
+                    "single": "Einzelne Landingpage",
+                    "ab": "A/B-Test-Varianten",
+                    "product": "Produkt-Launch-Seite",
+                    "leadgen": "Lead-Generierungs-Seite"
+                },
+                "campaign": {
+                    "title": "Kampagnenseiten",
+                    "event": "Event-Landingpage",
+                    "download": "Download-/Anmeldeseite",
+                    "webinar": "Webinar-Registrierung"
+                }
+            },
+            "automation": {
+                "title": "Automatisierungen",
+                "ai": {
+                    "title": "KI-Assistenten",
+                    "rag": "Wissensdatenbank (RAG)",
+                    "voice": "Sprachagent",
+                    "chatbot": "KI-Chatbot",
+                    "support": "Kundensupport-Bot"
+                },
+                "business": {
+                    "title": "Geschäftsautomatisierung",
+                    "workflow": "Workflow-Automatisierung",
+                    "email": "E-Mail-Automatisierung",
+                    "data": "Datenverarbeitung",
+                    "document": "Dokumenten-KI"
+                }
+            },
+            "ecommerce": {
+                "title": "E-Commerce",
+                "stores": {
+                    "title": "Online-Shops",
+                    "small": "Kleiner Shop (bis 50 Produkte)",
+                    "medium": "Mittlerer Shop (50-500 Produkte)",
+                    "large": "Großer Shop (500+ Produkte)",
+                    "custom": "Individuelle E-Commerce-Plattform"
+                },
+                "specialized": {
+                    "title": "Spezialisierter Handel",
+                    "subscription": "Abo-E-Commerce",
+                    "marketplace": "Multi-Vendor-Marktplatz",
+                    "headless": "Headless Commerce",
+                    "digital": "Shop für digitale Produkte"
+                }
+            },
+            "webapps": {
+                "title": "Web Apps",
+                "business": {
+                    "title": "Geschäftsanwendungen",
+                    "saas": "SaaS-Plattform",
+                    "internal": "Interne Tools",
+                    "crm": "CRM-System",
+                    "dashboard": "Dashboard/Admin-Panel"
+                },
+                "custom": {
+                    "title": "Individualsoftware",
+                    "pwa": "Progressive Web App (PWA)",
+                    "fullstack": "Full-Stack-Anwendung",
+                    "api": "API-Entwicklung",
+                    "database": "Datenbankdesign"
+                }
+            }
+        }
+    },
+    "ServicesPage": {
+        "hero": {
+            "badge": "Unsere Expertise & Dienstleistungen",
+            "titlePart1": "Bauen Sie Etwas",
+            "titlePart2": "Außergewöhnliches",
+            "description": "Durch den Einsatz von KI-gestützter Entwicklung liefern wir Kundenlösungen 10-mal schneller als traditionelle Agenturen. Von Webentwicklung bis hin zu intelligenter Automatisierung bauen wir leistungsstarke Websites, individuelle Software und Workflows, die Abläufe optimieren und das Wachstum für KMUs und Startups vorantreiben."
+        },
+        "explore": {
+            "title": "Entdecken Sie unsere Dienstleistungen",
+            "intro": "Entdecken Sie unsere umfassenden Serviceangebote, die auf Ihre Bedürfnisse zugeschnitten sind."
+        },
+        "cta": {
+            "title": "Bereit, Ihr Projekt zu starten?",
+            "subtitle": "Lassen Sie uns besprechen, wie wir Ihnen helfen können, etwas Außergewöhnliches zu bauen.",
+            "button": "Loslegen"
         }
     }
 }

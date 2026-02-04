@@ -4,12 +4,14 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, Sparkles, X } from "lucide-react";
 import { servicesData, colorMap, ServiceOffering } from "@/lib/services-data";
+import { useTranslations } from "next-intl";
 
 export default function MobileServices() {
     const [expandedCategory, setExpandedCategory] = useState<string | null>(null);
     const [expandedSubcategory, setExpandedSubcategory] = useState<string | null>(null);
     const [selectedOffering, setSelectedOffering] = useState<ServiceOffering | null>(null);
     const [detailsOpen, setDetailsOpen] = useState(false);
+    const t = useTranslations();
 
     const toggleCategory = (id: string) => {
         if (expandedCategory === id) {
@@ -62,7 +64,7 @@ export default function MobileServices() {
                                     <category.icon className="w-6 h-6" />
                                 </div>
                                 <span className={`text-xl font-bold ${isExpanded ? 'text-white' : 'text-slate-300'}`}>
-                                    {category.title}
+                                    {t(category.title)}
                                 </span>
                             </div>
                             <motion.div
@@ -100,7 +102,7 @@ export default function MobileServices() {
                                                         <div className="flex items-center gap-3">
                                                             <sub.icon className="w-5 h-5 text-slate-400" />
                                                             <span className={`font-semibold ${isSubExpanded ? 'text-white' : 'text-slate-400'}`}>
-                                                                {sub.title}
+                                                                {t(sub.title)}
                                                             </span>
                                                         </div>
                                                         <motion.div
@@ -130,7 +132,7 @@ export default function MobileServices() {
                                                                         >
                                                                             <div className="w-1.5 h-1.5 rounded-full bg-slate-600 group-hover:bg-cyan-400 transition-colors" />
                                                                             <span className="text-sm text-slate-300 group-hover:text-white">
-                                                                                {offering.title}
+                                                                                {t(offering.title)}
                                                                             </span>
                                                                         </button>
                                                                     ))}
@@ -172,7 +174,7 @@ export default function MobileServices() {
                             </div>
 
                             <div className="flex justify-between items-start mb-4">
-                                <h3 className="text-2xl font-bold text-white pr-8">{selectedOffering.title}</h3>
+                                <h3 className="text-2xl font-bold text-white pr-8">{t(selectedOffering.title)}</h3>
                                 <button
                                     onClick={() => setDetailsOpen(false)}
                                     className="p-2 rounded-full bg-white/5 text-slate-400"
@@ -184,14 +186,14 @@ export default function MobileServices() {
                             <div className="h-1 w-20 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full mb-6" />
 
                             <p className="text-slate-300 leading-relaxed mb-8">
-                                {selectedOffering.description || `Comprehensive implementation of ${selectedOffering.title} tailored to your specific business needs. We ensure high performance, scalability, and seamless user experience.`}
+                                {selectedOffering.description ? t(selectedOffering.description) : t('Services.defaultDescription', { title: t(selectedOffering.title) })}
                             </p>
 
                             <button
                                 onClick={() => setDetailsOpen(false)}
                                 className="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-600 to-purple-600 text-white font-bold text-lg shadow-lg"
                             >
-                                Got it
+                                {t('Services.gotIt')}
                             </button>
                         </motion.div>
                     </motion.div>

@@ -19,43 +19,43 @@ const paymentPlans = [
 const hostingPackages = [
     {
         key: "basic",
-        name: "Basic",
+        name: "Packages.hosting.basic.name",
         price: 39,
-        description: "Essential hosting and support for your website.",
+        description: "Packages.hosting.basic.description",
         features: [
-            "Secure hosting on our platform",
-            "Up to 2 small changes per month",
-            "Max 30 minutes of work included",
-            "Monthly Google Analytics report",
-            "Email support"
+            "Packages.hosting.basic.features.0",
+            "Packages.hosting.basic.features.1",
+            "Packages.hosting.basic.features.2",
+            "Packages.hosting.basic.features.3",
+            "Packages.hosting.basic.features.4"
         ],
         isPopular: false
     },
     {
         key: "professional",
-        name: "Professional",
+        name: "Packages.hosting.professional.name",
         price: 89,
-        description: "Enhanced support with priority response and more flexibility.",
+        description: "Packages.hosting.professional.description",
         features: [
-            "Everything in Basic",
-            "Up to 5 changes per month",
-            "Max 2 hours of work included",
-            "Priority email & chat support",
-            "Performance monitoring"
+            "Packages.hosting.professional.features.0",
+            "Packages.hosting.professional.features.1",
+            "Packages.hosting.professional.features.2",
+            "Packages.hosting.professional.features.3",
+            "Packages.hosting.professional.features.4"
         ],
         isPopular: true
     },
     {
         key: "enterprise",
-        name: "Enterprise",
+        name: "Packages.hosting.enterprise.name",
         price: 169,
-        description: "Full-service support for businesses that need more.",
+        description: "Packages.hosting.enterprise.description",
         features: [
-            "Everything in Professional",
-            "Unlimited small changes",
-            "Max 4 hours of work included",
-            "Dedicated support contact",
-            "24/7 uptime monitoring"
+            "Packages.hosting.enterprise.features.0",
+            "Packages.hosting.enterprise.features.1",
+            "Packages.hosting.enterprise.features.2",
+            "Packages.hosting.enterprise.features.3",
+            "Packages.hosting.enterprise.features.4"
         ],
         isPopular: false
     }
@@ -102,13 +102,13 @@ export default function PackagesSection() {
                 >
                     <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 text-sm font-semibold text-purple-400 bg-purple-400/10 border border-purple-400/20 rounded-full backdrop-blur-sm">
                         <Package className="w-4 h-4" />
-                        Ready-to-Go Packages
+                        {t('Packages.section.readyToGo')}
                     </div>
                     <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-4">
-                        Easy <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">Packages</span>
+                        {t('Packages.section.easyTitle')} <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">{t('Packages.section.packagesTitle')}</span>
                     </h2>
                     <p className="text-lg text-slate-400 max-w-2xl mx-auto">
-                        Pre-configured solutions for common business needs. Get started quickly with transparent pricing.
+                        {t('Packages.section.intro')}
                     </p>
                 </motion.div>
 
@@ -180,7 +180,7 @@ export default function PackagesSection() {
                                     <div className="absolute -top-4 left-1/2 -translate-x-1/2">
                                         <div className="flex items-center gap-1.5 px-4 py-1.5 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-full text-white text-sm font-bold shadow-lg">
                                             <Star className="w-4 h-4 fill-current" />
-                                            Most Popular
+                                            {t('Packages.section.mostPopular')}
                                         </div>
                                     </div>
                                 )}
@@ -210,7 +210,7 @@ export default function PackagesSection() {
                                                         <span className="text-slate-400">/mo</span>
                                                     </div>
                                                     <p className="text-sm text-slate-500 mt-1">
-                                                        CHF {priceInfo.total.toLocaleString()} total · {priceInfo.months} payments
+                                                        CHF {priceInfo.total.toLocaleString()} {t('Packages.payment.total')} · {priceInfo.months} {t('Packages.payment.monthly')}
                                                     </p>
                                                 </>
                                             ) : (
@@ -220,7 +220,7 @@ export default function PackagesSection() {
                                                             CHF {priceInfo.total.toLocaleString()}
                                                         </span>
                                                     </div>
-                                                    <p className="text-sm text-slate-500 mt-1">One-time payment</p>
+                                                    <p className="text-sm text-slate-500 mt-1">{t('Packages.payment.onetime')}</p>
                                                 </>
                                             )}
                                         </motion.div>
@@ -293,13 +293,13 @@ export default function PackagesSection() {
                 >
                     <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 text-sm font-semibold text-cyan-400 bg-cyan-400/10 border border-cyan-400/20 rounded-full backdrop-blur-sm">
                         <Server className="w-4 h-4" />
-                        Monthly Plans
+                        {t('Packages.section.hostingBadge')}
                     </div>
                     <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-4">
-                        Hosting & <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-green-400">Support</span>
+                        {t('Packages.section.hostingTitle')} <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-green-400">{t('Packages.section.supportTitle')}</span>
                     </h2>
                     <p className="text-lg text-slate-400 max-w-2xl mx-auto">
-                        Once your website is live, keep it fast, secure, and up-to-date with our managed hosting plans.
+                        {t('Packages.section.hostingIntro')}
                     </p>
                 </motion.div>
 
@@ -322,15 +322,15 @@ export default function PackagesSection() {
                                 <div className="absolute -top-4 left-1/2 -translate-x-1/2">
                                     <div className="flex items-center gap-1.5 px-4 py-1.5 bg-gradient-to-r from-cyan-500 to-green-500 rounded-full text-white text-sm font-bold shadow-lg">
                                         <Rocket className="w-4 h-4" />
-                                        Recommended
+                                        {t('Packages.section.recommended')}
                                     </div>
                                 </div>
                             )}
 
                             {/* Package Header */}
                             <div className="mb-6">
-                                <h3 className="text-2xl font-bold text-white mb-2">{pkg.name}</h3>
-                                <p className="text-slate-400 text-sm leading-relaxed">{pkg.description}</p>
+                                <h3 className="text-2xl font-bold text-white mb-2">{t(pkg.name)}</h3>
+                                <p className="text-slate-400 text-sm leading-relaxed">{t(pkg.description)}</p>
                             </div>
 
                             {/* Price */}
@@ -339,14 +339,14 @@ export default function PackagesSection() {
                                     <span className="text-4xl font-extrabold text-white">
                                         CHF {pkg.price}
                                     </span>
-                                    <span className="text-slate-400">/month</span>
+                                    <span className="text-slate-400">{t('Packages.section.perMonth')}</span>
                                 </div>
-                                <p className="text-sm text-slate-500 mt-1">Billed monthly</p>
+                                <p className="text-sm text-slate-500 mt-1">{t('Packages.section.billedMonthly')}</p>
                             </div>
 
                             {/* Features */}
                             <ul className="space-y-3 mb-8">
-                                {pkg.features.map((feature, idx) => (
+                                {pkg.features.map((featureKey, idx) => (
                                     <motion.li
                                         key={idx}
                                         initial={{ opacity: 0, x: -10 }}
@@ -359,7 +359,7 @@ export default function PackagesSection() {
                                             }`}>
                                             <Check className={`w-3 h-3 ${pkg.isPopular ? 'text-white' : 'text-green-400'}`} />
                                         </div>
-                                        <span className="text-slate-300 text-sm">{feature}</span>
+                                        <span className="text-slate-300 text-sm">{t(featureKey)}</span>
                                     </motion.li>
                                 ))}
                             </ul>
@@ -368,7 +368,7 @@ export default function PackagesSection() {
                             {pkg.key === "basic" ? (
                                 <div className="w-full flex items-center justify-center gap-2 py-3 rounded-xl font-semibold bg-green-500/20 text-green-400 border border-green-500/30">
                                     <Check className="w-4 h-4" />
-                                    Default Plan
+                                    {t('Packages.section.defaultPlan')}
                                 </div>
                             ) : (
                                 <Link
@@ -379,7 +379,7 @@ export default function PackagesSection() {
                                         }`}
                                 >
                                     <Headphones className="w-4 h-4" />
-                                    Upgrade Plan
+                                    {t('Packages.section.upgradePlan')}
                                 </Link>
                             )}
                         </motion.div>
@@ -395,7 +395,7 @@ export default function PackagesSection() {
                 >
                     <AlertCircle className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
                     <p className="text-sm text-amber-200/80">
-                        <span className="font-semibold text-amber-300">Note:</span> If you are paying for development in installments, the hosting & support fee is in addition to your installment payments once your project is online and fully complete.
+                        {t('Packages.section.installmentNote')}
                     </p>
                 </motion.div>
             </div>

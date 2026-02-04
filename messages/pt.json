@@ -90,11 +90,60 @@
             "onetime": "Pagamento Único",
             "3months": "3 Meses",
             "6months": "6 Meses",
-            "monthly": "Mensal",
-            "total": "Total",
-            "estimatedTotal": "Total Estimado",
-            "requestQuote": "Pedir Orçamento Personalizado",
-            "disclaimer": "* O preço final pode variar com base no âmbito e complexidade do projeto"
+            "disclaimer": "* O preço final pode variar com base no âmbito e complexidade do projeto",
+            "requestQuote": "Pedir Orçamento"
+        },
+        "section": {
+            "readyToGo": "Pacotes Prontos a Usar",
+            "easyTitle": "Fáceis",
+            "packagesTitle": "Pacotes",
+            "intro": "Soluções pré-configuradas para necessidades comuns de negócios. Comece rapidamente com preços transparentes.",
+            "mostPopular": "Mais Popular",
+            "recommended": "Recomendado",
+            "hostingTitle": "Hospedagem &",
+            "supportTitle": "Suporte",
+            "hostingBadge": "Planos Mensais",
+            "hostingIntro": "Assim que o seu site estiver no ar, mantenha-o rápido, seguro e atualizado com os nossos planos de hospedagem gerida.",
+            "defaultPlan": "Plano Padrão",
+            "upgradePlan": "Plano Superior",
+            "perMonth": "/mês",
+            "billedMonthly": "Faturado mensalmente",
+            "installmentNote": "Nota: Se estiver a pagar o desenvolvimento em prestações, a taxa de hospedagem e suporte acresce aos pagamentos das prestações assim que o projeto estiver online e concluído."
+        },
+        "hosting": {
+            "basic": {
+                "name": "Básico",
+                "description": "Hospedagem e suporte essenciais para o seu website.",
+                "features": {
+                    "0": "Hospedagem segura na nossa plataforma",
+                    "1": "Até 2 pequenas alterações por mês",
+                    "2": "Max 30 minutos de trabalho incluídos",
+                    "3": "Relatório mensal Google Analytics",
+                    "4": "Suporte por Email"
+                }
+            },
+            "professional": {
+                "name": "Profissional",
+                "description": "Suporte aprimorado com resposta prioritária e mais flexibilidade.",
+                "features": {
+                    "0": "Tudo no Básico",
+                    "1": "Até 5 alterações por mês",
+                    "2": "Max 2 horas de trabalho incluídos",
+                    "3": "Suporte prioritário por email e chat",
+                    "4": "Monitorização de desempenho"
+                }
+            },
+            "enterprise": {
+                "name": "Enterprise",
+                "description": "Suporte completo para empresas que precisam de mais.",
+                "features": {
+                    "0": "Tudo no Profissional",
+                    "1": "Pequenas alterações ilimitadas",
+                    "2": "Max 4 horas de trabalho incluídos",
+                    "3": "Contacto de suporte dedicado",
+                    "4": "Monitorização de uptime 24/7"
+                }
+            }
         }
     },
     "BuilderServices": {
@@ -599,6 +648,134 @@
                     "text": "Aplica-se exclusivamente a lei suíça."
                 }
             }
+        }
+    },
+    "CustomBuilder": {
+        "badge": "Construa o Seu",
+        "title": "<highlight>Construtor de Pacotes</highlight> Personalizados",
+        "description": "Precisa de algo feito à medida? Selecione um serviço base e adicione as funcionalidades que precisa. Obtenha uma estimativa instantânea.",
+        "step1": "Escolha o Serviço Base",
+        "step2": "Adicione Funcionalidades",
+        "summary": {
+            "title": "O Seu Pacote",
+            "subtitle": "Estimativa instantânea",
+            "empty": "Selecione um serviço base para começar",
+            "paymentPlan": "Plano de Pagamento",
+            "total": "Total"
+        },
+        "requestQuote": "Pedir Orçamento"
+    },
+    "Services": {
+        "defaultDescription": "Implementação abrangente de {title} adaptada às suas necessidades de negócio específicas. Garantimos alto desempenho, escalabilidade e uma experiência de utilizador perfeita.",
+        "close": "Fechar",
+        "gotIt": "Entendido",
+        "map": {
+            "websites": {
+                "title": "Websites Profissionais",
+                "corporate": {
+                    "title": "Websites Corporativos",
+                    "1page": "Website de 1 Página",
+                    "5pages": "Até 5 Páginas",
+                    "10pages": "10+ Páginas",
+                    "multipage": "Site Corporativo Multi-Páginas"
+                },
+                "specialized": {
+                    "title": "Websites Especializados",
+                    "portfolio": "Website de Portfólio",
+                    "agency": "Website de Agência",
+                    "service": "Website de Serviços"
+                },
+                "advanced": {
+                    "title": "Funcionalidades Avançadas",
+                    "cms": "Website com CMS",
+                    "multilang": "Site Multi-Idioma",
+                    "integrations": "Integrações Personalizadas"
+                }
+            },
+            "landing": {
+                "title": "Landing Pages",
+                "conversion": {
+                    "title": "Páginas de Conversão",
+                    "single": "Landing Page Única",
+                    "ab": "Variantes Teste A/B",
+                    "product": "Página de Lançamento de Produto",
+                    "leadgen": "Página de Geração de Leads"
+                },
+                "campaign": {
+                    "title": "Páginas de Campanha",
+                    "event": "Página de Evento",
+                    "download": "Página de Download/Registo",
+                    "webinar": "Registo de Webinar"
+                }
+            },
+            "automation": {
+                "title": "Automações",
+                "ai": {
+                    "title": "Assistentes IA",
+                    "rag": "Base de Conhecimento (RAG)",
+                    "voice": "Agente de Voz",
+                    "chatbot": "Chatbot IA",
+                    "support": "Bot de Suporte ao Cliente"
+                },
+                "business": {
+                    "title": "Automação de Negócios",
+                    "workflow": "Automação de Fluxos de Trabalho",
+                    "email": "Automação de Email",
+                    "data": "Processamento de Dados",
+                    "document": "IA para Documentos"
+                }
+            },
+            "ecommerce": {
+                "title": "E-Commerce",
+                "stores": {
+                    "title": "Lojas Online",
+                    "small": "Loja Pequena (até 50 produtos)",
+                    "medium": "Loja Média (50-500 produtos)",
+                    "large": "Loja Grande (500+ produtos)",
+                    "custom": "Plataforma E-commerce Personalizada"
+                },
+                "specialized": {
+                    "title": "Comércio Especializado",
+                    "subscription": "E-commerce de Subscrição",
+                    "marketplace": "Marketplace Multi-Vendedor",
+                    "headless": "E-commerce Headless",
+                    "digital": "Loja de Produtos Digitais"
+                }
+            },
+            "webapps": {
+                "title": "Aplicações Web",
+                "business": {
+                    "title": "Aplicações de Negócio",
+                    "saas": "Plataforma SaaS",
+                    "internal": "Ferramentas Internas",
+                    "crm": "Sistema CRM",
+                    "dashboard": "Dashboard/Painel de Admin"
+                },
+                "custom": {
+                    "title": "Software Personalizado",
+                    "pwa": "Progressive Web App (PWA)",
+                    "fullstack": "Aplicação Full-Stack",
+                    "api": "Desenvolvimento de API",
+                    "database": "Design de Base de Dados"
+                }
+            }
+        }
+    },
+    "ServicesPage": {
+        "hero": {
+            "badge": "A Nossa Experiência & Serviços",
+            "titlePart1": "Construa Algo",
+            "titlePart2": "Extraordinário",
+            "description": "Ao aproveitar o desenvolvimento impulsionado por IA, entregamos soluções aos clientes 10x mais rápido do que as agências tradicionais. Desde desenvolvimento web até automação inteligente, construímos sites de alto desempenho, software personalizado e fluxos de trabalho que otimizam operações e impulsionam o crescimento de PMEs e startups."
+        },
+        "explore": {
+            "title": "Explore os Nossos Serviços",
+            "intro": "Descubra as nossas ofertas de serviços abrangentes adaptadas às suas necessidades."
+        },
+        "cta": {
+            "title": "Pronto para Iniciar o seu Projeto?",
+            "subtitle": "Vamos discutir como podemos ajudá-lo a construir algo extraordinário.",
+            "button": "Começar"
         }
     }
 }

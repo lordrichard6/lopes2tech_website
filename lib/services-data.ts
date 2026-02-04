@@ -37,158 +37,158 @@ export interface ServiceCategory {
 export const servicesData: ServiceCategory[] = [
     {
         id: "websites",
-        title: "Professional Websites",
+        title: "Services.map.websites.title",
         icon: Monitor,
         color: "cyan",
         subcategories: [
             {
                 id: "corporate",
-                title: "Corporate Websites",
+                title: "Services.map.websites.corporate.title",
                 icon: Globe,
                 offerings: [
-                    { id: "1page", title: "1-Page Website" },
-                    { id: "5pages", title: "Up to 5 Pages" },
-                    { id: "10pages", title: "10+ Pages" },
-                    { id: "multipage", title: "Multi-Page Corporate Site" }
+                    { id: "1page", title: "Services.map.websites.corporate.1page" },
+                    { id: "5pages", title: "Services.map.websites.corporate.5pages" },
+                    { id: "10pages", title: "Services.map.websites.corporate.10pages" },
+                    { id: "multipage", title: "Services.map.websites.corporate.multipage" }
                 ]
             },
             {
                 id: "specialized",
-                title: "Specialized Websites",
+                title: "Services.map.websites.specialized.title",
                 icon: Sparkles,
                 offerings: [
-                    { id: "portfolio", title: "Portfolio Website" },
-                    { id: "agency", title: "Agency Website" },
-                    { id: "service", title: "Service Business Website" }
+                    { id: "portfolio", title: "Services.map.websites.specialized.portfolio" },
+                    { id: "agency", title: "Services.map.websites.specialized.agency" },
+                    { id: "service", title: "Services.map.websites.specialized.service" }
                 ]
             },
             {
                 id: "advanced",
-                title: "Advanced Features",
+                title: "Services.map.websites.advanced.title",
                 icon: Code,
                 offerings: [
-                    { id: "cms", title: "Website with CMS" },
-                    { id: "multilang", title: "Multi-Language Site" },
-                    { id: "integrations", title: "Custom Integrations" }
+                    { id: "cms", title: "Services.map.websites.advanced.cms" },
+                    { id: "multilang", title: "Services.map.websites.advanced.multilang" },
+                    { id: "integrations", title: "Services.map.websites.advanced.integrations" }
                 ]
             }
         ]
     },
     {
         id: "landing",
-        title: "Landing Pages",
+        title: "Services.map.landing.title",
         icon: Layout,
         color: "purple",
         subcategories: [
             {
                 id: "conversion",
-                title: "Conversion Pages",
+                title: "Services.map.landing.conversion.title",
                 icon: Zap,
                 offerings: [
-                    { id: "single", title: "Single Landing Page" },
-                    { id: "ab", title: "A/B Testing Variants" },
-                    { id: "product", title: "Product Launch Page" },
-                    { id: "leadgen", title: "Lead Generation Page" }
+                    { id: "single", title: "Services.map.landing.conversion.single" },
+                    { id: "ab", title: "Services.map.landing.conversion.ab" },
+                    { id: "product", title: "Services.map.landing.conversion.product" },
+                    { id: "leadgen", title: "Services.map.landing.conversion.leadgen" }
                 ]
             },
             {
                 id: "campaign",
-                title: "Campaign Pages",
+                title: "Services.map.landing.campaign.title",
                 icon: FileText,
                 offerings: [
-                    { id: "event", title: "Event Landing Page" },
-                    { id: "download", title: "Download/Signup Page" },
-                    { id: "webinar", title: "Webinar Registration" }
+                    { id: "event", title: "Services.map.landing.campaign.event" },
+                    { id: "download", title: "Services.map.landing.campaign.download" },
+                    { id: "webinar", title: "Services.map.landing.campaign.webinar" }
                 ]
             }
         ]
     },
     {
         id: "automation",
-        title: "Automations",
+        title: "Services.map.automation.title",
         icon: Cpu,
         color: "green",
         subcategories: [
             {
                 id: "ai",
-                title: "AI Assistants",
+                title: "Services.map.automation.ai.title",
                 icon: Sparkles,
                 offerings: [
-                    { id: "rag", title: "Knowledge Base (RAG)" },
-                    { id: "voice", title: "Voice Agent" },
-                    { id: "chatbot", title: "AI Chatbot" },
-                    { id: "support", title: "Customer Support Bot" }
+                    { id: "rag", title: "Services.map.automation.ai.rag" },
+                    { id: "voice", title: "Services.map.automation.ai.voice" },
+                    { id: "chatbot", title: "Services.map.automation.ai.chatbot" },
+                    { id: "support", title: "Services.map.automation.ai.support" }
                 ]
             },
             {
                 id: "business",
-                title: "Business Automation",
+                title: "Services.map.automation.business.title",
                 icon: Zap,
                 offerings: [
-                    { id: "workflow", title: "Workflow Automation" },
-                    { id: "email", title: "Email Automation" },
-                    { id: "data", title: "Data Processing" },
-                    { id: "document", title: "Document AI" }
+                    { id: "workflow", title: "Services.map.automation.business.workflow" },
+                    { id: "email", title: "Services.map.automation.business.email" },
+                    { id: "data", title: "Services.map.automation.business.data" },
+                    { id: "document", title: "Services.map.automation.business.document" }
                 ]
             }
         ]
     },
     {
         id: "ecommerce",
-        title: "E-Commerce",
+        title: "Services.map.ecommerce.title",
         icon: ShoppingCart,
         color: "orange",
         subcategories: [
             {
                 id: "stores",
-                title: "Online Stores",
+                title: "Services.map.ecommerce.stores.title",
                 icon: Store,
                 offerings: [
-                    { id: "small", title: "Small Store (up to 50 products)" },
-                    { id: "medium", title: "Medium Store (50-500 products)" },
-                    { id: "large", title: "Large Store (500+ products)" },
-                    { id: "custom", title: "Custom E-commerce Platform" }
+                    { id: "small", title: "Services.map.ecommerce.stores.small" },
+                    { id: "medium", title: "Services.map.ecommerce.stores.medium" },
+                    { id: "large", title: "Services.map.ecommerce.stores.large" },
+                    { id: "custom", title: "Services.map.ecommerce.stores.custom" }
                 ]
             },
             {
                 id: "specialized",
-                title: "Specialized Commerce",
+                title: "Services.map.ecommerce.specialized.title",
                 icon: Sparkles,
                 offerings: [
-                    { id: "subscription", title: "Subscription E-commerce" },
-                    { id: "marketplace", title: "Multi-Vendor Marketplace" },
-                    { id: "headless", title: "Headless Commerce" },
-                    { id: "digital", title: "Digital Products Store" }
+                    { id: "subscription", title: "Services.map.ecommerce.specialized.subscription" },
+                    { id: "marketplace", title: "Services.map.ecommerce.specialized.marketplace" },
+                    { id: "headless", title: "Services.map.ecommerce.specialized.headless" },
+                    { id: "digital", title: "Services.map.ecommerce.specialized.digital" }
                 ]
             }
         ]
     },
     {
         id: "webapps",
-        title: "Web Apps",
+        title: "Services.map.webapps.title",
         icon: Database,
         color: "blue",
         subcategories: [
             {
                 id: "business",
-                title: "Business Applications",
+                title: "Services.map.webapps.business.title",
                 icon: Code,
                 offerings: [
-                    { id: "saas", title: "SaaS Platform" },
-                    { id: "internal", title: "Internal Tools" },
-                    { id: "crm", title: "CRM System" },
-                    { id: "dashboard", title: "Dashboard/Admin Panel" }
+                    { id: "saas", title: "Services.map.webapps.business.saas" },
+                    { id: "internal", title: "Services.map.webapps.business.internal" },
+                    { id: "crm", title: "Services.map.webapps.business.crm" },
+                    { id: "dashboard", title: "Services.map.webapps.business.dashboard" }
                 ]
             },
             {
                 id: "custom",
-                title: "Custom Software",
+                title: "Services.map.webapps.custom.title",
                 icon: Globe,
                 offerings: [
-                    { id: "pwa", title: "Progressive Web App (PWA)" },
-                    { id: "fullstack", title: "Full-Stack Application" },
-                    { id: "api", title: "API Development" },
-                    { id: "database", title: "Database Design" }
+                    { id: "pwa", title: "Services.map.webapps.custom.pwa" },
+                    { id: "fullstack", title: "Services.map.webapps.custom.fullstack" },
+                    { id: "api", title: "Services.map.webapps.custom.api" },
+                    { id: "database", title: "Services.map.webapps.custom.database" }
                 ]
             }
         ]

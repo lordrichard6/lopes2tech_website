@@ -85,6 +85,65 @@
                 "3": "Social media profile kit",
                 "4": "Brand style guide"
             }
+        },
+        "payment": {
+            "onetime": "One-Time",
+            "3months": "3 Months",
+            "6months": "6 Months",
+            "disclaimer": "* Final price may vary based on project scope and complexity",
+            "requestQuote": "Request Quote"
+        },
+        "section": {
+            "readyToGo": "Ready-to-Go Packages",
+            "easyTitle": "Easy",
+            "packagesTitle": "Packages",
+            "intro": "Pre-configured solutions for common business needs. Get started quickly with transparent pricing.",
+            "mostPopular": "Most Popular",
+            "recommended": "Recommended",
+            "hostingTitle": "Hosting &",
+            "supportTitle": "Support",
+            "hostingBadge": "Monthly Plans",
+            "hostingIntro": "Once your website is live, keep it fast, secure, and up-to-date with our managed hosting plans.",
+            "defaultPlan": "Default Plan",
+            "upgradePlan": "Upgrade Plan",
+            "perMonth": "/month",
+            "billedMonthly": "Billed monthly",
+            "installmentNote": "Note: If you are paying for development in installments, the hosting & support fee is in addition to your installment payments once your project is online and fully complete."
+        },
+        "hosting": {
+            "basic": {
+                "name": "Basic",
+                "description": "Essential hosting and support for your website.",
+                "features": {
+                    "0": "Secure hosting on our platform",
+                    "1": "Up to 2 small changes per month",
+                    "2": "Max 30 minutes of work included",
+                    "3": "Monthly Google Analytics report",
+                    "4": "Email support"
+                }
+            },
+            "professional": {
+                "name": "Professional",
+                "description": "Enhanced support with priority response and more flexibility.",
+                "features": {
+                    "0": "Everything in Basic",
+                    "1": "Up to 5 changes per month",
+                    "2": "Max 2 hours of work included",
+                    "3": "Priority email & chat support",
+                    "4": "Performance monitoring"
+                }
+            },
+            "enterprise": {
+                "name": "Enterprise",
+                "description": "Full-service support for businesses that need more.",
+                "features": {
+                    "0": "Everything in Professional",
+                    "1": "Unlimited small changes",
+                    "2": "Max 4 hours of work included",
+                    "3": "Dedicated support contact",
+                    "4": "24/7 uptime monitoring"
+                }
+            }
         }
     },
     "BuilderServices": {
@@ -599,6 +658,134 @@
                     "text": "Swiss law applies exclusively."
                 }
             }
+        }
+    },
+    "CustomBuilder": {
+        "badge": "Build Your Own",
+        "title": "Custom <highlight>Package Builder</highlight>",
+        "description": "Need something tailored? Select a base service and add the features you need. Get an instant estimate.",
+        "step1": "Choose Your Base Service",
+        "step2": "Add Features & Enhancements",
+        "summary": {
+            "title": "Your Package",
+            "subtitle": "Instant estimate",
+            "empty": "Select a base service to start building your custom package",
+            "paymentPlan": "Payment Plan",
+            "total": "Total"
+        },
+        "requestQuote": "Request Quote"
+    },
+    "Services": {
+        "defaultDescription": "Comprehensive implementation of {title} tailored to your specific business needs. We ensure high performance, scalability, and seamless user experience.",
+        "close": "Close",
+        "gotIt": "Got it",
+        "map": {
+            "websites": {
+                "title": "Professional Websites",
+                "corporate": {
+                    "title": "Corporate Websites",
+                    "1page": "1-Page Website",
+                    "5pages": "Up to 5 Pages",
+                    "10pages": "10+ Pages",
+                    "multipage": "Multi-Page Corporate Site"
+                },
+                "specialized": {
+                    "title": "Specialized Websites",
+                    "portfolio": "Portfolio Website",
+                    "agency": "Agency Website",
+                    "service": "Service Business Website"
+                },
+                "advanced": {
+                    "title": "Advanced Features",
+                    "cms": "Website with CMS",
+                    "multilang": "Multi-Language Site",
+                    "integrations": "Custom Integrations"
+                }
+            },
+            "landing": {
+                "title": "Landing Pages",
+                "conversion": {
+                    "title": "Conversion Pages",
+                    "single": "Single Landing Page",
+                    "ab": "A/B Testing Variants",
+                    "product": "Product Launch Page",
+                    "leadgen": "Lead Generation Page"
+                },
+                "campaign": {
+                    "title": "Campaign Pages",
+                    "event": "Event Landing Page",
+                    "download": "Download/Signup Page",
+                    "webinar": "Webinar Registration"
+                }
+            },
+            "automation": {
+                "title": "Automations",
+                "ai": {
+                    "title": "AI Assistants",
+                    "rag": "Knowledge Base (RAG)",
+                    "voice": "Voice Agent",
+                    "chatbot": "AI Chatbot",
+                    "support": "Customer Support Bot"
+                },
+                "business": {
+                    "title": "Business Automation",
+                    "workflow": "Workflow Automation",
+                    "email": "Email Automation",
+                    "data": "Data Processing",
+                    "document": "Document AI"
+                }
+            },
+            "ecommerce": {
+                "title": "E-Commerce",
+                "stores": {
+                    "title": "Online Stores",
+                    "small": "Small Store (up to 50 products)",
+                    "medium": "Medium Store (50-500 products)",
+                    "large": "Large Store (500+ products)",
+                    "custom": "Custom E-commerce Platform"
+                },
+                "specialized": {
+                    "title": "Specialized Commerce",
+                    "subscription": "Subscription E-commerce",
+                    "marketplace": "Multi-Vendor Marketplace",
+                    "headless": "Headless Commerce",
+                    "digital": "Digital Products Store"
+                }
+            },
+            "webapps": {
+                "title": "Web Apps",
+                "business": {
+                    "title": "Business Applications",
+                    "saas": "SaaS Platform",
+                    "internal": "Internal Tools",
+                    "crm": "CRM System",
+                    "dashboard": "Dashboard/Admin Panel"
+                },
+                "custom": {
+                    "title": "Custom Software",
+                    "pwa": "Progressive Web App (PWA)",
+                    "fullstack": "Full-Stack Application",
+                    "api": "API Development",
+                    "database": "Database Design"
+                }
+            }
+        }
+    },
+    "ServicesPage": {
+        "hero": {
+            "badge": "Our Expertise & Services",
+            "titlePart1": "Build Something",
+            "titlePart2": "Extraordinary",
+            "description": "By leveraging AI-powered development, we deliver client solutions 10x faster than traditional agencies. From web development to intelligent automation, we build high-performance websites, custom software, and workflows that streamline operations and drive growth for SMEs and startups."
+        },
+        "explore": {
+            "title": "Explore Our Services",
+            "intro": "Discover our comprehensive service offerings tailored to your needs."
+        },
+        "cta": {
+            "title": "Ready to Start Your Project?",
+            "subtitle": "Let's discuss how we can help you build something extraordinary.",
+            "button": "Get Started"
         }
     }
 }
