@@ -5,6 +5,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { Analytics } from '@vercel/analytics/react';
+import JsonLd from '@/components/JsonLd';
 
 const inter = Inter({
   variable: "--font-inter",
@@ -12,12 +13,27 @@ const inter = Inter({
   display: "swap",
 });
 
+// Viewport configuration (Next.js 14+ best practice)
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  themeColor: '#2563eb',
+};
+
 export const metadata: Metadata = {
   title: "Lopes2Tech - Websites & Automations for Service Businesses",
   description: "We help small and medium companies get more leads, automate admin, and scale without complexity.",
+  keywords: ["lopes2tech", "website development", "SEO development", "AI workflows", "IT solutions Switzerland", "process automation", "app development", "custom software", "business automation", "Zurich"],
+  authors: [{ name: "Paulo R. Lopes" }],
   metadataBase: new URL("https://lopes2tech.ch"),
   alternates: {
     canonical: "/",
+    languages: {
+      'en': '/en',
+      'de': '/de',
+      'pt': '/pt',
+      'x-default': '/en',
+    },
   },
   openGraph: {
     title: "Lopes2Tech - Websites & Automations for Service Businesses",
@@ -50,6 +66,12 @@ export const metadata: Metadata = {
     shortcut: "/logo_w.svg",
     apple: "/logo_w.svg",
   },
+  other: {
+    'geo.region': 'CH-ZH',
+    'geo.placename': 'Zurich',
+    'geo.position': '47.3067;8.5550',
+    'ICBM': '47.3067, 8.5550',
+  },
 };
 
 export function generateStaticParams() {
@@ -77,6 +99,9 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
+      <head>
+        <JsonLd />
+      </head>
       <body
         className={`${inter.variable} antialiased`}
         suppressHydrationWarning
