@@ -5,7 +5,10 @@ export default createMiddleware({
     locales: ['en', 'pt', 'de'],
 
     // Used when no locale matches
-    defaultLocale: 'en'
+    defaultLocale: 'en',
+
+    // Enable automatic locale detection from browser's Accept-Language header
+    localeDetection: true
 });
 
 export const config = {
