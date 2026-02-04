@@ -1,0 +1,33 @@
+import Script from "next/script";
+
+const GA_MEASUREMENT_ID = "G-P45F7T7PLH";
+
+export default function GoogleAnalytics() {
+    return (
+        <>
+            <Script
+                strategy="afterInteractive"
+                src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+            />
+            <Script
+                id="google-analytics"
+                strategy="afterInteractive"
+                dangerouslySetInnerHTML={{
+                    __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            // Initialize with denied consent by default (GDPR compliance)
+            gtag('consent', 'default', {
+              'analytics_storage': 'denied',
+              'ad_storage': 'denied'
+            });
+
+            gtag('config', '${GA_MEASUREMENT_ID}');
+          `,
+                }}
+            />
+        </>
+    );
+}

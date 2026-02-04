@@ -6,6 +6,8 @@ import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { Analytics } from '@vercel/analytics/react';
 import JsonLd from '@/components/JsonLd';
+import GoogleAnalytics from '@/components/GoogleAnalytics';
+import CookieConsent from '@/components/CookieConsent';
 
 const inter = Inter({
   variable: "--font-inter",
@@ -109,6 +111,8 @@ export default async function RootLayout({
         <NextIntlClientProvider messages={messages}>
           {children}
           <Analytics />
+          <GoogleAnalytics />
+          <CookieConsent />
         </NextIntlClientProvider>
       </body>
     </html>
