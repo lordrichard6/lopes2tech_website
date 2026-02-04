@@ -1,17 +1,23 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Link from "next/link";
 import Image from "next/image";
-import { Menu, X } from "lucide-react";
-import { usePathname } from "next/navigation";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import clsx from "clsx";
+import { useTranslations, useLocale } from "next-intl";
+import { Link, usePathname, useRouter } from "@/navigation";
 
 export default function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isLangOpen, setIsLangOpen] = useState(false);
     const pathname = usePathname();
+    const router = useRouter();
+    const t = useTranslations('Navigation');
+    // We can't easily get current locale from client component without passing it or parsing.
+    // However, next-intl useLocale hook exists.
+    const locale = useLocale();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -23,13 +29,18 @@ export default function Navbar() {
     }, []);
 
     const navLinks = [
-        { name: "Home", href: "/" },
-        { name: "Services", href: "/services" },
-        { name: "Portfolio", href: "/portfolio" },
-        { name: "Insights", href: "/insights" },
-        { name: "About", href: "/about" },
-        { name: "Contact", href: "/contact" },
+        { key: "home", href: "/" },
+        { key: "services", href: "/services" },
+        { key: "portfolio", href: "/portfolio" },
+        { key: "insights", href: "/insights" },
+        { key: "about", href: "/about" },
+        { key: "contact", href: "/contact" },
     ];
+
+    const changeLanguage = (newLocale: string) => {
+        router.replace(pathname, { locale: newLocale });
+        setIsLangOpen(false);
+    };
 
     return (
         <>
@@ -70,7 +81,7 @@ export default function Navbar() {
                     {/* Desktop Menu */}
                     <ul className="hidden md:flex items-center gap-8 ml-auto mr-8">
                         {navLinks.map((link) => (
-                            <li key={link.name}>
+                            <li key={link.key}>
                                 <Link
                                     href={link.href}
                                     className={clsx(
@@ -78,7 +89,7 @@ export default function Navbar() {
                                         pathname === link.href ? "text-white" : "text-white/70 hover:text-white"
                                     )}
                                 >
-                                    {link.name}
+                                    {t(link.key)}
                                 </Link>
                             </li>
                         ))}
@@ -94,8 +105,38 @@ export default function Navbar() {
                         >
                             Client Portal
                         </a>
-                        {/* Language Selector Placeholder */}
-                        <div className="text-white/70 text-sm cursor-pointer hover:text-white">EN</div>
+
+                        {/* Language Selector */}
+                        <div className="relative">
+                            <button
+                                onClick={() => setIsLangOpen(!isLangOpen)}
+                                className="flex items-center gap-1 text-white/70 text-sm cursor-pointer hover:text-white uppercase"
+                            >
+                                {locale}
+                                <ChevronDown className="w-3 h-3" />
+                            </button>
+
+                            <AnimatePresence>
+                                {isLangOpen && (
+                                    <motion.div
+                                        initial={{ opacity: 0, y: 10 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        exit={{ opacity: 0, y: 10 }}
+                                        className="absolute top-full right-0 mt-2 bg-black/90 border border-white/10 rounded-lg overflow-hidden min-w-[80px]"
+                                    >
+                                        {['en', 'pt', 'de'].map((l) => (
+                                            <button
+                                                key={l}
+                                                onClick={() => changeLanguage(l)}
+                                                className={`block w-full text-left px-4 py-2 text-sm uppercase hover:bg-white/10 ${locale === l ? 'text-cyan-400 font-bold' : 'text-white/70'}`}
+                                            >
+                                                {l}
+                                            </button>
+                                        ))}
+                                    </motion.div>
+                                )}
+                            </AnimatePresence>
+                        </div>
                     </div>
 
                     {/* Mobile Toggle */}
@@ -129,7 +170,7 @@ export default function Navbar() {
                         <nav className="flex flex-col items-center gap-8 w-full">
                             {navLinks.map((link, i) => (
                                 <motion.div
-                                    key={link.name}
+                                    key={link.key}
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: 0.1 + i * 0.05 }}
@@ -140,10 +181,23 @@ export default function Navbar() {
                                         onClick={() => setIsMenuOpen(false)}
                                         className="text-xl uppercase tracking-widest font-medium text-white/70 hover:text-white transition-colors"
                                     >
-                                        {link.name}
+                                        {t(link.key)}
                                     </Link>
                                 </motion.div>
                             ))}
+
+                            {/* Mobile Language Switcher */}
+                            <div className="flex gap-4 mt-4">
+                                {['en', 'pt', 'de'].map((l) => (
+                                    <button
+                                        key={l}
+                                        onClick={() => { changeLanguage(l); setIsMenuOpen(false); }}
+                                        className={`px-4 py-2 rounded-full border ${locale === l ? 'border-cyan-500 text-cyan-400 bg-cyan-500/10' : 'border-white/10 text-white/60'}`}
+                                    >
+                                        {l.toUpperCase()}
+                                    </button>
+                                ))}
+                            </div>
 
                             <motion.div
                                 initial={{ opacity: 0, y: 20 }}

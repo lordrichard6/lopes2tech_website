@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Check, Star, ArrowRight, Package, CreditCard, Calendar, Server, Headphones, Rocket, AlertCircle } from "lucide-react";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { packagesData } from "@/lib/packages-data";
 
 type PaymentPlan = "onetime" | "3months" | "6months";
@@ -63,12 +64,20 @@ const hostingPackages = [
 export default function PackagesSection() {
     const [hoveredPackage, setHoveredPackage] = useState<string | null>(null);
     const [selectedPlan, setSelectedPlan] = useState<PaymentPlan>("onetime");
+    const t = useTranslations();
+    const tNav = useTranslations('Navigation'); // If I need other namespaces
 
     // Show main 3 packages by default
     const mainPackages = packagesData.slice(0, 3);
 
+    const paymentPlansLocal = [
+        { id: "onetime" as PaymentPlan, label: "Packages.payment.onetime", description: "Packages.payment.disclaimer", multiplier: 1, icon: CreditCard },
+        { id: "3months" as PaymentPlan, label: "Packages.payment.3months", description: "+5%", multiplier: 1.05, icon: Calendar },
+        { id: "6months" as PaymentPlan, label: "Packages.payment.6months", description: "+10%", multiplier: 1.10, icon: Calendar }
+    ];
+
     // Get current plan details
-    const currentPlan = paymentPlans.find(p => p.id === selectedPlan)!;
+    const currentPlan = paymentPlansLocal.find(p => p.id === selectedPlan)!;
 
     // Calculate price based on selected plan
     const getAdjustedPrice = (basePrice: number) => {
@@ -108,10 +117,10 @@ export default function PackagesSection() {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="flex justify-center mb-12"
+                    className="flex justify-center mb-12 px-4"
                 >
-                    <div className="inline-flex items-center gap-2 p-1.5 bg-slate-900/80 border border-white/10 rounded-2xl backdrop-blur-sm">
-                        {paymentPlans.map((plan) => {
+                    <div className="flex overflow-x-auto items-center gap-1 md:gap-2 p-1.5 bg-slate-900/80 border border-white/10 rounded-2xl backdrop-blur-sm max-w-full scrollbar-none">
+                        {paymentPlansLocal.map((plan) => {
                             const isActive = selectedPlan === plan.id;
                             const IconComponent = plan.icon;
 
@@ -119,9 +128,7 @@ export default function PackagesSection() {
                                 <motion.button
                                     key={plan.id}
                                     onClick={() => setSelectedPlan(plan.id)}
-                                    whileHover={{ scale: 1.02 }}
-                                    whileTap={{ scale: 0.98 }}
-                                    className={`relative px-5 py-3 rounded-xl font-medium transition-all duration-300 flex items-center gap-2 ${isActive
+                                    className={`relative px-3 md:px-5 py-2 md:py-3 rounded-xl font-medium transition-all duration-300 flex items-center gap-1.5 md:gap-2 flex-shrink-0 ${isActive
                                         ? 'text-white'
                                         : 'text-slate-400 hover:text-slate-200'
                                         }`}
@@ -133,13 +140,13 @@ export default function PackagesSection() {
                                             transition={{ type: "spring", stiffness: 400, damping: 30 }}
                                         />
                                     )}
-                                    <span className="relative z-10 flex items-center gap-2">
-                                        <IconComponent className="w-4 h-4" />
-                                        <span className="font-semibold">{plan.label}</span>
-                                        {plan.description !== "Full payment" && (
-                                            <span className={`text-xs px-2 py-0.5 rounded-full ${isActive ? 'bg-purple-500/30 text-purple-300' : 'bg-white/10 text-slate-500'
+                                    <span className="relative z-10 flex items-center gap-1.5 md:gap-2">
+                                        <IconComponent className="w-3 h-3 md:w-4 md:h-4" />
+                                        <span className="text-sm md:text-base font-semibold whitespace-nowrap">{t(plan.label)}</span>
+                                        {plan.id !== "onetime" && (
+                                            <span className={`text-[10px] md:text-xs px-1.5 md:px-2 py-0.5 rounded-full whitespace-nowrap ${isActive ? 'bg-purple-500/30 text-purple-300' : 'bg-white/10 text-slate-500'
                                                 }`}>
-                                                {plan.description}
+                                                {plan.description.startsWith('Packages.') ? t(plan.description) : plan.description}
                                             </span>
                                         )}
                                     </span>
@@ -180,8 +187,8 @@ export default function PackagesSection() {
 
                                 {/* Package Header */}
                                 <div className="mb-6">
-                                    <h3 className="text-2xl font-bold text-white mb-2">{pkg.name}</h3>
-                                    <p className="text-slate-400 text-sm leading-relaxed">{pkg.description}</p>
+                                    <h3 className="text-2xl font-bold text-white mb-2">{t(pkg.name)}</h3>
+                                    <p className="text-slate-400 text-sm leading-relaxed">{t(pkg.description)}</p>
                                 </div>
 
                                 {/* Price - Animated */}
@@ -222,7 +229,7 @@ export default function PackagesSection() {
 
                                 {/* Features */}
                                 <ul className="space-y-3 mb-8">
-                                    {pkg.features.map((feature, idx) => (
+                                    {pkg.features.map((featureKey, idx) => (
                                         <motion.li
                                             key={idx}
                                             initial={{ opacity: 0, x: -10 }}
@@ -235,7 +242,7 @@ export default function PackagesSection() {
                                                 }`}>
                                                 <Check className={`w-3 h-3 ${pkg.isPopular ? 'text-white' : 'text-cyan-400'}`} />
                                             </div>
-                                            <span className="text-slate-300 text-sm">{feature}</span>
+                                            <span className="text-slate-300 text-sm">{t(featureKey)}</span>
                                         </motion.li>
                                     ))}
                                 </ul>
@@ -243,7 +250,7 @@ export default function PackagesSection() {
                                 {/* Target Badge */}
                                 <div className="mb-6">
                                     <span className="inline-block px-3 py-1 text-xs font-medium text-slate-400 bg-white/5 rounded-full border border-white/10">
-                                        Best for: {pkg.target}
+                                        Best for: {t(pkg.target)}
                                     </span>
                                 </div>
 
@@ -271,7 +278,7 @@ export default function PackagesSection() {
                     className="text-center mb-20"
                 >
                     <p className="text-slate-500 text-sm">
-                        Also available: Landing Page (CHF 600) • Logo Only (CHF 350) • Full Brand Kit (CHF 650)
+                        Also available: {t('Packages.landingPage.name')} (CHF 600) • {t('Packages.logoOnly.name')} (CHF 350) • {t('Packages.fullBrandKit.name')} (CHF 650)
                     </p>
                 </motion.div>
 

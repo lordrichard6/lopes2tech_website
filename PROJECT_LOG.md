@@ -36,3 +36,37 @@
 ### Next Steps
 1.  Implement Contact Page (`app/contact/page.tsx`) with form handling.
 2.  Choose email provider (Resend recommended).
+
+---
+
+## 2026-02-04 07:25 - Legal Pages Internationalization & Translation Fixes
+
+### Summary
+Completed full internationalization of legal pages (Privacy Policy, Terms of Service) by adding German and Portuguese translations. Fixed translation key errors in the Services page (PackagesSection) caused by incorrect namespace usage.
+
+### Decisions Made
+- **AI Translation for Legal Content**: Used AI-generated translations for German and Portuguese legal pages rather than English placeholders—translations are professional quality but not lawyer-certified (user can review/replace if needed)
+- **Root Namespace for Packages**: Changed `PackagesSection.tsx` from using `useTranslations('Packages')` to `useTranslations()` with fully qualified keys to avoid double-prefixing errors (e.g., `Packages.Packages.starter.name`)
+
+### Key Changes
+- **Translation Files**:
+  - `messages/de.json`: Added complete German translations for Privacy Policy (`PrivacyPolicyPage`) and Terms of Service (`TermsOfServicePage`)
+  - `messages/pt.json`: Added complete Portuguese translations for Privacy Policy and Terms of Service
+  - Impressum was already translated from previous session
+- **Components**:
+  - `components/PackagesSection.tsx`: Fixed translation namespace issues—changed from relative to absolute translation keys
+
+### Current State
+Working - All legal pages (Impressum, Privacy Policy, Terms of Service) are fully internationalized and building without errors. The Services page translation errors are resolved.
+
+### Next Steps
+1. User should review translations on live site for accuracy and formatting
+2. Consider professional legal review of translated content if needed for compliance
+3. Continue with remaining internationalization tasks if any other pages need translation
+
+### Notes
+- The `MISSING_MESSAGE` error was caused by `useTranslations('Packages')` creating keys like `Packages.Packages.starter.name` when the data already had the `Packages.` prefix
+- Build verification confirms all routes (EN/DE/PT) are rendering correctly
+- Translation keys in `lib/packages-data.ts` already included the full `Packages.` prefix, so the component just needed to use the root namespace
+
+---

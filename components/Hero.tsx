@@ -4,8 +4,10 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export default function Hero() {
+    const t = useTranslations('Hero');
     const containerRef = useRef<HTMLElement>(null);
     const { scrollY } = useScroll();
 
@@ -124,8 +126,8 @@ export default function Hero() {
                         transition={{ duration: 0.8, delay: 0.5 }}
                         className="text-[2.5rem] leading-[1.1] font-extrabold tracking-tight text-white mb-4 md:text-[3.5rem]"
                     >
-                        <span className="block neon-text-purple">Websites & Automations</span>
-                        <span className="block neon-text-blue">for Service Businesses</span>
+                        <span className="block neon-text-purple">{t('title1')}</span>
+                        <span className="block neon-text-blue">{t('title2')}</span>
                     </motion.h1>
 
                     <motion.p
@@ -135,7 +137,7 @@ export default function Hero() {
                         transition={{ duration: 0.8, delay: 0.8 }}
                         className="text-white text-[1rem] md:text-[1.25rem] leading-[1.6] max-w-[700px] mb-8"
                     >
-                        We help small and medium companies get more leads, automate admin, and scale without complexity.
+                        {t('subtitle')}
                     </motion.p>
 
                     <motion.div
@@ -149,7 +151,7 @@ export default function Hero() {
                             onClick={openCalBooking}
                             className="group relative px-8 py-4 rounded-xl bg-cyan-500/10 text-white font-semibold border border-[#00f5ff] shadow-[0_0_15px_rgba(0,245,255,0.3),inset_0_0_15px_rgba(0,245,255,0.1)] hover:bg-cyan-500/20 hover:shadow-[0_0_25px_rgba(0,245,255,0.6),inset_0_0_20px_rgba(0,245,255,0.2)] hover:-translate-y-[2px] transition-all flex items-center gap-2 overflow-hidden"
                         >
-                            <span className="relative z-10">Talk with me</span>
+                            <span className="relative z-10">{t('cta')}</span>
                             <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
 
                             {/* Shiny wipe effect */}

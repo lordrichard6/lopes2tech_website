@@ -18,93 +18,93 @@ export interface Package {
 export const packagesData: Package[] = [
     {
         key: "starter",
-        name: "Starter",
+        name: "Packages.starter.name",
         price: 850,
-        priceDisplay: "CHF 850",
-        description: "Perfect foundation, whether you need a single landing page or a full 5-page website to establish your business.",
-        target: "New business with existing brand",
+        priceDisplay: "Packages.starter.priceDisplay",
+        description: "Packages.starter.description",
+        target: "Packages.starter.target",
         features: [
-            "Single custom landing page",
-            "Mobile-responsive",
-            "Basic SEO setup",
-            "Contact form",
-            "1 round of revisions"
+            "Packages.starter.features.0",
+            "Packages.starter.features.1",
+            "Packages.starter.features.2",
+            "Packages.starter.features.3",
+            "Packages.starter.features.4"
         ]
     },
     {
         key: "starterPlus",
-        name: "Starter Plus",
+        name: "Packages.starterPlus.name",
         price: 1400,
-        priceDisplay: "CHF 1,400",
-        description: "The complete launch package: a professional website plus a brand identity design (logo, color palette, typography).",
-        target: "New business needing branding",
+        priceDisplay: "Packages.starterPlus.priceDisplay",
+        description: "Packages.starterPlus.description",
+        target: "Packages.starterPlus.target",
         features: [
-            "Professional 5-page website",
-            "Full brand identity (Logo, Colors, Fonts)",
-            "Mobile-responsive & fast",
-            "Basic SEO setup",
-            "Social media templates"
+            "Packages.starterPlus.features.0",
+            "Packages.starterPlus.features.1",
+            "Packages.starterPlus.features.2",
+            "Packages.starterPlus.features.3",
+            "Packages.starterPlus.features.4"
         ],
         isPopular: true
     },
     {
         key: "businessPro",
-        name: "Business Pro",
+        name: "Packages.businessPro.name",
         price: 2000,
-        priceDisplay: "CHF 2,000",
-        description: "For growing businesses needing advance features: CMS, blog, booking systems, or multi-language support.",
-        target: "Established SMEs",
+        priceDisplay: "Packages.businessPro.priceDisplay",
+        description: "Packages.businessPro.description",
+        target: "Packages.businessPro.target",
         features: [
-            "Advanced CMS (Content Management System)",
-            "Blog or Portfolio section",
-            "Multi-language support ready",
-            "Google Analytics integration",
-            "Priority support"
+            "Packages.businessPro.features.0",
+            "Packages.businessPro.features.1",
+            "Packages.businessPro.features.2",
+            "Packages.businessPro.features.3",
+            "Packages.businessPro.features.4"
         ]
     },
     {
         key: "landingPage",
-        name: "Landing Page",
+        name: "Packages.landingPage.name",
         price: 600,
-        priceDisplay: "CHF 600",
-        description: "High-conversion single page designed for marketing campaigns, product launches, or event registrations.",
-        target: "Campaigns / launches",
+        priceDisplay: "Packages.landingPage.priceDisplay",
+        description: "Packages.landingPage.description",
+        target: "Packages.landingPage.target",
         features: [
-            "High-conversion structure",
-            "A/B testing ready",
-            "Fast loading speed",
-            "Lead capture form integration",
-            "Analytics setup"
+            "Packages.landingPage.features.0",
+            "Packages.landingPage.features.1",
+            "Packages.landingPage.features.2",
+            "Packages.landingPage.features.3",
+            "Packages.landingPage.features.4"
         ]
     },
     {
         key: "logoOnly",
-        name: "Logo Only",
+        name: "Packages.logoOnly.name",
         price: 350,
-        priceDisplay: "CHF 350",
-        description: "Custom logo design to give your business a professional face. Includes all necessary file formats.",
-        target: "Standalone branding",
+        priceDisplay: "Packages.logoOnly.priceDisplay",
+        description: "Packages.logoOnly.description",
+        target: "Packages.logoOnly.target",
         features: [
-            "Unique logo concepts",
-            "Vector files (AI, EPS, SVG, PDF)",
-            "Full ownership rights",
-            "Color palette definition",
-            "Usage guidelines"
+            "Packages.logoOnly.features.0",
+            "Packages.logoOnly.features.1",
+            "Packages.logoOnly.features.2",
+            "Packages.logoOnly.features.3",
+            "Packages.logoOnly.features.4"
         ]
     },
     {
         key: "fullBrandKit",
-        name: "Full Brand Kit",
+        name: "Packages.fullBrandKit.name",
         price: 650,
-        priceDisplay: "CHF 650",
-        description: "Comprehensive branding: logo, business cards, letterhead, and social media templates for a cohesive look.",
-        target: "Complete identity package",
+        priceDisplay: "Packages.fullBrandKit.priceDisplay",
+        description: "Packages.fullBrandKit.description",
+        target: "Packages.fullBrandKit.target",
         features: [
-            "Logo design & variations",
-            "Business card design",
-            "Letterhead & email signature",
-            "Social media profile kit",
-            "Brand style guide"
+            "Packages.fullBrandKit.features.0",
+            "Packages.fullBrandKit.features.1",
+            "Packages.fullBrandKit.features.2",
+            "Packages.fullBrandKit.features.3",
+            "Packages.fullBrandKit.features.4"
         ]
     }
 ];
@@ -135,74 +135,74 @@ export interface BuilderService {
 export const builderServicesData: BuilderService[] = [
     {
         id: "website",
-        name: "Professional Website",
+        name: "BuilderServices.website.name",
         basePrice: 850,
-        description: "Custom-built, high-performance website",
+        description: "BuilderServices.website.description",
         icon: Monitor,
         color: "cyan",
         addOns: [
-            { id: "10pages", name: "10+ Pages", description: "Large website with many sections", price: 700, icon: Layers },
-            { id: "cms", name: "CMS + Blog", description: "Manage content & publish articles", price: 500, icon: Database },
-            { id: "multilang", name: "Multi-Language", description: "Reach global audiences", price: 500, icon: Languages },
-            { id: "booking", name: "Custom Booking System", description: "Fully custom, not a simple embed", price: 650, icon: BarChart3 },
-            { id: "chatbot", name: "AI Chatbot", description: "24/7 automated support", price: 600, icon: MessageSquare },
-            { id: "ecommerce", name: "E-Commerce (Basic)", description: "Sell products online", price: 800, icon: Store }
+            { id: "10pages", name: "BuilderServices.website.addOns.10pages.name", description: "BuilderServices.website.addOns.10pages.description", price: 700, icon: Layers },
+            { id: "cms", name: "BuilderServices.website.addOns.cms.name", description: "BuilderServices.website.addOns.cms.description", price: 500, icon: Database },
+            { id: "multilang", name: "BuilderServices.website.addOns.multilang.name", description: "BuilderServices.website.addOns.multilang.description", price: 500, icon: Languages },
+            { id: "booking", name: "BuilderServices.website.addOns.booking.name", description: "BuilderServices.website.addOns.booking.description", price: 650, icon: BarChart3 },
+            { id: "chatbot", name: "BuilderServices.website.addOns.chatbot.name", description: "BuilderServices.website.addOns.chatbot.description", price: 600, icon: MessageSquare },
+            { id: "ecommerce", name: "BuilderServices.website.addOns.ecommerce.name", description: "BuilderServices.website.addOns.ecommerce.description", price: 800, icon: Store }
         ]
     },
     {
         id: "landing",
-        name: "Landing Page",
+        name: "BuilderServices.landing.name",
         basePrice: 600,
-        description: "High-conversion marketing page",
+        description: "BuilderServices.landing.description",
         icon: Layout,
         color: "purple",
         addOns: [
-            { id: "newsletter", name: "Newsletter Integration", description: "Connect to Mailchimp, ConvertKit, etc.", price: 150, icon: FileText },
-            { id: "multilang", name: "Multi-Language", description: "Reach global audiences", price: 300, icon: Languages },
-            { id: "stripe", name: "Stripe Payment Button", description: "Accept payments directly", price: 200, icon: Store }
+            { id: "newsletter", name: "BuilderServices.landing.addOns.newsletter.name", description: "BuilderServices.landing.addOns.newsletter.description", price: 150, icon: FileText },
+            { id: "multilang", name: "BuilderServices.landing.addOns.multilang.name", description: "BuilderServices.landing.addOns.multilang.description", price: 300, icon: Languages },
+            { id: "stripe", name: "BuilderServices.landing.addOns.stripe.name", description: "BuilderServices.landing.addOns.stripe.description", price: 200, icon: Store }
         ]
     },
     {
         id: "automation",
-        name: "AI Automation",
+        name: "BuilderServices.automation.name",
         basePrice: 800,
-        description: "Consultation, system design & integration setup",
+        description: "BuilderServices.automation.description",
         icon: Cpu,
         color: "green",
         hasMonthlyNote: true,
         addOns: [
-            { id: "chatbot", name: "AI Chatbot", description: "24/7 customer support", price: 600, icon: MessageSquare },
-            { id: "rag", name: "Knowledge Base (RAG)", description: "Train AI on your docs", price: 1000, icon: Database },
-            { id: "voice", name: "Voice Agent", description: "Phone call automation", price: 1500, icon: Bot },
-            { id: "email", name: "Email Automation", description: "Smart email workflows", price: 400, icon: Zap }
+            { id: "chatbot", name: "BuilderServices.automation.addOns.chatbot.name", description: "BuilderServices.automation.addOns.chatbot.description", price: 600, icon: MessageSquare },
+            { id: "rag", name: "BuilderServices.automation.addOns.rag.name", description: "BuilderServices.automation.addOns.rag.description", price: 1000, icon: Database },
+            { id: "voice", name: "BuilderServices.automation.addOns.voice.name", description: "BuilderServices.automation.addOns.voice.description", price: 1500, icon: Bot },
+            { id: "email", name: "BuilderServices.automation.addOns.email.name", description: "BuilderServices.automation.addOns.email.description", price: 400, icon: Zap }
         ]
     },
     {
         id: "branding",
-        name: "Brand Identity",
+        name: "BuilderServices.branding.name",
         basePrice: 250,
-        description: "Logo & visual identity design",
+        description: "BuilderServices.branding.description",
         icon: Palette,
         color: "orange",
         addOns: [
-            { id: "brandkit", name: "Full Brand Kit", description: "Complete identity package", price: 200, icon: Sparkles },
-            { id: "social", name: "Social Media Templates", description: "5 post + 3 story templates", price: 200, icon: Globe },
-            { id: "print", name: "Print Materials", description: "Business cards, letterheads", price: 250, icon: FileText }
+            { id: "brandkit", name: "BuilderServices.branding.addOns.brandkit.name", description: "BuilderServices.branding.addOns.brandkit.description", price: 200, icon: Sparkles },
+            { id: "social", name: "BuilderServices.branding.addOns.social.name", description: "BuilderServices.branding.addOns.social.description", price: 200, icon: Globe },
+            { id: "print", name: "BuilderServices.branding.addOns.print.name", description: "BuilderServices.branding.addOns.print.description", price: 250, icon: FileText }
         ]
     },
     {
         id: "webapp",
-        name: "Web Application",
+        name: "BuilderServices.webapp.name",
         basePrice: 3000,
-        description: "Responsive app + basic auth + deployment",
+        description: "BuilderServices.webapp.description",
         icon: Code,
         color: "blue",
         requiresSupport: true,
         addOns: [
-            { id: "advancedauth", name: "Advanced Auth", description: "Roles, permissions, OAuth", price: 400, icon: Database },
-            { id: "api", name: "API Development", description: "Custom API endpoints", price: 800, icon: Zap },
-            { id: "dashboard", name: "Admin Dashboard", description: "Manage data, users, settings", price: 1000, icon: BarChart3 },
-            { id: "ecommerce", name: "E-Commerce", description: "Shopping cart, checkout, payments", price: 1200, icon: Store }
+            { id: "advancedauth", name: "BuilderServices.webapp.addOns.advancedauth.name", description: "BuilderServices.webapp.addOns.advancedauth.description", price: 400, icon: Database },
+            { id: "api", name: "BuilderServices.webapp.addOns.api.name", description: "BuilderServices.webapp.addOns.api.description", price: 800, icon: Zap },
+            { id: "dashboard", name: "BuilderServices.webapp.addOns.dashboard.name", description: "BuilderServices.webapp.addOns.dashboard.description", price: 1000, icon: BarChart3 },
+            { id: "ecommerce", name: "BuilderServices.webapp.addOns.ecommerce.name", description: "BuilderServices.webapp.addOns.ecommerce.description", price: 1200, icon: Store }
         ]
     }
 ];

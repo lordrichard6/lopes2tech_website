@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google"; // Using Inter to match Angular project
-import "./globals.css";
+import "../globals.css";
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages, setRequestLocale } from 'next-intl/server';
+import { notFound } from 'next/navigation';
+import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({
   variable: "--font-inter",
@@ -48,18 +52,39 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export function generateStaticParams() {
+  return ['en', 'pt', 'de'].map((locale) => ({ locale }));
+}
+
+export default async function RootLayout({
   children,
+  params
 }: Readonly<{
   children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 }>) {
+  const { locale } = await params;
+
+  // Ensure that the incoming `locale` is valid
+  if (!['en', 'pt', 'de'].includes(locale)) {
+    notFound();
+  }
+
+  // Enable static rendering
+  setRequestLocale(locale);
+
+  const messages = await getMessages();
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body
         className={`${inter.variable} antialiased`}
         suppressHydrationWarning
       >
-        {children}
+        <NextIntlClientProvider messages={messages}>
+          {children}
+          <Analytics />
+        </NextIntlClientProvider>
       </body>
     </html>
   );

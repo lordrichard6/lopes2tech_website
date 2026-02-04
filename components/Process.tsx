@@ -32,7 +32,10 @@ const steps = [
     },
 ];
 
+import { useTranslations } from "next-intl";
+
 export default function Process() {
+    const t = useTranslations('Process');
     const [activeStep, setActiveStep] = useState<number | null>(null);
 
     return (
@@ -51,7 +54,7 @@ export default function Process() {
                     viewport={{ once: true }}
                     className="text-cyan-600 font-bold tracking-wider uppercase text-sm mb-4 block"
                 >
-                    The Workflow
+                    {t('badge')}
                 </motion.span>
                 <motion.h2
                     initial={{ opacity: 0, y: 20 }}
@@ -60,11 +63,11 @@ export default function Process() {
                     transition={{ delay: 0.1 }}
                     className="text-4xl md:text-5xl font-extrabold mb-6 text-slate-900 tracking-tight"
                 >
-                    From Concept to
+                    {t('titlePart1')}
                     <span className="relative inline-block ml-3">
                         {/* Soft Light Glow Effect */}
                         <span className="absolute inset-0 bg-cyan-400/30 blur-2xl rounded-full scale-150 z-0"></span>
-                        <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-600">Reality</span>
+                        <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-600">{t('titlePart2')}</span>
                     </span>
                 </motion.h2>
                 <motion.p
@@ -74,7 +77,7 @@ export default function Process() {
                     transition={{ delay: 0.2 }}
                     className="text-lg text-slate-600"
                 >
-                    A transparent, streamlined process designed for speed and precision.
+                    {t('description')}
                 </motion.p>
             </div>
 
@@ -147,22 +150,22 @@ export default function Process() {
 
                     {/* Step 1: Low (300) */}
                     <div className="flex flex-col items-center pt-[260px] relative group">
-                        <StepItem step={steps[0]} />
+                        <StepItem step={steps[0]} t={t} />
                     </div>
 
                     {/* Step 2: High (100) */}
                     <div className="flex flex-col items-center pt-[60px] relative group">
-                        <StepItem step={steps[1]} />
+                        <StepItem step={steps[1]} t={t} />
                     </div>
 
                     {/* Step 3: High (100) */}
                     <div className="flex flex-col items-center pt-[60px] relative group">
-                        <StepItem step={steps[2]} />
+                        <StepItem step={steps[2]} t={t} />
                     </div>
 
                     {/* Step 4: Low (300) */}
                     <div className="flex flex-col items-center pt-[260px] relative group">
-                        <StepItem step={steps[3]} />
+                        <StepItem step={steps[3]} t={t} />
                     </div>
                 </div>
             </div>
@@ -175,10 +178,10 @@ export default function Process() {
                         <div className="bg-white border border-slate-100 p-6 rounded-2xl shadow-sm">
                             <div className="flex items-center gap-4 mb-3">
                                 <step.icon className="w-6 h-6 text-cyan-600" />
-                                <h3 className="text-slate-900 font-bold text-lg">{step.title}</h3>
+                                <h3 className="text-slate-900 font-bold text-lg">{t(`steps.${step.id}.title`)}</h3>
                             </div>
                             <p className="text-slate-600 text-sm leading-relaxed">
-                                {step.description}
+                                {t(`steps.${step.id}.description`)}
                             </p>
                         </div>
                     </div>
@@ -189,7 +192,7 @@ export default function Process() {
     );
 }
 
-function StepItem({ step }: { step: any }) {
+function StepItem({ step, t }: { step: any, t: any }) {
     return (
         <>
             {/* The Icon sitting ON the line */}
@@ -215,9 +218,9 @@ function StepItem({ step }: { step: any }) {
                 viewport={{ once: true }}
                 className="text-center max-w-[280px] bg-white/80 backdrop-blur-sm p-4 rounded-xl border border-transparent group-hover:border-slate-100 transition-colors"
             >
-                <h3 className="text-xl font-bold text-slate-900 mb-2">{step.title}</h3>
+                <h3 className="text-xl font-bold text-slate-900 mb-2">{t(`steps.${step.id}.title`)}</h3>
                 <p className="text-sm text-slate-600 leading-relaxed font-medium">
-                    {step.description}
+                    {t(`steps.${step.id}.description`)}
                 </p>
             </motion.div>
         </>

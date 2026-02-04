@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Check, Plus, Minus, Sparkles, Calculator, ArrowRight, Settings2, CreditCard, Server } from "lucide-react";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { builderServicesData, builderColorMap, type BuilderService, type AddOn } from "@/lib/packages-data";
 
 interface SelectedAddOns {
@@ -17,6 +18,7 @@ export default function CustomPackageBuilder() {
     const [selectedAddOns, setSelectedAddOns] = useState<SelectedAddOns>({});
     const [isExpanded, setIsExpanded] = useState(false);
     const [paymentPlan, setPaymentPlan] = useState<PaymentPlan>("onetime");
+    const t = useTranslations();
 
     const activeService = builderServicesData.find(s => s.id === selectedService);
 
@@ -147,7 +149,7 @@ export default function CustomPackageBuilder() {
                                                     style={{ color: colors.to }}
                                                 />
                                             </div>
-                                            <h4 className="text-sm font-semibold text-white mb-1 leading-tight">{service.name}</h4>
+                                            <h4 className="text-sm font-semibold text-white mb-1 leading-tight">{t(service.name)}</h4>
                                             <p className="text-xs text-slate-500">from CHF {service.basePrice.toLocaleString()}</p>
                                         </motion.button>
                                     );
@@ -210,10 +212,10 @@ export default function CustomPackageBuilder() {
                                                     {/* Content */}
                                                     <div className="flex-1 min-w-0">
                                                         <div className="flex items-center justify-between gap-2">
-                                                            <h4 className="text-sm font-semibold text-white">{addOn.name}</h4>
+                                                            <h4 className="text-sm font-semibold text-white">{t(addOn.name)}</h4>
                                                             <span className="text-sm font-bold text-slate-400">+CHF {addOn.price}</span>
                                                         </div>
-                                                        <p className="text-xs text-slate-500 mt-0.5">{addOn.description}</p>
+                                                        <p className="text-xs text-slate-500 mt-0.5">{t(addOn.description)}</p>
                                                     </div>
                                                 </motion.button>
                                             );
@@ -231,7 +233,7 @@ export default function CustomPackageBuilder() {
                                                 <span className="text-amber-400 text-xs font-bold">!</span>
                                             </div>
                                             <p className="text-sm text-amber-200/80">
-                                                <span className="font-semibold text-amber-300">Note:</span> AI services have ongoing monthly costs depending on usage and implementation. We'll discuss this during our consultation.
+                                                <span className="font-semibold text-amber-300">Note:</span> {t('BuilderServices.notes.hasMonthlyNote')}
                                             </p>
                                         </motion.div>
                                     )}
@@ -293,7 +295,7 @@ export default function CustomPackageBuilder() {
                                                             </div>
                                                         )}
                                                         <span className={`text-sm ${item.isBase ? 'text-white font-medium' : 'text-slate-400'}`}>
-                                                            {item.name}
+                                                            {t(item.name)}
                                                         </span>
                                                     </div>
                                                     <span className="text-sm text-slate-400">
@@ -303,7 +305,7 @@ export default function CustomPackageBuilder() {
                                                 {/* Show description for base service */}
                                                 {item.isBase && activeService && (
                                                     <p className="text-xs text-slate-500 mt-1 ml-7">
-                                                        {activeService.description}
+                                                        {t(activeService.description)}
                                                     </p>
                                                 )}
                                             </motion.div>
@@ -321,9 +323,9 @@ export default function CustomPackageBuilder() {
                                         </p>
                                         <div className="flex gap-2">
                                             {[
-                                                { key: "onetime", label: "One-Time" },
-                                                { key: "3months", label: "3 Months" },
-                                                { key: "6months", label: "6 Months" }
+                                                { key: "onetime", label: "Packages.payment.onetime" },
+                                                { key: "3months", label: "Packages.payment.3months" },
+                                                { key: "6months", label: "Packages.payment.6months" }
                                             ].map((plan) => (
                                                 <motion.button
                                                     key={plan.key}
@@ -335,7 +337,7 @@ export default function CustomPackageBuilder() {
                                                         : 'bg-white/5 border border-white/10 text-slate-400 hover:text-white'
                                                         }`}
                                                 >
-                                                    {plan.label}
+                                                    {t(plan.label)}
                                                 </motion.button>
                                             ))}
                                         </div>
@@ -344,7 +346,7 @@ export default function CustomPackageBuilder() {
                                     {/* Total */}
                                     <div className="flex items-center justify-between mb-2">
                                         <span className="text-lg font-bold text-white">
-                                            {paymentPlan === "onetime" ? "Total" : "Monthly"}
+                                            {paymentPlan === "onetime" ? "Total" : t("Packages.payment.monthly")}
                                         </span>
                                         <motion.span
                                             key={`${totalPrice}-${paymentPlan}`}
@@ -375,7 +377,7 @@ export default function CustomPackageBuilder() {
 
                                     {/* Disclaimer */}
                                     <p className="text-xs text-slate-500 mb-4">
-                                        * Final price may vary based on project scope and complexity
+                                        {t('Packages.payment.disclaimer')}
                                     </p>
 
                                     {/* Support Note for Web Applications */}
@@ -383,7 +385,7 @@ export default function CustomPackageBuilder() {
                                         <div className="flex items-start gap-2 p-3 rounded-xl bg-blue-500/10 border border-blue-500/20 mb-4">
                                             <Server className="w-4 h-4 text-blue-400 flex-shrink-0 mt-0.5" />
                                             <p className="text-xs text-blue-200/80">
-                                                Web applications require ongoing maintenance. Minimum support package: <span className="font-semibold text-blue-300">CHF 89/mo</span>
+                                                {t('BuilderServices.notes.monthlyCost')}
                                             </p>
                                         </div>
                                     )}
@@ -393,7 +395,7 @@ export default function CustomPackageBuilder() {
                                         href="/contact"
                                         className="w-full flex items-center justify-center gap-2 py-3 rounded-xl font-semibold bg-gradient-to-r from-cyan-500 to-purple-500 text-white shadow-[0_0_20px_rgba(6,182,212,0.3)] hover:shadow-[0_0_30px_rgba(6,182,212,0.5)] hover:-translate-y-0.5 transition-all duration-300"
                                     >
-                                        Request Custom Quote
+                                        {t('Packages.payment.requestQuote')}
                                         <ArrowRight className="w-4 h-4" />
                                     </Link>
                                 </>

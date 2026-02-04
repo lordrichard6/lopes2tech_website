@@ -1,0 +1,604 @@
+{
+    "Navigation": {
+        "home": "Início",
+        "services": "Serviços",
+        "portfolio": "Portfólio",
+        "contact": "Contacto",
+        "insights": "Insights",
+        "about": "Sobre"
+    },
+    "Packages": {
+        "starter": {
+            "name": "Starter",
+            "priceDisplay": "CHF 850",
+            "description": "A base perfeita, seja para uma landing page ou um site completo de 5 páginas para estabelecer o seu negócio.",
+            "target": "Novos negócios com marca existente",
+            "features": {
+                "0": "Landing page personalizada",
+                "1": "Responsivo para telemóveis",
+                "2": "Configuração básica de SEO",
+                "3": "Formulário de contacto",
+                "4": "1 ronda de revisões"
+            }
+        },
+        "starterPlus": {
+            "name": "Starter Plus",
+            "priceDisplay": "CHF 1,400",
+            "description": "O pacote completo de lançamento: um site profissional mais design de identidade da marca (logótipo, cores, tipografia).",
+            "target": "Novos negócios a precisar de branding",
+            "features": {
+                "0": "Site profissional de 5 páginas",
+                "1": "Identidade de marca completa (Logótipo, Cores, Fontes)",
+                "2": "Responsivo e rápido",
+                "3": "Configuração básica de SEO",
+                "4": "Modelos para redes sociais"
+            }
+        },
+        "businessPro": {
+            "name": "Business Pro",
+            "priceDisplay": "CHF 2,000",
+            "description": "Para negócios em crescimento que necessitam de recursos avançados: CMS, blog, sistemas de reservas ou suporte multi-idioma.",
+            "target": "PMEs estabelecidas",
+            "features": {
+                "0": "CMS Avançado (Sistema de Gestão de Conteúdos)",
+                "1": "Secção de Blog ou Portfólio",
+                "2": "Pronto para multi-idioma",
+                "3": "Integração Google Analytics",
+                "4": "Suporte prioritário"
+            }
+        },
+        "landingPage": {
+            "name": "Landing Page",
+            "priceDisplay": "CHF 600",
+            "description": "Página única de alta conversão desenhada para campanhas de marketing, lançamentos de produtos ou registos em eventos.",
+            "target": "Campanhas / lançamentos",
+            "features": {
+                "0": "Estrutura de alta conversão",
+                "1": "Pronto para testes A/B",
+                "2": "Velocidade de carregamento rápida",
+                "3": "Integração de captura de leads",
+                "4": "Configuração de análise"
+            }
+        },
+        "logoOnly": {
+            "name": "Apenas Logótipo",
+            "priceDisplay": "CHF 350",
+            "description": "Design de logótipo personalizado para dar ao seu negócio uma imagem profissional. Inclui todos os formatos de ficheiro necessários.",
+            "target": "Branding individual",
+            "features": {
+                "0": "Conceitos de logótipo únicos",
+                "1": "Ficheiros vectoriais (AI, EPS, SVG, PDF)",
+                "2": "Direitos de propriedade totais",
+                "3": "Definição da paleta de cores",
+                "4": "Guia de utilização"
+            }
+        },
+        "fullBrandKit": {
+            "name": "Kit de Marca Completo",
+            "priceDisplay": "CHF 650",
+            "description": "Branding abrangente: logótipo, cartões de visita, papel timbrado e modelos de redes sociais para um visual coeso.",
+            "target": "Pacote de identidade completo",
+            "features": {
+                "0": "Design de logótipo e variações",
+                "1": "Design de cartão de visita",
+                "2": "Papel timbrado e assinatura de email",
+                "3": "Kit de perfil para redes sociais",
+                "4": "Guia de estilo da marca"
+            }
+        },
+        "payment": {
+            "onetime": "Pagamento Único",
+            "3months": "3 Meses",
+            "6months": "6 Meses",
+            "monthly": "Mensal",
+            "total": "Total",
+            "estimatedTotal": "Total Estimado",
+            "requestQuote": "Pedir Orçamento Personalizado",
+            "disclaimer": "* O preço final pode variar com base no âmbito e complexidade do projeto"
+        }
+    },
+    "BuilderServices": {
+        "website": {
+            "name": "Site Profissional",
+            "description": "Site personalizado de alta performance",
+            "addOns": {
+                "10pages": {
+                    "name": "10+ Páginas",
+                    "description": "Site grande com muitas secções"
+                },
+                "cms": {
+                    "name": "CMS + Blog",
+                    "description": "Gerir conteúdo & publicar artigos"
+                },
+                "multilang": {
+                    "name": "Multi-Idioma",
+                    "description": "Alcance audiências globais"
+                },
+                "booking": {
+                    "name": "Sistema de Reservas",
+                    "description": "Totalmente personalizado"
+                },
+                "chatbot": {
+                    "name": "Chatbot IA",
+                    "description": "Suporte automatizado 24/7"
+                },
+                "ecommerce": {
+                    "name": "E-Commerce (Básico)",
+                    "description": "Venda produtos online"
+                }
+            }
+        },
+        "landing": {
+            "name": "Landing Page",
+            "description": "Página de marketing de alta conversão",
+            "addOns": {
+                "newsletter": {
+                    "name": "Integração Newsletter",
+                    "description": "Ligar ao Mailchimp, ConvertKit, etc."
+                },
+                "multilang": {
+                    "name": "Multi-Idioma",
+                    "description": "Alcance audiências globais"
+                },
+                "stripe": {
+                    "name": "Botão de Pagamento Stripe",
+                    "description": "Aceite pagamentos diretamente"
+                }
+            }
+        },
+        "automation": {
+            "name": "Automação IA",
+            "description": "Consultoria, design de sistema e configuração",
+            "addOns": {
+                "chatbot": {
+                    "name": "Chatbot IA",
+                    "description": "Suporte ao cliente 24/7"
+                },
+                "rag": {
+                    "name": "Base de Conhecimento (RAG)",
+                    "description": "Treine IA nos seus documentos"
+                },
+                "voice": {
+                    "name": "Agente de Voz",
+                    "description": "Automação de chamadas telefónicas"
+                },
+                "email": {
+                    "name": "Automação de Email",
+                    "description": "Fluxos de email inteligentes"
+                }
+            }
+        },
+        "branding": {
+            "name": "Identidade Visual",
+            "description": "Design de logótipo e identidade visual",
+            "addOns": {
+                "brandkit": {
+                    "name": "Kit de Marca Completo",
+                    "description": "Pacote de identidade completo"
+                },
+                "social": {
+                    "name": "Modelos Redes Sociais",
+                    "description": "5 posts + 3 templates de story"
+                },
+                "print": {
+                    "name": "Materiais Impressos",
+                    "description": "Cartões de visita, papel timbrado"
+                }
+            }
+        },
+        "webapp": {
+            "name": "Aplicação Web",
+            "description": "App responsiva + auth básica + deployment",
+            "addOns": {
+                "advancedauth": {
+                    "name": "Auth Avançada",
+                    "description": "Funções, permissões, OAuth"
+                },
+                "api": {
+                    "name": "Desenvolvimento API",
+                    "description": "Endpoints API personalizados"
+                },
+                "dashboard": {
+                    "name": "Painel de Administração",
+                    "description": "Gerir dados, utilizadores, definições"
+                },
+                "ecommerce": {
+                    "name": "E-Commerce",
+                    "description": "Carrinho de compras, checkout, pagamentos"
+                }
+            }
+        },
+        "notes": {
+            "monthlyCost": "Aplicações web requerem manutenção contínua. Pacote mínimo de suporte: CHF 89/mês",
+            "hasMonthlyNote": "Serviços de IA têm custos mensais contínuos dependendo do uso e implementação. Discutiremos isto durante a consulta."
+        }
+    },
+    "Hero": {
+        "title1": "Websites & Automação",
+        "title2": "para Empresas de Serviços",
+        "subtitle": "Ajudamos pequenas e médias empresas a obter mais leads, automatizar a administração e escalar sem complexidade.",
+        "cta": "Fale comigo"
+    },
+    "ServicesSection": {
+        "title": "A Nossa Experiência",
+        "subtitle": "Do desenvolvimento web à automação inteligente, fornecemos soluções digitais de ponta a ponta.",
+        "items": {
+            "web": {
+                "title": "Sites Profissionais",
+                "description": "Sites de alto desempenho que representam a sua marca na perfeição."
+            },
+            "marketing": {
+                "title": "Landing Pages",
+                "description": "Páginas focadas na conversão desenhadas para transformar visitantes em leads."
+            },
+            "automation": {
+                "title": "Automações",
+                "description": "Simplifique as suas operações e poupe horas de trabalho manual."
+            },
+            "ecommerce": {
+                "title": "E-Commerce",
+                "description": "Lojas online personalizadas que tornam a compra fácil e segura."
+            },
+            "apps": {
+                "title": "Web Apps",
+                "description": "Soluções de software personalizadas adaptadas às necessidades únicas do seu negócio."
+            }
+        },
+        "getStarted": "Começar",
+        "cta": "Ver todos os serviços"
+    },
+    "CTASection": {
+        "title": "Pronto para Escalar o seu Negócio?",
+        "subtitle": "Vamos construir algo extraordinário juntos. Agende a sua consulta gratuita hoje.",
+        "button": "Iniciar Projeto"
+    },
+    "Portfolio": {
+        "badge": "TRABALHOS SELECIONADOS",
+        "title": "Construído para Crescimento",
+        "subtitle": "Uma seleção de sites e aplicações de alto impacto desenhados para desempenho e escala.",
+        "button": "Ver Portfólio Completo"
+    },
+    "Process": {
+        "badge": "O Fluxo de Trabalho",
+        "titlePart1": "Do Conceito à",
+        "titlePart2": "Realidade",
+        "description": "Um processo transparente e otimizado, desenhado para velocidade e precisão.",
+        "steps": {
+            "1": {
+                "title": "Chamada de Descoberta",
+                "description": "Aprofundamos os seus objetivos para garantir que somos o parceiro ideal."
+            },
+            "2": {
+                "title": "Proposta Estratégica",
+                "description": "Recebe um roteiro abrangente e um orçamento de preço fixo."
+            },
+            "3": {
+                "title": "Construção & Automação",
+                "description": "Construímos a sua solução personalizada com acompanhamento de progresso em tempo real."
+            },
+            "4": {
+                "title": "Lançamento & Suporte",
+                "description": "Implementamos o seu sistema e fornecemos manutenção contínua."
+            }
+        }
+    },
+    "Footer": {
+        "links": {
+            "impressum": "Impressum",
+            "privacy": "Política de Privacidade",
+            "terms": "Termos de Serviço"
+        },
+        "copyright": "Todos os direitos reservados."
+    },
+    "AboutPage": {
+        "hero": {
+            "badge": "Sobre Nós",
+            "title": "Inovação que Gera Resultados",
+            "description": "Somos uma agência de tecnologia sediada na Suíça especializada em agentes de IA, desenvolvimento web e soluções automatizadas. Acreditamos que a tecnologia deve servir as pessoas, e não o contrário."
+        },
+        "philosophy": {
+            "title": "A Nossa Filosofia",
+            "description": "Somos uma agência de tecnologia sediada na Suíça especializada em agentes de IA, desenvolvimento web e soluções automatizadas. Acreditamos que a tecnologia deve servir as pessoas, e não o contrário.",
+            "stats": {
+                "uptime": "Garantia de Uptime",
+                "delivery": "Entrega Mais Rápida",
+                "satisfaction": "Satisfação do Cliente",
+                "coffees": "Cafés / Mês"
+            }
+        },
+        "founder": {
+            "title": "Sobre o Fundador",
+            "description1": "Sou um Full Stack Developer e fundador da <span class='text-cyan-400 font-semibold'>Lopes2Tech</span>, especializado em sites de alto desempenho, automações inteligentes e aplicações web impulsionadas por IA. Sediado em Zurique mas originário de Portugal (onde <em>Bacalhau à Brás</em> e <em>Pastéis de Nata</em> são uma religião), combino precisão técnica com uma profunda paixão pela inovação digital.",
+            "description2": "O meu caráter profissional é definido por um impulso implacável para resolver problemas complexos. Não escrevo apenas código; arquiteto ecossistemas digitais. Desde plataformas SaaS escaláveis a agentes de IA autónomos, aproveito uma stack moderna—incluindo <span class='text-white'>Next.js, TypeScript, Python e Supabase</span>—para entregar soluções tão robustas quanto bonitas.",
+            "quote": "Simplifico o panorama digital para empresas, construindo automações personalizadas e aplicações web que trabalham por si enquanto desfruta de um Pastel de Nata.",
+            "connect": "Conecte-se comigo"
+        }
+    },
+    "ContactPage": {
+        "hero": {
+            "badge": "Entre em Contato",
+            "titlePart1": "Vamos Construir Algo",
+            "titlePart2": "Extraordinário",
+            "description": "Sediados em Zurique, entregando excelência digital para o mundo."
+        },
+        "form": {
+            "title": "Inicie uma Conversa",
+            "subtitle": "Conte-me sobre o seu projeto. Costumo responder dentro de 24 horas.",
+            "labels": {
+                "name": "Nome",
+                "email": "Email",
+                "company": "Empresa (Opcional)",
+                "phone": "Telefone (Opcional)",
+                "message": "Como posso ajudar?"
+            },
+            "errors": {
+                "nameRequired": "Nome é obrigatório",
+                "emailRequired": "Email é obrigatório",
+                "emailInvalid": "Por favor, insira um email válido",
+                "messageRequired": "Mensagem é obrigatória",
+                "general": "Algo correu mal. Por favor, tente novamente ou envie-me um email diretamente."
+            },
+            "button": "Enviar Mensagem",
+            "sending": "A enviar...",
+            "success": {
+                "title": "Mensagem Enviada!",
+                "message": "Obrigado pelo contato. Responderei em breve.",
+                "button": "Enviar Outra"
+            }
+        },
+        "location": "Zurique, Suíça"
+    },
+    "ImpressumPage": {
+        "title": "Impressum",
+        "subtitle": "Aviso Legal",
+        "backToHome": "Voltar à Página Inicial",
+        "companyInfo": {
+            "title": "Informações da Empresa",
+            "name": "Lopes2Tech",
+            "type": "Empresa Individual",
+            "representedBy": "Representado por",
+            "representativeName": "Paulo Lopes"
+        },
+        "contact": {
+            "title": "Contato",
+            "emailLabel": "Email",
+            "websiteLabel": "Website"
+        },
+        "disclaimer": {
+            "title": "Isenção de Responsabilidade",
+            "liabilityContent": {
+                "title": "Responsabilidade pelo Conteúdo",
+                "text": "O autor não assume qualquer responsabilidade pela correção, precisão, atualidade, confiabilidade e integridade das informações. Reivindicações de responsabilidade contra o autor por danos materiais ou imateriais resultantes do acesso a, uso ou não uso das informações publicadas, por uso indevido da conexão ou por falhas técnicas são excluídas. Todas as ofertas são não vinculativas. O autor reserva-se expressamente o direito de alterar, complementar ou excluir partes das páginas ou toda a oferta sem aviso prévio ou interromper a publicação temporária ou permanentemente."
+            },
+            "liabilityLinks": {
+                "title": "Responsabilidade por Links",
+                "text": "Referências e links para sites de terceiros estão fora da nossa área de responsabilidade. Rejeitamos qualquer responsabilidade por tais sites. O acesso e uso de tais sites são de responsabilidade do usuário."
+            }
+        },
+        "copyright": {
+            "title": "Direitos de Autor",
+            "text": "Os direitos de autor e todos os outros direitos sobre conteúdo, imagens, fotos ou outros arquivos no site pertencem exclusivamente a <strong class='text-white'>Paulo Lopes / Lopes2Tech</strong> ou aos detentores de direitos especificamente nomeados. Para a reprodução de quaisquer elementos, o consentimento por escrito dos detentores dos direitos de autor deve ser obtido antecipadamente."
+        }
+    },
+    "PrivacyPolicyPage": {
+        "title": "Política de Privacidade",
+        "backToHome": "Voltar à Página Inicial",
+        "lastUpdated": "Última atualização:",
+        "sections": {
+            "general": {
+                "title": "1. Informações Gerais",
+                "text1": "Na Lopes2Tech, levamos a proteção dos seus dados pessoais muito a sério. Tratamos os seus dados pessoais confidencialmente e de acordo com as regulamentações legais de proteção de dados — especificamente a Lei Federal Suíça sobre Proteção de Dados (nFADP/nDSG) e, quando aplicável, o Regulamento Geral sobre a Proteção de Dados da UE (RGPD).",
+                "text2": "Esta política de privacidade explica como recolhemos, utilizamos e protegemos os seus dados quando visita o nosso website ou utiliza os nossos serviços."
+            },
+            "controller": {
+                "title": "2. Responsável (Controlador)",
+                "text": "A parte responsável pelo processamento de dados neste website é:"
+            },
+            "collection": {
+                "title": "3. Recolha e Processamento de Dados",
+                "serverLogs": {
+                    "title": "3.1 Ficheiros de Log do Servidor",
+                    "text": "Quando acede ao nosso website, o fornecedor das páginas recolhe e armazena automaticamente informações nos chamados 'ficheiros de log do servidor', incluindo:",
+                    "list": {
+                        "browser": "Tipo e versão do navegador",
+                        "os": "Sistema operativo utilizado",
+                        "referrer": "URL de referência",
+                        "host": "Nome do host do computador de acesso",
+                        "time": "Hora do pedido ao servidor",
+                        "ip": "Endereço IP"
+                    },
+                    "note": "Estes dados não são combinados com outras fontes de dados. O processamento baseia-se no nosso interesse legítimo na apresentação tecnicamente isenta de erros e na otimização do nosso website."
+                },
+                "contact": {
+                    "title": "3.2 Formulário de Contacto e Email",
+                    "text": "Se nos enviar pedidos de informação através do formulário de contacto ou email, os seus dados do formulário de pedido, incluindo os dados de contacto que forneceu (Nome, Email, Telefone, Empresa/Consultório), serão armazenados por nós para efeitos de processamento do pedido e em caso de perguntas de seguimento. Não transmitimos estes dados sem o seu consentimento."
+                },
+                "booking": {
+                    "title": "3.3 Marcação de Consultas (Cal.com)",
+                    "text": "Utilizamos o serviço Cal.com para oferecer marcação de consultas online. Quando marca uma consulta, os dados que insere (Nome, Email, Telefone, Motivo da Consulta) são processados pela Cal.com.",
+                    "list": {
+                        "provider": "Fornecedor: Cal.com, Inc. (EUA/Global)",
+                        "purpose": "Finalidade: Agendamento e gestão de calendário"
+                    },
+                    "note": "Por favor, consulte a política de privacidade da Cal.com para detalhes sobre como tratam os dados."
+                },
+                "chatbot": {
+                    "title": "3.4 Assistente Chatbot IA",
+                    "text": "O nosso website utiliza um chatbot alimentado por IA para ajudar com questões. Quando interage com o chat:",
+                    "list": {
+                        "process": "O texto que insere é processado para gerar uma resposta.",
+                        "warning": "Importante: Não insira dados de saúde sensíveis (nomes de pacientes, condições médicas) no chatbot público do website.",
+                        "providers": "Os dados podem ser processados por fornecedores de IA terceiros (por exemplo, OpenAI, Anthropic) exclusivamente para fins de geração da resposta."
+                    }
+                }
+            },
+            "cookies": {
+                "title": "4. Cookies",
+                "text": "O nosso website utiliza 'cookies'. Estes são pequenos ficheiros de texto que são armazenados no seu dispositivo.",
+                "essential": {
+                    "title": "Cookies Essenciais",
+                    "text": "Necessários para o funcionamento técnico do website."
+                },
+                "analytical": {
+                    "title": "Cookies Analíticos",
+                    "text": "Ajudam-nos a compreender como os visitantes utilizam o site."
+                },
+                "note": "Pode configurar o seu navegador para rejeitar cookies, mas isso pode limitar a funcionalidade do website."
+            },
+            "analytics": {
+                "title": "5. Análise e Ferramentas de Terceiros",
+                "text": "Para melhorar o nosso serviço, podemos utilizar ferramentas de análise (por exemplo, Google Analytics ou Vercel Analytics). Estas ferramentas utilizam cookies para analisar o comportamento do utilizador. Os endereços IP são normalmente anonimizados antes do processamento. Pode optar por não participar neste rastreio através do nosso Banner de Cookies ou das definições do seu navegador."
+            },
+            "security": {
+                "title": "6. Segurança de Dados (SSL/TLS)",
+                "text": "Por razões de segurança e para proteger a transmissão de conteúdo confidencial, como encomendas ou pedidos que nos envia, este site utiliza encriptação SSL ou TLS. Pode reconhecer uma ligação encriptada pelo facto de a linha de endereço do navegador mudar de 'http://' para 'https://' e pelo símbolo de cadeado na linha do seu navegador."
+            },
+            "transfer": {
+                "title": "7. Transferência de Dados para Terceiros e para o Estrangeiro",
+                "text": "Apenas transmitimos os seus dados a terceiros se tal for necessário para o cumprimento do contrato (por exemplo, alojamento, ferramentas de agendamento) ou se tiver dado o seu consentimento. Alguns destes prestadores de serviços podem estar localizados fora da Suíça (por exemplo, EUA). Nestes casos, garantimos que existem salvaguardas adequadas de proteção de dados (como Cláusulas Contratuais-Tipo) para cumprir as normas suíças nDSG e RGPD."
+            },
+            "rights": {
+                "title": "8. Os Seus Direitos",
+                "text": "Tem o direito de:",
+                "list": {
+                    "info": "Solicitar informações sobre os seus dados pessoais armazenados a qualquer momento.",
+                    "correction": "Solicitar a correção de dados incorretos.",
+                    "deletion": "Solicitar a eliminação dos seus dados (Direito a ser esquecido), desde que não existam obrigações legais de retenção.",
+                    "revocation": "Revogar o seu consentimento para o processamento de dados a qualquer momento."
+                },
+                "contact": "Para exercer estes direitos, por favor contacte-nos diretamente em"
+            },
+            "changes": {
+                "title": "9. Alterações a esta Política de Privacidade",
+                "text": "Reservamo-nos o direito de adaptar esta política de privacidade para que cumpra sempre os requisitos legais atuais ou para implementar alterações aos nossos serviços na política de privacidade (por exemplo, ao introduzir novos serviços). A nova política de privacidade aplicar-se-á então à sua próxima visita."
+            }
+        }
+    },
+    "TermsOfServicePage": {
+        "title": "Termos e Condições Gerais (TCG)",
+        "effectiveDate": "Data de Vigência: 11 de Dezembro de 2025",
+        "lastUpdated": "Última atualização:",
+        "backToHome": "Voltar à Página Inicial",
+        "sections": {
+            "scope": {
+                "title": "1. Âmbito de Aplicação",
+                "text": "Estes Termos e Condições Gerais (doravante 'TCG') aplicam-se a todas as relações comerciais entre <strong>Lopes2Tech / Paulo Lopes</strong> (doravante 'Contratado') e os seus clientes (doravante 'Cliente'). Aplicam-se a todos os serviços prestados, incluindo, mas não se limitando a, desenvolvimento de websites, engenharia de software, automações de IA e consultoria."
+            },
+            "subject": {
+                "title": "2. Objeto do Contrato",
+                "text": "O Contratado presta serviços na área de TI e automação. O âmbito específico dos serviços é definido na respetiva oferta individual ou contrato de serviço.",
+                "services": {
+                    "web": {
+                        "title": "Web & Software",
+                        "description": "Desenvolvimento de websites, aplicações e dashboards."
+                    },
+                    "ai": {
+                        "title": "IA & Automação",
+                        "description": "Implementação de chatbots, agentes de voz e automações de fluxo de trabalho."
+                    },
+                    "maintenance": {
+                        "title": "Manutenção",
+                        "description": "Suporte contínuo e serviços de alojamento."
+                    }
+                }
+            },
+            "conclusion": {
+                "title": "3. Conclusão do Contrato",
+                "text": "As ofertas feitas pelo Contratado são válidas por 30 dias, salvo indicação em contrário. O contrato é concluído mediante:",
+                "list": {
+                    "acceptance": "A aceitação por escrito da oferta pelo Cliente (email é suficiente).",
+                    "deposit": "O pagamento de um depósito inicial.",
+                    "commencement": "O início da prestação efetiva do serviço pelo Contratado com o conhecimento do Cliente."
+                }
+            },
+            "obligations": {
+                "title": "4. Obrigações do Cliente",
+                "text": "O Cliente concorda em:",
+                "list": {
+                    "content": "Fornecer todo o conteúdo necessário (texto, imagens, logótipos) de forma atempada.",
+                    "access": "Conceder os direitos de acesso necessários (alojamento, chaves API, registo de domínio) exigidos para o projeto.",
+                    "review": "Rever os entregáveis e fornecer feedback no prazo de <strong>5 dias úteis</strong>. Se nenhum feedback for recebido dentro deste período, o entregável é considerado aceite."
+                }
+            },
+            "pricing": {
+                "title": "5. Preços e Termos de Pagamento",
+                "projectServices": {
+                    "title": "5.1 Serviços de Projeto",
+                    "text": "Salvo acordo em contrário na oferta individual, aplicam-se os seguintes termos de pagamento:",
+                    "small": {
+                        "title": "Pequenos Projetos",
+                        "subtitle": "Até CHF 2,500",
+                        "text": "100% da taxa do projeto é devida imediatamente após a conclusão do contrato."
+                    },
+                    "standard": {
+                        "title": "Projetos Padrão e Grandes",
+                        "subtitle": "Acima de CHF 2,500",
+                        "deposit": "50% Depósito: Devido imediatamente para reservar recursos.",
+                        "final": "50% Pagamento Final: Devido após a conclusão/entrega."
+                    },
+                    "terms": "As faturas são pagáveis no prazo de 20 dias líquidos."
+                },
+                "recurring": {
+                    "title": "5.2 Serviços Recorrentes",
+                    "text": "As taxas para manutenção contínua ou componentes SaaS (por exemplo, alojamento de Chatbot) são faturadas mensalmente ou anualmente com antecedência. O período de cancelamento para serviços recorrentes é de 30 dias até ao final do mês, a menos que tenha sido acordado um prazo mínimo de contrato."
+                }
+            },
+            "ip": {
+                "title": "6. Propriedade Intelectual e Direitos de Uso",
+                "list": {
+                    "rights": "Após o pagamento integral da taxa acordada, o Cliente recebe os direitos de uso do software/website criado.",
+                    "reuse": "O Contratado reserva-se o direito de reutilizar módulos de código genéricos, bibliotecas e padrões de design desenvolvidos durante o projeto para outros clientes (prática padrão de engenharia de software).",
+                    "guarantee": "O Cliente garante que todos os materiais fornecidos ao Contratado (imagens, textos) não violam direitos de terceiros."
+                }
+            },
+            "ai": {
+                "title": "7. Disposições Específicas para Serviços de IA",
+                "text": "O Cliente reconhece que os serviços que envolvem Inteligência Artificial (IA) (por exemplo, Chatbots, sistemas RAG, Agentes de Voz) dependem de fornecedores terceiros (por exemplo, OpenAI, Anthropic, Retell AI).",
+                "accuracy": {
+                    "label": "Precisão:",
+                    "text": "O Contratado não pode garantir que os resultados da IA sejam 100% precisos. O Cliente é responsável por verificar informações críticas geradas pela IA."
+                },
+                "availability": {
+                    "label": "Disponibilidade:",
+                    "text": "O Contratado não é responsável por interrupções de serviço causadas por falhas de API de terceiros (por exemplo, se o ChatGPT estiver em baixo)."
+                },
+                "costs": {
+                    "label": "Custos:",
+                    "text": "Salvo se estritamente incluído numa taxa fixa, os custos variáveis de utilização da API (utilização de tokens) podem ser faturados ao Cliente ou pagos diretamente pelo Cliente ao fornecedor."
+                }
+            },
+            "warranty": {
+                "title": "8. Garantia e Responsabilidade",
+                "warranty": {
+                    "title": "8.1 Garantia",
+                    "text": "O Contratado garante que o software/website está funcional e livre de defeitos críticos no momento da aceitação. O período de garantia é de 3 meses a partir da entrega.",
+                    "note": "A garantia não cobre defeitos causados por atualizações de terceiros (por exemplo, uma atualização de plugin WordPress que danifique o site) ou alterações não autorizadas pelo Cliente."
+                },
+                "liability": {
+                    "title": "8.2 Responsabilidade",
+                    "text": "Na medida do permitido pela lei suíça, a responsabilidade do Contratado limita-se a dolo e negligência grave. A responsabilidade por negligência ligeira, danos indiretos ou danos consequenciais (por exemplo, perda de lucro, perda de dados) é excluída.",
+                    "note": "O Contratado não é responsável por violações de privacidade de dados causadas pelo uso indevido das ferramentas fornecidas pelo Cliente (por exemplo, inserir dados de pacientes num campo não seguro)."
+                }
+            },
+            "dataProtection": {
+                "title": "9. Proteção de Dados e Confidencialidade",
+                "text": "Ambas as partes concordam em tratar todos os segredos comerciais e informações confidenciais obtidos durante a relação comercial como estritamente confidenciais. O Contratado processa dados pessoais de acordo com a Lei Federal Suíça sobre Proteção de Dados (nDSG)."
+            },
+            "final": {
+                "title": "10. Disposições Finais",
+                "severability": {
+                    "title": "Divisibilidade",
+                    "text": "Se disposições individuais destes TCG forem inválidas, a validade das restantes disposições permanecerá inalterada."
+                },
+                "jurisdiction": {
+                    "title": "Local de Jurisdição",
+                    "text": "O local exclusivo de jurisdição para todos os litígios decorrentes deste contrato é Zurique, Suíça."
+                },
+                "law": {
+                    "title": "Lei Aplicável",
+                    "text": "Aplica-se exclusivamente a lei suíça."
+                }
+            }
+        }
+    }
+}

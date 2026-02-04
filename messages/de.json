@@ -1,0 +1,604 @@
+{
+    "Navigation": {
+        "home": "Startseite",
+        "services": "Dienstleistungen",
+        "portfolio": "Portfolio",
+        "contact": "Kontakt",
+        "insights": "Einblicke",
+        "about": "Über uns"
+    },
+    "Packages": {
+        "starter": {
+            "name": "Starter",
+            "priceDisplay": "CHF 850",
+            "description": "Perfekte Grundlage, egal ob Sie eine einzelne Landingpage oder eine komplette 5-seitige Website benötigen.",
+            "target": "Neues Geschäft mit bestehender Marke",
+            "features": {
+                "0": "Einzelne benutzerdefinierte Landingpage",
+                "1": "Mobil-responsiv",
+                "2": "Grundlegendes SEO-Setup",
+                "3": "Kontaktformular",
+                "4": "1 Überarbeitungsrunde"
+            }
+        },
+        "starterPlus": {
+            "name": "Starter Plus",
+            "priceDisplay": "CHF 1,400",
+            "description": "Das komplette Startpaket: eine professionelle Website plus Markenidentitätsdesign (Logo, Farbpalette, Typografie).",
+            "target": "Neugeschäft mit Branding-Bedarf",
+            "features": {
+                "0": "Professionelle 5-seitige Website",
+                "1": "Volle Markenidentität (Logo, Farben)",
+                "2": "Mobil-responsiv & schnell",
+                "3": "Grundlegendes SEO-Setup",
+                "4": "Social-Media-Vorlagen"
+            }
+        },
+        "businessPro": {
+            "name": "Business Pro",
+            "priceDisplay": "CHF 2,000",
+            "description": "Für wachsende Unternehmen mit Bedarf an erweiterten Funktionen: CMS, Blog, Buchungssysteme oder Mehrsprachigkeit.",
+            "target": "Etablierte KMUs",
+            "features": {
+                "0": "Erweitertes CMS (Content Management System)",
+                "1": "Blog- oder Portfolio-Bereich",
+                "2": "Bereit für Mehrsprachigkeit",
+                "3": "Google Analytics Integration",
+                "4": "Priorisierter Support"
+            }
+        },
+        "landingPage": {
+            "name": "Landing Page",
+            "priceDisplay": "CHF 600",
+            "description": "Hochkonvertierende Einzelseite für Marketingkampagnen, Produkteinführungen oder Event-Registrierungen.",
+            "target": "Kampagnen / Launches",
+            "features": {
+                "0": "Hochkonvertierende Struktur",
+                "1": "Bereit für A/B-Tests",
+                "2": "Schnelle Ladezeit",
+                "3": "Integration zur Lead-Erfassung",
+                "4": "Analytics-Setup"
+            }
+        },
+        "logoOnly": {
+            "name": "Nur Logo",
+            "priceDisplay": "CHF 350",
+            "description": "Individuelles Logodesign, um Ihrem Unternehmen ein professionelles Gesicht zu geben. Inklusive aller Formate.",
+            "target": "Eigenständiges Branding",
+            "features": {
+                "0": "Einzigartige Logokonzepte",
+                "1": "Vektordateien (AI, EPS, SVG, PDF)",
+                "2": "Volle Eigentumsrechte",
+                "3": "Definition der Farbpalette",
+                "4": "Nutzungsrichtlinien"
+            }
+        },
+        "fullBrandKit": {
+            "name": "Volles Marken-Kit",
+            "priceDisplay": "CHF 650",
+            "description": "Umfassendes Branding: Logo, Visitenkarten, Briefkopf und Social-Media-Vorlagen für einen einheitlichen Look.",
+            "target": "Komplettes Identitätspaket",
+            "features": {
+                "0": "Logodesign & Variationen",
+                "1": "Visitenkartendesign",
+                "2": "Briefkopf & E-Mail-Signatur",
+                "3": "Social-Media-Profil-Kit",
+                "4": "Marken-Styleguide"
+            }
+        },
+        "payment": {
+            "onetime": "Einmalig",
+            "3months": "3 Monate",
+            "6months": "6 Monate",
+            "monthly": "Monatlich",
+            "total": "Gesamt",
+            "estimatedTotal": "Geschätzte Gesamtsumme",
+            "requestQuote": "Angebot anfordern",
+            "disclaimer": "* Endpreis kann je nach Projektumfang variieren"
+        }
+    },
+    "BuilderServices": {
+        "website": {
+            "name": "Professionelle Website",
+            "description": "Maßgeschneiderte, leistungsstarke Website",
+            "addOns": {
+                "10pages": {
+                    "name": "10+ Seiten",
+                    "description": "Große Website mit vielen Bereichen"
+                },
+                "cms": {
+                    "name": "CMS + Blog",
+                    "description": "Inhalte verwalten & Artikel"
+                },
+                "multilang": {
+                    "name": "Mehrsprachigkeit",
+                    "description": "Globale Zielgruppen erreichen"
+                },
+                "booking": {
+                    "name": "Buchungssystem",
+                    "description": "Vollständig angepasst"
+                },
+                "chatbot": {
+                    "name": "KI-Chatbot",
+                    "description": "Automatisierter 24/7 Support"
+                },
+                "ecommerce": {
+                    "name": "E-Commerce (Basis)",
+                    "description": "Produkte online verkaufen"
+                }
+            }
+        },
+        "landing": {
+            "name": "Landing Page",
+            "description": "Hochkonvertierende Marketingseite",
+            "addOns": {
+                "newsletter": {
+                    "name": "Newsletter-Integration",
+                    "description": "Verbindung zu Mailchimp, ConvertKit"
+                },
+                "multilang": {
+                    "name": "Mehrsprachigkeit",
+                    "description": "Globale Zielgruppen erreichen"
+                },
+                "stripe": {
+                    "name": "Stripe-Zahlungs-Button",
+                    "description": "Zahlungen direkt akzeptieren"
+                }
+            }
+        },
+        "automation": {
+            "name": "KI-Automatisierung",
+            "description": "Beratung, Systemdesign & Einrichtung",
+            "addOns": {
+                "chatbot": {
+                    "name": "KI-Chatbot",
+                    "description": "24/7 Kundensupport"
+                },
+                "rag": {
+                    "name": "Wissensdatenbank (RAG)",
+                    "description": "KI auf Ihren Dokumenten trainieren"
+                },
+                "voice": {
+                    "name": "Sprach-Agent",
+                    "description": "Telefonanruf-Automatisierung"
+                },
+                "email": {
+                    "name": "E-Mail-Automatisierung",
+                    "description": "Smarte E-Mail-Workflows"
+                }
+            }
+        },
+        "branding": {
+            "name": "Markenidentität",
+            "description": "Logo & visuelles Identitätsdesign",
+            "addOns": {
+                "brandkit": {
+                    "name": "Volles Marken-Kit",
+                    "description": "Komplettes Identitätspaket"
+                },
+                "social": {
+                    "name": "Social-Media-Vorlagen",
+                    "description": "5 Post + 3 Story Vorlagen"
+                },
+                "print": {
+                    "name": "Druckmaterialien",
+                    "description": "Visitenkarten, Briefköpfe"
+                }
+            }
+        },
+        "webapp": {
+            "name": "Web-Applikation",
+            "description": "Responsive App + Basis-Auth",
+            "addOns": {
+                "advancedauth": {
+                    "name": "Erweiterte Auth",
+                    "description": "Rollen, Berechtigungen, OAuth"
+                },
+                "api": {
+                    "name": "API-Entwicklung",
+                    "description": "Individuelle API-Endpunkte"
+                },
+                "dashboard": {
+                    "name": "Admin-Dashboard",
+                    "description": "Daten, Nutzer, Einstellungen verwalten"
+                },
+                "ecommerce": {
+                    "name": "E-Commerce",
+                    "description": "Warenkorb, Kasse, Zahlungen"
+                }
+            }
+        },
+        "notes": {
+            "monthlyCost": "Web-Applikationen erfordern laufende Wartung. Mindest-Supportpaket: CHF 89/Monat",
+            "hasMonthlyNote": "KI-Dienste haben laufende monatliche Kosten je nach Nutzung. Wir besprechen dies in der Beratung."
+        }
+    },
+    "Hero": {
+        "title1": "Websites & Automatisierung",
+        "title2": "für Dienstleistungsunternehmen",
+        "subtitle": "Wir helfen kleinen und mittleren Unternehmen, mehr Leads zu erhalten, die Verwaltung zu automatisieren und ohne Komplexität zu skalieren.",
+        "cta": "Mit mir sprechen"
+    },
+    "ServicesSection": {
+        "title": "Unsere Expertise",
+        "subtitle": "Von Webentwicklung bis intelligenter Automatisierung bieten wir durchgängige digitale Lösungen.",
+        "items": {
+            "web": {
+                "title": "Professionelle Websites",
+                "description": "Leistungsstarke Websites, die Ihre Marke perfekt repräsentieren."
+            },
+            "marketing": {
+                "title": "Landing Pages",
+                "description": "Auf Conversion fokussierte Seiten, um Besucher in Leads zu verwandeln."
+            },
+            "automation": {
+                "title": "Automatisierungen",
+                "description": "Optimieren Sie Ihre Abläufe und sparen Sie Stunden manueller Arbeit."
+            },
+            "ecommerce": {
+                "title": "E-Commerce",
+                "description": "Maßgeschneiderte Online-Shops, die das Kaufen einfach und sicher machen."
+            },
+            "apps": {
+                "title": "Web-Apps",
+                "description": "Kundenspezifische Softwarelösungen, die auf Ihre einzigartigen Geschäftsanforderungen zugeschnitten sind."
+            }
+        },
+        "getStarted": "Loslegen",
+        "cta": "Alle Dienstleistungen sehen"
+    },
+    "CTASection": {
+        "title": "Bereit, Ihr Geschäft zu skalieren?",
+        "subtitle": "Lassen Sie uns gemeinsam etwas Außergewöhnliches bauen. Buchen Sie noch heute Ihre kostenlose Beratung.",
+        "button": "Projekt starten"
+    },
+    "Portfolio": {
+        "badge": "AUSGEWÄHLTE PROJEKTE",
+        "title": "Gebaut für Wachstum",
+        "subtitle": "Eine Auswahl an hochwirksamen Websites und Anwendungen, entwickelt für Leistung und Skalierung.",
+        "button": "Ganzes Portfolio ansehen"
+    },
+    "Process": {
+        "badge": "Der Arbeitsablauf",
+        "titlePart1": "Vom Konzept zur",
+        "titlePart2": "Realität",
+        "description": "Ein transparenter, optimierter Prozess für Geschwindigkeit und Präzision.",
+        "steps": {
+            "1": {
+                "title": "Discovery Call",
+                "description": "Wir analysieren Ihre Ziele genau, um sicherzustellen, dass wir der perfekte Partner sind."
+            },
+            "2": {
+                "title": "Strategisches Angebot",
+                "description": "Sie erhalten einen umfassenden Fahrplan und ein Festpreisangebot."
+            },
+            "3": {
+                "title": "Aufbau & Automatisierung",
+                "description": "Wir bauen Ihre maßgeschneiderte Lösung mit Echtzeit-Fortschrittsverfolgung."
+            },
+            "4": {
+                "title": "Launch & Support",
+                "description": "Wir implementieren Ihr System und bieten laufende Wartung."
+            }
+        }
+    },
+    "Footer": {
+        "links": {
+            "impressum": "Impressum",
+            "privacy": "Datenschutzerklärung",
+            "terms": "Nutzungsbedingungen"
+        },
+        "copyright": "Alle Rechte vorbehalten."
+    },
+    "AboutPage": {
+        "hero": {
+            "badge": "Über Uns",
+            "title": "Innovation, die Ergebnisse Liefert",
+            "description": "Wir sind eine Schweizer Technologieagentur, spezialisiert auf KI-Agenten, Webentwicklung und automatisierte Lösungen. Wir glauben, dass Technologie den Menschen dienen sollte, nicht umgekehrt."
+        },
+        "philosophy": {
+            "title": "Unsere Philosophie",
+            "description": "Wir sind eine Schweizer Technologieagentur, spezialisiert auf KI-Agenten, Webentwicklung und automatisierte Lösungen. Wir glauben, dass Technologie den Menschen dienen sollte, nicht umgekehrt.",
+            "stats": {
+                "uptime": "Uptime Garantie",
+                "delivery": "Schnellere Lieferung",
+                "satisfaction": "Kundenzufriedenheit",
+                "coffees": "Kaffees / Monat"
+            }
+        },
+        "founder": {
+            "title": "Über den Gründer",
+            "description1": "Ich bin Full Stack Entwickler und der Gründer von <span class='text-cyan-400 font-semibold'>Lopes2Tech</span>, spezialisiert auf leistungsstarke Websites, intelligente Automatisierungen und KI-gesteuerte Webanwendungen. Mit Sitz in Zürich, aber ursprünglich aus Portugal (wo <em>Bacalhau à Brás</em> und <em>Pastéis de Nata</em> eine Religion sind), kombiniere ich technische Präzision mit einer tiefen Leidenschaft für digitale Innovation.",
+            "description2": "Mein beruflicher Charakter ist definiert durch einen unermüdlichen Drang, komplexe Probleme zu lösen. Ich schreibe nicht nur Code; ich architekte digitale Ökosysteme. Von skalierbaren SaaS-Plattformen bis zu autonomen KI-Agenten nutze ich einen modernen Stack—einschließlich <span class='text-white'>Next.js, TypeScript, Python und Supabase</span>—um Lösungen zu liefern, die so robust wie schön sind.",
+            "quote": "Ich vereinfache die digitale Landschaft für Unternehmen, indem ich maßgeschneiderte Automatisierungen und Web-Apps baue, die für Sie arbeiten, während Sie ein Pastél de Nata genießen.",
+            "connect": "Verbinden Sie sich mit mir"
+        }
+    },
+    "ContactPage": {
+        "hero": {
+            "badge": "Kontaktieren Sie uns",
+            "titlePart1": "Lassen Sie uns etwas",
+            "titlePart2": "Außergewöhnliches Bauen",
+            "description": "Mit Sitz in Zürich, liefern wir digitale Exzellenz in die Welt."
+        },
+        "form": {
+            "title": "Gespräch beginnen",
+            "subtitle": "Erzählen Sie mir von Ihrem Projekt. Ich antworte normalerweise innerhalb von 24 Stunden.",
+            "labels": {
+                "name": "Name",
+                "email": "E-Mail",
+                "company": "Firma (Optional)",
+                "phone": "Telefon (Optional)",
+                "message": "Wie kann ich Ihnen helfen?"
+            },
+            "errors": {
+                "nameRequired": "Name ist erforderlich",
+                "emailRequired": "E-Mail ist erforderlich",
+                "emailInvalid": "Bitte geben Sie eine gültige E-Mail ein",
+                "messageRequired": "Nachricht ist erforderlich",
+                "general": "Etwas ist schief gelaufen. Bitte versuchen Sie es erneut oder mailen Sie mir direkt."
+            },
+            "button": "Nachricht Senden",
+            "sending": "Senden...",
+            "success": {
+                "title": "Nachricht Gesendet!",
+                "message": "Danke für Ihre Nachricht. Ich werde mich in Kürze bei Ihnen melden.",
+                "button": "Weitere Senden"
+            }
+        },
+        "location": "Zürich, Schweiz"
+    },
+    "ImpressumPage": {
+        "title": "Impressum",
+        "subtitle": "Rechtliche Hinweise",
+        "backToHome": "Zurück zur Startseite",
+        "companyInfo": {
+            "title": "Unternehmensangaben",
+            "name": "Lopes2Tech",
+            "type": "Einzelunternehmung",
+            "representedBy": "Vertreten durch",
+            "representativeName": "Paulo Lopes"
+        },
+        "contact": {
+            "title": "Kontakt",
+            "emailLabel": "E-Mail",
+            "websiteLabel": "Webseite"
+        },
+        "disclaimer": {
+            "title": "Haftungsausschluss (Disclaimer)",
+            "liabilityContent": {
+                "title": "Haftung für Inhalte",
+                "text": "Der Autor übernimmt keinerlei Gewähr hinsichtlich der inhaltlichen Richtigkeit, Genauigkeit, Aktualität, Zuverlässigkeit und Vollständigkeit der Informationen. Haftungsansprüche gegen den Autor wegen Schäden materieller oder immaterieller Art, welche aus dem Zugriff oder der Nutzung bzw. Nichtnutzung der veröffentlichten Informationen, durch Missbrauch der Verbindung oder durch technische Störungen entstanden sind, werden ausgeschlossen. Alle Angebote sind unverbindlich. Der Autor behält es sich ausdrücklich vor, Teile der Seiten oder das gesamte Angebot ohne gesonderte Ankündigung zu verändern, zu ergänzen, zu löschen oder die Veröffentlichung zeitweise oder endgültig einzustellen."
+            },
+            "liabilityLinks": {
+                "title": "Haftung für Links",
+                "text": "Verweise und Links auf Webseiten Dritter liegen ausserhalb unseres Verantwortungsbereichs. Es wird jegliche Verantwortung für solche Webseiten abgelehnt. Der Zugriff und die Nutzung solcher Webseiten erfolgen auf eigene Gefahr des Nutzers oder der Nutzerin."
+            }
+        },
+        "copyright": {
+            "title": "Urheberrechte",
+            "text": "Die Urheber- und alle anderen Rechte an Inhalten, Bildern, Fotos oder anderen Dateien auf der Website gehören ausschliesslich <strong class='text-white'>Paulo Lopes / Lopes2Tech</strong> oder den speziell genannten Rechtsinhabern. Für die Reproduktion jeglicher Elemente ist die schriftliche Zustimmung der Urheberrechtsträger im Voraus einzuholen."
+        }
+    },
+    "PrivacyPolicyPage": {
+        "title": "Datenschutzerklärung",
+        "backToHome": "Zurück zur Startseite",
+        "lastUpdated": "Zuletzt aktualisiert:",
+        "sections": {
+            "general": {
+                "title": "1. Allgemeine Informationen",
+                "text1": "Bei Lopes2Tech nehmen wir den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften – insbesondere dem Schweizerischen Bundesgesetz über den Datenschutz (nDSG) und, soweit anwendbar, der EU-Datenschutz-Grundverordnung (DSGVO).",
+                "text2": "Diese Datenschutzerklärung erläutert, wie wir Ihre Daten erheben, verwenden und schützen, wenn Sie unsere Website besuchen oder unsere Dienste nutzen."
+            },
+            "controller": {
+                "title": "2. Verantwortliche Stelle",
+                "text": "Verantwortlich für die Datenverarbeitung auf dieser Website ist:"
+            },
+            "collection": {
+                "title": "3. Datenerfassung und -verarbeitung",
+                "serverLogs": {
+                    "title": "3.1 Server-Log-Dateien",
+                    "text": "Beim Zugriff auf unsere Website erhebt und speichert der Provider der Seiten automatisch Informationen in so genannten Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind:",
+                    "list": {
+                        "browser": "Browsertyp und Browserversion",
+                        "os": "Verwendetes Betriebssystem",
+                        "referrer": "Referrer URL",
+                        "host": "Hostname des zugreifenden Rechners",
+                        "time": "Uhrzeit der Serveranfrage",
+                        "ip": "IP-Adresse"
+                    },
+                    "note": "Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen. Die Verarbeitung erfolgt auf Grundlage unseres berechtigten Interesses an der technisch fehlerfreien Darstellung und der Optimierung unserer Website."
+                },
+                "contact": {
+                    "title": "3.2 Kontaktformular und E-Mail",
+                    "text": "Wenn Sie uns per Kontaktformular oder E-Mail Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten (Name, E-Mail, Telefon, Firma/Praxis) zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter."
+                },
+                "booking": {
+                    "title": "3.3 Terminbuchung (Cal.com)",
+                    "text": "Wir nutzen den Dienst Cal.com zur Online-Terminbuchung. Wenn Sie einen Termin buchen, werden die von Ihnen eingegebenen Daten (Name, E-Mail, Telefon, Termingrund) durch Cal.com verarbeitet.",
+                    "list": {
+                        "provider": "Anbieter: Cal.com, Inc. (USA/Global)",
+                        "purpose": "Zweck: Terminplanung und Kalenderverwaltung"
+                    },
+                    "note": "Bitte beachten Sie die Datenschutzerklärung von Cal.com für Details zur Datenverarbeitung."
+                },
+                "chatbot": {
+                    "title": "3.4 AI Chatbot Assistent",
+                    "text": "Unsere Website nutzt einen KI-gestützten Chatbot zur Unterstützung bei Anfragen. Wenn Sie mit dem Chat interagieren:",
+                    "list": {
+                        "process": "Wird der eingegebene Text verarbeitet, um eine Antwort zu generieren.",
+                        "warning": "Wichtig: Geben Sie keine sensiblen Gesundheitsdaten (Patientennamen, Krankheitsbilder) in den öffentlichen Website-Chatbot ein.",
+                        "providers": "Die Daten können von KI-Drittanbietern (z.B. OpenAI, Anthropic) ausschliesslich zum Zweck der Antwortgenerierung verarbeitet werden."
+                    }
+                }
+            },
+            "cookies": {
+                "title": "4. Cookies",
+                "text": "Unsere Website verwendet teilweise so genannte Cookies. Das sind kleine Textdateien, die auf Ihrem Endgerät abgelegt werden.",
+                "essential": {
+                    "title": "Notwendige Cookies",
+                    "text": "Erforderlich für den technischen Betrieb der Website."
+                },
+                "analytical": {
+                    "title": "Analytische Cookies",
+                    "text": "Helfen uns zu verstehen, wie Besucher die Seite nutzen."
+                },
+                "note": "Sie können Ihren Browser so einstellen, dass Cookies abgelehnt werden, was jedoch die Funktionalität der Website einschränken kann."
+            },
+            "analytics": {
+                "title": "5. Analyse-Tools und Tools von Drittanbietern",
+                "text": "Zur Verbesserung unseres Angebots nutzen wir unter Umständen Analysetools (z.B. Google Analytics oder Vercel Analytics). Diese Tools verwenden Cookies zur Analyse des Nutzerverhaltens. Die IP-Adressen werden in der Regel vor der Verarbeitung anonymisiert. Sie können dieser Erfassung über unseren Cookie-Banner oder Ihre Browser-Einstellungen widersprechen."
+            },
+            "security": {
+                "title": "6. Datensicherheit (SSL/TLS)",
+                "text": "Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel Bestellungen oder Anfragen, die Sie an uns senden, eine SSL-bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von 'http://' auf 'https://' wechselt und an dem Schloss-Symbol in Ihrer Browserzeile."
+            },
+            "transfer": {
+                "title": "7. Datenweitergabe an Dritte und ins Ausland",
+                "text": "Wir geben Ihre Daten nur an Dritte weiter, wenn dies zur Vertragserfüllung notwendig ist (z.B. Hosting, Terminplanungs-Tools) oder Sie eingewilligt haben. Einige dieser Dienstleister können sich ausserhalb der Schweiz befinden (z.B. USA). In diesen Fällen stellen wir sicher, dass angemessene Datenschutzgarantien (wie Standardvertragsklauseln) bestehen, um den Anforderungen des Schweizer nDSG und der DSGVO zu genügen."
+            },
+            "rights": {
+                "title": "8. Ihre Rechte",
+                "text": "Sie haben das Recht:",
+                "list": {
+                    "info": "Jederzeit Auskunft über Ihre gespeicherten personenbezogenen Daten zu verlangen.",
+                    "correction": "Die Berichtigung unrichtiger Daten zu verlangen.",
+                    "deletion": "Die Löschung Ihrer Daten zu verlangen (Recht auf Vergessenwerden), sofern keine gesetzlichen Aufbewahrungspflichten bestehen.",
+                    "revocation": "Ihre Einwilligung zur Datenverarbeitung jederzeit zu widerrufen."
+                },
+                "contact": "Um diese Rechte auszuüben, wenden Sie sich bitte direkt an uns unter"
+            },
+            "changes": {
+                "title": "9. Änderungen dieser Datenschutzerklärung",
+                "text": "Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen in der Datenschutzerklärung umzusetzen (z.B. bei der Einführung neuer Services). Für Ihren erneuten Besuch gilt dann die neue Datenschutzerklärung."
+            }
+        }
+    },
+    "TermsOfServicePage": {
+        "title": "Allgemeine Geschäftsbedingungen (AGB)",
+        "effectiveDate": "Gültig ab: 11. Dezember 2025",
+        "lastUpdated": "Zuletzt aktualisiert:",
+        "backToHome": "Zurück zur Startseite",
+        "sections": {
+            "scope": {
+                "title": "1. Geltungsbereich",
+                "text": "Diese Allgemeinen Geschäftsbedingungen (nachfolgend 'AGB') gelten für alle Geschäftsbeziehungen zwischen <strong>Lopes2Tech / Paulo Lopes</strong> (nachfolgend 'Auftragnehmer') und seinen Kunden (nachfolgend 'Auftraggeber'). Sie gelten für alle erbrachten Dienstleistungen, einschliesslich, aber nicht beschränkt auf Webentwicklung, Software-Engineering, KI-Automatisierungen und Beratung."
+            },
+            "subject": {
+                "title": "2. Vertragsgegenstand",
+                "text": "Der Auftragnehmer erbringt Dienstleistungen im Bereich IT und Automation. Der konkrete Leistungsumfang ergibt sich aus der jeweiligen individuellen Offerte oder dem Dienstleistungsvertrag.",
+                "services": {
+                    "web": {
+                        "title": "Web & Software",
+                        "description": "Entwicklung von Webseiten, Applikationen und Dashboards."
+                    },
+                    "ai": {
+                        "title": "AI & Automation",
+                        "description": "Implementierung von Chatbots, Voice Agents und Workflow-Automatisierungen."
+                    },
+                    "maintenance": {
+                        "title": "Wartung",
+                        "description": "Laufende Betreuung und Hosting-Dienstleistungen."
+                    }
+                }
+            },
+            "conclusion": {
+                "title": "3. Vertragsabschluss",
+                "text": "Offerten des Auftragnehmers sind 30 Tage gültig, sofern nicht anders vermerkt. Der Vertrag kommt zustande durch:",
+                "list": {
+                    "acceptance": "Die schriftliche Annahme der Offerte durch den Auftraggeber (E-Mail ausreichend).",
+                    "deposit": "Die Leistung einer Anzahlung.",
+                    "commencement": "Die Aufnahme der tatsächlichen Leistungserbringung durch den Auftragnehmer mit Wissen des Auftraggebers."
+                }
+            },
+            "obligations": {
+                "title": "4. Mitwirkungspflichten des Auftraggebers",
+                "text": "Der Auftraggeber verpflichtet sich:",
+                "list": {
+                    "content": "Alle notwendigen Inhalte (Texte, Bilder, Logos) zeitgerecht zur Verfügung zu stellen.",
+                    "access": "Die für das Projekt notwendigen Zugriffsrechte (Hosting, API-Keys, Domain-Registrar) zu gewähren.",
+                    "review": "Arbeitsergebnisse zu prüfen und Feedback innerhalb von <strong>5 Arbeitstagen</strong> zu geben. Erfolgt innerhalb dieser Frist keine Rückmeldung, gilt das Arbeitsergebnis als abgenommen."
+                }
+            },
+            "pricing": {
+                "title": "5. Preise und Zahlungsbedingungen",
+                "projectServices": {
+                    "title": "5.1 Projektdienstleistungen",
+                    "text": "Sofern in der individuellen Offerte nicht anders vereinbart, gelten folgende Zahlungsbedingungen:",
+                    "small": {
+                        "title": "Kleinprojekte",
+                        "subtitle": "Bis CHF 2'500",
+                        "text": "100% des Projekthonorars sind sofort bei Vertragsabschluss fällig."
+                    },
+                    "standard": {
+                        "title": "Standard- & Grossprojekte",
+                        "subtitle": "Über CHF 2'500",
+                        "deposit": "50% Anzahlung: Sofort fällig zur Ressourcenreservierung.",
+                        "final": "50% Schlusszahlung: Fällig bei Fertigstellung/Übergabe."
+                    },
+                    "terms": "Rechnungen sind zahlbar innert 20 Tagen netto."
+                },
+                "recurring": {
+                    "title": "5.2 Wiederkehrende Leistungen",
+                    "text": "Entgelte für laufende Wartung oder SaaS-Komponenten (z.B. Chatbot-Hosting) werden monatlich oder jährlich im Voraus verrechnet. Die Kündigungsfrist für wiederkehrende Leistungen beträgt 30 Tage auf Monatsende, sofern keine Mindestvertragsdauer vereinbart wurde."
+                }
+            },
+            "ip": {
+                "title": "6. Urheberrecht & Nutzungsrechte",
+                "list": {
+                    "rights": "Mit vollständiger Bezahlung des vereinbarten Honorars erhält der Auftraggeber die Nutzungsrechte an der erstellten Software/Webseite.",
+                    "reuse": "Der Auftragnehmer behält das Recht, im Rahmen des Projekts entwickelte generische Code-Module, Bibliotheken und Design-Patterns für andere Kunden wiederzuverwenden (branchenübliche Praxis).",
+                    "guarantee": "Der Auftraggeber garantiert, dass alle dem Auftragnehmer überlassenen Materialien (Bilder, Texte) keine Rechte Dritter verletzen."
+                }
+            },
+            "ai": {
+                "title": "7. Spezielle Bestimmungen für KI-Dienste",
+                "text": "Der Auftraggeber nimmt zur Kenntnis, dass Dienstleistungen mit Künstlicher Intelligenz (KI) (z.B. Chatbots, RAG-Systeme, Voice Agents) von Drittanbietern abhängen (z.B. OpenAI, Anthropic, Retell AI).",
+                "accuracy": {
+                    "label": "Genauigkeit:",
+                    "text": "Der Auftragnehmer kann keine 100%ige Korrektheit von KI-Outputs garantieren. Der Auftraggeber ist für die Überprüfung kritischer Informationen verantwortlich."
+                },
+                "availability": {
+                    "label": "Verfügbarkeit:",
+                    "text": "Der Auftragnehmer haftet nicht für Serviceunterbrüche durch Ausfälle der Drittanbieter-APIs (z.B. wenn ChatGPT down ist)."
+                },
+                "costs": {
+                    "label": "Kosten:",
+                    "text": "Sofern nicht strikt in einer Pauschale inkludiert, können variable API-Nutzungskosten (Token-Verbrauch) dem Auftraggeber weiterverrechnet oder direkt vom Auftraggeber an den Provider gezahlt werden."
+                }
+            },
+            "warranty": {
+                "title": "8. Gewährleistung und Haftung",
+                "warranty": {
+                    "title": "8.1 Gewährleistung",
+                    "text": "Der Auftragnehmer gewährleistet, dass die Software/Webseite zum Zeitpunkt der Abnahme funktionstüchtig und frei von kritischen Mängeln ist. Die Gewährleistungsfrist beträgt 3 Monate ab Übergabe.",
+                    "note": "Die Gewährleistung deckt keine Mängel ab, die durch Updates Dritter (z.B. ein WordPress-Plugin-Update, das die Seite 'zerschiesst') oder durch unsachgemässe Änderungen des Auftraggebers entstehen."
+                },
+                "liability": {
+                    "title": "8.2 Haftung",
+                    "text": "Soweit gesetzlich zulässig, ist die Haftung des Auftragnehmers auf Vorsatz und grobe Fahrlässigkeit beschränkt. Die Haftung für leichte Fahrlässigkeit, indirekte Schäden oder Folgeschäden (z.B. entgangener Gewinn, Datenverlust) wird wegbedungen.",
+                    "note": "Der Auftragnehmer haftet nicht für Datenschutzverletzungen, die durch unsachgemässe Nutzung der bereitgestellten Tools durch den Auftraggeber entstehen (z.B. Eingabe von Patientendaten in ein nicht gesichertes Feld)."
+                }
+            },
+            "dataProtection": {
+                "title": "9. Datenschutz und Vertraulichkeit",
+                "text": "Beide Parteien verpflichten sich, alle im Rahmen der Geschäftsbeziehung erlangten Geschäftsgeheimnisse und vertraulichen Informationen streng vertraulich zu behandeln. Der Auftragnehmer bearbeitet Personendaten im Einklang mit dem Schweizer Datenschutzgesetz (nDSG)."
+            },
+            "final": {
+                "title": "10. Schlussbestimmungen",
+                "severability": {
+                    "title": "Salvatorische Klausel",
+                    "text": "Sollten einzelne Bestimmungen dieser AGB unwirksam sein, bleibt die Wirksamkeit der übrigen Bestimmungen davon unberührt."
+                },
+                "jurisdiction": {
+                    "title": "Gerichtsstand",
+                    "text": "Ausschliesslicher Gerichtsstand für alle Streitigkeiten aus diesem Vertrag ist Zürich, Schweiz."
+                },
+                "law": {
+                    "title": "Anwendbares Recht",
+                    "text": "Es gilt ausschliesslich Schweizer Recht."
+                }
+            }
+        }
+    }
+}

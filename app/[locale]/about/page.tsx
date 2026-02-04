@@ -7,8 +7,11 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CTA from "@/components/CTA";
 import { Linkedin, Twitter, Instagram, FileText } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function AboutPage() {
+    const t = useTranslations('AboutPage');
+
     return (
         <main className="min-h-screen bg-[#0f172a]">
             <Navbar />
@@ -35,7 +38,7 @@ export default function AboutPage() {
                         animate={{ opacity: 1, y: 0 }}
                         className="inline-block px-4 py-2 mb-6 text-sm font-semibold text-cyan-400 bg-cyan-400/10 border border-cyan-400/20 rounded-full backdrop-blur-sm"
                     >
-                        About Us
+                        {t('hero.badge')}
                     </motion.div>
 
                     <motion.h1
@@ -44,7 +47,7 @@ export default function AboutPage() {
                         transition={{ delay: 0.1 }}
                         className="text-5xl md:text-7xl font-extrabold mb-6 text-transparent bg-clip-text bg-gradient-to-br from-white to-slate-400 tracking-tight leading-[1.1]"
                     >
-                        Innovation That Drives Results
+                        {t('hero.title')}
                     </motion.h1>
 
                     <motion.p
@@ -53,7 +56,7 @@ export default function AboutPage() {
                         transition={{ delay: 0.2 }}
                         className="text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed"
                     >
-                        We are a Swiss-based technology agency specializing in AI agents, web development, and automated solutions. We believe technology should serve people, not the other way around.
+                        {t('hero.description')}
                     </motion.p>
                 </div>
             </section>
@@ -98,20 +101,20 @@ export default function AboutPage() {
                         className="text-center mb-16"
                     >
                         <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-                            Our Philosophy
+                            {t('philosophy.title')}
                         </h2>
                         <p className="text-lg text-slate-400 max-w-3xl mx-auto">
-                            We are a Swiss-based technology agency specializing in AI agents, web development, and automated solutions. We believe technology should serve people, not the other way around.
+                            {t('philosophy.description')}
                         </p>
                     </motion.div>
 
                     {/* Stats Grid */}
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                         {[
-                            { number: "99.9%", label: "Uptime Guarantee" },
-                            { number: "3x", label: "Faster Delivery" },
-                            { number: "100%", label: "Client Satisfaction" },
-                            { number: "150+", label: "Coffees / Month" }
+                            { number: "99.9%", label: t('philosophy.stats.uptime') },
+                            { number: "3x", label: t('philosophy.stats.delivery') },
+                            { number: "100%", label: t('philosophy.stats.satisfaction') },
+                            { number: "150+", label: t('philosophy.stats.coffees') }
                         ].map((stat, index) => (
                             <motion.div
                                 key={index}
@@ -211,15 +214,15 @@ export default function AboutPage() {
                         >
                             <div>
                                 <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                                    About the Founder
+                                    {t('founder.title')}
                                 </h2>
                                 <div className="space-y-4 text-lg text-slate-400 leading-relaxed">
-                                    <p>
-                                        I am a Full Stack Developer and the founder of <span className="text-cyan-400 font-semibold">Lopes2Tech</span>, specializing in high-performance websites, intelligent automations, and AI-driven web applications. Based in Zurich but originally from Portugal (where <em>Bacalhau à Brás</em> and <em>Pastéis de Nata</em> are a religion), I combine technical precision with a deep passion for digital innovation.
-                                    </p>
-                                    <p>
-                                        My professional character is defined by a relentless drive to solve complex problems. I don&apos;t just write code; I architect digital ecosystems. From scalable SaaS platforms to autonomous AI agents, I leverage a modern stack—including <span className="text-white">Next.js, TypeScript, Python, and Supabase</span>—to deliver solutions that are as robust as they are beautiful.
-                                    </p>
+                                    <p
+                                        dangerouslySetInnerHTML={{ __html: t.raw('founder.description1') }}
+                                    />
+                                    <p
+                                        dangerouslySetInnerHTML={{ __html: t.raw('founder.description2') }}
+                                    />
                                 </div>
                             </div>
 
@@ -227,13 +230,13 @@ export default function AboutPage() {
                             <div className="relative p-6 rounded-2xl bg-gradient-to-br from-cyan-400/10 to-purple-500/10 border border-cyan-400/20 backdrop-blur-sm">
                                 <div className="absolute top-4 left-4 text-6xl text-cyan-400/30 font-serif">&quot;</div>
                                 <p className="relative z-10 text-xl text-white font-medium italic pl-8">
-                                    I simplify the digital landscape for businesses, building custom automations and web apps that work for you while you enjoy a Pastél de Nata.
+                                    {t('founder.quote')}
                                 </p>
                             </div>
 
                             {/* Social Links */}
                             <div>
-                                <p className="text-sm text-slate-500 mb-4">Connect with me</p>
+                                <p className="text-sm text-slate-500 mb-4">{t('founder.connect')}</p>
                                 <div className="flex gap-4">
                                     <Link
                                         href="https://www.linkedin.com/in/pauloreizinho/"

@@ -3,13 +3,15 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Mail, Linkedin, Instagram, FileText } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function Footer() {
+    const t = useTranslations('Footer');
     const currentYear = new Date().getFullYear();
 
     return (
         <footer className="relative pt-16 pb-8 bg-[#0a0e27] text-white overflow-hidden text-center">
-            {/* Animated gradient overlay */}
+            {/* ... (background elements) */}
             <div
                 className="absolute inset-0 z-0 pointer-events-none opacity-60"
                 style={{
@@ -46,13 +48,13 @@ export default function Footer() {
 
                     {/* Navigation Links - Centered */}
                     <div className="flex flex-wrap justify-center gap-8 justify-self-center w-full">
-                        {['Impressum', 'Privacy Policy', 'Terms of Service'].map((item) => (
+                        {['impressum', 'privacy', 'terms'].map((key) => (
                             <Link
-                                key={item}
-                                href={`/${item.toLowerCase().replace(/ /g, '-')}`}
+                                key={key}
+                                href={`/${key === 'privacy' ? 'privacy-policy' : key === 'terms' ? 'terms-of-service' : key}`}
                                 className="relative text-white/85 text-[0.95rem] font-medium transition-all duration-300 hover:text-white hover:-translate-y-1 group"
                             >
-                                {item}
+                                {t(`links.${key}`)}
                                 <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-gradient-to-r from-cyan-400 to-purple-500 transition-all duration-300 group-hover:w-full" />
                             </Link>
                         ))}
@@ -88,7 +90,7 @@ export default function Footer() {
                     {/* Top Border */}
                     <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[60%] h-[1px] bg-gradient-to-r from-transparent via-white/20 to-transparent" />
                     <p className="text-white/60 text-sm tracking-wide">
-                        &copy; {currentYear} Lopes2Tech. All rights reserved.
+                        &copy; {currentYear} Lopes2Tech. {t('copyright')}
                     </p>
                 </div>
             </div>

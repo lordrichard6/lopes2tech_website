@@ -6,8 +6,10 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Mail, MapPin, Phone } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function ContactPage() {
+    const t = useTranslations('ContactPage');
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -22,13 +24,13 @@ export default function ContactPage() {
     const validateForm = () => {
         const newErrors: Record<string, string> = {};
 
-        if (!formData.name.trim()) newErrors.name = "Name is required";
+        if (!formData.name.trim()) newErrors.name = t('form.errors.nameRequired');
         if (!formData.email.trim()) {
-            newErrors.email = "Email is required";
+            newErrors.email = t('form.errors.emailRequired');
         } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-            newErrors.email = "Please enter a valid email";
+            newErrors.email = t('form.errors.emailInvalid');
         }
-        if (!formData.message.trim()) newErrors.message = "Message is required";
+        if (!formData.message.trim()) newErrors.message = t('form.errors.messageRequired');
 
         setErrors(newErrors);
         return Object.keys(newErrors).length === 0;
@@ -42,11 +44,31 @@ export default function ContactPage() {
         setIsSubmitting(true);
 
         try {
-            // TODO: Replace with actual API endpoint
-            await new Promise(resolve => setTimeout(resolve, 1500));
+            const platformUrl = process.env.NEXT_PUBLIC_PLATFORM_URL || 'http://localhost:3000';
+            const response = await fetch(`${platformUrl}/api/external/tickets`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'x-api-key': process.env.NEXT_PUBLIC_PLATFORM_API_SECRET || '',
+                },
+                body: JSON.stringify({
+                    name: formData.name,
+                    email: formData.email,
+                    company: formData.company,
+                    phone: formData.phone,
+                    message: formData.message,
+                    source: 'website_contact_form',
+                }),
+            });
+
+            if (!response.ok) {
+                throw new Error('Failed to submit contact form');
+            }
+
             setSubmitStatus("success");
             setFormData({ name: "", email: "", company: "", phone: "", message: "" });
         } catch (error) {
+            console.error('Contact form submission error:', error);
             setSubmitStatus("error");
         } finally {
             setIsSubmitting(false);
@@ -95,16 +117,16 @@ export default function ContactPage() {
                     >
                         <div className="inline-block px-4 py-2 mb-6 text-sm font-semibold text-cyan-400 bg-cyan-400/10 border border-cyan-400/20 rounded-full backdrop-blur-sm">
                             <Mail className="inline w-4 h-4 mr-2" />
-                            Get in Touch
+                            {t('hero.badge')}
                         </div>
                         <h1 className="text-5xl md:text-7xl font-extrabold mb-6 text-white">
-                            Let&apos;s Build Something{" "}
+                            {t('hero.titlePart1')}{" "}
                             <span className="text-transparent bg-clip-text bg-gradient-to-br from-cyan-400 to-purple-500">
-                                Extraordinary
+                                {t('hero.titlePart2')}
                             </span>
                         </h1>
                         <p className="text-xl text-slate-400 max-w-2xl mx-auto">
-                            Based in Zurich, delivering digital excellence to the world.
+                            {t('hero.description')}
                         </p>
                     </motion.header>
 
@@ -128,7 +150,7 @@ export default function ContactPage() {
                             <div className="absolute bottom-8 left-8">
                                 <div className="flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-md rounded-full border border-white/20">
                                     <MapPin className="w-4 h-4 text-cyan-400" />
-                                    <span className="text-white font-medium">Zurich, Switzerland</span>
+                                    <span className="text-white font-medium">{t('location')}</span>
                                 </div>
                             </div>
                         </div>
@@ -139,10 +161,10 @@ export default function ContactPage() {
                                 <>
                                     <div className="mb-8">
                                         <h2 className="text-3xl font-bold text-white mb-2">
-                                            Start a Conversation
+                                            {t('form.title')}
                                         </h2>
                                         <p className="text-slate-400">
-                                            Tell me about your project. I usually respond within 24 hours.
+                                            {t('form.subtitle')}
                                         </p>
                                     </div>
 
@@ -160,7 +182,7 @@ export default function ContactPage() {
                                                         } rounded-xl text-white placeholder-transparent focus:outline-none focus:border-cyan-400 transition-colors`}
                                                 />
                                                 <label className="absolute left-4 -top-2.5 px-1 text-sm text-slate-400 transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-slate-500 peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-cyan-400">
-                                                    Name
+                                                    {t('form.labels.name')}
                                                 </label>
                                                 {errors.name && (
                                                     <p className="mt-1 text-xs text-red-500">{errors.name}</p>
@@ -178,7 +200,7 @@ export default function ContactPage() {
                                                         } rounded-xl text-white placeholder-transparent focus:outline-none focus:border-cyan-400 transition-colors`}
                                                 />
                                                 <label className="absolute left-4 -top-2.5 px-1 text-sm text-slate-400 transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-slate-500 peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-cyan-400">
-                                                    Email
+                                                    {t('form.labels.email')}
                                                 </label>
                                                 {errors.email && (
                                                     <p className="mt-1 text-xs text-red-500">{errors.email}</p>
@@ -198,7 +220,7 @@ export default function ContactPage() {
                                                     className="peer w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-transparent focus:outline-none focus:border-cyan-400 transition-colors"
                                                 />
                                                 <label className="absolute left-4 -top-2.5 px-1 text-sm text-slate-400 transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-slate-500 peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-cyan-400">
-                                                    Company (Optional)
+                                                    {t('form.labels.company')}
                                                 </label>
                                             </div>
 
@@ -212,7 +234,7 @@ export default function ContactPage() {
                                                     className="peer w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-transparent focus:outline-none focus:border-cyan-400 transition-colors"
                                                 />
                                                 <label className="absolute left-4 -top-2.5 px-1 text-sm text-slate-400 transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-slate-500 peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-cyan-400">
-                                                    Phone (Optional)
+                                                    {t('form.labels.phone')}
                                                 </label>
                                             </div>
                                         </div>
@@ -229,7 +251,7 @@ export default function ContactPage() {
                                                     } rounded-xl text-white placeholder-transparent focus:outline-none focus:border-cyan-400 transition-colors resize-none`}
                                             />
                                             <label className="absolute left-4 -top-2.5 px-1 text-sm text-slate-400 transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-slate-500 peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-cyan-400">
-                                                How can I help you?
+                                                {t('form.labels.message')}
                                             </label>
                                             {errors.message && (
                                                 <p className="mt-1 text-xs text-red-500">{errors.message}</p>
@@ -243,7 +265,7 @@ export default function ContactPage() {
                                             className="relative w-full px-8 py-4 bg-gradient-to-r from-cyan-500 to-purple-600 text-white font-semibold rounded-xl overflow-hidden group hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
                                         >
                                             <span className="relative z-10">
-                                                {isSubmitting ? "Sending..." : "Send Message"}
+                                                {isSubmitting ? t('form.sending') : t('form.button')}
                                             </span>
                                             <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-cyan-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                                         </button>
@@ -251,7 +273,7 @@ export default function ContactPage() {
                                         {submitStatus === "error" && (
                                             <div className="p-4 bg-red-500/10 border border-red-500/20 rounded-xl">
                                                 <p className="text-red-400 text-sm">
-                                                    Something went wrong. Please try again or email me directly.
+                                                    {t('form.errors.general')}
                                                 </p>
                                             </div>
                                         )}
@@ -278,15 +300,15 @@ export default function ContactPage() {
                                             />
                                         </svg>
                                     </motion.div>
-                                    <h3 className="text-3xl font-bold text-white mb-2">Message Sent!</h3>
+                                    <h3 className="text-3xl font-bold text-white mb-2">{t('form.success.title')}</h3>
                                     <p className="text-slate-400 mb-8">
-                                        Thanks for reaching out. I&apos;ll get back to you shortly.
+                                        {t('form.success.message')}
                                     </p>
                                     <button
                                         onClick={resetForm}
                                         className="px-6 py-3 bg-white/10 border border-white/20 text-white rounded-xl hover:bg-white/20 transition-colors"
                                     >
-                                        Send Another
+                                        {t('form.success.button')}
                                     </button>
                                 </div>
                             )}

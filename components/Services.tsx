@@ -49,7 +49,11 @@ const services = [
   }
 ];
 
+import { useTranslations } from "next-intl";
+
 export default function Services() {
+  const t = useTranslations('ServicesSection');
+
   return (
     <section id="services" className="relative py-12 bg-[#f3f0e7] overflow-hidden min-h-screen flex flex-col justify-start pt-24 md:pt-32">
       <div className="max-w-[1200px] mx-auto px-6 w-full">
@@ -57,10 +61,10 @@ export default function Services() {
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-6 md:mb-10">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#0f172a]">
-            Our Expertise
+            {t('title')}
           </h2>
           <p className="text-lg text-[#64748b]">
-            From web development to intelligent automation, we provide end-to-end digital solutions.
+            {t('subtitle')}
           </p>
         </div>
 
@@ -118,7 +122,7 @@ export default function Services() {
               {/* Background Image - Optimized */}
               <Image
                 src={service.image}
-                alt={`${service.title} - ${service.description}`}
+                alt={`${t(`items.${service.key}.title`)} - ${t(`items.${service.key}.description`)}`}
                 fill
                 sizes="(max-width: 768px) 100vw, 320px"
                 className="object-cover object-center"
@@ -131,7 +135,7 @@ export default function Services() {
 
                 {/* Badge */}
                 <div className="absolute top-6 right-6 px-4 py-1.5 rounded-full bg-gradient-to-br from-[#0e7490] via-[#0891b2] to-[#06b6d4] text-white text-[0.7rem] font-bold uppercase tracking-wider shadow-lg opacity-100 md:opacity-0 md:translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
-                  Get Started
+                  {t('getStarted')}
                 </div>
 
                 {/* Icon */}
@@ -140,11 +144,11 @@ export default function Services() {
                 </div>
 
                 <h3 className="text-xl md:text-2xl font-bold text-white mb-2 leading-tight">
-                  {service.title}
+                  {t(`items.${service.key}.title`)}
                 </h3>
 
                 <p className="text-[#cbd5e1] text-sm md:text-base leading-relaxed opacity-90">
-                  {service.description}
+                  {t(`items.${service.key}.description`)}
                 </p>
               </div>
             </motion.div>
@@ -157,7 +161,7 @@ export default function Services() {
             href="/services"
             className="inline-flex items-center gap-3 px-10 py-4 rounded-full bg-gradient-to-br from-[#0e7490] to-[#06b6d4] text-white font-semibold text-lg shadow-[0_4px_15px_rgba(14,116,144,0.3)] hover:shadow-[0_8px_25px_rgba(14,116,144,0.4)] hover:-translate-y-1 transition-all duration-300"
           >
-            See all services
+            {t('cta')}
           </Link>
         </div>
 

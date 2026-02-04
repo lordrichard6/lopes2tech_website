@@ -82,7 +82,11 @@ const projects = [
     }
 ];
 
+import { useTranslations } from "next-intl";
+
 export default function Portfolio() {
+    const t = useTranslations('Portfolio');
+
     return (
         <section id="portfolio" className="relative py-32 overflow-hidden bg-gradient-to-b from-[#0f172a] to-[#082f49]">
 
@@ -113,13 +117,13 @@ export default function Portfolio() {
                         viewport={{ once: true }}
                         className="inline-block px-4 py-1.5 rounded-full bg-cyan-500/10 text-cyan-400 font-semibold text-sm mb-4 border border-cyan-500/20"
                     >
-                        SELECTED WORK
+                        {t('badge')}
                     </motion.div>
                     <h2 className="text-4xl md:text-5xl font-extrabold mb-6 text-white tracking-tight">
-                        Built for Growth
+                        {t('title')}
                     </h2>
                     <p className="text-lg text-slate-400">
-                        A selection of high-impact websites and applications designed for performance and scale.
+                        {t('subtitle')}
                     </p>
                 </div>
 
@@ -179,10 +183,11 @@ export default function Portfolio() {
                         href="/portfolio"
                         className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-cyan-500/10 text-cyan-400 font-semibold border border-cyan-500/20 hover:bg-cyan-500/20 hover:text-white hover:border-cyan-500/50 transition-all duration-300 group"
                     >
-                        View Full Portfolio
+                        {t('button')}
                         <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                     </Link>
                 </div>
+
 
             </div>
             {/* Bottom Wave Divider */}

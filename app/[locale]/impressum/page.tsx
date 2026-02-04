@@ -3,8 +3,11 @@
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 export default function Impressum() {
+    const t = useTranslations('ImpressumPage');
+
     return (
         <main className="min-h-screen bg-[#0f172a] text-white pt-24 pb-16 relative overflow-hidden">
             {/* Background Elements */}
@@ -20,7 +23,7 @@ export default function Impressum() {
                     className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors mb-8 group"
                 >
                     <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" />
-                    Back to Home
+                    {t('backToHome')}
                 </Link>
 
                 {/* Header */}
@@ -31,10 +34,10 @@ export default function Impressum() {
                     className="mb-12"
                 >
                     <h1 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-400 mb-4">
-                        Impressum
+                        {t('title')}
                     </h1>
                     <p className="text-xl text-slate-400">
-                        Legal Notice
+                        {t('subtitle')}
                     </p>
                 </motion.div>
 
@@ -49,14 +52,14 @@ export default function Impressum() {
                     <section>
                         <h2 className="text-2xl font-semibold text-white mb-6 flex items-center gap-3">
                             <span className="w-1 h-6 bg-cyan-400 rounded-full" />
-                            Company Information
+                            {t('companyInfo.title')}
                         </h2>
                         <div className="bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur-sm">
-                            <p className="font-semibold text-white text-lg mb-2">Lopes2Tech</p>
-                            <p className="mb-4 text-slate-400">Sole Proprietorship</p>
+                            <p className="font-semibold text-white text-lg mb-2">{t('companyInfo.name')}</p>
+                            <p className="mb-4 text-slate-400">{t('companyInfo.type')}</p>
 
-                            <p className="font-semibold text-white mb-2 mt-6">Represented by:</p>
-                            <p>Paulo Lopes</p>
+                            <p className="font-semibold text-white mb-2 mt-6">{t('companyInfo.representedBy')}:</p>
+                            <p>{t('companyInfo.representativeName')}</p>
                         </div>
                     </section>
 
@@ -64,17 +67,17 @@ export default function Impressum() {
                     <section>
                         <h2 className="text-2xl font-semibold text-white mb-6 flex items-center gap-3">
                             <span className="w-1 h-6 bg-purple-500 rounded-full" />
-                            Contact
+                            {t('contact.title')}
                         </h2>
                         <div className="bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur-sm space-y-3">
                             <div className="flex gap-4">
-                                <span className="text-slate-400 min-w-[80px]">Email:</span>
+                                <span className="text-slate-400 min-w-[80px]">{t('contact.emailLabel')}:</span>
                                 <a href="mailto:paulo@lopes2tech.ch" className="text-cyan-400 hover:underline">
                                     paulo@lopes2tech.ch
                                 </a>
                             </div>
                             <div className="flex gap-4">
-                                <span className="text-slate-400 min-w-[80px]">Website:</span>
+                                <span className="text-slate-400 min-w-[80px]">{t('contact.websiteLabel')}:</span>
                                 <a href="https://lopes2tech.ch" className="text-cyan-400 hover:underline">
                                     www.lopes2tech.ch
                                 </a>
@@ -86,19 +89,19 @@ export default function Impressum() {
                     <section>
                         <h2 className="text-2xl font-semibold text-white mb-6 flex items-center gap-3">
                             <span className="w-1 h-6 bg-cyan-400 rounded-full" />
-                            Disclaimer (Haftungsausschluss)
+                            {t('disclaimer.title')}
                         </h2>
                         <div className="space-y-8">
                             <div>
-                                <h3 className="text-xl font-medium text-white mb-4">Liability for Content</h3>
+                                <h3 className="text-xl font-medium text-white mb-4">{t('disclaimer.liabilityContent.title')}</h3>
                                 <p>
-                                    The author assumes no liability for the correctness, accuracy, timeliness, reliability, and completeness of the information. Liability claims against the author for material or immaterial damage resulting from access to, use or non-use of the published information, from misuse of the connection, or from technical malfunctions are excluded. All offers are non-binding. The author expressly reserves the right to change, supplement or delete parts of the pages or the entire offer without separate announcement or to cease publication temporarily or permanently.
+                                    {t('disclaimer.liabilityContent.text')}
                                 </p>
                             </div>
                             <div>
-                                <h3 className="text-xl font-medium text-white mb-4">Liability for Links</h3>
+                                <h3 className="text-xl font-medium text-white mb-4">{t('disclaimer.liabilityLinks.title')}</h3>
                                 <p>
-                                    References and links to third-party websites are outside our area of responsibility. We reject any responsibility for such websites. Access and use of such websites are at the user's own risk.
+                                    {t('disclaimer.liabilityLinks.text')}
                                 </p>
                             </div>
                         </div>
@@ -108,11 +111,9 @@ export default function Impressum() {
                     <section>
                         <h2 className="text-2xl font-semibold text-white mb-6 flex items-center gap-3">
                             <span className="w-1 h-6 bg-purple-500 rounded-full" />
-                            Copyright (Urheberrechte)
+                            {t('copyright.title')}
                         </h2>
-                        <p>
-                            The copyright and all other rights to content, images, photos, or other files on the website belong exclusively to <strong className="text-white">Paulo Lopes / Lopes2Tech</strong> or the specifically named rights holders. For the reproduction of any elements, the written consent of the copyright holders must be obtained in advance.
-                        </p>
+                        <p dangerouslySetInnerHTML={{ __html: t.raw('copyright.text') }} />
                     </section>
                 </motion.div>
             </div>

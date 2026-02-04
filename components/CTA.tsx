@@ -3,14 +3,16 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function CTA() {
+    const t = useTranslations('CTASection');
+
     return (
         <section className="relative py-32 bg-[#0f172a] overflow-hidden flex items-center justify-center text-center">
 
-            {/* Animated Background Elements */}
+            {/* ... (background elements) */}
             <div className="absolute inset-0 z-0">
-
                 {/* Grid Overlay with Mask */}
                 <div
                     className="absolute inset-0 z-10 opacity-30 pointer-events-none"
@@ -41,7 +43,7 @@ export default function CTA() {
                     viewport={{ once: true }}
                     className="text-4xl md:text-6xl font-extrabold mb-6 text-transparent bg-clip-text bg-gradient-to-br from-white to-slate-400 tracking-tight leading-[1.1]"
                 >
-                    Ready to Scale Your Business?
+                    {t('title')}
                 </motion.h2>
 
                 <motion.p
@@ -51,7 +53,7 @@ export default function CTA() {
                     transition={{ delay: 0.1 }}
                     className="text-lg md:text-xl text-slate-400 mb-12 max-w-[600px] mx-auto leading-relaxed"
                 >
-                    Let's build something extraordinary together. Book your free consultation today.
+                    {t('subtitle')}
                 </motion.p>
 
                 <motion.div
@@ -64,7 +66,7 @@ export default function CTA() {
                         href="/contact"
                         className="inline-flex items-center gap-4 px-12 py-5 text-lg font-bold text-[#0f172a] bg-cyan-400 rounded-full transition-all duration-300 shadow-[0_0_20px_rgba(34,211,238,0.4)] hover:shadow-[0_0_40px_rgba(34,211,238,0.6)] hover:-translate-y-1 hover:bg-cyan-300 group overflow-hidden relative"
                     >
-                        <span className="relative z-10">Start Project</span>
+                        <span className="relative z-10">{t('button')}</span>
                         <ArrowRight className="w-5 h-5 relative z-10 transition-transform duration-300 group-hover:translate-x-1" />
 
                         {/* Shine Effect */}
