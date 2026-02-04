@@ -6,6 +6,7 @@ import { Check, Plus, Minus, Sparkles, Calculator, ArrowRight, Settings2, Credit
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { builderServicesData, builderColorMap, type BuilderService, type AddOn } from "@/lib/packages-data";
+import ServiceRequestDialog from "./ServiceRequestDialog";
 
 interface SelectedAddOns {
     [serviceId: string]: string[];
@@ -18,6 +19,7 @@ export default function CustomPackageBuilder() {
     const [selectedAddOns, setSelectedAddOns] = useState<SelectedAddOns>({});
     const [isExpanded, setIsExpanded] = useState(false);
     const [paymentPlan, setPaymentPlan] = useState<PaymentPlan>("onetime");
+    const [isDialogOpen, setIsDialogOpen] = useState(false);
     const t = useTranslations();
 
     const activeService = builderServicesData.find(s => s.id === selectedService);
@@ -64,7 +66,33 @@ export default function CustomPackageBuilder() {
         }
 
         return items;
+        return items;
     }, [selectedService, selectedAddOns, activeService]);
+
+    // Construct detailed quote message
+    const quoteMessage = useMemo(() => {
+        if (!selectedService || !activeService) return "";
+
+        const addonsList = selectedItemsSummary
+            .filter(item => !item.isBase)
+            .map(item => `- ${t(item.name)}`)
+            .join('\n');
+
+        const monthlyPrice = paymentPlan === "3months"
+            ? Math.ceil((totalPrice * 1.05) / 3)
+            : Math.ceil((totalPrice * 1.1) / 6);
+
+        const finalPrice = paymentPlan === "onetime"
+            ? `CHF ${totalPrice.toLocaleString()}`
+            : `CHF ${monthlyPrice.toLocaleString()}/mo (${paymentPlan === "3months" ? "3" : "6"} months)`;
+
+        return `I would like to request a quote for a custom package:\n\n` +
+            `Base Service: ${t(activeService.name)}\n` +
+            (addonsList ? `Selected Add-ons:\n${addonsList}\n` : '') +
+            `\nPayment Plan: ${t('Packages.payment.' + paymentPlan)}\n` +
+            `Estimated Total: ${finalPrice}\n\n` +
+            `Please contact me to discuss the details.`;
+    }, [selectedService, activeService, selectedItemsSummary, paymentPlan, totalPrice, t]);
 
     return (
         <section className="relative py-20 overflow-hidden z-10">
@@ -393,19 +421,27 @@ export default function CustomPackageBuilder() {
                                     )}
 
                                     {/* CTA */}
-                                    <Link
-                                        href="/contact"
+                                    <button
+                                        onClick={() => setIsDialogOpen(true)}
                                         className="w-full flex items-center justify-center gap-2 py-3 rounded-xl font-semibold bg-gradient-to-r from-cyan-500 to-purple-500 text-white shadow-[0_0_20px_rgba(6,182,212,0.3)] hover:shadow-[0_0_30px_rgba(6,182,212,0.5)] hover:-translate-y-0.5 transition-all duration-300"
                                     >
                                         {t('CustomBuilder.requestQuote')}
                                         <ArrowRight className="w-4 h-4" />
-                                    </Link>
+                                    </button>
                                 </>
                             )}
                         </motion.div>
                     </div>
                 </div>
             </div>
-        </section>
+
+            <ServiceRequestDialog
+                isOpen={isDialogOpen}
+                onClose={() => setIsDialogOpen(false)}
+                packageContext={activeService ? `Custom Builder: ${t(activeService.name)}` : 'Custom Builder'}
+                customMessage={quoteMessage}
+            />
+
+        </section >
     );
 }

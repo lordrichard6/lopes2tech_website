@@ -335,6 +335,16 @@ export default function PackagesSection() {
                                 </div>
                             )}
 
+                            {/* Default Plan Badge */}
+                            {pkg.key === "basic" && (
+                                <div className="absolute -top-4 left-1/2 -translate-x-1/2">
+                                    <div className="flex items-center gap-1.5 px-4 py-1.5 bg-green-500/20 text-green-400 border border-green-500/30 rounded-full text-sm font-bold shadow-lg backdrop-blur-sm">
+                                        <Check className="w-4 h-4" />
+                                        {t('Packages.section.defaultPlan')}
+                                    </div>
+                                </div>
+                            )}
+
                             {/* Package Header */}
                             <div className="mb-6">
                                 <h3 className="text-2xl font-bold text-white mb-2">{t(pkg.name)}</h3>
@@ -371,25 +381,6 @@ export default function PackagesSection() {
                                     </motion.li>
                                 ))}
                             </ul>
-
-                            {/* CTA Button */}
-                            {pkg.key === "basic" ? (
-                                <div className="w-full flex items-center justify-center gap-2 py-3 rounded-xl font-semibold bg-green-500/20 text-green-400 border border-green-500/30">
-                                    <Check className="w-4 h-4" />
-                                    {t('Packages.section.defaultPlan')}
-                                </div>
-                            ) : (
-                                <button
-                                    onClick={() => handleRequest(`Hosting: ${t(pkg.name)}`)}
-                                    className={`w-full flex items-center justify-center gap-2 py-3 rounded-xl font-semibold transition-all duration-300 ${pkg.isPopular
-                                        ? 'bg-gradient-to-r from-cyan-500 to-green-500 text-white shadow-[0_0_20px_rgba(6,182,212,0.3)] hover:shadow-[0_0_30px_rgba(6,182,212,0.5)] hover:-translate-y-0.5'
-                                        : 'bg-white/10 text-white hover:bg-white/20'
-                                        }`}
-                                >
-                                    <Headphones className="w-4 h-4" />
-                                    {t('Packages.section.upgradePlan')}
-                                </button>
-                            )}
                         </motion.div>
                     ))}
                 </div>

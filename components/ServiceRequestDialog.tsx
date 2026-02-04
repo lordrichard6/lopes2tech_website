@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Check } from "lucide-react";
 import { useTranslations } from "next-intl";
@@ -9,23 +10,30 @@ interface ServiceRequestDialogProps {
     isOpen: boolean;
     onClose: () => void;
     packageContext: string;
+    customMessage?: string;
 }
 
-export default function ServiceRequestDialog({ isOpen, onClose, packageContext }: ServiceRequestDialogProps) {
+export default function ServiceRequestDialog({ isOpen, onClose, packageContext, customMessage }: ServiceRequestDialogProps) {
     const t = useTranslations('ServicesPage.ServiceRequest');
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [company, setCompany] = useState("");
     const [message, setMessage] = useState("");
     const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
+    const [mounted, setMounted] = useState(false);
+
+    useEffect(() => {
+        setMounted(true);
+        return () => setMounted(false);
+    }, []);
 
     // Reset form and set default message when dialog opens or package changes
     useEffect(() => {
         if (isOpen) {
-            setMessage(t('defaultMessage', { package: packageContext }));
+            setMessage(customMessage || t('defaultMessage', { package: packageContext }));
             setStatus("idle");
         }
-    }, [isOpen, packageContext, t]);
+    }, [isOpen, packageContext, customMessage, t]);
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
@@ -64,9 +72,9 @@ export default function ServiceRequestDialog({ isOpen, onClose, packageContext }
         }
     };
 
-    if (!isOpen) return null;
+    if (!mounted) return null;
 
-    return (
+    return createPortal(
         <AnimatePresence>
             {isOpen && (
                 <>
@@ -76,7 +84,7 @@ export default function ServiceRequestDialog({ isOpen, onClose, packageContext }
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
                         onClick={onClose}
-                        className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50"
+                        className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[9999]"
                     />
 
                     {/* Dialog */}
@@ -84,7 +92,7 @@ export default function ServiceRequestDialog({ isOpen, onClose, packageContext }
                         initial={{ opacity: 0, scale: 0.95, y: 20 }}
                         animate={{ opacity: 1, scale: 1, y: 0 }}
                         exit={{ opacity: 0, scale: 0.95, y: 20 }}
-                        className="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-lg bg-slate-900 border border-slate-800 rounded-2xl shadow-2xl p-6 z-50"
+                        className="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-lg bg-slate-900 border border-slate-800 rounded-2xl shadow-2xl p-6 z-[9999]"
                     >
                         <button
                             onClick={onClose}
@@ -185,6 +193,7 @@ export default function ServiceRequestDialog({ isOpen, onClose, packageContext }
                     </motion.div>
                 </>
             )}
-        </AnimatePresence>
+        </AnimatePresence>,
+        document.body
     );
 }
