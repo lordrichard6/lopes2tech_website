@@ -79,8 +79,8 @@ export default function CustomPackageBuilder() {
             .join('\n');
 
         const monthlyPrice = paymentPlan === "3months"
-            ? Math.ceil((totalPrice * 1.05) / 3)
-            : Math.ceil((totalPrice * 1.1) / 6);
+            ? Math.ceil((totalPrice * 1.03) / 3)
+            : Math.ceil((totalPrice * 1.05) / 6);
 
         const finalPrice = paymentPlan === "onetime"
             ? `CHF ${totalPrice.toLocaleString()}`
@@ -387,8 +387,8 @@ export default function CustomPackageBuilder() {
                                             CHF {paymentPlan === "onetime"
                                                 ? totalPrice.toLocaleString()
                                                 : paymentPlan === "3months"
-                                                    ? Math.ceil((totalPrice * 1.05) / 3).toLocaleString()
-                                                    : Math.ceil((totalPrice * 1.1) / 6).toLocaleString()
+                                                    ? Math.ceil((totalPrice * 1.03) / 3).toLocaleString()
+                                                    : Math.ceil((totalPrice * 1.05) / 6).toLocaleString()
                                             }
                                             {paymentPlan !== "onetime" && <span className="text-sm text-slate-400">/mo</span>}
                                         </motion.span>
@@ -398,10 +398,10 @@ export default function CustomPackageBuilder() {
                                     {paymentPlan !== "onetime" && (
                                         <p className="text-xs text-slate-500 mb-4">
                                             Total: CHF {paymentPlan === "3months"
-                                                ? Math.ceil(totalPrice * 1.05).toLocaleString()
-                                                : Math.ceil(totalPrice * 1.1).toLocaleString()
+                                                ? Math.ceil(totalPrice * 1.03).toLocaleString()
+                                                : Math.ceil(totalPrice * 1.05).toLocaleString()
                                             } over {paymentPlan === "3months" ? "3" : "6"} months
-                                            <span className="text-amber-400/80"> (+{paymentPlan === "3months" ? "5" : "10"}%)</span>
+                                            <span className="text-amber-400/80"> (+{paymentPlan === "3months" ? "3" : "5"}%)</span>
                                         </p>
                                     )}
 

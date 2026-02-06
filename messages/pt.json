@@ -11,7 +11,7 @@
         "starter": {
             "name": "Starter",
             "priceDisplay": "CHF 850",
-            "description": "A base perfeita, seja para uma landing page ou um site completo de 5 páginas para estabelecer o seu negócio.",
+            "description": "A base perfeita para a sua presença online—um site profissional de página única para estabelecer o seu negócio.",
             "target": "Novos negócios com marca existente",
             "features": {
                 "0": "Landing page personalizada",
@@ -30,8 +30,8 @@
                 "0": "Site profissional de 5 páginas",
                 "1": "Identidade de marca completa (Logótipo, Cores, Fontes)",
                 "2": "Responsivo e rápido",
-                "3": "Configuração básica de SEO",
-                "4": "Modelos para redes sociais"
+                "3": "Configuração avançada de SEO",
+                "4": "Até 3 rondas de revisões"
             }
         },
         "businessPro": {
@@ -90,6 +90,8 @@
             "onetime": "Pagamento Único",
             "3months": "3 Meses",
             "6months": "6 Meses",
+            "monthly": "/mês",
+            "total": "Total",
             "disclaimer": "* O preço final pode variar com base no âmbito e complexidade do projeto",
             "requestQuote": "Pedir Orçamento"
         },
@@ -108,7 +110,9 @@
             "upgradePlan": "Plano Superior",
             "perMonth": "/mês",
             "billedMonthly": "Faturado mensalmente",
-            "installmentNote": "Nota: Se estiver a pagar o desenvolvimento em prestações, a taxa de hospedagem e suporte acresce aos pagamentos das prestações assim que o projeto estiver online e concluído."
+            "installmentNote": "Nota: Se estiver a pagar o desenvolvimento em prestações, a taxa de hospedagem e suporte acresce aos pagamentos das prestações assim que o projeto estiver online e concluído.",
+            "revisionsNote": "Cada pacote tem a sua própria ronda de revisões",
+            "extraRevisions": "Revisões extras terão um custo adicional de CHF 120 por hora"
         },
         "hosting": {
             "basic": {
@@ -260,6 +264,16 @@
         "notes": {
             "monthlyCost": "Aplicações web requerem manutenção contínua. Pacote mínimo de suporte: CHF 89/mês",
             "hasMonthlyNote": "Serviços de IA têm custos mensais contínuos dependendo do uso e implementação. Discutiremos isto durante a consulta."
+        },
+        "payment": {
+            "onetime": "Pagamento Único",
+            "3months": "3 Meses",
+            "6months": "6 Meses",
+            "monthly": "Mensal",
+            "total": "Total",
+            "estimatedTotal": "Total Estimado",
+            "requestQuote": "Pedir Orçamento Personalizado",
+            "disclaimer": "* O preço final pode variar com base no âmbito e complexidade do projeto"
         }
     },
     "Hero": {
@@ -694,25 +708,26 @@
         },
         "pricing": {
             "hourly": {
-                "unit": "/hora",
+                "title": "Vamos Falar!",
                 "description": "Perfeito para pequenas tarefas, consultas ou correções rápidas"
             },
             "daily": {
-                "unit": "/dia",
-                "description": "Melhor valor para colaboração focada e de dia inteiro no seu projeto",
-                "save": "Poupe CHF 160 comparado a 8 horas"
+                "title": "Vamos Falar!",
+                "description": "Melhor valor para colaboração focada e de dia inteiro no seu projeto"
             },
             "custom": {
-                "title": "Vamos Falar",
+                "title": "Vamos Falar!",
                 "description": "Não tem a certeza de quanto tempo precisa? Não se preocupe - vamos descobrir juntos."
             }
         },
+        "agreement": "Vamos chegar a um acordo sobre o prazo. Como posso ajudá-lo?",
         "cta": "Marcar Consulta"
     },
     "Services": {
         "defaultDescription": "Implementação abrangente de {title} adaptada às suas necessidades de negócio específicas. Garantimos alto desempenho, escalabilidade e uma experiência de utilizador perfeita.",
         "close": "Fechar",
         "gotIt": "Entendido",
+        "requestQuote": "Pedir Orçamento",
         "map": {
             "websites": {
                 "title": "Websites Profissionais",

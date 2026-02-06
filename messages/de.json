@@ -11,7 +11,7 @@
         "starter": {
             "name": "Starter",
             "priceDisplay": "CHF 850",
-            "description": "Perfekte Grundlage, egal ob Sie eine einzelne Landingpage oder eine komplette 5-seitige Website benötigen.",
+            "description": "Die perfekte Grundlage für Ihre Online-Präsenz—eine professionelle Einzelseiten-Website für Ihr Unternehmen.",
             "target": "Neues Geschäft mit bestehender Marke",
             "features": {
                 "0": "Einzelne benutzerdefinierte Landingpage",
@@ -30,8 +30,8 @@
                 "0": "Professionelle 5-seitige Website",
                 "1": "Volle Markenidentität (Logo, Farben)",
                 "2": "Mobil-responsiv & schnell",
-                "3": "Grundlegendes SEO-Setup",
-                "4": "Social-Media-Vorlagen"
+                "3": "Erweitertes SEO-Setup",
+                "4": "Bis zu 3 Überarbeitungsrunden"
             }
         },
         "businessPro": {
@@ -90,6 +90,8 @@
             "onetime": "Einmalig",
             "3months": "3 Monate",
             "6months": "6 Monate",
+            "monthly": "/Monat",
+            "total": "Gesamt",
             "disclaimer": "* Endpreis kann je nach Projektumfang variieren",
             "requestQuote": "Angebot anfordern"
         },
@@ -108,7 +110,9 @@
             "upgradePlan": "Upgrade-Plan",
             "perMonth": "/Monat",
             "billedMonthly": "Monatliche Abrechnung",
-            "installmentNote": "Hinweis: Wenn Sie die Entwicklung in Raten zahlen, kommen die Hosting- und Supportgebühren zu Ihren Ratenzahlungen hinzu, sobald Ihr Projekt online und vollständig abgeschlossen ist."
+            "installmentNote": "Hinweis: Wenn Sie die Entwicklung in Raten zahlen, kommen die Hosting- und Supportgebühren zu Ihren Ratenzahlungen hinzu, sobald Ihr Projekt online und vollständig abgeschlossen ist.",
+            "revisionsNote": "Jedes Paket hat seine eigene Überarbeitungsrunde",
+            "extraRevisions": "Zusätzliche Überarbeitungen kosten CHF 120 pro Stunde"
         },
         "hosting": {
             "basic": {
@@ -260,6 +264,16 @@
         "notes": {
             "monthlyCost": "Web-Applikationen erfordern laufende Wartung. Mindest-Supportpaket: CHF 89/Monat",
             "hasMonthlyNote": "KI-Dienste haben laufende monatliche Kosten je nach Nutzung. Wir besprechen dies in der Beratung."
+        },
+        "payment": {
+            "onetime": "Einmalig",
+            "3months": "3 Monate",
+            "6months": "6 Monate",
+            "monthly": "Monatlich",
+            "total": "Gesamt",
+            "estimatedTotal": "Geschätzter Gesamtpreis",
+            "requestQuote": "Individuelles Angebot anfordern",
+            "disclaimer": "* Endpreis kann je nach Projektumfang und Komplexität variieren"
         }
     },
     "Hero": {
@@ -694,19 +708,19 @@
         },
         "pricing": {
             "hourly": {
-                "unit": "/Stunde",
+                "title": "Lassen Sie uns sprechen!",
                 "description": "Perfekt für kleine Aufgaben, Beratungen oder schnelle Reparaturen"
             },
             "daily": {
-                "unit": "/Tag",
-                "description": "Bester Wert für fokussierte, ganztägige Zusammenarbeit an Ihrem Projekt",
-                "save": "Sparen Sie CHF 160 im Vergleich zu 8 Stunden"
+                "title": "Lassen Sie uns sprechen!",
+                "description": "Bester Wert für fokussierte, ganztägige Zusammenarbeit an Ihrem Projekt"
             },
             "custom": {
-                "title": "Lassen Sie uns sprechen",
+                "title": "Lassen Sie uns sprechen!",
                 "description": "Nicht sicher, wie lange Sie benötigen? Keine Sorge – wir finden es gemeinsam heraus."
             }
         },
+        "agreement": "Lassen Sie uns eine Vereinbarung über den Zeitrahmen treffen. Wie kann ich Ihnen helfen?",
         "cta": "Beratung buchen"
     },
     "Services": {

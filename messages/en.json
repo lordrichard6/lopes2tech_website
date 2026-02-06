@@ -11,7 +11,7 @@
         "starter": {
             "name": "Starter",
             "priceDisplay": "CHF 850",
-            "description": "Perfect foundation, whether you need a single landing page or a full 5-page website to establish your business.",
+            "description": "The perfect foundation for your online presence—a professional single-page website to establish your business.",
             "target": "New business with existing brand",
             "features": {
                 "0": "Single custom landing page",
@@ -30,8 +30,8 @@
                 "0": "Professional 5-page website",
                 "1": "Full brand identity (Logo, Colors, Fonts)",
                 "2": "Mobile-responsive & fast",
-                "3": "Basic SEO setup",
-                "4": "Social media templates"
+                "3": "Advanced SEO setup",
+                "4": "Up to 3 rounds of revisions"
             }
         },
         "businessPro": {
@@ -90,6 +90,8 @@
             "onetime": "One-Time",
             "3months": "3 Months",
             "6months": "6 Months",
+            "monthly": "/mo",
+            "total": "Total",
             "disclaimer": "* Final price may vary based on project scope and complexity",
             "requestQuote": "Request Quote"
         },
@@ -108,7 +110,9 @@
             "upgradePlan": "Upgrade Plan",
             "perMonth": "/month",
             "billedMonthly": "Billed monthly",
-            "installmentNote": "Note: If you are paying for development in installments, the hosting & support fee is in addition to your installment payments once your project is online and fully complete."
+            "installmentNote": "Note: If you are paying for development in installments, the hosting & support fee is in addition to your installment payments once your project is online and fully complete.",
+            "revisionsNote": "Each package has its own round of revisions",
+            "extraRevisions": "Extra revisions will have an increased cost of CHF 120 per hour"
         },
         "hosting": {
             "basic": {
@@ -704,25 +708,26 @@
         },
         "pricing": {
             "hourly": {
-                "unit": "/hour",
+                "title": "Let's Talk!",
                 "description": "Perfect for small tasks, consultations, or quick fixes"
             },
             "daily": {
-                "unit": "/day",
-                "description": "Best value for focused, full-day collaboration on your project",
-                "save": "Save CHF 160 compared to 8 hourly"
+                "title": "Let's Talk!",
+                "description": "Best value for focused, full-day collaboration on your project"
             },
             "custom": {
-                "title": "Let's Talk",
+                "title": "Let's Talk!",
                 "description": "Not sure how long you need? Don't worry—let's figure it out together."
             }
         },
+        "agreement": "Let's reach an agreement on timeframe. How can I help you?",
         "cta": "Book a Consultation"
     },
     "Services": {
         "defaultDescription": "Comprehensive implementation of {title} tailored to your specific business needs. We ensure high performance, scalability, and seamless user experience.",
         "close": "Close",
         "gotIt": "Got it",
+        "requestQuote": "Request Quote",
         "map": {
             "websites": {
                 "title": "Professional Websites",
