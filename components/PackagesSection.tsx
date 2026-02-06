@@ -12,8 +12,8 @@ type PaymentPlan = "onetime" | "3months" | "6months";
 
 const paymentPlans = [
     { id: "onetime" as PaymentPlan, label: "One-Time", description: "Full payment", multiplier: 1, icon: CreditCard },
-    { id: "3months" as PaymentPlan, label: "3 Months", description: "+3%", multiplier: 1.03, icon: Calendar },
-    { id: "6months" as PaymentPlan, label: "6 Months", description: "+5%", multiplier: 1.05, icon: Calendar }
+    { id: "3months" as PaymentPlan, label: "3 Months", description: "+10%", multiplier: 1.10, icon: Calendar },
+    { id: "6months" as PaymentPlan, label: "6 Months", description: "+15%", multiplier: 1.15, icon: Calendar }
 ];
 
 // Monthly Hosting & Support packages
@@ -80,8 +80,8 @@ export default function PackagesSection() {
 
     const paymentPlansLocal = [
         { id: "onetime" as PaymentPlan, label: "Packages.payment.onetime", description: "Packages.payment.disclaimer", multiplier: 1, icon: CreditCard },
-        { id: "3months" as PaymentPlan, label: "Packages.payment.3months", description: "+3%", multiplier: 1.03, icon: Calendar },
-        { id: "6months" as PaymentPlan, label: "Packages.payment.6months", description: "+5%", multiplier: 1.05, icon: Calendar }
+        { id: "3months" as PaymentPlan, label: "Packages.payment.3months", description: "+10%", multiplier: 1.10, icon: Calendar },
+        { id: "6months" as PaymentPlan, label: "Packages.payment.6months", description: "+15%", multiplier: 1.15, icon: Calendar }
     ];
 
     // Get current plan details
