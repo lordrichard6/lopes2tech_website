@@ -117,7 +117,7 @@ const projects: Project[] = [
         image: "/proj/silvio_mockup.png",
         category: "Photography Portfolio",
         type: "website",
-        link: "https://silvio-photo.vercel.app/"
+        link: "https://silviophotography.com/"
     },
     {
         title: "Apex Consulting - Strategy & Growth",

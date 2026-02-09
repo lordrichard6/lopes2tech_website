@@ -29,7 +29,7 @@ const projects = [
         description: "Practice management software.",
         image: "/proj/theraflow_mockup.png",
         category: "SaaS",
-        link: "https://theraflow.lopes2.tech",
+        link: "https://www.theraflow-crm.ch/",
         className: "md:col-span-1 md:row-span-1", // Top Right (Bottom)
     },
     {
@@ -37,7 +37,7 @@ const projects = [
         description: "Financial management.",
         image: "/proj/finito_mockup.png",
         category: "Web App",
-        link: "https://finito.lopes2.tech",
+        link: "https://www.finitopro.ch/",
         className: "md:col-span-1 md:row-span-1", // Middle Row
     },
     {
@@ -77,7 +77,7 @@ const projects = [
         description: "Insurance portal.",
         image: "/proj/alentseguros_mockup.png",
         category: "Website",
-        link: "https://alentseguros.pt",
+        link: "https://alenteseguros.vercel.app/",
         className: "md:col-span-3 md:row-span-1", // Footer (Full Width)
     }
 ];
