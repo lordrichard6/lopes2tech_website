@@ -308,7 +308,8 @@
             }
         },
         "getStarted": "Loslegen",
-        "cta": "Alle Dienstleistungen sehen"
+        "cta": "Alle Dienstleistungen sehen",
+        "learnMore": "Mehr erfahren"
     },
     "CTASection": {
         "title": "Bereit, Ihr Geschäft zu skalieren?",

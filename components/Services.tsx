@@ -5,6 +5,8 @@ import { Monitor, Layout, Cpu, Database, ShoppingCart } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import clsx from "clsx";
+import ServiceDialog from "./ServiceDialog";
+import { useState } from "react";
 
 const services = [
   {
@@ -13,7 +15,8 @@ const services = [
     description: "High-performance websites that represent your brand perfectly.",
     image: "/assets/services/service_webdev.webp",
     icon: Monitor,
-    href: "/services/websites"
+    href: "/services/websites",
+    dataId: "websites"
   },
   {
     key: "marketing",
@@ -21,7 +24,8 @@ const services = [
     description: "Conversion-focused pages designed to turn visitors into leads.",
     image: "/assets/services/service_digital_marketing.webp",
     icon: Layout,
-    href: "/services/landing-pages"
+    href: "/services/landing-pages",
+    dataId: "landing"
   },
   {
     key: "automation",
@@ -29,7 +33,8 @@ const services = [
     description: "Streamline your operations and save hours of manual work.",
     image: "/assets/services/service_ai_solutions.webp",
     icon: Cpu,
-    href: "/services/automations"
+    href: "/services/automations",
+    dataId: "automation"
   },
   {
     key: "ecommerce",
@@ -37,7 +42,8 @@ const services = [
     description: "Custom online stores that make buying easy and secure.",
     image: "/assets/services/service_e_commerce.webp",
     icon: ShoppingCart,
-    href: "/services/ecommerce"
+    href: "/services/ecommerce",
+    dataId: "ecommerce"
   },
   {
     key: "apps",
@@ -53,9 +59,16 @@ import { useTranslations } from "next-intl";
 
 export default function Services() {
   const t = useTranslations('ServicesSection');
+  const [selectedService, setSelectedService] = useState<typeof services[0] | null>(null);
 
   return (
     <section id="services" className="relative py-12 bg-[#f3f0e7] overflow-hidden min-h-screen flex flex-col justify-start pt-24 md:pt-32">
+      <ServiceDialog
+        isOpen={!!selectedService}
+        onClose={() => setSelectedService(null)}
+        serviceDataId={selectedService?.dataId || ""}
+        redirectHref={selectedService?.href || "/"}
+      />
       <div className="max-w-[1200px] mx-auto px-6 w-full">
 
         {/* Section Header */}
@@ -74,6 +87,7 @@ export default function Services() {
             <motion.div
               key={service.key}
               layout
+              onClick={() => setSelectedService(service)}
               initial="initial"
               whileInView="rest"
               whileHover="hover"
@@ -89,7 +103,7 @@ export default function Services() {
                 rest: {
                   opacity: 1,
                   y: 0,
-                  rotateY: -15, // Default to desktop tilt, mobile override handles via responsive variants or CSS if needed, but for now fixed to avoid hydration mismatch
+                  rotateY: -15, // Default to desktop tilt
                   scale: 1,
                   z: 0,
                   transition: {

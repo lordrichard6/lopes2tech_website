@@ -308,7 +308,8 @@
             }
         },
         "getStarted": "Get Started",
-        "cta": "See all services"
+        "cta": "See all services",
+        "learnMore": "Learn More"
     },
     "CTASection": {
         "title": "Ready to Scale Your Business?",
