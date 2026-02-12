@@ -17,9 +17,23 @@ export interface Package {
 
 export const packagesData: Package[] = [
     {
+        key: "quickStart",
+        name: "Packages.quickStart.name",
+        price: 600,
+        priceDisplay: "Packages.quickStart.priceDisplay",
+        description: "Packages.quickStart.description",
+        target: "Packages.quickStart.target",
+        features: [
+            "Packages.quickStart.features.0",
+            "Packages.quickStart.features.1",
+            "Packages.quickStart.features.2",
+            "Packages.quickStart.features.3"
+        ]
+    },
+    {
         key: "starter",
         name: "Packages.starter.name",
-        price: 850,
+        price: 975,
         priceDisplay: "Packages.starter.priceDisplay",
         description: "Packages.starter.description",
         target: "Packages.starter.target",
@@ -34,7 +48,7 @@ export const packagesData: Package[] = [
     {
         key: "starterPlus",
         name: "Packages.starterPlus.name",
-        price: 1400,
+        price: 1275,
         priceDisplay: "Packages.starterPlus.priceDisplay",
         description: "Packages.starterPlus.description",
         target: "Packages.starterPlus.target",
@@ -50,7 +64,7 @@ export const packagesData: Package[] = [
     {
         key: "businessPro",
         name: "Packages.businessPro.name",
-        price: 2000,
+        price: 2450,
         priceDisplay: "Packages.businessPro.priceDisplay",
         description: "Packages.businessPro.description",
         target: "Packages.businessPro.target",
@@ -65,7 +79,7 @@ export const packagesData: Package[] = [
     {
         key: "landingPage",
         name: "Packages.landingPage.name",
-        price: 600,
+        price: 475,
         priceDisplay: "Packages.landingPage.priceDisplay",
         description: "Packages.landingPage.description",
         target: "Packages.landingPage.target",
@@ -80,7 +94,7 @@ export const packagesData: Package[] = [
     {
         key: "logoOnly",
         name: "Packages.logoOnly.name",
-        price: 350,
+        price: 299,
         priceDisplay: "Packages.logoOnly.priceDisplay",
         description: "Packages.logoOnly.description",
         target: "Packages.logoOnly.target",
@@ -95,7 +109,7 @@ export const packagesData: Package[] = [
     {
         key: "fullBrandKit",
         name: "Packages.fullBrandKit.name",
-        price: 650,
+        price: 549,
         priceDisplay: "Packages.fullBrandKit.priceDisplay",
         description: "Packages.fullBrandKit.description",
         target: "Packages.fullBrandKit.target",
@@ -136,7 +150,7 @@ export const builderServicesData: BuilderService[] = [
     {
         id: "website",
         name: "BuilderServices.website.name",
-        basePrice: 850,
+        basePrice: 975,
         description: "BuilderServices.website.description",
         icon: Monitor,
         color: "cyan",
@@ -152,7 +166,7 @@ export const builderServicesData: BuilderService[] = [
     {
         id: "landing",
         name: "BuilderServices.landing.name",
-        basePrice: 600,
+        basePrice: 475,
         description: "BuilderServices.landing.description",
         icon: Layout,
         color: "purple",
@@ -180,7 +194,7 @@ export const builderServicesData: BuilderService[] = [
     {
         id: "branding",
         name: "BuilderServices.branding.name",
-        basePrice: 250,
+        basePrice: 299,
         description: "BuilderServices.branding.description",
         icon: Palette,
         color: "orange",

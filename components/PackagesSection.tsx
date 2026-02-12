@@ -2,18 +2,68 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Check, Star, ArrowRight, Package, CreditCard, Calendar, Server, Headphones, Rocket, AlertCircle } from "lucide-react";
+import { Check, Star, ArrowRight, Package, CreditCard, Calendar, Server, Headphones, Rocket, AlertCircle, TrendingUp, Megaphone } from "lucide-react";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { packagesData } from "@/lib/packages-data";
 import ServiceRequestDialog from "./ServiceRequestDialog";
 
-type PaymentPlan = "onetime" | "3months" | "6months";
+type PaymentPlan = "onetime" | "3months" | "6months" | "12months";
 
 const paymentPlans = [
     { id: "onetime" as PaymentPlan, label: "One-Time", description: "Full payment", multiplier: 1, icon: CreditCard },
-    { id: "3months" as PaymentPlan, label: "3 Months", description: "+10%", multiplier: 1.10, icon: Calendar },
-    { id: "6months" as PaymentPlan, label: "6 Months", description: "+15%", multiplier: 1.15, icon: Calendar }
+    { id: "3months" as PaymentPlan, label: "3 Months", description: "+5%", multiplier: 1.05, icon: Calendar },
+    { id: "6months" as PaymentPlan, label: "6 Months", description: "+10%", multiplier: 1.10, icon: Calendar },
+    { id: "12months" as PaymentPlan, label: "12 Months", description: "+15%", multiplier: 1.15, icon: Calendar }
+];
+
+// Social Media Marketing packages
+const socialMediaPackages = [
+    {
+        key: "starter",
+        name: "Packages.socialMedia.starter.name",
+        price: 249,
+        description: "Packages.socialMedia.starter.description",
+        features: [
+            "Packages.socialMedia.starter.features.0",
+            "Packages.socialMedia.starter.features.1",
+            "Packages.socialMedia.starter.features.2",
+            "Packages.socialMedia.starter.features.3",
+            "Packages.socialMedia.starter.features.4",
+            "Packages.socialMedia.starter.features.5"
+        ],
+        isPopular: false
+    },
+    {
+        key: "growth",
+        name: "Packages.socialMedia.growth.name",
+        price: 399,
+        description: "Packages.socialMedia.growth.description",
+        features: [
+            "Packages.socialMedia.growth.features.0",
+            "Packages.socialMedia.growth.features.1",
+            "Packages.socialMedia.growth.features.2",
+            "Packages.socialMedia.growth.features.3",
+            "Packages.socialMedia.growth.features.4",
+            "Packages.socialMedia.growth.features.5"
+        ],
+        isPopular: true
+    },
+    {
+        key: "pro",
+        name: "Packages.socialMedia.pro.name",
+        price: 579,
+        description: "Packages.socialMedia.pro.description",
+        features: [
+            "Packages.socialMedia.pro.features.0",
+            "Packages.socialMedia.pro.features.1",
+            "Packages.socialMedia.pro.features.2",
+            "Packages.socialMedia.pro.features.3",
+            "Packages.socialMedia.pro.features.4",
+            "Packages.socialMedia.pro.features.5"
+        ],
+        isPopular: false
+    }
 ];
 
 // Monthly Hosting & Support packages
@@ -80,8 +130,9 @@ export default function PackagesSection() {
 
     const paymentPlansLocal = [
         { id: "onetime" as PaymentPlan, label: "Packages.payment.onetime", description: "Packages.payment.disclaimer", multiplier: 1, icon: CreditCard },
-        { id: "3months" as PaymentPlan, label: "Packages.payment.3months", description: "+10%", multiplier: 1.10, icon: Calendar },
-        { id: "6months" as PaymentPlan, label: "Packages.payment.6months", description: "+15%", multiplier: 1.15, icon: Calendar }
+        { id: "3months" as PaymentPlan, label: "Packages.payment.3months", description: "+5%", multiplier: 1.05, icon: Calendar },
+        { id: "6months" as PaymentPlan, label: "Packages.payment.6months", description: "+10%", multiplier: 1.10, icon: Calendar },
+        { id: "12months" as PaymentPlan, label: "Packages.payment.12months", description: "+15%", multiplier: 1.15, icon: Calendar }
     ];
 
     // Get current plan details
@@ -93,7 +144,7 @@ export default function PackagesSection() {
         if (selectedPlan === "onetime") {
             return { total, perMonth: null, months: null };
         }
-        const months = selectedPlan === "3months" ? 3 : 6;
+        const months = selectedPlan === "3months" ? 3 : selectedPlan === "6months" ? 6 : 12;
         const perMonth = Math.round(total / months);
         return { total, perMonth, months };
     };
@@ -390,13 +441,144 @@ export default function PackagesSection() {
                     initial={{ opacity: 0, y: 10 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="flex items-start gap-3 p-4 rounded-xl bg-amber-500/10 border border-amber-500/20 max-w-3xl mx-auto"
+                    className="flex items-start gap-3 p-4 rounded-xl bg-amber-500/10 border border-amber-500/20 max-w-3xl mx-auto mb-20"
                 >
                     <AlertCircle className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
                     <p className="text-sm text-amber-200/80">
                         {t('Packages.section.installmentNote')}
                     </p>
                 </motion.div>
+
+                {/* ==================== SOCIAL MEDIA MARKETING PACKAGES ==================== */}
+
+                {/* Social Media Header */}
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    className="text-center mb-12"
+                >
+                    <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 text-sm font-semibold text-purple-400 bg-purple-400/10 border border-purple-400/20 rounded-full backdrop-blur-sm">
+                        <TrendingUp className="w-4 h-4" />
+                        {t('Packages.section.socialMediaBadge')}
+                    </div>
+                    <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-4">
+                        {t('Packages.section.socialMediaTitle')} <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">{t('Packages.section.marketingTitle')}</span>
+                    </h2>
+                    <p className="text-lg text-slate-400 max-w-2xl mx-auto">
+                        {t('Packages.section.socialMediaIntro')}
+                    </p>
+                </motion.div>
+
+                {/* Social Media Packages Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                    {socialMediaPackages.map((pkg, index) => (
+                        <motion.div
+                            key={pkg.key}
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: index * 0.1 }}
+                            className={`relative rounded-3xl p-8 border transition-all duration-500 ${pkg.isPopular
+                                ? 'bg-gradient-to-br from-purple-500/20 to-pink-500/20 border-purple-500/30 shadow-[0_0_40px_rgba(168,85,247,0.2)]'
+                                : 'bg-slate-900/50 border-white/10 hover:border-white/20'
+                                }`}
+                        >
+                            {/* Popular Badge */}
+                            {pkg.isPopular && (
+                                <div className="absolute -top-4 left-1/2 -translate-x-1/2">
+                                    <div className="flex items-center gap-1.5 px-4 py-1.5 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full text-white text-sm font-bold shadow-lg">
+                                        <Star className="w-4 h-4 fill-current" />
+                                        {t('Packages.section.mostPopular')}
+                                    </div>
+                                </div>
+                            )}
+
+                            {/* Package Header */}
+                            <div className="mb-6">
+                                <h3 className="text-2xl font-bold text-white mb-2">{t(pkg.name)}</h3>
+                                <p className="text-slate-400 text-sm leading-relaxed">{t(pkg.description)}</p>
+                            </div>
+
+                            {/* Price */}
+                            <div className="mb-6">
+                                <div className="flex items-baseline gap-1">
+                                    <span className="text-4xl font-extrabold text-white">
+                                        CHF {pkg.price}
+                                    </span>
+                                    <span className="text-slate-400">{t('Packages.section.perMonth')}</span>
+                                </div>
+                                <p className="text-sm text-slate-500 mt-1">{t('Packages.section.billedMonthly')}</p>
+                            </div>
+
+                            {/* Features */}
+                            <ul className="space-y-3 mb-8">
+                                {pkg.features.map((featureKey, idx) => (
+                                    <motion.li
+                                        key={idx}
+                                        initial={{ opacity: 0, x: -10 }}
+                                        whileInView={{ opacity: 1, x: 0 }}
+                                        viewport={{ once: true }}
+                                        transition={{ delay: 0.1 + idx * 0.05 }}
+                                        className="flex items-start gap-3"
+                                    >
+                                        <div className={`mt-0.5 w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 ${pkg.isPopular ? 'bg-purple-500' : 'bg-purple-500/20'
+                                            }`}>
+                                            <Check className={`w-3 h-3 ${pkg.isPopular ? 'text-white' : 'text-purple-400'}`} />
+                                        </div>
+                                        <span className="text-slate-300 text-sm">{t(featureKey)}</span>
+                                    </motion.li>
+                                ))}
+                            </ul>
+
+                            {/* CTA Button */}
+                            <button
+                                onClick={() => handleRequest(t(pkg.name))}
+                                className={`w-full flex items-center justify-center gap-2 py-3 rounded-xl font-semibold transition-all duration-300 ${pkg.isPopular
+                                    ? 'bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-[0_0_20px_rgba(168,85,247,0.3)] hover:shadow-[0_0_30px_rgba(168,85,247,0.5)] hover:-translate-y-0.5'
+                                    : 'bg-white/10 text-white hover:bg-white/20'
+                                    }`}
+                            >
+                                Get Started
+                                <ArrowRight className="w-4 h-4" />
+                            </button>
+                        </motion.div>
+                    ))}
+                </div>
+
+                {/* Social Media Add-Ons */}
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    className="max-w-4xl mx-auto mb-8"
+                >
+                    <h3 className="text-xl font-bold text-white mb-4 text-center">{t('Packages.section.addOns')}</h3>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div className="p-4 rounded-xl bg-slate-900/50 border border-white/10">
+                            <div className="flex items-center justify-between mb-2">
+                                <span className="text-white font-semibold text-sm">{t('Packages.socialAddOns.extraPlatform.name')}</span>
+                                <span className="text-purple-400 font-bold">+CHF 99/mo</span>
+                            </div>
+                            <p className="text-slate-400 text-xs">{t('Packages.socialAddOns.extraPlatform.description')}</p>
+                        </div>
+                        <div className="p-4 rounded-xl bg-slate-900/50 border border-white/10">
+                            <div className="flex items-center justify-between mb-2">
+                                <span className="text-white font-semibold text-sm">{t('Packages.socialAddOns.extraReels.name')}</span>
+                                <span className="text-purple-400 font-bold">CHF 79 ea</span>
+                            </div>
+                            <p className="text-slate-400 text-xs">{t('Packages.socialAddOns.extraReels.description')}</p>
+                        </div>
+                        <div className="p-4 rounded-xl bg-slate-900/50 border border-white/10">
+                            <div className="flex items-center justify-between mb-2">
+                                <span className="text-white font-semibold text-sm">{t('Packages.socialAddOns.paidAds.name')}</span>
+                                <span className="text-purple-400 font-bold">+CHF 199/mo</span>
+                            </div>
+                            <p className="text-slate-400 text-xs">{t('Packages.socialAddOns.paidAds.description')}</p>
+                        </div>
+                    </div>
+                </motion.div>
+
             </div>
 
             <ServiceRequestDialog

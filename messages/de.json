@@ -8,9 +8,21 @@
         "about": "Über uns"
     },
     "Packages": {
+        "quickStart": {
+            "name": "Schnellstart",
+            "priceDisplay": "CHF 600",
+            "description": "Ultra-minimale Einzelseiten-Website, um schnell online zu gehen. Perfekt für knappes Budget.",
+            "target": "Budget-Startups / Schneller Start",
+            "features": {
+                "0": "Basis-Einzelseiten-Website",
+                "1": "Mobil-responsiv",
+                "2": "Kontaktinformationen-Anzeige",
+                "3": "Schnelle 3-5 Tage Lieferung"
+            }
+        },
         "starter": {
             "name": "Starter",
-            "priceDisplay": "CHF 850",
+            "priceDisplay": "CHF 975",
             "description": "Die perfekte Grundlage für Ihre Online-Präsenz—eine professionelle Einzelseiten-Website für Ihr Unternehmen.",
             "target": "Neues Geschäft mit bestehender Marke",
             "features": {
@@ -23,7 +35,7 @@
         },
         "starterPlus": {
             "name": "Starter Plus",
-            "priceDisplay": "CHF 1,400",
+            "priceDisplay": "CHF 1,275",
             "description": "Das komplette Startpaket: eine professionelle Website plus Markenidentitätsdesign (Logo, Farbpalette, Typografie).",
             "target": "Neugeschäft mit Branding-Bedarf",
             "features": {
@@ -36,7 +48,7 @@
         },
         "businessPro": {
             "name": "Business Pro",
-            "priceDisplay": "CHF 2,000",
+            "priceDisplay": "CHF 2,450",
             "description": "Für wachsende Unternehmen mit Bedarf an erweiterten Funktionen: CMS, Blog, Buchungssysteme oder Mehrsprachigkeit.",
             "target": "Etablierte KMUs",
             "features": {
@@ -49,7 +61,7 @@
         },
         "landingPage": {
             "name": "Landing Page",
-            "priceDisplay": "CHF 600",
+            "priceDisplay": "CHF 475",
             "description": "Hochkonvertierende Einzelseite für Marketingkampagnen, Produkteinführungen oder Event-Registrierungen.",
             "target": "Kampagnen / Launches",
             "features": {
@@ -62,7 +74,7 @@
         },
         "logoOnly": {
             "name": "Nur Logo",
-            "priceDisplay": "CHF 350",
+            "priceDisplay": "CHF 299",
             "description": "Individuelles Logodesign, um Ihrem Unternehmen ein professionelles Gesicht zu geben. Inklusive aller Formate.",
             "target": "Eigenständiges Branding",
             "features": {
@@ -75,7 +87,7 @@
         },
         "fullBrandKit": {
             "name": "Volles Marken-Kit",
-            "priceDisplay": "CHF 650",
+            "priceDisplay": "CHF 549",
             "description": "Umfassendes Branding: Logo, Visitenkarten, Briefkopf und Social-Media-Vorlagen für einen einheitlichen Look.",
             "target": "Komplettes Identitätspaket",
             "features": {
@@ -90,6 +102,7 @@
             "onetime": "Einmalig",
             "3months": "3 Monate",
             "6months": "6 Monate",
+            "12months": "12 Monate",
             "monthly": "/Monat",
             "total": "Gesamt",
             "disclaimer": "* Endpreis kann je nach Projektumfang variieren",
@@ -112,7 +125,13 @@
             "billedMonthly": "Monatliche Abrechnung",
             "installmentNote": "Hinweis: Wenn Sie die Entwicklung in Raten zahlen, kommen die Hosting- und Supportgebühren zu Ihren Ratenzahlungen hinzu, sobald Ihr Projekt online und vollständig abgeschlossen ist.",
             "revisionsNote": "Jedes Paket hat seine eigene Überarbeitungsrunde",
-            "extraRevisions": "Zusätzliche Überarbeitungen kosten CHF 120 pro Stunde"
+            "extraRevisions": "Zusätzliche Überarbeitungen kosten CHF 120 pro Stunde",
+            "socialMediaTitle": "Social Media",
+            "marketingTitle": "Marketing",
+            "socialMediaBadge": "KI-Powered",
+            "socialMediaIntro": "Konsistente, professionelle Inhalte, unterstützt von KI und verfeinert von Menschen. Wachsen Sie Ihre Marke auf Instagram, Facebook und LinkedIn.",
+            "bestFor": "Ideal für",
+            "addOns": "Add-Ons"
         },
         "hosting": {
             "basic": {
@@ -147,6 +166,65 @@
                     "3": "Dedizierter Support-Kontakt",
                     "4": "24/7 Uptime-Überwachung"
                 }
+            }
+        },
+        "socialMedia": {
+            "starter": {
+                "name": "Social Starter",
+                "price": 249,
+                "description": "Perfekt für kleine Unternehmen, die mit Social Media starten.",
+                "features": {
+                    "0": "8 hochwertige Beiträge pro Monat",
+                    "1": "1 Plattform (Instagram, Facebook oder LinkedIn)",
+                    "2": "KI-unterstützte Content-Erstellung",
+                    "3": "Planung & Veröffentlichung",
+                    "4": "Monatlicher Leistungsbericht",
+                    "5": "Sie liefern Fotos — wir verbessern mit KI"
+                }
+            },
+            "growth": {
+                "name": "Social Growth",
+                "price": 399,
+                "description": "Für Unternehmen, die ihre Social-Media-Präsenz skalieren möchten.",
+                "features": {
+                    "0": "12 Beiträge pro Monat",
+                    "1": "2 Plattformen (z.B. Instagram + Facebook)",
+                    "2": "Instagram Stories (4-8 pro Monat)",
+                    "3": "Basis-Engagement-Management",
+                    "4": "Hashtag-Recherche & Optimierung",
+                    "5": "Content-Kalender-Vorschau"
+                }
+            },
+            "pro": {
+                "name": "Social Pro",
+                "price": 579,
+                "description": "Vollständiges Social-Media-Management für ambitionierte Marken.",
+                "features": {
+                    "0": "16 Beiträge pro Monat",
+                    "1": "3 Plattformen (Instagram + Facebook + LinkedIn)",
+                    "2": "Vollständiges Engagement-Management",
+                    "3": "Monatliches Strategiegespräch",
+                    "4": "A/B-Testing & Optimierung",
+                    "5": "Priorisierter Support"
+                }
+            }
+        },
+        "socialAddOns": {
+            "title": "Social-Media-Add-Ons",
+            "extraPlatform": {
+                "name": "Extra-Plattform",
+                "price": 99,
+                "description": "Weiteren Social-Media-Kanal hinzufügen"
+            },
+            "extraReels": {
+                "name": "Extra Reels/Videos",
+                "price": 79,
+                "description": "Zusätzlicher Videoinhalt (pro Reel)"
+            },
+            "paidAds": {
+                "name": "Bezahlte Anzeigenverwaltung",
+                "price": 199,
+                "description": "Verwaltung von Social-Media-Anzeigen (Meta/LinkedIn)"
             }
         }
     },

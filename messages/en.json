@@ -8,9 +8,21 @@
         "about": "About"
     },
     "Packages": {
+        "quickStart": {
+            "name": "Quick Start",
+            "priceDisplay": "CHF 600",
+            "description": "Ultra-minimal one-page site to get you online fast. Perfect for testing the waters or tight budgets.",
+            "target": "Budget startups / Quick launch",
+            "features": {
+                "0": "Basic one-page website",
+                "1": "Mobile-responsive",
+                "2": "Contact information display",
+                "3": "Fast 3-5 day delivery"
+            }
+        },
         "starter": {
             "name": "Starter",
-            "priceDisplay": "CHF 850",
+            "priceDisplay": "CHF 975",
             "description": "The perfect foundation for your online presence—a professional single-page website to establish your business.",
             "target": "New business with existing brand",
             "features": {
@@ -23,7 +35,7 @@
         },
         "starterPlus": {
             "name": "Starter Plus",
-            "priceDisplay": "CHF 1,400",
+            "priceDisplay": "CHF 1,275",
             "description": "The complete launch package: a professional website plus a brand identity design (logo, color palette, typography).",
             "target": "New business needing branding",
             "features": {
@@ -36,7 +48,7 @@
         },
         "businessPro": {
             "name": "Business Pro",
-            "priceDisplay": "CHF 2,000",
+            "priceDisplay": "CHF 2,450",
             "description": "For growing businesses needing advance features: CMS, blog, booking systems, or multi-language support.",
             "target": "Established SMEs",
             "features": {
@@ -49,7 +61,7 @@
         },
         "landingPage": {
             "name": "Landing Page",
-            "priceDisplay": "CHF 600",
+            "priceDisplay": "CHF 475",
             "description": "High-conversion single page designed for marketing campaigns, product launches, or event registrations.",
             "target": "Campaigns / launches",
             "features": {
@@ -62,7 +74,7 @@
         },
         "logoOnly": {
             "name": "Logo Only",
-            "priceDisplay": "CHF 350",
+            "priceDisplay": "CHF 299",
             "description": "Custom logo design to give your business a professional face. Includes all necessary file formats.",
             "target": "Standalone branding",
             "features": {
@@ -75,7 +87,7 @@
         },
         "fullBrandKit": {
             "name": "Full Brand Kit",
-            "priceDisplay": "CHF 650",
+            "priceDisplay": "CHF 549",
             "description": "Comprehensive branding: logo, business cards, letterhead, and social media templates for a cohesive look.",
             "target": "Complete identity package",
             "features": {
@@ -90,6 +102,7 @@
             "onetime": "One-Time",
             "3months": "3 Months",
             "6months": "6 Months",
+            "12months": "12 Months",
             "monthly": "/mo",
             "total": "Total",
             "disclaimer": "* Final price may vary based on project scope and complexity",
@@ -112,7 +125,13 @@
             "billedMonthly": "Billed monthly",
             "installmentNote": "Note: If you are paying for development in installments, the hosting & support fee is in addition to your installment payments once your project is online and fully complete.",
             "revisionsNote": "Each package has its own round of revisions",
-            "extraRevisions": "Extra revisions will have an increased cost of CHF 120 per hour"
+            "extraRevisions": "Extra revisions will have an increased cost of CHF 120 per hour",
+            "socialMediaTitle": "Social Media",
+            "marketingTitle": "Marketing",
+            "socialMediaBadge": "AI-Powered",
+            "socialMediaIntro": "Consistent, professional content powered by AI and refined by humans. Grow your brand on Instagram, Facebook, and LinkedIn.",
+            "bestFor": "Best for",
+            "addOns": "Add-Ons"
         },
         "hosting": {
             "basic": {
@@ -147,6 +166,65 @@
                     "3": "Dedicated support contact",
                     "4": "24/7 uptime monitoring"
                 }
+            }
+        },
+        "socialMedia": {
+            "starter": {
+                "name": "Social Starter",
+                "price": 249,
+                "description": "Perfect for small businesses getting started with social media.",
+                "features": {
+                    "0": "8 high-quality posts per month",
+                    "1": "1 platform (Instagram, Facebook, or LinkedIn)",
+                    "2": "AI-assisted content creation",
+                    "3": "Scheduling & publishing",
+                    "4": "Monthly performance report",
+                    "5": "You provide photos — we enhance with AI"
+                }
+            },
+            "growth": {
+                "name": "Social Growth",
+                "price": 399,
+                "description": "For businesses ready to scale their social presence.",
+                "features": {
+                    "0": "12 posts per month",
+                    "1": "2 platforms (e.g., Instagram + Facebook)",
+                    "2": "Instagram Stories (4-8 per month)",
+                    "3": "Basic engagement management",
+                    "4": "Hashtag research & optimization",
+                    "5": "Content calendar preview"
+                }
+            },
+            "pro": {
+                "name": "Social Pro",
+                "price": 579,
+                "description": "Complete social media management for ambitious brands.",
+                "features": {
+                    "0": "16 posts per month",
+                    "1": "3 platforms (Instagram + Facebook + LinkedIn)",
+                    "2": "Full engagement management",
+                    "3": "Monthly strategy call",
+                    "4": "A/B testing & optimization",
+                    "5": "Priority support"
+                }
+            }
+        },
+        "socialAddOns": {
+            "title": "Social Media Add-Ons",
+            "extraPlatform": {
+                "name": "Extra Platform",
+                "price": 99,
+                "description": "Add another social channel"
+            },
+            "extraReels": {
+                "name": "Extra Reels/Videos",
+                "price": 79,
+                "description": "Additional video content (per reel)"
+            },
+            "paidAds": {
+                "name": "Paid Ad Management",
+                "price": 199,
+                "description": "Manage social media ads (Meta/LinkedIn)"
             }
         }
     },
