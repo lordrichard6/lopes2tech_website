@@ -2,14 +2,19 @@ export default function JsonLd() {
     const jsonLd = {
         '@context': 'https://schema.org',
         '@type': 'LocalBusiness',
-        name: 'lopes2tech',
-        description: 'Professional IT solutions, process automation, web development, and app development services in Switzerland',
+        '@id': 'https://lopes2tech.ch/#organization',
+        name: 'Lopes2Tech',
+        alternateName: 'lopes2tech',
+        description: 'Professional web design, AI-powered social media marketing, and business automation services for Swiss SMEs and startups in Zurich, Switzerland',
         url: 'https://lopes2tech.ch',
         telephone: '+41787989533',
         email: 'paulo@lopes2tech.ch',
+        image: 'https://lopes2tech.ch/logo.png',
+        logo: 'https://lopes2tech.ch/logo.png',
         address: {
             '@type': 'PostalAddress',
             addressLocality: 'Zurich',
+            addressRegion: 'Zurich',
             addressCountry: 'CH',
         },
         geo: {
@@ -23,7 +28,17 @@ export default function JsonLd() {
             'https://www.instagram.com/lopes2tech/',
             'https://medium.com/@paulolopesreizinho',
         ],
-        priceRange: '$$',
+        priceRange: 'CHF 249-2450',
+        areaServed: [
+            {
+                '@type': 'City',
+                name: 'Zurich',
+            },
+            {
+                '@type': 'Country',
+                name: 'Switzerland',
+            },
+        ],
         serviceArea: {
             '@type': 'GeoCircle',
             geoMidpoint: {
@@ -35,38 +50,108 @@ export default function JsonLd() {
         },
         hasOfferCatalog: {
             '@type': 'OfferCatalog',
-            name: 'IT Services',
+            name: 'Digital Services for Swiss Businesses',
             itemListElement: [
                 {
                     '@type': 'Offer',
                     itemOffered: {
                         '@type': 'Service',
-                        name: 'Process Automation',
+                        name: 'Web Design & Development',
+                        description: 'Professional website design and development for Zurich businesses, starting from CHF 600',
+                        serviceType: 'Website Design',
+                        areaServed: 'Zurich, Switzerland',
+                    },
+                    price: '600',
+                    priceCurrency: 'CHF',
+                    availability: 'https://schema.org/InStock',
+                },
+                {
+                    '@type': 'Offer',
+                    itemOffered: {
+                        '@type': 'Service',
+                        name: 'Social Media Marketing Starter',
+                        description: 'AI-powered social media management for Swiss businesses - 8 posts per month, 1 platform',
+                        serviceType: 'Social Media Marketing',
+                        areaServed: 'Zurich, Switzerland',
+                    },
+                    price: '249',
+                    priceCurrency: 'CHF',
+                    availability: 'https://schema.org/InStock',
+                    priceSpecification: {
+                        '@type': 'UnitPriceSpecification',
+                        price: '249',
+                        priceCurrency: 'CHF',
+                        unitText: 'MONTH',
+                    },
+                },
+                {
+                    '@type': 'Offer',
+                    itemOffered: {
+                        '@type': 'Service',
+                        name: 'Social Media Marketing Growth',
+                        description: 'Comprehensive social media management - 12 posts per month, 2 platforms, Stories included',
+                        serviceType: 'Social Media Marketing',
+                        areaServed: 'Zurich, Switzerland',
+                    },
+                    price: '399',
+                    priceCurrency: 'CHF',
+                    availability: 'https://schema.org/InStock',
+                    priceSpecification: {
+                        '@type': 'UnitPriceSpecification',
+                        price: '399',
+                        priceCurrency: 'CHF',
+                        unitText: 'MONTH',
+                    },
+                },
+                {
+                    '@type': 'Offer',
+                    itemOffered: {
+                        '@type': 'Service',
+                        name: 'Social Media Marketing Pro',
+                        description: 'Complete social media management - 16 posts per month, 3 platforms, full engagement management',
+                        serviceType: 'Social Media Marketing',
+                        areaServed: 'Zurich, Switzerland',
+                    },
+                    price: '579',
+                    priceCurrency: 'CHF',
+                    availability: 'https://schema.org/InStock',
+                    priceSpecification: {
+                        '@type': 'UnitPriceSpecification',
+                        price: '579',
+                        priceCurrency: 'CHF',
+                        unitText: 'MONTH',
+                    },
+                },
+                {
+                    '@type': 'Offer',
+                    itemOffered: {
+                        '@type': 'Service',
+                        name: 'Business Process Automation',
                         description: 'Automate business processes to improve efficiency and reduce errors',
+                        serviceType: 'Business Automation',
+                        areaServed: 'Switzerland',
                     },
                 },
                 {
                     '@type': 'Offer',
                     itemOffered: {
                         '@type': 'Service',
-                        name: 'Web Development',
-                        description: 'Modern, responsive websites and web applications',
+                        name: 'Landing Page Design',
+                        description: 'High-conversion landing pages for marketing campaigns',
+                        serviceType: 'Landing Page Design',
+                        areaServed: 'Zurich, Switzerland',
                     },
+                    price: '475',
+                    priceCurrency: 'CHF',
                 },
                 {
                     '@type': 'Offer',
                     itemOffered: {
                         '@type': 'Service',
-                        name: 'App Development',
-                        description: 'Native and cross-platform apps for macOS, iPad, and iOS',
-                    },
-                },
-                {
-                    '@type': 'Offer',
-                    itemOffered: {
-                        '@type': 'Service',
-                        name: 'Custom Tools Development',
-                        description: 'Custom automation tools and software solutions',
+                        name: 'AI Integration & Chatbots',
+                        description: 'AI-powered chatbots and automation solutions',
+                        serviceType: 'AI Services',
+                        areaServed: 'Switzerland',
                     },
                 },
             ],
