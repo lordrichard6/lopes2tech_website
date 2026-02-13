@@ -65,14 +65,14 @@ export default function Navbar() {
                             />
                         </div>
 
-                        <div className="flex items-baseline gap-[2px] font-sans ml-2">
-                            <span className="font-bold text-[1.8rem] leading-[44px] text-white tracking-tight drop-shadow-[0_0_10px_#00f3ff]">
+                        <div className="flex items-center gap-[1px] font-sans ml-2">
+                            <span className="font-bold text-[1.4rem] text-white tracking-tight drop-shadow-[0_0_10px_#00f3ff]">
                                 lopes
                             </span>
-                            <span className="relative top-[2px] font-extrabold text-[3.2rem] leading-none text-white mx-[-2px] drop-shadow-[0_0_10px_#b845ff]">
+                            <span className="font-extrabold text-[2.4rem] leading-none text-white mx-[-1px] drop-shadow-[0_0_10px_#b845ff]">
                                 2
                             </span>
-                            <span className="font-extrabold text-[1.8rem] lowercase text-white drop-shadow-[0_0_10px_#ff9900]">
+                            <span className="font-extrabold text-[1.4rem] lowercase text-white drop-shadow-[0_0_10px_#ff9900]">
                                 tech
                             </span>
                         </div>
