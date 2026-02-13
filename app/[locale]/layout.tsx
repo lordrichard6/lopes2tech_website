@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   title: "Lopes2Tech - AI & Automations: Tech-Accelerated Growth for Modern Business.",
   description: "We help small and medium companies get more leads, automate admin, and scale without complexity.",
   manifest: '/manifest.json',
-  themeColor: '#00f5ff',
+  themeColor: '#01232E',
   appleWebApp: {
     capable: true,
     statusBarStyle: 'default',
