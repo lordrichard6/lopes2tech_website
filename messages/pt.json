@@ -151,7 +151,7 @@
                 "features": {
                     "0": "Tudo no Básico",
                     "1": "Até 5 alterações por mês",
-                    "2": "Max 2 horas de trabalho incluídos",
+                    "2": "Max 1 hora de trabalho incluída",
                     "3": "Suporte prioritário por email e chat",
                     "4": "Monitorização de desempenho"
                 }
@@ -162,7 +162,7 @@
                 "features": {
                     "0": "Tudo no Profissional",
                     "1": "Pequenas alterações ilimitadas",
-                    "2": "Max 4 horas de trabalho incluídos",
+                    "2": "Max 2 horas de trabalho incluídos",
                     "3": "Contacto de suporte dedicado",
                     "4": "Monitorização de uptime 24/7"
                 }

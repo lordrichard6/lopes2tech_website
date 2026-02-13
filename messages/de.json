@@ -151,7 +151,7 @@
                 "features": {
                     "0": "Alles in Basic",
                     "1": "Bis zu 5 Änderungen pro Monat",
-                    "2": "Max. 2 Stunden Arbeit inklusive",
+                    "2": "Max. 1 Stunde Arbeit inklusive",
                     "3": "Priorisierter E-Mail- & Chat-Support",
                     "4": "Leistungsüberwachung"
                 }
@@ -162,7 +162,7 @@
                 "features": {
                     "0": "Alles in Professional",
                     "1": "Unbegrenzte kleine Änderungen",
-                    "2": "Max. 4 Stunden Arbeit inklusive",
+                    "2": "Max. 2 Stunden Arbeit inklusive",
                     "3": "Dedizierter Support-Kontakt",
                     "4": "24/7 Uptime-Überwachung"
                 }
