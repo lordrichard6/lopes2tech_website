@@ -54,7 +54,7 @@ export default function Navbar() {
             >
                 <nav className="flex justify-between items-center px-6 py-3">
                     {/* Logo */}
-                    <Link href="/" className="flex items-center gap-3 group relative">
+                    <Link href="/" className="flex items-center gap-2 group relative">
                         <div className="relative w-[45px] h-[45px] animate-logo-glow transition-transform duration-300 group-hover:scale-105">
                             <Image
                                 src="/logo_w.svg"
@@ -65,7 +65,7 @@ export default function Navbar() {
                             />
                         </div>
 
-                        <div className="flex items-center gap-[1px] font-sans ml-2">
+                        <div className="flex items-center gap-[1px] font-sans ml-1">
                             <span className="font-bold text-[1.4rem] text-white tracking-tight drop-shadow-[0_0_10px_#00f3ff]">
                                 lopes
                             </span>
