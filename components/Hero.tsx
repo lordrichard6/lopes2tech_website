@@ -124,7 +124,7 @@ export default function Hero() {
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.5 }}
-                        className="text-[2.5rem] leading-[1.1] font-extrabold tracking-tight text-white mb-4 md:text-[3.5rem]"
+                        className="text-[2.2rem] leading-[1.1] font-extrabold tracking-tight text-white mb-4 md:text-[3.5rem] break-words hyphens-auto text-balance"
                     >
                         <span className="block neon-text-purple">{t('title1')}</span>
                         <span className="block neon-text-blue">{t('title2')}</span>
