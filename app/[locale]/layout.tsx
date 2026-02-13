@@ -24,8 +24,15 @@ export const viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Lopes2Tech - Websites & Automations for Service Businesses",
+  title: "Lopes2Tech - AI & Automations: Tech-Accelerated Growth for Modern Business.",
   description: "We help small and medium companies get more leads, automate admin, and scale without complexity.",
+  manifest: '/manifest.json',
+  themeColor: '#00f5ff',
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'default',
+    title: 'Lopes2Tech',
+  },
   keywords: ["lopes2tech", "website development", "SEO development", "AI workflows", "IT solutions Switzerland", "process automation", "app development", "custom software", "business automation", "Zurich"],
   authors: [{ name: "Paulo R. Lopes" }],
   metadataBase: new URL("https://lopes2tech.ch"),
