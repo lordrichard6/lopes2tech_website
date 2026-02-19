@@ -929,5 +929,75 @@
             "successMessage": "Wir haben Ihre Anfrage erhalten und werden uns in Kürze bei Ihnen melden.",
             "error": "Etwas ist schief gelaufen. Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt."
         }
+    },
+    "FeaturedProjects": {
+        "badge": "Eigene SaaS-Produkte",
+        "title": "Software für",
+        "titleHighlight": "Ihre Branche",
+        "subtitle": "Vertikale SaaS-Produkte von Grund auf entwickelt — jedes löst ein echtes Problem für eine bestimmte Branche.",
+        "hint": "Klicken Sie auf ein Produkt, um seine Funktionen zu erkunden",
+        "dialog": {
+            "close": "Schließen",
+            "visitWebsite": "Website besuchen",
+            "keyFeatures": "Hauptfunktionen"
+        },
+        "projects": {
+            "mimesa": {
+                "industryLabel": "Für Restaurants",
+                "tagline": "Restaurant-Reservierungs- und Verwaltungsplattform",
+                "description": "miMesa ist eine All-in-One-Plattform für Restaurants zur Verwaltung von Reservierungen, Tischen und Gästen — reduziert No-Shows und steigert die Effizienz, damit Ihr Team sich auf die Gastfreundschaft konzentrieren kann.",
+                "features": {
+                    "0": "Intelligentes Reservierungssystem mit Echtzeit-Verfügbarkeit",
+                    "1": "Interaktive Tischkarte mit Drag-and-Drop-Verwaltung",
+                    "2": "Automatische Gast-SMS/E-Mail-Bestätigungen & Erinnerungen",
+                    "3": "Gastprofile mit Präferenzen, Besuchen & Ausgabenverlauf",
+                    "4": "Walk-in & Wartelisten-Manager mit Live-Warteschlangen-Tracking",
+                    "5": "Mehrsprachige Unterstützung für internationale Gäste",
+                    "6": "Analyse-Dashboard: Belegung, Stoßzeiten, Umsatztrends"
+                }
+            },
+            "clinika": {
+                "industryLabel": "Für Kliniken",
+                "tagline": "Klinik-Buchungs- & CRM-Plattform",
+                "description": "ClíniKa OS ist eine vollständige Praxisverwaltungsplattform für Kliniken und Gesundheitsfachleute — von Online-Buchungen bis zu DSGVO-konformen Patientenakten, alles in einem sicheren Dashboard.",
+                "features": {
+                    "0": "Online-Buchung mit Echtzeit-Terminverfügbarkeit",
+                    "1": "Patienten-CRM mit sicheren, DSGVO-konformen Akten",
+                    "2": "Automatische Terminerinnerungen per SMS & E-Mail",
+                    "3": "Terminplanung für mehrere Behandler & Raumverwaltung",
+                    "4": "Digitale Aufnahmeformulare & E-Signatur-Einwilligung",
+                    "5": "Schweizer QR-Rechnung & EU-Rechnungserstellung",
+                    "6": "Rollenbasierter Zugriff für Admin, Behandler & Empfang"
+                }
+            },
+            "darkmonkey": {
+                "industryLabel": "E-Commerce",
+                "tagline": "Gamifizierte Premium-E-Commerce-Plattform",
+                "description": "Dark Monkey ist eine gamifizierte Premium-E-Commerce-Plattform, bei der sich Einkaufen wie Fortschritt anfühlt. Entwickelt mit limitierten Drops, XP-Stufen, Produktanpassung und einem Marken-Ökosystem, das Kunden immer wieder kommen lässt.",
+                "features": {
+                    "0": "Gamifiziertes XP-System — Bronze → Silber → Gold → VIP",
+                    "1": "Limitierte Drops mit Countdowns & Warteschlangen",
+                    "2": "Produktanpassungs-Engine mit Live-Vorschau",
+                    "3": "Stripe Checkout mit Apple Pay & Google Pay",
+                    "4": "Missionen, Abzeichen & sammelbare Design-Achievements",
+                    "5": "Treuepunkte, Empfehlungen & Warenkorb-Automatisierung",
+                    "6": "Mobile-first, edge-gecacht für ultraschnelle Performance"
+                }
+            },
+            "menteiq": {
+                "industryLabel": "KI-Business-OS",
+                "tagline": "KI-natives CRM & Business Command Center",
+                "description": "menteIQ ist ein KI-natives Business Command Center für europäische Freelancer, Berater und KMUs. Multi-Modell-KI-Chat (GPT-4, Claude, Gemini), CRM-Pipeline, QR-Rechnung und eine RAG-Wissensdatenbank — alles in einer Plattform für Schweizer & EU-Compliance.",
+                "features": {
+                    "0": "Multi-Modell-KI-Chat — GPT-4o, Claude 3.5, Gemini Pro",
+                    "1": "CRM mit Kanban-Pipeline (Lead → Kunde → Abgewandert)",
+                    "2": "Schweizer QR-Rechnung & EU SEPA-Rechnungserstellung",
+                    "3": "RAG-Wissensdatenbank — KI antwortet aus Ihren eigenen Dokumenten",
+                    "4": "Massen-CSV/Excel-Import mit Duplikaterkennung",
+                    "5": "DSGVO-ready: Einzel-Klick-Datenexport & -löschung",
+                    "6": "Vertikalpakete: Berater, Versicherung, Buchhaltung (v2)"
+                }
+            }
+        }
     }
 }

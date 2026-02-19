@@ -929,5 +929,75 @@
             "successMessage": "Recebemos o seu pedido e entraremos em contacto brevemente.",
             "error": "Algo correu mal. Por favor tente novamente ou contacte-nos diretamente."
         }
+    },
+    "FeaturedProjects": {
+        "badge": "Produtos SaaS Próprios",
+        "title": "Software Criado para a",
+        "titleHighlight": "Sua Indústria",
+        "subtitle": "Produtos SaaS verticais desenvolvidos do zero — cada um resolvendo um problema real para um setor específico.",
+        "hint": "Clique em qualquer produto para explorar as suas funcionalidades",
+        "dialog": {
+            "close": "Fechar",
+            "visitWebsite": "Visitar Website",
+            "keyFeatures": "Funcionalidades Principais"
+        },
+        "projects": {
+            "mimesa": {
+                "industryLabel": "Para Restaurantes",
+                "tagline": "Plataforma de Reservas e Gestão de Restaurantes",
+                "description": "O miMesa é uma plataforma tudo-em-um para restaurantes gerirem reservas, mesas e clientes — reduzindo faltas e aumentando a eficiência para que a sua equipa se foque na hospitalidade.",
+                "features": {
+                    "0": "Sistema de reservas inteligente com disponibilidade em tempo real",
+                    "1": "Mapa de mesas interativo com gestão por arrastar e largar",
+                    "2": "Confirmações e lembretes automáticos por SMS/email",
+                    "3": "Perfis de clientes com preferências, visitas e histórico de gastos",
+                    "4": "Gestor de walk-ins e lista de espera com rastreamento em tempo real",
+                    "5": "Suporte multilingue para clientes internacionais",
+                    "6": "Dashboard analítico: ocupação, horários de pico, tendências de receita"
+                }
+            },
+            "clinika": {
+                "industryLabel": "Para Clínicas",
+                "tagline": "Plataforma de Reservas e CRM para Clínicas",
+                "description": "O ClíniKa OS é uma plataforma completa de gestão de consultórios para clínicas e profissionais de saúde — desde marcações online até registos de pacientes conformes com o RGPD, tudo num painel seguro.",
+                "features": {
+                    "0": "Marcação online com disponibilidade de horários em tempo real",
+                    "1": "CRM de pacientes com registos seguros e conformes com RGPD",
+                    "2": "Lembretes automáticos de consultas por SMS e email",
+                    "3": "Agendamento para múltiplos profissionais e gestão de salas",
+                    "4": "Formulários de admissão digitais e consentimentos com assinatura eletrónica",
+                    "5": "Geração de faturas QR-Bill suíço e EU",
+                    "6": "Acesso por funções para admin, profissional e receção"
+                }
+            },
+            "darkmonkey": {
+                "industryLabel": "E-Commerce",
+                "tagline": "Plataforma de E-Commerce Premium Gamificada",
+                "description": "O Dark Monkey é uma plataforma de e-commerce premium gamificada onde comprar parece progressão. Criado com drops limitados, níveis XP, personalização de produtos e um ecossistema de marca que faz os clientes voltarem.",
+                "features": {
+                    "0": "Sistema XP gamificado — Bronze → Prata → Ouro → VIP",
+                    "1": "Drops de edição limitada com temporizadores e filas de espera",
+                    "2": "Motor de personalização de produtos com pré-visualização ao vivo",
+                    "3": "Checkout Stripe com Apple Pay e Google Pay",
+                    "4": "Missões, emblemas e conquistas de design colecionáveis",
+                    "5": "Recompensas de fidelidade, referências e automação de carrinhos abandonados",
+                    "6": "Mobile-first, com cache de borda para desempenho ultra-rápido"
+                }
+            },
+            "menteiq": {
+                "industryLabel": "OS Empresarial IA",
+                "tagline": "CRM Nativo de IA e Centro de Comando Empresarial",
+                "description": "O menteIQ é um centro de comando empresarial nativo de IA para freelancers, consultores e PMEs europeus. Chat de IA multi-modelo (GPT-4, Claude, Gemini), pipeline CRM, faturação QR-Bill e base de conhecimento RAG — tudo numa plataforma conforme com a legislação suíça e da UE.",
+                "features": {
+                    "0": "Chat de IA multi-modelo — GPT-4o, Claude 3.5, Gemini Pro",
+                    "1": "CRM com pipeline Kanban (Lead → Cliente → Churned)",
+                    "2": "Geração de faturas QR-Bill suíço e SEPA europeu",
+                    "3": "Base de Conhecimento RAG — IA responde com os seus próprios documentos",
+                    "4": "Importação em massa CSV/Excel com deteção de duplicados",
+                    "5": "Pronto para RGPD: exportação de dados e eliminação com um clique",
+                    "6": "Pacotes verticais: Consultor, Seguros, Contabilidade (v2)"
+                }
+            }
+        }
     }
 }

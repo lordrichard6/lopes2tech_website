@@ -17,7 +17,7 @@ const projects = [
         className: "md:col-span-2 md:row-span-2", // Top Left (Large)
     },
     {
-        title: "OrbitCRM",
+        title: "menteIQ",
         description: "Modern CRM platform.",
         image: "/proj/orbitcrm_mockup.png",
         category: "Web App",

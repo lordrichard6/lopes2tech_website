@@ -46,12 +46,12 @@ const projects: Project[] = [
         isInDevelopment: true
     },
     {
-        title: "OrbitCRM - AI-Powered Customer Management",
-        description: "Modern CRM platform with AI-powered search, context awareness, and seamless automation for small to medium businesses.",
+        title: "menteIQ - AI Business Command Center",
+        description: "AI-native CRM & business OS for European freelancers, consultants, and SMEs. Multi-model AI chat (GPT-4, Claude, Gemini), Swiss QR-Bill invoicing, RAG knowledge base, and GDPR-ready data management.",
         image: "/proj/orbitcrm_mockup.png",
-        category: "CRM Platform",
+        category: "AI Business OS",
         type: "web-app",
-        link: "https://orbitcrm-gilt.vercel.app/",
+        link: "https://menteiq.vercel.app/",
         isInDevelopment: true
     },
     {

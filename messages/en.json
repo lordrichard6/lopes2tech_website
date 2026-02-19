@@ -929,5 +929,75 @@
             "successMessage": "We have received your request and will get back to you shortly.",
             "error": "Something went wrong. Please try again or contact us directly."
         }
+    },
+    "FeaturedProjects": {
+        "badge": "In-House SaaS Products",
+        "title": "Software Built for",
+        "titleHighlight": "Your Industry",
+        "subtitle": "Vertical SaaS products designed from scratch — each one solving a real problem for a specific industry.",
+        "hint": "Click any product to explore its features",
+        "dialog": {
+            "close": "Close",
+            "visitWebsite": "Visit Website",
+            "keyFeatures": "Key Features"
+        },
+        "projects": {
+            "mimesa": {
+                "industryLabel": "For Restaurants",
+                "tagline": "Restaurant Reservation & Management Platform",
+                "description": "miMesa is an all-in-one platform for restaurants to manage reservations, tables, and guests — reducing no-shows and increasing efficiency so your team can focus on hospitality.",
+                "features": {
+                    "0": "Smart reservation system with real-time availability",
+                    "1": "Interactive table map with drag-and-drop management",
+                    "2": "Automated guest SMS/email confirmations & reminders",
+                    "3": "Guest profiles with preferences, visits & spend history",
+                    "4": "Walk-in & waitlist manager with live queue tracking",
+                    "5": "Multi-language support for international guests",
+                    "6": "Analytics dashboard: covers, peak hours, revenue trends"
+                }
+            },
+            "clinika": {
+                "industryLabel": "For Clinics",
+                "tagline": "Clinic Booking & CRM Platform",
+                "description": "ClíniKa OS is a complete practice management platform for clinics and health professionals — from online booking to GDPR-compliant patient records, all in one secure dashboard.",
+                "features": {
+                    "0": "Online booking with real-time slot availability",
+                    "1": "Patient CRM with secure, GDPR-compliant records",
+                    "2": "Automated appointment reminders via SMS & email",
+                    "3": "Multi-practitioner scheduling & room management",
+                    "4": "Digital intake forms & e-signature consent",
+                    "5": "Swiss QR-Bill & EU invoice generation",
+                    "6": "Role-based access for admin, practitioner & reception"
+                }
+            },
+            "darkmonkey": {
+                "industryLabel": "E-Commerce",
+                "tagline": "Gamified Premium E-Commerce Platform",
+                "description": "Dark Monkey is a premium gamified e-commerce platform where shopping feels like progression. Built with limited drops, XP tiers, product customization, and a brand ecosystem that keeps customers coming back.",
+                "features": {
+                    "0": "Gamified XP system — Bronze → Silver → Gold → VIP tiers",
+                    "1": "Limited-edition drops with countdown timers & queues",
+                    "2": "Product customization engine with live preview",
+                    "3": "Stripe Checkout with Apple Pay & Google Pay",
+                    "4": "Missions, badges & collectible design achievements",
+                    "5": "Loyalty rewards, referrals & abandoned cart automation",
+                    "6": "Mobile-first, edge-cached for ultra-fast performance"
+                }
+            },
+            "menteiq": {
+                "industryLabel": "AI Business OS",
+                "tagline": "AI-Native CRM & Business Command Center",
+                "description": "menteIQ is an AI-native business command center for European freelancers, consultants, and SMEs. Multi-model AI chat (GPT-4, Claude, Gemini), CRM pipeline, QR-Bill invoicing, and a RAG knowledge base — all in one platform built for Swiss & EU compliance.",
+                "features": {
+                    "0": "Multi-model AI chat — GPT-4o, Claude 3.5, Gemini Pro",
+                    "1": "CRM with Kanban pipeline (Lead → Client → Churned)",
+                    "2": "Swiss QR-Bill & EU SEPA invoice generation",
+                    "3": "RAG Knowledge Base — AI answers from your own documents",
+                    "4": "Bulk CSV/Excel import with duplicate detection",
+                    "5": "GDPR-ready: one-click data export & deletion",
+                    "6": "Vertical packs: Consultant, Insurance, Accounting (v2)"
+                }
+            }
+        }
     }
 }
