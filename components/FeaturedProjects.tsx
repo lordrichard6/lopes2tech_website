@@ -16,7 +16,7 @@ const projectsConfig = [
         industryColor: "#F5A623",
         logo: "/logos/mimesa_icon.png",
         logoSize: { w: 32, h: 32 },
-        websiteUrl: "https://website-mimesa.vercel.app/",
+        websiteUrl: "https://www.mimesa.ch/",
         btn: {
             bg: "#2C1A0E",
             border: "#F5A623",
@@ -37,7 +37,7 @@ const projectsConfig = [
         industryColor: "#71DCC6",
         logo: "/logos/clinika_logo.svg",
         logoSize: { w: 34, h: 36 },
-        websiteUrl: "https://clinika-os.vercel.app/",
+        websiteUrl: "https://www.clinika-os.ch/",
         btn: {
             bg: "#192C50",
             border: "#71DCC6",
@@ -58,7 +58,7 @@ const projectsConfig = [
         industryColor: "#C9A84C",
         logo: "/logos/darkmonkey_logo.webp",
         logoSize: { w: 40, h: 40 },
-        websiteUrl: "https://dark-monkey.vercel.app/",
+        websiteUrl: "https://www.dark-monkey.ch/",
         btn: {
             bg: "#0D0D0D",
             border: "#C9A84C",
@@ -79,7 +79,7 @@ const projectsConfig = [
         industryColor: "#7C3AED",
         logo: "/logos/menteiq_logo_white.svg",
         logoSize: { w: 48, h: 30 },
-        websiteUrl: "https://menteiq.vercel.app/",
+        websiteUrl: "https://menteiq.ch/",
         btn: {
             bg: "#0A0B1E",
             border: "#7C3AED",

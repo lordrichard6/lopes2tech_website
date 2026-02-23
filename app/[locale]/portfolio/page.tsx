@@ -26,7 +26,7 @@ const projects: Project[] = [
         image: "/proj/mimesa_mockup.png",
         category: "Gastronomy & Reservations",
         type: "web-app",
-        link: "https://website-mimesa.vercel.app/",
+        link: "https://www.mimesa.ch/",
         isInDevelopment: true
     },
     {
@@ -51,7 +51,7 @@ const projects: Project[] = [
         image: "/proj/orbitcrm_mockup.png",
         category: "AI Business OS",
         type: "web-app",
-        link: "https://menteiq.vercel.app/",
+        link: "https://menteiq.ch/",
         isInDevelopment: true
     },
     {
