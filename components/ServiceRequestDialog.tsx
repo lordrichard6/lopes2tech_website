@@ -5,6 +5,7 @@ import { createPortal } from "react-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Check } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { sendServiceRequestEmail } from "@/app/actions/contact";
 
 interface ServiceRequestDialogProps {
     isOpen: boolean;
@@ -40,26 +41,15 @@ export default function ServiceRequestDialog({ isOpen, onClose, packageContext, 
         setStatus("submitting");
 
         try {
-            // Use the verified production URL logic
-            const platformUrl = process.env.NEXT_PUBLIC_PLATFORM_URL || (process.env.NODE_ENV === 'production' ? 'https://app.lopes2tech.ch' : 'http://localhost:3000');
-
-            const response = await fetch(`${platformUrl}/api/external/tickets`, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'x-api-key': process.env.NEXT_PUBLIC_PLATFORM_API_SECRET || '',
-                },
-                body: JSON.stringify({
-                    name,
-                    email,
-                    company,
-                    message,
-                    context: packageContext,
-                    source: 'website_package_request'
-                }),
+            const result = await sendServiceRequestEmail({
+                name,
+                email,
+                company,
+                message,
+                context: packageContext
             });
 
-            if (response.ok) {
+            if (result.success) {
                 setStatus("success");
                 // Optional: Close after delay
                 // setTimeout(onClose, 3000);
