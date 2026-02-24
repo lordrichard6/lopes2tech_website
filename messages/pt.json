@@ -961,13 +961,13 @@
                 "tagline": "Plataforma de Reservas e CRM para Clínicas",
                 "description": "O ClíniKa OS é uma plataforma completa de gestão de consultórios para clínicas e profissionais de saúde — desde marcações online até registos de pacientes conformes com o RGPD, tudo num painel seguro.",
                 "features": {
-                    "0": "Marcação online com disponibilidade de horários em tempo real",
-                    "1": "CRM de pacientes com registos seguros e conformes com RGPD",
-                    "2": "Lembretes automáticos de consultas por SMS e email",
-                    "3": "Agendamento para múltiplos profissionais e gestão de salas",
-                    "4": "Formulários de admissão digitais e consentimentos com assinatura eletrónica",
-                    "5": "Geração de faturas QR-Bill suíço e EU",
-                    "6": "Acesso por funções para admin, profissional e receção"
+                    "0": "Página pública de marcações otimizada para telemóveis",
+                    "1": "Dashboard de calendário e gestão de marcações",
+                    "2": "CRM básico para perfis de clientes e histórico",
+                    "3": "Confirmações e lembretes automáticos por email",
+                    "4": "Gestão de equipa com horários e serviços individuais",
+                    "5": "Acesso multi-funções (Proprietário, Admin, Receção)",
+                    "6": "Alojamento europeu complacente com o RGPD"
                 }
             },
             "darkmonkey": {

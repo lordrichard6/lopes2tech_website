@@ -961,13 +961,13 @@
                 "tagline": "Klinik-Buchungs- & CRM-Plattform",
                 "description": "ClíniKa OS ist eine vollständige Praxisverwaltungsplattform für Kliniken und Gesundheitsfachleute — von Online-Buchungen bis zu DSGVO-konformen Patientenakten, alles in einem sicheren Dashboard.",
                 "features": {
-                    "0": "Online-Buchung mit Echtzeit-Terminverfügbarkeit",
-                    "1": "Patienten-CRM mit sicheren, DSGVO-konformen Akten",
-                    "2": "Automatische Terminerinnerungen per SMS & E-Mail",
-                    "3": "Terminplanung für mehrere Behandler & Raumverwaltung",
-                    "4": "Digitale Aufnahmeformulare & E-Signatur-Einwilligung",
-                    "5": "Schweizer QR-Rechnung & EU-Rechnungserstellung",
-                    "6": "Rollenbasierter Zugriff für Admin, Behandler & Empfang"
+                    "0": "Mobil-optimierte öffentliche Buchungsseite",
+                    "1": "Dashboard für Kalender- und Terminverwaltung",
+                    "2": "Basis-CRM für Kundenprofile und Besuchshistorie",
+                    "3": "Automatische E-Mail-Bestätigungen & Erinnerungen",
+                    "4": "Teamverwaltung mit individuellen Zeiten und Diensten",
+                    "5": "Rollenbasierter Zugriff (Inhaber, Admin, Empfang)",
+                    "6": "DSGVO-konformes europäisches Hosting"
                 }
             },
             "darkmonkey": {

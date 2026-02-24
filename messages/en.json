@@ -961,13 +961,13 @@
                 "tagline": "Clinic Booking & CRM Platform",
                 "description": "ClíniKa OS is a complete practice management platform for clinics and health professionals — from online booking to GDPR-compliant patient records, all in one secure dashboard.",
                 "features": {
-                    "0": "Online booking with real-time slot availability",
-                    "1": "Patient CRM with secure, GDPR-compliant records",
-                    "2": "Automated appointment reminders via SMS & email",
-                    "3": "Multi-practitioner scheduling & room management",
-                    "4": "Digital intake forms & e-signature consent",
-                    "5": "Swiss QR-Bill & EU invoice generation",
-                    "6": "Role-based access for admin, practitioner & reception"
+                    "0": "Public booking page optimized for mobile",
+                    "1": "Calendar and appointment management dashboard",
+                    "2": "Basic CRM for client profiles and visit history",
+                    "3": "Automated 24h email confirmations & reminders",
+                    "4": "Team management with individual hours & services",
+                    "5": "Multi-role access (Owner, Admin, Receptionist)",
+                    "6": "GDPR-compliant European hosting"
                 }
             },
             "darkmonkey": {
