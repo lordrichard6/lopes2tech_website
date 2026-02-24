@@ -7,6 +7,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { sendContactEmail } from "@/app/actions/contact";
 
 export default function ContactPage() {
     const t = useTranslations('ContactPage');
@@ -44,25 +45,17 @@ export default function ContactPage() {
         setIsSubmitting(true);
 
         try {
-            const platformUrl = process.env.NEXT_PUBLIC_PLATFORM_URL || (process.env.NODE_ENV === 'production' ? 'https://app.lopes2tech.ch' : 'http://localhost:3000');
-            const response = await fetch(`${platformUrl}/api/external/tickets`, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'x-api-key': process.env.NEXT_PUBLIC_PLATFORM_API_SECRET || '',
-                },
-                body: JSON.stringify({
-                    name: formData.name,
-                    email: formData.email,
-                    company: formData.company,
-                    phone: formData.phone,
-                    message: formData.message,
-                    source: 'website_contact_form',
-                }),
+            const result = await sendContactEmail({
+                name: formData.name,
+                email: formData.email,
+                company: formData.company,
+                phone: formData.phone,
+                message: formData.message,
             });
 
-            if (!response.ok) {
-                throw new Error('Failed to submit contact form');
+            if (!result.success) {
+                console.error("Server Action Error:", result.error);
+                throw new Error(result.error || 'Failed to submit contact form');
             }
 
             setSubmitStatus("success");
