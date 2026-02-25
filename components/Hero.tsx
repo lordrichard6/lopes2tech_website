@@ -5,6 +5,8 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { trackCTAClick } from "@/lib/analytics";
+import { sendBookingNotificationEmail } from "@/app/actions/contact";
 
 export default function Hero() {
     const t = useTranslations('Hero');
@@ -17,8 +19,10 @@ export default function Hero() {
     const yButton = useTransform(scrollY, [0, 500], [0, 300]); // Moves fastest (feels closest)
     const yImage = useTransform(scrollY, [0, 500], [0, 50]);   // Moves slowest (feels furthest/heaviest)
 
-    const openCalBooking = () => {
+    const openCalBooking = async () => {
+        trackCTAClick('hero_book_call');
         window.open('https://cal.com/lopes2tech/initial-consult', '_blank', 'noopener,noreferrer');
+        await sendBookingNotificationEmail();
     };
 
     return (
