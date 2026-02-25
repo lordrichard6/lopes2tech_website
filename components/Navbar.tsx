@@ -160,14 +160,12 @@ export default function Navbar() {
 
                     {/* Desktop Controls */}
                     <div className="hidden md:flex items-center gap-4 pl-6 border-l border-white/10 h-[32px]">
-                        <a
-                            href={process.env.NEXT_PUBLIC_CLIENT_PORTAL_URL || "https://app.lopes2tech.ch"}
-                            target="_blank"
-                            rel="noopener noreferrer"
+                        <Link
+                            href="/client-portal"
                             className="px-5 py-2 text-sm font-semibold rounded-lg text-white bg-cyan-500/10 border border-cyan-400 shadow-[0_0_15px_rgba(0,245,255,0.3)] hover:bg-cyan-500/20 hover:shadow-[0_0_25px_rgba(0,245,255,0.6)] transition-all hover:-translate-y-[1px]"
                         >
                             {t('clientPortal')}
-                        </a>
+                        </Link>
 
                         {/* Language Selector */}
                         <div className="relative">
@@ -311,12 +309,13 @@ export default function Navbar() {
                                 transition={{ delay: 0.5 }}
                                 className="mt-8"
                             >
-                                <a
-                                    href={process.env.NEXT_PUBLIC_CLIENT_PORTAL_URL || "https://app.lopes2tech.ch"}
+                                <Link
+                                    href="/client-portal"
+                                    onClick={() => setIsMenuOpen(false)}
                                     className="px-8 py-3 text-lg font-semibold rounded-full text-white bg-cyan-500/10 border border-cyan-500/50 shadow-[0_0_15px_rgba(6,182,212,0.2)]"
                                 >
                                     {t('clientPortal')}
-                                </a>
+                                </Link>
                             </motion.div>
                         </nav>
                     </motion.div>
