@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { sendContactEmail } from "@/app/actions/contact";
+import { trackFormSubmission } from "@/lib/analytics";
 
 export default function ContactPage() {
     const t = useTranslations('ContactPage');
@@ -59,6 +60,7 @@ export default function ContactPage() {
             }
 
             setSubmitStatus("success");
+            trackFormSubmission('contact_form');
             setFormData({ name: "", email: "", company: "", phone: "", message: "" });
         } catch (error) {
             console.error('Contact form submission error:', error);

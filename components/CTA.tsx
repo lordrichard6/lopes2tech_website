@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { trackCTAClick } from "@/lib/analytics";
 
 export default function CTA() {
     const t = useTranslations('CTASection');
@@ -64,6 +65,7 @@ export default function CTA() {
                 >
                     <Link
                         href="/contact"
+                        onClick={() => trackCTAClick('homepage_cta')}
                         className="inline-flex items-center gap-4 px-12 py-5 text-lg font-bold text-[#0f172a] bg-cyan-400 rounded-full transition-all duration-300 shadow-[0_0_20px_rgba(34,211,238,0.4)] hover:shadow-[0_0_40px_rgba(34,211,238,0.6)] hover:-translate-y-1 hover:bg-cyan-300 group overflow-hidden relative"
                     >
                         <span className="relative z-10">{t('button')}</span>

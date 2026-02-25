@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { X, Check } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { sendServiceRequestEmail } from "@/app/actions/contact";
+import { trackFormSubmission } from "@/lib/analytics";
 
 interface ServiceRequestDialogProps {
     isOpen: boolean;
@@ -51,6 +52,7 @@ export default function ServiceRequestDialog({ isOpen, onClose, packageContext, 
 
             if (result.success) {
                 setStatus("success");
+                trackFormSubmission('service_request');
                 // Optional: Close after delay
                 // setTimeout(onClose, 3000);
             } else {
