@@ -4,6 +4,7 @@ import { Link } from "@/navigation";
 import Image from "next/image";
 import { Mail, Linkedin, Instagram, FileText } from "lucide-react";
 import { useTranslations } from "next-intl";
+import NewsletterSignup from "@/components/NewsletterSignup";
 
 export default function Footer() {
     const t = useTranslations('Footer');
@@ -44,6 +45,7 @@ export default function Footer() {
                             />
                         </div>
                         <p className="text-white/50 text-sm leading-relaxed text-center md:text-left">AI-powered web development, SEO & automation for Swiss businesses.</p>
+                        <NewsletterSignup />
                     </div>
 
                     {/* Services */}
@@ -76,7 +78,7 @@ export default function Footer() {
                                 { href: "/about", label: t('companyLinks.about') },
                                 { href: "/portfolio", label: t('companyLinks.portfolio') },
                                 { href: "/insights", label: t('companyLinks.insights') },
-                                { href: "/faq", label: "FAQ" },
+                                { href: "/faq", label: t('companyLinks.faq') },
                                 { href: "/contact", label: t('companyLinks.contact') },
                             ].map((link) => (
                                 <li key={link.href}>

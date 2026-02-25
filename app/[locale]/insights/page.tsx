@@ -6,7 +6,7 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { BookOpen, Calendar, Clock } from "lucide-react";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import blogPostsEn from "@/data/blog-posts.json";
 import blogPostsDe from "@/data/blog-posts-de.json";
 import blogPostsPt from "@/data/blog-posts-pt.json";
@@ -32,6 +32,7 @@ const blogPostsByLocale: Record<string, BlogPost[]> = {
 
 export default function InsightsPage() {
     const locale = useLocale();
+    const t = useTranslations('InsightsPage');
     const posts = blogPostsByLocale[locale] || blogPostsByLocale.en;
 
     return (
@@ -74,16 +75,16 @@ export default function InsightsPage() {
                     >
                         <div className="inline-block px-4 py-2 mb-6 text-sm font-semibold text-cyan-400 bg-cyan-400/10 border border-cyan-400/20 rounded-full backdrop-blur-sm">
                             <BookOpen className="inline w-4 h-4 mr-2" />
-                            Our Blog
+                            {t('badge')}
                         </div>
                         <h1 className="text-5xl md:text-7xl font-extrabold mb-6 text-white">
-                            Insights &{" "}
+                            {t('title')}{" "}
                             <span className="text-transparent bg-clip-text bg-gradient-to-br from-cyan-400 to-purple-500">
-                                Intelligence
+                                {t('titleHighlight')}
                             </span>
                         </h1>
                         <p className="text-xl text-slate-400 max-w-3xl mx-auto">
-                            Exploring the intersection of AI, automated workflows, and high-performance development.
+                            {t('description')}
                         </p>
                     </motion.div>
 

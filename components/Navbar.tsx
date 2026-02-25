@@ -12,6 +12,8 @@ export default function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isLangOpen, setIsLangOpen] = useState(false);
+    const [isServicesOpen, setIsServicesOpen] = useState(false);
+    const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
     const pathname = usePathname();
     const router = useRouter();
     const t = useTranslations('Navigation');
@@ -35,6 +37,16 @@ export default function Navbar() {
         { key: "insights", href: "/insights" },
         { key: "about", href: "/about" },
         { key: "contact", href: "/contact" },
+    ];
+
+    const serviceLinks = [
+        { href: "/services/web-design", label: "Web Design" },
+        { href: "/services/seo-development", label: "SEO Development" },
+        { href: "/services/ai-integration", label: "AI Integration" },
+        { href: "/services/business-automation", label: "Business Automation" },
+        { href: "/services/web-apps", label: "Web Applications" },
+        { href: "/services/ecommerce", label: "E-Commerce" },
+        { href: "/services/social-media-marketing", label: "Social Media" },
     ];
 
     const changeLanguage = (newLocale: string) => {
@@ -80,30 +92,81 @@ export default function Navbar() {
 
                     {/* Desktop Menu */}
                     <ul className="hidden md:flex items-center gap-8 ml-auto mr-8" role="menubar">
-                        {navLinks.map((link) => (
-                            <li key={link.key}>
-                                <Link
-                                    href={link.href}
-                                    className={clsx(
-                                        "relative text-[0.95rem] font-medium transition-all duration-300 nav-link-shadow",
-                                        pathname === link.href ? "text-white" : "text-white/70 hover:text-white"
-                                    )}
+                        {navLinks.map((link) =>
+                            link.key === "services" ? (
+                                <li
+                                    key={link.key}
+                                    className="relative"
+                                    onMouseEnter={() => setIsServicesOpen(true)}
+                                    onMouseLeave={() => setIsServicesOpen(false)}
                                 >
-                                    {t(link.key)}
-                                </Link>
-                            </li>
-                        ))}
+                                    <Link
+                                        href="/services"
+                                        className={clsx(
+                                            "relative text-[0.95rem] font-medium transition-all duration-300 nav-link-shadow inline-flex items-center gap-1",
+                                            pathname.startsWith("/services") ? "text-white" : "text-white/70 hover:text-white"
+                                        )}
+                                    >
+                                        {t("services")}
+                                        <ChevronDown className={clsx("w-3 h-3 transition-transform", isServicesOpen && "rotate-180")} />
+                                    </Link>
+                                    <AnimatePresence>
+                                        {isServicesOpen && (
+                                            <motion.div
+                                                initial={{ opacity: 0, y: 8 }}
+                                                animate={{ opacity: 1, y: 0 }}
+                                                exit={{ opacity: 0, y: 8 }}
+                                                transition={{ duration: 0.2 }}
+                                                className="absolute top-full left-1/2 -translate-x-1/2 mt-3 bg-black/95 backdrop-blur-xl border border-white/10 rounded-xl p-2 min-w-[220px] shadow-2xl"
+                                            >
+                                                {serviceLinks.map((service) => (
+                                                    <Link
+                                                        key={service.href}
+                                                        href={service.href}
+                                                        className="block px-4 py-2.5 text-sm text-white/70 hover:text-white hover:bg-white/10 rounded-lg transition-all"
+                                                        onClick={() => setIsServicesOpen(false)}
+                                                    >
+                                                        {service.label}
+                                                    </Link>
+                                                ))}
+                                                <div className="border-t border-white/10 mt-1 pt-1">
+                                                    <Link
+                                                        href="/services"
+                                                        className="block px-4 py-2.5 text-sm text-cyan-400 hover:text-cyan-300 hover:bg-white/10 rounded-lg transition-all font-medium"
+                                                        onClick={() => setIsServicesOpen(false)}
+                                                    >
+                                                        All Services →
+                                                    </Link>
+                                                </div>
+                                            </motion.div>
+                                        )}
+                                    </AnimatePresence>
+                                </li>
+                            ) : (
+                                <li key={link.key}>
+                                    <Link
+                                        href={link.href}
+                                        className={clsx(
+                                            "relative text-[0.95rem] font-medium transition-all duration-300 nav-link-shadow",
+                                            pathname === link.href ? "text-white" : "text-white/70 hover:text-white"
+                                        )}
+                                    >
+                                        {t(link.key)}
+                                    </Link>
+                                </li>
+                            )
+                        )}
                     </ul>
 
                     {/* Desktop Controls */}
                     <div className="hidden md:flex items-center gap-4 pl-6 border-l border-white/10 h-[32px]">
                         <a
-                            href="https://app.lopes2tech.ch"
+                            href={process.env.NEXT_PUBLIC_CLIENT_PORTAL_URL || "https://app.lopes2tech.ch"}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="px-5 py-2 text-sm font-semibold rounded-lg text-white bg-cyan-500/10 border border-cyan-400 shadow-[0_0_15px_rgba(0,245,255,0.3)] hover:bg-cyan-500/20 hover:shadow-[0_0_25px_rgba(0,245,255,0.6)] transition-all hover:-translate-y-[1px]"
                         >
-                            Client Portal
+                            {t('clientPortal')}
                         </a>
 
                         {/* Language Selector */}
@@ -177,13 +240,55 @@ export default function Navbar() {
                                     transition={{ delay: 0.1 + i * 0.05 }}
                                     className="w-full text-center"
                                 >
-                                    <Link
-                                        href={link.href}
-                                        onClick={() => setIsMenuOpen(false)}
-                                        className="text-xl uppercase tracking-widest font-medium text-white/70 hover:text-white transition-colors"
-                                    >
-                                        {t(link.key)}
-                                    </Link>
+                                    {link.key === "services" ? (
+                                        <div className="w-full text-center">
+                                            <button
+                                                onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
+                                                className="text-xl uppercase tracking-widest font-medium text-white/70 hover:text-white transition-colors inline-flex items-center gap-2"
+                                            >
+                                                {t(link.key)}
+                                                <ChevronDown className={clsx("w-4 h-4 transition-transform", isMobileServicesOpen && "rotate-180")} />
+                                            </button>
+                                            <AnimatePresence>
+                                                {isMobileServicesOpen && (
+                                                    <motion.div
+                                                        initial={{ opacity: 0, height: 0 }}
+                                                        animate={{ opacity: 1, height: "auto" }}
+                                                        exit={{ opacity: 0, height: 0 }}
+                                                        className="overflow-hidden mt-3"
+                                                    >
+                                                        <div className="flex flex-col gap-2">
+                                                            {serviceLinks.map((service) => (
+                                                                <Link
+                                                                    key={service.href}
+                                                                    href={service.href}
+                                                                    onClick={() => { setIsMenuOpen(false); setIsMobileServicesOpen(false); }}
+                                                                    className="text-sm text-white/50 hover:text-cyan-400 transition-colors"
+                                                                >
+                                                                    {service.label}
+                                                                </Link>
+                                                            ))}
+                                                            <Link
+                                                                href="/services"
+                                                                onClick={() => { setIsMenuOpen(false); setIsMobileServicesOpen(false); }}
+                                                                className="text-sm text-cyan-400 font-medium mt-1"
+                                                            >
+                                                                All Services →
+                                                            </Link>
+                                                        </div>
+                                                    </motion.div>
+                                                )}
+                                            </AnimatePresence>
+                                        </div>
+                                    ) : (
+                                        <Link
+                                            href={link.href}
+                                            onClick={() => setIsMenuOpen(false)}
+                                            className="text-xl uppercase tracking-widest font-medium text-white/70 hover:text-white transition-colors"
+                                        >
+                                            {t(link.key)}
+                                        </Link>
+                                    )}
                                 </motion.div>
                             ))}
 
@@ -207,10 +312,10 @@ export default function Navbar() {
                                 className="mt-8"
                             >
                                 <a
-                                    href="https://app.lopes2tech.ch"
+                                    href={process.env.NEXT_PUBLIC_CLIENT_PORTAL_URL || "https://app.lopes2tech.ch"}
                                     className="px-8 py-3 text-lg font-semibold rounded-full text-white bg-cyan-500/10 border border-cyan-500/50 shadow-[0_0_15px_rgba(6,182,212,0.2)]"
                                 >
-                                    Client Portal
+                                    {t('clientPortal')}
                                 </a>
                             </motion.div>
                         </nav>

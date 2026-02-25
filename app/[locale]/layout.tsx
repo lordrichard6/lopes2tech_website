@@ -9,6 +9,7 @@ import JsonLd from '@/components/JsonLd';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
 import CookieConsent from '@/components/CookieConsent';
 import Clarity from '@/components/Clarity';
+import ServiceWorkerRegister from '@/components/ServiceWorkerRegister';
 
 const inter = Inter({
   variable: "--font-inter",
@@ -128,6 +129,7 @@ export default async function RootLayout({
           <GoogleAnalytics />
           <Clarity />
           <CookieConsent />
+          <ServiceWorkerRegister />
         </NextIntlClientProvider>
       </body>
     </html>

@@ -5,7 +5,8 @@
         "portfolio": "Portfólio",
         "contact": "Contacto",
         "insights": "Insights",
-        "about": "Sobre"
+        "about": "Sobre",
+        "clientPortal": "Portal do Cliente"
     },
     "Packages": {
         "quickStart": {
@@ -443,7 +444,8 @@
             "about": "Sobre Nós",
             "portfolio": "Portfólio",
             "insights": "Insights & Blog",
-            "contact": "Contacto"
+            "contact": "Contacto",
+            "faq": "FAQ"
         },
         "links": {
             "impressum": "Impressum",
@@ -1019,5 +1021,32 @@
                 }
             }
         }
+    },
+    "InsightsPage": {
+        "badge": "O Nosso Blog",
+        "title": "Insights &",
+        "titleHighlight": "Inteligência",
+        "description": "A explorar a intersecção entre IA, fluxos de trabalho automatizados e desenvolvimento de alto desempenho."
+    },
+    "BlogPost": {
+        "backToInsights": "Voltar a Insights",
+        "relatedArticles": "Artigos Relacionados",
+        "backToAllInsights": "Voltar a todos os Insights",
+        "postNotFound": "Artigo não encontrado",
+        "backToInsightsNotFound": "Voltar a Insights",
+        "authorBio": "Fundador da Lopes2Tech, especializado em fluxos de trabalho de desenvolvimento com IA e aplicações web de alto desempenho para empresas suíças.",
+        "shareArticle": "Partilhar este artigo"
+    },
+    "CookieConsent": {
+        "title": "Valorizamos a sua privacidade",
+        "description": "Utilizamos cookies para melhorar a sua experiência, analisar o tráfego do site e personalizar conteúdo. Ao clicar em \"Aceitar\", consente a nossa utilização de cookies.",
+        "accept": "Aceitar",
+        "decline": "Recusar",
+        "learnMore": "Saber mais"
+    },
+    "NotFoundPage": {
+        "title": "Página não encontrada",
+        "description": "A página que procura não existe ou foi movida.",
+        "backHome": "Voltar à página inicial"
     }
 }

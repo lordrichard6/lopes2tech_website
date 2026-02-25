@@ -5,7 +5,8 @@
         "portfolio": "Portfolio",
         "contact": "Contact",
         "insights": "Insights",
-        "about": "About"
+        "about": "About",
+        "clientPortal": "Client Portal"
     },
     "Packages": {
         "quickStart": {
@@ -443,7 +444,8 @@
             "about": "About Us",
             "portfolio": "Portfolio",
             "insights": "Insights & Blog",
-            "contact": "Contact"
+            "contact": "Contact",
+            "faq": "FAQ"
         },
         "links": {
             "impressum": "Impressum",
@@ -1019,5 +1021,32 @@
                 }
             }
         }
+    },
+    "InsightsPage": {
+        "badge": "Our Blog",
+        "title": "Insights &",
+        "titleHighlight": "Intelligence",
+        "description": "Exploring the intersection of AI, automated workflows, and high-performance development."
+    },
+    "BlogPost": {
+        "backToInsights": "Back to Insights",
+        "relatedArticles": "Related Articles",
+        "backToAllInsights": "Back to All Insights",
+        "postNotFound": "Post Not Found",
+        "backToInsightsNotFound": "Back to Insights",
+        "authorBio": "Founder of Lopes2Tech, specializing in AI-powered development workflows and high-performance web applications for Swiss businesses.",
+        "shareArticle": "Share this article"
+    },
+    "CookieConsent": {
+        "title": "We value your privacy",
+        "description": "We use cookies to enhance your experience, analyze site traffic, and personalize content. By clicking \"Accept\", you consent to our use of cookies.",
+        "accept": "Accept",
+        "decline": "Decline",
+        "learnMore": "Learn more"
+    },
+    "NotFoundPage": {
+        "title": "Page Not Found",
+        "description": "The page you're looking for doesn't exist or has been moved.",
+        "backHome": "Back to Home"
     }
 }

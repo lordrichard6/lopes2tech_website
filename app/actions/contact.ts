@@ -20,8 +20,8 @@ export async function sendContactEmail(formData: {
         const { name, email, company, phone, message } = formData;
 
         const { data, error } = await resend.emails.send({
-            from: "Lopes2Tech Contact Form <onboarding@resend.dev>", // TODO: Best to use a verified domain here eventually e.g. hello@lopes2tech.ch
-            to: "paulo@lopes2tech.ch", // Assuming Paulo's email, or we could use another env var
+            from: `Lopes2Tech Contact Form <${process.env.RESEND_FROM_EMAIL || "onboarding@resend.dev"}>`,
+            to: process.env.CONTACT_EMAIL || "paulo@lopes2tech.ch",
             subject: `New Contact Request from ${name}`,
             text: `
 Name: ${name}
@@ -73,8 +73,8 @@ export async function sendServiceRequestEmail(formData: {
         const { name, email, company, message, context } = formData;
 
         const { data, error } = await resend.emails.send({
-            from: "Lopes2Tech Service Request <onboarding@resend.dev>",
-            to: "paulo@lopes2tech.ch",
+            from: `Lopes2Tech Service Request <${process.env.RESEND_FROM_EMAIL || "onboarding@resend.dev"}>`,
+            to: process.env.CONTACT_EMAIL || "paulo@lopes2tech.ch",
             subject: `New Service Request: ${context} from ${name}`,
             text: `
 Name: ${name}

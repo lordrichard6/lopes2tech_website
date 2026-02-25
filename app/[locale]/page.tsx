@@ -6,6 +6,7 @@ import Services from "@/components/Services";
 import Portfolio from "@/components/Portfolio";
 import Process from "@/components/Process";
 import CTA from "@/components/CTA";
+import Testimonials from "@/components/Testimonials";
 import Footer from "@/components/Footer";
 
 const BASE_URL = "https://lopes2tech.ch";
@@ -36,6 +37,7 @@ export default function Home() {
       <Services />
       <Portfolio />
       <Process />
+      <Testimonials />
       <CTA />
       <Footer />
     </main>

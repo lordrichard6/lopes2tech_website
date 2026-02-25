@@ -5,7 +5,8 @@
         "portfolio": "Portfolio",
         "contact": "Kontakt",
         "insights": "Einblicke",
-        "about": "Über uns"
+        "about": "Über uns",
+        "clientPortal": "Kundenportal"
     },
     "Packages": {
         "quickStart": {
@@ -443,7 +444,8 @@
             "about": "Über uns",
             "portfolio": "Portfolio",
             "insights": "Einblicke & Blog",
-            "contact": "Kontakt"
+            "contact": "Kontakt",
+            "faq": "FAQ"
         },
         "links": {
             "impressum": "Impressum",
@@ -1019,5 +1021,32 @@
                 }
             }
         }
+    },
+    "InsightsPage": {
+        "badge": "Unser Blog",
+        "title": "Einblicke &",
+        "titleHighlight": "Intelligenz",
+        "description": "Wir erkunden die Schnittstelle von KI, automatisierten Workflows und leistungsstarker Entwicklung."
+    },
+    "BlogPost": {
+        "backToInsights": "Zurück zu Einblicke",
+        "relatedArticles": "Verwandte Artikel",
+        "backToAllInsights": "Zurück zu allen Einblicken",
+        "postNotFound": "Beitrag nicht gefunden",
+        "backToInsightsNotFound": "Zurück zu Einblicke",
+        "authorBio": "Gründer von Lopes2Tech, spezialisiert auf KI-gesteuerte Entwicklungs-Workflows und leistungsstarke Webanwendungen für Schweizer Unternehmen.",
+        "shareArticle": "Diesen Artikel teilen"
+    },
+    "CookieConsent": {
+        "title": "Wir schätzen Ihre Privatsphäre",
+        "description": "Wir verwenden Cookies, um Ihr Erlebnis zu verbessern, den Website-Traffic zu analysieren und Inhalte zu personalisieren. Durch Klicken auf \"Akzeptieren\" stimmen Sie der Verwendung von Cookies zu.",
+        "accept": "Akzeptieren",
+        "decline": "Ablehnen",
+        "learnMore": "Mehr erfahren"
+    },
+    "NotFoundPage": {
+        "title": "Seite nicht gefunden",
+        "description": "Die Seite, die Sie suchen, existiert nicht oder wurde verschoben.",
+        "backHome": "Zurück zur Startseite"
     }
 }

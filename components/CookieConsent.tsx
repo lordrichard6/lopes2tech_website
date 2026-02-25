@@ -2,15 +2,18 @@
 
 import { useEffect, useState } from "react";
 import { X } from "lucide-react";
+import { useTranslations, useLocale } from "next-intl";
 
 declare global {
     interface Window {
-        gtag: (...args: any[]) => void;
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         dataLayer: any[];
     }
 }
 
 export default function CookieConsent() {
+    const t = useTranslations('CookieConsent');
+    const locale = useLocale();
     const [showBanner, setShowBanner] = useState(false);
 
     useEffect(() => {
@@ -52,13 +55,12 @@ export default function CookieConsent() {
             <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
                 <div className="flex-1 text-sm text-slate-300">
                     <p className="mb-2">
-                        <strong className="text-white">We value your privacy</strong>
+                        <strong className="text-white">{t('title')}</strong>
                     </p>
                     <p>
-                        We use cookies to enhance your experience, analyze site traffic, and personalize content.
-                        By clicking "Accept", you consent to our use of cookies.{" "}
-                        <a href="/en/privacy-policy" className="text-cyan-400 hover:text-cyan-300 underline">
-                            Learn more
+                        {t('description')}{" "}
+                        <a href={`/${locale}/privacy-policy`} className="text-cyan-400 hover:text-cyan-300 underline">
+                            {t('learnMore')}
                         </a>
                     </p>
                 </div>
@@ -67,13 +69,13 @@ export default function CookieConsent() {
                         onClick={handleDecline}
                         className="px-6 py-2.5 rounded-lg bg-slate-800 text-white font-medium hover:bg-slate-700 transition-colors"
                     >
-                        Decline
+                        {t('decline')}
                     </button>
                     <button
                         onClick={handleAccept}
                         className="px-6 py-2.5 rounded-lg bg-gradient-to-r from-cyan-500 to-purple-600 text-white font-medium shadow-[0_0_20px_rgba(6,182,212,0.3)] hover:shadow-[0_0_30px_rgba(6,182,212,0.5)] transition-all"
                     >
-                        Accept
+                        {t('accept')}
                     </button>
                 </div>
             </div>
