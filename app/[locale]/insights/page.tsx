@@ -6,7 +6,10 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { BookOpen, Calendar, Clock } from "lucide-react";
-import blogPosts from "@/data/blog-posts.json";
+import { useLocale } from "next-intl";
+import blogPostsEn from "@/data/blog-posts.json";
+import blogPostsDe from "@/data/blog-posts-de.json";
+import blogPostsPt from "@/data/blog-posts-pt.json";
 
 interface BlogPost {
     id: string;
@@ -21,8 +24,15 @@ interface BlogPost {
     tags: string[];
 }
 
+const blogPostsByLocale: Record<string, BlogPost[]> = {
+    en: blogPostsEn as BlogPost[],
+    de: blogPostsDe as BlogPost[],
+    pt: blogPostsPt as BlogPost[],
+};
+
 export default function InsightsPage() {
-    const posts = blogPosts as BlogPost[];
+    const locale = useLocale();
+    const posts = blogPostsByLocale[locale] || blogPostsByLocale.en;
 
     return (
         <main className="min-h-screen bg-[#0f172a]">

@@ -20,14 +20,13 @@ const inter = Inter({
 export const viewport = {
   width: 'device-width',
   initialScale: 1,
-  themeColor: '#2563eb',
+  themeColor: '#0f172a',
 };
 
 export const metadata: Metadata = {
   title: "Lopes2Tech - AI & Automations: Tech-Accelerated Growth for Modern Business.",
   description: "We help small and medium companies get more leads, automate admin, and scale without complexity.",
   manifest: '/manifest.json',
-  themeColor: '#01232E',
   appleWebApp: {
     capable: true,
     statusBarStyle: 'default',
@@ -111,13 +110,20 @@ export default async function RootLayout({
     <html lang={locale}>
       <head>
         <JsonLd />
+        <link rel="alternate" type="application/rss+xml" title="Lopes2Tech Insights" href={`/${locale}/insights/feed.xml`} />
       </head>
       <body
         className={`${inter.variable} antialiased`}
         suppressHydrationWarning
       >
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-cyan-500 focus:text-white focus:rounded-lg focus:font-semibold focus:outline-none"
+        >
+          Skip to main content
+        </a>
         <NextIntlClientProvider messages={messages}>
-          {children}
+          <div id="main-content">{children}</div>
           <Analytics />
           <GoogleAnalytics />
           <Clarity />

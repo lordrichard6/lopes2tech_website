@@ -79,7 +79,7 @@ export default function Navbar() {
                     </Link>
 
                     {/* Desktop Menu */}
-                    <ul className="hidden md:flex items-center gap-8 ml-auto mr-8">
+                    <ul className="hidden md:flex items-center gap-8 ml-auto mr-8" role="menubar">
                         {navLinks.map((link) => (
                             <li key={link.key}>
                                 <Link
@@ -147,6 +147,7 @@ export default function Navbar() {
                             isMenuOpen && "bg-white/15 border-white/40"
                         )}
                         aria-label="Toggle menu"
+                        aria-expanded={isMenuOpen}
                     >
                         {isMenuOpen ? <X className="w-5 h-5 text-white" /> : <Menu className="w-5 h-5 text-white/80" />}
                     </button>

@@ -201,6 +201,7 @@ export default function FAQPage() {
                                 <button
                                     onClick={() => setOpenIndex(openIndex === index ? null : index)}
                                     className="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-white/5 transition-colors"
+                                    aria-expanded={openIndex === index}
                                 >
                                     <div className="flex-1">
                                         <div className="flex items-center gap-3 mb-1">

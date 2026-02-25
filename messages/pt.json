@@ -425,6 +425,26 @@
         }
     },
     "Footer": {
+        "sections": {
+            "services": "Serviços",
+            "company": "Empresa",
+            "legal": "Legal"
+        },
+        "serviceLinks": {
+            "webDesign": "Web Design",
+            "seo": "Desenvolvimento SEO",
+            "ai": "Integração de IA",
+            "automation": "Automação Empresarial",
+            "webApps": "Aplicações Web",
+            "ecommerce": "E-Commerce",
+            "socialMedia": "Marketing de Redes Sociais"
+        },
+        "companyLinks": {
+            "about": "Sobre Nós",
+            "portfolio": "Portfólio",
+            "insights": "Insights & Blog",
+            "contact": "Contacto"
+        },
         "links": {
             "impressum": "Impressum",
             "privacy": "Política de Privacidade",

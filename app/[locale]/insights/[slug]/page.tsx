@@ -7,7 +7,10 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Calendar, Clock, ArrowLeft, User } from "lucide-react";
-import blogPosts from "@/data/blog-posts.json";
+import { useLocale } from "next-intl";
+import blogPostsEn from "@/data/blog-posts.json";
+import blogPostsDe from "@/data/blog-posts-de.json";
+import blogPostsPt from "@/data/blog-posts-pt.json";
 
 interface BlogPost {
     id: string;
@@ -23,11 +26,19 @@ interface BlogPost {
     content: string;
 }
 
+const blogPostsByLocale: Record<string, BlogPost[]> = {
+    en: blogPostsEn as BlogPost[],
+    de: blogPostsDe as BlogPost[],
+    pt: blogPostsPt as BlogPost[],
+};
+
 export default function BlogPostPage() {
     const params = useParams();
+    const locale = useLocale();
     const slug = params.slug as string;
+    const allPosts = blogPostsByLocale[locale] || blogPostsByLocale.en;
 
-    const post = (blogPosts as BlogPost[]).find(p => p.slug === slug);
+    const post = allPosts.find(p => p.slug === slug);
 
     if (!post) {
         return (
@@ -42,8 +53,39 @@ export default function BlogPostPage() {
         );
     }
 
+    // BlogPosting + BreadcrumbList Schema
+    const blogPostSchema = {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": post.title,
+        "description": post.excerpt,
+        "image": `https://lopes2tech.ch${post.image}`,
+        "datePublished": post.date,
+        "dateModified": post.date,
+        "author": { "@type": "Person", "name": post.author, "jobTitle": post.authorRole, "url": "https://lopes2tech.ch/about" },
+        "publisher": { "@type": "Organization", "name": "Lopes2Tech", "logo": { "@type": "ImageObject", "url": "https://lopes2tech.ch/logo_w.svg" } },
+        "mainEntityOfPage": { "@type": "WebPage", "@id": `https://lopes2tech.ch/insights/${post.slug}` }
+    };
+
+    const breadcrumbSchema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://lopes2tech.ch" },
+            { "@type": "ListItem", "position": 2, "name": "Insights", "item": "https://lopes2tech.ch/insights" },
+            { "@type": "ListItem", "position": 3, "name": post.title }
+        ]
+    };
+
+    // Related posts
+    const relatedPosts = allPosts
+        .filter(p => p.slug !== slug && p.tags.some(tag => post.tags.includes(tag)))
+        .slice(0, 3);
+
     return (
         <main className="min-h-screen bg-[#0f172a]">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <Navbar />
 
             <article className="relative pt-32 pb-20">
@@ -187,6 +229,46 @@ export default function BlogPostPage() {
                             Founder of Lopes2Tech, specializing in AI-powered development workflows and high-performance web applications for Swiss businesses.
                         </p>
                     </motion.div>
+
+                    {/* Related Posts */}
+                    {relatedPosts.length > 0 && (
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.4 }}
+                            className="mt-16"
+                        >
+                            <h2 className="text-2xl font-bold text-white mb-8">Related Articles</h2>
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                                {relatedPosts.map((related) => (
+                                    <Link
+                                        key={related.slug}
+                                        href={`/insights/${related.slug}`}
+                                        className="group block overflow-hidden rounded-2xl border border-white/10 bg-white/5 hover:border-cyan-400/30 transition-all duration-300"
+                                    >
+                                        <div className="relative aspect-[16/9] overflow-hidden">
+                                            <Image
+                                                src={related.image}
+                                                alt={related.title}
+                                                fill
+                                                className="object-cover transition-transform duration-500 group-hover:scale-110"
+                                                sizes="(max-width: 768px) 100vw, 33vw"
+                                            />
+                                        </div>
+                                        <div className="p-4">
+                                            <div className="flex gap-2 mb-2">
+                                                {related.tags.slice(0, 2).map((tag) => (
+                                                    <span key={tag} className="px-2 py-0.5 text-xs text-cyan-400 bg-cyan-400/10 rounded-full">{tag}</span>
+                                                ))}
+                                            </div>
+                                            <h3 className="text-sm font-bold text-white line-clamp-2 group-hover:text-cyan-400 transition-colors">{related.title}</h3>
+                                            <p className="text-xs text-slate-500 mt-2">{related.readTime}</p>
+                                        </div>
+                                    </Link>
+                                ))}
+                            </div>
+                        </motion.div>
+                    )}
 
                     {/* Back to Insights */}
                     <div className="mt-12 text-center">

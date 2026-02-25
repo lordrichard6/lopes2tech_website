@@ -425,6 +425,26 @@
         }
     },
     "Footer": {
+        "sections": {
+            "services": "Dienstleistungen",
+            "company": "Unternehmen",
+            "legal": "Rechtliches"
+        },
+        "serviceLinks": {
+            "webDesign": "Webdesign",
+            "seo": "SEO-Entwicklung",
+            "ai": "KI-Integration",
+            "automation": "Geschäftsautomatisierung",
+            "webApps": "Web-Anwendungen",
+            "ecommerce": "E-Commerce",
+            "socialMedia": "Social Media Marketing"
+        },
+        "companyLinks": {
+            "about": "Über uns",
+            "portfolio": "Portfolio",
+            "insights": "Einblicke & Blog",
+            "contact": "Kontakt"
+        },
         "links": {
             "impressum": "Impressum",
             "privacy": "Datenschutzerklärung",
