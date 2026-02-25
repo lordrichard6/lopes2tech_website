@@ -24,6 +24,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
         { path: '/services/web-apps', changeFrequency: 'monthly' as const, priority: 0.9 },
         { path: '/services/ecommerce', changeFrequency: 'monthly' as const, priority: 0.9 },
         { path: '/services/social-media-marketing', changeFrequency: 'monthly' as const, priority: 0.9 },
+        // Portal migration page
+        { path: '/client-portal', changeFrequency: 'monthly' as const, priority: 0.6 },
     ];
 
     const routes: MetadataRoute.Sitemap = [];
