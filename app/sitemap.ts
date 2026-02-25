@@ -2,7 +2,7 @@ import type { MetadataRoute } from 'next';
 import blogPosts from '@/data/blog-posts.json';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://lopes2tech.ch';
+    const baseUrl = 'https://www.lopes2tech.ch';
     const locales = ['en', 'pt', 'de'];
 
     const pages = [
