@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
                 disallow: ['/api/', '/_next/'],
             },
         ],
-        sitemap: 'https://www.lopes2tech.ch/sitemap.xml',
+        sitemap: 'https://lopes2tech.ch/sitemap.xml',
     };
 }
