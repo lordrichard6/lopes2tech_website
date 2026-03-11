@@ -5,24 +5,24 @@ import { Star, Quote } from "lucide-react";
 
 const testimonials = [
     {
-        name: "Dr. Maria S.",
-        role: "Clinic Director",
-        company: "Swiss Health Practice",
-        text: "Lopes2Tech transformed our online presence. The booking system integration alone saved us 10+ hours per week. Highly recommended for any healthcare professional.",
+        name: "Marco Reizinho",
+        role: "Business Owner",
+        company: "Marco Reizinho",
+        text: "Very Professional! and the end product was amazing! Recommend! I was overloaded with offers, didn't know which company to choose from. A friend recommended Lopes2Tech if I wanted easy communication and simplicity in the process — and he nailed it! My small business is growing! Thank you 🙏",
         rating: 5,
     },
     {
-        name: "Thomas K.",
-        role: "Restaurant Owner",
-        company: "Gastro Zurich",
-        text: "The reservation platform they built reduced our no-shows by 40%. Professional, fast delivery, and the ongoing support is exceptional.",
+        name: "Silvio Valente",
+        role: "Professional Photographer",
+        company: "Silvio Valente Photography",
+        text: "I needed a portfolio that truly reflected the quality of my work, and Lopes2Tech delivered exactly that. The website is clean, fast, and elegant. Clients constantly compliment how easy it is to navigate and book sessions. Couldn't be happier with the result.",
         rating: 5,
     },
     {
-        name: "Ana R.",
-        role: "Marketing Manager",
-        company: "Swiss Startup",
-        text: "Our new website loads in under 2 seconds and our organic traffic increased by 180% in 3 months. The SEO work was outstanding.",
+        name: "Ana Ribeiro",
+        role: "Founder",
+        company: "Ribeiro Consulting",
+        text: "Working with Lopes2Tech was a seamless experience from start to finish. They understood our brand, built a professional site that generates leads, and were always responsive throughout the process. Our online presence has never looked this credible.",
         rating: 5,
     },
 ];

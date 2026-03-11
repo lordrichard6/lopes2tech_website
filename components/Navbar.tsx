@@ -44,9 +44,9 @@ export default function Navbar() {
         { href: "/services/seo-development", label: "SEO Development" },
         { href: "/services/ai-integration", label: "AI Integration" },
         { href: "/services/business-automation", label: "Business Automation" },
-        { href: "/services/web-apps", label: "Web Applications" },
+        { href: "/services/web-apps", label: "Web Apps" },
         { href: "/services/ecommerce", label: "E-Commerce" },
-        { href: "/services/social-media-marketing", label: "Social Media" },
+        { href: "/services/social-media-marketing", label: "Digital Marketing" },
     ];
 
     const changeLanguage = (newLocale: string) => {

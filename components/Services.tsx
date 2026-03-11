@@ -5,8 +5,6 @@ import { Monitor, Layout, Cpu, Database, ShoppingCart } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import clsx from "clsx";
-import ServiceDialog from "./ServiceDialog";
-import { useState } from "react";
 
 const services = [
   {
@@ -15,16 +13,16 @@ const services = [
     description: "High-performance websites that represent your brand perfectly.",
     image: "/assets/services/service_webdev.webp",
     icon: Monitor,
-    href: "/services/websites",
+    href: "/services/web-design",
     dataId: "websites"
   },
   {
     key: "marketing",
-    title: "Landing Pages",
+    title: "Digital Marketing",
     description: "Conversion-focused pages designed to turn visitors into leads.",
     image: "/assets/services/service_digital_marketing.webp",
     icon: Layout,
-    href: "/services/landing-pages",
+    href: "/services/social-media-marketing",
     dataId: "landing"
   },
   {
@@ -33,7 +31,7 @@ const services = [
     description: "Streamline your operations and save hours of manual work.",
     image: "/assets/services/service_ai_solutions.webp",
     icon: Cpu,
-    href: "/services/automations",
+    href: "/services/business-automation",
     dataId: "automation"
   },
   {
@@ -59,16 +57,9 @@ import { useTranslations } from "next-intl";
 
 export default function Services() {
   const t = useTranslations('ServicesSection');
-  const [selectedService, setSelectedService] = useState<typeof services[0] | null>(null);
 
   return (
     <section id="services" className="relative py-12 bg-[#f3f0e7] overflow-hidden min-h-screen flex flex-col justify-start pt-24 md:pt-32">
-      <ServiceDialog
-        isOpen={!!selectedService}
-        onClose={() => setSelectedService(null)}
-        serviceDataId={selectedService?.dataId || ""}
-        redirectHref={selectedService?.href || "/"}
-      />
       <div className="max-w-[1200px] mx-auto px-6 w-full">
 
         {/* Section Header */}
@@ -84,10 +75,9 @@ export default function Services() {
         {/* Deck View Grid */}
         <div className="flex justify-center items-center md:perspective-[2000px] py-4 px-4 overflow-visible flex-col md:flex-row gap-6 md:gap-0 h-auto md:h-[650px] items-center">
           {services.map((service, index) => (
+            <Link key={service.key} href={service.href} className="contents">
             <motion.div
-              key={service.key}
               layout
-              onClick={() => setSelectedService(service)}
               initial="initial"
               whileInView="rest"
               whileHover="hover"
@@ -127,7 +117,7 @@ export default function Services() {
               className={clsx(
                 "group relative w-full md:w-[320px] h-[250px] md:h-[480px] rounded-[24px] shrink-0 border border-white/10 shadow-lg md:shadow-2xl overflow-hidden cursor-pointer",
                 // Stacking effect for desktop only
-                "md:ml-[-120px] md:origin-bottom md:first:ml-0"
+                index === 0 ? "md:origin-bottom" : "md:ml-[-120px] md:origin-bottom"
               )}
               style={{
                 zIndex: 50 - index, // Default stacking order
@@ -166,6 +156,7 @@ export default function Services() {
                 </p>
               </div>
             </motion.div>
+            </Link>
           ))}
         </div>
 

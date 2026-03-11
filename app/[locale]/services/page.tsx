@@ -4,10 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import InteractiveServices from "@/components/InteractiveServices";
-import MobileServices from "@/components/MobileServices";
-import PackagesSection from "@/components/PackagesSection";
-import CustomPackageBuilder from "@/components/CustomPackageBuilder";
+import ServicesHubSections from "@/components/ServicesHubSections";
 import HireMeSection from "@/components/HireMeSection";
 import {
     Sparkles,
@@ -73,40 +70,8 @@ export default function ServicesPage() {
                 </div>
             </section>
 
-            {/* Services Display */}
-            <section className="relative py-10 md:py-20 overflow-hidden z-10">
-                <div className="relative z-10 max-w-7xl mx-auto px-0 md:px-6">
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        className="mb-12 text-center px-6"
-                    >
-                        <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-4">
-                            {t('explore.title')}
-                        </h2>
-                        <p className="text-lg text-slate-400 max-w-3xl mx-auto">
-                            {t('explore.intro')}
-                        </p>
-                    </motion.div>
-
-                    {/* Desktop View: Interactive Canvas */}
-                    <div className="hidden md:block">
-                        <InteractiveServices />
-                    </div>
-
-                    {/* Mobile View: Card List */}
-                    <div className="block md:hidden">
-                        <MobileServices />
-                    </div>
-                </div>
-            </section>
-
-            {/* Packages Section */}
-            <PackagesSection />
-
-            {/* Custom Package Builder */}
-            <CustomPackageBuilder />
+            {/* Services Hub Sections */}
+            <ServicesHubSections />
 
             {/* Hire Me Section */}
             <HireMeSection />
