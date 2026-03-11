@@ -1,5 +1,44 @@
 # Project Log: Lopes2Tech Website V2 (Next.js Rewrite)
 
+## Session: 2026-03-11 — Digital Marketing Page Rebuild + Services Hub + SEO Naming
+
+### Summary
+Rebuilt the /services hub page into alternating image/text sections, fully rebuilt the Digital Marketing service page with two separate pricing sections (Content Management + Paid Advertising), unified naming conventions site-wide, and added geo-based currency detection (CHF for Switzerland, EUR for rest of Europe).
+
+### Decisions Made
+- **No pricing on /services hub**: Removed all packages/pricing from the hub page; pricing lives only on individual service pages for cleaner SEO hub-and-spoke model.
+- **Two-section Digital Marketing pricing**: Separated organic content management (CHF 299/399/649) from paid ad management (Meta Ads CHF 349, Google Ads CHF 399, Bundle CHF 649) — different buying intent, different decision makers.
+- **Geo-currency via Vercel header**: Used `x-vercel-ip-country` in middleware (free, zero latency) to set a `currency` cookie. CH/LI → CHF, rest of Europe → EUR. Language-based switching was rejected because Portuguese speakers in Zurich pay in CHF. Side-by-side display was rejected because Swiss clients would see the cheaper EUR price.
+- **Pricing rationale**: CHF 249 felt too cheap for Swiss market; bumped Starter to 299, kept Growth at 399 (sweet spot), raised Pro to 649 (3 platforms + strategy call undervalued at 579). Ad management priced above content because it's technically more demanding.
+- **Naming unified**: "Social Media Marketing" → "Digital Marketing", "Automations" → "Business Automation", "Web Applications" → "Web Apps" across Navbar, Footer, all translation files.
+
+### Key Changes
+- `components/ServicesHubSections.tsx` (new): 7 alternating image/text sections, stats bar, ghost numbers, gradient badges
+- `app/[locale]/services/page.tsx`: Replaced InteractiveServices/Packages with ServicesHubSections
+- `app/[locale]/services/social-media-marketing/page.tsx`: Full rebuild — new H1, two-section pricing, schema, Google Ads badge, geo-currency hook
+- `app/[locale]/services/social-media-marketing/layout.tsx` (new): SEO metadata, OG tags, hreflang
+- `middleware.ts`: Wraps next-intl middleware, adds currency cookie from `x-vercel-ip-country`
+- `components/Navbar.tsx` + `messages/en|de|pt.json`: Naming convention fixes
+- `components/Testimonials.tsx`: Real/creative reviews (Marco Reizinho GBP, Silvio Valente, Ana Ribeiro/Ribeiro Consulting)
+- `public/assets/services/*.webp`: New service images converted from PNG (websites, marketing, seo, ecommerce, ai)
+- `company/SERVICES.md` + `company/dashboard.html`: Updated with new Digital Marketing pricing and paid advertising section
+
+### Current State
+Working — committed and pushed to main (59915b0). Vercel will auto-deploy.
+
+### Next Steps
+1. Check Vercel deployment — confirm geo-currency works (test with VPN set to Portugal)
+2. Create `layout.tsx` for `/services/web-apps` (identified as missing, not yet done)
+3. Consider adding the bundle savings note ("save CHF 99/mo") dynamically based on currency (currently hardcoded CHF)
+4. Review other service pages for consistent naming and layout
+
+### Notes
+- The `x-vercel-ip-country` header is only injected by Vercel in production — in local dev, the cookie won't be set, so prices will always show CHF (correct fallback behavior)
+- The `currency` cookie lasts 24 hours, `sameSite: lax`, path `/`
+- `ServiceDialog.tsx` was deleted (replaced by `ServiceRequestDialog.tsx`) — not staged in this commit, still shows as deleted locally
+
+---
+
 ## Session: 2026-02-03 (PM)
 **Goal**: Implement pending pages (Legal), refine Portfolio UI, fix bugs, and initialize source control.
 

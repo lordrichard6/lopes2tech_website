@@ -6,7 +6,17 @@
     "contact": "Contacto",
     "insights": "Insights",
     "about": "Sobre",
-    "clientPortal": "Portal do Cliente"
+    "clientPortal": "Portal do Cliente",
+    "allServices": "Todos os Serviços",
+    "serviceDropdown": {
+      "webDesign": "Web Design",
+      "seo": "Desenvolvimento SEO",
+      "ai": "Integração de IA",
+      "automation": "Automação Empresarial",
+      "webApps": "Aplicações Web",
+      "ecommerce": "E-Commerce",
+      "socialMedia": "Marketing Digital"
+    }
   },
   "Packages": {
     "quickStart": {
@@ -399,7 +409,18 @@
     "badge": "TRABALHOS SELECIONADOS",
     "title": "Construído para Crescimento",
     "subtitle": "Uma seleção de sites e aplicações de alto impacto desenhados para desempenho e escala.",
-    "button": "Ver Portfólio Completo"
+    "button": "Ver Portfólio Completo",
+    "projects": {
+      "mimesa": { "title": "MiMesa", "description": "Plataforma de gestão gastronómica.", "category": "App Web" },
+      "menteiq": { "title": "menteIQ", "description": "Plataforma CRM moderna.", "category": "App Web" },
+      "theraflow": { "title": "TheraFlow", "description": "Software de gestão clínica.", "category": "SaaS" },
+      "finito": { "title": "Finito", "description": "Gestão financeira.", "category": "App Web" },
+      "noff": { "title": "Noff", "description": "Solução de RH Tech.", "category": "App Web" },
+      "ribeiro": { "title": "Ribeiro Consulting", "description": "Consultoria profissional.", "category": "Website" },
+      "costeleta": { "title": "Costeleta Dourada", "description": "Reservas de restaurante.", "category": "Website" },
+      "forma": { "title": "Forma Architects", "description": "Portfólio minimalista.", "category": "Website" },
+      "alentseguros": { "title": "AlentSeguros", "description": "Portal de seguros.", "category": "Website" }
+    }
   },
   "Process": {
     "badge": "O Fluxo de Trabalho",
@@ -424,6 +445,38 @@
         "description": "Implementamos o seu sistema e fornecemos manutenção contínua."
       }
     }
+  },
+  "Testimonials": {
+    "badge": "Feedback de Clientes",
+    "title": "Confiado por Empresas",
+    "titleHighlight": "Suíças",
+    "subtitle": "Resultados reais de clientes reais. Veja o que dizem sobre trabalhar connosco.",
+    "items": {
+      "marco": {
+        "name": "Marco Reizinho",
+        "role": "Empresário",
+        "company": "Marco Reizinho",
+        "text": "Muito Profissional! e o produto final foi incrível! Recomendo! Estava sobrecarregado de ofertas, não sabia que empresa escolher. Um amigo recomendou a Lopes2Tech se eu quisesse comunicação fácil e simplicidade no processo — e acertou em cheio! O meu pequeno negócio está a crescer! Obrigado 🙏"
+      },
+      "silvio": {
+        "name": "Silvio Valente",
+        "role": "Fotógrafo Profissional",
+        "company": "Silvio Valente Photography",
+        "text": "Precisava de um portfólio que refletisse verdadeiramente a qualidade do meu trabalho, e a Lopes2Tech entregou exatamente isso. O site é limpo, rápido e elegante. Os clientes elogiam constantemente a facilidade de navegar e marcar sessões. Não podia estar mais satisfeito com o resultado."
+      },
+      "ana": {
+        "name": "Ana Ribeiro",
+        "role": "Fundadora",
+        "company": "Ribeiro Consulting",
+        "text": "Trabalhar com a Lopes2Tech foi uma experiência perfeita do início ao fim. Entenderam a nossa marca, construíram um site profissional que gera leads e foram sempre responsivos durante todo o processo. A nossa presença online nunca esteve tão credível."
+      }
+    }
+  },
+  "Newsletter": {
+    "description": "Receba insights sobre IA, SEO e desenvolvimento web na sua caixa de correio.",
+    "placeholder": "seu@email.com",
+    "success": "Obrigado por subscrever!",
+    "error": "Algo correu mal. Tente novamente."
   },
   "Footer": {
     "sections": {
@@ -1048,5 +1101,125 @@
     "title": "Página não encontrada",
     "description": "A página que procura não existe ou foi movida.",
     "backHome": "Voltar à página inicial"
+  },
+  "PortfolioPage": {
+    "meta": {
+      "title": "Portfólio | Lopes2Tech - Apps Web & Websites Feitos na Suíça",
+      "description": "Explore o nosso portfólio de aplicações web personalizadas, plataformas SaaS e websites construídos para empresas suíças.",
+      "ogTitle": "Portfólio | Lopes2Tech",
+      "ogDescription": "Aplicações web personalizadas, plataformas SaaS e websites construídos para empresas suíças."
+    },
+    "badge": "O Nosso Trabalho",
+    "title": "Casos de Sucesso &",
+    "titleHighlight": "Excelência Digital",
+    "subtitle": "O nosso portfólio representa uma fusão de soluções robustas construídas para clientes ambiciosos e projetos proprietários desenvolvidos internamente.",
+    "subtitleSecondary": "De dashboards CRM empresariais a experiências de marca imersivas, o nosso portfólio reflete o nosso compromisso com a precisão suíça e a inovação.",
+    "filters": {
+      "webApps": "Apps Web",
+      "websites": "Websites"
+    },
+    "badges": {
+      "inDevelopment": "Em Desenvolvimento",
+      "viewProject": "Ver Projeto",
+      "comingSoon": "Em Breve"
+    },
+    "detail": {
+      "backToPortfolio": "Voltar ao Portfólio",
+      "visitLiveSite": "Abrir App",
+      "webApp": "Aplicação Web",
+      "website": "Website"
+    },
+    "projects": {
+      "clinika-os": {
+        "title": "Clinika OS - Reservas e CRM para Clínicas",
+        "description": "Uma plataforma completa de gestão para clínicas e profissionais de saúde. Desde reservas online a registos de pacientes conformes com o RGPD, tudo num painel seguro.",
+        "category": "SaaS de Saúde"
+      },
+      "dark-monkey": {
+        "title": "Dark Monkey - E-Commerce Gamificado",
+        "description": "Uma plataforma de e-commerce premium gamificada onde comprar parece progressão. Com drops limitados, níveis XP, personalização de produtos e um ecossistema de marca que fideliza clientes.",
+        "category": "E-Commerce"
+      },
+      "mimesa": {
+        "title": "miMesa - Sistema Operativo para Restaurantes",
+        "description": "O sistema operativo para restaurantes modernos. Gerencie reservas, mesas e clientes com elegância. Projetado para poupar tempo e aumentar receitas.",
+        "category": "Gastronomia & Reservas"
+      },
+      "draftmode": {
+        "title": "DraftMode CRM",
+        "description": "Plataforma CRM moderna projetada para consultores e pequenas e médias empresas. Respostas reais, fluxos de trabalho otimizados.",
+        "category": "CRM para Consultores"
+      },
+      "pali-ai": {
+        "title": "Pali AI",
+        "description": "Assistente Pessoal de Próxima Geração com Consciência Contextual.",
+        "category": "Aplicação de IA"
+      },
+      "menteiq": {
+        "title": "menteIQ - Centro de Comando Empresarial IA",
+        "description": "CRM nativo de IA e sistema operativo empresarial para freelancers, consultores e PMEs europeus. Chat de IA multi-modelo, faturação QR-Bill suíça, base de conhecimento RAG e gestão de dados conforme o RGPD.",
+        "category": "OS Empresarial IA"
+      },
+      "theraflow": {
+        "title": "TheraFlow CRM - Gestão de Consultórios",
+        "description": "A plataforma segura completa para agendamento, registos de clientes e faturação. Projetada para terapeutas, coaches e clínicas para simplificar a administração e garantir conformidade com o RGPD.",
+        "category": "SaaS de Saúde"
+      },
+      "finito-pro": {
+        "title": "Finito Pro - Gestão de Artesãos Suíços",
+        "description": "A solução digital completa para empresas de artesanato suíças. Inclui gestão de projetos, faturação QR, controlo de tempo e planeamento de recursos. 100% Swiss Made & Seguro.",
+        "category": "SaaS para Artesãos"
+      },
+      "noff": {
+        "title": "Noff - Comunicação Inteligente & Recrutamento",
+        "description": "Plataforma de cartão de visita digital e otimização de equipas. Com análise de personalidade científica para melhorar a colaboração e ferramentas inteligentes de recrutamento.",
+        "category": "Cartão de Visita Digital"
+      },
+      "ribeiro-consulting": {
+        "title": "Ribeiro Consulting - Integração Empresarial Estratégica",
+        "description": "Gestão integrada, contabilidade e consultoria financeira para PMEs e particulares suíços. Mediação de seguros certificada, otimização fiscal e apoio administrativo estratégico.",
+        "category": "Consultoria Empresarial"
+      },
+      "costeleta-dourada": {
+        "title": "Costeleta Dourada - Cozinha Autêntica Alentejana",
+        "description": "Website de um restaurante tradicional alentejano que apresenta o menu e oferece um sistema fácil de reserva de mesas.",
+        "category": "Gastronomia & Reservas"
+      },
+      "forma": {
+        "title": "FORMA - Estúdio de Arquitetura",
+        "description": "Website moderno de um escritório de arquitetura que apresenta designs inovadores, soluções de construção sustentável e projetos premiados que moldam o futuro dos espaços urbanos.",
+        "category": "Arquitetura & Design"
+      },
+      "alentseguros": {
+        "title": "Alentseguros - Portal de Seguros Certificado",
+        "description": "Uma plataforma digital moderna para gestão de seguros. Com portal seguro de clientes, pedidos de cotação instantâneos e suporte multicanal para cobertura pessoal e empresarial.",
+        "category": "Seguros & FinTech"
+      },
+      "silvio-photography": {
+        "title": "Silvio Photography - Arte & Emoção",
+        "description": "Portfólio profissional de fotografia especializado em retratos, eventos e branding comercial. Capturando histórias autênticas e narrativas visuais por Lisboa e Portugal.",
+        "category": "Portfólio de Fotografia"
+      },
+      "apex-consulting": {
+        "title": "Apex Consulting - Estratégia & Crescimento",
+        "description": "Website de agência de consultoria profissional focado em clareza, confiança e excelência corporativa. Com design limpo e moderno que comunica autoridade e experiência.",
+        "category": "Consultoria Empresarial"
+      },
+      "nexus-accounting": {
+        "title": "Nexus Accounting",
+        "description": "Website profissional de serviços de contabilidade e finanças com design moderno e navegação intuitiva.",
+        "category": "Contabilidade & Finanças"
+      },
+      "elite-estates": {
+        "title": "Elite Estates - Imobiliário de Luxo",
+        "description": "Website imobiliário exclusivo que apresenta propriedades ultra-premium em todo o mundo. Com design elegante em preto e dourado, pesquisa sofisticada de propriedades e serviços de concierge.",
+        "category": "Imobiliário de Luxo"
+      },
+      "serene-spa": {
+        "title": "Serene Spa - Bem-Estar Holístico",
+        "description": "Website de bem-estar tranquilo com estética calmante em verde salvia, menus detalhados de tratamentos e uma experiência de reserva elegante. Projetado para transmitir paz e rejuvenescimento.",
+        "category": "Bem-Estar & Luxo"
+      }
+    }
   }
 }

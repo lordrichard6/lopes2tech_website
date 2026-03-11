@@ -1,88 +1,24 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Mail, AtSign, Code, Shield } from "lucide-react";
+import { ArrowRight, Mail, Code } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/navigation";
 import clsx from "clsx";
-
-// Gapless 3-Column Bento Grid Configuration
-const projects = [
-    {
-        title: "MiMesa",
-        description: "Gastronomy management platform.",
-        image: "/proj/mimesa_mockup.png",
-        category: "Web App",
-        link: "https://website-mimesa.vercel.app/",
-        className: "md:col-span-2 md:row-span-2", // Top Left (Large)
-    },
-    {
-        title: "menteIQ",
-        description: "Modern CRM platform.",
-        image: "/proj/orbitcrm_mockup.png",
-        category: "Web App",
-        link: "https://orbitcrm-gilt.vercel.app/",
-        className: "md:col-span-1 md:row-span-1", // Top Right (Top)
-    },
-    {
-        title: "TheraFlow",
-        description: "Practice management software.",
-        image: "/proj/theraflow_mockup.png",
-        category: "SaaS",
-        link: "https://www.theraflow-crm.ch/",
-        className: "md:col-span-1 md:row-span-1", // Top Right (Bottom)
-    },
-    {
-        title: "Finito",
-        description: "Financial management.",
-        image: "/proj/finito_mockup.png",
-        category: "Web App",
-        link: "https://www.finitopro.ch/",
-        className: "md:col-span-1 md:row-span-1", // Middle Row
-    },
-    {
-        title: "Noff",
-        description: "HR Tech solution.",
-        image: "/proj/noff_mockup.png",
-        category: "Web App",
-        link: "https://noff.ch",
-        className: "md:col-span-1 md:row-span-1", // Middle Row
-    },
-    {
-        title: "Ribeiro Consulting",
-        description: "Professional consulting.",
-        image: "/proj/ribeiro_mockup.png",
-        category: "Website",
-        link: "https://ribeiroconsulting.ch/pt",
-        className: "md:col-span-1 md:row-span-1", // Middle Row
-    },
-    {
-        title: "Costeleta Dourada",
-        description: "Restaurant booking.",
-        image: "/proj/costeleta_mockup.png",
-        category: "Website",
-        link: "https://costeleta-dourada.vercel.app/",
-        className: "md:col-span-1 md:row-span-2", // Bottom Left (Tall)
-    },
-    {
-        title: "Forma Architects",
-        description: "Minimalist portfolio.",
-        image: "/proj/forma_mockup.png",
-        category: "Website",
-        link: "https://forma-architects-fawn.vercel.app/",
-        className: "md:col-span-2 md:row-span-2", // Bottom Right (Large)
-    },
-    {
-        title: "AlentSeguros",
-        description: "Insurance portal.",
-        image: "/proj/alentseguros_mockup.png",
-        category: "Website",
-        link: "https://alenteseguros.vercel.app/",
-        className: "md:col-span-3 md:row-span-1", // Footer (Full Width)
-    }
-];
-
 import { useTranslations } from "next-intl";
+
+// Static config (images, links, layout) — content comes from translations
+const projectsConfig = [
+    { id: "mimesa", image: "/proj/mimesa_mockup.png", link: "https://website-mimesa.vercel.app/", className: "md:col-span-2 md:row-span-2" },
+    { id: "menteiq", image: "/proj/orbitcrm_mockup.png", link: "https://orbitcrm-gilt.vercel.app/", className: "md:col-span-1 md:row-span-1" },
+    { id: "theraflow", image: "/proj/theraflow_mockup.png", link: "https://www.theraflow-crm.ch/", className: "md:col-span-1 md:row-span-1" },
+    { id: "finito", image: "/proj/finito_mockup.png", link: "https://www.finitopro.ch/", className: "md:col-span-1 md:row-span-1" },
+    { id: "noff", image: "/proj/noff_mockup.png", link: "https://noff.ch", className: "md:col-span-1 md:row-span-1" },
+    { id: "ribeiro", image: "/proj/ribeiro_mockup.png", link: "https://ribeiroconsulting.ch/pt", className: "md:col-span-1 md:row-span-1" },
+    { id: "costeleta", image: "/proj/costeleta_mockup.png", link: "https://costeleta-dourada.vercel.app/", className: "md:col-span-1 md:row-span-2" },
+    { id: "forma", image: "/proj/forma_mockup.png", link: "https://forma-architects-fawn.vercel.app/", className: "md:col-span-2 md:row-span-2" },
+    { id: "alentseguros", image: "/proj/alentseguros_mockup.png", link: "https://alenteseguros.vercel.app/", className: "md:col-span-3 md:row-span-1" },
+];
 
 export default function Portfolio() {
     const t = useTranslations('Portfolio');
@@ -129,52 +65,58 @@ export default function Portfolio() {
 
                 {/* Bento Grid (3 Columns) */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[280px]">
-                    {projects.map((project, idx) => (
-                        <motion.div
-                            key={project.title}
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: idx * 0.05 }}
-                            className={clsx(
-                                "group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-sm shadow-xl",
-                                project.className
-                            )}
-                        >
-                            <Link href={project.link} target="_blank" className="block w-full h-full relative cursor-pointer">
-                                {/* Image */}
-                                <div className="absolute inset-0">
-                                    <Image
-                                        src={project.image}
-                                        alt={`${project.title} - ${project.description}`}
-                                        fill
-                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                                        className="object-cover transition-transform duration-700 group-hover:scale-105"
-                                    />
-                                    {/* Gradient Overlay */}
-                                    <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-[#0f172a]/40 to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-500" />
-                                </div>
+                    {projectsConfig.map((project, idx) => {
+                        const title = t(`projects.${project.id}.title`);
+                        const description = t(`projects.${project.id}.description`);
+                        const category = t(`projects.${project.id}.category`);
 
-                                {/* Content */}
-                                <div className="absolute inset-0 p-6 flex flex-col justify-end">
-                                    <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                                        <div className="flex items-center justify-between mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                            <span className="text-cyan-400 text-xs font-bold uppercase tracking-wider bg-cyan-950/80 px-2 py-1 rounded backdrop-blur-md">
-                                                {project.category}
-                                            </span>
-                                            <ArrowRight className="w-5 h-5 text-white" />
-                                        </div>
-                                        <h3 className="text-2xl font-bold text-white mb-2 leading-tight">
-                                            {project.title}
-                                        </h3>
-                                        <p className="text-sm text-slate-300 line-clamp-2 opacity-90">
-                                            {project.description}
-                                        </p>
+                        return (
+                            <motion.div
+                                key={project.id}
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: idx * 0.05 }}
+                                className={clsx(
+                                    "group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-sm shadow-xl",
+                                    project.className
+                                )}
+                            >
+                                <a href={project.link} target="_blank" rel="noopener noreferrer" className="block w-full h-full relative cursor-pointer">
+                                    {/* Image */}
+                                    <div className="absolute inset-0">
+                                        <Image
+                                            src={project.image}
+                                            alt={`${title} - ${description}`}
+                                            fill
+                                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                            className="object-cover transition-transform duration-700 group-hover:scale-105"
+                                        />
+                                        {/* Gradient Overlay */}
+                                        <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-[#0f172a]/40 to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-500" />
                                     </div>
-                                </div>
-                            </Link>
-                        </motion.div>
-                    ))}
+
+                                    {/* Content */}
+                                    <div className="absolute inset-0 p-6 flex flex-col justify-end">
+                                        <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                            <div className="flex items-center justify-between mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                                <span className="text-cyan-400 text-xs font-bold uppercase tracking-wider bg-cyan-950/80 px-2 py-1 rounded backdrop-blur-md">
+                                                    {category}
+                                                </span>
+                                                <ArrowRight className="w-5 h-5 text-white" />
+                                            </div>
+                                            <h3 className="text-2xl font-bold text-white mb-2 leading-tight">
+                                                {title}
+                                            </h3>
+                                            <p className="text-sm text-slate-300 line-clamp-2 opacity-90">
+                                                {description}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </motion.div>
+                        );
+                    })}
                 </div>
 
                 {/* Bottom CTA */}
@@ -187,7 +129,6 @@ export default function Portfolio() {
                         <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                     </Link>
                 </div>
-
 
             </div>
             {/* Bottom Wave Divider */}

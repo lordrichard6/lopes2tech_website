@@ -141,11 +141,10 @@ export default function InsightsPage() {
                                             <div className="flex items-center gap-4 text-xs text-slate-500 pt-4 border-t border-white/5">
                                                 <span className="flex items-center gap-1">
                                                     <Calendar className="w-3 h-3" />
-                                                    {new Date(post.date).toLocaleDateString('en-US', {
-                                                        month: 'short',
-                                                        day: 'numeric',
-                                                        year: 'numeric'
-                                                    })}
+                                                    {new Date(post.date).toLocaleDateString(
+                                                        locale === 'de' ? 'de-CH' : locale === 'pt' ? 'pt-PT' : 'en-GB',
+                                                        { month: 'short', day: 'numeric', year: 'numeric' }
+                                                    )}
                                                 </span>
                                                 <span className="flex items-center gap-1">
                                                     <Clock className="w-3 h-3" />

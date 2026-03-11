@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Monitor, Layout, Cpu, Database, ShoppingCart } from "lucide-react";
-import Link from "next/link";
+import { Link } from "@/navigation";
 import Image from "next/image";
 import clsx from "clsx";
 

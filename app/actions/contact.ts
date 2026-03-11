@@ -147,3 +147,42 @@ ${message}
         return { success: false, error: "An unexpected error occurred." };
     }
 }
+
+export async function sendNewsletterSubscriptionEmail(subscriberEmail: string) {
+    if (!process.env.RESEND_API_KEY) {
+        console.error("Missing RESEND_API_KEY environment variable");
+        return { success: false, error: "Server configuration error" };
+    }
+
+    try {
+        const timestamp = new Date().toLocaleString('en-GB', {
+            timeZone: 'Europe/Zurich',
+            dateStyle: 'full',
+            timeStyle: 'short',
+        });
+
+        const { data, error } = await resend.emails.send({
+            from: `Lopes2Tech Website <${process.env.RESEND_FROM_EMAIL || "onboarding@resend.dev"}>`,
+            to: process.env.CONTACT_EMAIL || "paulo@lopes2tech.ch",
+            subject: `📬 New Newsletter Subscriber: ${subscriberEmail}`,
+            html: `
+<h3>New Newsletter Subscription</h3>
+<p>Someone wants to subscribe to the Lopes2Tech newsletter.</p>
+<p><strong>Email:</strong> ${subscriberEmail}</p>
+<p><strong>Time:</strong> ${timestamp} (Zurich)</p>
+<br/>
+<p style="color:#888;font-size:12px;">This notification was sent automatically by lopes2tech.ch</p>
+            `,
+        });
+
+        if (error) {
+            console.error("Resend newsletter notification error:", error);
+            return { success: false, error: error.message };
+        }
+
+        return { success: true, data };
+    } catch (error) {
+        console.error("Failed to send newsletter notification:", error);
+        return { success: false, error: "An unexpected error occurred." };
+    }
+}

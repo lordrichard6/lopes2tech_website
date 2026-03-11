@@ -179,6 +179,7 @@ export default function Hero() {
                             width={800}
                             height={1000}
                             priority
+                            sizes="(max-width: 768px) 0px, 60vw"
                             className="w-auto h-full max-h-[95vh] object-contain drop-shadow-[0_0_50px_rgba(34,211,238,0.2)] scale-x-[-1]"
                         />
                     </motion.div>

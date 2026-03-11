@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -14,11 +14,10 @@ export default function Navbar() {
     const [isLangOpen, setIsLangOpen] = useState(false);
     const [isServicesOpen, setIsServicesOpen] = useState(false);
     const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
+    const langRef = useRef<HTMLDivElement>(null);
     const pathname = usePathname();
     const router = useRouter();
     const t = useTranslations('Navigation');
-    // We can't easily get current locale from client component without passing it or parsing.
-    // However, next-intl useLocale hook exists.
     const locale = useLocale();
 
     useEffect(() => {
@@ -30,6 +29,19 @@ export default function Navbar() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
+    // Close language dropdown on outside click
+    useEffect(() => {
+        const handleClickOutside = (e: MouseEvent) => {
+            if (langRef.current && !langRef.current.contains(e.target as Node)) {
+                setIsLangOpen(false);
+            }
+        };
+        if (isLangOpen) {
+            document.addEventListener("mousedown", handleClickOutside);
+        }
+        return () => document.removeEventListener("mousedown", handleClickOutside);
+    }, [isLangOpen]);
+
     const navLinks = [
         { key: "home", href: "/" },
         { key: "services", href: "/services" },
@@ -40,13 +52,13 @@ export default function Navbar() {
     ];
 
     const serviceLinks = [
-        { href: "/services/web-design", label: "Web Design" },
-        { href: "/services/seo-development", label: "SEO Development" },
-        { href: "/services/ai-integration", label: "AI Integration" },
-        { href: "/services/business-automation", label: "Business Automation" },
-        { href: "/services/web-apps", label: "Web Apps" },
-        { href: "/services/ecommerce", label: "E-Commerce" },
-        { href: "/services/social-media-marketing", label: "Digital Marketing" },
+        { href: "/services/web-design", key: "webDesign" },
+        { href: "/services/seo-development", key: "seo" },
+        { href: "/services/ai-integration", key: "ai" },
+        { href: "/services/business-automation", key: "automation" },
+        { href: "/services/web-apps", key: "webApps" },
+        { href: "/services/ecommerce", key: "ecommerce" },
+        { href: "/services/social-media-marketing", key: "socialMedia" },
     ];
 
     const changeLanguage = (newLocale: string) => {
@@ -126,7 +138,7 @@ export default function Navbar() {
                                                         className="block px-4 py-2.5 text-sm text-white/70 hover:text-white hover:bg-white/10 rounded-lg transition-all"
                                                         onClick={() => setIsServicesOpen(false)}
                                                     >
-                                                        {service.label}
+                                                        {t(`serviceDropdown.${service.key}`)}
                                                     </Link>
                                                 ))}
                                                 <div className="border-t border-white/10 mt-1 pt-1">
@@ -135,7 +147,7 @@ export default function Navbar() {
                                                         className="block px-4 py-2.5 text-sm text-cyan-400 hover:text-cyan-300 hover:bg-white/10 rounded-lg transition-all font-medium"
                                                         onClick={() => setIsServicesOpen(false)}
                                                     >
-                                                        All Services →
+                                                        {t('allServices')} →
                                                     </Link>
                                                 </div>
                                             </motion.div>
@@ -160,15 +172,8 @@ export default function Navbar() {
 
                     {/* Desktop Controls */}
                     <div className="hidden md:flex items-center gap-4 pl-6 border-l border-white/10 h-[32px]">
-                        <Link
-                            href="/client-portal"
-                            className="px-5 py-2 text-sm font-semibold rounded-lg text-white bg-cyan-500/10 border border-cyan-400 shadow-[0_0_15px_rgba(0,245,255,0.3)] hover:bg-cyan-500/20 hover:shadow-[0_0_25px_rgba(0,245,255,0.6)] transition-all hover:-translate-y-[1px]"
-                        >
-                            {t('clientPortal')}
-                        </Link>
-
                         {/* Language Selector */}
-                        <div className="relative">
+                        <div className="relative" ref={langRef}>
                             <button
                                 onClick={() => setIsLangOpen(!isLangOpen)}
                                 className="flex items-center gap-1 text-white/70 text-sm cursor-pointer hover:text-white uppercase"
@@ -263,7 +268,7 @@ export default function Navbar() {
                                                                     onClick={() => { setIsMenuOpen(false); setIsMobileServicesOpen(false); }}
                                                                     className="text-sm text-white/50 hover:text-cyan-400 transition-colors"
                                                                 >
-                                                                    {service.label}
+                                                                    {t(`serviceDropdown.${service.key}`)}
                                                                 </Link>
                                                             ))}
                                                             <Link
@@ -271,7 +276,7 @@ export default function Navbar() {
                                                                 onClick={() => { setIsMenuOpen(false); setIsMobileServicesOpen(false); }}
                                                                 className="text-sm text-cyan-400 font-medium mt-1"
                                                             >
-                                                                All Services →
+                                                                {t('allServices')} →
                                                             </Link>
                                                         </div>
                                                     </motion.div>
@@ -303,20 +308,6 @@ export default function Navbar() {
                                 ))}
                             </div>
 
-                            <motion.div
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ delay: 0.5 }}
-                                className="mt-8"
-                            >
-                                <Link
-                                    href="/client-portal"
-                                    onClick={() => setIsMenuOpen(false)}
-                                    className="px-8 py-3 text-lg font-semibold rounded-full text-white bg-cyan-500/10 border border-cyan-500/50 shadow-[0_0_15px_rgba(6,182,212,0.2)]"
-                                >
-                                    {t('clientPortal')}
-                                </Link>
-                            </motion.div>
                         </nav>
                     </motion.div>
                 )}

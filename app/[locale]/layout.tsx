@@ -37,7 +37,6 @@ export const metadata: Metadata = {
   authors: [{ name: "Paulo R. Lopes" }],
   metadataBase: new URL("https://lopes2tech.ch"),
   alternates: {
-    canonical: "/",
     languages: {
       'en': '/en',
       'de': '/de',

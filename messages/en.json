@@ -6,7 +6,17 @@
     "contact": "Contact",
     "insights": "Insights",
     "about": "About",
-    "clientPortal": "Client Portal"
+    "clientPortal": "Client Portal",
+    "allServices": "All Services",
+    "serviceDropdown": {
+      "webDesign": "Web Design",
+      "seo": "SEO Development",
+      "ai": "AI Integration",
+      "automation": "Business Automation",
+      "webApps": "Web Apps",
+      "ecommerce": "E-Commerce",
+      "socialMedia": "Digital Marketing"
+    }
   },
   "Packages": {
     "quickStart": {
@@ -399,7 +409,18 @@
     "badge": "SELECTED WORK",
     "title": "Built for Growth",
     "subtitle": "A selection of high-impact websites and applications designed for performance and scale.",
-    "button": "View Full Portfolio"
+    "button": "View Full Portfolio",
+    "projects": {
+      "mimesa": { "title": "MiMesa", "description": "Gastronomy management platform.", "category": "Web App" },
+      "menteiq": { "title": "menteIQ", "description": "Modern CRM platform.", "category": "Web App" },
+      "theraflow": { "title": "TheraFlow", "description": "Practice management software.", "category": "SaaS" },
+      "finito": { "title": "Finito", "description": "Financial management.", "category": "Web App" },
+      "noff": { "title": "Noff", "description": "HR Tech solution.", "category": "Web App" },
+      "ribeiro": { "title": "Ribeiro Consulting", "description": "Professional consulting.", "category": "Website" },
+      "costeleta": { "title": "Costeleta Dourada", "description": "Restaurant booking.", "category": "Website" },
+      "forma": { "title": "Forma Architects", "description": "Minimalist portfolio.", "category": "Website" },
+      "alentseguros": { "title": "AlentSeguros", "description": "Insurance portal.", "category": "Website" }
+    }
   },
   "Process": {
     "badge": "The Workflow",
@@ -424,6 +445,38 @@
         "description": "We deploy your system and provide ongoing maintenance."
       }
     }
+  },
+  "Testimonials": {
+    "badge": "Client Feedback",
+    "title": "Trusted by Swiss",
+    "titleHighlight": "Businesses",
+    "subtitle": "Real results from real clients. Here's what they say about working with us.",
+    "items": {
+      "marco": {
+        "name": "Marco Reizinho",
+        "role": "Business Owner",
+        "company": "Marco Reizinho",
+        "text": "Very Professional! and the end product was amazing! Recommend! I was overloaded with offers, didn't know which company to choose from. A friend recommended Lopes2Tech if I wanted easy communication and simplicity in the process — and he nailed it! My small business is growing! Thank you 🙏"
+      },
+      "silvio": {
+        "name": "Silvio Valente",
+        "role": "Professional Photographer",
+        "company": "Silvio Valente Photography",
+        "text": "I needed a portfolio that truly reflected the quality of my work, and Lopes2Tech delivered exactly that. The website is clean, fast, and elegant. Clients constantly compliment how easy it is to navigate and book sessions. Couldn't be happier with the result."
+      },
+      "ana": {
+        "name": "Ana Ribeiro",
+        "role": "Founder",
+        "company": "Ribeiro Consulting",
+        "text": "Working with Lopes2Tech was a seamless experience from start to finish. They understood our brand, built a professional site that generates leads, and were always responsive throughout the process. Our online presence has never looked this credible."
+      }
+    }
+  },
+  "Newsletter": {
+    "description": "Get insights on AI, SEO & web dev delivered to your inbox.",
+    "placeholder": "your@email.com",
+    "success": "Thanks for subscribing!",
+    "error": "Something went wrong. Try again."
   },
   "Footer": {
     "sections": {
@@ -1048,5 +1101,125 @@
     "title": "Page Not Found",
     "description": "The page you're looking for doesn't exist or has been moved.",
     "backHome": "Back to Home"
+  },
+  "PortfolioPage": {
+    "meta": {
+      "title": "Portfolio | Lopes2Tech - Web Apps & Websites Built in Switzerland",
+      "description": "Explore our portfolio of custom web applications, SaaS platforms, and websites built for Swiss businesses.",
+      "ogTitle": "Portfolio | Lopes2Tech",
+      "ogDescription": "Custom web applications, SaaS platforms, and websites built for Swiss businesses."
+    },
+    "badge": "Our Work",
+    "title": "Success Stories &",
+    "titleHighlight": "Digital Excellence",
+    "subtitle": "Our portfolio represents a fusion of robust solutions built for ambitious clients and proprietary ventures developed in-house.",
+    "subtitleSecondary": "From enterprise-grade CRM dashboards to immersive brand experiences, our portfolio reflects our commitment to Swiss precision and innovation.",
+    "filters": {
+      "webApps": "Web Apps",
+      "websites": "Websites"
+    },
+    "badges": {
+      "inDevelopment": "In Development",
+      "viewProject": "View Project",
+      "comingSoon": "Coming Soon"
+    },
+    "detail": {
+      "backToPortfolio": "Back to Portfolio",
+      "visitLiveSite": "Open App",
+      "webApp": "Web Application",
+      "website": "Website"
+    },
+    "projects": {
+      "clinika-os": {
+        "title": "Clinika OS - Clinic Booking & CRM",
+        "description": "A complete practice management platform for clinics and health professionals. From online booking to GDPR-compliant patient records, all in one secure dashboard.",
+        "category": "HealthTech SaaS"
+      },
+      "dark-monkey": {
+        "title": "Dark Monkey - Gamified E-Commerce",
+        "description": "A premium gamified e-commerce platform where shopping feels like progression. Built with limited drops, XP tiers, product customization, and a brand ecosystem that keeps customers coming back.",
+        "category": "E-Commerce"
+      },
+      "mimesa": {
+        "title": "miMesa - Restaurant OS",
+        "description": "The operating system for modern restaurants. Handle reservations, tables, and guests with elegance. Designed to save time and increase revenue.",
+        "category": "Gastronomy & Reservations"
+      },
+      "draftmode": {
+        "title": "DraftMode CRM",
+        "description": "Modern CRM platform designed for consultants and small to medium companies. Real answers, streamlined workflows.",
+        "category": "CRM for Consultants"
+      },
+      "pali-ai": {
+        "title": "Pali AI",
+        "description": "Next-Gen Personal Assistant with Contextual Awareness.",
+        "category": "AI Application"
+      },
+      "menteiq": {
+        "title": "menteIQ - AI Business Command Center",
+        "description": "AI-native CRM & business OS for European freelancers, consultants, and SMEs. Multi-model AI chat, Swiss QR-Bill invoicing, RAG knowledge base, and GDPR-ready data management.",
+        "category": "AI Business OS"
+      },
+      "theraflow": {
+        "title": "TheraFlow CRM - Practice Management",
+        "description": "The all-in-one secure platform for scheduling, client records, and billing. Designed for therapists, coaches, and clinics to simplify administration and ensure GDPR compliance.",
+        "category": "HealthTech SaaS"
+      },
+      "finito-pro": {
+        "title": "Finito Pro - Swiss Craft Management",
+        "description": "The all-in-one digital solution for Swiss craft businesses. Features project management, QR-invoicing, time tracking, and resource planning. 100% Swiss Made & Secure.",
+        "category": "SaaS for Craftsmen"
+      },
+      "noff": {
+        "title": "Noff - Smart Communication & Hiring",
+        "description": "A digital business card and team optimization platform. Features scientific personality analysis to improve collaboration and smart recruitment tools for finding the perfect cultural fit.",
+        "category": "Digital Business Card"
+      },
+      "ribeiro-consulting": {
+        "title": "Ribeiro Consulting - Strategic Business Integration",
+        "description": "Integrated management, accounting, and financial consulting for Swiss SMEs and individuals. Provides certified insurance mediation, tax optimization, and strategic administrative support.",
+        "category": "Business Consulting"
+      },
+      "costeleta-dourada": {
+        "title": "Costeleta Dourada - Authentic Alentejo Dining",
+        "description": "A traditional Alentejo restaurant website showcasing their menu and providing an easy table booking system.",
+        "category": "Gastronomy & Reservations"
+      },
+      "forma": {
+        "title": "FORMA - Architecture Studio",
+        "description": "Modern architecture firm website showcasing innovative designs, sustainable building solutions, and award-winning projects that shape the future of urban spaces.",
+        "category": "Architecture & Design"
+      },
+      "alentseguros": {
+        "title": "Alentseguros - Certified Insurance Portal",
+        "description": "A modern digital platform for insurance management. Features a secure client portal, instant quote requests, and multi-channel support for comprehensive personal and business coverage.",
+        "category": "Insurance & FinTech"
+      },
+      "silvio-photography": {
+        "title": "Silvio Photography - Art & Emotion",
+        "description": "Professional photography portfolio specializing in portraits, events, and commercial branding. Capturing authentic stories and visual narratives across Lisbon and Portugal.",
+        "category": "Photography Portfolio"
+      },
+      "apex-consulting": {
+        "title": "Apex Consulting - Strategy & Growth",
+        "description": "Professional consulting agency website focusing on clarity, trust, and corporate excellence. Featuring a clean, modern design that communicates authority and expertise.",
+        "category": "Business Consulting"
+      },
+      "nexus-accounting": {
+        "title": "Nexus Accounting",
+        "description": "Professional accounting and financial services website built with a modern design and user-friendly navigation.",
+        "category": "Accounting & Finance"
+      },
+      "elite-estates": {
+        "title": "Elite Estates - Luxury Real Estate",
+        "description": "Exclusive real estate website showcasing ultra-premium properties worldwide. Features elegant black and gold design, sophisticated property search, and white-glove concierge services.",
+        "category": "Luxury Real Estate"
+      },
+      "serene-spa": {
+        "title": "Serene Spa - Holistic Wellness",
+        "description": "A tranquil wellness website featuring a calming sage green aesthetic, detailed treatment menus, and an elegant booking experience. Designed to embody peace and rejuvenation.",
+        "category": "Wellness & Luxury"
+      }
+    }
   }
 }

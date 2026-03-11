@@ -2,10 +2,13 @@
 
 import { useState } from "react";
 import { Mail, ArrowRight, Check } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { sendNewsletterSubscriptionEmail } from "@/app/actions/contact";
 
 export default function NewsletterSignup() {
     const [email, setEmail] = useState("");
     const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+    const t = useTranslations('Newsletter');
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
@@ -13,17 +16,16 @@ export default function NewsletterSignup() {
 
         setStatus("loading");
 
-        // For now, store in localStorage as a simple solution
-        // Replace with actual newsletter API (Mailchimp, ConvertKit, etc.) when ready
         try {
-            const subscribers = JSON.parse(localStorage.getItem("newsletter-subscribers") || "[]");
-            if (!subscribers.includes(email)) {
-                subscribers.push(email);
-                localStorage.setItem("newsletter-subscribers", JSON.stringify(subscribers));
+            const result = await sendNewsletterSubscriptionEmail(email);
+            if (result.success) {
+                setStatus("success");
+                setEmail("");
+                setTimeout(() => setStatus("idle"), 4000);
+            } else {
+                setStatus("error");
+                setTimeout(() => setStatus("idle"), 3000);
             }
-            setStatus("success");
-            setEmail("");
-            setTimeout(() => setStatus("idle"), 4000);
         } catch {
             setStatus("error");
             setTimeout(() => setStatus("idle"), 3000);
@@ -32,9 +34,9 @@ export default function NewsletterSignup() {
 
     if (status === "success") {
         return (
-            <div className="flex items-center gap-2 text-sm text-green-400">
+            <div className="flex items-center gap-2 text-sm text-green-400 mt-4">
                 <Check className="w-4 h-4" />
-                <span>Thanks for subscribing!</span>
+                <span>{t('success')}</span>
             </div>
         );
     }
@@ -42,7 +44,7 @@ export default function NewsletterSignup() {
     return (
         <form onSubmit={handleSubmit} className="mt-4">
             <p className="text-white/50 text-sm mb-3">
-                Get insights on AI, SEO & web dev delivered to your inbox.
+                {t('description')}
             </p>
             <div className="flex gap-2">
                 <div className="relative flex-1">
@@ -51,7 +53,7 @@ export default function NewsletterSignup() {
                         type="email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
-                        placeholder="your@email.com"
+                        placeholder={t('placeholder')}
                         className="w-full pl-10 pr-3 py-2.5 text-sm bg-white/5 border border-white/10 rounded-lg text-white placeholder:text-white/30 focus:outline-none focus:border-cyan-500/50 focus:ring-1 focus:ring-cyan-500/20 transition-all"
                         required
                     />
@@ -65,7 +67,7 @@ export default function NewsletterSignup() {
                 </button>
             </div>
             {status === "error" && (
-                <p className="text-red-400 text-xs mt-1">Something went wrong. Try again.</p>
+                <p className="text-red-400 text-xs mt-1">{t('error')}</p>
             )}
         </form>
     );

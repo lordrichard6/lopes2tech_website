@@ -6,7 +6,17 @@
     "contact": "Kontakt",
     "insights": "Einblicke",
     "about": "Über uns",
-    "clientPortal": "Kundenportal"
+    "clientPortal": "Kundenportal",
+    "allServices": "Alle Dienstleistungen",
+    "serviceDropdown": {
+      "webDesign": "Webdesign",
+      "seo": "SEO-Entwicklung",
+      "ai": "KI-Integration",
+      "automation": "Geschäftsautomatisierung",
+      "webApps": "Web-Anwendungen",
+      "ecommerce": "E-Commerce",
+      "socialMedia": "Digitales Marketing"
+    }
   },
   "Packages": {
     "quickStart": {
@@ -232,11 +242,11 @@
   "BuilderServices": {
     "website": {
       "name": "Professionelle Website",
-      "description": "Maßgeschneiderte, leistungsstarke Website",
+      "description": "Massgeschneiderte, leistungsstarke Website",
       "addOns": {
         "10pages": {
           "name": "10+ Seiten",
-          "description": "Große Website mit vielen Bereichen"
+          "description": "Grosse Website mit vielen Bereichen"
         },
         "cms": {
           "name": "CMS + Blog",
@@ -379,7 +389,7 @@
       },
       "ecommerce": {
         "title": "E-Commerce",
-        "description": "Maßgeschneiderte Online-Shops, die das Kaufen einfach und sicher machen."
+        "description": "Massgeschneiderte Online-Shops, die das Kaufen einfach und sicher machen."
       },
       "apps": {
         "title": "Web-Apps",
@@ -392,14 +402,25 @@
   },
   "CTASection": {
     "title": "Bereit, Ihr Geschäft zu skalieren?",
-    "subtitle": "Lassen Sie uns gemeinsam etwas Außergewöhnliches bauen. Buchen Sie noch heute Ihre kostenlose Beratung.",
+    "subtitle": "Lassen Sie uns gemeinsam etwas Aussergewöhnliches bauen. Buchen Sie noch heute Ihre kostenlose Beratung.",
     "button": "Projekt starten"
   },
   "Portfolio": {
     "badge": "AUSGEWÄHLTE PROJEKTE",
     "title": "Gebaut für Wachstum",
     "subtitle": "Eine Auswahl an hochwirksamen Websites und Anwendungen, entwickelt für Leistung und Skalierung.",
-    "button": "Ganzes Portfolio ansehen"
+    "button": "Ganzes Portfolio ansehen",
+    "projects": {
+      "mimesa": { "title": "MiMesa", "description": "Gastronomie-Management-Plattform.", "category": "Web-App" },
+      "menteiq": { "title": "menteIQ", "description": "Moderne CRM-Plattform.", "category": "Web-App" },
+      "theraflow": { "title": "TheraFlow", "description": "Praxisverwaltungssoftware.", "category": "SaaS" },
+      "finito": { "title": "Finito", "description": "Finanzverwaltung.", "category": "Web-App" },
+      "noff": { "title": "Noff", "description": "HR-Tech-Lösung.", "category": "Web-App" },
+      "ribeiro": { "title": "Ribeiro Consulting", "description": "Professionelle Beratung.", "category": "Website" },
+      "costeleta": { "title": "Costeleta Dourada", "description": "Restaurant-Reservierung.", "category": "Website" },
+      "forma": { "title": "Forma Architects", "description": "Minimalistisches Portfolio.", "category": "Website" },
+      "alentseguros": { "title": "AlentSeguros", "description": "Versicherungsportal.", "category": "Website" }
+    }
   },
   "Process": {
     "badge": "Der Arbeitsablauf",
@@ -417,13 +438,45 @@
       },
       "3": {
         "title": "Aufbau & Automatisierung",
-        "description": "Wir bauen Ihre maßgeschneiderte Lösung mit Echtzeit-Fortschrittsverfolgung."
+        "description": "Wir bauen Ihre massgeschneiderte Lösung mit Echtzeit-Fortschrittsverfolgung."
       },
       "4": {
         "title": "Launch & Support",
         "description": "Wir implementieren Ihr System und bieten laufende Wartung."
       }
     }
+  },
+  "Testimonials": {
+    "badge": "Kundenfeedback",
+    "title": "Vertraut von Schweizer",
+    "titleHighlight": "Unternehmen",
+    "subtitle": "Echte Ergebnisse von echten Kunden. Das sagen sie über die Zusammenarbeit mit uns.",
+    "items": {
+      "marco": {
+        "name": "Marco Reizinho",
+        "role": "Geschäftsinhaber",
+        "company": "Marco Reizinho",
+        "text": "Sehr professionell! Und das Endprodukt war erstaunlich! Empfehlenswert! Ich war mit Angeboten überladen und wusste nicht, welches Unternehmen ich wählen sollte. Ein Freund empfahl Lopes2Tech, wenn ich einfache Kommunikation und Einfachheit im Prozess wollte — und er hat es geschafft! Mein kleines Unternehmen wächst! Danke 🙏"
+      },
+      "silvio": {
+        "name": "Silvio Valente",
+        "role": "Professioneller Fotograf",
+        "company": "Silvio Valente Photography",
+        "text": "Ich brauchte ein Portfolio, das die Qualität meiner Arbeit wirklich widerspiegelt, und Lopes2Tech hat genau das geliefert. Die Website ist sauber, schnell und elegant. Kunden loben ständig, wie einfach es ist, zu navigieren und Sitzungen zu buchen. Könnte nicht zufriedener sein mit dem Ergebnis."
+      },
+      "ana": {
+        "name": "Ana Ribeiro",
+        "role": "Gründerin",
+        "company": "Ribeiro Consulting",
+        "text": "Die Zusammenarbeit mit Lopes2Tech war von Anfang bis Ende eine nahtlose Erfahrung. Sie verstanden unsere Marke, bauten eine professionelle Website, die Leads generiert, und waren während des gesamten Prozesses immer ansprechbar. Unsere Online-Präsenz sah noch nie so glaubwürdig aus."
+      }
+    }
+  },
+  "Newsletter": {
+    "description": "Erhalten Sie Einblicke zu KI, SEO & Webentwicklung in Ihrem Posteingang.",
+    "placeholder": "ihre@email.com",
+    "success": "Danke fürs Abonnieren!",
+    "error": "Etwas ist schiefgelaufen. Versuchen Sie es erneut."
   },
   "Footer": {
     "sections": {
@@ -473,8 +526,8 @@
     "founder": {
       "title": "Über den Gründer",
       "description1": "Ich bin Full Stack Entwickler und der Gründer von <span class='text-cyan-400 font-semibold'>Lopes2Tech</span>, spezialisiert auf leistungsstarke Websites, intelligente Automatisierungen und KI-gesteuerte Webanwendungen. Mit Sitz in Zürich, aber ursprünglich aus Portugal (wo <em>Bacalhau à Brás</em> und <em>Pastéis de Nata</em> eine Religion sind), kombiniere ich technische Präzision mit einer tiefen Leidenschaft für digitale Innovation.",
-      "description2": "Mein beruflicher Charakter ist definiert durch einen unermüdlichen Drang, komplexe Probleme zu lösen. Ich schreibe nicht nur Code; ich architekte digitale Ökosysteme. Von skalierbaren SaaS-Plattformen bis zu autonomen KI-Agenten nutze ich einen modernen Stack—einschließlich <span class='text-white'>Next.js, TypeScript, Python und Supabase</span>—um Lösungen zu liefern, die so robust wie schön sind.",
-      "quote": "Ich vereinfache die digitale Landschaft für Unternehmen, indem ich maßgeschneiderte Automatisierungen und Web-Apps baue, die für Sie arbeiten, während Sie ein Pastél de Nata genießen.",
+      "description2": "Mein beruflicher Charakter ist definiert durch einen unermüdlichen Drang, komplexe Probleme zu lösen. Ich schreibe nicht nur Code; ich architekte digitale Ökosysteme. Von skalierbaren SaaS-Plattformen bis zu autonomen KI-Agenten nutze ich einen modernen Stack—einschliesslich <span class='text-white'>Next.js, TypeScript, Python und Supabase</span>—um Lösungen zu liefern, die so robust wie schön sind.",
+      "quote": "Ich vereinfache die digitale Landschaft für Unternehmen, indem ich massgeschneiderte Automatisierungen und Web-Apps baue, die für Sie arbeiten, während Sie ein Pastél de Nata geniessen.",
       "connect": "Verbinden Sie sich mit mir"
     }
   },
@@ -482,7 +535,7 @@
     "hero": {
       "badge": "Kontaktieren Sie uns",
       "titlePart1": "Lassen Sie uns etwas",
-      "titlePart2": "Außergewöhnliches Bauen",
+      "titlePart2": "Aussergewöhnliches Bauen",
       "description": "Mit Sitz in Zürich, liefern wir digitale Exzellenz in die Welt."
     },
     "form": {
@@ -786,7 +839,7 @@
   "CustomBuilder": {
     "badge": "Eigenes Paket",
     "title": "Individueller <highlight>Paket-Konfigurator</highlight>",
-    "description": "Brauchen Sie etwas Maßgeschneidertes? Wählen Sie einen Basisdienst und fügen Sie Funktionen hinzu. Sofortige Schätzung.",
+    "description": "Brauchen Sie etwas Massgeschneidertes? Wählen Sie einen Basisdienst und fügen Sie Funktionen hinzu. Sofortige Schätzung.",
     "step1": "Wählen Sie Ihren Basisdienst",
     "step2": "Funktionen hinzufügen",
     "summary": {
@@ -826,7 +879,7 @@
   },
   "Services": {
     "defaultDescription": "Umfassende Implementierung von {title}, zugeschnitten auf Ihre spezifischen Geschäftsanforderungen. Wir sorgen für hohe Leistung, Skalierbarkeit und ein nahtloses Benutzererlebnis.",
-    "close": "Schließen",
+    "close": "Schliessen",
     "gotIt": "Verstanden",
     "requestQuote": "Angebot anfordern",
     "map": {
@@ -891,7 +944,7 @@
           "title": "Online-Shops",
           "small": "Kleiner Shop (bis 50 Produkte)",
           "medium": "Mittlerer Shop (50-500 Produkte)",
-          "large": "Großer Shop (500+ Produkte)",
+          "large": "Grosser Shop (500+ Produkte)",
           "custom": "Individuelle E-Commerce-Plattform"
         },
         "specialized": {
@@ -925,7 +978,7 @@
     "hero": {
       "badge": "Unsere Expertise & Dienstleistungen",
       "titlePart1": "Bauen Sie Etwas",
-      "titlePart2": "Außergewöhnliches",
+      "titlePart2": "Aussergewöhnliches",
       "description": "Durch den Einsatz von KI-gestützter Entwicklung liefern wir Kundenlösungen 10-mal schneller als traditionelle Agenturen. Von Webentwicklung bis hin zu intelligenter Automatisierung bauen wir leistungsstarke Websites, individuelle Software und Workflows, die Abläufe optimieren und das Wachstum für KMUs und Startups vorantreiben."
     },
     "explore": {
@@ -934,7 +987,7 @@
     },
     "cta": {
       "title": "Bereit, Ihr Projekt zu starten?",
-      "subtitle": "Lassen Sie uns besprechen, wie wir Ihnen helfen können, etwas Außergewöhnliches zu bauen.",
+      "subtitle": "Lassen Sie uns besprechen, wie wir Ihnen helfen können, etwas Aussergewöhnliches zu bauen.",
       "button": "Loslegen"
     },
     "ServiceRequest": {
@@ -959,7 +1012,7 @@
     "subtitle": "Vertikale SaaS-Produkte von Grund auf entwickelt — jedes löst ein echtes Problem für eine bestimmte Branche.",
     "hint": "Klicken Sie auf ein Produkt, um seine Funktionen zu erkunden",
     "dialog": {
-      "close": "Schließen",
+      "close": "Schliessen",
       "visitWebsite": "Website besuchen",
       "keyFeatures": "Hauptfunktionen"
     },
@@ -975,7 +1028,7 @@
           "3": "Gastprofile mit Präferenzen, Besuchen & Ausgabenverlauf",
           "4": "Walk-in & Wartelisten-Manager mit Live-Warteschlangen-Tracking",
           "5": "Mehrsprachige Unterstützung für internationale Gäste",
-          "6": "Analyse-Dashboard: Belegung, Stoßzeiten, Umsatztrends"
+          "6": "Analyse-Dashboard: Belegung, Stosszeiten, Umsatztrends"
         }
       },
       "clinika": {
@@ -1048,5 +1101,125 @@
     "title": "Seite nicht gefunden",
     "description": "Die Seite, die Sie suchen, existiert nicht oder wurde verschoben.",
     "backHome": "Zurück zur Startseite"
+  },
+  "PortfolioPage": {
+    "meta": {
+      "title": "Portfolio | Lopes2Tech - Web-Apps & Websites aus der Schweiz",
+      "description": "Entdecken Sie unser Portfolio massgeschneiderter Webanwendungen, SaaS-Plattformen und Websites für Schweizer Unternehmen.",
+      "ogTitle": "Portfolio | Lopes2Tech",
+      "ogDescription": "Massgeschneiderte Webanwendungen, SaaS-Plattformen und Websites für Schweizer Unternehmen."
+    },
+    "badge": "Unsere Arbeit",
+    "title": "Erfolgsgeschichten &",
+    "titleHighlight": "Digitale Exzellenz",
+    "subtitle": "Unser Portfolio repräsentiert eine Fusion aus robusten Lösungen für ambitionierte Kunden und eigenen Projekten, die intern entwickelt wurden.",
+    "subtitleSecondary": "Von Enterprise-CRM-Dashboards bis hin zu immersiven Markenerlebnissen spiegelt unser Portfolio unser Engagement für Schweizer Präzision und Innovation wider.",
+    "filters": {
+      "webApps": "Web-Apps",
+      "websites": "Websites"
+    },
+    "badges": {
+      "inDevelopment": "In Entwicklung",
+      "viewProject": "Projekt ansehen",
+      "comingSoon": "Demnächst"
+    },
+    "detail": {
+      "backToPortfolio": "Zurück zum Portfolio",
+      "visitLiveSite": "App öffnen",
+      "webApp": "Webanwendung",
+      "website": "Website"
+    },
+    "projects": {
+      "clinika-os": {
+        "title": "Clinika OS - Klinikbuchung & CRM",
+        "description": "Eine komplette Praxismanagement-Plattform für Kliniken und Gesundheitsfachkräfte. Von Online-Buchung bis DSGVO-konformen Patientenakten, alles in einem sicheren Dashboard.",
+        "category": "HealthTech SaaS"
+      },
+      "dark-monkey": {
+        "title": "Dark Monkey - Gamifizierter E-Commerce",
+        "description": "Eine gamifizierte Premium-E-Commerce-Plattform, bei der sich Einkaufen wie Fortschritt anfühlt. Mit limitierten Drops, XP-Stufen, Produktanpassung und einem Marken-Ökosystem, das Kunden bindet.",
+        "category": "E-Commerce"
+      },
+      "mimesa": {
+        "title": "miMesa - Restaurant-Betriebssystem",
+        "description": "Das Betriebssystem für moderne Restaurants. Verwalten Sie Reservierungen, Tische und Gäste mit Eleganz. Entwickelt, um Zeit zu sparen und den Umsatz zu steigern.",
+        "category": "Gastronomie & Reservierungen"
+      },
+      "draftmode": {
+        "title": "DraftMode CRM",
+        "description": "Moderne CRM-Plattform für Berater und kleine bis mittlere Unternehmen. Echte Antworten, optimierte Workflows.",
+        "category": "CRM für Berater"
+      },
+      "pali-ai": {
+        "title": "Pali AI",
+        "description": "Persönlicher Assistent der nächsten Generation mit kontextuellem Bewusstsein.",
+        "category": "KI-Anwendung"
+      },
+      "menteiq": {
+        "title": "menteIQ - KI-Business Command Center",
+        "description": "KI-natives CRM & Business-OS für europäische Freelancer, Berater und KMUs. Multi-Modell-KI-Chat, Schweizer QR-Rechnung, RAG-Wissensdatenbank und DSGVO-konforme Datenverwaltung.",
+        "category": "KI-Business-OS"
+      },
+      "theraflow": {
+        "title": "TheraFlow CRM - Praxisverwaltung",
+        "description": "Die All-in-One-Plattform für Terminplanung, Kundenakten und Abrechnung. Entwickelt für Therapeuten, Coaches und Kliniken zur Vereinfachung der Verwaltung und DSGVO-Konformität.",
+        "category": "HealthTech SaaS"
+      },
+      "finito-pro": {
+        "title": "Finito Pro - Schweizer Handwerksverwaltung",
+        "description": "Die digitale Komplettlösung für Schweizer Handwerksbetriebe. Mit Projektmanagement, QR-Rechnung, Zeiterfassung und Ressourcenplanung. 100% Swiss Made & Sicher.",
+        "category": "SaaS für Handwerker"
+      },
+      "noff": {
+        "title": "Noff - Intelligente Kommunikation & Recruiting",
+        "description": "Digitale Visitenkarten- und Teamoptimierungsplattform. Mit wissenschaftlicher Persönlichkeitsanalyse zur Verbesserung der Zusammenarbeit und intelligenten Recruiting-Tools.",
+        "category": "Digitale Visitenkarte"
+      },
+      "ribeiro-consulting": {
+        "title": "Ribeiro Consulting - Strategische Unternehmensintegration",
+        "description": "Integriertes Management, Buchhaltung und Finanzberatung für Schweizer KMUs und Privatpersonen. Zertifizierte Versicherungsvermittlung, Steueroptimierung und strategische Unterstützung.",
+        "category": "Unternehmensberatung"
+      },
+      "costeleta-dourada": {
+        "title": "Costeleta Dourada - Authentische Alentejo-Küche",
+        "description": "Website eines traditionellen Alentejo-Restaurants mit Speisekarte und einfachem Tischreservierungssystem.",
+        "category": "Gastronomie & Reservierungen"
+      },
+      "forma": {
+        "title": "FORMA - Architekturstudio",
+        "description": "Moderne Architektur-Website mit innovativen Designs, nachhaltigen Baulösungen und preisgekrönten Projekten, die die Zukunft urbaner Räume gestalten.",
+        "category": "Architektur & Design"
+      },
+      "alentseguros": {
+        "title": "Alentseguros - Zertifiziertes Versicherungsportal",
+        "description": "Eine moderne digitale Plattform für Versicherungsmanagement. Mit sicherem Kundenportal, sofortigen Offertanfragen und Mehrkanalunterstützung.",
+        "category": "Versicherung & FinTech"
+      },
+      "silvio-photography": {
+        "title": "Silvio Photography - Kunst & Emotion",
+        "description": "Professionelles Fotografie-Portfolio spezialisiert auf Porträts, Events und kommerzielles Branding. Authentische Geschichten und visuelle Erzählungen aus Lissabon und Portugal.",
+        "category": "Fotografie-Portfolio"
+      },
+      "apex-consulting": {
+        "title": "Apex Consulting - Strategie & Wachstum",
+        "description": "Professionelle Beratungsagentur-Website mit Fokus auf Klarheit, Vertrauen und Unternehmensexzellenz. Sauberes, modernes Design, das Autorität und Expertise vermittelt.",
+        "category": "Unternehmensberatung"
+      },
+      "nexus-accounting": {
+        "title": "Nexus Accounting",
+        "description": "Professionelle Buchhaltungs- und Finanzdienstleistungs-Website mit modernem Design und benutzerfreundlicher Navigation.",
+        "category": "Buchhaltung & Finanzen"
+      },
+      "elite-estates": {
+        "title": "Elite Estates - Luxusimmobilien",
+        "description": "Exklusive Immobilien-Website mit Ultra-Premium-Objekten weltweit. Elegantes Schwarz-Gold-Design, anspruchsvolle Immobiliensuche und White-Glove-Concierge-Service.",
+        "category": "Luxusimmobilien"
+      },
+      "serene-spa": {
+        "title": "Serene Spa - Ganzheitliches Wohlbefinden",
+        "description": "Ruhige Wellness-Website mit beruhigender Salbeigrün-Ästhetik, detaillierten Behandlungsmenüs und eleganter Buchungserfahrung. Verkörpert Frieden und Erholung.",
+        "category": "Wellness & Luxus"
+      }
+    }
   }
 }
