@@ -172,7 +172,7 @@ export default function WebDesignPage() {
                                     initial={{ opacity: 0, y: 30 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: 0.1 * index }}
-                                    className={`relative rounded-3xl p-8 border transition-all duration-500 ${
+                                    className={`relative rounded-3xl p-8 border transition-all duration-500 flex flex-col ${
                                         pkg.popular
                                             ? "bg-gradient-to-br from-purple-500/20 to-cyan-500/20 border-purple-500/30 shadow-[0_0_40px_rgba(168,85,247,0.2)]"
                                             : "bg-slate-900/50 border-white/10 hover:border-white/20"
@@ -227,7 +227,7 @@ export default function WebDesignPage() {
                                         </AnimatePresence>
                                     </div>
 
-                                    <ul className="space-y-3 mb-8">
+                                    <ul className="space-y-3 mb-8 flex-1">
                                         {pkg.features.map((feature, idx) => (
                                             <li key={idx} className="flex items-start gap-3">
                                                 <div className={`mt-0.5 w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 ${pkg.popular ? 'bg-purple-500' : 'bg-cyan-500/20'}`}>
@@ -240,7 +240,7 @@ export default function WebDesignPage() {
 
                                     <button
                                         onClick={() => handleRequest(pkg.name)}
-                                        className={`w-full flex items-center justify-center gap-2 py-3 rounded-xl font-semibold transition-all duration-300 ${
+                                        className={`mt-auto w-full flex items-center justify-center gap-2 py-3 rounded-xl font-semibold transition-all duration-300 ${
                                             pkg.popular
                                                 ? 'bg-gradient-to-r from-purple-500 to-cyan-500 text-white shadow-[0_0_20px_rgba(168,85,247,0.3)] hover:shadow-[0_0_30px_rgba(168,85,247,0.5)] hover:-translate-y-0.5'
                                                 : 'bg-white/10 text-white hover:bg-white/20'
