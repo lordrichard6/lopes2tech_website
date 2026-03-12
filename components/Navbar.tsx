@@ -272,13 +272,13 @@ export default function Navbar() {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: "-100%" }}
                         transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-                        className="fixed inset-0 z-40 bg-gradient-to-br from-[#08080c]/98 to-[#14141e]/99 backdrop-blur-xl flex flex-col items-center overflow-y-auto pt-24 pb-10"
+                        className="fixed inset-0 z-40 bg-gradient-to-br from-[#08080c]/98 to-[#14141e]/99 backdrop-blur-xl flex flex-col justify-center items-center gap-6"
                     >
                         {/* Background glows — decorative */}
                         <div aria-hidden="true" className="absolute top-[-10%] right-[-10%] w-[300px] h-[300px] rounded-full bg-cyan-500/15 blur-[60px] pointer-events-none" />
                         <div aria-hidden="true" className="absolute bottom-0 left-[-10%] w-[400px] h-[400px] rounded-full bg-purple-500/10 blur-[60px] pointer-events-none" />
 
-                        <nav className="flex flex-col items-center gap-5 w-full">
+                        <nav className="flex flex-col items-center gap-8 w-full">
                             {navLinks.map((link, i) => (
                                 <motion.div
                                     key={link.key}
@@ -305,17 +305,19 @@ export default function Navbar() {
                                                         exit={{ opacity: 0, height: 0 }}
                                                         className="overflow-hidden mt-3"
                                                     >
-                                                        <div className="flex flex-col gap-2">
-                                                            {serviceLinks.map((service) => (
-                                                                <Link
-                                                                    key={service.href}
-                                                                    href={service.href}
-                                                                    onClick={() => { setIsMenuOpen(false); setIsMobileServicesOpen(false); }}
-                                                                    className="text-sm text-white/50 hover:text-cyan-400 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 rounded"
-                                                                >
-                                                                    {t(`serviceDropdown.${service.key}`)}
-                                                                </Link>
-                                                            ))}
+                                                        <div className="flex flex-col items-center gap-3 px-6">
+                                                            <div className="grid grid-cols-2 gap-x-6 gap-y-3 w-full">
+                                                                {serviceLinks.map((service) => (
+                                                                    <Link
+                                                                        key={service.href}
+                                                                        href={service.href}
+                                                                        onClick={() => { setIsMenuOpen(false); setIsMobileServicesOpen(false); }}
+                                                                        className="text-sm text-white/50 hover:text-cyan-400 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 rounded py-1"
+                                                                    >
+                                                                        {t(`serviceDropdown.${service.key}`)}
+                                                                    </Link>
+                                                                ))}
+                                                            </div>
                                                             <Link
                                                                 href="/services"
                                                                 onClick={() => { setIsMenuOpen(false); setIsMobileServicesOpen(false); }}
