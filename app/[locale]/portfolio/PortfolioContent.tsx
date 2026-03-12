@@ -4,7 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { Link } from "@/navigation";
-import { ChevronLeft, ChevronRight, Layers, Monitor, ArrowRight, Code, Clock } from "lucide-react";
+import { ChevronLeft, ChevronRight, Layers, Monitor, ArrowRight, Code, Clock, Pause, Circle } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { projects } from "./projects";
 
@@ -149,6 +149,14 @@ export default function PortfolioContent() {
                                         />
                                         <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-[#0f172a]/60 to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-500" />
 
+                                        {/* Live Badge */}
+                                        {project.link && !project.isInDevelopment && !project.isOnHold && (
+                                            <div className="absolute top-4 right-4 px-3 py-1 bg-emerald-500/90 backdrop-blur-md rounded-full text-white text-xs font-bold flex items-center gap-1">
+                                                <Circle className="w-2.5 h-2.5 fill-current" />
+                                                {t('badges.live')}
+                                            </div>
+                                        )}
+
                                         {/* In Development Badge */}
                                         {project.isInDevelopment && (
                                             <div className="absolute top-4 right-4 px-3 py-1 bg-purple-500/90 backdrop-blur-md rounded-full text-white text-xs font-bold flex items-center gap-1">
@@ -157,8 +165,16 @@ export default function PortfolioContent() {
                                             </div>
                                         )}
 
+                                        {/* On Hold Badge */}
+                                        {project.isOnHold && (
+                                            <div className="absolute top-4 right-4 px-3 py-1 bg-orange-500/90 backdrop-blur-md rounded-full text-white text-xs font-bold flex items-center gap-1">
+                                                <Pause className="w-3 h-3" />
+                                                {t('badges.onHold')}
+                                            </div>
+                                        )}
+
                                         {/* Coming Soon Badge (no external link) */}
-                                        {!project.link && !project.isInDevelopment && (
+                                        {!project.link && !project.isInDevelopment && !project.isOnHold && (
                                             <div className="absolute top-4 right-4 px-3 py-1 bg-amber-500/90 backdrop-blur-md rounded-full text-white text-xs font-bold flex items-center gap-1">
                                                 <Clock className="w-3 h-3" />
                                                 {t('badges.comingSoon')}

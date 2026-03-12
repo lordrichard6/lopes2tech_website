@@ -1159,7 +1159,9 @@
     "badges": {
       "inDevelopment": "Em Desenvolvimento",
       "viewProject": "Ver Projeto",
-      "comingSoon": "Em Breve"
+      "comingSoon": "Em Breve",
+      "onHold": "Em Pausa",
+      "live": "Live"
     },
     "detail": {
       "backToPortfolio": "Voltar ao Portfólio",

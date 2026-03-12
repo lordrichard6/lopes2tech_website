@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { Link } from "@/navigation";
 import { motion } from "framer-motion";
-import { ArrowLeft, ExternalLink, Code, Clock } from "lucide-react";
+import { ArrowLeft, ExternalLink, Code, Clock, Pause, Circle } from "lucide-react";
 import { projects } from "../projects";
 import { notFound } from "next/navigation";
 import Navbar from "@/components/Navbar";
@@ -76,10 +76,22 @@ export default function ProjectDetailPage({ params }: { params: Promise<{ slug: 
                             <span className="px-4 py-1.5 text-xs font-bold text-slate-300 bg-white/5 rounded-full uppercase tracking-wider border border-white/10">
                                 {project.type === "web-app" ? t('detail.webApp') : t('detail.website')}
                             </span>
+                            {project.link && !project.isInDevelopment && !project.isOnHold && (
+                                <span className="px-4 py-1.5 text-xs font-bold text-emerald-300 bg-emerald-500/10 rounded-full flex items-center gap-1.5 border border-emerald-500/20">
+                                    <Circle className="w-2.5 h-2.5 fill-current" />
+                                    {t('badges.live')}
+                                </span>
+                            )}
                             {project.isInDevelopment && (
                                 <span className="px-4 py-1.5 text-xs font-bold text-purple-300 bg-purple-500/10 rounded-full flex items-center gap-1.5 border border-purple-500/20">
                                     <Code className="w-3 h-3" />
                                     {t('badges.inDevelopment')}
+                                </span>
+                            )}
+                            {project.isOnHold && (
+                                <span className="px-4 py-1.5 text-xs font-bold text-orange-300 bg-orange-500/10 rounded-full flex items-center gap-1.5 border border-orange-500/20">
+                                    <Pause className="w-3 h-3" />
+                                    {t('badges.onHold')}
                                 </span>
                             )}
                         </div>
