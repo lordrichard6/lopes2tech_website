@@ -1257,6 +1257,11 @@
         "title": "Serene Spa - Bem-Estar Holístico",
         "description": "Website de bem-estar tranquilo com estética calmante em verde salvia, menus detalhados de tratamentos e uma experiência de reserva elegante. Projetado para transmitir paz e rejuvenescimento.",
         "category": "Bem-Estar & Luxo"
+      },
+      "safira-reinigung": {
+        "title": "Safira Reinigung - Limpeza Profissional",
+        "description": "Website multilingue para uma empresa de limpeza suíça que atua em Zurique, Basileia e St. Gallen. Com listagem de serviços, formulário de contacto via Formspree e localização completa em DE/EN/PT.",
+        "category": "Serviços de Limpeza"
       }
     }
   },

@@ -1257,6 +1257,11 @@
         "title": "Serene Spa - Ganzheitliches Wohlbefinden",
         "description": "Ruhige Wellness-Website mit beruhigender Salbeigrün-Ästhetik, detaillierten Behandlungsmenüs und eleganter Buchungserfahrung. Verkörpert Frieden und Erholung.",
         "category": "Wellness & Luxus"
+      },
+      "safira-reinigung": {
+        "title": "Safira Reinigung - Professionelle Reinigung",
+        "description": "Mehrsprachige Website für ein Schweizer Reinigungsunternehmen in Zürich, Basel und St. Gallen. Mit Dienstleistungsübersicht, Kontaktformular via Formspree und vollständiger DE/EN/PT-Lokalisierung.",
+        "category": "Reinigungsdienste"
       }
     }
   },

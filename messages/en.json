@@ -1257,6 +1257,11 @@
         "title": "Serene Spa - Holistic Wellness",
         "description": "A tranquil wellness website featuring a calming sage green aesthetic, detailed treatment menus, and an elegant booking experience. Designed to embody peace and rejuvenation.",
         "category": "Wellness & Luxury"
+      },
+      "safira-reinigung": {
+        "title": "Safira Reinigung - Professional Cleaning",
+        "description": "A multilingual website for a Swiss cleaning company serving Zürich, Basel, and St. Gallen. Features service listings, contact form with Formspree, and full DE/EN/PT localization.",
+        "category": "Cleaning Services"
       }
     }
   },
