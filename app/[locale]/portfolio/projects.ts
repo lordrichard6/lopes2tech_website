@@ -19,7 +19,7 @@ export const projects: Project[] = [
     { slug: "draftmode", image: "/proj/draftmode_mockup.webp", type: "web-app", isInDevelopment: true },
     // Websites (real clients first, newest → oldest, then mockup projects)
     { slug: "safira-reinigung", image: "/proj/safira_reinigung_mockup.webp", type: "website", link: "https://safirareinigungwebsite.vercel.app/" },
-    { slug: "silvio-photography", image: "/proj/silvio_mockup.webp", type: "website", link: "https://silviophotography.com/" },
+    { slug: "silvio-photography", image: "/proj/silvio_mockup.webp", type: "website", link: "https://www.silviovalentt.pt/" },
     { slug: "ribeiro-consulting", image: "/proj/ribeiro_mockup.webp", type: "website", link: "https://ribeiroconsulting.ch/pt" },
     { slug: "costeleta-dourada", image: "/proj/costeleta_mockup.webp", type: "website", link: "https://costeleta-dourada.vercel.app/" },
     { slug: "forma", image: "/proj/forma_mockup.webp", type: "website", link: "https://forma-architects-fawn.vercel.app/" },
