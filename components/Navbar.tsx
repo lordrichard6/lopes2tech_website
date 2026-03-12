@@ -96,7 +96,7 @@ export default function Navbar() {
         <>
             <header
                 className={clsx(
-                    "fixed top-6 left-0 right-0 mx-auto w-[95%] max-w-[1200px] z-50 rounded-[20px] transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] border border-white/10 backdrop-blur-md",
+                    "fixed top-6 left-0 right-0 mx-auto w-[95%] max-w-[1200px] z-[70] rounded-[20px] transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] border border-white/10 backdrop-blur-md",
                     isScrolled
                         ? "top-4 bg-black/85 shadow-[0_10px_40px_rgba(0,0,0,0.3)] border-white/10"
                         : "bg-black/60 shadow-[0_8px_32px_rgba(0,0,0,0.2)]"
@@ -272,7 +272,7 @@ export default function Navbar() {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: "-100%" }}
                         transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-                        className="fixed inset-0 z-40 bg-gradient-to-br from-[#08080c]/98 to-[#14141e]/99 backdrop-blur-xl flex flex-col items-center gap-6 pt-28 overflow-x-hidden overflow-y-auto"
+                        className="fixed inset-0 z-[60] bg-gradient-to-br from-[#08080c]/98 to-[#14141e]/99 backdrop-blur-xl flex flex-col items-center gap-6 pt-28 overflow-x-hidden overflow-y-auto"
                     >
                         {/* Background glows — decorative */}
                         <div aria-hidden="true" className="absolute top-[-10%] right-[-10%] w-[300px] h-[300px] rounded-full bg-cyan-500/15 blur-[60px] pointer-events-none" />
