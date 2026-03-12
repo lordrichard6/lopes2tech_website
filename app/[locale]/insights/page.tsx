@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/navigation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { BookOpen, Calendar, Clock } from "lucide-react";
@@ -33,7 +33,8 @@ const blogPostsByLocale: Record<string, BlogPost[]> = {
 export default function InsightsPage() {
     const locale = useLocale();
     const t = useTranslations('InsightsPage');
-    const posts = blogPostsByLocale[locale] || blogPostsByLocale.en;
+    const posts = [...(blogPostsByLocale[locale] || blogPostsByLocale.en)]
+        .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
     return (
         <main className="min-h-screen bg-[#0f172a]">

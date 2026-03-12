@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Link from "next/link";
+import { Link } from "@/navigation";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -66,9 +66,9 @@ export default function AboutPage() {
                 <div className="max-w-7xl mx-auto px-6">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         {[
-                            { src: "/about/about_01.png", alt: "Lopes2Tech Workspace" },
-                            { src: "/about/about_02.png", alt: "Development Process" },
-                            { src: "/about/about_03.png", alt: "Team Collaboration" }
+                            { src: "/about/about_01.webp", alt: "Lopes2Tech Workspace" },
+                            { src: "/about/about_02.webp", alt: "Development Process" },
+                            { src: "/about/about_03.webp", alt: "Team Collaboration" }
                         ].map((image, index) => (
                             <motion.div
                                 key={index}
@@ -149,9 +149,9 @@ export default function AboutPage() {
                     {/* Gallery Grid */}
                     <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
                         {[
-                            { src: "/about/swiss_alps.png", alt: "Swiss Alps Summer" },
-                            { src: "/about/user_coding.png", alt: "Coding at Office" },
-                            { src: "/about/zurich_view.png", alt: "Zurich Cityscape" }
+                            { src: "/about/swiss_alps.webp", alt: "Swiss Alps Summer" },
+                            { src: "/about/user_coding.webp", alt: "Coding at Office" },
+                            { src: "/about/zurich_view.webp", alt: "Zurich Cityscape" }
                         ].map((image, index) => (
                             <motion.div
                                 key={index}
@@ -242,6 +242,7 @@ export default function AboutPage() {
                                         href="https://www.linkedin.com/in/pauloreizinho/"
                                         target="_blank"
                                         rel="noopener noreferrer"
+                                        aria-label="Paulo Lopes on LinkedIn"
                                         className="flex items-center justify-center w-12 h-12 rounded-full bg-white/5 border border-white/10 text-slate-400 hover:bg-cyan-400/10 hover:border-cyan-400/30 hover:text-cyan-400 transition-all duration-300"
                                     >
                                         <Linkedin className="w-5 h-5" />
@@ -250,6 +251,7 @@ export default function AboutPage() {
                                         href="https://x.com/paulo_reizinho4"
                                         target="_blank"
                                         rel="noopener noreferrer"
+                                        aria-label="Paulo Lopes on X (Twitter)"
                                         className="flex items-center justify-center w-12 h-12 rounded-full bg-white/5 border border-white/10 text-slate-400 hover:bg-cyan-400/10 hover:border-cyan-400/30 hover:text-cyan-400 transition-all duration-300"
                                     >
                                         <Twitter className="w-5 h-5" />
@@ -258,6 +260,7 @@ export default function AboutPage() {
                                         href="https://www.instagram.com/paulo_reizinho/"
                                         target="_blank"
                                         rel="noopener noreferrer"
+                                        aria-label="Paulo Lopes on Instagram"
                                         className="flex items-center justify-center w-12 h-12 rounded-full bg-white/5 border border-white/10 text-slate-400 hover:bg-cyan-400/10 hover:border-cyan-400/30 hover:text-cyan-400 transition-all duration-300"
                                     >
                                         <Instagram className="w-5 h-5" />
@@ -266,6 +269,7 @@ export default function AboutPage() {
                                         href="https://medium.com/@paulolopesreizinho"
                                         target="_blank"
                                         rel="noopener noreferrer"
+                                        aria-label="Paulo Lopes on Medium"
                                         className="flex items-center justify-center w-12 h-12 rounded-full bg-white/5 border border-white/10 text-slate-400 hover:bg-cyan-400/10 hover:border-cyan-400/30 hover:text-cyan-400 transition-all duration-300"
                                     >
                                         <FileText className="w-5 h-5" />

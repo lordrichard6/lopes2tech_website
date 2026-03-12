@@ -1,0 +1,14 @@
+import { getTranslations } from "next-intl/server";
+
+export default async function Loading() {
+    const t = await getTranslations("LoadingPage");
+
+    return (
+        <div className="min-h-screen bg-[#0f172a] flex items-center justify-center">
+            <div className="flex flex-col items-center gap-4">
+                <div className="w-10 h-10 rounded-full border-2 border-cyan-400 border-t-transparent animate-spin" />
+                <p className="text-slate-400 text-sm">{t("loading")}</p>
+            </div>
+        </div>
+    );
+}

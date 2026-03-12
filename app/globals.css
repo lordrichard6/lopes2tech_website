@@ -124,6 +124,13 @@ body {
   -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
 }
 
+/* Global focus-visible ring for keyboard accessibility */
+:focus-visible {
+  outline: 2px solid #22d3ee;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
 /* Respect user preference for reduced motion */
 @media (prefers-reduced-motion: reduce) {
   *,

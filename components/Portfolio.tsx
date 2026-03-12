@@ -9,15 +9,15 @@ import { useTranslations } from "next-intl";
 
 // Static config (images, links, layout) — content comes from translations
 const projectsConfig = [
-    { id: "mimesa", image: "/proj/mimesa_mockup.png", link: "https://website-mimesa.vercel.app/", className: "md:col-span-2 md:row-span-2" },
-    { id: "menteiq", image: "/proj/orbitcrm_mockup.png", link: "https://orbitcrm-gilt.vercel.app/", className: "md:col-span-1 md:row-span-1" },
-    { id: "theraflow", image: "/proj/theraflow_mockup.png", link: "https://www.theraflow-crm.ch/", className: "md:col-span-1 md:row-span-1" },
-    { id: "finito", image: "/proj/finito_mockup.png", link: "https://www.finitopro.ch/", className: "md:col-span-1 md:row-span-1" },
-    { id: "noff", image: "/proj/noff_mockup.png", link: "https://noff.ch", className: "md:col-span-1 md:row-span-1" },
-    { id: "ribeiro", image: "/proj/ribeiro_mockup.png", link: "https://ribeiroconsulting.ch/pt", className: "md:col-span-1 md:row-span-1" },
-    { id: "costeleta", image: "/proj/costeleta_mockup.png", link: "https://costeleta-dourada.vercel.app/", className: "md:col-span-1 md:row-span-2" },
-    { id: "forma", image: "/proj/forma_mockup.png", link: "https://forma-architects-fawn.vercel.app/", className: "md:col-span-2 md:row-span-2" },
-    { id: "alentseguros", image: "/proj/alentseguros_mockup.png", link: "https://alenteseguros.vercel.app/", className: "md:col-span-3 md:row-span-1" },
+    { id: "mimesa", image: "/proj/mimesa_mockup.webp", link: "https://website-mimesa.vercel.app/", className: "md:col-span-2 md:row-span-2" },
+    { id: "menteiq", image: "/proj/orbitcrm_mockup.webp", link: "https://orbitcrm-gilt.vercel.app/", className: "md:col-span-1 md:row-span-1" },
+    { id: "theraflow", image: "/proj/theraflow_mockup.webp", link: "https://www.theraflow-crm.ch/", className: "md:col-span-1 md:row-span-1" },
+    { id: "finito", image: "/proj/finito_mockup.webp", link: "https://www.finitopro.ch/", className: "md:col-span-1 md:row-span-1" },
+    { id: "noff", image: "/proj/noff_mockup.webp", link: "https://noff.ch", className: "md:col-span-1 md:row-span-1" },
+    { id: "ribeiro", image: "/proj/ribeiro_mockup.webp", link: "https://ribeiroconsulting.ch/pt", className: "md:col-span-1 md:row-span-1" },
+    { id: "costeleta", image: "/proj/costeleta_mockup.webp", link: "https://costeleta-dourada.vercel.app/", className: "md:col-span-1 md:row-span-2" },
+    { id: "forma", image: "/proj/forma_mockup.webp", link: "https://forma-architects-fawn.vercel.app/", className: "md:col-span-2 md:row-span-2" },
+    { id: "alentseguros", image: "/proj/alentseguros_mockup.webp", link: "https://alenteseguros.vercel.app/", className: "md:col-span-3 md:row-span-1" },
 ];
 
 export default function Portfolio() {

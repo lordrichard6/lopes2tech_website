@@ -7,50 +7,11 @@ import Image from "next/image";
 import clsx from "clsx";
 
 const services = [
-  {
-    key: "web",
-    title: "Professional Websites",
-    description: "High-performance websites that represent your brand perfectly.",
-    image: "/assets/services/service_webdev.webp",
-    icon: Monitor,
-    href: "/services/web-design",
-    dataId: "websites"
-  },
-  {
-    key: "marketing",
-    title: "Digital Marketing",
-    description: "Conversion-focused pages designed to turn visitors into leads.",
-    image: "/assets/services/service_digital_marketing.webp",
-    icon: Layout,
-    href: "/services/social-media-marketing",
-    dataId: "landing"
-  },
-  {
-    key: "automation",
-    title: "Automations",
-    description: "Streamline your operations and save hours of manual work.",
-    image: "/assets/services/service_ai_solutions.webp",
-    icon: Cpu,
-    href: "/services/business-automation",
-    dataId: "automation"
-  },
-  {
-    key: "ecommerce",
-    title: "E-Commerce",
-    description: "Custom online stores that make buying easy and secure.",
-    image: "/assets/services/service_e_commerce.webp",
-    icon: ShoppingCart,
-    href: "/services/ecommerce",
-    dataId: "ecommerce"
-  },
-  {
-    key: "apps",
-    title: "Web Apps",
-    description: "Custom software solutions tailored to your unique business needs.",
-    image: "/assets/services/service_mobile_app.webp",
-    icon: Database,
-    href: "/services/web-apps"
-  }
+  { key: "web",        image: "/assets/services/service_webdev.webp",           icon: Monitor,     href: "/services/web-design",            dataId: "websites"   },
+  { key: "marketing",  image: "/assets/services/service_digital_marketing.webp", icon: Layout,      href: "/services/social-media-marketing", dataId: "landing"    },
+  { key: "automation", image: "/assets/services/service_ai_solutions.webp",      icon: Cpu,         href: "/services/business-automation",    dataId: "automation" },
+  { key: "ecommerce",  image: "/assets/services/service_e_commerce.webp",        icon: ShoppingCart, href: "/services/ecommerce",             dataId: "ecommerce"  },
+  { key: "apps",       image: "/assets/services/service_mobile_app.webp",        icon: Database,    href: "/services/web-apps"                                   },
 ];
 
 import { useTranslations } from "next-intl";

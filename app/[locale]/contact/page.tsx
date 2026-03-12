@@ -168,6 +168,7 @@ export default function ContactPage() {
                                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                             <div className="relative">
                                                 <input
+                                                    id="contact-name"
                                                     type="text"
                                                     name="name"
                                                     value={formData.name}
@@ -176,7 +177,7 @@ export default function ContactPage() {
                                                     className={`peer w-full px-4 py-3 bg-white/5 border ${errors.name ? "border-red-500" : "border-white/10"
                                                         } rounded-xl text-white placeholder-transparent focus:outline-none focus:border-cyan-400 transition-colors`}
                                                 />
-                                                <label className="absolute left-4 -top-2.5 px-1 text-sm text-slate-400 transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-slate-500 peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-cyan-400">
+                                                <label htmlFor="contact-name" className="absolute left-4 -top-2.5 px-1 bg-[#0f172a] text-sm text-slate-400 transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-slate-500 peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-cyan-400">
                                                     {t('form.labels.name')}
                                                 </label>
                                                 {errors.name && (
@@ -186,6 +187,7 @@ export default function ContactPage() {
 
                                             <div className="relative">
                                                 <input
+                                                    id="contact-email"
                                                     type="email"
                                                     name="email"
                                                     value={formData.email}
@@ -194,7 +196,7 @@ export default function ContactPage() {
                                                     className={`peer w-full px-4 py-3 bg-white/5 border ${errors.email ? "border-red-500" : "border-white/10"
                                                         } rounded-xl text-white placeholder-transparent focus:outline-none focus:border-cyan-400 transition-colors`}
                                                 />
-                                                <label className="absolute left-4 -top-2.5 px-1 text-sm text-slate-400 transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-slate-500 peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-cyan-400">
+                                                <label htmlFor="contact-email" className="absolute left-4 -top-2.5 px-1 bg-[#0f172a] text-sm text-slate-400 transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-slate-500 peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-cyan-400">
                                                     {t('form.labels.email')}
                                                 </label>
                                                 {errors.email && (
@@ -207,6 +209,7 @@ export default function ContactPage() {
                                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                             <div className="relative">
                                                 <input
+                                                    id="contact-company"
                                                     type="text"
                                                     name="company"
                                                     value={formData.company}
@@ -214,13 +217,14 @@ export default function ContactPage() {
                                                     placeholder=" "
                                                     className="peer w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-transparent focus:outline-none focus:border-cyan-400 transition-colors"
                                                 />
-                                                <label className="absolute left-4 -top-2.5 px-1 text-sm text-slate-400 transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-slate-500 peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-cyan-400">
+                                                <label htmlFor="contact-company" className="absolute left-4 -top-2.5 px-1 bg-[#0f172a] text-sm text-slate-400 transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-slate-500 peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-cyan-400">
                                                     {t('form.labels.company')}
                                                 </label>
                                             </div>
 
                                             <div className="relative">
                                                 <input
+                                                    id="contact-phone"
                                                     type="tel"
                                                     name="phone"
                                                     value={formData.phone}
@@ -228,7 +232,7 @@ export default function ContactPage() {
                                                     placeholder=" "
                                                     className="peer w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-transparent focus:outline-none focus:border-cyan-400 transition-colors"
                                                 />
-                                                <label className="absolute left-4 -top-2.5 px-1 text-sm text-slate-400 transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-slate-500 peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-cyan-400">
+                                                <label htmlFor="contact-phone" className="absolute left-4 -top-2.5 px-1 bg-[#0f172a] text-sm text-slate-400 transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-slate-500 peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-cyan-400">
                                                     {t('form.labels.phone')}
                                                 </label>
                                             </div>
@@ -237,6 +241,7 @@ export default function ContactPage() {
                                         {/* Message */}
                                         <div className="relative">
                                             <textarea
+                                                id="contact-message"
                                                 name="message"
                                                 value={formData.message}
                                                 onChange={handleChange}
@@ -245,7 +250,7 @@ export default function ContactPage() {
                                                 className={`peer w-full px-4 py-3 bg-white/5 border ${errors.message ? "border-red-500" : "border-white/10"
                                                     } rounded-xl text-white placeholder-transparent focus:outline-none focus:border-cyan-400 transition-colors resize-none`}
                                             />
-                                            <label className="absolute left-4 -top-2.5 px-1 text-sm text-slate-400 transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-slate-500 peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-cyan-400">
+                                            <label htmlFor="contact-message" className="absolute left-4 -top-2.5 px-1 bg-[#0f172a] text-sm text-slate-400 transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-slate-500 peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-cyan-400">
                                                 {t('form.labels.message')}
                                             </label>
                                             {errors.message && (

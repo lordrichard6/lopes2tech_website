@@ -3,159 +3,47 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { ArrowRight, Check, Monitor, Layout, Cpu, ShoppingCart, Database, Search, Bot } from "lucide-react";
 
-const services = [
-    {
-        number: "01",
-        badge: "Web Development",
-        title: "Professional Websites",
-        description: [
-            "Your website is your most powerful business asset — and first impressions are permanent. We design and develop custom, high-performance websites built from the ground up for Swiss businesses: fast, mobile-first, and engineered to convert visitors into clients.",
-            "We don't use templates. Every project starts with your brand, your goals, and your audience. The result is a website that feels uniquely yours — one that builds trust the moment someone lands on it, and keeps them coming back.",
-        ],
-        bullets: [
-            "100% custom design — no templates, ever",
-            "Mobile-first & optimized for Core Web Vitals",
-            "SEO-ready architecture from day one",
-            "Multilingual support (EN / DE / FR / IT)",
-        ],
-        image: "/assets/services/websites.webp",
-        href: "/services/web-design",
-        icon: Monitor,
-        gradient: "from-cyan-400 to-cyan-600",
-        glow: "rgba(34,211,238,0.15)",
-    },
-    {
-        number: "02",
-        badge: "Social Media & Ads",
-        title: "Digital Marketing",
-        description: [
-            "Being online isn't enough — you need to be visible where your clients are. We build and execute data-driven digital marketing strategies that grow your audience, amplify your brand, and drive qualified leads directly to your business.",
-            "From targeted Meta and Instagram ad campaigns to organic content strategy and community management, every action we take is measured, refined, and aligned with your growth objectives. No vanity metrics — only results that matter.",
-        ],
-        bullets: [
-            "Meta, Instagram & Google ad campaigns",
-            "Content strategy, creation & scheduling",
-            "Analytics, reporting & continuous optimization",
-            "Community management & brand voice",
-        ],
-        image: "/assets/services/marketing.webp",
-        href: "/services/social-media-marketing",
-        icon: Layout,
-        gradient: "from-purple-400 to-pink-500",
-        glow: "rgba(168,85,247,0.15)",
-    },
-    {
-        number: "03",
-        badge: "Search Engine Optimization",
-        title: "SEO Development",
-        description: [
-            "Ranking on Google in Switzerland takes more than keywords — it takes a technically sound foundation that search engines understand and trust. We combine deep technical SEO expertise with content strategy to build sustainable, long-term organic visibility.",
-            "From site architecture and Core Web Vitals to structured data markup and multilingual hreflang implementation, we cover every signal that determines where your business appears in search results. The goal isn't traffic — it's the right traffic.",
-        ],
-        bullets: [
-            "Technical SEO audits & Core Web Vitals",
-            "Multilingual SEO (EN / DE / FR)",
-            "Schema.org structured data implementation",
-            "On-page optimization & keyword strategy",
-        ],
-        image: "/assets/services/seo.webp",
-        href: "/services/seo-development",
-        icon: Search,
-        gradient: "from-emerald-400 to-cyan-500",
-        glow: "rgba(52,211,153,0.15)",
-    },
-    {
-        number: "04",
-        badge: "Workflow Automation",
-        title: "Business Automation",
-        description: [
-            "Your team's time is too valuable to spend on manual, repetitive tasks. We analyse your operations, identify the bottlenecks, and replace them with intelligent automations that run 24/7 — accurately, reliably, and without supervision.",
-            "From CRM workflows and automated follow-up sequences to invoice processing and multi-system integrations, we build custom pipelines using leading automation platforms. The result: your business runs smoother, your team focuses on what matters, and nothing falls through the cracks.",
-        ],
-        bullets: [
-            "CRM & email workflow automation",
-            "AI-powered lead routing & follow-ups",
-            "Invoice, document & data processing",
-            "Custom n8n, Zapier & Make pipelines",
-        ],
-        image: "/assets/services/ai.webp",
-        href: "/services/business-automation",
-        icon: Cpu,
-        gradient: "from-orange-400 to-red-500",
-        glow: "rgba(251,146,60,0.15)",
-    },
-    {
-        number: "05",
-        badge: "Online Retail",
-        title: "E-Commerce",
-        description: [
-            "Selling online in Switzerland means earning trust at every step — from the first product page to the checkout confirmation. We build e-commerce solutions tailored to the Swiss market: fast, secure, and designed to reduce friction and maximise conversions.",
-            "Whether you're launching your first shop or scaling an existing operation, we handle the full stack. Custom design, payment integration (including TWINT), product management, and ongoing support — everything you need to sell with confidence.",
-        ],
-        bullets: [
-            "Custom Shopify & WooCommerce stores",
-            "Swiss payment methods: TWINT, card & invoice",
-            "Multi-language & multi-currency ready",
-            "Product management & inventory automation",
-        ],
-        image: "/assets/services/ecommerce.webp",
-        href: "/services/ecommerce",
-        icon: ShoppingCart,
-        gradient: "from-cyan-400 to-purple-500",
-        glow: "rgba(34,211,238,0.12)",
-    },
-    {
-        number: "06",
-        badge: "Custom Software",
-        title: "Web Apps",
-        description: [
-            "When off-the-shelf software doesn't fit your workflow, we build it from scratch. Booking platforms, client portals, internal dashboards, SaaS tools — we engineer custom web applications designed precisely around how your business operates.",
-            "Every application we build is cloud-deployed, secure by design, and built to scale as you grow. Whether you need an MVP to validate an idea or a production-grade system to replace a broken internal tool, we deliver software that works reliably from day one.",
-        ],
-        bullets: [
-            "Booking & reservation platforms",
-            "Client portals & internal dashboards",
-            "SaaS MVPs & custom business tools",
-            "API integrations & third-party data pipelines",
-        ],
-        image: "/assets/services/custom_web_apps.webp",
-        href: "/services/web-apps",
-        icon: Database,
-        gradient: "from-blue-400 to-cyan-500",
-        glow: "rgba(96,165,250,0.15)",
-    },
-    {
-        number: "07",
-        badge: "Artificial Intelligence",
-        title: "AI Integration",
-        description: [
-            "AI is no longer a competitive advantage — it's quickly becoming a baseline requirement. We integrate intelligent AI solutions directly into your business: chatbots that handle enquiries around the clock, tools that extract insights from your data, and automations that continuously learn and improve.",
-            "From adding a smart assistant to your website to building fully custom AI workflows and GPT-powered tools, we make AI practical, measurable, and immediately useful — not a science experiment, but a working part of your operation that delivers ROI from day one.",
-        ],
-        bullets: [
-            "AI chatbots & virtual assistants",
-            "Document & image processing with AI",
-            "Custom GPT & Claude integrations",
-            "AI-powered analytics & automated reporting",
-        ],
-        image: "/assets/services/ai.webp",
-        href: "/services/ai-integration",
-        icon: Bot,
-        gradient: "from-violet-400 to-purple-600",
-        glow: "rgba(167,139,250,0.15)",
-    },
+const serviceConfig = [
+    { number: "01", key: "webDev",     image: "/assets/services/websites.webp",        href: "/services/web-design",            icon: Monitor,      gradient: "from-cyan-400 to-cyan-600",       glow: "rgba(34,211,238,0.15)"   },
+    { number: "02", key: "marketing",  image: "/assets/services/marketing.webp",        href: "/services/social-media-marketing", icon: Layout,      gradient: "from-purple-400 to-pink-500",     glow: "rgba(168,85,247,0.15)"   },
+    { number: "03", key: "seo",        image: "/assets/services/seo.webp",              href: "/services/seo-development",        icon: Search,      gradient: "from-emerald-400 to-cyan-500",    glow: "rgba(52,211,153,0.15)"   },
+    { number: "04", key: "automation", image: "/assets/services/ai.webp",               href: "/services/business-automation",    icon: Cpu,         gradient: "from-orange-400 to-red-500",      glow: "rgba(251,146,60,0.15)"   },
+    { number: "05", key: "ecommerce",  image: "/assets/services/ecommerce.webp",        href: "/services/ecommerce",              icon: ShoppingCart, gradient: "from-cyan-400 to-purple-500",    glow: "rgba(34,211,238,0.12)"   },
+    { number: "06", key: "webApps",    image: "/assets/services/custom_web_apps.webp",  href: "/services/web-apps",               icon: Database,    gradient: "from-blue-400 to-cyan-500",       glow: "rgba(96,165,250,0.15)"   },
+    { number: "07", key: "ai",         image: "/assets/services/ai.webp",               href: "/services/ai-integration",         icon: Bot,         gradient: "from-violet-400 to-purple-600",   glow: "rgba(167,139,250,0.15)"  },
 ];
 
-const stats = [
-    { value: "50+", label: "Projects Delivered" },
-    { value: "3", label: "Countries Served" },
-    { value: "5.0★", label: "Average Rating" },
-    { value: "48h", label: "Avg. Response Time" },
+const statsConfig = [
+    { value: "50+", key: "projects" },
+    { value: "3",   key: "countries" },
+    { value: "5.0★", key: "rating" },
+    { value: "48h", key: "response" },
 ];
 
 export default function ServicesHubSections() {
+    const t = useTranslations("ServicesHubPage");
+
+    const services = serviceConfig.map((cfg) => ({
+        ...cfg,
+        badge:       t(`services.${cfg.key}.badge`),
+        title:       t(`services.${cfg.key}.title`),
+        description: [t(`services.${cfg.key}.desc1`), t(`services.${cfg.key}.desc2`)],
+        bullets: [
+            t(`services.${cfg.key}.bullet1`),
+            t(`services.${cfg.key}.bullet2`),
+            t(`services.${cfg.key}.bullet3`),
+            t(`services.${cfg.key}.bullet4`),
+        ],
+    }));
+
+    const stats = statsConfig.map((s) => ({
+        value: s.value,
+        label: t(`stats.${s.key}`),
+    }));
+
     return (
         <div className="relative z-10">
 
@@ -266,7 +154,7 @@ export default function ServicesHubSections() {
                                     href={service.href}
                                     className="group inline-flex items-center gap-2 px-7 py-3.5 rounded-full border border-white/10 bg-white/5 text-white font-semibold hover:border-cyan-400/40 hover:bg-cyan-400/10 hover:shadow-[0_0_20px_rgba(34,211,238,0.15)] transition-all duration-300"
                                 >
-                                    Explore {service.title}
+                                    {t("explore", { title: service.title })}
                                     <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                                 </Link>
                             </div>

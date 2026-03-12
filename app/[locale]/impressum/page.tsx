@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "@/navigation";
 import { ArrowLeft } from "lucide-react";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";

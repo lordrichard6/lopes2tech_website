@@ -15,6 +15,7 @@ export default function Navbar() {
     const [isServicesOpen, setIsServicesOpen] = useState(false);
     const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
     const langRef = useRef<HTMLDivElement>(null);
+    const servicesRef = useRef<HTMLLIElement>(null);
     const pathname = usePathname();
     const router = useRouter();
     const t = useTranslations('Navigation');
@@ -41,6 +42,31 @@ export default function Navbar() {
         }
         return () => document.removeEventListener("mousedown", handleClickOutside);
     }, [isLangOpen]);
+
+    // Close services dropdown on outside click
+    useEffect(() => {
+        const handleClickOutside = (e: MouseEvent) => {
+            if (servicesRef.current && !servicesRef.current.contains(e.target as Node)) {
+                setIsServicesOpen(false);
+            }
+        };
+        if (isServicesOpen) {
+            document.addEventListener("mousedown", handleClickOutside);
+        }
+        return () => document.removeEventListener("mousedown", handleClickOutside);
+    }, [isServicesOpen]);
+
+    // Close dropdowns on Escape
+    useEffect(() => {
+        const handleEsc = (e: KeyboardEvent) => {
+            if (e.key === "Escape") {
+                setIsServicesOpen(false);
+                setIsLangOpen(false);
+            }
+        };
+        document.addEventListener("keydown", handleEsc);
+        return () => document.removeEventListener("keydown", handleEsc);
+    }, []);
 
     const navLinks = [
         { key: "home", href: "/" },
@@ -109,19 +135,28 @@ export default function Navbar() {
                                 <li
                                     key={link.key}
                                     className="relative"
+                                    ref={servicesRef}
                                     onMouseEnter={() => setIsServicesOpen(true)}
                                     onMouseLeave={() => setIsServicesOpen(false)}
                                 >
-                                    <Link
-                                        href="/services"
+                                    <button
+                                        onClick={() => setIsServicesOpen(!isServicesOpen)}
+                                        onKeyDown={(e) => {
+                                            if (e.key === "Enter" || e.key === " ") {
+                                                e.preventDefault();
+                                                setIsServicesOpen(!isServicesOpen);
+                                            }
+                                        }}
+                                        aria-haspopup="true"
+                                        aria-expanded={isServicesOpen}
                                         className={clsx(
-                                            "relative text-[0.95rem] font-medium transition-all duration-300 nav-link-shadow inline-flex items-center gap-1",
+                                            "relative text-[0.95rem] font-medium transition-all duration-300 nav-link-shadow inline-flex items-center gap-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 rounded",
                                             pathname.startsWith("/services") ? "text-white" : "text-white/70 hover:text-white"
                                         )}
                                     >
                                         {t("services")}
                                         <ChevronDown className={clsx("w-3 h-3 transition-transform", isServicesOpen && "rotate-180")} />
-                                    </Link>
+                                    </button>
                                     <AnimatePresence>
                                         {isServicesOpen && (
                                             <motion.div
@@ -129,13 +164,15 @@ export default function Navbar() {
                                                 animate={{ opacity: 1, y: 0 }}
                                                 exit={{ opacity: 0, y: 8 }}
                                                 transition={{ duration: 0.2 }}
+                                                role="menu"
                                                 className="absolute top-full left-1/2 -translate-x-1/2 mt-3 bg-black/95 backdrop-blur-xl border border-white/10 rounded-xl p-2 min-w-[220px] shadow-2xl"
                                             >
                                                 {serviceLinks.map((service) => (
                                                     <Link
                                                         key={service.href}
                                                         href={service.href}
-                                                        className="block px-4 py-2.5 text-sm text-white/70 hover:text-white hover:bg-white/10 rounded-lg transition-all"
+                                                        role="menuitem"
+                                                        className="block px-4 py-2.5 text-sm text-white/70 hover:text-white hover:bg-white/10 rounded-lg transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400"
                                                         onClick={() => setIsServicesOpen(false)}
                                                     >
                                                         {t(`serviceDropdown.${service.key}`)}
@@ -144,7 +181,8 @@ export default function Navbar() {
                                                 <div className="border-t border-white/10 mt-1 pt-1">
                                                     <Link
                                                         href="/services"
-                                                        className="block px-4 py-2.5 text-sm text-cyan-400 hover:text-cyan-300 hover:bg-white/10 rounded-lg transition-all font-medium"
+                                                        role="menuitem"
+                                                        className="block px-4 py-2.5 text-sm text-cyan-400 hover:text-cyan-300 hover:bg-white/10 rounded-lg transition-all font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400"
                                                         onClick={() => setIsServicesOpen(false)}
                                                     >
                                                         {t('allServices')} →
@@ -159,7 +197,7 @@ export default function Navbar() {
                                     <Link
                                         href={link.href}
                                         className={clsx(
-                                            "relative text-[0.95rem] font-medium transition-all duration-300 nav-link-shadow",
+                                            "relative text-[0.95rem] font-medium transition-all duration-300 nav-link-shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 rounded",
                                             pathname === link.href ? "text-white" : "text-white/70 hover:text-white"
                                         )}
                                     >
@@ -176,7 +214,10 @@ export default function Navbar() {
                         <div className="relative" ref={langRef}>
                             <button
                                 onClick={() => setIsLangOpen(!isLangOpen)}
-                                className="flex items-center gap-1 text-white/70 text-sm cursor-pointer hover:text-white uppercase"
+                                aria-label={`Change language, current: ${locale.toUpperCase()}`}
+                                aria-haspopup="listbox"
+                                aria-expanded={isLangOpen}
+                                className="flex items-center gap-1 text-white/70 text-sm cursor-pointer hover:text-white uppercase focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 rounded"
                             >
                                 {locale}
                                 <ChevronDown className="w-3 h-3" />
@@ -184,22 +225,25 @@ export default function Navbar() {
 
                             <AnimatePresence>
                                 {isLangOpen && (
-                                    <motion.div
+                                    <motion.ul
                                         initial={{ opacity: 0, y: 10 }}
                                         animate={{ opacity: 1, y: 0 }}
                                         exit={{ opacity: 0, y: 10 }}
+                                        role="listbox"
+                                        aria-label="Select language"
                                         className="absolute top-full right-0 mt-2 bg-black/90 border border-white/10 rounded-lg overflow-hidden min-w-[80px]"
                                     >
                                         {['en', 'pt', 'de'].map((l) => (
-                                            <button
-                                                key={l}
-                                                onClick={() => changeLanguage(l)}
-                                                className={`block w-full text-left px-4 py-2 text-sm uppercase hover:bg-white/10 ${locale === l ? 'text-cyan-400 font-bold' : 'text-white/70'}`}
-                                            >
-                                                {l}
-                                            </button>
+                                            <li key={l} role="option" aria-selected={locale === l}>
+                                                <button
+                                                    onClick={() => changeLanguage(l)}
+                                                    className={`block w-full text-left px-4 py-2 text-sm uppercase hover:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 ${locale === l ? 'text-cyan-400 font-bold' : 'text-white/70'}`}
+                                                >
+                                                    {l}
+                                                </button>
+                                            </li>
                                         ))}
-                                    </motion.div>
+                                    </motion.ul>
                                 )}
                             </AnimatePresence>
                         </div>
@@ -209,7 +253,7 @@ export default function Navbar() {
                     <button
                         onClick={() => setIsMenuOpen(!isMenuOpen)}
                         className={clsx(
-                            "md:hidden flex justify-center items-center w-10 h-10 rounded-lg border border-white/10 bg-white/5 transition-all hover:bg-white/10 hover:border-white/30",
+                            "md:hidden flex justify-center items-center w-10 h-10 rounded-lg border border-white/10 bg-white/5 transition-all hover:bg-white/10 hover:border-white/30 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400",
                             isMenuOpen && "bg-white/15 border-white/40"
                         )}
                         aria-label="Toggle menu"
@@ -230,9 +274,9 @@ export default function Navbar() {
                         transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
                         className="fixed inset-0 z-40 bg-gradient-to-br from-[#08080c]/98 to-[#14141e]/99 backdrop-blur-xl flex flex-col justify-center items-center gap-6"
                     >
-                        {/* Background glows */}
-                        <div className="absolute top-[-10%] right-[-10%] w-[300px] h-[300px] rounded-full bg-cyan-500/15 blur-[60px] pointer-events-none" />
-                        <div className="absolute bottom-0 left-[-10%] w-[400px] h-[400px] rounded-full bg-purple-500/10 blur-[60px] pointer-events-none" />
+                        {/* Background glows — decorative */}
+                        <div aria-hidden="true" className="absolute top-[-10%] right-[-10%] w-[300px] h-[300px] rounded-full bg-cyan-500/15 blur-[60px] pointer-events-none" />
+                        <div aria-hidden="true" className="absolute bottom-0 left-[-10%] w-[400px] h-[400px] rounded-full bg-purple-500/10 blur-[60px] pointer-events-none" />
 
                         <nav className="flex flex-col items-center gap-8 w-full">
                             {navLinks.map((link, i) => (
@@ -247,7 +291,8 @@ export default function Navbar() {
                                         <div className="w-full text-center">
                                             <button
                                                 onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
-                                                className="text-xl uppercase tracking-widest font-medium text-white/70 hover:text-white transition-colors inline-flex items-center gap-2"
+                                                aria-expanded={isMobileServicesOpen}
+                                                className="text-xl uppercase tracking-widest font-medium text-white/70 hover:text-white transition-colors inline-flex items-center gap-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 rounded"
                                             >
                                                 {t(link.key)}
                                                 <ChevronDown className={clsx("w-4 h-4 transition-transform", isMobileServicesOpen && "rotate-180")} />
@@ -266,7 +311,7 @@ export default function Navbar() {
                                                                     key={service.href}
                                                                     href={service.href}
                                                                     onClick={() => { setIsMenuOpen(false); setIsMobileServicesOpen(false); }}
-                                                                    className="text-sm text-white/50 hover:text-cyan-400 transition-colors"
+                                                                    className="text-sm text-white/50 hover:text-cyan-400 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 rounded"
                                                                 >
                                                                     {t(`serviceDropdown.${service.key}`)}
                                                                 </Link>
@@ -274,7 +319,7 @@ export default function Navbar() {
                                                             <Link
                                                                 href="/services"
                                                                 onClick={() => { setIsMenuOpen(false); setIsMobileServicesOpen(false); }}
-                                                                className="text-sm text-cyan-400 font-medium mt-1"
+                                                                className="text-sm text-cyan-400 font-medium mt-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 rounded"
                                                             >
                                                                 {t('allServices')} →
                                                             </Link>
@@ -287,7 +332,7 @@ export default function Navbar() {
                                         <Link
                                             href={link.href}
                                             onClick={() => setIsMenuOpen(false)}
-                                            className="text-xl uppercase tracking-widest font-medium text-white/70 hover:text-white transition-colors"
+                                            className="text-xl uppercase tracking-widest font-medium text-white/70 hover:text-white transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 rounded"
                                         >
                                             {t(link.key)}
                                         </Link>
@@ -296,12 +341,14 @@ export default function Navbar() {
                             ))}
 
                             {/* Mobile Language Switcher */}
-                            <div className="flex gap-4 mt-4">
+                            <div className="flex gap-4 mt-4" role="group" aria-label="Select language">
                                 {['en', 'pt', 'de'].map((l) => (
                                     <button
                                         key={l}
                                         onClick={() => { changeLanguage(l); setIsMenuOpen(false); }}
-                                        className={`px-4 py-2 rounded-full border ${locale === l ? 'border-cyan-500 text-cyan-400 bg-cyan-500/10' : 'border-white/10 text-white/60'}`}
+                                        aria-label={`Switch to ${l.toUpperCase()}`}
+                                        aria-pressed={locale === l}
+                                        className={`px-4 py-2 rounded-full border focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 ${locale === l ? 'border-cyan-500 text-cyan-400 bg-cyan-500/10' : 'border-white/10 text-white/60'}`}
                                     >
                                         {l.toUpperCase()}
                                     </button>

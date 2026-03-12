@@ -1,0 +1,27 @@
+{
+  "framework": "nextjs",
+  "regions": ["zrh1"],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/home",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/services/social-media",
+      "destination": "/services/social-media-marketing",
+      "permanent": true
+    }
+  ]
+}

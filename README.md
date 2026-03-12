@@ -67,7 +67,7 @@
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js 18+ and npm
+- Node.js 20+ and npm
 - Vercel account (for deployment)
 
 ### Installation
@@ -90,15 +90,18 @@ cp .env.example .env.local
 Create a `.env.local` file with the following variables:
 
 ```bash
-# Platform V2 API Configuration
-NEXT_PUBLIC_PLATFORM_URL=http://localhost:3000
-NEXT_PUBLIC_PLATFORM_API_SECRET=your_api_secret_here
-
-# Platform API for contact form integration
-NEXT_PUBLIC_PLATFORM_API_URL=https://lopes2tech.ch/api
+# Email (required — contact/service request forms)
+RESEND_API_KEY=re_xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+RESEND_FROM_EMAIL=noreply@lopes2tech.ch
+CONTACT_EMAIL=paulo@lopes2tech.ch
 
 # Microsoft Clarity Project ID
 NEXT_PUBLIC_CLARITY_PROJECT_ID=your_clarity_project_id
+
+# Platform API (optional)
+NEXT_PUBLIC_PLATFORM_URL=http://localhost:3000
+NEXT_PUBLIC_PLATFORM_API_URL=https://lopes2tech.ch/api
+NEXT_PUBLIC_PLATFORM_API_SECRET=your_api_secret_here
 ```
 
 ### Development
@@ -169,8 +172,14 @@ vercel --prod
 ### Environment Variables on Vercel
 
 Set these in your Vercel project settings or via CLI:
-- `NEXT_PUBLIC_PLATFORM_API_URL`
-- `NEXT_PUBLIC_CLARITY_PROJECT_ID`
+- `RESEND_API_KEY` **(required)** — get from [resend.com](https://resend.com)
+- `RESEND_FROM_EMAIL` — verified sender address in Resend
+- `CONTACT_EMAIL` — where form submissions are delivered
+- `NEXT_PUBLIC_CLARITY_PROJECT_ID` — from Microsoft Clarity dashboard
+- `NEXT_PUBLIC_PLATFORM_API_URL` — optional platform API
+- `NEXT_PUBLIC_PLATFORM_API_SECRET` — optional API secret
+
+> ⚠️ Use `printf "value" | vercel env add VAR_NAME production` — never `echo` (adds trailing newline).
 
 ---
 
