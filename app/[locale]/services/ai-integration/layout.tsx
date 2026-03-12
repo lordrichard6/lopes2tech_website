@@ -7,16 +7,20 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const path = "/services/ai-integration";
   const canonical = `${BASE_URL}/${locale}${path}`;
   return {
-    title: "AI Integration & Chatbots for Swiss Businesses | Lopes2Tech",
-    description: "Custom AI agents, chatbots, RAG knowledge bases, and GPT/Claude API integration. AI solutions from CHF 1,200 to CHF 3,500+.",
+    title: "AI Integration | Lopes2Tech - AI-Powered Solutions for Swiss Businesses",
+    description: "Custom AI integration and chatbot development for Swiss companies. Automate customer service, lead generation, and internal workflows with LLM-powered tools. Based in Zurich.",
     alternates: {
       canonical,
       languages: { "x-default": `${BASE_URL}/en${path}`, en: `${BASE_URL}/en${path}`, de: `${BASE_URL}/de${path}`, pt: `${BASE_URL}/pt${path}` },
     },
-    openGraph: { title: "AI Integration & Chatbots | Lopes2Tech", description: "Custom AI agents, chatbots, and RAG knowledge bases from CHF 1,200.", url: canonical },
+    openGraph: {
+      title: "AI Integration | Lopes2Tech",
+      description: "Custom AI solutions and chatbots for Swiss businesses — automate workflows and deliver smarter customer experiences.",
+      url: canonical,
+    },
   };
 }
 
-export default function AIIntegrationLayout({ children }: { children: React.ReactNode }) {
+export default function AiIntegrationLayout({ children }: { children: React.ReactNode }) {
   return <>{children}</>;
 }

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google"; // Using Inter to match Angular project
 import "../globals.css";
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages, setRequestLocale } from 'next-intl/server';
+import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { Analytics } from '@vercel/analytics/react';
 import JsonLd from '@/components/JsonLd';
@@ -26,7 +26,7 @@ export const viewport = {
 
 export const metadata: Metadata = {
   title: "Lopes2Tech - AI & Automations: Tech-Accelerated Growth for Modern Business.",
-  description: "We help small and medium companies get more leads, automate admin, and scale without complexity.",
+  description: "Lopes2Tech helps Swiss SMEs and startups get more leads, automate admin tasks, and scale with custom websites, AI workflows, and business automation — based in Zurich.",
   manifest: '/manifest.json',
   appleWebApp: {
     capable: true,
@@ -70,11 +70,6 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-  icons: {
-    icon: "/logo_w.svg",
-    shortcut: "/logo_w.svg",
-    apple: "/logo_w.svg",
-  },
   other: {
     'geo.region': 'CH-ZH',
     'geo.placename': 'Zurich',
@@ -105,6 +100,7 @@ export default async function RootLayout({
   setRequestLocale(locale);
 
   const messages = await getMessages();
+  const t = await getTranslations({ locale, namespace: 'Layout' });
 
   return (
     <html lang={locale}>
@@ -120,7 +116,7 @@ export default async function RootLayout({
           href="#main-content"
           className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-cyan-500 focus:text-white focus:rounded-lg focus:font-semibold focus:outline-none"
         >
-          Skip to main content
+          {t('skipToContent')}
         </a>
         <NextIntlClientProvider messages={messages}>
           <div id="main-content">{children}</div>

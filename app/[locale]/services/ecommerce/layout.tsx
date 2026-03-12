@@ -7,13 +7,17 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const path = "/services/ecommerce";
   const canonical = `${BASE_URL}/${locale}${path}`;
   return {
-    title: "E-Commerce Solutions for Swiss Businesses | Online Shops | Lopes2Tech",
-    description: "Custom e-commerce development with Shopify, WooCommerce, and headless commerce. Swiss payment integration. Online stores from CHF 1,500.",
+    title: "E-Commerce Development | Lopes2Tech - Online Stores Built to Sell",
+    description: "Custom e-commerce website development for Swiss businesses. Fast, secure, conversion-optimised online stores with Stripe, inventory management, and multilingual support. Based in Zurich.",
     alternates: {
       canonical,
       languages: { "x-default": `${BASE_URL}/en${path}`, en: `${BASE_URL}/en${path}`, de: `${BASE_URL}/de${path}`, pt: `${BASE_URL}/pt${path}` },
     },
-    openGraph: { title: "E-Commerce Solutions for Swiss Businesses | Lopes2Tech", description: "Custom online stores with Swiss payment integration from CHF 1,500.", url: canonical },
+    openGraph: {
+      title: "E-Commerce Development | Lopes2Tech",
+      description: "High-converting online stores for Swiss businesses — fast, secure, and built to grow.",
+      url: canonical,
+    },
   };
 }
 

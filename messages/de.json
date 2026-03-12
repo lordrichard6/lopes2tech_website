@@ -6,7 +6,6 @@
     "contact": "Kontakt",
     "insights": "Einblicke",
     "about": "Über uns",
-    "clientPortal": "Kundenportal",
     "allServices": "Alle Dienstleistungen",
     "serviceDropdown": {
       "webDesign": "Webdesign",
@@ -115,7 +114,7 @@
       "6months": "6 Monate",
       "12months": "12 Monate",
       "monthly": "/Monat",
-      "total": "Gesamt",
+    "total": "Gesamt",
       "disclaimer": "* Endpreis kann je nach Projektumfang variieren",
       "requestQuote": "Angebot anfordern"
     },
@@ -411,15 +410,51 @@
     "subtitle": "Eine Auswahl an hochwirksamen Websites und Anwendungen, entwickelt für Leistung und Skalierung.",
     "button": "Ganzes Portfolio ansehen",
     "projects": {
-      "mimesa": { "title": "MiMesa", "description": "Gastronomie-Management-Plattform.", "category": "Web-App" },
-      "menteiq": { "title": "menteIQ", "description": "Moderne CRM-Plattform.", "category": "Web-App" },
-      "theraflow": { "title": "TheraFlow", "description": "Praxisverwaltungssoftware.", "category": "SaaS" },
-      "finito": { "title": "Finito", "description": "Finanzverwaltung.", "category": "Web-App" },
-      "noff": { "title": "Noff", "description": "HR-Tech-Lösung.", "category": "Web-App" },
-      "ribeiro": { "title": "Ribeiro Consulting", "description": "Professionelle Beratung.", "category": "Website" },
-      "costeleta": { "title": "Costeleta Dourada", "description": "Restaurant-Reservierung.", "category": "Website" },
-      "forma": { "title": "Forma Architects", "description": "Minimalistisches Portfolio.", "category": "Website" },
-      "alentseguros": { "title": "AlentSeguros", "description": "Versicherungsportal.", "category": "Website" }
+      "mimesa": {
+        "title": "MiMesa",
+        "description": "Gastronomie-Management-Plattform.",
+        "category": "Web-App"
+      },
+      "menteiq": {
+        "title": "menteIQ",
+        "description": "Moderne CRM-Plattform.",
+        "category": "Web-App"
+      },
+      "theraflow": {
+        "title": "TheraFlow",
+        "description": "Praxisverwaltungssoftware.",
+        "category": "SaaS"
+      },
+      "finito": {
+        "title": "Finito",
+        "description": "Finanzverwaltung.",
+        "category": "Web-App"
+      },
+      "noff": {
+        "title": "Noff",
+        "description": "HR-Tech-Lösung.",
+        "category": "Web-App"
+      },
+      "ribeiro": {
+        "title": "Ribeiro Consulting",
+        "description": "Professionelle Beratung.",
+        "category": "Website"
+      },
+      "costeleta": {
+        "title": "Costeleta Dourada",
+        "description": "Restaurant-Reservierung.",
+        "category": "Website"
+      },
+      "forma": {
+        "title": "Forma Architects",
+        "description": "Minimalistisches Portfolio.",
+        "category": "Website"
+      },
+      "alentseguros": {
+        "title": "AlentSeguros",
+        "description": "Versicherungsportal.",
+        "category": "Website"
+      }
     }
   },
   "Process": {
@@ -1002,7 +1037,8 @@
       "sending": "Senden...",
       "successTitle": "Anfrage gesendet!",
       "successMessage": "Wir haben Ihre Anfrage erhalten und werden uns in Kürze bei Ihnen melden.",
-      "error": "Etwas ist schief gelaufen. Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt."
+      "error": "Etwas ist schief gelaufen. Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt.",
+      "close": "Schließen"
     }
   },
   "FeaturedProjects": {
@@ -1088,7 +1124,9 @@
     "postNotFound": "Beitrag nicht gefunden",
     "backToInsightsNotFound": "Zurück zu Einblicke",
     "authorBio": "Gründer von Lopes2Tech, spezialisiert auf KI-gesteuerte Entwicklungs-Workflows und leistungsstarke Webanwendungen für Schweizer Unternehmen.",
-    "shareArticle": "Diesen Artikel teilen"
+    "shareArticle": "Diesen Artikel teilen",
+    "share": "Teilen:",
+    "tableOfContents": "Inhaltsverzeichnis"
   },
   "CookieConsent": {
     "title": "Wir schätzen Ihre Privatsphäre",
@@ -1221,5 +1259,592 @@
         "category": "Wellness & Luxus"
       }
     }
+  },
+  "Common": {
+    "mostPopular": "Beliebtestes",
+    "getStarted": "Jetzt starten",
+    "billedMonthly": "Monatliche Abrechnung",
+    "oneTimePayment": "Einmalige Zahlung",
+    "customPricing": "Individuelle Preisgestaltung"
+  },
+  "LoadingPage": {
+    "loading": "Lädt…"
+  },
+  "ErrorPage": {
+    "title": "Etwas ist schiefgelaufen",
+    "description": "Ein unerwarteter Fehler ist aufgetreten. Bitte versuchen Sie es erneut oder kehren Sie zur Startseite zurück.",
+    "tryAgain": "Erneut versuchen",
+    "goHome": "Zur Startseite"
+  },
+  "ServicesHubPage": {
+    "stats": {
+      "projects": "Abgeschlossene Projekte",
+      "countries": "Länder betreut",
+      "rating": "Durchschnittliche Bewertung",
+      "response": "Durchschn. Reaktionszeit"
+    },
+    "services": {
+      "webDev": {
+        "badge": "Web-Entwicklung",
+        "title": "Professionelle Websites",
+        "desc1": "Ihre Website ist Ihr stärkstes Geschäftsmittel — und der erste Eindruck ist permanent. Wir gestalten und entwickeln massgefertigte, leistungsstarke Websites von Grund auf für Schweizer Unternehmen: schnell, mobile-first und darauf ausgelegt, Besucher in Kunden zu verwandeln.",
+        "desc2": "Wir verwenden keine Vorlagen. Jedes Projekt beginnt mit Ihrer Marke, Ihren Zielen und Ihrer Zielgruppe. Das Ergebnis ist eine Website, die einzigartig für Sie ist — die Vertrauen schafft, sobald jemand sie besucht, und die Kunden immer wieder zurückbringt.",
+        "bullet1": "100% individuelles Design — keine Vorlagen, nie",
+        "bullet2": "Mobile-first & optimiert für Core Web Vitals",
+        "bullet3": "SEO-fähige Architektur von Anfang an",
+        "bullet4": "Mehrsprachige Unterstützung (EN / DE / FR / IT)"
+      },
+      "marketing": {
+        "badge": "Social Media & Werbung",
+        "title": "Digitales Marketing",
+        "desc1": "Online zu sein reicht nicht — Sie müssen dort sichtbar sein, wo Ihre Kunden sind. Wir entwickeln und führen datengetriebene digitale Marketingstrategien durch, die Ihre Zielgruppe wachsen lassen, Ihre Marke stärken und qualifizierte Leads direkt zu Ihrem Unternehmen bringen.",
+        "desc2": "Von gezielten Meta- und Instagram-Werbekampagnen bis hin zu organischer Inhaltsstrategie und Community-Management — jede unserer Maßnahmen wird gemessen, verfeinert und auf Ihre Wachstumsziele ausgerichtet. Keine Eitelkeitskennzahlen — nur Ergebnisse, die zählen.",
+        "bullet1": "Meta-, Instagram- & Google-Werbekampagnen",
+        "bullet2": "Inhaltsstrategie, -erstellung & Planung",
+        "bullet3": "Analysen, Berichte & kontinuierliche Optimierung",
+        "bullet4": "Community-Management & Markenstimme"
+      },
+      "seo": {
+        "badge": "Suchmaschinenoptimierung",
+        "title": "SEO-Entwicklung",
+        "desc1": "Bei Google in der Schweiz zu ranken erfordert mehr als Keywords — es braucht ein technisch solides Fundament, das Suchmaschinen verstehen und dem sie vertrauen. Wir verbinden tiefes technisches SEO-Know-how mit Inhaltsstrategie, um nachhaltige, langfristige organische Sichtbarkeit aufzubauen.",
+        "desc2": "Von der Website-Architektur und Core Web Vitals bis zu strukturierten Datenmarkierungen und mehrsprachiger hreflang-Implementierung — wir decken jedes Signal ab, das bestimmt, wo Ihr Unternehmen in den Suchergebnissen erscheint. Das Ziel ist nicht Traffic — sondern der richtige Traffic.",
+        "bullet1": "Technische SEO-Audits & Core Web Vitals",
+        "bullet2": "Mehrsprachiges SEO (EN / DE / FR)",
+        "bullet3": "Schema.org Structured Data Implementierung",
+        "bullet4": "On-Page-Optimierung & Keyword-Strategie"
+      },
+      "automation": {
+        "badge": "Workflow-Automatisierung",
+        "title": "Business-Automatisierung",
+        "desc1": "Die Zeit Ihres Teams ist zu wertvoll, um sie mit manuellen, repetitiven Aufgaben zu verbringen. Wir analysieren Ihre Abläufe, identifizieren die Engpässe und ersetzen sie durch intelligente Automatisierungen, die rund um die Uhr laufen — präzise, zuverlässig und ohne Aufsicht.",
+        "desc2": "Von CRM-Workflows und automatisierten Follow-up-Sequenzen bis hin zu Rechnungsbearbeitung und Multi-System-Integrationen — wir entwickeln individuelle Pipelines mit führenden Automatisierungsplattformen. Das Ergebnis: Ihr Unternehmen läuft reibungsloser, Ihr Team konzentriert sich auf das Wesentliche, und nichts geht mehr verloren.",
+        "bullet1": "CRM & E-Mail-Workflow-Automatisierung",
+        "bullet2": "KI-gesteuertes Lead-Routing & Follow-ups",
+        "bullet3": "Rechnungs-, Dokumenten- & Datenverarbeitung",
+        "bullet4": "Individuelle n8n-, Zapier- & Make-Pipelines"
+      },
+      "ecommerce": {
+        "badge": "Online-Handel",
+        "title": "E-Commerce",
+        "desc1": "Online zu verkaufen in der Schweiz bedeutet, bei jedem Schritt Vertrauen zu gewinnen — von der ersten Produktseite bis zur Kaufbestätigung. Wir entwickeln E-Commerce-Lösungen, die auf den Schweizer Markt zugeschnitten sind: schnell, sicher und darauf ausgelegt, Hürden zu reduzieren und Conversions zu maximieren.",
+        "desc2": "Ob Sie Ihren ersten Shop starten oder eine bestehende Operation skalieren — wir übernehmen den gesamten Stack. Individuelles Design, Zahlungsintegration (inkl. TWINT), Produktverwaltung und kontinuierliche Unterstützung — alles, was Sie brauchen, um mit Zuversicht zu verkaufen.",
+        "bullet1": "Individuelle Shopify & WooCommerce-Shops",
+        "bullet2": "Schweizer Zahlungsmethoden: TWINT, Karte & Rechnung",
+        "bullet3": "Mehrsprachig & multi-währungsfähig",
+        "bullet4": "Produktverwaltung & Bestandsautomatisierung"
+      },
+      "webApps": {
+        "badge": "Custom Software",
+        "title": "Web-Apps",
+        "desc1": "Wenn Standardsoftware nicht zu Ihrem Workflow passt, entwickeln wir sie von Grund auf. Buchungsplattformen, Kundenportale, interne Dashboards, SaaS-Tools — wir entwickeln massgefertigte Web-Applikationen, die genau auf Ihre Geschäftsläufe zugeschnitten sind.",
+        "desc2": "Jede Applikation, die wir entwickeln, wird cloud-basiert bereitgestellt, ist von Grund auf sicher und wächst mit Ihnen. Ob Sie ein MVP zur Ideenvalidierung oder ein produktionsreifes System zur Ablösung eines veralteten internen Tools benötigen — wir liefern Software, die vom ersten Tag an zuverlässig funktioniert.",
+        "bullet1": "Buchungs- & Reservierungsplattformen",
+        "bullet2": "Kundenportale & interne Dashboards",
+        "bullet3": "SaaS-MVPs & individuelle Geschäftstools",
+        "bullet4": "API-Integrationen & Drittanbieter-Datenpipelines"
+      },
+      "ai": {
+        "badge": "Künstliche Intelligenz",
+        "title": "KI-Integration",
+        "desc1": "KI ist kein Wettbewerbsvorteil mehr — sie wird schnell zur Grundvoraussetzung. Wir integrieren intelligente KI-Lösungen direkt in Ihr Unternehmen: Chatbots, die rund um die Uhr Anfragen bearbeiten, Tools, die Erkenntnisse aus Ihren Daten gewinnen, und Automatisierungen, die kontinuierlich lernen und sich verbessern.",
+        "desc2": "Von der Implementierung eines smarten Assistenten auf Ihrer Website bis hin zur Entwicklung vollständig individueller KI-Workflows und GPT-gestützter Tools — wir machen KI praktisch, messbar und sofort nützlich — kein Forschungsexperiment, sondern ein funktionierender Teil Ihrer Abläufe, der vom ersten Tag an ROI liefert.",
+        "bullet1": "KI-Chatbots & virtuelle Assistenten",
+        "bullet2": "Dokument- & Bildverarbeitung mit KI",
+        "bullet3": "Individuelle GPT & Claude-Integrationen",
+        "bullet4": "KI-gestützte Analysen & automatisierte Berichte"
+      }
+    },
+    "explore": "{title} erkunden"
+  },
+  "WebDesignPage": {
+    "badge": "Professionelles Webdesign",
+    "title": "Webdesign",
+    "titleHighlight": "für Zürcher Unternehmen",
+    "description": "Schnelle, erschwingliche, professionelle Websites mit moderner Technologie. Ab CHF 600 für einen schnellen Online-Start oder individuelle Lösungen ab CHF 975.",
+    "pill1": "Schnelle Lieferung (1-2 Wochen)",
+    "pill2": "Mobil-responsiv",
+    "pill3": "SEO-optimiert",
+    "paymentPlans": {
+      "onetime": "Einmalig",
+      "3months": "3 Monate",
+      "6months": "6 Monate",
+      "12months": "12 Monate"
+    },
+    "packages": {
+      "quickStart": {
+        "name": "Quick Start",
+        "description": "Ultraminimale einseitige Website, um schnell online zu gehen",
+        "f1": "Einfache einseitige Website",
+        "f2": "Mobil-responsiv",
+        "f3": "Kontaktinformationen",
+        "f4": "Schnelle Lieferung in 3-5 Tagen"
+      },
+      "starter": {
+        "name": "Starter",
+        "description": "Professionelle Grundlage für Ihre Online-Präsenz",
+        "f1": "Individuelle Landing-Page",
+        "f2": "Mobil-responsives Design",
+        "f3": "Grundlegendes SEO-Setup",
+        "f4": "Kontaktformular",
+        "f5": "1 Überarbeitungsrunde"
+      },
+      "starterPlus": {
+        "name": "Starter Plus",
+        "description": "Komplettes Launch-Paket inklusive Branding",
+        "f1": "Professionelle 5-seitige Website",
+        "f2": "Vollständige Markenidentität (Logo, Farben, Schriften)",
+        "f3": "Mobil-responsiv & schnell",
+        "f4": "Erweitertes SEO-Setup",
+        "f5": "Bis zu 3 Überarbeitungsrunden"
+      },
+      "businessPro": {
+        "name": "Business Pro",
+        "description": "Für etablierte Unternehmen mit erweiterten Anforderungen",
+        "f1": "Erweitertes CMS (Content-Management-System)",
+        "f2": "Blog- oder Portfolio-Bereich",
+        "f3": "Mehrsprachige Unterstützung",
+        "f4": "Google Analytics Integration",
+        "f5": "Prioritäts-Support"
+      }
+    },
+        "retainerLabel": "Monatliche Wartung — CHF 39/Monat",
+    "retainerDesc": "Halten Sie Ihre Website für nur CHF 39/Monat aktuell, sicher und reibungslos. Beinhaltet kleinere Inhaltsaktualisierungen, Sicherheits-Patches, Uptime-Überwachung und priorisierten E-Mail-Support.",
+    "total": "Gesamt",
+    "months": "Monate",
+    "cta": {
+      "title": "Bereit, Ihre Website zu starten?",
+      "description": "Buchen Sie eine kostenlose Beratung, um Ihr Projekt zu besprechen. Schnelle Lieferung, transparente Preise.",
+      "button": "Ihr Website-Angebot erhalten"
+    }
+  },
+  "SEOPage": {
+    "badge": "Technisches SEO-Engineering",
+    "title": "SEO-Entwicklung",
+    "titleHighlight": "für Schweizer Unternehmen",
+    "description": "Hören Sie auf zu raten. Beginnen Sie, Ihr Google-Ranking zu gestalten. Technische SEO-Audits, Schema-Markup, Core Web Vitals-Optimierung und programmatisches SEO.",
+    "pill1": "Core Web Vitals",
+    "pill2": "Schema-Markup",
+    "pill3": "SSR/SSG",
+    "packages": {
+      "audit": {
+        "name": "SEO-Audit",
+        "description": "Vollständiges technisches Audit, um herauszufinden, was Ihre Rankings zurückhält",
+        "f1": "Vollständiges technisches Audit",
+        "f2": "Core Web Vitals-Bericht",
+        "f3": "Schema-Markup-Analyse",
+        "f4": "Wettbewerbs-Benchmarking",
+        "f5": "Umsetzbare Empfehlungen"
+      },
+      "starter": {
+        "name": "SEO Starter",
+        "description": "Kontinuierliche technische Optimierung zur stetigen Verbesserung Ihrer Rankings",
+        "f1": "Monatliche technische Optimierung",
+        "f2": "On-Page-SEO für bis zu 20 Seiten",
+        "f3": "Google Search Console-Überwachung",
+        "f4": "Monatlicher Leistungsbericht",
+        "f5": "Keyword-Tracking"
+      },
+      "growth": {
+        "name": "SEO Growth",
+        "description": "Umfassende SEO-Strategie mit programmatischem und erweitertem Schema",
+        "f1": "Alles im Starter-Paket",
+        "f2": "Programmatisches SEO-Setup",
+        "f3": "Erweiterte Schema-Implementierung",
+        "f4": "Inhaltsstrategie & Briefings",
+        "f5": "Backlink-Analyse",
+        "f6": "Prioritäts-Support"
+      }
+    },
+    "cta": {
+      "title": "Bereit, höher zu ranken?",
+      "description": "Buchen Sie eine kostenlose Beratung, um Ihre SEO-Strategie zu besprechen und in den Rankings aufzusteigen.",
+      "button": "Ihre SEO-Strategie starten"
+    }
+  },
+  "AutomationPage": {
+    "badge": "Intelligente Automatisierung",
+    "title": "Business-Automatisierung",
+    "titleHighlight": "für Schweizer Unternehmen",
+    "description": "Repetitive Aufgaben eliminieren. Ihre Tools verbinden. Betrieb skalieren ohne mehr Personal. Individuelle Workflows mit KI.",
+    "pill1": "Zapier/Make",
+    "pill2": "Individuelle Skripte",
+    "pill3": "CRM-Integration",
+    "packages": {
+      "starter": {
+        "name": "Automation Starter",
+        "description": "Automatisieren Sie Ihren ersten Workflow und sparen Sie sofort Zeit",
+        "f1": "1 Workflow-Automatisierung",
+        "f2": "Tool-Integration (bis zu 3)",
+        "f3": "Einrichtung & Dokumentation",
+        "f4": "30-Tage-Support",
+        "f5": "Schulungssitzung"
+      },
+      "growth": {
+        "name": "Automation Growth",
+        "description": "Mehrere Workflows automatisieren und den gesamten Tool-Stack verbinden",
+        "f1": "Bis zu 5 Workflow-Automatisierungen",
+        "f2": "Erweiterte Integrationen",
+        "f3": "Fehlerbehandlung & Überwachung",
+        "f4": "60-Tage-Support",
+        "f5": "E-Mail-/Kalenderautomatisierung"
+      },
+      "enterprise": {
+        "name": "Automation Enterprise",
+        "description": "Unbegrenzte individuelle Automatisierung mit KI-gesteuerter Entscheidungslogik",
+        "f1": "Unbegrenzte Workflows",
+        "f2": "Individuelle API-Entwicklung",
+        "f3": "KI-gesteuerte Entscheidungslogik",
+        "f4": "Laufende Wartung",
+        "f5": "Dedizierter Support"
+      }
+    },
+    "cta": {
+      "title": "Bereit zur Automatisierung?",
+      "description": "Buchen Sie eine kostenlose Beratung, um zu identifizieren, welche Prozesse für maximale Wirkung automatisiert werden können.",
+      "button": "Ihr Automatisierungs-Assessment erhalten"
+    }
+  },
+  "AIPage": {
+    "badge": "KI-gestützte Lösungen",
+    "title": "KI-Integration",
+    "titleHighlight": "& Intelligente Chatbots",
+    "description": "Setzen Sie KI-Agenten ein, die Ihr Unternehmen verstehen. RAG-Wissensdatenbanken, individuelle Chatbots und GPT/Claude-API-Integrationen.",
+    "pill1": "RAG/Wissensdatenbank",
+    "pill2": "Function Calling",
+    "pill3": "24/7 Support",
+    "packages": {
+      "chatbot": {
+        "name": "KI-Chatbot",
+        "description": "Einen individuellen KI-Chatbot einsetzen, der auf Ihrem Geschäftswissen trainiert wurde",
+        "f1": "Individueller KI-Chatbot",
+        "f2": "Wissensdatenbank (bis zu 50 Seiten)",
+        "f3": "Website-Widget-Integration",
+        "f4": "Grundlegende Analysen",
+        "f5": "30-tägiger Anpassungszeitraum"
+      },
+      "workflow": {
+        "name": "KI-Workflow",
+        "description": "KI-gestützte Workflows, die E-Mails, Dokumente und Kundeninteraktionen automatisieren",
+        "f1": "Alles im Chatbot-Paket",
+        "f2": "KI-E-Mail-Triage",
+        "f3": "Dokumentenverarbeitung",
+        "f4": "CRM-Integration",
+        "f5": "Erweitertes Analyse-Dashboard"
+      },
+      "custom": {
+        "name": "Individuelle KI",
+        "description": "Enterprise-KI mit Multi-Agenten-Orchestrierung und individuellem Fine-Tuning",
+        "f1": "Alles im Workflow-Paket",
+        "f2": "Individuelles LLM-Fine-Tuning",
+        "f3": "Multi-Agenten-Orchestrierung",
+        "f4": "Voice-to-Action",
+        "f5": "Enterprise-Sicherheit"
+      }
+    },
+    "cta": {
+      "title": "Bereit für KI?",
+      "description": "Buchen Sie eine kostenlose Beratung, um zu erkunden, wie KI Ihre Geschäftsprozesse transformieren kann.",
+      "button": "Ihren KI-Agenten entwickeln"
+    }
+  },
+  "WebAppsPage": {
+    "badge": "Full-Stack-Entwicklung",
+    "title": "Individuelle Web-Apps",
+    "titleHighlight": "Für Skalierbarkeit entwickelt",
+    "description": "Von MVPs bis zu Enterprise-Plattformen. Full-Stack-SaaS-Applikationen, Dashboards, Kundenportale und APIs mit moderner Technologie.",
+    "pill1": "React/Next.js",
+    "pill2": "TypeScript",
+    "pill3": "Cloud-nativ",
+    "packages": {
+      "mvp": {
+        "name": "MVP Launch",
+        "description": "Bringen Sie Ihre Idee schnell auf den Markt mit einem schlanken, funktionalen MVP",
+        "f1": "Kernfunktionen",
+        "f2": "Benutzerauthentifizierung",
+        "f3": "Grundlegendes Dashboard",
+        "f4": "Responsives Design",
+        "f5": "1 Monat Post-Launch-Support"
+      },
+      "standard": {
+        "name": "Standard-Plattform",
+        "description": "Vollständige Plattform mit Zahlungen, i18n und CI/CD-Pipeline",
+        "f1": "Alles im MVP-Paket",
+        "f2": "Zahlungsintegration (Stripe)",
+        "f3": "Mehrsprachigkeit (i18n)",
+        "f4": "Rollenbasierter Zugriff",
+        "f5": "CI/CD-Pipeline",
+        "f6": "3 Monate Support"
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "description": "Enterprise-Plattform mit Multi-Tenant-Architektur und SLA",
+        "f1": "Alles im Standard-Paket",
+        "f2": "Individuelle Integrationen",
+        "f3": "Erweiterte Analysen",
+        "f4": "Multi-Tenant-Architektur",
+        "f5": "SLA-Garantie",
+        "f6": "Laufende Wartung"
+      }
+    },
+    "cta": {
+      "title": "Bereit zu entwickeln?",
+      "description": "Buchen Sie eine kostenlose Beratung, um Ihr Projekt zu skizzieren und eine detaillierte Roadmap zu erhalten.",
+      "button": "Ihr Projekt starten"
+    }
+  },
+  "EcommercePage": {
+    "badge": "E-Commerce-Lösungen",
+    "title": "E-Commerce",
+    "titleHighlight": "für Schweizer Unternehmen",
+    "description": "Starten Sie Ihren Online-Shop. Shopify, WooCommerce oder vollständig individuelle Lösungen mit Schweizer Zahlungsintegration und Multi-Währungs-Unterstützung.",
+    "pill1": "Schweizer Zahlungen",
+    "pill2": "Multi-Währung",
+    "pill3": "Mobile-First",
+    "packages": {
+      "starter": {
+        "name": "Starter-Shop",
+        "description": "Starten Sie Ihren Online-Shop mit allem, was Sie für den Verkauf benötigen",
+        "f1": "Bis zu 50 Produkte",
+        "f2": "Mobil-responsives Design",
+        "f3": "Zahlungs-Gateway-Einrichtung",
+        "f4": "Grundlegendes SEO",
+        "f5": "Produktverwaltungs-Schulung"
+      },
+      "growth": {
+        "name": "Growth-Shop",
+        "description": "Vollständiger Shop mit Schweizer Zahlungen, erweitertem SEO und Marketing-Tools",
+        "f1": "Unbegrenzte Produkte",
+        "f2": "Individuelles Design",
+        "f3": "Erweitertes SEO & Analysen",
+        "f4": "Schweizer Zahlungsmethoden (TWINT, PostFinance)",
+        "f5": "Marketing-Automatisierungs-Setup"
+      },
+      "enterprise": {
+        "name": "Enterprise Commerce",
+        "description": "Enterprise-E-Commerce mit individuellem Checkout, ERP-Integration und B2B-Funktionen",
+        "f1": "Alles im Growth-Paket",
+        "f2": "Individueller Checkout-Prozess",
+        "f3": "ERP-Integration",
+        "f4": "Multi-Währungs-Unterstützung",
+        "f5": "B2B-Großhandelsfunktionen",
+        "f6": "Prioritäts-Support"
+      }
+    },
+    "cta": {
+      "title": "Bereit, online zu verkaufen?",
+      "description": "Buchen Sie eine kostenlose Beratung, um Ihren Online-Shop zu planen und mit dem Verkauf zu beginnen.",
+      "button": "Ihren Shop starten"
+    }
+  },
+  "DigitalMarketingPage": {
+    "badge": "KI-gestütztes digitales Marketing",
+    "title": "Digitales Marketing",
+    "titleHighlight": "für Zürcher Unternehmen",
+    "description": "Von Social-Media-Inhalten über Meta-Werbekampagnen bis zu Google Ads — wir übernehmen Ihre gesamte digitale Marketingpräsenz. KI-gestützt, menschlich verfeinert und darauf ausgelegt, Ihre Marke wachsen zu lassen.",
+    "whyUs": {
+      "title1": "KI-gestützte Geschwindigkeit",
+      "desc1": "Wir erstellen Inhalte mit KI 10x schneller als traditionelle Agenturen und geben die Kosteneinsparungen an Sie weiter (60-70% günstiger).",
+      "title2": "Kontinuierliches Wachstum",
+      "desc2": "Verpassen Sie keinen Beitrag mehr. Ihre Marke bleibt aktiv, auch wenn Sie beschäftigt sind. 8-16 Beiträge pro Monat, jeden Monat.",
+      "title3": "Keine Fotoshootings",
+      "desc3": "Sie liefern Fotos von Ihrem Handy. Wir verbessern sie mit professionellen KI-Tools. Einfach, erschwinglich, beeindruckende Ergebnisse."
+    },
+    "contentSection": {
+      "badge": "Content-Management",
+      "title": "Social Media",
+      "titleHighlight": "Content-Pläne",
+      "description": "KI-unterstützte Inhaltserstellung, Planung und monatliche Berichterstattung in jedem Plan enthalten"
+    },
+    "addOnsTitle": "Content-Erweiterungen",
+    "addOns": {
+      "extraPlatform": {
+        "name": "Zusätzliche Plattform",
+        "description": "Weiteren digitalen Kanal hinzufügen"
+      },
+      "extraReels": {
+        "name": "Zusätzliche Reels/Videos",
+        "description": "Zusätzliche Video-Inhalte"
+      },
+      "landingPage": {
+        "name": "Landing-Page",
+        "description": "Dedizierte Werbe-Landing-Page"
+      }
+    },
+    "adSection": {
+      "badge": "Bezahlte Werbung",
+      "title": "Werbekampagnen",
+      "titleHighlight": "Management",
+      "description": "Wir verwalten Ihre Werbekampagnen — Strategie, Creatives, Targeting und Optimierung.",
+      "adBudgetNote": "Das Werbebudget wird von Ihnen direkt an Meta/Google gezahlt",
+      "adBudgetDisclaimer": "* Das Werbebudget (z.B. CHF 300–2000+/Monat) wird von Ihnen direkt an Meta oder Google gezahlt. Wir empfehlen ein Mindest-Monatsbudget von CHF 300 pro Kanal."
+    },
+    "packages": {
+      "digitalStarter": {
+        "name": "Digital Starter",
+        "description": "Perfekt für kleine Unternehmen, die mit digitalem Marketing beginnen",
+        "f1": "8 hochwertige Beiträge pro Monat",
+        "f2": "1 Plattform (Instagram, Facebook oder LinkedIn)",
+        "f3": "KI-unterstützte Inhaltserstellung",
+        "f4": "Planung & Veröffentlichung",
+        "f5": "Monatlicher Leistungsbericht",
+        "f6": "Sie liefern Fotos — wir verbessern mit KI"
+      },
+      "digitalGrowth": {
+        "name": "Digital Growth",
+        "description": "Für Unternehmen, die ihre digitale Präsenz skalieren möchten",
+        "f1": "12 Beiträge pro Monat",
+        "f2": "2 Plattformen (z.B. Instagram + Facebook)",
+        "f3": "Instagram Stories (4-8 pro Monat)",
+        "f4": "Grundlegendes Engagement-Management",
+        "f5": "Hashtag-Recherche & Optimierung",
+        "f6": "Content-Kalender-Vorschau"
+      },
+      "digitalPro": {
+        "name": "Digital Pro",
+        "description": "Vollständiges digitales Marketing-Management für ambitionierte Marken",
+        "f1": "16 Beiträge pro Monat",
+        "f2": "3 Plattformen (Instagram + Facebook + LinkedIn)",
+        "f3": "Vollständiges Engagement-Management",
+        "f4": "Monatlicher Strategie-Call",
+        "f5": "A/B-Tests & Optimierung",
+        "f6": "Prioritäts-Support"
+      },
+      "metaAds": {
+        "name": "Meta Ads",
+        "description": "Vollständiges Management Ihrer Meta & Instagram-Werbekampagnen",
+        "f1": "Kampagnen-Setup & Strategie",
+        "f2": "Werbekreative (Text + Visuals)",
+        "f3": "Zielgruppen-Targeting & Retargeting",
+        "f4": "A/B-Tests & Optimierung",
+        "f5": "Monatlicher Leistungsbericht",
+        "f6": "Meta & Instagram-Abdeckung"
+      },
+      "googleAds": {
+        "name": "Google Ads",
+        "description": "Google Search & Display-Kampagnen von Anfang bis Ende verwaltet",
+        "f1": "Keyword-Recherche & Gebotsstrategie",
+        "f2": "Search + Display-Kampagnen",
+        "f3": "Anzeigentexte & Erweiterungen",
+        "f4": "Conversion-Tracking-Setup",
+        "f5": "Monatlicher Analysebericht",
+        "f6": "Google Search & Display-Netzwerk"
+      },
+      "bundle": {
+        "name": "Meta + Google Bundle",
+        "description": "Beide Kanäle, eine integrierte Strategie — sparen Sie CHF 99/Monat",
+        "f1": "Alles im Meta Ads-Plan",
+        "f2": "Alles im Google Ads-Plan",
+        "f3": "Kanal-übergreifende Strategie & Berichterstattung",
+        "f4": "Einheitliche Zielgruppen-Einblicke",
+        "f5": "Prioritäts-Kampagnenoptimierung",
+        "f6": "Sparen Sie CHF 99/Monat gegenüber separaten Plänen"
+      }
+    },
+    "billedMonthly": "Monatliche Abrechnung",
+    "mgmtFee": "Verwaltungsgebühr · Werbebudget separat abgerechnet",
+    "cta": {
+      "title": "Bereit, Ihre digitale Präsenz zu stärken?",
+      "description": "Buchen Sie eine kostenlose Beratung, um Ihre digitale Marketingstrategie zu besprechen",
+      "button": "Ihre digitale Strategie starten"
+    }
+  },
+  "FAQPage": {
+    "badge": "Häufig gestellte Fragen",
+    "title": "Haben Sie Fragen?",
+    "titleHighlight": "Wir haben Antworten",
+    "description": "Alles, was Sie über unsere Webdesign-, Social-Media-Marketing- und Automatisierungsdienstleistungen in Zürich, Schweiz, wissen müssen.",
+    "all": "Alle",
+    "categories": {
+      "socialMedia": "Social Media",
+      "webDesign": "Webdesign",
+      "general": "Allgemein",
+      "seoMarketing": "SEO & Marketing",
+      "pricing": "Preise & Zahlungen",
+      "automation": "Automatisierung"
+    },
+    "ctaTitle": "Noch weitere Fragen?",
+    "ctaDescription": "Buchen Sie eine kostenlose 30-minütige Beratung, um Ihr Projekt zu besprechen",
+    "ctaButton": "Kontakt aufnehmen",
+    "faqs": {
+      "q1": {
+        "question": "Was kostet Social-Media-Management in Zürich?",
+        "answer": "Unser KI-gestütztes Social-Media-Management beginnt bei CHF 249/Monat für das Social Starter-Paket (8 Beiträge/Monat, 1 Plattform). Das Social Growth-Paket kostet CHF 399/Monat (12 Beiträge, 2 Plattformen) und Social Pro CHF 579/Monat (16 Beiträge, 3 Plattformen inklusive vollständigem Engagement-Management).",
+        "category": "socialMedia"
+      },
+      "q2": {
+        "question": "Was ist in Ihren Website-Paketen enthalten?",
+        "answer": "Unsere Website-Pakete reichen von CHF 600 (Quick Start) bis CHF 2.450 (Business Pro). Alle Pakete beinhalten mobil-responsives Design, grundlegendes SEO und professionelles Hosting. Höhere Stufen umfassen Branding, erweitertes SEO, Automatisierung und CMS-Integration. Wir bieten auch flexible 3-12-monatige Zahlungspläne an.",
+        "category": "webDesign"
+      },
+      "q3": {
+        "question": "Sprechen Sie Deutsch und Portugiesisch?",
+        "answer": "Ja! Unser Gründer Paulo spricht fließend Englisch, Deutsch und Portugiesisch. Wir betreuen internationale Kunden und verstehen die Schweizer Unternehmenskultur. Unsere Website ist in allen drei Sprachen verfügbar.",
+        "category": "general"
+      },
+      "q4": {
+        "question": "Wie lange dauert es, eine Website zu erstellen?",
+        "answer": "Quick Start-Websites (CHF 600) werden in 3-5 Tagen geliefert. Standard-Websites (Starter/Starter Plus) dauern 1-2 Wochen. Komplexere Projekte (Business Pro, individuelle Applikationen) dauern in der Regel 2-3 Wochen, je nach Funktionen und Komplexität.",
+        "category": "webDesign"
+      },
+      "q5": {
+        "question": "Welche Plattformen verwalten Sie für Social Media?",
+        "answer": "Wir verwalten Instagram, Facebook, LinkedIn und Google Business Profile. Unsere Pakete umfassen 1-3 Plattformen, je nach gewählter Stufe. Wir bieten auch Erweiterungen für zusätzliche Plattformen zu CHF 99/Monat pro Plattform an.",
+        "category": "socialMedia"
+      },
+      "q6": {
+        "question": "Bieten Sie SEO-Dienstleistungen an?",
+        "answer": "Ja! Grundlegendes SEO (Meta-Tags, Sitemap, Seitenoptimierung) ist in allen Website-Paketen enthalten. Wir bieten auch laufende SEO-Optimierung als Teil unseres Growth Care-Plans (CHF 179/Monat) an, der monatliche SEO-Berichte und proaktive Verbesserungen umfasst.",
+        "category": "seoMarketing"
+      },
+      "q7": {
+        "question": "Was ist der Unterschied zwischen Social Starter, Growth und Pro?",
+        "answer": "Social Starter (CHF 249/Mo) umfasst 8 Beiträge/Monat auf 1 Plattform — ideal für kleine Unternehmen, die anfangen. Social Growth (CHF 399/Mo) fügt 12 Beiträge, 2 Plattformen, Stories und Engagement-Management hinzu — ideal für wachsende Unternehmen. Social Pro (CHF 579/Mo) liefert 16 Beiträge, 3 Plattformen, vollständiges Engagement, monatliche Strategie-Calls und A/B-Tests — am besten für ambitionierte Marken.",
+        "category": "socialMedia"
+      },
+      "q8": {
+        "question": "Kann ich meine Website in Raten zahlen?",
+        "answer": "Natürlich! Wir bieten 3-Monats- (+5%), 6-Monats- (+10%) und 12-Monats- (+15%) Zahlungspläne an. Zum Beispiel kann eine CHF 2.000-Website als CHF 192/Monat über 12 Monate bezahlt werden. Die erste Zahlung ist bei Projektbeginn fällig, dann automatische monatliche Abrechnung über Stripe.",
+        "category": "pricing"
+      },
+      "q9": {
+        "question": "Liefern Sie Fotos für Social-Media-Beiträge?",
+        "answer": "Sie liefern die Fotos (von Ihrem Handy/Unternehmen) und wir verbessern sie mit professionellen KI-Tools — Hintergrundentfernung, Farbkorrektur, Hochskalierung usw. Das hält die Kosten niedrig und liefert professionelle Ergebnisse. Wir machen keine Fotoshootings, aber wir verwandeln Ihre Rohfotos in beeindruckende Inhalte.",
+        "category": "socialMedia"
+      },
+      "q10": {
+        "question": "Was ist mit Video-Inhalten (Reels)?",
+        "answer": "Reels und Video-Inhalte sind als Erweiterungen zu CHF 79 pro Video verfügbar. Video-Produktion ist zeitintensiver, daher berechnen wir sie separat. Teilen Sie uns Ihre Bedürfnisse mit und wir erstellen ein individuelles Paket.",
+        "category": "socialMedia"
+      },
+      "q11": {
+        "question": "Arbeiten Sie auch mit Kunden ausserhalb Zþrichs?",
+        "answer": "Ja! Wir betreuen die gesamte Schweiz und arbeiten remote mit Kunden in Portugal und international. Unser Standort in Zürich bedeutet, dass wir den Schweizer Markt verstehen, aber unsere Dienstleistungen sind weltweit verfügbar.",
+        "category": "general"
+      },
+      "q12": {
+        "question": "Was passiert nach dem Launch meiner Website?",
+        "answer": "Nach dem Launch können Sie selbst hosten oder unsere verwalteten Hosting-Pläne nutzen (ab CHF 39/Monat). Unsere Pläne umfassen Sicherheitsupdates, Backups, kleine Inhaltsänderungen und Support. Viele Kunden fügen auch Social-Media-Management hinzu, um Traffic auf ihre neue Website zu lenken.",
+        "category": "webDesign"
+      },
+      "q13": {
+        "question": "Können Sie bezahlte Social-Media-Anzeigen verwalten?",
+        "answer": "Ja! Bezahltes Anzeigenmanagement ist als Erweiterung für CHF 199/Monat verfügbar. Wir verwalten Meta (Facebook/Instagram) und LinkedIn Anzeigen — Kampagnen-Setup, Optimierung, A/B-Tests und monatliche Berichterstattung. Das Werbebudget wird separat von den Plattformen abgerechnet.",
+        "category": "seoMarketing"
+      },
+      "q14": {
+        "question": "Was unterscheidet Ihr Social-Media-Management?",
+        "answer": "Wir nutzen KI, um Inhalte 10x schneller als traditionelle Agenturen zu erstellen und geben diese Kosteneinsparungen an Sie weiter (60-70% günstiger als Wettbewerber). KI generiert Beitragsideen, Untertitel und Hashtags, dann fügen wir die menschliche Note für Markenstimme und Qualität hinzu. Sie erhalten Geschwindigkeit + Qualität zu unschlagbaren Preisen.",
+        "category": "socialMedia"
+      },
+      "q15": {
+        "question": "Bieten Sie Business-Automatisierungsdienstleistungen an?",
+        "answer": "Ja! Wir sind spezialisiert auf Business-Automatisierung — Lead-Capture-Systeme (CHF 449), Terminbuchung (CHF 369), Bewertungssammlung (CHF 329) und individuelle Workflows. Wir können repetitive Aufgaben automatisieren, um Ihnen Stunden pro Woche zu sparen.",
+        "category": "automation"
+      }
+    }
+  },
+  "Layout": {
+    "skipToContent": "Zum Hauptinhalt springen"
   }
 }

@@ -7,13 +7,17 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const path = "/services/web-design";
   const canonical = `${BASE_URL}/${locale}${path}`;
   return {
-    title: "Web Design for Zurich Businesses | From CHF 600 | Lopes2Tech",
-    description: "Professional website design and development for Swiss businesses. Fast delivery, mobile-responsive, SEO optimized. Packages from CHF 600 to CHF 2,450.",
+    title: "Web Design & Development | Lopes2Tech - Swiss Websites That Convert",
+    description: "Custom website design and development for Swiss SMEs and startups. Fast, SEO-optimized, mobile-first sites built in Next.js. Based in Zurich.",
     alternates: {
       canonical,
       languages: { "x-default": `${BASE_URL}/en${path}`, en: `${BASE_URL}/en${path}`, de: `${BASE_URL}/de${path}`, pt: `${BASE_URL}/pt${path}` },
     },
-    openGraph: { title: "Web Design for Zurich Businesses | Lopes2Tech", description: "Professional websites from CHF 600. Fast delivery, mobile-responsive, SEO optimized.", url: canonical },
+    openGraph: {
+      title: "Web Design & Development | Lopes2Tech",
+      description: "Custom, high-performance websites for Swiss businesses. SEO-ready, mobile-first, built to convert visitors into clients.",
+      url: canonical,
+    },
   };
 }
 

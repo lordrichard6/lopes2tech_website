@@ -7,16 +7,20 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const path = "/services/seo-development";
   const canonical = `${BASE_URL}/${locale}${path}`;
   return {
-    title: "SEO Development for Swiss Businesses | Technical SEO | Lopes2Tech",
-    description: "Technical SEO audits, programmatic SEO, on-page optimization, and Core Web Vitals improvement. SEO packages from CHF 450 to CHF 1,200/mo.",
+    title: "SEO Development | Lopes2Tech - Technical SEO for Swiss Businesses",
+    description: "Technical SEO and content optimization for Swiss companies. Rank higher on Google with structured data, Core Web Vitals optimization, and multilingual SEO. Based in Zurich.",
     alternates: {
       canonical,
       languages: { "x-default": `${BASE_URL}/en${path}`, en: `${BASE_URL}/en${path}`, de: `${BASE_URL}/de${path}`, pt: `${BASE_URL}/pt${path}` },
     },
-    openGraph: { title: "SEO Development for Swiss Businesses | Lopes2Tech", description: "Technical SEO audits, on-page optimization, and Core Web Vitals. Packages from CHF 450.", url: canonical },
+    openGraph: {
+      title: "SEO Development | Lopes2Tech",
+      description: "Technical SEO and content optimization to help Swiss businesses rank higher and attract more qualified leads.",
+      url: canonical,
+    },
   };
 }
 
-export default function SEODevelopmentLayout({ children }: { children: React.ReactNode }) {
+export default function SeoDevelopmentLayout({ children }: { children: React.ReactNode }) {
   return <>{children}</>;
 }

@@ -6,7 +6,6 @@
     "contact": "Contact",
     "insights": "Insights",
     "about": "About",
-    "clientPortal": "Client Portal",
     "allServices": "All Services",
     "serviceDropdown": {
       "webDesign": "Web Design",
@@ -115,7 +114,7 @@
       "6months": "6 Months",
       "12months": "12 Months",
       "monthly": "/mo",
-      "total": "Total",
+    "total": "Total",
       "disclaimer": "* Final price may vary based on project scope and complexity",
       "requestQuote": "Request Quote"
     },
@@ -411,15 +410,51 @@
     "subtitle": "A selection of high-impact websites and applications designed for performance and scale.",
     "button": "View Full Portfolio",
     "projects": {
-      "mimesa": { "title": "MiMesa", "description": "Gastronomy management platform.", "category": "Web App" },
-      "menteiq": { "title": "menteIQ", "description": "Modern CRM platform.", "category": "Web App" },
-      "theraflow": { "title": "TheraFlow", "description": "Practice management software.", "category": "SaaS" },
-      "finito": { "title": "Finito", "description": "Financial management.", "category": "Web App" },
-      "noff": { "title": "Noff", "description": "HR Tech solution.", "category": "Web App" },
-      "ribeiro": { "title": "Ribeiro Consulting", "description": "Professional consulting.", "category": "Website" },
-      "costeleta": { "title": "Costeleta Dourada", "description": "Restaurant booking.", "category": "Website" },
-      "forma": { "title": "Forma Architects", "description": "Minimalist portfolio.", "category": "Website" },
-      "alentseguros": { "title": "AlentSeguros", "description": "Insurance portal.", "category": "Website" }
+      "mimesa": {
+        "title": "MiMesa",
+        "description": "Gastronomy management platform.",
+        "category": "Web App"
+      },
+      "menteiq": {
+        "title": "menteIQ",
+        "description": "Modern CRM platform.",
+        "category": "Web App"
+      },
+      "theraflow": {
+        "title": "TheraFlow",
+        "description": "Practice management software.",
+        "category": "SaaS"
+      },
+      "finito": {
+        "title": "Finito",
+        "description": "Financial management.",
+        "category": "Web App"
+      },
+      "noff": {
+        "title": "Noff",
+        "description": "HR Tech solution.",
+        "category": "Web App"
+      },
+      "ribeiro": {
+        "title": "Ribeiro Consulting",
+        "description": "Professional consulting.",
+        "category": "Website"
+      },
+      "costeleta": {
+        "title": "Costeleta Dourada",
+        "description": "Restaurant booking.",
+        "category": "Website"
+      },
+      "forma": {
+        "title": "Forma Architects",
+        "description": "Minimalist portfolio.",
+        "category": "Website"
+      },
+      "alentseguros": {
+        "title": "AlentSeguros",
+        "description": "Insurance portal.",
+        "category": "Website"
+      }
     }
   },
   "Process": {
@@ -1002,7 +1037,8 @@
       "sending": "Sending...",
       "successTitle": "Request Sent!",
       "successMessage": "We have received your request and will get back to you shortly.",
-      "error": "Something went wrong. Please try again or contact us directly."
+      "error": "Something went wrong. Please try again or contact us directly.",
+      "close": "Close"
     }
   },
   "FeaturedProjects": {
@@ -1088,7 +1124,9 @@
     "postNotFound": "Post Not Found",
     "backToInsightsNotFound": "Back to Insights",
     "authorBio": "Founder of Lopes2Tech, specializing in AI-powered development workflows and high-performance web applications for Swiss businesses.",
-    "shareArticle": "Share this article"
+    "shareArticle": "Share this article",
+    "share": "Share:",
+    "tableOfContents": "Table of Contents"
   },
   "CookieConsent": {
     "title": "We value your privacy",
@@ -1221,5 +1259,592 @@
         "category": "Wellness & Luxury"
       }
     }
+  },
+  "Common": {
+    "mostPopular": "Most Popular",
+    "getStarted": "Get Started",
+    "billedMonthly": "Billed monthly",
+    "oneTimePayment": "One-time payment",
+    "customPricing": "Custom pricing"
+  },
+  "LoadingPage": {
+    "loading": "Loading…"
+  },
+  "ErrorPage": {
+    "title": "Something went wrong",
+    "description": "An unexpected error occurred. Please try again or go back to the homepage.",
+    "tryAgain": "Try again",
+    "goHome": "Go home"
+  },
+  "ServicesHubPage": {
+    "stats": {
+      "projects": "Projects Delivered",
+      "countries": "Countries Served",
+      "rating": "Average Rating",
+      "response": "Avg. Response Time"
+    },
+    "services": {
+      "webDev": {
+        "badge": "Web Development",
+        "title": "Professional Websites",
+        "desc1": "Your website is your most powerful business asset — and first impressions are permanent. We design and develop custom, high-performance websites built from the ground up for Swiss businesses: fast, mobile-first, and engineered to convert visitors into clients.",
+        "desc2": "We don’t use templates. Every project starts with your brand, your goals, and your audience. The result is a website that feels uniquely yours — one that builds trust the moment someone lands on it, and keeps them coming back.",
+        "bullet1": "100% custom design — no templates, ever",
+        "bullet2": "Mobile-first & optimized for Core Web Vitals",
+        "bullet3": "SEO-ready architecture from day one",
+        "bullet4": "Multilingual support (EN / DE / FR / IT)"
+      },
+      "marketing": {
+        "badge": "Social Media & Ads",
+        "title": "Digital Marketing",
+        "desc1": "Being online isn’t enough — you need to be visible where your clients are. We build and execute data-driven digital marketing strategies that grow your audience, amplify your brand, and drive qualified leads directly to your business.",
+        "desc2": "From targeted Meta and Instagram ad campaigns to organic content strategy and community management, every action we take is measured, refined, and aligned with your growth objectives. No vanity metrics — only results that matter.",
+        "bullet1": "Meta, Instagram & Google ad campaigns",
+        "bullet2": "Content strategy, creation & scheduling",
+        "bullet3": "Analytics, reporting & continuous optimization",
+        "bullet4": "Community management & brand voice"
+      },
+      "seo": {
+        "badge": "Search Engine Optimization",
+        "title": "SEO Development",
+        "desc1": "Ranking on Google in Switzerland takes more than keywords — it takes a technically sound foundation that search engines understand and trust. We combine deep technical SEO expertise with content strategy to build sustainable, long-term organic visibility.",
+        "desc2": "From site architecture and Core Web Vitals to structured data markup and multilingual hreflang implementation, we cover every signal that determines where your business appears in search results. The goal isn’t traffic — it’s the right traffic.",
+        "bullet1": "Technical SEO audits & Core Web Vitals",
+        "bullet2": "Multilingual SEO (EN / DE / FR)",
+        "bullet3": "Schema.org structured data implementation",
+        "bullet4": "On-page optimization & keyword strategy"
+      },
+      "automation": {
+        "badge": "Workflow Automation",
+        "title": "Business Automation",
+        "desc1": "Your team’s time is too valuable to spend on manual, repetitive tasks. We analyse your operations, identify the bottlenecks, and replace them with intelligent automations that run 24/7 — accurately, reliably, and without supervision.",
+        "desc2": "From CRM workflows and automated follow-up sequences to invoice processing and multi-system integrations, we build custom pipelines using leading automation platforms. The result: your business runs smoother, your team focuses on what matters, and nothing falls through the cracks.",
+        "bullet1": "CRM & email workflow automation",
+        "bullet2": "AI-powered lead routing & follow-ups",
+        "bullet3": "Invoice, document & data processing",
+        "bullet4": "Custom n8n, Zapier & Make pipelines"
+      },
+      "ecommerce": {
+        "badge": "Online Retail",
+        "title": "E-Commerce",
+        "desc1": "Selling online in Switzerland means earning trust at every step — from the first product page to the checkout confirmation. We build e-commerce solutions tailored to the Swiss market: fast, secure, and designed to reduce friction and maximise conversions.",
+        "desc2": "Whether you’re launching your first shop or scaling an existing operation, we handle the full stack. Custom design, payment integration (including TWINT), product management, and ongoing support — everything you need to sell with confidence.",
+        "bullet1": "Custom Shopify & WooCommerce stores",
+        "bullet2": "Swiss payment methods: TWINT, card & invoice",
+        "bullet3": "Multi-language & multi-currency ready",
+        "bullet4": "Product management & inventory automation"
+      },
+      "webApps": {
+        "badge": "Custom Software",
+        "title": "Web Apps",
+        "desc1": "When off-the-shelf software doesn’t fit your workflow, we build it from scratch. Booking platforms, client portals, internal dashboards, SaaS tools — we engineer custom web applications designed precisely around how your business operates.",
+        "desc2": "Every application we build is cloud-deployed, secure by design, and built to scale as you grow. Whether you need an MVP to validate an idea or a production-grade system to replace a broken internal tool, we deliver software that works reliably from day one.",
+        "bullet1": "Booking & reservation platforms",
+        "bullet2": "Client portals & internal dashboards",
+        "bullet3": "SaaS MVPs & custom business tools",
+        "bullet4": "API integrations & third-party data pipelines"
+      },
+      "ai": {
+        "badge": "Artificial Intelligence",
+        "title": "AI Integration",
+        "desc1": "AI is no longer a competitive advantage — it’s quickly becoming a baseline requirement. We integrate intelligent AI solutions directly into your business: chatbots that handle enquiries around the clock, tools that extract insights from your data, and automations that continuously learn and improve.",
+        "desc2": "From adding a smart assistant to your website to building fully custom AI workflows and GPT-powered tools, we make AI practical, measurable, and immediately useful — not a science experiment, but a working part of your operation that delivers ROI from day one.",
+        "bullet1": "AI chatbots & virtual assistants",
+        "bullet2": "Document & image processing with AI",
+        "bullet3": "Custom GPT & Claude integrations",
+        "bullet4": "AI-powered analytics & automated reporting"
+      }
+    },
+    "explore": "Explore {title}"
+  },
+  "WebDesignPage": {
+    "badge": "Professional Web Design",
+    "title": "Web Design",
+    "titleHighlight": "for Zurich Businesses",
+    "description": "Fast, affordable, professional websites built with modern technology. From CHF 600 to get online quick, or full custom solutions from CHF 975.",
+    "pill1": "Fast Delivery (1-2 weeks)",
+    "pill2": "Mobile-Responsive",
+    "pill3": "SEO Optimized",
+    "paymentPlans": {
+      "onetime": "One-Time",
+      "3months": "3 Months",
+      "6months": "6 Months",
+      "12months": "12 Months"
+    },
+    "packages": {
+      "quickStart": {
+        "name": "Quick Start",
+        "description": "Ultra-minimal one-page site to get you online fast",
+        "f1": "Basic one-page website",
+        "f2": "Mobile-responsive",
+        "f3": "Contact information display",
+        "f4": "Fast 3-5 day delivery"
+      },
+      "starter": {
+        "name": "Starter",
+        "description": "Professional foundation for your online presence",
+        "f1": "Single custom landing page",
+        "f2": "Mobile-responsive design",
+        "f3": "Basic SEO setup",
+        "f4": "Contact form",
+        "f5": "1 round of revisions"
+      },
+      "starterPlus": {
+        "name": "Starter Plus",
+        "description": "Complete launch package with branding included",
+        "f1": "Professional 5-page website",
+        "f2": "Full brand identity (Logo, Colors, Fonts)",
+        "f3": "Mobile-responsive & fast",
+        "f4": "Advanced SEO setup",
+        "f5": "Up to 3 rounds of revisions"
+      },
+      "businessPro": {
+        "name": "Business Pro",
+        "description": "For established businesses needing advanced features",
+        "f1": "Advanced CMS (Content Management System)",
+        "f2": "Blog or Portfolio section",
+        "f3": "Multi-language support ready",
+        "f4": "Google Analytics integration",
+        "f5": "Priority support"
+      }
+    },
+        "retainerLabel": "Monthly Maintenance — CHF 39/month",
+    "retainerDesc": "Keep your website updated, secure, and running smoothly for just CHF 39/month. Includes minor content updates, security patches, uptime monitoring, and priority email support.",
+    "total": "Total",
+    "months": "months",
+    "cta": {
+      "title": "Ready to Launch Your Website?",
+      "description": "Book a free consultation to discuss your project. Fast delivery, transparent pricing.",
+      "button": "Get Your Website Quote"
+    }
+  },
+  "SEOPage": {
+    "badge": "Technical SEO Engineering",
+    "title": "SEO Development",
+    "titleHighlight": "for Swiss Businesses",
+    "description": "Stop guessing. Start engineering your Google ranking. Technical SEO audits, Schema markup, Core Web Vitals optimization, and programmatic SEO.",
+    "pill1": "Core Web Vitals",
+    "pill2": "Schema Markup",
+    "pill3": "SSR/SSG",
+    "packages": {
+      "audit": {
+        "name": "SEO Audit",
+        "description": "Full technical audit to uncover what's holding your rankings back",
+        "f1": "Full technical audit",
+        "f2": "Core Web Vitals report",
+        "f3": "Schema markup analysis",
+        "f4": "Competitor benchmarking",
+        "f5": "Actionable recommendations"
+      },
+      "starter": {
+        "name": "SEO Starter",
+        "description": "Ongoing technical optimization to steadily improve your rankings",
+        "f1": "Monthly technical optimization",
+        "f2": "On-page SEO for up to 20 pages",
+        "f3": "Google Search Console monitoring",
+        "f4": "Monthly performance report",
+        "f5": "Keyword tracking"
+      },
+      "growth": {
+        "name": "SEO Growth",
+        "description": "Comprehensive SEO strategy with programmatic and advanced Schema",
+        "f1": "Everything in Starter",
+        "f2": "Programmatic SEO setup",
+        "f3": "Advanced Schema implementation",
+        "f4": "Content strategy & briefs",
+        "f5": "Backlink analysis",
+        "f6": "Priority support"
+      }
+    },
+    "cta": {
+      "title": "Ready to Rank Higher?",
+      "description": "Book a free consultation to discuss your SEO strategy and start climbing the rankings.",
+      "button": "Start Your SEO Strategy"
+    }
+  },
+  "AutomationPage": {
+    "badge": "Intelligent Automation",
+    "title": "Business Automation",
+    "titleHighlight": "for Swiss Companies",
+    "description": "Eliminate repetitive tasks. Connect your tools. Scale operations without scaling headcount. Custom workflows powered by AI.",
+    "pill1": "Zapier/Make",
+    "pill2": "Custom Scripts",
+    "pill3": "CRM Integration",
+    "packages": {
+      "starter": {
+        "name": "Automation Starter",
+        "description": "Get your first workflow automated and start saving time immediately",
+        "f1": "1 workflow automation",
+        "f2": "Tool integration (up to 3)",
+        "f3": "Setup & documentation",
+        "f4": "30-day support",
+        "f5": "Training session"
+      },
+      "growth": {
+        "name": "Automation Growth",
+        "description": "Automate multiple workflows and connect your entire tool stack",
+        "f1": "Up to 5 workflow automations",
+        "f2": "Advanced integrations",
+        "f3": "Error handling & monitoring",
+        "f4": "60-day support",
+        "f5": "Email/calendar automation"
+      },
+      "enterprise": {
+        "name": "Automation Enterprise",
+        "description": "Unlimited custom automation with AI-powered decision logic",
+        "f1": "Unlimited workflows",
+        "f2": "Custom API development",
+        "f3": "AI-powered decision logic",
+        "f4": "Ongoing maintenance",
+        "f5": "Dedicated support"
+      }
+    },
+    "cta": {
+      "title": "Ready to Automate?",
+      "description": "Book a free consultation to identify which processes can be automated for maximum impact.",
+      "button": "Get Your Automation Assessment"
+    }
+  },
+  "AIPage": {
+    "badge": "AI-Powered Solutions",
+    "title": "AI Integration",
+    "titleHighlight": "& Intelligent Chatbots",
+    "description": "Deploy AI agents that understand your business. RAG knowledge bases, custom chatbots, and GPT/Claude API integrations.",
+    "pill1": "RAG/Knowledge Base",
+    "pill2": "Function Calling",
+    "pill3": "24/7 Support",
+    "packages": {
+      "chatbot": {
+        "name": "AI Chatbot",
+        "description": "Deploy a custom AI chatbot trained on your business knowledge",
+        "f1": "Custom AI chatbot",
+        "f2": "Knowledge base (up to 50 pages)",
+        "f3": "Website widget integration",
+        "f4": "Basic analytics",
+        "f5": "30-day tuning period"
+      },
+      "workflow": {
+        "name": "AI Workflow",
+        "description": "AI-powered workflows that automate email, documents, and customer interactions",
+        "f1": "Everything in Chatbot",
+        "f2": "AI email triage",
+        "f3": "Document processing",
+        "f4": "CRM integration",
+        "f5": "Advanced analytics dashboard"
+      },
+      "custom": {
+        "name": "Custom AI",
+        "description": "Enterprise-grade AI with multi-agent orchestration and custom fine-tuning",
+        "f1": "Everything in Workflow",
+        "f2": "Custom LLM fine-tuning",
+        "f3": "Multi-agent orchestration",
+        "f4": "Voice-to-action",
+        "f5": "Enterprise security"
+      }
+    },
+    "cta": {
+      "title": "Ready for AI?",
+      "description": "Book a free consultation to explore how AI can transform your business operations.",
+      "button": "Build Your AI Agent"
+    }
+  },
+  "WebAppsPage": {
+    "badge": "Full-Stack Development",
+    "title": "Custom Web Apps",
+    "titleHighlight": "Built for Scale",
+    "description": "From MVPs to enterprise platforms. Full-stack SaaS applications, dashboards, client portals, and APIs built with modern technology.",
+    "pill1": "React/Next.js",
+    "pill2": "TypeScript",
+    "pill3": "Cloud-Native",
+    "packages": {
+      "mvp": {
+        "name": "MVP Launch",
+        "description": "Get your idea to market fast with a lean, functional MVP",
+        "f1": "Core feature set",
+        "f2": "User authentication",
+        "f3": "Basic dashboard",
+        "f4": "Responsive design",
+        "f5": "1 month post-launch support"
+      },
+      "standard": {
+        "name": "Standard Platform",
+        "description": "Full-featured platform with payments, i18n, and CI/CD pipeline",
+        "f1": "Everything in MVP",
+        "f2": "Payment integration (Stripe)",
+        "f3": "Multi-language (i18n)",
+        "f4": "Role-based access",
+        "f5": "CI/CD pipeline",
+        "f6": "3 months support"
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "description": "Enterprise-grade platform with multi-tenant architecture and SLA",
+        "f1": "Everything in Standard",
+        "f2": "Custom integrations",
+        "f3": "Advanced analytics",
+        "f4": "Multi-tenant architecture",
+        "f5": "SLA guarantee",
+        "f6": "Ongoing maintenance"
+      }
+    },
+    "cta": {
+      "title": "Ready to Build?",
+      "description": "Book a free consultation to scope your project and get a detailed roadmap.",
+      "button": "Start Your Project"
+    }
+  },
+  "EcommercePage": {
+    "badge": "E-Commerce Solutions",
+    "title": "E-Commerce",
+    "titleHighlight": "for Swiss Businesses",
+    "description": "Launch your online store. Shopify, WooCommerce, or fully custom solutions with Swiss payment integration and multi-currency support.",
+    "pill1": "Swiss Payments",
+    "pill2": "Multi-Currency",
+    "pill3": "Mobile-First",
+    "packages": {
+      "starter": {
+        "name": "Starter Shop",
+        "description": "Get your online store up and running with everything you need to start selling",
+        "f1": "Up to 50 products",
+        "f2": "Mobile-responsive design",
+        "f3": "Payment gateway setup",
+        "f4": "Basic SEO",
+        "f5": "Product management training"
+      },
+      "growth": {
+        "name": "Growth Shop",
+        "description": "Full-featured store with Swiss payments, advanced SEO, and marketing tools",
+        "f1": "Unlimited products",
+        "f2": "Custom design",
+        "f3": "Advanced SEO & analytics",
+        "f4": "Swiss payment methods (TWINT, PostFinance)",
+        "f5": "Marketing automation setup"
+      },
+      "enterprise": {
+        "name": "Enterprise Commerce",
+        "description": "Enterprise e-commerce with custom checkout, ERP integration, and B2B features",
+        "f1": "Everything in Growth",
+        "f2": "Custom checkout flow",
+        "f3": "ERP integration",
+        "f4": "Multi-currency support",
+        "f5": "B2B wholesale features",
+        "f6": "Priority support"
+      }
+    },
+    "cta": {
+      "title": "Ready to Sell Online?",
+      "description": "Book a free consultation to plan your online store and start selling.",
+      "button": "Launch Your Store"
+    }
+  },
+  "DigitalMarketingPage": {
+    "badge": "AI-Powered Digital Marketing",
+    "title": "Digital Marketing",
+    "titleHighlight": "for Zurich Businesses",
+    "description": "From social media content to Meta ad campaigns and Google Ads — we handle your entire digital marketing presence. AI-powered, human-refined, and built to grow your brand.",
+    "whyUs": {
+      "title1": "AI-Powered Speed",
+      "desc1": "We create content 10x faster than traditional agencies using AI, passing cost savings to you (60-70% cheaper).",
+      "title2": "Consistent Growth",
+      "desc2": "Never miss a post. Your brand stays active even when you’re busy. 8-16 posts per month, every month.",
+      "title3": "No Photoshoots",
+      "desc3": "You provide photos from your phone. We enhance them with professional AI tools. Simple, affordable, stunning results."
+    },
+    "contentSection": {
+      "badge": "Content Management",
+      "title": "Social Media",
+      "titleHighlight": "Content Plans",
+      "description": "AI-assisted content creation, scheduling, and monthly reporting included in every plan"
+    },
+    "addOnsTitle": "Content Add-Ons",
+    "addOns": {
+      "extraPlatform": {
+        "name": "Extra Platform",
+        "description": "Add another digital channel"
+      },
+      "extraReels": {
+        "name": "Extra Reels/Videos",
+        "description": "Additional video content"
+      },
+      "landingPage": {
+        "name": "Landing Page",
+        "description": "Dedicated ad landing page"
+      }
+    },
+    "adSection": {
+      "badge": "Paid Advertising",
+      "title": "Ad Campaign",
+      "titleHighlight": "Management",
+      "description": "We manage your ad campaigns — strategy, creatives, targeting, and optimization.",
+      "adBudgetNote": "Ad spend budget is paid directly to Meta/Google by you",
+      "adBudgetDisclaimer": "* Ad spend budget (e.g. CHF 300–2000+/mo) is paid directly to Meta or Google by you. We recommend a minimum monthly ad budget of CHF 300 per channel."
+    },
+    "packages": {
+      "digitalStarter": {
+        "name": "Digital Starter",
+        "description": "Perfect for small businesses getting started with digital marketing",
+        "f1": "8 high-quality posts per month",
+        "f2": "1 platform (Instagram, Facebook, or LinkedIn)",
+        "f3": "AI-assisted content creation",
+        "f4": "Scheduling & publishing",
+        "f5": "Monthly performance report",
+        "f6": "You provide photos — we enhance with AI"
+      },
+      "digitalGrowth": {
+        "name": "Digital Growth",
+        "description": "For businesses ready to scale their digital presence",
+        "f1": "12 posts per month",
+        "f2": "2 platforms (e.g., Instagram + Facebook)",
+        "f3": "Instagram Stories (4-8 per month)",
+        "f4": "Basic engagement management",
+        "f5": "Hashtag research & optimization",
+        "f6": "Content calendar preview"
+      },
+      "digitalPro": {
+        "name": "Digital Pro",
+        "description": "Complete digital marketing management for ambitious brands",
+        "f1": "16 posts per month",
+        "f2": "3 platforms (Instagram + Facebook + LinkedIn)",
+        "f3": "Full engagement management",
+        "f4": "Monthly strategy call",
+        "f5": "A/B testing & optimization",
+        "f6": "Priority support"
+      },
+      "metaAds": {
+        "name": "Meta Ads",
+        "description": "Full management of your Meta & Instagram ad campaigns",
+        "f1": "Campaign setup & strategy",
+        "f2": "Ad creative (copy + visuals)",
+        "f3": "Audience targeting & retargeting",
+        "f4": "A/B testing & optimization",
+        "f5": "Monthly performance report",
+        "f6": "Meta & Instagram coverage"
+      },
+      "googleAds": {
+        "name": "Google Ads",
+        "description": "Google Search & Display campaigns managed end-to-end",
+        "f1": "Keyword research & bidding strategy",
+        "f2": "Search + Display campaigns",
+        "f3": "Ad copywriting & extensions",
+        "f4": "Conversion tracking setup",
+        "f5": "Monthly analytics report",
+        "f6": "Google Search & Display network"
+      },
+      "bundle": {
+        "name": "Meta + Google Bundle",
+        "description": "Both channels, one integrated strategy — save CHF 99/mo",
+        "f1": "Everything in Meta Ads plan",
+        "f2": "Everything in Google Ads plan",
+        "f3": "Cross-channel strategy & reporting",
+        "f4": "Unified audience insights",
+        "f5": "Priority campaign optimization",
+        "f6": "Save CHF 99/mo vs. separate plans"
+      }
+    },
+    "billedMonthly": "Billed monthly",
+    "mgmtFee": "Management fee · ad budget billed separately",
+    "cta": {
+      "title": "Ready to Grow Your Digital Presence?",
+      "description": "Book a free consultation to discuss your digital marketing strategy",
+      "button": "Start Your Digital Strategy"
+    }
+  },
+  "FAQPage": {
+    "badge": "Frequently Asked Questions",
+    "title": "Got Questions?",
+    "titleHighlight": "We’ve Got Answers",
+    "description": "Everything you need to know about our web design, social media marketing, and automation services in Zurich, Switzerland.",
+    "all": "All",
+    "categories": {
+      "socialMedia": "Social Media",
+      "webDesign": "Web Design",
+      "general": "General",
+      "seoMarketing": "SEO & Marketing",
+      "pricing": "Pricing & Payments",
+      "automation": "Automation"
+    },
+    "ctaTitle": "Still have questions?",
+    "ctaDescription": "Book a free 30-minute consultation to discuss your project",
+    "ctaButton": "Contact Us",
+    "faqs": {
+      "q1": {
+        "question": "How much does social media management cost in Zurich?",
+        "answer": "Our AI-powered social media management starts at CHF 249/month for the Social Starter package (8 posts/month, 1 platform). The Social Growth package is CHF 399/month (12 posts, 2 platforms), and Social Pro is CHF 579/month (16 posts, 3 platforms including full engagement management).",
+        "category": "socialMedia"
+      },
+      "q2": {
+        "question": "What's included in your website packages?",
+        "answer": "Our website packages range from CHF 600 (Quick Start) to CHF 2,450 (Business Pro). All packages include mobile-responsive design, basic SEO, and professional deployment. Higher tiers include branding, advanced SEO, automation, and CMS integration. We also offer flexible 3-12 month payment plans.",
+        "category": "webDesign"
+      },
+      "q3": {
+        "question": "Do you speak German and Portuguese?",
+        "answer": "Yes! Our founder Paulo speaks fluent English, German, and Portuguese. We serve international clients and understand Swiss business culture. Our website is available in all three languages.",
+        "category": "general"
+      },
+      "q4": {
+        "question": "How long does it take to build a website?",
+        "answer": "Quick Start websites (CHF 600) are delivered in 3-5 days. Standard websites (Starter/Starter Plus) take 1-2 weeks. More complex projects (Business Pro, custom applications) typically take 2-3 weeks depending on features and complexity.",
+        "category": "webDesign"
+      },
+      "q5": {
+        "question": "What platforms do you manage for social media?",
+        "answer": "We manage Instagram, Facebook, LinkedIn, and Google Business Profile. Our packages include 1-3 platforms depending on the tier you choose. We also offer add-ons for additional platforms at CHF 99/month per platform.",
+        "category": "socialMedia"
+      },
+      "q6": {
+        "question": "Do you provide SEO services?",
+        "answer": "Yes! Basic SEO (meta tags, sitemap, page optimization) is included in all website packages. We also offer ongoing SEO optimization as part of our Growth Care plan (CHF 179/month) which includes monthly SEO reports and proactive improvements.",
+        "category": "seoMarketing"
+      },
+      "q7": {
+        "question": "What's the difference between Social Starter, Growth, and Pro?",
+        "answer": "Social Starter (CHF 249/mo) includes 8 posts/month on 1 platform - perfect for small businesses getting started. Social Growth (CHF 399/mo) adds 12 posts, 2 platforms, Stories, and engagement management - ideal for scaling businesses. Social Pro (CHF 579/mo) delivers 16 posts, 3 platforms, full engagement, monthly strategy calls, and A/B testing - best for ambitious brands.",
+        "category": "socialMedia"
+      },
+      "q8": {
+        "question": "Can I pay for my website in installments?",
+        "answer": "Absolutely! We offer 3-month (+5%), 6-month (+10%), and 12-month (+15%) payment plans. For example, a CHF 2,000 website can be paid as CHF 192/month over 12 months. The first payment is due at project start, then automatic monthly billing via Stripe.",
+        "category": "pricing"
+      },
+      "q9": {
+        "question": "Do you provide photos for social media posts?",
+        "answer": "You provide the photos (from your phone/business) and we enhance them using professional AI tools - background removal, color correction, upscaling, etc. This keeps costs low while delivering professional results. We don't do photoshoots, but we transform your raw photos into stunning content.",
+        "category": "socialMedia"
+      },
+      "q10": {
+        "question": "What about video content (Reels)?",
+        "answer": "Reels and video content are available as add-ons at CHF 79 per video. Video production is more time-intensive, so we price it separately. Let us know your needs and we'll create a custom package.",
+        "category": "socialMedia"
+      },
+      "q11": {
+        "question": "Do you work with clients outside Zurich?",
+        "answer": "Yes! We serve all of Switzerland and work remotely with clients in Portugal and internationally. Our base in Zurich means we understand the Swiss market, but our services are available worldwide.",
+        "category": "general"
+      },
+      "q12": {
+        "question": "What happens after my website launches?",
+        "answer": "After launch, you can choose to self-host or use our managed hosting plans (starting CHF 39/month). Our plans include security updates, backups, small content changes, and support. Many clients also add social media management to drive traffic to their new site.",
+        "category": "webDesign"
+      },
+      "q13": {
+        "question": "Can you manage paid social media ads?",
+        "answer": "Yes! Paid ad management is available as an add-on for CHF 199/month. We handle Meta (Facebook/Instagram) and LinkedIn ads - campaign setup, optimization, A/B testing, and monthly reporting. Ad spend is billed separately by the platforms.",
+        "category": "seoMarketing"
+      },
+      "q14": {
+        "question": "What makes your social media management different?",
+        "answer": "We use AI to create content 10x faster than traditional agencies, passing those cost savings to you (60-70% cheaper than competitors). AI generates post ideas, captions, and hashtags, then we add the human touch for brand voice and quality. You get speed + quality at unbeatable prices.",
+        "category": "socialMedia"
+      },
+      "q15": {
+        "question": "Do you offer business automation services?",
+        "answer": "Yes! We specialize in business automation - lead capture systems (CHF 449), appointment booking (CHF 369), review collection (CHF 329), and custom workflows. We can automate repetitive tasks to save you hours per week.",
+        "category": "automation"
+      }
+    }
+  },
+  "Layout": {
+    "skipToContent": "Skip to main content"
   }
 }

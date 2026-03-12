@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "next/navigation";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/navigation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Calendar, Clock, ArrowLeft, User, Share2 } from "lucide-react";
@@ -201,7 +201,7 @@ export default function BlogPostContent() {
 
                     {/* Social Share */}
                     <div className="flex items-center gap-3 mb-8">
-                        <span className="text-sm text-slate-500">Share:</span>
+                        <span className="text-sm text-slate-500">{t('share')}</span>
                         <a
                             href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(`https://lopes2tech.ch/${locale}/insights/${post.slug}`)}`}
                             target="_blank"
@@ -267,7 +267,7 @@ export default function BlogPostContent() {
                                 className="mb-12 p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm"
                                 aria-label="Table of contents"
                             >
-                                <h2 className="text-lg font-bold text-white mb-4">Table of Contents</h2>
+                                <h2 className="text-lg font-bold text-white mb-4">{t('tableOfContents')}</h2>
                                 <ul className="space-y-2">
                                     {headings.map((heading, idx) => {
                                         const text = heading.replace(/<[^>]*>/g, '');
