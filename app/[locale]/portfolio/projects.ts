@@ -8,9 +8,9 @@ export interface Project {
 
 export const projects: Project[] = [
     // Web Apps
-    { slug: "clinika-os", image: "/logos/clinika_logo.svg", type: "web-app", link: "https://www.clinika-os.ch/", isInDevelopment: true },
-    { slug: "menteiq", image: "/proj/orbitcrm_mockup.webp", type: "web-app", link: "https://menteiq.ch/", isInDevelopment: true },
-    { slug: "dark-monkey", image: "/logos/darkmonkey_logo.webp", type: "web-app", link: "https://www.dark-monkey.ch/", isInDevelopment: true },
+    { slug: "clinika-os", image: "/proj/clinika_os_mockup.webp", type: "web-app", link: "https://www.clinika-os.ch/", isInDevelopment: true },
+    { slug: "menteiq", image: "/proj/menteiq_mockup.webp", type: "web-app", link: "https://menteiq.ch/", isInDevelopment: true },
+    { slug: "dark-monkey", image: "/proj/dark_monkey_mockup.webp", type: "web-app", link: "https://www.dark-monkey.ch/", isInDevelopment: true },
     { slug: "mimesa", image: "/proj/mimesa_mockup.webp", type: "web-app", link: "https://www.mimesa.ch/", isInDevelopment: true },
     { slug: "pali-ai", image: "/proj/pali_mockup.webp", type: "web-app", isInDevelopment: true },
     { slug: "theraflow", image: "/proj/theraflow_mockup.webp", type: "web-app", link: "https://www.theraflow-crm.ch/" },
