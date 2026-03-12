@@ -1,6 +1,5 @@
 {
   "framework": "nextjs",
-  "regions": ["zrh1"],
   "headers": [
     {
       "source": "/(.*)",
