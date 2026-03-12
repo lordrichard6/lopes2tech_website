@@ -233,7 +233,7 @@ export default function DigitalMarketingPage() {
                                         </div>
                                         <p className="text-sm text-slate-500 mt-1">{t("billedMonthly")}</p>
                                     </div>
-                                    <ul className="space-y-3 mb-8">
+                                    <ul className="space-y-3 mb-8 flex-1">
                                         {pkg.features.map((feature, idx) => (
                                             <li key={idx} className="flex items-start gap-3">
                                                 <div className={`mt-0.5 w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 ${pkg.popular ? 'bg-purple-500' : 'bg-purple-500/20'}`}>
@@ -352,7 +352,7 @@ export default function DigitalMarketingPage() {
                                         </div>
                                         <p className="text-sm text-slate-500 mt-1">{t("mgmtFee")}</p>
                                     </div>
-                                    <ul className="space-y-3 mb-8">
+                                    <ul className="space-y-3 mb-8 flex-1">
                                         {pkg.features.map((feature, idx) => (
                                             <li key={idx} className="flex items-start gap-3">
                                                 <div className={`mt-0.5 w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 ${pkg.popular ? 'bg-yellow-500' : 'bg-yellow-500/20'}`}>
