@@ -2,10 +2,7 @@
   "name": "lopes2tech_website_v2",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "node": ">=20.0.0"
-  },
-  "scripts": {
+"scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
