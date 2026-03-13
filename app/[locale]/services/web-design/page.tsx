@@ -13,7 +13,7 @@ type PaymentPlan = "onetime" | "3months" | "6months" | "12months";
 const packageConfig = [
     { key: "starter",      price: 690,  popular: false, featureCount: 5 },
     { key: "professional", price: 1390, popular: true,  featureCount: 5 },
-    { key: "businessPro",  price: 2450, popular: false, featureCount: 5 },
+    { key: "businessPro",  price: 1990, popular: false, featureCount: 5 },
 ];
 
 const paymentPlanConfig: { id: PaymentPlan; multiplier: number; description?: string; icon: typeof CreditCard }[] = [

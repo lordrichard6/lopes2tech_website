@@ -33,15 +33,15 @@
     },
     "businessPro": {
       "name": "Business Pro",
-      "priceDisplay": "CHF 2,450",
+      "priceDisplay": "CHF 1,990",
       "description": "Für wachsende Unternehmen mit Bedarf an erweiterten Funktionen: CMS, Blog, Buchungssysteme oder Mehrsprachigkeit.",
       "target": "Etablierte KMUs",
       "features": {
-        "0": "Erweitertes CMS (Content Management System)",
-        "1": "Blog- oder Portfolio-Bereich",
-        "2": "Bereit für Mehrsprachigkeit",
-        "3": "Google Analytics Integration",
-        "4": "Priorisierter Support"
+        "0": "5 Kernseiten + bis zu 10 dedizierte Service-Seiten",
+        "1": "3 Sprachen inklusive (z.B. DE + EN + FR)",
+        "2": "Umfassendes SEO — 15-20 Keywords, Schema, Search Console",
+        "3": "Lead-Capture-System — Formular → CRM → 3-E-Mail-Nurture-Sequenz",
+        "4": "KI-Texte, Buchungs-Widget, WhatsApp, GBP-Setup inklusive"
       }
     },
     "landingPage": {

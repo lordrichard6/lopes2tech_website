@@ -50,7 +50,7 @@ export const packagesData: Package[] = [
     {
         key: "businessPro",
         name: "Packages.businessPro.name",
-        price: 2450,
+        price: 1990,
         priceDisplay: "Packages.businessPro.priceDisplay",
         description: "Packages.businessPro.description",
         target: "Packages.businessPro.target",

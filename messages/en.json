@@ -33,15 +33,15 @@
     },
     "businessPro": {
       "name": "Business Pro",
-      "priceDisplay": "CHF 2,450",
+      "priceDisplay": "CHF 1,990",
       "description": "For growing businesses needing advance features: CMS, blog, booking systems, or multi-language support.",
       "target": "Established SMEs",
       "features": {
-        "0": "Advanced CMS (Content Management System)",
-        "1": "Blog or Portfolio section",
-        "2": "Multi-language support ready",
-        "3": "Google Analytics integration",
-        "4": "Priority support"
+        "0": "5 core pages + up to 10 dedicated service pages",
+        "1": "3 languages included (e.g. EN + DE + FR)",
+        "2": "Comprehensive SEO — 15-20 keywords, schema, Search Console",
+        "3": "Lead capture system — form → CRM → 3-email nurture sequence",
+        "4": "AI copy, booking widget, WhatsApp, GBP setup included"
       }
     },
     "landingPage": {
