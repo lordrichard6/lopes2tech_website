@@ -18,18 +18,6 @@
     }
   },
   "Packages": {
-    "quickStart": {
-      "name": "Schnellstart",
-      "priceDisplay": "CHF 600",
-      "description": "Ultra-minimale Einzelseiten-Website, um schnell online zu gehen. Perfekt für knappes Budget.",
-      "target": "Budget-Startups / Schneller Start",
-      "features": {
-        "0": "Basis-Einzelseiten-Website",
-        "1": "Mobil-responsiv",
-        "2": "Kontaktinformationen-Anzeige",
-        "3": "Schnelle 3-5 Tage Lieferung"
-      }
-    },
     "starter": {
       "name": "Starter",
       "priceDisplay": "CHF 975",
@@ -1379,14 +1367,6 @@
       "12months": "12 Monate"
     },
     "packages": {
-      "quickStart": {
-        "name": "Quick Start",
-        "description": "Ultraminimale einseitige Website, um schnell online zu gehen",
-        "f1": "Einfache einseitige Website",
-        "f2": "Mobil-responsiv",
-        "f3": "Kontaktinformationen",
-        "f4": "Schnelle Lieferung in 3-5 Tagen"
-      },
       "starter": {
         "name": "Starter",
         "description": "Professionelle Grundlage für Ihre Online-Präsenz",
@@ -1781,7 +1761,7 @@
       },
       "q2": {
         "question": "Was ist in Ihren Website-Paketen enthalten?",
-        "answer": "Unsere Website-Pakete reichen von CHF 600 (Quick Start) bis CHF 2.450 (Business Pro). Alle Pakete beinhalten mobil-responsives Design, grundlegendes SEO und professionelles Hosting. Höhere Stufen umfassen Branding, erweitertes SEO, Automatisierung und CMS-Integration. Wir bieten auch flexible 3-12-monatige Zahlungspläne an.",
+        "answer": "Unsere Website-Pakete reichen von CHF 690 (Starter) bis CHF 2.450 (Business Pro). Alle Pakete beinhalten mobil-responsives Design, grundlegendes SEO und professionelles Hosting. Höhere Stufen umfassen Branding, erweitertes SEO, Automatisierung und CMS-Integration. Wir bieten auch flexible 3-12-monatige Zahlungspläne an.",
         "category": "webDesign"
       },
       "q3": {
@@ -1791,7 +1771,7 @@
       },
       "q4": {
         "question": "Wie lange dauert es, eine Website zu erstellen?",
-        "answer": "Quick Start-Websites (CHF 600) werden in 3-5 Tagen geliefert. Standard-Websites (Starter/Starter Plus) dauern 1-2 Wochen. Komplexere Projekte (Business Pro, individuelle Applikationen) dauern in der Regel 2-3 Wochen, je nach Funktionen und Komplexität.",
+        "answer": "Starter-Websites (CHF 690) werden in ca. 1 Woche geliefert. Starter Plus-Websites dauern 1-2 Wochen. Komplexere Projekte (Business Pro, individuelle Applikationen) dauern in der Regel 2-3 Wochen, je nach Funktionen und Komplexität.",
         "category": "webDesign"
       },
       "q5": {
