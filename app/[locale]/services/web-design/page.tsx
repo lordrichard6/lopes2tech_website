@@ -6,12 +6,12 @@ import { useTranslations } from "next-intl";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ServiceRequestDialog from "@/components/ServiceRequestDialog";
-import { Check, Star, ArrowRight, Zap, Palette, Code, CreditCard, Calendar } from "lucide-react";
+import { Check, Star, ArrowRight, Zap, Palette, Code, CreditCard, Calendar, Server, Rocket, AlertCircle } from "lucide-react";
 
 type PaymentPlan = "onetime" | "3months" | "6months" | "12months";
 
 const packageConfig = [
-    { key: "starter",     price: 840,  popular: false, featureCount: 5 },
+    { key: "starter",     price: 690,  popular: false, featureCount: 5 },
     { key: "starterPlus", price: 1275, popular: true,  featureCount: 5 },
     { key: "businessPro", price: 2450, popular: false, featureCount: 5 },
 ];
@@ -253,21 +253,106 @@ export default function WebDesignPage() {
                         })}
                     </div>
 
-                    {/* Retainer Note */}
+                    {/* ==================== HOSTING & SUPPORT PLANS ==================== */}
                     <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.45 }}
-                        className="mt-8 flex items-start gap-4 p-5 bg-cyan-500/5 border border-cyan-500/20 rounded-2xl backdrop-blur-sm"
+                        className="mt-20 text-center mb-12"
                     >
-                        <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-cyan-500/10 flex items-center justify-center">
-                            <Calendar className="w-5 h-5 text-cyan-400" />
+                        <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 text-sm font-semibold text-cyan-400 bg-cyan-400/10 border border-cyan-400/20 rounded-full backdrop-blur-sm">
+                            <Server className="w-4 h-4" />
+                            {t("hosting.badge")}
                         </div>
-                        <div>
-                            <p className="font-semibold text-cyan-400 text-sm mb-1">{t("retainerLabel")}</p>
-                            <p className="text-slate-400 text-sm leading-relaxed">{t("retainerDesc")}</p>
-                        </div>
+                        <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-4">
+                            {t("hosting.title")} <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-green-400">{t("hosting.titleHighlight")}</span>
+                        </h2>
+                        <p className="text-lg text-slate-400 max-w-2xl mx-auto">
+                            {t("hosting.intro")}
+                        </p>
                     </motion.div>
 
-                    <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5 }}
-                        className="mt-20 text-center p-8 bg-gradient-to-br from-cyan-500/10 to-purple-500/10 border border-white/10 rounded-3xl backdrop-blur-sm"
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                        {([
+                            { key: "basic", price: 39, popular: false, isDefault: true, featureCount: 5 },
+                            { key: "professional", price: 89, popular: true, isDefault: false, featureCount: 5 },
+                            { key: "enterprise", price: 169, popular: false, isDefault: false, featureCount: 5 },
+                        ]).map((pkg, index) => (
+                            <motion.div
+                                key={pkg.key}
+                                initial={{ opacity: 0, y: 30 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.5 + index * 0.1 }}
+                                className={`relative rounded-3xl p-8 border transition-all duration-500 flex flex-col ${
+                                    pkg.popular
+                                        ? 'bg-gradient-to-br from-cyan-500/20 to-green-500/20 border-cyan-500/30 shadow-[0_0_40px_rgba(6,182,212,0.2)]'
+                                        : 'bg-slate-900/50 border-white/10 hover:border-white/20'
+                                }`}
+                            >
+                                {pkg.popular && (
+                                    <div className="absolute -top-4 left-1/2 -translate-x-1/2">
+                                        <div className="flex items-center gap-1.5 px-4 py-1.5 bg-gradient-to-r from-cyan-500 to-green-500 rounded-full text-white text-sm font-bold shadow-lg">
+                                            <Rocket className="w-4 h-4" />
+                                            {t("hosting.recommended")}
+                                        </div>
+                                    </div>
+                                )}
+                                {pkg.isDefault && (
+                                    <div className="absolute -top-4 left-1/2 -translate-x-1/2">
+                                        <div className="flex items-center gap-1.5 px-4 py-1.5 bg-green-500/20 text-green-400 border border-green-500/30 rounded-full text-sm font-bold shadow-lg backdrop-blur-sm">
+                                            <Check className="w-4 h-4" />
+                                            {t("hosting.defaultPlan")}
+                                        </div>
+                                    </div>
+                                )}
+
+                                <div className="mb-6">
+                                    <h3 className="text-2xl font-bold text-white mb-2">{t(`hosting.plans.${pkg.key}.name`)}</h3>
+                                    <p className="text-slate-400 text-sm leading-relaxed">{t(`hosting.plans.${pkg.key}.description`)}</p>
+                                </div>
+
+                                <div className="mb-6">
+                                    <div className="flex items-baseline gap-1">
+                                        <span className="text-4xl font-extrabold text-white">CHF {pkg.price}</span>
+                                        <span className="text-slate-400">/mo</span>
+                                    </div>
+                                    <p className="text-sm text-slate-500 mt-1">{t("hosting.billedMonthly")}</p>
+                                </div>
+
+                                <ul className="space-y-3 mb-8 flex-1">
+                                    {Array.from({ length: pkg.featureCount }, (_, i) => (
+                                        <li key={i} className="flex items-start gap-3">
+                                            <div className={`mt-0.5 w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 ${pkg.popular ? 'bg-cyan-500' : 'bg-green-500/20'}`}>
+                                                <Check className={`w-3 h-3 ${pkg.popular ? 'text-white' : 'text-green-400'}`} />
+                                            </div>
+                                            <span className="text-slate-300 text-sm">{t(`hosting.plans.${pkg.key}.f${i + 1}`)}</span>
+                                        </li>
+                                    ))}
+                                </ul>
+
+                                <button
+                                    onClick={() => handleRequest(t(`hosting.plans.${pkg.key}.name`))}
+                                    className={`mt-auto w-full flex items-center justify-center gap-2 py-3 rounded-xl font-semibold transition-all duration-300 ${
+                                        pkg.popular
+                                            ? 'bg-gradient-to-r from-cyan-500 to-green-500 text-white shadow-[0_0_20px_rgba(6,182,212,0.3)] hover:shadow-[0_0_30px_rgba(6,182,212,0.5)] hover:-translate-y-0.5'
+                                            : 'bg-white/10 text-white hover:bg-white/20'
+                                    }`}
+                                >
+                                    {tCommon("getStarted")}
+                                    <ArrowRight className="w-4 h-4" />
+                                </button>
+                            </motion.div>
+                        ))}
+                    </div>
+
+                    {/* Installment Note */}
+                    <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.8 }}
+                        className="flex items-start gap-3 p-4 rounded-xl bg-amber-500/10 border border-amber-500/20 max-w-3xl mx-auto mb-20"
+                    >
+                        <AlertCircle className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                        <p className="text-sm text-amber-200/80">{t("hosting.installmentNote")}</p>
+                    </motion.div>
+
+                    {/* CTA */}
+                    <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.85 }}
+                        className="text-center p-8 bg-gradient-to-br from-cyan-500/10 to-purple-500/10 border border-white/10 rounded-3xl backdrop-blur-sm"
                     >
                         <h2 className="text-3xl font-bold text-white mb-3">{t("cta.title")}</h2>
                         <p className="text-slate-400 mb-6">{t("cta.description")}</p>

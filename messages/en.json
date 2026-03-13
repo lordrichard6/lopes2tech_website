@@ -102,7 +102,7 @@
       "6months": "6 Months",
       "12months": "12 Months",
       "monthly": "/mo",
-    "total": "Total",
+      "total": "Total",
       "disclaimer": "* Final price may vary based on project scope and complexity",
       "requestQuote": "Request Quote"
     },
@@ -1356,7 +1356,7 @@
     "badge": "Professional Web Design",
     "title": "Web Design",
     "titleHighlight": "for Zurich Businesses",
-    "description": "Fast, affordable, professional websites built with modern technology. From CHF 600 to get online quick, or full custom solutions from CHF 975.",
+    "description": "Fast, affordable, professional websites built with modern technology. Starting from CHF 690 with Google Business Profile and email setup included.",
     "pill1": "Fast Delivery (1-2 weeks)",
     "pill2": "Mobile-Responsive",
     "pill3": "SEO Optimized",
@@ -1369,12 +1369,12 @@
     "packages": {
       "starter": {
         "name": "Starter",
-        "description": "Professional foundation for your online presence",
-        "f1": "Single custom landing page",
-        "f2": "Mobile-responsive design",
-        "f3": "Basic SEO setup",
-        "f4": "Contact form",
-        "f5": "1 round of revisions"
+        "description": "Complete online presence for new businesses",
+        "f1": "Professional one-page website",
+        "f2": "Google Business Profile setup",
+        "f3": "Professional email setup",
+        "f4": "Mobile-responsive & SEO optimized",
+        "f5": "Contact form + basic analytics"
       },
       "starterPlus": {
         "name": "Starter Plus",
@@ -1395,7 +1395,7 @@
         "f5": "Priority support"
       }
     },
-        "retainerLabel": "Monthly Maintenance — CHF 39/month",
+    "retainerLabel": "Monthly Maintenance — CHF 39/month",
     "retainerDesc": "Keep your website updated, secure, and running smoothly for just CHF 39/month. Includes minor content updates, security patches, uptime monitoring, and priority email support.",
     "total": "Total",
     "months": "months",
@@ -1403,6 +1403,45 @@
       "title": "Ready to Launch Your Website?",
       "description": "Book a free consultation to discuss your project. Fast delivery, transparent pricing.",
       "button": "Get Your Website Quote"
+    },
+    "hosting": {
+      "badge": "Monthly Plans",
+      "title": "Hosting &",
+      "titleHighlight": "Support",
+      "intro": "Once your website is live, keep it fast, secure, and up-to-date with our managed hosting plans.",
+      "recommended": "Recommended",
+      "defaultPlan": "Default Plan",
+      "billedMonthly": "Billed monthly",
+      "installmentNote": "Note: If you are paying for development in installments, the hosting & support fee is in addition to your installment payments once your project is online and fully complete.",
+      "plans": {
+        "basic": {
+          "name": "Basic",
+          "description": "Essential hosting and support for your website.",
+          "f1": "Secure hosting on our platform",
+          "f2": "Up to 2 small changes per month",
+          "f3": "Max 30 minutes of work included",
+          "f4": "Monthly Google Analytics report",
+          "f5": "Email support"
+        },
+        "professional": {
+          "name": "Professional",
+          "description": "Enhanced support with priority response and more flexibility.",
+          "f1": "Everything in Basic",
+          "f2": "Up to 5 changes per month",
+          "f3": "Max 1 hour of work included",
+          "f4": "Priority email & chat support",
+          "f5": "Performance monitoring"
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "description": "Full-service support for businesses that need more.",
+          "f1": "Everything in Professional",
+          "f2": "Unlimited small changes",
+          "f3": "Max 2 hours of work included",
+          "f4": "Dedicated support contact",
+          "f5": "24/7 uptime monitoring"
+        }
+      }
     }
   },
   "SEOPage": {

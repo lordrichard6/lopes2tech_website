@@ -102,7 +102,7 @@
       "6months": "6 Monate",
       "12months": "12 Monate",
       "monthly": "/Monat",
-    "total": "Gesamt",
+      "total": "Gesamt",
       "disclaimer": "* Endpreis kann je nach Projektumfang variieren",
       "requestQuote": "Angebot anfordern"
     },
@@ -1356,7 +1356,7 @@
     "badge": "Professionelles Webdesign",
     "title": "Webdesign",
     "titleHighlight": "für Zürcher Unternehmen",
-    "description": "Schnelle, erschwingliche, professionelle Websites mit moderner Technologie. Ab CHF 600 für einen schnellen Online-Start oder individuelle Lösungen ab CHF 975.",
+    "description": "Schnelle, erschwingliche, professionelle Websites mit moderner Technologie. Ab CHF 690 inklusive Google Business Profile und E-Mail-Einrichtung.",
     "pill1": "Schnelle Lieferung (1-2 Wochen)",
     "pill2": "Mobil-responsiv",
     "pill3": "SEO-optimiert",
@@ -1369,12 +1369,12 @@
     "packages": {
       "starter": {
         "name": "Starter",
-        "description": "Professionelle Grundlage für Ihre Online-Präsenz",
-        "f1": "Individuelle Landing-Page",
-        "f2": "Mobil-responsives Design",
-        "f3": "Grundlegendes SEO-Setup",
-        "f4": "Kontaktformular",
-        "f5": "1 Überarbeitungsrunde"
+        "description": "Komplette Online-Präsenz für neue Unternehmen",
+        "f1": "Professionelle One-Page-Website",
+        "f2": "Google Business Profile Einrichtung",
+        "f3": "Professionelle E-Mail-Einrichtung",
+        "f4": "Mobil-responsiv & SEO-optimiert",
+        "f5": "Kontaktformular + Basis-Analytics"
       },
       "starterPlus": {
         "name": "Starter Plus",
@@ -1395,7 +1395,7 @@
         "f5": "Prioritäts-Support"
       }
     },
-        "retainerLabel": "Monatliche Wartung — CHF 39/Monat",
+    "retainerLabel": "Monatliche Wartung — CHF 39/Monat",
     "retainerDesc": "Halten Sie Ihre Website für nur CHF 39/Monat aktuell, sicher und reibungslos. Beinhaltet kleinere Inhaltsaktualisierungen, Sicherheits-Patches, Uptime-Überwachung und priorisierten E-Mail-Support.",
     "total": "Gesamt",
     "months": "Monate",
@@ -1403,6 +1403,45 @@
       "title": "Bereit, Ihre Website zu starten?",
       "description": "Buchen Sie eine kostenlose Beratung, um Ihr Projekt zu besprechen. Schnelle Lieferung, transparente Preise.",
       "button": "Ihr Website-Angebot erhalten"
+    },
+    "hosting": {
+      "badge": "Monatliche Pläne",
+      "title": "Hosting &",
+      "titleHighlight": "Support",
+      "intro": "Sobald Ihre Website online ist, halten wir sie schnell, sicher und aktuell mit unseren Hosting-Plänen.",
+      "recommended": "Empfohlen",
+      "defaultPlan": "Standardplan",
+      "billedMonthly": "Monatliche Abrechnung",
+      "installmentNote": "Hinweis: Wenn Sie die Entwicklung in Raten zahlen, kommen die Hosting- und Supportgebühren zu Ihren Ratenzahlungen hinzu, sobald Ihr Projekt online und vollständig abgeschlossen ist.",
+      "plans": {
+        "basic": {
+          "name": "Basic",
+          "description": "Essentielles Hosting und Support für Ihre Website.",
+          "f1": "Sicheres Hosting auf unserer Plattform",
+          "f2": "Bis zu 2 kleine Änderungen pro Monat",
+          "f3": "Max. 30 Minuten Arbeit inklusive",
+          "f4": "Monatlicher Google Analytics Bericht",
+          "f5": "E-Mail-Support"
+        },
+        "professional": {
+          "name": "Professional",
+          "description": "Erweiterter Support mit priorisierter Antwort und mehr Flexibilität.",
+          "f1": "Alles in Basic",
+          "f2": "Bis zu 5 Änderungen pro Monat",
+          "f3": "Max. 1 Stunde Arbeit inklusive",
+          "f4": "Priorisierter E-Mail- & Chat-Support",
+          "f5": "Leistungsüberwachung"
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "description": "Full-Service-Support für Unternehmen, die mehr brauchen.",
+          "f1": "Alles in Professional",
+          "f2": "Unbegrenzte kleine Änderungen",
+          "f3": "Max. 2 Stunden Arbeit inklusive",
+          "f4": "Dedizierter Support-Kontakt",
+          "f5": "24/7 Uptime-Überwachung"
+        }
+      }
     }
   },
   "SEOPage": {

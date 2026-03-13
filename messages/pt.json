@@ -102,7 +102,7 @@
       "6months": "6 Meses",
       "12months": "12 Meses",
       "monthly": "/mês",
-    "total": "Total",
+      "total": "Total",
       "disclaimer": "* O preço final pode variar com base no âmbito e complexidade do projeto",
       "requestQuote": "Pedir Orçamento"
     },
@@ -1356,7 +1356,7 @@
     "badge": "Web Design Profissional",
     "title": "Web Design",
     "titleHighlight": "para Empresas em Zurique",
-    "description": "Websites rápidos, acessíveis e profissionais desenvolvidos com tecnologia moderna. A partir de CHF 600 para estar online rapidamente, ou soluções completas personalizadas a partir de CHF 975.",
+    "description": "Websites rápidos, acessíveis e profissionais desenvolvidos com tecnologia moderna. A partir de CHF 690 com Google Business Profile e configuração de email incluídos.",
     "pill1": "Entrega Rápida (1-2 semanas)",
     "pill2": "Responsivo para Móvel",
     "pill3": "Otimizado para SEO",
@@ -1369,12 +1369,12 @@
     "packages": {
       "starter": {
         "name": "Starter",
-        "description": "Base profissional para a sua presença online",
-        "f1": "Landing page personalizada",
-        "f2": "Design responsivo para móvel",
-        "f3": "Configuração básica de SEO",
-        "f4": "Formulário de contacto",
-        "f5": "1 ronda de revisões"
+        "description": "Presença online completa para novos negócios",
+        "f1": "Website profissional de uma página",
+        "f2": "Configuração do Google Business Profile",
+        "f3": "Configuração de email profissional",
+        "f4": "Responsivo e otimizado para SEO",
+        "f5": "Formulário de contacto + analytics básico"
       },
       "starterPlus": {
         "name": "Starter Plus",
@@ -1395,7 +1395,7 @@
         "f5": "Suporte prioritário"
       }
     },
-        "retainerLabel": "Manutenção Mensal — CHF 39/mês",
+    "retainerLabel": "Manutenção Mensal — CHF 39/mês",
     "retainerDesc": "Mantenha o seu site atualizado, seguro e a funcionar sem problemas por apenas CHF 39/mês. Inclui pequenas atualizações de conteúdo, patches de segurança, monitorização de uptime e suporte prioritário por email.",
     "total": "Total",
     "months": "meses",
@@ -1403,6 +1403,45 @@
       "title": "Pronto para Lançar o Seu Website?",
       "description": "Reserve uma consulta gratuita para discutir o seu projeto. Entrega rápida, preços transparentes.",
       "button": "Obter Orçamento para Website"
+    },
+    "hosting": {
+      "badge": "Planos Mensais",
+      "title": "Hospedagem &",
+      "titleHighlight": "Suporte",
+      "intro": "Assim que o seu site estiver no ar, mantenha-o rápido, seguro e atualizado com os nossos planos de hospedagem gerida.",
+      "recommended": "Recomendado",
+      "defaultPlan": "Plano Padrão",
+      "billedMonthly": "Faturado mensalmente",
+      "installmentNote": "Nota: Se estiver a pagar o desenvolvimento em prestações, a taxa de hospedagem e suporte acresce aos pagamentos das prestações assim que o projeto estiver online e concluído.",
+      "plans": {
+        "basic": {
+          "name": "Básico",
+          "description": "Hospedagem e suporte essenciais para o seu website.",
+          "f1": "Hospedagem segura na nossa plataforma",
+          "f2": "Até 2 pequenas alterações por mês",
+          "f3": "Max 30 minutos de trabalho incluídos",
+          "f4": "Relatório mensal Google Analytics",
+          "f5": "Suporte por Email"
+        },
+        "professional": {
+          "name": "Profissional",
+          "description": "Suporte aprimorado com resposta prioritária e mais flexibilidade.",
+          "f1": "Tudo no Básico",
+          "f2": "Até 5 alterações por mês",
+          "f3": "Max 1 hora de trabalho incluída",
+          "f4": "Suporte prioritário por email e chat",
+          "f5": "Monitorização de desempenho"
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "description": "Suporte completo para empresas que precisam de mais.",
+          "f1": "Tudo no Profissional",
+          "f2": "Pequenas alterações ilimitadas",
+          "f3": "Max 2 horas de trabalho incluídos",
+          "f4": "Contacto de suporte dedicado",
+          "f5": "Monitorização de uptime 24/7"
+        }
+      }
     }
   },
   "SEOPage": {

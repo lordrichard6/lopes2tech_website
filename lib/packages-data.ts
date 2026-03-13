@@ -19,7 +19,7 @@ export const packagesData: Package[] = [
     {
         key: "starter",
         name: "Packages.starter.name",
-        price: 840,
+        price: 690,
         priceDisplay: "Packages.starter.priceDisplay",
         description: "Packages.starter.description",
         target: "Packages.starter.target",
@@ -136,7 +136,7 @@ export const builderServicesData: BuilderService[] = [
     {
         id: "website",
         name: "BuilderServices.website.name",
-        basePrice: 975,
+        basePrice: 690,
         description: "BuilderServices.website.description",
         icon: Monitor,
         color: "cyan",
