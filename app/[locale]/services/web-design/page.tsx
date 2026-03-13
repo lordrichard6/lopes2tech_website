@@ -344,10 +344,23 @@ export default function WebDesignPage() {
 
                     {/* Installment Note */}
                     <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.8 }}
-                        className="flex items-start gap-3 p-4 rounded-xl bg-amber-500/10 border border-amber-500/20 max-w-3xl mx-auto mb-20"
+                        className="flex items-start gap-3 p-4 rounded-xl bg-amber-500/10 border border-amber-500/20 max-w-3xl mx-auto mb-6"
                     >
                         <AlertCircle className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
                         <p className="text-sm text-amber-200/80">{t("hosting.installmentNote")}</p>
+                    </motion.div>
+
+                    {/* Mandatory Hosting Note */}
+                    <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.85 }}
+                        className="flex items-start gap-4 p-5 bg-cyan-500/5 border border-cyan-500/20 rounded-2xl backdrop-blur-sm max-w-3xl mx-auto mb-20"
+                    >
+                        <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-cyan-500/10 flex items-center justify-center">
+                            <Calendar className="w-5 h-5 text-cyan-400" />
+                        </div>
+                        <div>
+                            <p className="font-semibold text-cyan-400 text-sm mb-1">{t("retainerLabel")}</p>
+                            <p className="text-slate-400 text-sm leading-relaxed">{t("retainerDesc")}</p>
+                        </div>
                     </motion.div>
 
                     {/* CTA */}
