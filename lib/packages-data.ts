@@ -32,18 +32,18 @@ export const packagesData: Package[] = [
         ]
     },
     {
-        key: "starterPlus",
-        name: "Packages.starterPlus.name",
-        price: 1275,
-        priceDisplay: "Packages.starterPlus.priceDisplay",
-        description: "Packages.starterPlus.description",
-        target: "Packages.starterPlus.target",
+        key: "professional",
+        name: "Packages.professional.name",
+        price: 1390,
+        priceDisplay: "Packages.professional.priceDisplay",
+        description: "Packages.professional.description",
+        target: "Packages.professional.target",
         features: [
-            "Packages.starterPlus.features.0",
-            "Packages.starterPlus.features.1",
-            "Packages.starterPlus.features.2",
-            "Packages.starterPlus.features.3",
-            "Packages.starterPlus.features.4"
+            "Packages.professional.features.0",
+            "Packages.professional.features.1",
+            "Packages.professional.features.2",
+            "Packages.professional.features.3",
+            "Packages.professional.features.4"
         ],
         isPopular: true
     },

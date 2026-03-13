@@ -11,9 +11,9 @@ import { Check, Star, ArrowRight, Zap, Palette, Code, CreditCard, Calendar, Serv
 type PaymentPlan = "onetime" | "3months" | "6months" | "12months";
 
 const packageConfig = [
-    { key: "starter",     price: 690,  popular: false, featureCount: 5 },
-    { key: "starterPlus", price: 1275, popular: true,  featureCount: 5 },
-    { key: "businessPro", price: 2450, popular: false, featureCount: 5 },
+    { key: "starter",      price: 690,  popular: false, featureCount: 5 },
+    { key: "professional", price: 1390, popular: true,  featureCount: 5 },
+    { key: "businessPro",  price: 2450, popular: false, featureCount: 5 },
 ];
 
 const paymentPlanConfig: { id: PaymentPlan; multiplier: number; description?: string; icon: typeof CreditCard }[] = [

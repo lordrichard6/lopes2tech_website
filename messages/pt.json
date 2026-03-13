@@ -31,19 +31,6 @@
         "4": "1 ronda de revisões"
       }
     },
-    "starterPlus": {
-      "name": "Starter Plus",
-      "priceDisplay": "CHF 1,275",
-      "description": "O pacote completo de lançamento: um site profissional mais design de identidade da marca (logótipo, cores, tipografia).",
-      "target": "Novos negócios a precisar de branding",
-      "features": {
-        "0": "Site profissional de 5 páginas",
-        "1": "Identidade de marca completa (Logótipo, Cores, Fontes)",
-        "2": "Responsivo e rápido",
-        "3": "Configuração avançada de SEO",
-        "4": "Até 3 rondas de revisões"
-      }
-    },
     "businessPro": {
       "name": "Business Pro",
       "priceDisplay": "CHF 2,450",
@@ -223,6 +210,19 @@
         "name": "Gestão de Anúncios Pagos",
         "price": 199,
         "description": "Gerir anúncios de redes sociais (Meta/LinkedIn)"
+      }
+    },
+    "professional": {
+      "name": "Professional",
+      "priceDisplay": "CHF 1,390",
+      "description": "Website completo de 5 páginas com dois idiomas, SEO base e uma automação incluída.",
+      "target": "Solopreneurs estabelecidos a querer evoluir",
+      "features": {
+        "0": "Website de 5 páginas (Landing, Serviços, Sobre, FAQ, Contacto)",
+        "1": "2 idiomas incluídos (ex. PT + EN)",
+        "2": "Google Business Profile + SEO base",
+        "3": "1 automação incluída (reservas, captação ou avaliações)",
+        "4": "Email profissional + analytics"
       }
     }
   },
@@ -1376,15 +1376,6 @@
         "f4": "Responsivo e otimizado para SEO",
         "f5": "Formulário de contacto + analytics básico"
       },
-      "starterPlus": {
-        "name": "Starter Plus",
-        "description": "Pacote de lançamento completo com branding incluído",
-        "f1": "Website profissional de 5 páginas",
-        "f2": "Identidade de marca completa (Logo, Cores, Fontes)",
-        "f3": "Responsivo para móvel & rápido",
-        "f4": "Configuração avançada de SEO",
-        "f5": "Até 3 rondas de revisões"
-      },
       "businessPro": {
         "name": "Business Pro",
         "description": "Para empresas estabelecidas que necessitam de funcionalidades avançadas",
@@ -1393,6 +1384,15 @@
         "f3": "Suporte a múltiplos idiomas",
         "f4": "Integração com Google Analytics",
         "f5": "Suporte prioritário"
+      },
+      "professional": {
+        "name": "Professional",
+        "description": "Website de 5 páginas com 2 idiomas, SEO e automação incluída",
+        "f1": "Website de 5 páginas (Landing, Serviços, Sobre, FAQ, Contacto)",
+        "f2": "2 idiomas incluídos (ex. PT + EN)",
+        "f3": "Google Business Profile + SEO base",
+        "f4": "1 automação incluída (reservas, captação ou avaliações)",
+        "f5": "Email profissional + analytics"
       }
     },
     "retainerLabel": "Manutenção Mensal — CHF 39/mês",
@@ -1810,7 +1810,7 @@
       },
       "q4": {
         "question": "Quanto tempo demora a construir um website?",
-        "answer": "Websites Starter (CHF 690) são entregues em cerca de 1 semana. Websites Starter Plus demoram 1-2 semanas. Projetos mais complexos (Business Pro, aplicações personalizadas) normalmente demoram 2-3 semanas dependendo das funcionalidades e complexidade.",
+        "answer": "Websites Starter (CHF 690) são entregues em cerca de 1 semana. Websites Professional (5 páginas, 2 idiomas) demoram 2 semanas. Projetos mais complexos (Business Pro, aplicações personalizadas) normalmente demoram 2-3 semanas dependendo das funcionalidades e complexidade.",
         "category": "webDesign"
       },
       "q5": {
