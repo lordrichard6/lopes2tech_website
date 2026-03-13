@@ -20,15 +20,15 @@
   "Packages": {
     "starter": {
       "name": "Starter",
-      "priceDisplay": "CHF 975",
+      "priceDisplay": "CHF 690",
       "description": "Die perfekte Grundlage für Ihre Online-Präsenz—eine professionelle Einzelseiten-Website für Ihr Unternehmen.",
       "target": "Neues Geschäft mit bestehender Marke",
       "features": {
-        "0": "Einzelne benutzerdefinierte Landingpage",
-        "1": "Mobil-responsiv",
-        "2": "Grundlegendes SEO-Setup",
-        "3": "Kontaktformular",
-        "4": "1 Überarbeitungsrunde"
+        "0": "Einseitige Website mit KI-geschriebenem Text inklusive",
+        "1": "Kontaktformular + Buchungs-Widget + WhatsApp-Button",
+        "2": "Google Business Profile Einrichtung + Basis-SEO",
+        "3": "GA4 Analytics + Cookie-Zustimmung + SSL",
+        "4": "Lieferung in 4 Tagen (Express: 2 Tage +CHF 100)"
       }
     },
     "businessPro": {

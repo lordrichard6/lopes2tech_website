@@ -20,15 +20,15 @@
   "Packages": {
     "starter": {
       "name": "Starter",
-      "priceDisplay": "CHF 975",
+      "priceDisplay": "CHF 690",
       "description": "The perfect foundation for your online presence—a professional single-page website to establish your business.",
       "target": "New business with existing brand",
       "features": {
-        "0": "Single custom landing page",
-        "1": "Mobile-responsive",
-        "2": "Basic SEO setup",
-        "3": "Contact form",
-        "4": "1 round of revisions"
+        "0": "One-page website with AI-written copy included",
+        "1": "Contact form + booking widget + WhatsApp button",
+        "2": "Google Business Profile setup + basic SEO",
+        "3": "GA4 analytics + cookie consent + SSL",
+        "4": "4-day delivery (rush: 2 days +CHF 100)"
       }
     },
     "businessPro": {

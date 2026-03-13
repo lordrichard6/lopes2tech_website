@@ -20,15 +20,15 @@
   "Packages": {
     "starter": {
       "name": "Starter",
-      "priceDisplay": "CHF 975",
+      "priceDisplay": "CHF 690",
       "description": "A base perfeita para a sua presença online—um site profissional de página única para estabelecer o seu negócio.",
       "target": "Novos negócios com marca existente",
       "features": {
-        "0": "Landing page personalizada",
-        "1": "Responsivo para telemóveis",
-        "2": "Configuração básica de SEO",
-        "3": "Formulário de contacto",
-        "4": "1 ronda de revisões"
+        "0": "Site de uma página com copy escrito por IA incluído",
+        "1": "Formulário de contacto + widget de marcação + botão WhatsApp",
+        "2": "Configuração Google Business Profile + SEO básico",
+        "3": "Analytics GA4 + cookie consent + SSL",
+        "4": "Entrega em 4 dias (expresso: 2 dias +CHF 100)"
       }
     },
     "businessPro": {
