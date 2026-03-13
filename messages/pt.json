@@ -20,7 +20,7 @@
   "Packages": {
     "starter": {
       "name": "Starter",
-      "priceDisplay": "CHF 690",
+      "priceDisplay": "from CHF 690",
       "description": "A base perfeita para a sua presença online—um site profissional de página única para estabelecer o seu negócio.",
       "target": "Novos negócios com marca existente",
       "features": {
@@ -33,7 +33,7 @@
     },
     "businessPro": {
       "name": "Business Pro",
-      "priceDisplay": "CHF 1,990",
+      "priceDisplay": "from CHF 1,990",
       "description": "Para negócios em crescimento que necessitam de recursos avançados: CMS, blog, sistemas de reservas ou suporte multi-idioma.",
       "target": "PMEs estabelecidas",
       "features": {
@@ -1370,20 +1370,20 @@
       "starter": {
         "name": "Starter",
         "description": "Presença online completa para novos negócios",
-        "f1": "Website profissional de uma página",
-        "f2": "Configuração do Google Business Profile",
-        "f3": "Configuração de email profissional",
-        "f4": "Responsivo e otimizado para SEO",
-        "f5": "Formulário de contacto + analytics básico"
+        "f1": "Site de uma página com copy escrito por IA incluído",
+        "f2": "Formulário + widget de marcação + botão WhatsApp",
+        "f3": "Configuração Google Business Profile + SEO básico",
+        "f4": "Analytics GA4, cookie consent, SSL",
+        "f5": "Entrega em 4 dias (expresso: 2 dias +CHF 100)"
       },
       "businessPro": {
         "name": "Business Pro",
-        "description": "Para empresas estabelecidas que necessitam de funcionalidades avançadas",
-        "f1": "CMS avançado (Sistema de Gestão de Conteúdo)",
-        "f2": "Secção de Blog ou Portfólio",
-        "f3": "Suporte a múltiplos idiomas",
-        "f4": "Integração com Google Analytics",
-        "f5": "Suporte prioritário"
+        "description": "Até 15 páginas, 3+ idiomas, CMS avançado — criado para gerar leads",
+        "f1": "Até 15 páginas (5 principais + até 10 páginas de serviço)",
+        "f2": "3+ idiomas incluídos (ex: EN + PT + DE)",
+        "f3": "Blog ou portfólio com CMS avançado incluído",
+        "f4": "Captação de leads — formulário → CRM → sequência de 3 emails",
+        "f5": "SEO completo, copy IA, widget de marcação, WhatsApp, GBP"
       },
       "professional": {
         "name": "Professional",

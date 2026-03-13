@@ -20,7 +20,7 @@
   "Packages": {
     "starter": {
       "name": "Starter",
-      "priceDisplay": "CHF 690",
+      "priceDisplay": "from CHF 690",
       "description": "Die perfekte Grundlage für Ihre Online-Präsenz—eine professionelle Einzelseiten-Website für Ihr Unternehmen.",
       "target": "Neues Geschäft mit bestehender Marke",
       "features": {
@@ -33,7 +33,7 @@
     },
     "businessPro": {
       "name": "Business Pro",
-      "priceDisplay": "CHF 1,990",
+      "priceDisplay": "from CHF 1,990",
       "description": "Für wachsende Unternehmen mit Bedarf an erweiterten Funktionen: CMS, Blog, Buchungssysteme oder Mehrsprachigkeit.",
       "target": "Etablierte KMUs",
       "features": {
@@ -1370,20 +1370,20 @@
       "starter": {
         "name": "Starter",
         "description": "Komplette Online-Präsenz für neue Unternehmen",
-        "f1": "Professionelle One-Page-Website",
-        "f2": "Google Business Profile Einrichtung",
-        "f3": "Professionelle E-Mail-Einrichtung",
-        "f4": "Mobil-responsiv & SEO-optimiert",
-        "f5": "Kontaktformular + Basis-Analytics"
+        "f1": "Einseitige Website mit KI-geschriebenem Text inklusive",
+        "f2": "Kontaktformular + Buchungs-Widget + WhatsApp-Button",
+        "f3": "Google Business Profile Einrichtung + Basis-SEO",
+        "f4": "GA4 Analytics, Cookie-Zustimmung, SSL",
+        "f5": "Lieferung in 4 Tagen (Express: 2 Tage +CHF 100)"
       },
       "businessPro": {
         "name": "Business Pro",
-        "description": "Für etablierte Unternehmen mit erweiterten Anforderungen",
-        "f1": "Erweitertes CMS (Content-Management-System)",
-        "f2": "Blog- oder Portfolio-Bereich",
-        "f3": "Mehrsprachige Unterstützung",
-        "f4": "Google Analytics Integration",
-        "f5": "Prioritäts-Support"
+        "description": "Bis zu 15 Seiten, 3+ Sprachen, erweitertes CMS — für Lead-Generierung",
+        "f1": "Bis zu 15 Seiten (5 Kernseiten + bis zu 10 Service-Seiten)",
+        "f2": "3+ Sprachen inklusive (z.B. DE + EN + FR)",
+        "f3": "Blog oder Portfolio mit erweitertem CMS inklusive",
+        "f4": "Lead-Erfassung — Formular → CRM → 3-E-Mail-Nurture-Sequenz",
+        "f5": "Volles SEO, KI-Texte, Buchungs-Widget, WhatsApp, GBP"
       },
       "professional": {
         "name": "Professional",

@@ -20,7 +20,7 @@
   "Packages": {
     "starter": {
       "name": "Starter",
-      "priceDisplay": "CHF 690",
+      "priceDisplay": "from CHF 690",
       "description": "The perfect foundation for your online presence—a professional single-page website to establish your business.",
       "target": "New business with existing brand",
       "features": {
@@ -33,7 +33,7 @@
     },
     "businessPro": {
       "name": "Business Pro",
-      "priceDisplay": "CHF 1,990",
+      "priceDisplay": "from CHF 1,990",
       "description": "For growing businesses needing advance features: CMS, blog, booking systems, or multi-language support.",
       "target": "Established SMEs",
       "features": {
@@ -1370,20 +1370,20 @@
       "starter": {
         "name": "Starter",
         "description": "Complete online presence for new businesses",
-        "f1": "Professional one-page website",
-        "f2": "Google Business Profile setup",
-        "f3": "Professional email setup",
-        "f4": "Mobile-responsive & SEO optimized",
-        "f5": "Contact form + basic analytics"
+        "f1": "One-page website with AI-written copy included",
+        "f2": "Contact form + booking widget + WhatsApp button",
+        "f3": "Google Business Profile setup + basic SEO",
+        "f4": "GA4 analytics, cookie consent, SSL",
+        "f5": "4-day delivery (rush: 2 days +CHF 100)"
       },
       "businessPro": {
         "name": "Business Pro",
-        "description": "For established businesses needing advanced features",
-        "f1": "Advanced CMS (Content Management System)",
-        "f2": "Blog or Portfolio section",
-        "f3": "Multi-language support ready",
-        "f4": "Google Analytics integration",
-        "f5": "Priority support"
+        "description": "Up to 15 pages, 3+ languages, advanced CMS — built to generate leads",
+        "f1": "Up to 15 pages (5-page site + up to 10 service pages)",
+        "f2": "3+ languages included (e.g. EN + DE + FR)",
+        "f3": "Blog or portfolio with advanced CMS included",
+        "f4": "Lead capture — form → CRM → 3-email nurture sequence",
+        "f5": "Full SEO, AI copy, booking widget, WhatsApp, GBP"
       },
       "professional": {
         "name": "Professional",

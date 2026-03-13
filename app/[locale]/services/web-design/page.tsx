@@ -11,9 +11,9 @@ import { Check, Star, ArrowRight, Zap, Palette, Code, CreditCard, Calendar, Serv
 type PaymentPlan = "onetime" | "3months" | "6months" | "12months";
 
 const packageConfig = [
-    { key: "starter",      price: 690,  popular: false, featureCount: 5 },
-    { key: "professional", price: 1390, popular: true,  featureCount: 5 },
-    { key: "businessPro",  price: 1990, popular: false, featureCount: 5 },
+    { key: "starter",      price: 690,  popular: false, featureCount: 5, pricePrefix: "from " },
+    { key: "professional", price: 1390, popular: true,  featureCount: 5, pricePrefix: "" },
+    { key: "businessPro",  price: 1990, popular: false, featureCount: 5, pricePrefix: "from " },
 ];
 
 const paymentPlanConfig: { id: PaymentPlan; multiplier: number; description?: string; icon: typeof CreditCard }[] = [
@@ -216,7 +216,7 @@ export default function WebDesignPage() {
                                                     <>
                                                         <div className="flex items-baseline gap-1">
                                                             <span className="text-4xl font-extrabold text-white">
-                                                                CHF {priceInfo.total.toLocaleString()}
+                                                                {pkg.pricePrefix}CHF {priceInfo.total.toLocaleString()}
                                                             </span>
                                                         </div>
                                                         <p className="text-sm text-slate-500 mt-1">{tCommon("oneTimePayment")}</p>
