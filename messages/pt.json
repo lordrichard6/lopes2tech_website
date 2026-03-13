@@ -44,19 +44,6 @@
         "4": "Copy por IA, widget de marcação, WhatsApp, GBP incluídos"
       }
     },
-    "landingPage": {
-      "name": "Landing Page",
-      "priceDisplay": "CHF 475",
-      "description": "Página única de alta conversão desenhada para campanhas de marketing, lançamentos de produtos ou registos em eventos.",
-      "target": "Campanhas / lançamentos",
-      "features": {
-        "0": "Estrutura de alta conversão",
-        "1": "Pronto para testes A/B",
-        "2": "Velocidade de carregamento rápida",
-        "3": "Integração de captura de leads",
-        "4": "Configuração de análise"
-      }
-    },
     "logoOnly": {
       "name": "Apenas Logótipo",
       "priceDisplay": "CHF 299",

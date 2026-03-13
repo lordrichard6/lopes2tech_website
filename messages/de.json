@@ -44,19 +44,6 @@
         "4": "KI-Texte, Buchungs-Widget, WhatsApp, GBP-Setup inklusive"
       }
     },
-    "landingPage": {
-      "name": "Landing Page",
-      "priceDisplay": "CHF 475",
-      "description": "Hochkonvertierende Einzelseite für Marketingkampagnen, Produkteinführungen oder Event-Registrierungen.",
-      "target": "Kampagnen / Launches",
-      "features": {
-        "0": "Hochkonvertierende Struktur",
-        "1": "Bereit für A/B-Tests",
-        "2": "Schnelle Ladezeit",
-        "3": "Integration zur Lead-Erfassung",
-        "4": "Analytics-Setup"
-      }
-    },
     "logoOnly": {
       "name": "Nur Logo",
       "priceDisplay": "CHF 299",

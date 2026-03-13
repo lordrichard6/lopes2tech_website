@@ -63,21 +63,6 @@ export const packagesData: Package[] = [
         ]
     },
     {
-        key: "landingPage",
-        name: "Packages.landingPage.name",
-        price: 475,
-        priceDisplay: "Packages.landingPage.priceDisplay",
-        description: "Packages.landingPage.description",
-        target: "Packages.landingPage.target",
-        features: [
-            "Packages.landingPage.features.0",
-            "Packages.landingPage.features.1",
-            "Packages.landingPage.features.2",
-            "Packages.landingPage.features.3",
-            "Packages.landingPage.features.4"
-        ]
-    },
-    {
         key: "logoOnly",
         name: "Packages.logoOnly.name",
         price: 299,

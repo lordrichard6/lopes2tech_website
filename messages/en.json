@@ -44,19 +44,6 @@
         "4": "AI copy, booking widget, WhatsApp, GBP setup included"
       }
     },
-    "landingPage": {
-      "name": "Landing Page",
-      "priceDisplay": "CHF 475",
-      "description": "High-conversion single page designed for marketing campaigns, product launches, or event registrations.",
-      "target": "Campaigns / launches",
-      "features": {
-        "0": "High-conversion structure",
-        "1": "A/B testing ready",
-        "2": "Fast loading speed",
-        "3": "Lead capture form integration",
-        "4": "Analytics setup"
-      }
-    },
     "logoOnly": {
       "name": "Logo Only",
       "priceDisplay": "CHF 299",
