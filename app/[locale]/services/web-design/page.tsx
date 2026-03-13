@@ -11,8 +11,7 @@ import { Check, Star, ArrowRight, Zap, Palette, Code, CreditCard, Calendar } fro
 type PaymentPlan = "onetime" | "3months" | "6months" | "12months";
 
 const packageConfig = [
-    { key: "quickStart",  price: 600,  popular: false, featureCount: 4 },
-    { key: "starter",     price: 975,  popular: false, featureCount: 5 },
+    { key: "starter",     price: 840,  popular: false, featureCount: 5 },
     { key: "starterPlus", price: 1275, popular: true,  featureCount: 5 },
     { key: "businessPro", price: 2450, popular: false, featureCount: 5 },
 ];
@@ -163,7 +162,7 @@ export default function WebDesignPage() {
                     </motion.div>
 
                     {/* Packages */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
                         {packages.map((pkg, index) => {
                             const priceInfo = getAdjustedPrice(pkg.price);
                             return (

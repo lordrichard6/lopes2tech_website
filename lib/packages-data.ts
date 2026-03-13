@@ -17,23 +17,9 @@ export interface Package {
 
 export const packagesData: Package[] = [
     {
-        key: "quickStart",
-        name: "Packages.quickStart.name",
-        price: 600,
-        priceDisplay: "Packages.quickStart.priceDisplay",
-        description: "Packages.quickStart.description",
-        target: "Packages.quickStart.target",
-        features: [
-            "Packages.quickStart.features.0",
-            "Packages.quickStart.features.1",
-            "Packages.quickStart.features.2",
-            "Packages.quickStart.features.3"
-        ]
-    },
-    {
         key: "starter",
         name: "Packages.starter.name",
-        price: 975,
+        price: 840,
         priceDisplay: "Packages.starter.priceDisplay",
         description: "Packages.starter.description",
         target: "Packages.starter.target",
