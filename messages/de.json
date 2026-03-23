@@ -1113,7 +1113,8 @@
   "NotFoundPage": {
     "title": "Seite nicht gefunden",
     "description": "Die Seite, die Sie suchen, existiert nicht oder wurde verschoben.",
-    "backHome": "Zurück zur Startseite"
+    "backHome": "Zurück zur Startseite",
+    "contactUs": "Kontakt"
   },
   "PortfolioPage": {
     "meta": {
@@ -1361,7 +1362,7 @@
         "f2": "Kontaktformular + Buchungs-Widget + WhatsApp-Button",
         "f3": "Google Business Profile Einrichtung + Basis-SEO",
         "f4": "GA4 Analytics, Cookie-Zustimmung, SSL",
-        "f5": "Lieferung in 4 Tagen (Express: 2 Tage +CHF 100)"
+        "f5": "Lieferung in 4–5 Tagen (Express: 1 Tag +CHF 100)"
       },
       "businessPro": {
         "name": "Business Pro",
@@ -1429,6 +1430,22 @@
           "f5": "24/7 Uptime-Überwachung"
         }
       }
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "subtitle": "Webdesign in der Schweiz",
+      "q1": "Was kostet eine Website in der Schweiz?",
+      "a1": "Unsere Website-Pakete starten ab CHF 690 für eine One-Page-Website (Starter), CHF 1.390 für eine 5-seitige Professional-Website und CHF 1.990 für bis zu 15 Seiten mit 3+ Sprachen und CMS (Business Pro). Alle Pakete beinhalten SSL, mobiloptimiertes Design, Google Business Profile-Einrichtung und grundlegendes SEO.",
+      "q2": "Wie lange dauert die Erstellung einer Website?",
+      "a2": "Starter-Websites werden in 4–5 Tagen geliefert (Express-Option: 1 Tag für +CHF 100). Professional-Sites dauern ca. 2 Wochen. Business Pro mit CMS und mehrsprachigem Setup dauert typischerweise 2–3 Wochen.",
+      "q3": "Bauen Sie Websites auf Deutsch, Französisch und Englisch?",
+      "a3": "Ja! Mehrsprachige Websites sind unsere Spezialität. Das Professional-Paket beinhaltet 2 Sprachen (z.B. DE + EN), Business Pro beinhaltet 3+ Sprachen. Wir bedienen Schweizer Unternehmen auf Deutsch, Englisch, Französisch, Italienisch und Portugiesisch.",
+      "q4": "Ist SEO im Website-Preis inbegriffen?",
+      "a4": "Grundlegendes SEO ist in jedem Paket enthalten — Meta-Tags, Sitemap, Google Search Console-Einrichtung, Google Business Profile und schnelle Ladezeiten. Für laufende monatliche SEO-Verbesserungen bieten wir dedizierte SEO-Pakete an.",
+      "q5": "Kann ich meine Website nach dem Launch selbst bearbeiten?",
+      "a5": "Das Business Pro-Paket beinhaltet ein CMS (Content-Management-System), mit dem Sie Texte, Bilder und Blog-Beiträge selbst aktualisieren können. Für Starter und Professional übernehmen wir Aktualisierungen im Rahmen unserer monatlichen Hosting-Pläne (ab CHF 39/Monat).",
+      "q6": "Arbeiten Sie auch mit Schweizer Unternehmen ausserhalb von Zürich?",
+      "a6": "Absolut! Wir arbeiten mit Unternehmen aus der ganzen Schweiz — Basel, Bern, Genf, Lausanne, Luzern und mehr. Alle Projekte werden remote mit Video-Calls und schneller Online-Kommunikation abgewickelt."
     }
   },
   "SEOPage": {
@@ -1473,6 +1490,22 @@
       "title": "Bereit, höher zu ranken?",
       "description": "Buchen Sie eine kostenlose Beratung, um Ihre SEO-Strategie zu besprechen und in den Rankings aufzusteigen.",
       "button": "Ihre SEO-Strategie starten"
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "subtitle": "SEO-Dienste in der Schweiz",
+      "q1": "Wie lange dauert es, bis SEO in der Schweiz Ergebnisse zeigt?",
+      "a1": "Technische SEO-Verbesserungen (Core Web Vitals, Schema-Markup, Crawl-Fehler beheben) können in 2–8 Wochen Ergebnisse zeigen. Content- und Authority-Building braucht typischerweise 3–6 Monate für signifikante Ranking-Verbesserungen. Wir liefern monatliche Berichte.",
+      "q2": "Was ist technisches SEO und warum ist es wichtig?",
+      "a2": "Technisches SEO befasst sich damit, wie Suchmaschinen Ihre Website crawlen und indexieren — Seitengeschwindigkeit, Mobile-Usability, strukturierte Daten, Core Web Vitals und Crawl-Fehler beheben. Ohne eine solide technische Basis wird selbst guter Content nicht ranken.",
+      "q3": "Bieten Sie mehrsprachiges SEO für Deutsch, Französisch und Italienisch an?",
+      "a3": "Ja! Die vier Sprachregionen der Schweiz erfordern dediziertes mehrsprachiges SEO. Wir implementieren hreflang-Tags, lokalisierte Meta-Daten und sprachspezifische Keyword-Strategien für Deutsch, Französisch, Englisch, Italienisch und Portugiesisch.",
+      "q4": "Was ist Schema-Markup und wie hilft es?",
+      "a4": "Schema-Markup sind strukturierte Daten, die Google genau sagen, worum es auf Ihrer Seite geht. Es ermöglicht Rich Results in der Suche — Sternebewertungen, FAQs, Preise und Unternehmensinformationen — was die Klickrate deutlich verbessert.",
+      "q5": "Bieten Sie laufendes SEO oder einmalige Audits an?",
+      "a5": "Beides. Unser SEO-Audit (CHF 490) ist ein einmaliger Tiefencheck mit umsetzbaren Empfehlungen. Für laufende Verbesserungen bieten unsere SEO Starter (CHF 390/Monat) und SEO Growth (CHF 790/Monat) Pläne kontinuierliche Optimierung, Reporting und Keyword-Tracking.",
+      "q6": "Wie messen Sie SEO-Erfolg?",
+      "a6": "Wir tracken Keyword-Rankings, organischen Traffic, Core Web Vitals-Scores, Klickraten und Conversion-Events in Google Search Console und GA4. Sie erhalten einen monatlichen Performance-Bericht mit klaren Kennzahlen und nächsten Schritten."
     }
   },
   "AutomationPage": {
@@ -1516,6 +1549,22 @@
       "title": "Bereit zur Automatisierung?",
       "description": "Buchen Sie eine kostenlose Beratung, um zu identifizieren, welche Prozesse für maximale Wirkung automatisiert werden können.",
       "button": "Ihr Automatisierungs-Assessment erhalten"
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "subtitle": "Business-Automatisierung in der Schweiz",
+      "q1": "Welche Geschäftsprozesse können automatisiert werden?",
+      "a1": "Typische Automatisierungen umfassen: Lead-Erfassung → CRM → E-Mail-Follow-up-Sequenzen, Terminbuchung und -erinnerungen, Rechnungserstellung und Zahlungsverfolgung, Kunden-Onboarding-Flows und Social-Media-Planung. Wenn Sie es regelmässig tun, können wir es wahrscheinlich automatisieren.",
+      "q2": "Welche Tools verwenden Sie für Automatisierungen?",
+      "a2": "Wir setzen n8n, Make (ehemals Integromat), Zapier und benutzerdefinierte Python-Skripte ein. Für komplexe Geschäftslogik entwickeln wir individuelle APIs, die Ihre bestehenden Tools nahtlos miteinander verbinden.",
+      "q3": "Wie lange dauert die Einrichtung einer Automatisierung?",
+      "a3": "Einfache Workflows (2–3 Tools verbinden) können in 1–2 Tagen live gehen. Mehrstufige Automatisierungen mit Fehlerbehandlung und Monitoring dauern typischerweise 1–2 Wochen. Wir dokumentieren jede Automatisierung vollständig.",
+      "q4": "Funktioniert die Automatisierung mit meiner bestehenden Software?",
+      "a4": "Wir verbinden über 5.000 Apps, darunter Google Workspace, HubSpot, Salesforce, Pipedrive, Slack, WhatsApp Business, Calendly und die meisten in der Schweiz genutzten CRM/ERP-Systeme.",
+      "q5": "Welchen ROI kann ich von Automatisierung erwarten?",
+      "a5": "Die meisten Kunden sparen im ersten Monat 10–30 Stunden pro Monat an repetitiven Aufgaben. Ein typischer CHF 490 Automatisierungs-Workflow amortisiert sich innerhalb der ersten Woche — und spart danach jeden Monat weiter.",
+      "q6": "Schulen Sie mein Team für die erstellten Automatisierungen?",
+      "a6": "Ja! Jedes Paket beinhaltet vollständige Dokumentation und eine Schulungssitzung, damit Ihr Team die Workflows selbst überwachen, anpassen und erweitern kann. Wir bieten auch 30–60 Tage Post-Launch-Support."
     }
   },
   "AIPage": {
@@ -1559,6 +1608,22 @@
       "title": "Bereit für KI?",
       "description": "Buchen Sie eine kostenlose Beratung, um zu erkunden, wie KI Ihre Geschäftsprozesse transformieren kann.",
       "button": "Ihren KI-Agenten entwickeln"
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "subtitle": "KI-Integration in der Schweiz",
+      "q1": "Was ist ein KI-Chatbot und wie kann er meinem Unternehmen helfen?",
+      "a1": "Ein KI-Chatbot ist ein 24/7-Assistent, der auf Ihrem Unternehmenswissen trainiert wurde. Er beantwortet Kundenfragen, qualifiziert Leads, verwaltet Buchungen und eskaliert komplexe Anfragen — ohne menschliche Intervention. Schweizer Unternehmen nutzen sie, um Supportkosten zu senken.",
+      "q2": "Mit welchen KI-Modellen arbeiten Sie?",
+      "a2": "Wir arbeiten mit GPT-4o, Claude 3.5, Gemini und Open-Source-Modellen wie Llama. Für datenschutzsensible Schweizer/EU-Deployments können wir vollständig On-Premise- oder EU-gehostete Lösungen einrichten, bei denen keine Daten die Schweiz verlassen.",
+      "q3": "Was ist RAG und warum ist es wichtig?",
+      "a3": "RAG (Retrieval-Augmented Generation) ermöglicht es der KI, Ihre eigenen Dokumente, FAQs und Produktkataloge zu durchsuchen, bevor sie antwortet. Das bedeutet genaue, aktuelle Antworten basierend auf Ihrem Wissen — keine generischen KI-Halluzinationen.",
+      "q4": "Kann die KI mit meinen bestehenden Tools integriert werden?",
+      "a4": "Ja! Wir integrieren KI mit Ihrem CRM, Kalender, WhatsApp Business, E-Mail, Slack, Google Workspace und benutzerdefinierten APIs. Die KI kann aus Ihren bestehenden Systemen lesen und in sie schreiben.",
+      "q5": "Was kostet KI-Integration?",
+      "a5": "Unser KI-Chatbot-Paket startet bei CHF 890 (Chatbot + 50-seitige Wissensbasis + Website-Widget). KI-Workflow (Chatbot + E-Mail-Triage + CRM-Integration) kostet CHF 1.890. Custom KI mit Multi-Agent-Orchestrierung startet ab CHF 2.990.",
+      "q6": "Sind unsere Geschäftsdaten bei KI sicher?",
+      "a6": "Absolut. Für Schweizer und EU-Compliance können wir Lösungen deployen, die alle Daten in der Schweiz oder der EU halten. Wir verwenden Ihre Geschäftsdaten niemals zum Training allgemeiner KI-Modelle."
     }
   },
   "WebAppsPage": {
@@ -1604,6 +1669,22 @@
       "title": "Bereit zu entwickeln?",
       "description": "Buchen Sie eine kostenlose Beratung, um Ihr Projekt zu skizzieren und eine detaillierte Roadmap zu erhalten.",
       "button": "Ihr Projekt starten"
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "subtitle": "Web-App-Entwicklung in der Schweiz",
+      "q1": "Was ist der Unterschied zwischen einer Website und einer Web-App?",
+      "a1": "Eine Website ist primär informativ. Eine Web-App hat interaktive Funktionen: Benutzeranmeldung, Datenverwaltung, Zahlungen, rollenbasierte Zugriffssteuerung und komplexe Geschäftslogik. Beispiele: SaaS-Dashboards, Kundenportale, Buchungssysteme und interne Tools.",
+      "q2": "Wie lange dauert die Entwicklung einer Web-App?",
+      "a2": "Ein MVP kann in 4–6 Wochen live gehen. Eine Standard-Plattform mit Zahlungen, Mehrsprachigkeit und CI/CD dauert typischerweise 8–12 Wochen. Enterprise-Plattformen mit Custom-Integrationen und SLA dauern 12–20 Wochen.",
+      "q3": "Welchen Tech-Stack verwenden Sie?",
+      "a3": "Wir entwickeln mit Next.js, TypeScript, React, Supabase (PostgreSQL), Stripe und Vercel. Dieser bewährte Stack wird von führenden Unternehmen weltweit eingesetzt und ist ideal für schnelle, skalierbare Web-Apps.",
+      "q4": "Können Sie ein SaaS-Produkt für meine Geschäftsidee entwickeln?",
+      "a4": "Absolut! Wir sind auf SaaS-MVPs für Schweizer Gründer und Unternehmen spezialisiert. Wir helfen Ihnen, das Produkt zu skizzieren, die Kernfunktionen zu entwickeln und schnell zu launchen — damit Sie mit echten Nutzern validieren können.",
+      "q5": "Bieten Sie Post-Launch-Wartung an?",
+      "a5": "Ja. Unser Enterprise-Paket beinhaltet laufende Wartung. Für MVP und Standard bieten wir monatliche Retainer-Pläne ab CHF 490/Monat mit Sicherheits-Updates, Bug-Fixes, Performance-Monitoring und Priority-Support.",
+      "q6": "Wie handhaben Sie Datensicherheit und DSGVO-Compliance?",
+      "a6": "Wir folgen Security Best Practices: Row-Level-Security auf allen Datenbanken, sichere Authentifizierung (JWT/OAuth), verschlüsselte Daten im Transit und im Ruhezustand sowie DSGVO-konforme Datenverwaltung. Schweizer Unternehmen können auf EU/CH-Infrastruktur deployen."
     }
   },
   "EcommercePage": {
@@ -1648,6 +1729,22 @@
       "title": "Bereit, online zu verkaufen?",
       "description": "Buchen Sie eine kostenlose Beratung, um Ihren Online-Shop zu planen und mit dem Verkauf zu beginnen.",
       "button": "Ihren Shop starten"
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "subtitle": "E-Commerce in der Schweiz",
+      "q1": "Welche E-Commerce-Plattform ist für Schweizer Unternehmen am besten?",
+      "a1": "Das hängt von Ihren Bedürfnissen ab. Shopify eignet sich ideal für unkomplizierte Shops, die schnell launchen müssen. WooCommerce passt zu WordPress-Websites. Custom Next.js-Shops bieten maximale Performance und Flexibilität. Wir empfehlen die beste Option basierend auf Ihrem Volumen und Budget.",
+      "q2": "Unterstützen Sie TWINT und Schweizer Zahlungsmethoden?",
+      "a2": "Ja! Wir integrieren TWINT, PostFinance, Stripe und Standard-Kredit-/Debitkarten — die Zahlungsmethoden, die Schweizer Kunden bevorzugen. Unsere Growth- und Enterprise-Pakete beinhalten die vollständige Einrichtung des Schweizer Zahlungs-Gateways.",
+      "q3": "Können Sie einen mehrsprachigen Shop für den Schweizer Markt erstellen?",
+      "a3": "Absolut. Die Schweiz hat vier Amtssprachen. Wir bauen Shops auf Deutsch, Französisch, Italienisch und Englisch mit automatischer Währungsumschaltung (CHF, EUR, USD) und regionsspezifischen Preisen, falls benötigt.",
+      "q4": "Wird mein Online-Shop bei Google ranken?",
+      "a4": "Ja! Unsere Growth- und Enterprise-Pakete beinhalten fortgeschrittenes SEO — Produkt-Schema-Markup, optimierte Kategorie-Seiten, schnelle Ladezeiten und Sitemap-Konfiguration. Wir integrieren auch Google Shopping-Feeds.",
+      "q5": "Wie viele Produkte kann mein Shop verwalten?",
+      "a5": "Unser Starter Shop verwaltet bis zu 50 Produkte. Growth Shop ist unbegrenzt. Alle Pakete beinhalten Produkt-Import/Export-Tools und Bestandsverwaltung. Für hochvolumige Shops implementieren wir datenbankoptimierte Architekturen.",
+      "q6": "Welchen Support bieten Sie nach dem Launch des Shops?",
+      "a6": "In jedem Paket ist eine Schulung enthalten, damit Sie Ihren Shop selbst verwalten können. Wir bieten monatliche Wartungspläne für Sicherheits-Updates, Backups und kleine Änderungen. Unser Team steht auch für individuelle Feature-Erweiterungen zur Verfügung."
     }
   },
   "DigitalMarketingPage": {
@@ -1760,6 +1857,22 @@
       "title": "Bereit, Ihre digitale Präsenz zu stärken?",
       "description": "Buchen Sie eine kostenlose Beratung, um Ihre digitale Marketingstrategie zu besprechen",
       "button": "Ihre digitale Strategie starten"
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "subtitle": "Social-Media-Marketing in der Schweiz",
+      "q1": "Was kostet Social-Media-Management in der Schweiz?",
+      "a1": "Unser Digital Starter Plan kostet CHF 249/Monat (8 Beiträge/Monat, 1 Plattform). Digital Growth kostet CHF 399/Monat (12 Beiträge, 2 Plattformen, Stories). Digital Pro kostet CHF 579/Monat (16 Beiträge, 3 Plattformen, vollständiges Engagement-Management). Alle Pläne beinhalten KI-gestützte Content-Erstellung und monatliches Reporting.",
+      "q2": "Wie erstellen Sie Content ohne Fotoshooting?",
+      "a2": "Sie schicken uns Fotos von Ihrem Smartphone oder Unternehmen. Wir verbessern sie professionell mit KI-Tools — Hintergrundentfernung, Farbkorrektur, Branding-Overlays und Upscaling. Das hält die Kosten 60–70% günstiger als traditionelle Agenturen.",
+      "q3": "Welche Plattformen verwalten Sie?",
+      "a3": "Wir verwalten Instagram, Facebook, LinkedIn und Google Business Profile. Jeder Plan deckt 1–3 Plattformen ab. Zusätzliche Plattformen sind als Add-on für CHF 99/Monat pro Plattform verfügbar.",
+      "q4": "Können Sie auch bezahlte Werbekampagnen managen?",
+      "a4": "Ja! Wir verwalten Meta Ads (Facebook + Instagram) ab CHF 399/Monat und Google Ads ab CHF 449/Monat. Wir bieten auch ein kombiniertes Bundle für CHF 699/Monat an. Das Werbebudget wird separat direkt von Meta und Google abgerechnet.",
+      "q5": "Erstellen Sie Inhalte auf Deutsch und anderen Schweizer Sprachen?",
+      "a5": "Ja! Wir erstellen Content in jeder Sprache, die Ihre Zielgruppe spricht — Deutsch, Englisch, Französisch, Italienisch oder Portugiesisch. Besonders wertvoll für Schweizer Unternehmen, die mehrere Sprachregionen ansprechen.",
+      "q6": "Wie schnell können Sie mit unserem Social-Media-Management starten?",
+      "a6": "Wir können neue Kunden innerhalb von 1 Woche onboarden. Nach einem Kickoff-Call zum Verständnis Ihrer Marke, Zielgruppe und Ziele bereiten wir den ersten Monats-Content-Kalender zur Genehmigung vor — bevor wir etwas veröffentlichen."
     }
   },
   "FAQPage": {
@@ -1859,5 +1972,83 @@
   },
   "Layout": {
     "skipToContent": "Zum Hauptinhalt springen"
+  },
+  "ServiceMeta": {
+    "webDesign": {
+      "title": "Webdesign Zürich | Lopes2Tech",
+      "description": "Individuelle Websites für Schweizer KMU ab CHF 690. Schnell, SEO-optimiert, mobile-first in Next.js. Mit Google Business Profile und SSL inklusive. Agentur in Zürich.",
+      "ogTitle": "Webdesign Zürich | Lopes2Tech",
+      "ogDescription": "Individuelle Hochleistungs-Websites für Schweizer Unternehmen. SEO-bereit, mobile-first, konzipiert um Besucher in Kunden zu verwandeln. Ab CHF 690."
+    },
+    "seoDevelopment": {
+      "title": "SEO Agentur Zürich | Lopes2Tech",
+      "description": "Technisches SEO für Schweizer Unternehmen. Core Web Vitals, Schema-Markup, mehrsprachiges SEO und programmatisches SEO. Besser bei Google ranken. Standort Zürich.",
+      "ogTitle": "SEO Agentur Zürich | Lopes2Tech",
+      "ogDescription": "Technisches SEO für Schweizer Unternehmen — Core Web Vitals, Schema-Markup, mehrsprachiges SEO. Besser ranken und mehr qualifizierte Leads gewinnen."
+    },
+    "aiIntegration": {
+      "title": "KI-Integration Zürich | Lopes2Tech",
+      "description": "Individuelle KI-Chatbots und LLM-Integrationen für Schweizer Unternehmen. RAG-Wissensdatenbanken, GPT-4 & Claude APIs, Workflow-Automatisierung. Standort Zürich.",
+      "ogTitle": "KI-Integration Zürich | Lopes2Tech",
+      "ogDescription": "Maßgeschneiderte KI-Chatbots und LLM-Integrationen für Schweizer Unternehmen — Workflows automatisieren und Kundenerlebnisse mit RAG verbessern."
+    },
+    "businessAutomation": {
+      "title": "Prozessautomatisierung Zürich | Lopes2Tech",
+      "description": "Geschäftsprozessautomatisierung für Schweizer KMU. Repetitive Aufgaben mit n8n, Make und KI-Workflows eliminieren. Leads, Rechnungen und CRM automatisieren. Standort Zürich.",
+      "ogTitle": "Prozessautomatisierung Zürich | Lopes2Tech",
+      "ogDescription": "Individuelle Automatisierungs-Workflows für Schweizer Unternehmen — manuelle Aufgaben eliminieren und ohne zusätzliche Mitarbeiter skalieren."
+    },
+    "ecommerce": {
+      "title": "Online-Shop Schweiz | Lopes2Tech",
+      "description": "Individuelle Online-Shop-Entwicklung für Schweizer Unternehmen. TWINT, PostFinance & Stripe, mehrsprachiger Support und fortgeschrittenes SEO inklusive. Standort Zürich.",
+      "ogTitle": "Online-Shop Schweiz | Lopes2Tech",
+      "ogDescription": "Hochkonvertierende Online-Shops für Schweizer Unternehmen — TWINT & Stripe, mehrsprachig, schnell, sicher und bereit zum Wachsen."
+    },
+    "socialMediaMarketing": {
+      "title": "Social Media Marketing Zürich | Lopes2Tech",
+      "description": "KI-gestütztes Social-Media-Management für Schweizer Unternehmen ab CHF 249/Monat. Content-Erstellung, Meta Ads, Google Ads und Community-Management. Standort Zürich.",
+      "ogTitle": "Social Media Marketing Zürich | Lopes2Tech",
+      "ogDescription": "KI-gestütztes Social-Media- und Digitalmarketing für Schweizer Unternehmen. Content-Erstellung, Meta Ads und Google Ads — komplett für Sie verwaltet."
+    },
+    "webApps": {
+      "title": "Web-App-Entwicklung Zürich | Lopes2Tech",
+      "description": "Individuelle SaaS- und Web-App-Entwicklung für Schweizer Unternehmen. Kundenportale, Dashboards, Buchungssysteme und interne Tools in Next.js. Standort Zürich.",
+      "ogTitle": "Web-App-Entwicklung Zürich | Lopes2Tech",
+      "ogDescription": "Individuelle SaaS und Business-Apps für Schweizer Unternehmen — Portale, Dashboards und interne Tools skalierbar mit Next.js entwickelt."
+    }
+  },
+  "ServiceLinks": {
+    "heading": "Das könnte Sie auch interessieren",
+    "subtitle": "Ergänzende Dienstleistungen entdecken",
+    "services": {
+      "webDesign": {
+        "name": "Webdesign",
+        "description": "Massgeschneiderte Websites, die Besucher in Kunden verwandeln"
+      },
+      "seo": {
+        "name": "SEO",
+        "description": "Höhere Rankings in Schweizer Suchergebnissen"
+      },
+      "aiIntegration": {
+        "name": "KI-Integration",
+        "description": "Automatisierung mit intelligenten KI-Workflows"
+      },
+      "businessAutomation": {
+        "name": "Prozessautomatisierung",
+        "description": "Wiederkehrende Aufgaben eliminieren und skalieren"
+      },
+      "ecommerce": {
+        "name": "E-Commerce",
+        "description": "Ihren Schweizer Online-Shop lancieren"
+      },
+      "webApps": {
+        "name": "Web-Apps",
+        "description": "Massgeschneiderte Portale und SaaS-Plattformen"
+      },
+      "socialMedia": {
+        "name": "Social Media Marketing",
+        "description": "Ihre Marke auf sozialen Kanälen ausbauen"
+      }
+    }
   }
 }

@@ -7,21 +7,18 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ServiceRequestDialog from "@/components/ServiceRequestDialog";
 import { Check, Star, ArrowRight, Zap, Palette, Code, CreditCard, Calendar, Server, Rocket, AlertCircle } from "lucide-react";
+import ServiceFAQ from "@/components/ServiceFAQ";
+import ServiceBreadcrumb from "@/components/ServiceBreadcrumb";
+import RelatedServices from "@/components/RelatedServices";
 
-type PaymentPlan = "onetime" | "3months" | "6months" | "12months";
+import { webDesignPackages, paymentPlanConfig as paymentPlanData, type PaymentPlan } from "@/data/packages-data";
 
-const packageConfig = [
-    { key: "starter",      price: 690,  popular: false, featureCount: 5, pricePrefix: "from " },
-    { key: "professional", price: 1390, popular: true,  featureCount: 5, pricePrefix: "" },
-    { key: "businessPro",  price: 1990, popular: false, featureCount: 5, pricePrefix: "from " },
-];
+const packageConfig = webDesignPackages;
 
-const paymentPlanConfig: { id: PaymentPlan; multiplier: number; description?: string; icon: typeof CreditCard }[] = [
-    { id: "onetime",  multiplier: 1,    icon: CreditCard },
-    { id: "3months",  multiplier: 1.05, description: "+5%",  icon: Calendar },
-    { id: "6months",  multiplier: 1.10, description: "+10%", icon: Calendar },
-    { id: "12months", multiplier: 1.15, description: "+15%", icon: Calendar },
-];
+const paymentPlanConfig: { id: PaymentPlan; multiplier: number; description?: string; icon: typeof CreditCard }[] = paymentPlanData.map((p, i) => ({
+    ...p,
+    icon: i === 0 ? CreditCard : Calendar,
+}));
 
 export default function WebDesignPage() {
     const t = useTranslations("WebDesignPage");
@@ -81,6 +78,7 @@ export default function WebDesignPage() {
     return (
         <main className="min-h-screen bg-[#0f172a] relative">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+            <ServiceBreadcrumb serviceName={t("badge")} serviceSlug="web-design" />
 
             <Navbar />
 
@@ -378,6 +376,21 @@ export default function WebDesignPage() {
                     </motion.div>
                 </div>
             </section>
+
+            <ServiceFAQ
+                title={t("faq.title")}
+                subtitle={t("faq.subtitle")}
+                items={[
+                    { question: t("faq.q1"), answer: t("faq.a1") },
+                    { question: t("faq.q2"), answer: t("faq.a2") },
+                    { question: t("faq.q3"), answer: t("faq.a3") },
+                    { question: t("faq.q4"), answer: t("faq.a4") },
+                    { question: t("faq.q5"), answer: t("faq.a5") },
+                    { question: t("faq.q6"), answer: t("faq.a6") },
+                ]}
+            />
+
+            <RelatedServices currentSlug="web-design" />
 
             <Footer />
 

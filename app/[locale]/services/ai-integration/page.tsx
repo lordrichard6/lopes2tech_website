@@ -7,12 +7,12 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ServiceRequestDialog from "@/components/ServiceRequestDialog";
 import { Check, Star, ArrowRight, Bot, BookOpen, PhoneCall } from "lucide-react";
+import { aiIntegrationPackages } from "@/data/packages-data";
+import ServiceFAQ from "@/components/ServiceFAQ";
+import ServiceBreadcrumb from "@/components/ServiceBreadcrumb";
+import RelatedServices from "@/components/RelatedServices";
 
-const packageConfig = [
-    { key: "chatbot",  price: 1200, period: null, prefix: null,   popular: false },
-    { key: "workflow", price: 2000, period: null, prefix: null,   popular: true  },
-    { key: "custom",   price: 3500, period: null, prefix: "From", popular: false },
-];
+const packageConfig = aiIntegrationPackages;
 
 export default function AIIntegrationPage() {
     const t = useTranslations("AIPage");
@@ -63,6 +63,7 @@ export default function AIIntegrationPage() {
     return (
         <main className="min-h-screen bg-[#0f172a] relative">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+            <ServiceBreadcrumb serviceName={t("badge")} serviceSlug="ai-integration" />
 
             <Navbar />
 
@@ -184,6 +185,21 @@ export default function AIIntegrationPage() {
                     </motion.div>
                 </div>
             </section>
+
+            <ServiceFAQ
+                title={t("faq.title")}
+                subtitle={t("faq.subtitle")}
+                items={[
+                    { question: t("faq.q1"), answer: t("faq.a1") },
+                    { question: t("faq.q2"), answer: t("faq.a2") },
+                    { question: t("faq.q3"), answer: t("faq.a3") },
+                    { question: t("faq.q4"), answer: t("faq.a4") },
+                    { question: t("faq.q5"), answer: t("faq.a5") },
+                    { question: t("faq.q6"), answer: t("faq.a6") },
+                ]}
+            />
+
+            <RelatedServices currentSlug="ai-integration" />
 
             <Footer />
 

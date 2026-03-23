@@ -1113,7 +1113,8 @@
   "NotFoundPage": {
     "title": "Página não encontrada",
     "description": "A página que procura não existe ou foi movida.",
-    "backHome": "Voltar à página inicial"
+    "backHome": "Voltar à página inicial",
+    "contactUs": "Contacte-nos"
   },
   "PortfolioPage": {
     "meta": {
@@ -1361,7 +1362,7 @@
         "f2": "Formulário + widget de marcação + botão WhatsApp",
         "f3": "Configuração Google Business Profile + SEO básico",
         "f4": "Analytics GA4, cookie consent, SSL",
-        "f5": "Entrega em 4 dias (expresso: 2 dias +CHF 100)"
+        "f5": "Entrega em 4–5 dias (expresso: 1 dia +CHF 100)"
       },
       "businessPro": {
         "name": "Business Pro",
@@ -1429,6 +1430,22 @@
           "f5": "Monitorização de uptime 24/7"
         }
       }
+    },
+    "faq": {
+      "title": "Perguntas Frequentes",
+      "subtitle": "Web Design na Suíça",
+      "q1": "Quanto custa um website na Suíça?",
+      "a1": "Os nossos pacotes começam a partir de CHF 690 para um site de uma página (Starter), CHF 1.390 para um site de 5 páginas (Professional), e CHF 1.990 para até 15 páginas com 3+ idiomas e CMS (Business Pro). Todos os pacotes incluem SSL, design responsivo, configuração do Google Business Profile e SEO básico.",
+      "q2": "Quanto tempo demora a criar um website?",
+      "a2": "Os sites Starter são entregues em 4–5 dias (opção express: 1 dia por +CHF 100). Os sites Professional demoram cerca de 2 semanas. O Business Pro com CMS e configuração multilingue demora tipicamente 2–3 semanas.",
+      "q3": "Criam websites em alemão, francês e inglês?",
+      "a3": "Sim! Os websites multilingues são a nossa especialidade. O pacote Professional inclui 2 idiomas (ex: DE + EN), o Business Pro inclui 3+ idiomas. Servimos empresas suíças em alemão, inglês, francês, italiano e português.",
+      "q4": "O SEO está incluído no preço do website?",
+      "a4": "O SEO básico está incluído em todos os pacotes — meta tags, geração de sitemap, configuração do Google Search Console, Google Business Profile e velocidades de carregamento rápidas. Para melhorias mensais de SEO, oferecemos pacotes dedicados.",
+      "q5": "Posso atualizar o meu website eu mesmo após o lançamento?",
+      "a5": "O pacote Business Pro inclui um CMS para atualizar textos, imagens e posts do blog. Para Starter e Professional, tratamos das atualizações nos nossos planos mensais de hospedagem (a partir de CHF 39/mês).",
+      "q6": "Trabalham com empresas suíças fora de Zurique?",
+      "a6": "Claro! Trabalhamos com empresas de toda a Suíça — Basileia, Berna, Genebra, Lausana, Lucerna e mais. Todos os projetos são geridos remotamente com videochamadas e comunicação online rápida."
     }
   },
   "SEOPage": {
@@ -1473,6 +1490,22 @@
       "title": "Pronto para Classificar Mais Alto?",
       "description": "Reserve uma consulta gratuita para discutir a sua estratégia de SEO e começar a subir nos rankings.",
       "button": "Iniciar a Sua Estratégia de SEO"
+    },
+    "faq": {
+      "title": "Perguntas Frequentes",
+      "subtitle": "Serviços de SEO na Suíça",
+      "q1": "Quanto tempo demora o SEO a mostrar resultados na Suíça?",
+      "a1": "As melhorias técnicas de SEO (Core Web Vitals, Schema markup, correção de erros de rastreamento) podem mostrar resultados em 2–8 semanas. A construção de conteúdo e autoridade tipicamente demora 3–6 meses para mover significativamente os rankings. Fornecemos relatórios mensais.",
+      "q2": "O que é SEO técnico e por que é importante?",
+      "a2": "O SEO técnico foca-se em como os motores de busca rastreiam e indexam o seu site — velocidade da página, usabilidade mobile, dados estruturados, Core Web Vitals e correção de erros de rastreamento. Sem uma base técnica sólida, mesmo um bom conteúdo não rankeia.",
+      "q3": "Oferecem SEO multilingue para alemão, francês e italiano?",
+      "a3": "Sim! As quatro regiões linguísticas da Suíça requerem SEO multilingue dedicado. Implementamos tags hreflang, meta dados localizados e estratégias de keywords específicas por idioma para alemão, francês, inglês, italiano e português.",
+      "q4": "O que é Schema markup e como ajuda?",
+      "a4": "Schema markup são dados estruturados que dizem ao Google exatamente o que a sua página contém. Ativa rich results na pesquisa — classificações por estrelas, FAQs, preços e informações empresariais — o que melhora significativamente as taxas de clique.",
+      "q5": "Oferecem SEO contínuo ou auditorias pontuais?",
+      "a5": "Ambos. A nossa Auditoria SEO (CHF 490) é uma análise aprofundada única com recomendações acionáveis. Para melhorias contínuas, os nossos planos SEO Starter (CHF 390/mês) e SEO Growth (CHF 790/mês) incluem otimização contínua, relatórios e tracking de keywords.",
+      "q6": "Como medem o sucesso do SEO?",
+      "a6": "Rastreamos rankings de keywords, tráfego orgânico, pontuações de Core Web Vitals, taxas de clique e eventos de conversão no Google Search Console e GA4. Recebe um relatório de desempenho mensal com métricas claras e próximos passos."
     }
   },
   "AutomationPage": {
@@ -1516,6 +1549,22 @@
       "title": "Pronto para Automatizar?",
       "description": "Reserve uma consulta gratuita para identificar quais processos podem ser automatizados para máximo impacto.",
       "button": "Obter a Sua Avaliação de Automação"
+    },
+    "faq": {
+      "title": "Perguntas Frequentes",
+      "subtitle": "Automação de Negócios na Suíça",
+      "q1": "Que processos empresariais podem ser automatizados?",
+      "a1": "As automações mais comuns incluem: captura de leads → CRM → sequências de email follow-up, marcação de consultas e lembretes, geração de faturas e acompanhamento de pagamentos, fluxos de onboarding de clientes e agendamento de redes sociais.",
+      "q2": "Que ferramentas utilizam para automação?",
+      "a2": "Utilizamos n8n, Make (antigo Integromat), Zapier e scripts Python personalizados. Para lógica de negócio complexa, desenvolvemos APIs personalizadas que ligam as suas ferramentas existentes de forma integrada.",
+      "q3": "Quanto tempo demora a configurar uma automação?",
+      "a3": "Workflows simples (ligando 2–3 ferramentas) podem estar ativos em 1–2 dias. Automações multi-passo com tratamento de erros e monitorização demoram tipicamente 1–2 semanas. Documentamos cada automação completamente.",
+      "q4": "A automação funciona com o meu software existente?",
+      "a4": "Ligamos mais de 5.000 apps incluindo Google Workspace, HubSpot, Salesforce, Pipedrive, Slack, WhatsApp Business, Calendly e a maioria dos sistemas CRM/ERP utilizados na Suíça.",
+      "q5": "Que ROI posso esperar da automação?",
+      "a5": "A maioria dos clientes poupa 10–30 horas por mês em tarefas repetitivas no primeiro mês. Um workflow de automação típico de CHF 490 amortiza-se na primeira semana de utilização — e continua a poupar todos os meses.",
+      "q6": "Formam a minha equipa para as automações criadas?",
+      "a6": "Sim! Cada pacote inclui documentação completa e uma sessão de formação para que a sua equipa possa monitorizar, ajustar e expandir os workflows por conta própria. Também oferecemos 30–60 dias de suporte pós-lançamento."
     }
   },
   "AIPage": {
@@ -1559,6 +1608,22 @@
       "title": "Pronto para IA?",
       "description": "Reserve uma consulta gratuita para explorar como a IA pode transformar as suas operações de negócio.",
       "button": "Construir o Seu Agente de IA"
+    },
+    "faq": {
+      "title": "Perguntas Frequentes",
+      "subtitle": "Integração de IA na Suíça",
+      "q1": "O que é um chatbot de IA e como pode ajudar o meu negócio?",
+      "a1": "Um chatbot de IA é um assistente automático 24/7 treinado no conhecimento do seu negócio. Responde a perguntas de clientes, qualifica leads, gere reservas e escalona problemas complexos — sem intervenção humana. Empresas suíças usam-nos para reduzir custos de suporte.",
+      "q2": "Com que modelos de IA trabalham?",
+      "a2": "Trabalhamos com GPT-4o, Claude 3.5, Gemini e modelos open-source como Llama. Para implementações sensíveis à privacidade na Suíça/UE, podemos configurar soluções totalmente on-premise ou hospedadas na UE, sem dados saírem da Suíça.",
+      "q3": "O que é RAG e por que é importante?",
+      "a3": "RAG (Retrieval-Augmented Generation) permite à IA pesquisar nos seus próprios documentos, FAQs e catálogos antes de responder. Isto significa respostas precisas e atualizadas baseadas no seu conhecimento — não alucinações genéricas de IA.",
+      "q4": "A IA pode integrar com as minhas ferramentas existentes?",
+      "a4": "Sim! Integramos IA com o seu CRM, calendário, WhatsApp Business, email, Slack, Google Workspace e APIs personalizadas. A IA pode ler e escrever nos seus sistemas existentes.",
+      "q5": "Quanto custa a integração de IA?",
+      "a5": "O nosso pacote AI Chatbot começa em CHF 890 (chatbot + base de conhecimento de 50 páginas + widget para website). AI Workflow (chatbot + triagem de email + integração CRM) custa CHF 1.890. IA Personalizada com orquestração multi-agente começa a partir de CHF 2.990.",
+      "q6": "Os nossos dados empresariais estão seguros com IA?",
+      "a6": "Absolutamente. Para conformidade suíça e europeia, podemos implementar soluções que mantêm todos os dados na Suíça ou na UE. Nunca utilizamos os seus dados empresariais para treinar modelos de IA gerais."
     }
   },
   "WebAppsPage": {
@@ -1604,6 +1669,22 @@
       "title": "Pronto para Construir?",
       "description": "Reserve uma consulta gratuita para definir o âmbito do seu projeto e obter um roteiro detalhado.",
       "button": "Iniciar o Seu Projeto"
+    },
+    "faq": {
+      "title": "Perguntas Frequentes",
+      "subtitle": "Desenvolvimento de Web Apps na Suíça",
+      "q1": "Qual é a diferença entre um website e uma web app?",
+      "a1": "Um website é primariamente informativo. Uma web app tem funcionalidade interativa: autenticação de utilizadores, gestão de dados, pagamentos, controlo de acesso baseado em funções e lógica de negócio complexa. Exemplos: dashboards SaaS, portais de clientes, sistemas de reservas.",
+      "q2": "Quanto tempo demora a desenvolver uma web app?",
+      "a2": "Um MVP pode estar ativo em 4–6 semanas. Uma plataforma padrão com pagamentos, suporte multilingue e pipeline CI/CD demora tipicamente 8–12 semanas. Plataformas enterprise com integrações personalizadas e SLA demoram 12–20 semanas.",
+      "q3": "Que stack tecnológico utilizam?",
+      "a3": "Desenvolvemos com Next.js, TypeScript, React, Supabase (PostgreSQL), Stripe e Vercel. Esta stack testada em batalha é utilizada por empresas líderes em todo o mundo e é ideal para web apps rápidas, escaláveis e de fácil manutenção.",
+      "q4": "Podem desenvolver um produto SaaS para a minha ideia de negócio?",
+      "a4": "Absolutamente! Especializamo-nos em MVPs SaaS para fundadores e empresas suíças. Ajudamos a definir o produto, desenvolver as funcionalidades principais e lançar rapidamente — para poder validar com utilizadores reais antes de investir mais.",
+      "q5": "Oferecem manutenção após o lançamento?",
+      "a5": "Sim. O nosso pacote Enterprise inclui manutenção contínua. Para MVP e Standard, oferecemos planos de retainer mensais a partir de CHF 490/mês cobrindo atualizações de segurança, correção de bugs, monitorização de desempenho e suporte prioritário.",
+      "q6": "Como gerem a segurança dos dados e conformidade com RGPD?",
+      "a6": "Seguimos as melhores práticas de segurança: segurança a nível de linha em todas as bases de dados, autenticação segura (JWT/OAuth), dados encriptados em trânsito e em repouso, e gestão de dados conforme com o RGPD. Empresas suíças podem implementar em infraestrutura EU/CH."
     }
   },
   "EcommercePage": {
@@ -1648,6 +1729,22 @@
       "title": "Pronto para Vender Online?",
       "description": "Reserve uma consulta gratuita para planear a sua loja online e começar a vender.",
       "button": "Lançar a Sua Loja"
+    },
+    "faq": {
+      "title": "Perguntas Frequentes",
+      "subtitle": "E-Commerce na Suíça",
+      "q1": "Qual é a melhor plataforma de e-commerce para empresas suíças?",
+      "a1": "Depende das suas necessidades. Shopify é ideal para lojas simples que precisam de lançar rapidamente. WooCommerce adapta-se a websites já em WordPress. Lojas personalizadas em Next.js oferecem máxima performance e flexibilidade. Recomendaremos a melhor opção para o seu caso.",
+      "q2": "Suportam TWINT e métodos de pagamento suíços?",
+      "a2": "Sim! Integramos TWINT, PostFinance, Stripe e cartões de crédito/débito padrão — os métodos de pagamento preferidos pelos clientes suíços. Os nossos pacotes Growth e Enterprise incluem a configuração completa do gateway de pagamento suíço.",
+      "q3": "Podem criar uma loja multilingue para o mercado suíço?",
+      "a3": "Claro. A Suíça tem quatro línguas oficiais. Criamos lojas em alemão, francês, italiano e inglês com comutação automática de moeda (CHF, EUR, USD) e preços específicos por região, se necessário.",
+      "q4": "A minha loja online vai aparecer no Google?",
+      "a4": "Sim! Os nossos pacotes Growth e Enterprise incluem SEO avançado — Schema markup de produtos, páginas de categorias otimizadas, velocidades de carregamento rápidas e configuração de sitemap. Também integramos feeds do Google Shopping.",
+      "q5": "Quantos produtos pode a minha loja gerir?",
+      "a5": "A nossa Starter Shop suporta até 50 produtos. A Growth Shop é ilimitada. Todos os pacotes incluem ferramentas de importação/exportação de produtos e gestão de inventário. Para lojas de alto volume, implementamos arquiteturas otimizadas para base de dados.",
+      "q6": "Que suporte oferecem após o lançamento da loja?",
+      "a6": "A formação está incluída em todos os pacotes para que possa gerir a sua loja por conta própria. Oferecemos planos de manutenção mensal para atualizações de segurança, backups e pequenas alterações. A nossa equipa também está disponível para adições de funcionalidades personalizadas."
     }
   },
   "DigitalMarketingPage": {
@@ -1760,6 +1857,22 @@
       "title": "Pronto para Fazer Crescer a Sua Presença Digital?",
       "description": "Reserve uma consulta gratuita para discutir a sua estratégia de marketing digital",
       "button": "Iniciar a Sua Estratégia Digital"
+    },
+    "faq": {
+      "title": "Perguntas Frequentes",
+      "subtitle": "Marketing nas Redes Sociais na Suíça",
+      "q1": "Quanto custa a gestão de redes sociais na Suíça?",
+      "a1": "O nosso plano Digital Starter custa CHF 249/mês (8 publicações/mês, 1 plataforma). Digital Growth custa CHF 399/mês (12 publicações, 2 plataformas, Stories). Digital Pro custa CHF 579/mês (16 publicações, 3 plataformas, gestão de engagement completa). Todos os planos incluem criação de conteúdo com IA e relatórios mensais.",
+      "q2": "Como criam conteúdo sem uma sessão fotográfica?",
+      "a2": "Envia-nos fotos do seu smartphone ou empresa. Melhoramo-las profissionalmente com ferramentas de IA — remoção de fundo, correção de cor, overlays de marca e upscaling. Isto mantém os custos 60–70% mais baixos do que agências tradicionais.",
+      "q3": "Que plataformas gerem?",
+      "a3": "Gerimos Instagram, Facebook, LinkedIn e Google Business Profile. Cada plano cobre 1–3 plataformas. Plataformas adicionais estão disponíveis como add-on por CHF 99/mês cada. Recomendaremos as plataformas certas baseados em onde os seus clientes estão.",
+      "q4": "Também gerem campanhas de anúncios pagos?",
+      "a4": "Sim! Gerimos Meta Ads (Facebook + Instagram) a partir de CHF 399/mês e Google Ads a partir de CHF 449/mês. Também oferecemos um bundle combinado por CHF 699/mês. O orçamento de anúncios é faturado separadamente diretamente pela Meta e Google.",
+      "q5": "Criam legendas em alemão e outras línguas suíças?",
+      "a5": "Sim! Criamos conteúdo em qualquer língua que o seu público fale — alemão, inglês, francês, italiano ou português. Particularmente valioso para empresas suíças que servem múltiplas regiões linguísticas.",
+      "q6": "Com que rapidez podem começar a gerir as nossas redes sociais?",
+      "a6": "Podemos integrar novos clientes dentro de 1 semana. Após uma call de kickoff para entender a voz da sua marca, público-alvo e objetivos, preparamos o calendário de conteúdo do primeiro mês para aprovação — antes de publicar qualquer coisa."
     }
   },
   "FAQPage": {
@@ -1859,5 +1972,83 @@
   },
   "Layout": {
     "skipToContent": "Saltar para o conteúdo principal"
+  },
+  "ServiceMeta": {
+    "webDesign": {
+      "title": "Web Design Zurique | Lopes2Tech",
+      "description": "Websites personalizados para PME suíças a partir de CHF 690. Rápidos, otimizados para SEO e mobile-first em Next.js, com Google Business Profile e SSL incluídos. Sediado em Zurique.",
+      "ogTitle": "Web Design Zurique | Lopes2Tech",
+      "ogDescription": "Websites de alto desempenho para empresas suíças. Prontos para SEO, mobile-first, criados para converter visitantes em clientes. A partir de CHF 690."
+    },
+    "seoDevelopment": {
+      "title": "Agência SEO Zurique | Lopes2Tech",
+      "description": "SEO técnico para empresas suíças. Core Web Vitals, Schema markup, SEO multilingue e SEO programático. Melhore o ranking no Google. Sediado em Zurique.",
+      "ogTitle": "Agência SEO Zurique | Lopes2Tech",
+      "ogDescription": "SEO técnico para empresas suíças — Core Web Vitals, Schema markup, SEO multilingue. Melhore o ranking e atraia mais leads qualificados."
+    },
+    "aiIntegration": {
+      "title": "Integração de IA Zurique | Lopes2Tech",
+      "description": "Chatbots de IA e integrações LLM personalizados para empresas suíças. Bases de conhecimento RAG, APIs GPT-4 & Claude, automação de workflows. Sediado em Zurique.",
+      "ogTitle": "Integração de IA Zurique | Lopes2Tech",
+      "ogDescription": "Chatbots de IA e integrações LLM para empresas suíças — automatize workflows e melhore a experiência do cliente com RAG."
+    },
+    "businessAutomation": {
+      "title": "Automação de Negócios Zurique | Lopes2Tech",
+      "description": "Automação de processos para PME suíças. Elimine tarefas repetitivas com n8n, Make e workflows de IA. Automatize leads, faturas e CRM. Sediado em Zurique.",
+      "ogTitle": "Automação de Negócios Zurique | Lopes2Tech",
+      "ogDescription": "Workflows de automação personalizados para empresas suíças — elimine tarefas manuais e escale sem contratar pessoal adicional."
+    },
+    "ecommerce": {
+      "title": "E-Commerce Suíça | Lopes2Tech",
+      "description": "Desenvolvimento de lojas online para empresas suíças. TWINT, PostFinance & Stripe, suporte multilingue e SEO avançado incluídos. Sediado em Zurique.",
+      "ogTitle": "E-Commerce Suíça | Lopes2Tech",
+      "ogDescription": "Lojas online de alta conversão para empresas suíças — TWINT & Stripe, multilingue, rápidas, seguras e prontas para crescer."
+    },
+    "socialMediaMarketing": {
+      "title": "Marketing Redes Sociais Zurique | Lopes2Tech",
+      "description": "Gestão de redes sociais com IA para empresas suíças a partir de CHF 249/mês. Criação de conteúdo, Meta Ads, Google Ads e gestão de comunidade. Sediado em Zurique.",
+      "ogTitle": "Marketing Redes Sociais Zurique | Lopes2Tech",
+      "ogDescription": "Marketing digital com IA para empresas suíças. Criação de conteúdo, Meta Ads e Google Ads — tudo gerido para si."
+    },
+    "webApps": {
+      "title": "Desenvolvimento Web Apps Zurique | Lopes2Tech",
+      "description": "Desenvolvimento de SaaS e aplicações web para empresas suíças. Portais de clientes, dashboards, sistemas de reservas e ferramentas internas em Next.js. Sediado em Zurique.",
+      "ogTitle": "Desenvolvimento Web Apps Zurique | Lopes2Tech",
+      "ogDescription": "SaaS e aplicações empresariais para empresas suíças — portais, dashboards e ferramentas internas escaláveis com Next.js."
+    }
+  },
+  "ServiceLinks": {
+    "heading": "Pode Também Precisar",
+    "subtitle": "Explore serviços complementares",
+    "services": {
+      "webDesign": {
+        "name": "Web Design",
+        "description": "Sites personalizados que convertem visitantes em clientes"
+      },
+      "seo": {
+        "name": "SEO",
+        "description": "Apareça no topo dos resultados de pesquisa na Suíça"
+      },
+      "aiIntegration": {
+        "name": "Integração de IA",
+        "description": "Automatize com fluxos de trabalho inteligentes de IA"
+      },
+      "businessAutomation": {
+        "name": "Automação de Negócios",
+        "description": "Elimine tarefas repetitivas e escale o seu negócio"
+      },
+      "ecommerce": {
+        "name": "E-Commerce",
+        "description": "Lance a sua loja online na Suíça"
+      },
+      "webApps": {
+        "name": "Web Apps",
+        "description": "Portais personalizados e plataformas SaaS"
+      },
+      "socialMedia": {
+        "name": "Marketing em Redes Sociais",
+        "description": "Faça crescer a sua marca nas redes sociais"
+      }
+    }
   }
 }

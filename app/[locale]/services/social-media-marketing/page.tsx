@@ -7,24 +7,19 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ServiceRequestDialog from "@/components/ServiceRequestDialog";
 import { Check, Star, TrendingUp, Instagram, Facebook, Linkedin, Sparkles, ArrowRight, Zap, Search } from "lucide-react";
+import { socialMediaContentPackages, socialMediaAdPackages, socialMediaAddOns } from "@/data/packages-data";
+import ServiceFAQ from "@/components/ServiceFAQ";
+import ServiceBreadcrumb from "@/components/ServiceBreadcrumb";
+import RelatedServices from "@/components/RelatedServices";
 
-const contentPkgConfig = [
-    { key: "digitalStarter", price: 299, priceEUR: 209, popular: false },
-    { key: "digitalGrowth",  price: 399, priceEUR: 279, popular: true  },
-    { key: "digitalPro",     price: 649, priceEUR: 449, popular: false },
-];
+const contentPkgConfig = socialMediaContentPackages;
 
-const adPkgConfig = [
-    { key: "metaAds",    price: 349, priceEUR: 249, popular: false, icon: "meta"   },
-    { key: "googleAds",  price: 399, priceEUR: 279, popular: true,  icon: "google" },
-    { key: "bundle",     price: 649, priceEUR: 449, popular: false, icon: "bundle" },
-];
+const adPkgConfig = socialMediaAdPackages.map((pkg) => ({
+    ...pkg,
+    icon: pkg.key === "metaAds" ? "meta" : pkg.key === "googleAds" ? "google" : "bundle",
+}));
 
-const addOnConfig = [
-    { key: "extraPlatform", price: 99,  unit: "/mo"     },
-    { key: "extraReels",    price: 79,  unit: "each"    },
-    { key: "landingPage",   price: 299, unit: "one-off" },
-];
+const addOnConfig = socialMediaAddOns;
 
 export default function DigitalMarketingPage() {
     const t = useTranslations("DigitalMarketingPage");
@@ -114,6 +109,7 @@ export default function DigitalMarketingPage() {
     return (
         <main className="min-h-screen bg-[#0f172a] relative">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+            <ServiceBreadcrumb serviceName={t("badge")} serviceSlug="social-media-marketing" />
 
             <Navbar />
 
@@ -397,6 +393,21 @@ export default function DigitalMarketingPage() {
                     </motion.div>
                 </div>
             </section>
+
+            <ServiceFAQ
+                title={t("faq.title")}
+                subtitle={t("faq.subtitle")}
+                items={[
+                    { question: t("faq.q1"), answer: t("faq.a1") },
+                    { question: t("faq.q2"), answer: t("faq.a2") },
+                    { question: t("faq.q3"), answer: t("faq.a3") },
+                    { question: t("faq.q4"), answer: t("faq.a4") },
+                    { question: t("faq.q5"), answer: t("faq.a5") },
+                    { question: t("faq.q6"), answer: t("faq.a6") },
+                ]}
+            />
+
+            <RelatedServices currentSlug="social-media-marketing" />
 
             <Footer />
 

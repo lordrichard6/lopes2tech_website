@@ -1113,7 +1113,8 @@
   "NotFoundPage": {
     "title": "Page Not Found",
     "description": "The page you're looking for doesn't exist or has been moved.",
-    "backHome": "Back to Home"
+    "backHome": "Back to Home",
+    "contactUs": "Contact Us"
   },
   "PortfolioPage": {
     "meta": {
@@ -1361,7 +1362,7 @@
         "f2": "Contact form + booking widget + WhatsApp button",
         "f3": "Google Business Profile setup + basic SEO",
         "f4": "GA4 analytics, cookie consent, SSL",
-        "f5": "4-day delivery (rush: 2 days +CHF 100)"
+        "f5": "4–5 day delivery (rush: 1 day +CHF 100)"
       },
       "businessPro": {
         "name": "Business Pro",
@@ -1429,6 +1430,22 @@
           "f5": "24/7 uptime monitoring"
         }
       }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Web Design in Switzerland",
+      "q1": "How much does a website cost in Switzerland?",
+      "a1": "Our website packages start from CHF 690 for a one-page site (Starter), CHF 1,390 for a 5-page professional site (Professional), and CHF 1,990 for up to 15 pages with 3+ languages and CMS (Business Pro). All packages include SSL, mobile-responsive design, Google Business Profile setup, and basic SEO.",
+      "q2": "How long does it take to build a website?",
+      "a2": "Starter websites are delivered in 4–5 days (rush option: 1 day for +CHF 100). Professional sites take about 2 weeks. Business Pro with CMS and multilingual setup typically takes 2–3 weeks depending on content availability.",
+      "q3": "Do you build websites in German, French, and English?",
+      "a3": "Yes! Multilingual websites are our specialty. The Professional package includes 2 languages (e.g. DE + EN), and Business Pro includes 3+ languages. We serve Swiss businesses in German, English, French, Italian, and Portuguese.",
+      "q4": "Is SEO included in the website price?",
+      "a4": "Basic SEO is included in every package — meta tags, sitemap generation, Google Search Console setup, Google Business Profile, and fast loading speeds. For ongoing monthly SEO improvement, we offer dedicated SEO packages.",
+      "q5": "Can I update my website myself after launch?",
+      "a5": "The Business Pro package includes a CMS (Content Management System) so you can update text, images, and blog posts yourself. For Starter and Professional, we handle updates as part of our monthly hosting plans (from CHF 39/month).",
+      "q6": "Do you serve Swiss businesses outside Zurich?",
+      "a6": "Absolutely! We work with businesses across all of Switzerland — Basel, Bern, Geneva, Lausanne, Lucerne, and beyond. All projects are managed remotely with video calls and fast online communication."
     }
   },
   "SEOPage": {
@@ -1473,6 +1490,22 @@
       "title": "Ready to Rank Higher?",
       "description": "Book a free consultation to discuss your SEO strategy and start climbing the rankings.",
       "button": "Start Your SEO Strategy"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "SEO Services in Switzerland",
+      "q1": "How long does SEO take to show results in Switzerland?",
+      "a1": "Technical SEO improvements (Core Web Vitals, Schema markup, fixing crawl errors) can show results in 2–8 weeks. Content and authority building typically takes 3–6 months to meaningfully move rankings. We provide monthly reports so you always see progress.",
+      "q2": "What is technical SEO and why does it matter?",
+      "a2": "Technical SEO focuses on how search engines crawl and index your site — page speed, mobile usability, structured data, Core Web Vitals, and fixing crawl errors. Without a solid technical foundation, even great content won't rank.",
+      "q3": "Do you offer multilingual SEO for German, French, and Italian?",
+      "a3": "Yes! Switzerland's four language regions require dedicated multilingual SEO. We implement hreflang tags, localised meta data, and language-specific keyword strategies for German, French, English, Italian, and Portuguese.",
+      "q4": "What is Schema markup and how does it help?",
+      "a4": "Schema markup is structured data that tells Google exactly what your page is about. It enables rich results in search — star ratings, FAQs, prices, and business information — which significantly improves click-through rates.",
+      "q5": "Do you provide ongoing SEO or one-time audits?",
+      "a5": "Both. Our SEO Audit (CHF 490) is a one-time deep dive with actionable recommendations. For ongoing improvement, our SEO Starter (CHF 390/month) and SEO Growth (CHF 790/month) plans include continuous optimisation, reporting, and keyword tracking.",
+      "q6": "How do you measure SEO success?",
+      "a6": "We track keyword rankings, organic traffic, Core Web Vitals scores, click-through rates, and conversion events in Google Search Console and GA4. You get a monthly performance report with clear metrics and next steps."
     }
   },
   "AutomationPage": {
@@ -1516,6 +1549,22 @@
       "title": "Ready to Automate?",
       "description": "Book a free consultation to identify which processes can be automated for maximum impact.",
       "button": "Get Your Automation Assessment"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Business Automation in Switzerland",
+      "q1": "What business processes can be automated?",
+      "a1": "Common automations include: lead capture → CRM → email follow-up sequences, appointment booking and reminders, invoice generation and payment tracking, customer onboarding flows, review request campaigns, and social media scheduling. If you do it repeatedly, we can likely automate it.",
+      "q2": "What tools do you use for automation?",
+      "a2": "We use n8n, Make (formerly Integromat), Zapier, and custom Python scripts depending on your needs and budget. For complex business logic, we build custom APIs that tie your existing tools together seamlessly.",
+      "q3": "How long does it take to build an automation?",
+      "a3": "Simple workflows (connecting 2–3 tools) can be live within 1–2 days. Multi-step automations with error handling and monitoring typically take 1–2 weeks. We document every automation so your team can maintain it.",
+      "q4": "Will automation work with my existing software?",
+      "a4": "We connect over 5,000 apps including Google Workspace, HubSpot, Salesforce, Pipedrive, Slack, WhatsApp Business, Calendly, and most CRM/ERP systems used in Switzerland.",
+      "q5": "What ROI can I expect from automation?",
+      "a5": "Most clients save 10–30 hours per month on repetitive tasks within the first month. A typical CHF 490 automation workflow pays for itself within the first week of use — and keeps saving every month after.",
+      "q6": "Do you train my team on the automations you build?",
+      "a6": "Yes! Every package includes full documentation and a training session so your team can monitor, adjust, and extend the workflows themselves. We also offer 30–60 day post-launch support to catch any edge cases."
     }
   },
   "AIPage": {
@@ -1559,6 +1608,22 @@
       "title": "Ready for AI?",
       "description": "Book a free consultation to explore how AI can transform your business operations.",
       "button": "Build Your AI Agent"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "AI Integration in Switzerland",
+      "q1": "What is an AI chatbot and how can it help my business?",
+      "a1": "An AI chatbot is a 24/7 automated assistant trained on your business knowledge. It can answer customer questions, qualify leads, handle bookings, and escalate complex issues — all without human intervention. Swiss businesses use them to reduce support costs and respond faster.",
+      "q2": "What AI models do you work with?",
+      "a2": "We work with GPT-4o, Claude 3.5, Gemini, and open-source models like Llama depending on your requirements. For privacy-sensitive Swiss/EU deployments, we can set up fully on-premise or EU-hosted solutions with no data leaving Switzerland.",
+      "q3": "What is RAG and why does it matter?",
+      "a3": "RAG (Retrieval-Augmented Generation) lets the AI search through your own documents, FAQs, product catalogues, and knowledge base before answering. This means responses are accurate, up-to-date, and specific to your business — not generic AI hallucinations.",
+      "q4": "Can the AI integrate with my existing tools?",
+      "a4": "Yes! We integrate AI with your CRM, calendar, WhatsApp, email, Slack, Google Workspace, and custom APIs. The AI can read from and write to your existing systems — qualifying leads directly into HubSpot, for example.",
+      "q5": "How much does AI integration cost?",
+      "a5": "Our AI Chatbot package starts at CHF 890 (custom chatbot + 50-page knowledge base + website widget). AI Workflow (chatbot + email triage + CRM integration) is CHF 1,890. Custom AI with multi-agent orchestration starts from CHF 2,990.",
+      "q6": "Is our business data safe with AI?",
+      "a6": "Absolutely. For Swiss and EU compliance, we can deploy solutions that keep all data within Switzerland or the EU. We never use your business data to train general AI models, and we implement strict access controls and data encryption."
     }
   },
   "WebAppsPage": {
@@ -1604,6 +1669,22 @@
       "title": "Ready to Build?",
       "description": "Book a free consultation to scope your project and get a detailed roadmap.",
       "button": "Start Your Project"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Web App Development in Switzerland",
+      "q1": "What is the difference between a website and a web app?",
+      "a1": "A website is primarily informational. A web app has interactive functionality: user authentication, data management, payments, role-based access, and complex business logic. Examples include SaaS dashboards, client portals, booking systems, and internal tools.",
+      "q2": "How long does it take to build a web app?",
+      "a2": "An MVP can be live in 4–6 weeks. A standard platform with payments, multi-language support, and CI/CD pipeline typically takes 8–12 weeks. Enterprise platforms with custom integrations and SLA take 12–20 weeks. Timelines depend on scope and feature complexity.",
+      "q3": "What technology stack do you use?",
+      "a3": "We build with Next.js, TypeScript, React, Supabase (PostgreSQL), Stripe, and Vercel. This battle-tested stack is used by leading companies worldwide and is ideal for fast, scalable, maintainable web applications.",
+      "q4": "Can you build a SaaS product for my business idea?",
+      "a4": "Absolutely! We specialize in SaaS MVPs for Swiss founders and businesses. We help scope your product, build the core features, and launch fast — so you can validate with real users before investing further.",
+      "q5": "Do you offer post-launch maintenance?",
+      "a5": "Yes. Our Enterprise package includes ongoing maintenance. For MVP and Standard tiers, we offer monthly retainer plans starting at CHF 490/month covering security updates, bug fixes, performance monitoring, and priority support.",
+      "q6": "How do you handle data security and GDPR compliance?",
+      "a6": "We follow security best practices: row-level security on all databases, secure authentication (JWT/OAuth), encrypted data in transit and at rest, and GDPR-compliant data handling. Swiss businesses can deploy on EU/CH-based infrastructure."
     }
   },
   "EcommercePage": {
@@ -1648,6 +1729,22 @@
       "title": "Ready to Sell Online?",
       "description": "Book a free consultation to plan your online store and start selling.",
       "button": "Launch Your Store"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "E-Commerce in Switzerland",
+      "q1": "Which e-commerce platform is best for Swiss businesses?",
+      "a1": "It depends on your needs. Shopify is ideal for straightforward stores that need to launch fast. WooCommerce suits businesses already on WordPress. Custom Next.js stores offer maximum performance and flexibility. We'll recommend the best fit based on your volume, customisation needs, and budget.",
+      "q2": "Do you support TWINT and Swiss payment methods?",
+      "a2": "Yes! We integrate TWINT, PostFinance, Stripe, and standard credit/debit cards — the payment methods Swiss customers prefer. Our Growth and Enterprise packages include full Swiss payment gateway setup.",
+      "q3": "Can you build a multilingual store for the Swiss market?",
+      "a3": "Absolutely. Switzerland has four official languages. We build stores in German, French, Italian, and English with automatic currency switching (CHF, EUR, USD) and region-specific pricing if needed.",
+      "q4": "Will my online store rank on Google?",
+      "a4": "Yes! Our Growth and Enterprise packages include advanced SEO — product Schema markup, optimised category and collection pages, fast loading speeds, and sitemap configuration. We also integrate Google Shopping feeds.",
+      "q5": "How many products can my store handle?",
+      "a5": "Our Starter Shop handles up to 50 products. Growth Shop is unlimited. All packages include product import/export tools and inventory management. For high-volume stores, we can implement database-optimised architectures.",
+      "q6": "What support do you offer after the store launches?",
+      "a6": "Training is included in every package so you can manage your store yourself. We offer monthly maintenance plans for security updates, backups, and small changes. Our team is also available for custom feature additions as your business grows."
     }
   },
   "DigitalMarketingPage": {
@@ -1760,6 +1857,22 @@
       "title": "Ready to Grow Your Digital Presence?",
       "description": "Book a free consultation to discuss your digital marketing strategy",
       "button": "Start Your Digital Strategy"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Social Media Marketing in Switzerland",
+      "q1": "How much does social media management cost in Switzerland?",
+      "a1": "Our Digital Starter plan is CHF 249/month (8 posts/month, 1 platform). Digital Growth is CHF 399/month (12 posts, 2 platforms, Stories). Digital Pro is CHF 579/month (16 posts, 3 platforms, full engagement management). All plans include AI-assisted content creation and monthly reporting.",
+      "q2": "How do you create content without a photoshoot?",
+      "a2": "You send us photos from your phone or business. We professionally enhance them using AI tools — background removal, colour correction, branding overlays, and upscaling. This keeps costs 60–70% lower than traditional agencies while delivering professional results.",
+      "q3": "Which platforms do you manage?",
+      "a3": "We manage Instagram, Facebook, LinkedIn, and Google Business Profile. Each plan covers 1–3 platforms. Additional platforms are available as add-ons for CHF 99/month each. We'll recommend the right platforms based on where your customers spend time.",
+      "q4": "Can you also run paid ad campaigns?",
+      "a4": "Yes! We manage Meta Ads (Facebook + Instagram) from CHF 399/month and Google Ads from CHF 449/month. We also offer a combined bundle at CHF 699/month. Ad spend is billed separately directly by Meta and Google.",
+      "q5": "Do you write captions in German and other Swiss languages?",
+      "a5": "Yes! We create content in any language your audience speaks — German, English, French, Italian, or Portuguese. This is especially valuable for Swiss businesses serving multiple language regions.",
+      "q6": "How quickly can you start managing our social media?",
+      "a6": "We can onboard new clients within 1 week. After a kickoff call to understand your brand voice, target audience, and goals, we prepare your first month's content calendar for your approval before publishing anything."
     }
   },
   "FAQPage": {
@@ -1859,5 +1972,83 @@
   },
   "Layout": {
     "skipToContent": "Skip to main content"
+  },
+  "ServiceMeta": {
+    "webDesign": {
+      "title": "Web Design Zurich | Lopes2Tech",
+      "description": "Custom websites for Swiss SMEs from CHF 690. Fast, SEO-optimised, mobile-first sites built in Next.js with Google Business Profile setup and SSL included. Based in Zurich.",
+      "ogTitle": "Web Design Zurich | Lopes2Tech",
+      "ogDescription": "Custom, high-performance websites for Swiss businesses. SEO-ready, mobile-first, built to convert visitors into clients. Starting from CHF 690."
+    },
+    "seoDevelopment": {
+      "title": "SEO Agency Zurich | Lopes2Tech",
+      "description": "Technical SEO for Swiss businesses. Core Web Vitals optimisation, Schema markup, multilingual SEO, and programmatic SEO. Rank higher on Google. Based in Zurich.",
+      "ogTitle": "SEO Agency Zurich | Lopes2Tech",
+      "ogDescription": "Technical SEO for Swiss businesses — Core Web Vitals, Schema markup, multilingual SEO. Rank higher on Google and attract qualified leads."
+    },
+    "aiIntegration": {
+      "title": "AI Integration Zurich | Lopes2Tech",
+      "description": "Custom AI chatbots and LLM integrations for Swiss businesses. RAG knowledge bases, GPT-4 & Claude API integrations, workflow automation. Based in Zurich, Switzerland.",
+      "ogTitle": "AI Integration Zurich | Lopes2Tech",
+      "ogDescription": "Custom AI chatbots and LLM integrations for Swiss businesses — automate workflows and deliver smarter customer experiences with RAG."
+    },
+    "businessAutomation": {
+      "title": "Business Automation Zurich | Lopes2Tech",
+      "description": "Business process automation for Swiss SMEs. Eliminate repetitive tasks with n8n, Make, and AI-powered workflows. Automate leads, invoices, and CRM. Based in Zurich.",
+      "ogTitle": "Business Automation Zurich | Lopes2Tech",
+      "ogDescription": "Custom automation workflows for Swiss businesses — eliminate manual tasks and scale operations without hiring additional staff."
+    },
+    "ecommerce": {
+      "title": "E-Commerce Switzerland | Lopes2Tech",
+      "description": "Custom online store development for Swiss businesses. TWINT, PostFinance & Stripe payments, multilingual support, and advanced SEO built in. Based in Zurich.",
+      "ogTitle": "E-Commerce Switzerland | Lopes2Tech",
+      "ogDescription": "High-converting online stores for Swiss businesses — TWINT & Stripe payments, multilingual, fast, secure, and built to grow."
+    },
+    "socialMediaMarketing": {
+      "title": "Social Media Marketing Zurich | Lopes2Tech",
+      "description": "AI-powered social media management for Swiss businesses from CHF 249/month. Content creation, Meta Ads, Google Ads, and community management. Based in Zurich.",
+      "ogTitle": "Social Media Marketing Zurich | Lopes2Tech",
+      "ogDescription": "AI-powered social media and digital marketing for Swiss businesses. Content creation, Meta Ads, and Google Ads — all managed for you."
+    },
+    "webApps": {
+      "title": "Web App Development Zurich | Lopes2Tech",
+      "description": "Custom SaaS and web application development for Swiss businesses. Client portals, dashboards, booking systems, and internal tools in Next.js. Based in Zurich.",
+      "ogTitle": "Web App Development Zurich | Lopes2Tech",
+      "ogDescription": "Custom SaaS and business web applications for Swiss companies — portals, dashboards, and internal tools built to scale with Next.js."
+    }
+  },
+  "ServiceLinks": {
+    "heading": "You Might Also Need",
+    "subtitle": "Explore complementary services",
+    "services": {
+      "webDesign": {
+        "name": "Web Design",
+        "description": "Custom websites built to convert visitors into clients"
+      },
+      "seo": {
+        "name": "SEO",
+        "description": "Rank higher in Swiss search results"
+      },
+      "aiIntegration": {
+        "name": "AI Integration",
+        "description": "Automate with intelligent AI-powered workflows"
+      },
+      "businessAutomation": {
+        "name": "Business Automation",
+        "description": "Eliminate repetitive tasks and scale operations"
+      },
+      "ecommerce": {
+        "name": "E-Commerce",
+        "description": "Launch your Swiss online store"
+      },
+      "webApps": {
+        "name": "Web Apps",
+        "description": "Custom portals and SaaS platforms"
+      },
+      "socialMedia": {
+        "name": "Social Media Marketing",
+        "description": "Grow your brand across social channels"
+      }
+    }
   }
 }

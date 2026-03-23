@@ -9,11 +9,48 @@ import CTA from "@/components/CTA";
 import { Linkedin, Twitter, Instagram, FileText } from "lucide-react";
 import { useTranslations } from "next-intl";
 
+const personSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Paulo Lopes Reizinho",
+    "givenName": "Paulo",
+    "familyName": "Lopes Reizinho",
+    "jobTitle": "Founder & Full-Stack Developer",
+    "worksFor": {
+        "@type": "Organization",
+        "name": "Lopes2Tech",
+        "url": "https://lopes2tech.ch",
+    },
+    "url": "https://lopes2tech.ch/en/about",
+    "image": "https://lopes2tech.ch/founder.jpg",
+    "sameAs": [
+        "https://www.linkedin.com/in/pauloreizinho/",
+        "https://x.com/paulo_reizinho4",
+        "https://www.instagram.com/paulo_reizinho/",
+        "https://medium.com/@paulolopesreizinho",
+    ],
+    "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Zurich",
+        "addressCountry": "CH",
+    },
+    "knowsAbout": [
+        "Web Design",
+        "SEO",
+        "AI Integration",
+        "Business Automation",
+        "Next.js",
+        "TypeScript",
+        "React",
+    ],
+};
+
 export default function AboutPage() {
     const t = useTranslations('AboutPage');
 
     return (
         <main className="min-h-screen bg-[#0f172a]">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }} />
             <Navbar />
 
             {/* Small Hero Section */}
@@ -23,12 +60,12 @@ export default function AboutPage() {
                     <motion.div
                         animate={{ y: [0, -30, 0], x: [0, 20, 0] }}
                         transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
-                        className="absolute top-[10%] left-[5%] w-[300px] h-[300px] rounded-full bg-cyan-400 blur-[100px] opacity-30 mix-blend-screen"
+                        className="absolute top-[10%] left-[5%] w-[300px] h-[300px] rounded-full bg-cyan-400 blur-[80px] opacity-30 mix-blend-screen"
                     />
                     <motion.div
                         animate={{ y: [0, 30, 0], x: [0, -20, 0] }}
                         transition={{ duration: 15, repeat: Infinity, ease: "easeInOut", delay: 7 }}
-                        className="absolute top-[20%] right-[10%] w-[250px] h-[250px] rounded-full bg-purple-500 blur-[100px] opacity-30 mix-blend-screen"
+                        className="absolute top-[20%] right-[10%] w-[250px] h-[250px] rounded-full bg-purple-500 blur-[80px] opacity-30 mix-blend-screen"
                     />
                 </div>
 
