@@ -8,6 +8,7 @@ import Process from "@/components/Process";
 import CTA from "@/components/CTA";
 import Testimonials from "@/components/Testimonials";
 import Footer from "@/components/Footer";
+import ErrorBoundary from "@/components/ErrorBoundary";
 
 const BASE_URL = "https://lopes2tech.ch";
 
@@ -33,9 +34,13 @@ export default function Home() {
     <main className="min-h-screen">
       <Navbar />
       <Hero />
-      <FeaturedProjects />
+      <ErrorBoundary>
+        <FeaturedProjects />
+      </ErrorBoundary>
       <Services />
-      <Portfolio />
+      <ErrorBoundary>
+        <Portfolio />
+      </ErrorBoundary>
       <Process />
       <Testimonials />
       <CTA />

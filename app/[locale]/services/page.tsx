@@ -42,8 +42,8 @@ export default function ServicesPage() {
             <section className="relative pt-32 pb-20 overflow-hidden z-10">
                 {/* Floating Circles */}
                 <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                    <div className="absolute top-[10%] left-[-5%] w-[400px] h-[400px] rounded-full bg-cyan-500/10 blur-[120px]" />
-                    <div className="absolute bottom-[20%] right-[5%] w-[400px] h-[400px] rounded-full bg-purple-500/10 blur-[120px]" />
+                    <div className="absolute top-[10%] left-[-5%] w-[400px] h-[400px] rounded-full bg-cyan-500/10 blur-[80px]" />
+                    <div className="absolute bottom-[20%] right-[5%] w-[400px] h-[400px] rounded-full bg-purple-500/10 blur-[80px]" />
                 </div>
 
                 <div className="relative z-10 max-w-7xl mx-auto px-6">

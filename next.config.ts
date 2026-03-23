@@ -4,6 +4,8 @@ import createNextIntlPlugin from 'next-intl/plugin';
 const withNextIntl = createNextIntlPlugin('./i18n.ts');
 
 const nextConfig: NextConfig = {
+  // React Compiler is stable as of Next.js 15 / React 19.
+  // If you encounter unexpected rendering bugs, disable this first for diagnosis.
   reactCompiler: true,
   compress: true, // Enable gzip/brotli compression
 

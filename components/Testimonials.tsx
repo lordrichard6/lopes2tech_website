@@ -13,8 +13,8 @@ export default function Testimonials() {
         <section className="relative py-24 overflow-hidden bg-[#0f172a]">
             {/* Background */}
             <div className="absolute inset-0 pointer-events-none">
-                <div className="absolute top-[20%] right-[-5%] w-[300px] h-[300px] rounded-full bg-purple-500/10 blur-[100px]" />
-                <div className="absolute bottom-[10%] left-[-5%] w-[300px] h-[300px] rounded-full bg-cyan-500/10 blur-[100px]" />
+                <div className="absolute top-[20%] right-[-5%] w-[300px] h-[300px] rounded-full bg-purple-500/10 blur-[80px]" />
+                <div className="absolute bottom-[10%] left-[-5%] w-[300px] h-[300px] rounded-full bg-cyan-500/10 blur-[80px]" />
             </div>
 
             <div className="relative z-10 max-w-7xl mx-auto px-6">

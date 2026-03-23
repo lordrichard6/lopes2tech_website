@@ -8,6 +8,7 @@ const envSchema = z.object({
 
     // Analytics (optional)
     NEXT_PUBLIC_CLARITY_PROJECT_ID: z.string().optional(),
+    NEXT_PUBLIC_GA_MEASUREMENT_ID: z.string().optional(),
 
     // Platform API (optional)
     NEXT_PUBLIC_PLATFORM_URL: z.string().url().optional(),
@@ -26,6 +27,16 @@ if (!parseResult.success) {
         .map((issue) => `  - ${issue.path.join(".")}: ${issue.message}`)
         .join("\n");
     console.warn(`⚠️  Environment variable issues:\n${formatted}`);
+}
+
+// Warn in development if critical vars are missing
+if (process.env.NODE_ENV === "development") {
+    if (!process.env.RESEND_API_KEY) {
+        console.warn("⚠️  RESEND_API_KEY is not set — contact form emails will not be sent.");
+    }
+    if (!process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID) {
+        console.warn("⚠️  NEXT_PUBLIC_GA_MEASUREMENT_ID is not set — Google Analytics will not track.");
+    }
 }
 
 export const env = parseResult.success ? parseResult.data : (process.env as unknown as z.infer<typeof envSchema>);

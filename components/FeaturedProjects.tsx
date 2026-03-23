@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/navigation";
 import { X, Check, ExternalLink } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslations } from "next-intl";
@@ -298,8 +298,8 @@ export default function FeaturedProjects() {
             <section className="relative py-24 bg-[#f3f0e7] overflow-hidden">
                 {/* Ambient glow blobs */}
                 <div className="absolute inset-0 pointer-events-none">
-                    <div className="absolute top-[-60px] left-[8%] w-[420px] h-[420px] rounded-full bg-amber-300/10 blur-[100px]" />
-                    <div className="absolute bottom-[-40px] right-[6%] w-[360px] h-[360px] rounded-full bg-cyan-300/10 blur-[100px]" />
+                    <div className="absolute top-[-60px] left-[8%] w-[420px] h-[420px] rounded-full bg-amber-300/10 blur-[80px]" />
+                    <div className="absolute bottom-[-40px] right-[6%] w-[360px] h-[360px] rounded-full bg-cyan-300/10 blur-[80px]" />
                 </div>
 
                 <div className="relative z-10 max-w-[1200px] mx-auto px-6">

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 
 const BASE_URL = "https://lopes2tech.ch";
 
@@ -6,16 +7,17 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   const path = "/services/seo-development";
   const canonical = `${BASE_URL}/${locale}${path}`;
+  const t = await getTranslations({ locale, namespace: "ServiceMeta.seoDevelopment" });
   return {
-    title: "SEO Development | Lopes2Tech - Technical SEO for Swiss Businesses",
-    description: "Technical SEO and content optimization for Swiss companies. Rank higher on Google with structured data, Core Web Vitals optimization, and multilingual SEO. Based in Zurich.",
+    title: t("title"),
+    description: t("description"),
     alternates: {
       canonical,
       languages: { "x-default": `${BASE_URL}/en${path}`, en: `${BASE_URL}/en${path}`, de: `${BASE_URL}/de${path}`, pt: `${BASE_URL}/pt${path}` },
     },
     openGraph: {
-      title: "SEO Development | Lopes2Tech",
-      description: "Technical SEO and content optimization to help Swiss businesses rank higher and attract more qualified leads.",
+      title: t("ogTitle"),
+      description: t("ogDescription"),
       url: canonical,
     },
   };

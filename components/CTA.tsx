@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Link from "next/link";
+import { Link } from "@/navigation";
 import { ArrowRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { trackCTAClick } from "@/lib/analytics";
@@ -28,12 +28,12 @@ export default function CTA() {
                 <motion.div
                     animate={{ y: [0, -30, 0] }}
                     transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-                    className="absolute -top-[100px] left-[10%] w-[400px] h-[400px] rounded-full bg-cyan-400 blur-[80px] opacity-40 mix-blend-screen"
+                    className="absolute -top-[100px] left-[10%] w-[400px] h-[400px] rounded-full bg-cyan-400 blur-[60px] opacity-40 mix-blend-screen"
                 />
                 <motion.div
                     animate={{ y: [0, 30, 0] }}
                     transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 5 }}
-                    className="absolute -bottom-[150px] right-[10%] w-[500px] h-[500px] rounded-full bg-purple-500 blur-[80px] opacity-40 mix-blend-screen"
+                    className="absolute -bottom-[150px] right-[10%] w-[500px] h-[500px] rounded-full bg-purple-500 blur-[60px] opacity-40 mix-blend-screen"
                 />
             </div>
 

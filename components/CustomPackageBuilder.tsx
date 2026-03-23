@@ -3,7 +3,6 @@
 import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Check, Plus, Minus, Sparkles, Calculator, ArrowRight, Settings2, CreditCard, Server } from "lucide-react";
-import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { builderServicesData, builderColorMap, type BuilderService, type AddOn } from "@/lib/packages-data";
 import ServiceRequestDialog from "./ServiceRequestDialog";

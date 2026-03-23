@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Check, Star, ArrowRight, Package, CreditCard, Calendar, Server, Headphones, Rocket, AlertCircle, TrendingUp, Megaphone } from "lucide-react";
-import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { packagesData } from "@/lib/packages-data";
 import ServiceRequestDialog from "./ServiceRequestDialog";
@@ -22,7 +21,7 @@ const socialMediaPackages = [
     {
         key: "starter",
         name: "Packages.socialMedia.starter.name",
-        price: 249,
+        price: 299,
         description: "Packages.socialMedia.starter.description",
         features: [
             "Packages.socialMedia.starter.features.0",
@@ -52,7 +51,7 @@ const socialMediaPackages = [
     {
         key: "pro",
         name: "Packages.socialMedia.pro.name",
-        price: 579,
+        price: 649,
         description: "Packages.socialMedia.pro.description",
         features: [
             "Packages.socialMedia.pro.features.0",

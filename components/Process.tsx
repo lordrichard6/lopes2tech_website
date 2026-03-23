@@ -86,7 +86,7 @@ export default function Process() {
 
                 {/* The Curve SVG - Spanning Full Width */}
                 <div className="absolute top-0 left-0 w-full h-full">
-                    <svg className="w-full h-full overflow-visible" preserveAspectRatio="none" viewBox="0 0 1440 400">
+                    <svg className="w-full h-full overflow-visible" aria-hidden="true" preserveAspectRatio="none" viewBox="0 0 1440 400">
                         <defs>
                             <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
                                 <stop offset="0%" stopColor="#22d3ee" />

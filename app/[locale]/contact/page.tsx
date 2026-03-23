@@ -21,6 +21,7 @@ export default function ContactPage() {
     });
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
+    const [submitError, setSubmitError] = useState<string>('');
     const [errors, setErrors] = useState<Record<string, string>>({});
 
     const validateForm = () => {
@@ -56,7 +57,9 @@ export default function ContactPage() {
 
             if (!result.success) {
                 console.error("Server Action Error:", result.error);
-                throw new Error(result.error || 'Failed to submit contact form');
+                setSubmitError(result.error || t('form.errors.general'));
+                setSubmitStatus("error");
+                return;
             }
 
             setSubmitStatus("success");
@@ -64,6 +67,7 @@ export default function ContactPage() {
             setFormData({ name: "", email: "", company: "", phone: "", message: "" });
         } catch (error) {
             console.error('Contact form submission error:', error);
+            setSubmitError(t('form.errors.general'));
             setSubmitStatus("error");
         } finally {
             setIsSubmitting(false);
@@ -94,6 +98,7 @@ export default function ContactPage() {
                     muted
                     loop
                     playsInline
+                    poster="/vids/dark-poster.jpg"
                     className="w-full h-full object-cover"
                 >
                     <source src="/vids/dark.mp4" type="video/mp4" />
@@ -273,7 +278,7 @@ export default function ContactPage() {
                                         {submitStatus === "error" && (
                                             <div className="p-4 bg-red-500/10 border border-red-500/20 rounded-xl">
                                                 <p className="text-red-400 text-sm">
-                                                    {t('form.errors.general')}
+                                                    {submitError || t('form.errors.general')}
                                                 </p>
                                             </div>
                                         )}

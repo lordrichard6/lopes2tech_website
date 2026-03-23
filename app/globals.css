@@ -5,7 +5,6 @@
   --color-secondary: var(--secondary-color);
   --color-accent: var(--accent-color);
   --color-neon-purple: var(--tech-neon-color);
-
   --font-sans: var(--font-inter);
 
   --animate-float: float 6s ease-in-out infinite;

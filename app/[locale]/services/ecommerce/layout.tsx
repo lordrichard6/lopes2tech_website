@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 
 const BASE_URL = "https://lopes2tech.ch";
 
@@ -6,16 +7,17 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   const path = "/services/ecommerce";
   const canonical = `${BASE_URL}/${locale}${path}`;
+  const t = await getTranslations({ locale, namespace: "ServiceMeta.ecommerce" });
   return {
-    title: "E-Commerce Development | Lopes2Tech - Online Stores Built to Sell",
-    description: "Custom e-commerce website development for Swiss businesses. Fast, secure, conversion-optimised online stores with Stripe, inventory management, and multilingual support. Based in Zurich.",
+    title: t("title"),
+    description: t("description"),
     alternates: {
       canonical,
       languages: { "x-default": `${BASE_URL}/en${path}`, en: `${BASE_URL}/en${path}`, de: `${BASE_URL}/de${path}`, pt: `${BASE_URL}/pt${path}` },
     },
     openGraph: {
-      title: "E-Commerce Development | Lopes2Tech",
-      description: "High-converting online stores for Swiss businesses — fast, secure, and built to grow.",
+      title: t("ogTitle"),
+      description: t("ogDescription"),
       url: canonical,
     },
   };

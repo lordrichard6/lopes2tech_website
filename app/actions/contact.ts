@@ -1,6 +1,11 @@
 "use server";
 
+// CSRF note: Next.js Server Actions are protected against CSRF by default.
+// The framework validates the Origin header on every Server Action call,
+// so no additional token is needed for form submissions in this app.
+
 import { Resend } from "resend";
+import { BOOKING_URL, CONTACT_EMAIL } from "@/lib/constants";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -59,7 +64,7 @@ export async function sendContactEmail(formData: {
 
         const { data, error } = await resend.emails.send({
             from: `Lopes2Tech Contact Form <${process.env.RESEND_FROM_EMAIL || "onboarding@resend.dev"}>`,
-            to: process.env.CONTACT_EMAIL || "paulo@lopes2tech.ch",
+            to: process.env.CONTACT_EMAIL || CONTACT_EMAIL,
             subject: `New Contact Request from ${name}`,
             text: `
 Name: ${formData.name}
@@ -109,13 +114,13 @@ export async function sendBookingNotificationEmail() {
 
         const { data, error } = await resend.emails.send({
             from: `Lopes2Tech Website <${process.env.RESEND_FROM_EMAIL || "onboarding@resend.dev"}>`,
-            to: process.env.CONTACT_EMAIL || "paulo@lopes2tech.ch",
+            to: process.env.CONTACT_EMAIL || CONTACT_EMAIL,
             subject: `📅 Someone wants to schedule a meeting`,
             html: `
 <h3>New Meeting Request</h3>
 <p>Someone clicked <strong>&quot;Book a Call&quot;</strong> on your website and was redirected to your Cal.com calendar.</p>
 <p><strong>Time:</strong> ${timestamp} (Zurich)</p>
-<p><strong>Booking link:</strong> <a href="https://cal.com/lopes2tech/initial-consult">cal.com/lopes2tech/initial-consult</a></p>
+<p><strong>Booking link:</strong> <a href="${BOOKING_URL}">${BOOKING_URL}</a></p>
 <br/>
 <p style="color:#888;font-size:12px;">This notification was sent automatically by lopes2tech.ch</p>
             `,
@@ -158,7 +163,7 @@ export async function sendServiceRequestEmail(formData: {
 
         const { data, error } = await resend.emails.send({
             from: `Lopes2Tech Service Request <${process.env.RESEND_FROM_EMAIL || "onboarding@resend.dev"}>`,
-            to: process.env.CONTACT_EMAIL || "paulo@lopes2tech.ch",
+            to: process.env.CONTACT_EMAIL || CONTACT_EMAIL,
             subject: `New Service Request: ${formData.context} from ${formData.name}`,
             text: `
 Name: ${formData.name}
@@ -213,7 +218,7 @@ export async function sendNewsletterSubscriptionEmail(subscriberEmail: string) {
 
         const { data, error } = await resend.emails.send({
             from: `Lopes2Tech Website <${process.env.RESEND_FROM_EMAIL || "onboarding@resend.dev"}>`,
-            to: process.env.CONTACT_EMAIL || "paulo@lopes2tech.ch",
+            to: process.env.CONTACT_EMAIL || CONTACT_EMAIL,
             subject: `📬 New Newsletter Subscriber: ${subscriberEmail}`,
             html: `
 <h3>New Newsletter Subscription</h3>
