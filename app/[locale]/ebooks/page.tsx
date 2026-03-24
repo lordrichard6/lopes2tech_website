@@ -21,7 +21,7 @@ const EBOOKS = [
         badge: "Second Edition · 17 Illustrations",
         tags: ["Biography", "History", "Psychology"],
         languages: ["EN"],
-        stripeLink: "https://buy.stripe.com/dRmbJ2cae0lz5rr8yC1Nu08",
+        stripeLink: "https://buy.stripe.com/test_cNi00jdq0fsN8Qz2yNa7C01", // TEST — swap back to live after testing
         amazonLink: null as string | null,
         etsyLink:   null as string | null,
         cover: "/ebooks/freud.png",
