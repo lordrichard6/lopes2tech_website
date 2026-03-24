@@ -2060,19 +2060,22 @@
   },
   "EbooksPage": {
     "meta": {
-      "title": "Ebooks & Livros Digitais | Lopes2Tech",
-      "description": "Ebooks ilustrados sobre história, cultura e produtividade. Download imediato em PDF. Compre diretamente ou na Amazon e Etsy.",
-      "ogTitle": "Ebooks & Livros Digitais | Lopes2Tech",
-      "ogDescription": "Ebooks ilustrados sobre história, cultura e produtividade — download imediato em PDF."
+      "title": "Ebooks Ilustrados sobre História & Cultura — Freud, Tesla, Suíça | Lopes2Tech",
+      "description": "Compra ou descarrega ebooks ilustrados: Freud, Tesla, Suíça, Portugal. Download imediato em PDF, sem DRM, legível em qualquer dispositivo.",
+      "ogTitle": "Ebooks Ilustrados — História, Cultura & mais | Lopes2Tech",
+      "ogDescription": "Ebooks ilustrados sobre Freud, Tesla, Suíça & Portugal. Download imediato em PDF, lê em qualquer lugar."
     },
     "badge": "Biblioteca Digital",
     "title": "Livros que Vale",
     "titleHighlight": "a Pena Ler",
     "description": "Ebooks ilustrados sobre história, cultura e produtividade — escritos para serem genuinamente divertidos. Download imediato em PDF, legível em qualquer dispositivo.",
     "featured": "Destaque",
+    "free": "Grátis",
     "book": "livro",
     "books": "livros",
     "buyDirect": "Compra Direta",
+    "freeDownload": "Download Gratuito",
+    "freeLabel": "Grátis",
     "digitalNotice": "Estes são ebooks digitais — recebes um ficheiro PDF, não um livro físico.",
     "digitalLabel": "PDF Digital — sem cópia física",
     "trust": {

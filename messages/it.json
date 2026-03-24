@@ -2060,19 +2060,22 @@
   },
   "EbooksPage": {
     "meta": {
-      "title": "Ebook & Libri Digitali | Lopes2Tech",
-      "description": "Ebook illustrati su storia, cultura e produttività. Download PDF immediato. Acquistate direttamente o su Amazon ed Etsy.",
-      "ogTitle": "Ebook & Libri Digitali | Lopes2Tech",
-      "ogDescription": "Ebook illustrati su storia, cultura e produttività — download PDF immediato."
+      "title": "Ebook Illustrati su Storia & Cultura — Freud, Tesla, Svizzera | Lopes2Tech",
+      "description": "Acquista o scarica ebook illustrati: Freud, Tesla, Svizzera, Portogallo. Download PDF immediato, senza DRM, leggibile su qualsiasi dispositivo.",
+      "ogTitle": "Ebook Illustrati — Storia, Cultura & altro | Lopes2Tech",
+      "ogDescription": "Ebook illustrati su Freud, Tesla, Svizzera & Portogallo. Download PDF immediato, leggibile ovunque."
     },
     "badge": "Libreria Digitale",
     "title": "Libri che Vale",
     "titleHighlight": "la Pena Leggere",
     "description": "Ebook illustrati su storia, cultura e produttività — scritti per essere genuinamente piacevoli. Download PDF immediato, leggibile su qualsiasi dispositivo.",
     "featured": "In Evidenza",
+    "free": "Gratis",
     "book": "libro",
     "books": "libri",
     "buyDirect": "Acquisto Diretto",
+    "freeDownload": "Download Gratuito",
+    "freeLabel": "Gratis",
     "digitalNotice": "Questi sono ebook digitali — ricevi un file PDF, non un libro fisico.",
     "digitalLabel": "PDF digitale — nessuna copia fisica",
     "trust": {

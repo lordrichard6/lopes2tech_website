@@ -2060,19 +2060,22 @@
   },
   "EbooksPage": {
     "meta": {
-      "title": "Ebooks & Digital Books | Lopes2Tech",
-      "description": "Illustrated ebooks on history, culture, and productivity. Instant PDF download. Buy direct or on Amazon and Etsy.",
-      "ogTitle": "Ebooks & Digital Books | Lopes2Tech",
-      "ogDescription": "Illustrated ebooks on history, culture, and productivity — instant PDF download."
+      "title": "Illustrated Ebooks on History & Culture — Freud, Tesla, Switzerland | Lopes2Tech",
+      "description": "Buy or download illustrated ebooks on history, psychology, and culture. Freud, Tesla, Switzerland, Portugal. Instant PDF download, no DRM, read on any device.",
+      "ogTitle": "Illustrated Ebooks — History, Culture & More | Lopes2Tech",
+      "ogDescription": "Illustrated ebooks on Freud, Tesla, Switzerland & Portugal. Instant PDF download, read anywhere."
     },
     "badge": "Digital Library",
     "title": "Books Worth",
     "titleHighlight": "Reading",
     "description": "Illustrated ebooks on history, culture, and productivity — written to actually be enjoyable. Instant PDF download, read on any device.",
     "featured": "Featured",
+    "free": "Free",
     "book": "book",
     "books": "books",
     "buyDirect": "Buy Direct",
+    "freeDownload": "Free Download",
+    "freeLabel": "Free",
     "digitalNotice": "These are digital ebooks — you receive a PDF file, not a physical book.",
     "digitalLabel": "Digital PDF — no physical copy",
     "trust": {

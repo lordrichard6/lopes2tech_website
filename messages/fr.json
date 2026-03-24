@@ -2060,19 +2060,22 @@
   },
   "EbooksPage": {
     "meta": {
-      "title": "Ebooks & Livres Numériques | Lopes2Tech",
-      "description": "Ebooks illustrés sur l'histoire, la culture et la productivité. Téléchargement PDF immédiat. Achetez directement ou sur Amazon et Etsy.",
-      "ogTitle": "Ebooks & Livres Numériques | Lopes2Tech",
-      "ogDescription": "Ebooks illustrés sur l'histoire, la culture et la productivité — téléchargement PDF immédiat."
+      "title": "Ebooks Illustrés sur l'Histoire & la Culture — Freud, Tesla, Suisse | Lopes2Tech",
+      "description": "Achetez ou téléchargez des ebooks illustrés : Freud, Tesla, Suisse, Portugal. Téléchargement PDF immédiat, sans DRM, lisible sur tous les appareils.",
+      "ogTitle": "Ebooks Illustrés — Histoire, Culture & plus | Lopes2Tech",
+      "ogDescription": "Ebooks illustrés sur Freud, Tesla, la Suisse & le Portugal. Téléchargement PDF immédiat, lisible partout."
     },
     "badge": "Bibliothèque Numérique",
     "title": "Des Livres qui Valent",
     "titleHighlight": "la Peine",
     "description": "Ebooks illustrés sur l'histoire, la culture et la productivité — écrits pour être vraiment agréables. Téléchargement PDF immédiat, lisible sur tous les appareils.",
     "featured": "En Vedette",
+    "free": "Gratuit",
     "book": "livre",
     "books": "livres",
     "buyDirect": "Achat Direct",
+    "freeDownload": "Téléchargement Gratuit",
+    "freeLabel": "Gratuit",
     "digitalNotice": "Ce sont des livres numériques — vous recevez un fichier PDF, pas un livre physique.",
     "digitalLabel": "PDF numérique — pas d'exemplaire physique",
     "trust": {

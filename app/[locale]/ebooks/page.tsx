@@ -5,10 +5,11 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { BookOpen, Download, Star, Globe, FileText, AlertCircle } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
-// ─── Ebook catalog ────────────────────────────────────────────────────────────
-// To add Amazon / Etsy links, replace null with the live URL string.
+// ─── Ebook catalog ─────────────────────────────────────────────────────────
+// isFree: true  → shows a free download button (freeLink required)
+// isFree: false → shows Stripe buy button with price
 const EBOOKS = [
     {
         key: "freud",
@@ -18,14 +19,17 @@ const EBOOKS = [
         description:
             "Before the famous couch, there was cocaine, a secret society with magic gemstone rings, and a man who was terrified of a number. The Freud you were never taught in school.",
         price: 9.9,
+        isFree: false,
         badge: "Second Edition · 17 Illustrations",
         tags: ["Biography", "History", "Psychology"],
         languages: ["EN"],
         stripeLink: "https://buy.stripe.com/dRmbJ2cae0lz5rr8yC1Nu08",
+        freeLink:   null as string | null,
         amazonLink: null as string | null,
         etsyLink:   null as string | null,
         cover: "/ebooks/freud.png",
         featured: true,
+        priority: true,
     },
     {
         key: "tesla",
@@ -35,14 +39,17 @@ const EBOOKS = [
         description:
             "Electrocuted elephants, man-made lightning bolts 135 feet long, and a torn-up $300 million contract. Meet the real Nikola Tesla — as told by no textbook ever.",
         price: 9.9,
+        isFree: false,
         badge: "First Edition · 17 Illustrations",
         tags: ["Biography", "History", "Science"],
         languages: ["EN"],
         stripeLink: "https://buy.stripe.com/7sY4gAa262tHcTT5mq1Nu09",
+        freeLink:   null as string | null,
         amazonLink: null as string | null,
         etsyLink:   null as string | null,
         cover: "/ebooks/tesla.png",
         featured: true,
+        priority: true,
     },
     {
         key: "switzerland",
@@ -52,14 +59,17 @@ const EBOOKS = [
         description:
             "From separating your recycling by material type to never vacuuming on Sunday — 100 illustrated facts, rules, and cultural quirks every expat needs to survive in Switzerland.",
         price: 9.9,
+        isFree: false,
         badge: "First Edition · 100 Illustrations",
         tags: ["Travel", "Culture", "Expat Life"],
         languages: ["EN", "PT"],
         stripeLink: "https://buy.stripe.com/eVq7sM3DIfgt4nn9CG1Nu0a",
+        freeLink:   null as string | null,
         amazonLink: null as string | null,
         etsyLink:   null as string | null,
         cover: "/ebooks/switzerland.png",
         featured: false,
+        priority: false,
     },
     {
         key: "portugal",
@@ -69,20 +79,44 @@ const EBOOKS = [
         description:
             "Bacalhau à Brás, Pastéis de Nata, and the inexplicable passion for melancholy music — 100 things that make Portugal unmistakably, gloriously Portuguese.",
         price: 9.9,
+        isFree: false,
         badge: "First Edition · 100 Illustrations",
         tags: ["Travel", "Culture", "Portugal"],
         languages: ["EN"],
         stripeLink: "https://buy.stripe.com/8x228s2zEecp9HHeX01Nu0b",
+        freeLink:   null as string | null,
         amazonLink: null as string | null,
         etsyLink:   null as string | null,
         cover: "/ebooks/portugal.png",
         featured: false,
+        priority: false,
     },
+    // ── Free ebook example ──────────────────────────────────────────────────
+    // Duplicate this block and fill in details when you publish a free book:
+    // {
+    //     key: "my-free-book",
+    //     series: "Free",
+    //     title: "My Free Book",
+    //     subtitle: "...",
+    //     description: "...",
+    //     price: 0,
+    //     isFree: true,
+    //     badge: "Free · XX pages",
+    //     tags: ["..."],
+    //     languages: ["EN"],
+    //     stripeLink: null,
+    //     freeLink: "https://drive.google.com/...",
+    //     amazonLink: null,
+    //     etsyLink: null,
+    //     cover: "/ebooks/my-free-book.png",
+    //     featured: false,
+    //     priority: false,
+    // },
 ] as const;
 
-const SERIES_ORDER = ["They Never Taught You", "100 Things"];
+const SERIES_ORDER = ["They Never Taught You", "100 Things", "Free"];
 
-// ─── Marketplace icons ────────────────────────────────────────────────────────
+// ─── Marketplace icons ────────────────────────────────────────────────────
 function AmazonIcon({ className }: { className?: string }) {
     return (
         <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
@@ -99,20 +133,26 @@ function EtsyIcon({ className }: { className?: string }) {
     );
 }
 
-// ─── Book Card ────────────────────────────────────────────────────────────────
+// ─── Book Card ─────────────────────────────────────────────────────────────
 function EbookCard({ book, index }: { book: typeof EBOOKS[number]; index: number }) {
     const t = useTranslations("EbooksPage");
 
     return (
-        <motion.div
+        <motion.article
             initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{ delay: index * 0.08, duration: 0.5, ease: "easeOut" }}
             className="group relative flex flex-col rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm overflow-hidden hover:border-cyan-400/30 transition-all duration-500 hover:shadow-[0_0_40px_rgba(6,182,212,0.07)]"
         >
             {book.featured && (
                 <div className="absolute top-3 right-3 z-10 px-2.5 py-1 rounded-full bg-gradient-to-r from-cyan-500 to-purple-600 text-white text-[10px] font-bold uppercase tracking-widest shadow-lg">
                     {t("featured")}
+                </div>
+            )}
+            {book.isFree && (
+                <div className="absolute top-3 right-3 z-10 px-2.5 py-1 rounded-full bg-gradient-to-r from-emerald-500 to-teal-500 text-white text-[10px] font-bold uppercase tracking-widest shadow-lg">
+                    {t("free")}
                 </div>
             )}
 
@@ -122,6 +162,7 @@ function EbookCard({ book, index }: { book: typeof EBOOKS[number]; index: number
                     src={book.cover}
                     alt={book.title}
                     fill
+                    priority={book.priority}
                     className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
@@ -165,26 +206,44 @@ function EbookCard({ book, index }: { book: typeof EBOOKS[number]; index: number
 
                 {/* Price + CTAs */}
                 <div className="pt-2 border-t border-white/10 space-y-2">
-                    {/* Digital-only reminder */}
-                    <div className="flex items-center gap-1.5 text-xs text-slate-500">
-                        <FileText className="w-3 h-3 text-amber-400/70 flex-shrink-0" />
-                        <span>{t("digitalLabel")}</span>
-                    </div>
-                    {/* Direct purchase — primary */}
-                    <a
-                        href={book.stripeLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center justify-between w-full px-4 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-purple-600 text-white text-sm font-semibold shadow-[0_0_20px_rgba(6,182,212,0.2)] hover:shadow-[0_0_30px_rgba(6,182,212,0.4)] transition-all duration-300 hover:scale-[1.02]"
-                    >
-                        <span className="flex items-center gap-2">
-                            <Download className="w-4 h-4" />
-                            {t("buyDirect")}
-                        </span>
-                        <span className="font-bold">CHF {book.price.toFixed(2)}</span>
-                    </a>
+                    {!book.isFree && (
+                        <div className="flex items-center gap-1.5 text-xs text-slate-500">
+                            <FileText className="w-3 h-3 text-amber-400/70 flex-shrink-0" />
+                            <span>{t("digitalLabel")}</span>
+                        </div>
+                    )}
 
-                    {/* Amazon + Etsy — secondary, only shown when URLs are set */}
+                    {book.isFree && book.freeLink ? (
+                        /* Free download button */
+                        <a
+                            href={book.freeLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center justify-between w-full px-4 py-3 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 text-white text-sm font-semibold shadow-[0_0_20px_rgba(16,185,129,0.2)] hover:shadow-[0_0_30px_rgba(16,185,129,0.4)] transition-all duration-300 hover:scale-[1.02]"
+                        >
+                            <span className="flex items-center gap-2">
+                                <Download className="w-4 h-4" />
+                                {t("freeDownload")}
+                            </span>
+                            <span className="font-bold">{t("freeLabel")}</span>
+                        </a>
+                    ) : (
+                        /* Paid buy button */
+                        <a
+                            href={book.stripeLink ?? "#"}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center justify-between w-full px-4 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-purple-600 text-white text-sm font-semibold shadow-[0_0_20px_rgba(6,182,212,0.2)] hover:shadow-[0_0_30px_rgba(6,182,212,0.4)] transition-all duration-300 hover:scale-[1.02]"
+                        >
+                            <span className="flex items-center gap-2">
+                                <Download className="w-4 h-4" />
+                                {t("buyDirect")}
+                            </span>
+                            <span className="font-bold">CHF {book.price.toFixed(2)}</span>
+                        </a>
+                    )}
+
+                    {/* Amazon + Etsy — only shown when URLs are set */}
                     {(book.amazonLink || book.etsyLink) && (
                         <div className="flex gap-2">
                             {book.amazonLink && (
@@ -213,13 +272,14 @@ function EbookCard({ book, index }: { book: typeof EBOOKS[number]; index: number
                     )}
                 </div>
             </div>
-        </motion.div>
+        </motion.article>
     );
 }
 
-// ─── Page ─────────────────────────────────────────────────────────────────────
+// ─── Page ──────────────────────────────────────────────────────────────────
 export default function EbooksPage() {
-    const t = useTranslations("EbooksPage");
+    const t      = useTranslations("EbooksPage");
+    const locale = useLocale();
 
     const grouped = SERIES_ORDER.map((series) => ({
         series,
@@ -228,6 +288,40 @@ export default function EbooksPage() {
 
     return (
         <main className="min-h-screen bg-[#0f172a]">
+            {/* JSON-LD injected server-side via layout.tsx EbooksJsonLd */}
+            <script
+                type="application/ld+json"
+                suppressHydrationWarning
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "ItemList",
+                        name: "Ebooks by Lopes2Tech",
+                        url: `https://lopes2tech.ch/${locale}/ebooks`,
+                        itemListElement: EBOOKS.filter(b => !b.isFree).map((book, i) => ({
+                            "@type": "ListItem",
+                            position: i + 1,
+                            item: {
+                                "@type": "Book",
+                                name: book.title,
+                                description: book.description,
+                                bookFormat: "https://schema.org/EBook",
+                                inLanguage: "en",
+                                author: { "@type": "Person", name: "Paulo Lopes", url: "https://lopes2tech.ch" },
+                                image: `https://lopes2tech.ch${book.cover}`,
+                                offers: {
+                                    "@type": "Offer",
+                                    price: book.price.toFixed(2),
+                                    priceCurrency: "CHF",
+                                    availability: "https://schema.org/InStock",
+                                    url: book.stripeLink,
+                                },
+                            },
+                        })),
+                    }),
+                }}
+            />
+
             <Navbar />
 
             <section className="relative pt-32 pb-24 overflow-hidden">
@@ -300,7 +394,8 @@ export default function EbooksPage() {
                         <div key={series} className="mb-20">
                             <motion.div
                                 initial={{ opacity: 0, x: -16 }}
-                                animate={{ opacity: 1, x: 0 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ once: true }}
                                 transition={{ duration: 0.4 }}
                                 className="flex items-center gap-4 mb-8"
                             >
@@ -328,8 +423,9 @@ export default function EbooksPage() {
                     {/* Guarantee strip */}
                     <motion.div
                         initial={{ opacity: 0, y: 16 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.4, duration: 0.5 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5 }}
                         className="mt-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm px-8 py-6 flex flex-col sm:flex-row items-center justify-center gap-8 text-center sm:text-left"
                     >
                         {[
