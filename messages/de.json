@@ -2076,6 +2076,19 @@
     "buyDirect": "Direkt kaufen",
     "freeDownload": "Kostenlos herunterladen",
     "freeLabel": "Gratis",
+    "physicalCopy": "Physisches Exemplar",
+    "comingSoon": {
+      "title": "Gedruckte Exemplare — demnächst",
+      "desc": "Wir prüfen Druckpartner, um Ihnen die best mögliche gedruckte Ausgabe anbieten zu können. Schauen Sie bald wieder vorbei.",
+      "close": "Verstanden"
+    },
+    "printPartners": {
+      "title": "Gedruckte Exemplare kommen bald",
+      "desc": "Wir arbeiten mit führenden Print-on-Demand-Plattformen zusammen, um gedruckte Ausgaben direkt zu Ihnen zu liefern. Zwei Optionen werden geprüft:",
+      "gelato": "Lokales europäisches Drucknetzwerk — schnellste Lieferung in die Schweiz und die EU.",
+      "lulu": "Etablierte globale Druckplattform mit Standorten in Frankreich, Grossbritannien und den USA.",
+      "eta": "Bald verfügbar. Folgen Sie dem Shop für Updates."
+    },
     "digitalNotice": "Dies sind digitale E-Books — Sie erhalten eine PDF-Datei, kein physisches Buch.",
     "digitalLabel": "Digitales PDF — kein physisches Exemplar",
     "trust": {

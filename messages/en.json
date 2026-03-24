@@ -2076,6 +2076,19 @@
     "buyDirect": "Buy Direct",
     "freeDownload": "Free Download",
     "freeLabel": "Free",
+    "physicalCopy": "Physical Copy",
+    "comingSoon": {
+      "title": "Physical copies — coming soon",
+      "desc": "We're evaluating print partners to bring you the best quality physical edition. Sign up below or check back soon.",
+      "close": "Got it"
+    },
+    "printPartners": {
+      "title": "Physical copies are on the way",
+      "desc": "We're partnering with leading print-on-demand platforms to offer printed editions shipped directly to your door. Evaluating two options:",
+      "gelato": "Local European printing network — fastest delivery to Switzerland and the EU.",
+      "lulu": "Established global print platform with facilities in France, the UK, and the US.",
+      "eta": "Expected to launch soon. Follow the shop for updates."
+    },
     "digitalNotice": "These are digital ebooks — you receive a PDF file, not a physical book.",
     "digitalLabel": "Digital PDF — no physical copy",
     "trust": {

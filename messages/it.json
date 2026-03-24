@@ -2076,6 +2076,19 @@
     "buyDirect": "Acquisto Diretto",
     "freeDownload": "Download Gratuito",
     "freeLabel": "Gratis",
+    "physicalCopy": "Copia Fisica",
+    "comingSoon": {
+      "title": "Copie fisiche — in arrivo",
+      "desc": "Stiamo valutando partner di stampa per offrirti la migliore edizione fisica possibile. Torna presto a controllare.",
+      "close": "Capito"
+    },
+    "printPartners": {
+      "title": "Le copie fisiche sono in arrivo",
+      "desc": "Stiamo collaborando con piattaforme di stampa on-demand per consegnare edizioni stampate direttamente a casa tua. Due opzioni in valutazione:",
+      "gelato": "Rete di stampa europea locale — consegna più rapida in Svizzera e nell'UE.",
+      "lulu": "Piattaforma di stampa globale con sedi in Francia, nel Regno Unito e negli USA.",
+      "eta": "Lancio previsto a breve. Segui il negozio per aggiornamenti."
+    },
     "digitalNotice": "Questi sono ebook digitali — ricevi un file PDF, non un libro fisico.",
     "digitalLabel": "PDF digitale — nessuna copia fisica",
     "trust": {

@@ -4,8 +4,9 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { BookOpen, Download, Star, Globe, FileText, AlertCircle } from "lucide-react";
+import { BookOpen, Download, Star, Globe, FileText, AlertCircle, BookMarked, X, Printer } from "lucide-react";
 import { useTranslations, useLocale } from "next-intl";
+import { useState } from "react";
 
 // ─── Ebook catalog ─────────────────────────────────────────────────────────
 // isFree: true  → shows a free download button (freeLink required)
@@ -133,8 +134,87 @@ function EtsyIcon({ className }: { className?: string }) {
     );
 }
 
+// ─── Coming Soon Modal ─────────────────────────────────────────────────────
+function ComingSoonModal({ onClose }: { onClose: () => void }) {
+    const t = useTranslations("EbooksPage");
+    return (
+        <div
+            className="fixed inset-0 z-50 flex items-center justify-center p-4"
+            onClick={onClose}
+        >
+            {/* Backdrop */}
+            <div className="absolute inset-0 bg-black/70 backdrop-blur-sm" />
+
+            {/* Card */}
+            <motion.div
+                initial={{ scale: 0.9, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                exit={{ scale: 0.9, opacity: 0 }}
+                transition={{ type: "spring", stiffness: 260, damping: 20 }}
+                onClick={(e) => e.stopPropagation()}
+                className="relative z-10 w-full max-w-md rounded-2xl border border-white/10 bg-[#1e293b] p-8 shadow-2xl"
+            >
+                <button
+                    onClick={onClose}
+                    className="absolute top-4 right-4 text-slate-500 hover:text-white transition-colors"
+                    aria-label="Close"
+                >
+                    <X className="w-5 h-5" />
+                </button>
+
+                {/* Icon */}
+                <div className="flex justify-center mb-5">
+                    <div className="w-16 h-16 rounded-full bg-gradient-to-br from-cyan-400/20 to-purple-500/20 border border-white/10 flex items-center justify-center">
+                        <Printer className="w-8 h-8 text-cyan-400" />
+                    </div>
+                </div>
+
+                <h3 className="text-xl font-extrabold text-white text-center mb-3">
+                    {t("comingSoon.title")}
+                </h3>
+                <p className="text-slate-400 text-sm text-center leading-relaxed mb-6">
+                    {t("comingSoon.desc")}
+                </p>
+
+                {/* Platforms */}
+                <div className="space-y-3 mb-6">
+                    {[
+                        { name: "Gelato", url: "https://gelato.com", desc: t("printPartners.gelato") },
+                        { name: "Lulu Direct", url: "https://lulu.com", desc: t("printPartners.lulu") },
+                    ].map((p) => (
+                        <a
+                            key={p.name}
+                            href={p.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-start gap-3 p-3 rounded-xl border border-white/10 bg-white/5 hover:border-cyan-400/30 hover:bg-white/10 transition-all duration-200 group"
+                        >
+                            <div className="flex-shrink-0 mt-0.5 w-6 h-6 rounded-full bg-cyan-400/20 flex items-center justify-center">
+                                <BookMarked className="w-3 h-3 text-cyan-400" />
+                            </div>
+                            <div>
+                                <p className="text-white text-xs font-bold group-hover:text-cyan-400 transition-colors">
+                                    {p.name} ↗
+                                </p>
+                                <p className="text-slate-500 text-xs leading-relaxed">{p.desc}</p>
+                            </div>
+                        </a>
+                    ))}
+                </div>
+
+                <button
+                    onClick={onClose}
+                    className="w-full py-2.5 rounded-xl border border-white/10 text-slate-400 text-sm font-semibold hover:border-white/20 hover:text-white transition-all duration-200"
+                >
+                    {t("comingSoon.close")}
+                </button>
+            </motion.div>
+        </div>
+    );
+}
+
 // ─── Book Card ─────────────────────────────────────────────────────────────
-function EbookCard({ book, index }: { book: typeof EBOOKS[number]; index: number }) {
+function EbookCard({ book, index, onPhysicalClick }: { book: typeof EBOOKS[number]; index: number; onPhysicalClick: () => void }) {
     const t = useTranslations("EbooksPage");
 
     return (
@@ -243,6 +323,15 @@ function EbookCard({ book, index }: { book: typeof EBOOKS[number]; index: number
                         </a>
                     )}
 
+                    {/* Physical copy — coming soon */}
+                    <button
+                        onClick={onPhysicalClick}
+                        className="flex items-center justify-center gap-2 w-full px-4 py-2.5 rounded-xl border border-white/10 bg-white/5 text-slate-400 text-xs font-semibold hover:border-cyan-400/20 hover:text-slate-300 transition-all duration-300"
+                    >
+                        <Printer className="w-3.5 h-3.5" />
+                        {t("physicalCopy")}
+                    </button>
+
                     {/* Amazon + Etsy — only shown when URLs are set */}
                     {(book.amazonLink || book.etsyLink) && (
                         <div className="flex gap-2">
@@ -280,6 +369,7 @@ function EbookCard({ book, index }: { book: typeof EBOOKS[number]; index: number
 export default function EbooksPage() {
     const t      = useTranslations("EbooksPage");
     const locale = useLocale();
+    const [showComingSoon, setShowComingSoon] = useState(false);
 
     const grouped = SERIES_ORDER.map((series) => ({
         series,
@@ -288,6 +378,8 @@ export default function EbooksPage() {
 
     return (
         <main className="min-h-screen bg-[#0f172a]">
+            {showComingSoon && <ComingSoonModal onClose={() => setShowComingSoon(false)} />}
+
             {/* JSON-LD injected server-side via layout.tsx EbooksJsonLd */}
             <script
                 type="application/ld+json"
@@ -414,11 +506,53 @@ export default function EbooksPage() {
                                     : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
                             }`}>
                                 {books.map((book, i) => (
-                                    <EbookCard key={book.key} book={book} index={i} />
+                                    <EbookCard key={book.key} book={book} index={i} onPhysicalClick={() => setShowComingSoon(true)} />
                                 ))}
                             </div>
                         </div>
                     ))}
+
+                    {/* Print partners section */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 16 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5 }}
+                        className="mb-8 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm px-8 py-7"
+                    >
+                        <div className="flex items-center gap-3 mb-3">
+                            <div className="w-8 h-8 rounded-full bg-cyan-400/10 flex items-center justify-center flex-shrink-0">
+                                <Printer className="w-4 h-4 text-cyan-400" />
+                            </div>
+                            <h2 className="text-white font-bold text-base">{t("printPartners.title")}</h2>
+                        </div>
+                        <p className="text-slate-400 text-sm mb-5 leading-relaxed">
+                            {t("printPartners.desc")}
+                        </p>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            {[
+                                { name: "Gelato", url: "https://gelato.com", desc: t("printPartners.gelato") },
+                                { name: "Lulu Direct", url: "https://lulu.com", desc: t("printPartners.lulu") },
+                            ].map((p) => (
+                                <a
+                                    key={p.name}
+                                    href={p.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-start gap-3 p-4 rounded-xl border border-white/10 bg-white/5 hover:border-cyan-400/30 transition-all duration-200 group"
+                                >
+                                    <BookMarked className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" />
+                                    <div>
+                                        <p className="text-white text-sm font-bold group-hover:text-cyan-400 transition-colors">
+                                            {p.name} ↗
+                                        </p>
+                                        <p className="text-slate-500 text-xs leading-relaxed mt-0.5">{p.desc}</p>
+                                    </div>
+                                </a>
+                            ))}
+                        </div>
+                        <p className="text-slate-600 text-xs mt-4">{t("printPartners.eta")}</p>
+                    </motion.div>
 
                     {/* Guarantee strip */}
                     <motion.div
