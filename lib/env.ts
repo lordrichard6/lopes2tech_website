@@ -6,6 +6,18 @@ const envSchema = z.object({
     RESEND_FROM_EMAIL: z.string().email().optional(),
     CONTACT_EMAIL: z.string().email().optional(),
 
+    // Stripe — webhook secrets (optional; only required at runtime for webhook handler)
+    STRIPE_SECRET_KEY: z.string().optional(),
+    STRIPE_WEBHOOK_SECRET: z.string().optional(),       // live
+    STRIPE_WEBHOOK_SECRET_TEST: z.string().optional(),  // test / sandbox
+
+    // Ebook download links (Google Drive) — optional; missing = email not sent
+    GDRIVE_FREUD:        z.string().optional(),
+    GDRIVE_TESLA:        z.string().optional(),
+    GDRIVE_SWITZERLAND:  z.string().optional(),
+    GDRIVE_PORTUGAL:     z.string().optional(),
+    GDRIVE_PRODUCTIVITY: z.string().optional(),
+
     // Analytics (optional)
     NEXT_PUBLIC_CLARITY_PROJECT_ID: z.string().optional(),
     NEXT_PUBLIC_GA_MEASUREMENT_ID: z.string().optional(),
