@@ -7,7 +7,12 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY ?? "", {
     apiVersion: "2026-02-25.clover",
 });
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+// Instantiated lazily inside the handler so a missing key never crashes at module load time
+let resend: Resend | null = null;
+function getResend(): Resend {
+    if (!resend) resend = new Resend(process.env.RESEND_API_KEY);
+    return resend;
+}
 
 // ─── Ebook catalog ─────────────────────────────────────────────────────────────
 // Maps every known payment link ID (test + live) → book data.
@@ -279,7 +284,7 @@ export async function POST(req: NextRequest) {
             driveUrl:  book.driveUrl,
         });
 
-        const { error } = await resend.emails.send({
+        const { error } = await getResend().emails.send({
             from: `Lopes2Tech Books <${process.env.RESEND_FROM_EMAIL ?? "onboarding@resend.dev"}>`,
             to: buyerEmail,
             subject,
