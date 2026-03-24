@@ -2073,6 +2073,7 @@
     "book": "livro",
     "books": "livros",
     "buyDirect": "Compra Direta",
+    "currencyNote": "Preços em {currency}",
     "trust": {
       "instant": "Download imediato",
       "drm": "Sem DRM — leia em qualquer lugar",

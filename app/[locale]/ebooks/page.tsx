@@ -4,8 +4,23 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { ExternalLink, ShoppingCart, BookOpen, Download, Star, Globe } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { BookOpen, Download, Star, Globe } from "lucide-react";
+import { useTranslations, useLocale } from "next-intl";
+
+// ─── Currency logic ───────────────────────────────────────────────────────────
+// Swiss locales → CHF  |  all others → EUR
+const CHF_LOCALES = new Set(["de", "fr", "it"]);
+
+function useCurrency() {
+    const locale = useLocale();
+    return CHF_LOCALES.has(locale) ? "CHF" : "EUR";
+}
+
+function formatPrice(amount: number, currency: "CHF" | "EUR") {
+    return currency === "CHF"
+        ? `CHF ${amount.toFixed(2)}`
+        : `€${amount.toFixed(2)}`;
+}
 
 // ─── Ebook catalog ────────────────────────────────────────────────────────────
 // To add Amazon / Etsy links, replace null with the live URL string.
@@ -17,13 +32,15 @@ const EBOOKS = [
         subtitle: "Cocaine, Cults & the Bizarre Origins of Psychoanalysis",
         description:
             "Before the famous couch, there was cocaine, a secret society with magic gemstone rings, and a man who was terrified of a number. The Freud you were never taught in school.",
-        price: 9.9,
+        priceEUR: 9.9,
+        priceCHF: 9.9,
         badge: "Second Edition · 17 Illustrations",
         tags: ["Biography", "History", "Psychology"],
         languages: ["EN"],
-        stripeLink: "https://buy.stripe.com/28EcN61vA2tHcTTg141Nu03",
+        stripeLinkEUR: "https://buy.stripe.com/28EcN61vA2tHcTTg141Nu03",
+        stripeLinkCHF: "https://buy.stripe.com/dRmbJ2cae0lz5rr8yC1Nu08",
         amazonLink: null as string | null,
-        etsyLink: null as string | null,
+        etsyLink:   null as string | null,
         cover: "/ebooks/freud.png",
         featured: true,
     },
@@ -34,13 +51,15 @@ const EBOOKS = [
         subtitle: "Gambling, Obsession & the Genius Who Powered the Modern World",
         description:
             "Electrocuted elephants, man-made lightning bolts 135 feet long, and a torn-up $300 million contract. Meet the real Nikola Tesla — as told by no textbook ever.",
-        price: 9.9,
+        priceEUR: 9.9,
+        priceCHF: 9.9,
         badge: "First Edition · 17 Illustrations",
         tags: ["Biography", "History", "Science"],
         languages: ["EN"],
-        stripeLink: "https://buy.stripe.com/eVq3cw4HM8S56vv7uy1Nu04",
+        stripeLinkEUR: "https://buy.stripe.com/eVq3cw4HM8S56vv7uy1Nu04",
+        stripeLinkCHF: "https://buy.stripe.com/7sY4gAa262tHcTT5mq1Nu09",
         amazonLink: null as string | null,
-        etsyLink: null as string | null,
+        etsyLink:   null as string | null,
         cover: "/ebooks/tesla.png",
         featured: true,
     },
@@ -51,13 +70,15 @@ const EBOOKS = [
         subtitle: "The Unofficial Survival Guide to Swiss Life",
         description:
             "From separating your recycling by material type to never vacuuming on Sunday — 100 illustrated facts, rules, and cultural quirks every expat needs to survive in Switzerland.",
-        price: 9.9,
+        priceEUR: 9.9,
+        priceCHF: 9.9,
         badge: "First Edition · 100 Illustrations",
         tags: ["Travel", "Culture", "Expat Life"],
         languages: ["EN", "PT"],
-        stripeLink: "https://buy.stripe.com/aFa6oI8Y22tH4nnaGK1Nu05",
+        stripeLinkEUR: "https://buy.stripe.com/aFa6oI8Y22tH4nnaGK1Nu05",
+        stripeLinkCHF: "https://buy.stripe.com/eVq7sM3DIfgt4nn9CG1Nu0a",
         amazonLink: null as string | null,
-        etsyLink: null as string | null,
+        etsyLink:   null as string | null,
         cover: "/ebooks/switzerland.png",
         featured: false,
     },
@@ -68,13 +89,15 @@ const EBOOKS = [
         subtitle: "An Illustrated Deep Dive Into Portuguese Culture",
         description:
             "Bacalhau à Brás, Pastéis de Nata, and the inexplicable passion for melancholy music — 100 things that make Portugal unmistakably, gloriously Portuguese.",
-        price: 9.9,
+        priceEUR: 9.9,
+        priceCHF: 9.9,
         badge: "First Edition · 100 Illustrations",
         tags: ["Travel", "Culture", "Portugal"],
         languages: ["EN"],
-        stripeLink: "https://buy.stripe.com/aFacN6eim3xLg652ae1Nu06",
+        stripeLinkEUR: "https://buy.stripe.com/aFacN6eim3xLg652ae1Nu06",
+        stripeLinkCHF: "https://buy.stripe.com/8x228s2zEecp9HHeX01Nu0b",
         amazonLink: null as string | null,
-        etsyLink: null as string | null,
+        etsyLink:   null as string | null,
         cover: "/ebooks/portugal.png",
         featured: false,
     },
@@ -85,22 +108,23 @@ const EBOOKS = [
         subtitle: "A Structured Daily Planner & Habit Tracker",
         description:
             "A clean, printable PDF tracker designed to build momentum over 30 days. Daily planning blocks, habit streaks, weekly reviews — available in 6 languages.",
-        price: 9.0,
+        priceEUR: 9.0,
+        priceCHF: 9.0,
         badge: "6 Languages · Printable PDF",
         tags: ["Productivity", "Habits", "Planner"],
         languages: ["EN", "DE", "FR", "IT", "PT", "ES"],
-        stripeLink: "https://buy.stripe.com/6oU28s3DIb0d0776qu1Nu07",
+        stripeLinkEUR: "https://buy.stripe.com/6oU28s3DIb0d0776qu1Nu07",
+        stripeLinkCHF: "https://buy.stripe.com/eVqbJ2caeecpaLL16a1Nu0c",
         amazonLink: null as string | null,
-        etsyLink: null as string | null,
+        etsyLink:   null as string | null,
         cover: "/ebooks/productivity.png",
         featured: false,
     },
 ] as const;
 
-// Group by series for display
 const SERIES_ORDER = ["They Never Taught You", "100 Things", "Tools"];
 
-// ─── Amazon / Medium "M" icon ─────────────────────────────────────────────────
+// ─── Marketplace icons ────────────────────────────────────────────────────────
 function AmazonIcon({ className }: { className?: string }) {
     return (
         <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
@@ -120,6 +144,10 @@ function EtsyIcon({ className }: { className?: string }) {
 // ─── Book Card ────────────────────────────────────────────────────────────────
 function EbookCard({ book, index }: { book: typeof EBOOKS[number]; index: number }) {
     const t = useTranslations("EbooksPage");
+    const currency = useCurrency();
+    const price  = currency === "CHF" ? book.priceCHF : book.priceEUR;
+    const link   = currency === "CHF" ? book.stripeLinkCHF : book.stripeLinkEUR;
+    const priceLabel = formatPrice(price, currency);
 
     return (
         <motion.div
@@ -144,8 +172,6 @@ function EbookCard({ book, index }: { book: typeof EBOOKS[number]; index: number
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-transparent to-transparent opacity-60" />
-
-                {/* Series badge */}
                 <div className="absolute bottom-3 left-3 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-sm border border-white/20 text-xs font-semibold text-cyan-400 uppercase tracking-wider">
                     {book.series}
                 </div>
@@ -153,7 +179,6 @@ function EbookCard({ book, index }: { book: typeof EBOOKS[number]; index: number
 
             {/* Content */}
             <div className="flex flex-col flex-1 p-6 gap-4">
-                {/* Title + subtitle */}
                 <div>
                     <h3 className="text-lg font-bold text-white leading-snug mb-1 group-hover:text-cyan-400 transition-colors duration-300">
                         {book.title}
@@ -161,12 +186,10 @@ function EbookCard({ book, index }: { book: typeof EBOOKS[number]; index: number
                     <p className="text-xs text-slate-400 italic">{book.subtitle}</p>
                 </div>
 
-                {/* Description */}
                 <p className="text-sm text-slate-400 leading-relaxed flex-1">
                     {book.description}
                 </p>
 
-                {/* Meta row */}
                 <div className="flex flex-wrap gap-2">
                     {book.tags.map((tag) => (
                         <span key={tag} className="px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-cyan-400 bg-cyan-400/10 rounded-full border border-cyan-400/20">
@@ -175,7 +198,6 @@ function EbookCard({ book, index }: { book: typeof EBOOKS[number]; index: number
                     ))}
                 </div>
 
-                {/* Languages + edition */}
                 <div className="flex items-center gap-3 text-xs text-slate-500">
                     <span className="flex items-center gap-1">
                         <BookOpen className="w-3 h-3" />
@@ -191,7 +213,7 @@ function EbookCard({ book, index }: { book: typeof EBOOKS[number]; index: number
                 <div className="pt-2 border-t border-white/10 space-y-2">
                     {/* Direct purchase — primary */}
                     <a
-                        href={book.stripeLink}
+                        href={link}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center justify-between w-full px-4 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-purple-600 text-white text-sm font-semibold shadow-[0_0_20px_rgba(6,182,212,0.2)] hover:shadow-[0_0_30px_rgba(6,182,212,0.4)] transition-all duration-300 hover:scale-[1.02]"
@@ -200,10 +222,10 @@ function EbookCard({ book, index }: { book: typeof EBOOKS[number]; index: number
                             <Download className="w-4 h-4" />
                             {t("buyDirect")}
                         </span>
-                        <span className="font-bold">€{book.price.toFixed(2)}</span>
+                        <span className="font-bold">{priceLabel}</span>
                     </a>
 
-                    {/* Amazon + Etsy — secondary */}
+                    {/* Amazon + Etsy — secondary, only shown when URLs are set */}
                     {(book.amazonLink || book.etsyLink) && (
                         <div className="flex gap-2">
                             {book.amazonLink && (
@@ -238,9 +260,9 @@ function EbookCard({ book, index }: { book: typeof EBOOKS[number]; index: number
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
 export default function EbooksPage() {
-    const t = useTranslations("EbooksPage");
+    const t        = useTranslations("EbooksPage");
+    const currency = useCurrency();
 
-    // Group books by series
     const grouped = SERIES_ORDER.map((series) => ({
         series,
         books: EBOOKS.filter((b) => b.series === series),
@@ -294,12 +316,18 @@ export default function EbooksPage() {
                             {t("description")}
                         </p>
 
+                        {/* Currency indicator */}
+                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 text-sm text-slate-400 mb-8">
+                            <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
+                            {t("currencyNote", { currency })}
+                        </div>
+
                         {/* Trust signals */}
                         <div className="flex flex-wrap justify-center gap-6 text-sm text-slate-400">
                             {[
                                 { icon: Download, text: t("trust.instant") },
-                                { icon: Star, text: t("trust.drm") },
-                                { icon: Globe, text: t("trust.multilingual") },
+                                { icon: Star,     text: t("trust.drm") },
+                                { icon: Globe,    text: t("trust.multilingual") },
                             ].map(({ icon: Icon, text }) => (
                                 <div key={text} className="flex items-center gap-2">
                                     <Icon className="w-4 h-4 text-cyan-400" />
@@ -309,7 +337,7 @@ export default function EbooksPage() {
                         </div>
                     </motion.div>
 
-                    {/* Book sections by series */}
+                    {/* Book sections */}
                     {grouped.map(({ series, books }) => (
                         <div key={series} className="mb-20">
                             <motion.div
@@ -320,10 +348,18 @@ export default function EbooksPage() {
                             >
                                 <h2 className="text-2xl font-bold text-white">{series}</h2>
                                 <div className="flex-1 h-px bg-white/10" />
-                                <span className="text-sm text-slate-500">{books.length} {books.length === 1 ? t("book") : t("books")}</span>
+                                <span className="text-sm text-slate-500">
+                                    {books.length} {books.length === 1 ? t("book") : t("books")}
+                                </span>
                             </motion.div>
 
-                            <div className={`grid gap-8 ${books.length === 1 ? "grid-cols-1 max-w-sm" : books.length === 2 ? "grid-cols-1 sm:grid-cols-2 max-w-2xl" : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"}`}>
+                            <div className={`grid gap-8 ${
+                                books.length === 1
+                                    ? "grid-cols-1 max-w-sm"
+                                    : books.length === 2
+                                    ? "grid-cols-1 sm:grid-cols-2 max-w-2xl"
+                                    : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+                            }`}>
                                 {books.map((book, i) => (
                                     <EbookCard key={book.key} book={book} index={i} />
                                 ))}
@@ -340,8 +376,8 @@ export default function EbooksPage() {
                     >
                         {[
                             { icon: Download, title: t("guarantee.instant.title"), desc: t("guarantee.instant.desc") },
-                            { icon: Globe, title: t("guarantee.device.title"), desc: t("guarantee.device.desc") },
-                            { icon: Star, title: t("guarantee.quality.title"), desc: t("guarantee.quality.desc") },
+                            { icon: Globe,    title: t("guarantee.device.title"),  desc: t("guarantee.device.desc") },
+                            { icon: Star,     title: t("guarantee.quality.title"), desc: t("guarantee.quality.desc") },
                         ].map(({ icon: Icon, title, desc }) => (
                             <div key={title} className="flex flex-col items-center sm:items-start gap-1">
                                 <div className="flex items-center gap-2 text-white font-semibold text-sm">
