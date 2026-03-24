@@ -2073,6 +2073,8 @@
     "book": "livro",
     "books": "livros",
     "buyDirect": "Compra Direta",
+    "digitalNotice": "Estes são ebooks digitais — recebes um ficheiro PDF, não um livro físico.",
+    "digitalLabel": "PDF Digital — sem cópia física",
     "trust": {
       "instant": "Download imediato",
       "drm": "Sem DRM — leia em qualquer lugar",

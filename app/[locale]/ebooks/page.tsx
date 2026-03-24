@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { BookOpen, Download, Star, Globe } from "lucide-react";
+import { BookOpen, Download, Star, Globe, FileText, AlertCircle } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 // ─── Ebook catalog ────────────────────────────────────────────────────────────
@@ -182,6 +182,11 @@ function EbookCard({ book, index }: { book: typeof EBOOKS[number]; index: number
 
                 {/* Price + CTAs */}
                 <div className="pt-2 border-t border-white/10 space-y-2">
+                    {/* Digital-only reminder */}
+                    <div className="flex items-center gap-1.5 text-xs text-slate-500">
+                        <FileText className="w-3 h-3 text-amber-400/70 flex-shrink-0" />
+                        <span>{t("digitalLabel")}</span>
+                    </div>
                     {/* Direct purchase — primary */}
                     <a
                         href={book.stripeLink}
@@ -285,6 +290,12 @@ export default function EbooksPage() {
                         <p className="text-xl text-slate-400 max-w-2xl mx-auto mb-10">
                             {t("description")}
                         </p>
+
+                        {/* Digital-only notice */}
+                        <div className="inline-flex items-center gap-2.5 px-5 py-3 mb-8 rounded-xl border border-amber-400/30 bg-amber-400/8 text-amber-300 text-sm font-medium">
+                            <AlertCircle className="w-4 h-4 flex-shrink-0" />
+                            {t("digitalNotice")}
+                        </div>
 
                         {/* Trust signals */}
                         <div className="flex flex-wrap justify-center gap-6 text-sm text-slate-400">
