@@ -78,26 +78,9 @@ const EBOOKS = [
         cover: "/ebooks/portugal.png",
         featured: false,
     },
-    {
-        key: "productivity",
-        series: "Tools",
-        title: "30-Day Productivity Tracker",
-        subtitle: "A Structured Daily Planner & Habit Tracker",
-        description:
-            "A clean, printable PDF tracker designed to build momentum over 30 days. Daily planning blocks, habit streaks, weekly reviews — available in 6 languages.",
-        price: 9.0,
-        badge: "6 Languages · Printable PDF",
-        tags: ["Productivity", "Habits", "Planner"],
-        languages: ["EN", "DE", "FR", "IT", "PT", "ES"],
-        stripeLink: "https://buy.stripe.com/eVqbJ2caeecpaLL16a1Nu0c",
-        amazonLink: null as string | null,
-        etsyLink:   null as string | null,
-        cover: "/ebooks/productivity.png",
-        featured: false,
-    },
 ] as const;
 
-const SERIES_ORDER = ["They Never Taught You", "100 Things", "Tools"];
+const SERIES_ORDER = ["They Never Taught You", "100 Things"];
 
 // ─── Marketplace icons ────────────────────────────────────────────────────────
 function AmazonIcon({ className }: { className?: string }) {

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { CheckCircle, Mail, BookOpen, ArrowLeft } from "lucide-react";
+import { CheckCircle, Mail, BookOpen, ArrowLeft, Download } from "lucide-react";
 import { Link } from "@/navigation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -9,26 +9,37 @@ import { useTranslations } from "next-intl";
 import { useSearchParams } from "next/navigation";
 import { Suspense } from "react";
 
-const BOOK_NAMES: Record<string, string> = {
-    freud: "The Freud They Never Taught You",
-    tesla: "The Tesla They Never Taught You",
-    switzerland: "100 Things Switzerland",
-    portugal: "100 Things Portugal",
-    productivity: "30-Day Productivity Tracker",
+const BOOKS: Record<string, { name: string; driveUrl: string }> = {
+    freud: {
+        name: "The Freud They Never Taught You",
+        driveUrl: "https://drive.google.com/drive/folders/1bkeNLoQp7bbOGWSbpNgAk9-wgUXX1lTy?usp=drive_link",
+    },
+    tesla: {
+        name: "The Tesla They Never Taught You",
+        driveUrl: "https://drive.google.com/drive/folders/1Gn9852mmwJ3hQPKw5HMrvgh1L8cN2VYB?usp=drive_link",
+    },
+    switzerland: {
+        name: "100 Things Switzerland",
+        driveUrl: "https://drive.google.com/drive/folders/18ULRi021pehhhumeViBdqn-qzjpkK1X7?usp=drive_link",
+    },
+    portugal: {
+        name: "100 Things Portugal",
+        driveUrl: "https://drive.google.com/drive/folders/18nJDff9YhLskZhB3LHWkm6fIRwH6ZSzN?usp=drive_link",
+    },
 };
 
 function ThankYouContent() {
     const t = useTranslations("EbooksPage.thankYou");
     const params = useSearchParams();
     const bookKey = params.get("book") ?? "";
-    const bookName = BOOK_NAMES[bookKey] ?? t("yourBook");
+    const book = BOOKS[bookKey];
+    const bookName = book?.name ?? t("yourBook");
 
     return (
         <main className="min-h-screen bg-[#0f172a]">
             <Navbar />
 
             <section className="relative pt-40 pb-24 overflow-hidden flex items-center justify-center">
-                {/* Glow */}
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-cyan-500/8 blur-[120px] pointer-events-none" />
 
                 <div className="relative z-10 max-w-xl mx-auto px-6 text-center">
@@ -51,12 +62,25 @@ function ThankYouContent() {
                         <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-4">
                             {t("title")}
                         </h1>
-                        <p className="text-lg text-slate-400 mb-2">
+                        <p className="text-lg text-slate-400 mb-8">
                             {t("subtitle", { book: bookName })}
                         </p>
 
-                        {/* Email instruction */}
-                        <div className="mt-8 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-6 text-left space-y-4">
+                        {/* Direct download button */}
+                        {book?.driveUrl && (
+                            <a
+                                href={book.driveUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-cyan-500 to-purple-600 text-white font-semibold text-sm shadow-[0_0_24px_rgba(6,182,212,0.3)] hover:shadow-[0_0_36px_rgba(6,182,212,0.5)] hover:scale-[1.02] transition-all duration-300 mb-8"
+                            >
+                                <Download className="w-4 h-4" />
+                                {t("downloadNow")}
+                            </a>
+                        )}
+
+                        {/* Steps */}
+                        <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-6 text-left space-y-4">
                             <div className="flex items-start gap-3">
                                 <div className="flex-shrink-0 w-8 h-8 rounded-full bg-cyan-400/20 flex items-center justify-center">
                                     <Mail className="w-4 h-4 text-cyan-400" />
