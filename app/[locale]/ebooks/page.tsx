@@ -5,22 +5,7 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { BookOpen, Download, Star, Globe } from "lucide-react";
-import { useTranslations, useLocale } from "next-intl";
-
-// ─── Currency logic ───────────────────────────────────────────────────────────
-// Swiss locales → CHF  |  all others → EUR
-const CHF_LOCALES = new Set(["de", "fr", "it"]);
-
-function useCurrency() {
-    const locale = useLocale();
-    return CHF_LOCALES.has(locale) ? "CHF" : "EUR";
-}
-
-function formatPrice(amount: number, currency: "CHF" | "EUR") {
-    return currency === "CHF"
-        ? `CHF ${amount.toFixed(2)}`
-        : `€${amount.toFixed(2)}`;
-}
+import { useTranslations } from "next-intl";
 
 // ─── Ebook catalog ────────────────────────────────────────────────────────────
 // To add Amazon / Etsy links, replace null with the live URL string.
@@ -32,13 +17,11 @@ const EBOOKS = [
         subtitle: "Cocaine, Cults & the Bizarre Origins of Psychoanalysis",
         description:
             "Before the famous couch, there was cocaine, a secret society with magic gemstone rings, and a man who was terrified of a number. The Freud you were never taught in school.",
-        priceEUR: 9.9,
-        priceCHF: 9.9,
+        price: 9.9,
         badge: "Second Edition · 17 Illustrations",
         tags: ["Biography", "History", "Psychology"],
         languages: ["EN"],
-        stripeLinkEUR: "https://buy.stripe.com/28EcN61vA2tHcTTg141Nu03",
-        stripeLinkCHF: "https://buy.stripe.com/dRmbJ2cae0lz5rr8yC1Nu08",
+        stripeLink: "https://buy.stripe.com/dRmbJ2cae0lz5rr8yC1Nu08",
         amazonLink: null as string | null,
         etsyLink:   null as string | null,
         cover: "/ebooks/freud.png",
@@ -51,13 +34,11 @@ const EBOOKS = [
         subtitle: "Gambling, Obsession & the Genius Who Powered the Modern World",
         description:
             "Electrocuted elephants, man-made lightning bolts 135 feet long, and a torn-up $300 million contract. Meet the real Nikola Tesla — as told by no textbook ever.",
-        priceEUR: 9.9,
-        priceCHF: 9.9,
+        price: 9.9,
         badge: "First Edition · 17 Illustrations",
         tags: ["Biography", "History", "Science"],
         languages: ["EN"],
-        stripeLinkEUR: "https://buy.stripe.com/eVq3cw4HM8S56vv7uy1Nu04",
-        stripeLinkCHF: "https://buy.stripe.com/7sY4gAa262tHcTT5mq1Nu09",
+        stripeLink: "https://buy.stripe.com/7sY4gAa262tHcTT5mq1Nu09",
         amazonLink: null as string | null,
         etsyLink:   null as string | null,
         cover: "/ebooks/tesla.png",
@@ -70,13 +51,11 @@ const EBOOKS = [
         subtitle: "The Unofficial Survival Guide to Swiss Life",
         description:
             "From separating your recycling by material type to never vacuuming on Sunday — 100 illustrated facts, rules, and cultural quirks every expat needs to survive in Switzerland.",
-        priceEUR: 9.9,
-        priceCHF: 9.9,
+        price: 9.9,
         badge: "First Edition · 100 Illustrations",
         tags: ["Travel", "Culture", "Expat Life"],
         languages: ["EN", "PT"],
-        stripeLinkEUR: "https://buy.stripe.com/aFa6oI8Y22tH4nnaGK1Nu05",
-        stripeLinkCHF: "https://buy.stripe.com/eVq7sM3DIfgt4nn9CG1Nu0a",
+        stripeLink: "https://buy.stripe.com/eVq7sM3DIfgt4nn9CG1Nu0a",
         amazonLink: null as string | null,
         etsyLink:   null as string | null,
         cover: "/ebooks/switzerland.png",
@@ -89,13 +68,11 @@ const EBOOKS = [
         subtitle: "An Illustrated Deep Dive Into Portuguese Culture",
         description:
             "Bacalhau à Brás, Pastéis de Nata, and the inexplicable passion for melancholy music — 100 things that make Portugal unmistakably, gloriously Portuguese.",
-        priceEUR: 9.9,
-        priceCHF: 9.9,
+        price: 9.9,
         badge: "First Edition · 100 Illustrations",
         tags: ["Travel", "Culture", "Portugal"],
         languages: ["EN"],
-        stripeLinkEUR: "https://buy.stripe.com/aFacN6eim3xLg652ae1Nu06",
-        stripeLinkCHF: "https://buy.stripe.com/8x228s2zEecp9HHeX01Nu0b",
+        stripeLink: "https://buy.stripe.com/8x228s2zEecp9HHeX01Nu0b",
         amazonLink: null as string | null,
         etsyLink:   null as string | null,
         cover: "/ebooks/portugal.png",
@@ -108,13 +85,11 @@ const EBOOKS = [
         subtitle: "A Structured Daily Planner & Habit Tracker",
         description:
             "A clean, printable PDF tracker designed to build momentum over 30 days. Daily planning blocks, habit streaks, weekly reviews — available in 6 languages.",
-        priceEUR: 9.0,
-        priceCHF: 9.0,
+        price: 9.0,
         badge: "6 Languages · Printable PDF",
         tags: ["Productivity", "Habits", "Planner"],
         languages: ["EN", "DE", "FR", "IT", "PT", "ES"],
-        stripeLinkEUR: "https://buy.stripe.com/6oU28s3DIb0d0776qu1Nu07",
-        stripeLinkCHF: "https://buy.stripe.com/eVqbJ2caeecpaLL16a1Nu0c",
+        stripeLink: "https://buy.stripe.com/eVqbJ2caeecpaLL16a1Nu0c",
         amazonLink: null as string | null,
         etsyLink:   null as string | null,
         cover: "/ebooks/productivity.png",
@@ -144,10 +119,6 @@ function EtsyIcon({ className }: { className?: string }) {
 // ─── Book Card ────────────────────────────────────────────────────────────────
 function EbookCard({ book, index }: { book: typeof EBOOKS[number]; index: number }) {
     const t = useTranslations("EbooksPage");
-    const currency = useCurrency();
-    const price  = currency === "CHF" ? book.priceCHF : book.priceEUR;
-    const link   = currency === "CHF" ? book.stripeLinkCHF : book.stripeLinkEUR;
-    const priceLabel = formatPrice(price, currency);
 
     return (
         <motion.div
@@ -213,7 +184,7 @@ function EbookCard({ book, index }: { book: typeof EBOOKS[number]; index: number
                 <div className="pt-2 border-t border-white/10 space-y-2">
                     {/* Direct purchase — primary */}
                     <a
-                        href={link}
+                        href={book.stripeLink}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center justify-between w-full px-4 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-purple-600 text-white text-sm font-semibold shadow-[0_0_20px_rgba(6,182,212,0.2)] hover:shadow-[0_0_30px_rgba(6,182,212,0.4)] transition-all duration-300 hover:scale-[1.02]"
@@ -222,7 +193,7 @@ function EbookCard({ book, index }: { book: typeof EBOOKS[number]; index: number
                             <Download className="w-4 h-4" />
                             {t("buyDirect")}
                         </span>
-                        <span className="font-bold">{priceLabel}</span>
+                        <span className="font-bold">CHF {book.price.toFixed(2)}</span>
                     </a>
 
                     {/* Amazon + Etsy — secondary, only shown when URLs are set */}
@@ -260,8 +231,7 @@ function EbookCard({ book, index }: { book: typeof EBOOKS[number]; index: number
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
 export default function EbooksPage() {
-    const t        = useTranslations("EbooksPage");
-    const currency = useCurrency();
+    const t = useTranslations("EbooksPage");
 
     const grouped = SERIES_ORDER.map((series) => ({
         series,
@@ -315,12 +285,6 @@ export default function EbooksPage() {
                         <p className="text-xl text-slate-400 max-w-2xl mx-auto mb-10">
                             {t("description")}
                         </p>
-
-                        {/* Currency indicator */}
-                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 text-sm text-slate-400 mb-8">
-                            <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
-                            {t("currencyNote", { currency })}
-                        </div>
 
                         {/* Trust signals */}
                         <div className="flex flex-wrap justify-center gap-6 text-sm text-slate-400">
