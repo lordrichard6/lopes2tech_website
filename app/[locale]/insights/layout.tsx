@@ -11,7 +11,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     description: "Expert articles on AI workflows, technical SEO, web development, and business automation for Swiss businesses. Practical guides and case studies.",
     alternates: {
       canonical,
-      languages: { "x-default": `${BASE_URL}/en${path}`, en: `${BASE_URL}/en${path}`, de: `${BASE_URL}/de${path}`, pt: `${BASE_URL}/pt${path}` },
+      languages: { "x-default": `${BASE_URL}/en${path}`, en: `${BASE_URL}/en${path}`, de: `${BASE_URL}/de${path}`, pt: `${BASE_URL}/pt${path}`, fr: `${BASE_URL}/fr${path}`, it: `${BASE_URL}/it${path}` },
     },
     openGraph: { title: "Insights & Blog | Lopes2Tech", description: "Expert articles on AI, web development, SEO, and business automation.", url: canonical },
   };

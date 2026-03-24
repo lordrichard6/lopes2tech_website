@@ -7,9 +7,12 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { BookOpen, Calendar, Clock } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
+import MediumBanner from "@/components/MediumBanner";
 import blogPostsEn from "@/data/blog-posts.json";
 import blogPostsDe from "@/data/blog-posts-de.json";
 import blogPostsPt from "@/data/blog-posts-pt.json";
+import blogPostsFr from "@/data/blog-posts-fr.json";
+import blogPostsIt from "@/data/blog-posts-it.json";
 
 interface BlogPost {
     id: string;
@@ -28,6 +31,8 @@ const blogPostsByLocale: Record<string, BlogPost[]> = {
     en: blogPostsEn as BlogPost[],
     de: blogPostsDe as BlogPost[],
     pt: blogPostsPt as BlogPost[],
+    fr: blogPostsFr as BlogPost[],
+    it: blogPostsIt as BlogPost[],
 };
 
 export default function InsightsPage() {
@@ -89,6 +94,9 @@ export default function InsightsPage() {
                         </p>
                     </motion.div>
 
+                    {/* Medium Banner */}
+                    <MediumBanner />
+
                     {/* Blog Grid */}
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {posts.map((post, idx) => (
@@ -143,7 +151,7 @@ export default function InsightsPage() {
                                                 <span className="flex items-center gap-1">
                                                     <Calendar className="w-3 h-3" />
                                                     {new Date(post.date).toLocaleDateString(
-                                                        locale === 'de' ? 'de-CH' : locale === 'pt' ? 'pt-PT' : 'en-GB',
+                                                        locale === 'de' ? 'de-CH' : locale === 'pt' ? 'pt-PT' : locale === 'fr' ? 'fr-CH' : locale === 'it' ? 'it-CH' : 'en-GB',
                                                         { month: 'short', day: 'numeric', year: 'numeric' }
                                                     )}
                                                 </span>

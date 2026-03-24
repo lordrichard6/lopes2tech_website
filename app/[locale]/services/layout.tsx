@@ -11,7 +11,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     description: "Full-service digital solutions for Swiss businesses: custom web development, SEO engineering, AI integration, social media marketing, and business automation. Based in Zurich.",
     alternates: {
       canonical,
-      languages: { "x-default": `${BASE_URL}/en${path}`, en: `${BASE_URL}/en${path}`, de: `${BASE_URL}/de${path}`, pt: `${BASE_URL}/pt${path}` },
+      languages: { "x-default": `${BASE_URL}/en${path}`, en: `${BASE_URL}/en${path}`, de: `${BASE_URL}/de${path}`, pt: `${BASE_URL}/pt${path}`, fr: `${BASE_URL}/fr${path}`, it: `${BASE_URL}/it${path}` },
     },
     openGraph: { title: "Services | Lopes2Tech", description: "Full-service digital solutions: web development, SEO, AI integration, and business automation for Swiss businesses.", url: canonical },
   };

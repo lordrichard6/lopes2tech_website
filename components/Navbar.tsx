@@ -233,7 +233,7 @@ export default function Navbar() {
                                         aria-label="Select language"
                                         className="absolute top-full right-0 mt-2 bg-black/90 border border-white/10 rounded-lg overflow-hidden min-w-[80px]"
                                     >
-                                        {['en', 'pt', 'de'].map((l) => (
+                                        {['en', 'pt', 'de', 'fr', 'it'].map((l) => (
                                             <li key={l} role="option" aria-selected={locale === l}>
                                                 <button
                                                     onClick={() => changeLanguage(l)}
@@ -344,7 +344,7 @@ export default function Navbar() {
 
                             {/* Mobile Language Switcher */}
                             <div className="flex gap-4 mt-4" role="group" aria-label="Select language">
-                                {['en', 'pt', 'de'].map((l) => (
+                                {['en', 'pt', 'de', 'fr', 'it'].map((l) => (
                                     <button
                                         key={l}
                                         onClick={() => { changeLanguage(l); setIsMenuOpen(false); }}

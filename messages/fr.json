@@ -1,0 +1,2060 @@
+{
+  "Navigation": {
+    "home": "Accueil",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "insights": "Insights",
+    "about": "À propos",
+    "allServices": "Tous les services",
+    "serviceDropdown": {
+      "webDesign": "Création Web",
+      "seo": "Développement SEO",
+      "ai": "Intégration IA",
+      "automation": "Automatisation",
+      "webApps": "Applications Web",
+      "ecommerce": "E-Commerce",
+      "socialMedia": "Marketing Digital"
+    }
+  },
+  "Hero": {
+    "title1": "Sites Web & Automatisations",
+    "title2": "pour les Entreprises de Services",
+    "subtitle": "Nous aidons les PME à générer plus de prospects, automatiser leur administration et croître sans complexité.",
+    "cta": "Parlez avec moi"
+  },
+  "ServicesSection": {
+    "title": "Notre Expertise",
+    "subtitle": "Du développement web à l'automatisation intelligente, nous proposons des solutions digitales de bout en bout.",
+    "items": {
+      "web": {
+        "title": "Sites Web Professionnels",
+        "description": "Des sites haute performance qui représentent votre marque à la perfection."
+      },
+      "marketing": {
+        "title": "Marketing Digital",
+        "description": "Développez votre audience avec des campagnes sur les réseaux sociaux propulsées par l'IA."
+      },
+      "automation": {
+        "title": "Automatisation",
+        "description": "Optimisez vos opérations et économisez des heures de travail manuel."
+      },
+      "ecommerce": {
+        "title": "E-Commerce",
+        "description": "Des boutiques en ligne sur mesure qui rendent l'achat simple et sécurisé."
+      },
+      "apps": {
+        "title": "Applications Web",
+        "description": "Des solutions logicielles personnalisées adaptées aux besoins uniques de votre entreprise."
+      }
+    },
+    "getStarted": "Commencer",
+    "cta": "Voir tous les services",
+    "learnMore": "En savoir plus"
+  },
+  "CTASection": {
+    "title": "Prêt à Développer Votre Entreprise ?",
+    "subtitle": "Construisons quelque chose d'extraordinaire ensemble. Réservez votre consultation gratuite aujourd'hui.",
+    "button": "Démarrer un Projet"
+  },
+  "Portfolio": {
+    "badge": "RÉALISATIONS SÉLECTIONNÉES",
+    "title": "Conçu pour la Croissance",
+    "subtitle": "Une sélection de sites web et d'applications à fort impact, conçus pour la performance et l'évolutivité.",
+    "button": "Voir le Portfolio Complet",
+    "projects": {
+      "mimesa": {
+        "title": "MiMesa",
+        "description": "Plateforme de gestion de restauration.",
+        "category": "Application Web"
+      },
+      "menteiq": {
+        "title": "menteIQ",
+        "description": "Plateforme CRM moderne.",
+        "category": "Application Web"
+      },
+      "theraflow": {
+        "title": "TheraFlow",
+        "description": "Logiciel de gestion de cabinet.",
+        "category": "SaaS"
+      },
+      "finito": {
+        "title": "Finito",
+        "description": "Gestion financière.",
+        "category": "Application Web"
+      },
+      "noff": {
+        "title": "Noff",
+        "description": "Solution RH Tech.",
+        "category": "Application Web"
+      },
+      "ribeiro": {
+        "title": "Ribeiro Consulting",
+        "description": "Conseil professionnel.",
+        "category": "Site Web"
+      },
+      "costeleta": {
+        "title": "Costeleta Dourada",
+        "description": "Réservation de restaurant.",
+        "category": "Site Web"
+      },
+      "forma": {
+        "title": "Forma Architects",
+        "description": "Portfolio minimaliste.",
+        "category": "Site Web"
+      },
+      "alentseguros": {
+        "title": "AlentSeguros",
+        "description": "Portail d'assurance.",
+        "category": "Site Web"
+      }
+    }
+  },
+  "Process": {
+    "badge": "Le Processus",
+    "titlePart1": "Du Concept à la",
+    "titlePart2": "Réalité",
+    "description": "Un processus transparent et optimisé, conçu pour la rapidité et la précision.",
+    "steps": {
+      "1": {
+        "title": "Appel de Découverte",
+        "description": "Nous analysons en profondeur vos objectifs pour nous assurer d'être le partenaire idéal."
+      },
+      "2": {
+        "title": "Proposition Stratégique",
+        "description": "Vous recevez une feuille de route complète et un devis à prix fixe."
+      },
+      "3": {
+        "title": "Développement & Automatisation",
+        "description": "Nous construisons votre solution sur mesure avec un suivi d'avancement en temps réel."
+      },
+      "4": {
+        "title": "Lancement & Support",
+        "description": "Nous déployons votre système et assurons la maintenance continue."
+      }
+    }
+  },
+  "Testimonials": {
+    "badge": "Avis Clients",
+    "title": "La Confiance des Entreprises",
+    "titleHighlight": "Suisses",
+    "subtitle": "Des résultats concrets de clients réels. Voici ce qu'ils disent de leur collaboration avec nous.",
+    "items": {
+      "marco": {
+        "name": "Marco Reizinho",
+        "role": "Chef d'Entreprise",
+        "company": "Marco Reizinho",
+        "text": "Très professionnel ! Et le résultat final était incroyable ! Je recommande vivement ! J'étais submergé d'offres, je ne savais pas quelle entreprise choisir. Un ami m'a recommandé Lopes2Tech pour la facilité de communication et la simplicité du processus — et il avait raison ! Mon entreprise est en pleine croissance ! Merci 🙏"
+      },
+      "silvio": {
+        "name": "Silvio Valente",
+        "role": "Photographe Professionnel",
+        "company": "Silvio Valente Photography",
+        "text": "J'avais besoin d'un portfolio qui reflète vraiment la qualité de mon travail, et Lopes2Tech a livré exactement cela. Le site est épuré, rapide et élégant. Les clients complimentent constamment la facilité de navigation et de réservation. Je suis plus que satisfait du résultat."
+      },
+      "ana": {
+        "name": "Ana Ribeiro",
+        "role": "Fondatrice",
+        "company": "Ribeiro Consulting",
+        "text": "Travailler avec Lopes2Tech a été une expérience fluide du début à la fin. Ils ont compris notre marque, construit un site professionnel qui génère des prospects, et ont toujours été réactifs tout au long du processus. Notre présence en ligne n'a jamais été aussi crédible."
+      }
+    }
+  },
+  "Newsletter": {
+    "description": "Recevez des insights sur l'IA, le SEO et le développement web directement dans votre boîte mail.",
+    "placeholder": "votre@email.com",
+    "success": "Merci pour votre inscription !",
+    "error": "Une erreur s'est produite. Veuillez réessayer."
+  },
+  "Footer": {
+    "sections": {
+      "services": "Services",
+      "company": "Entreprise",
+      "legal": "Mentions légales"
+    },
+    "serviceLinks": {
+      "webDesign": "Création Web",
+      "seo": "Développement SEO",
+      "ai": "Intégration IA",
+      "automation": "Automatisation",
+      "webApps": "Applications Web",
+      "ecommerce": "E-Commerce",
+      "socialMedia": "Marketing Digital"
+    },
+    "companyLinks": {
+      "about": "À propos",
+      "portfolio": "Portfolio",
+      "insights": "Insights & Blog",
+      "contact": "Contact",
+      "faq": "FAQ"
+    },
+    "links": {
+      "impressum": "Impressum",
+      "privacy": "Politique de confidentialité",
+      "terms": "Conditions générales"
+    },
+    "copyright": "Tous droits réservés."
+  },
+  "CookieConsent": {
+    "title": "Nous respectons votre vie privée",
+    "description": "Nous utilisons des cookies pour améliorer votre expérience, analyser le trafic et personnaliser le contenu. En cliquant sur « Accepter », vous consentez à notre utilisation des cookies.",
+    "accept": "Accepter",
+    "decline": "Refuser",
+    "learnMore": "En savoir plus"
+  },
+  "Layout": {
+    "skipToContent": "Aller au contenu principal"
+  },
+  "Common": {
+    "mostPopular": "Le Plus Populaire",
+    "getStarted": "Commencer",
+    "billedMonthly": "Facturé mensuellement",
+    "oneTimePayment": "Paiement unique",
+    "customPricing": "Tarif sur mesure"
+  },
+  "LoadingPage": {
+    "loading": "Chargement…"
+  },
+  "ErrorPage": {
+    "title": "Une erreur s'est produite",
+    "description": "Une erreur inattendue est survenue. Veuillez réessayer ou retourner à la page d'accueil.",
+    "tryAgain": "Réessayer",
+    "goHome": "Accueil"
+  },
+  "NotFoundPage": {
+    "title": "Page introuvable",
+    "description": "La page que vous recherchez n'existe pas ou a été déplacée.",
+    "backHome": "Retour à l'accueil",
+    "contactUs": "Nous contacter"
+  },
+  "Packages": {
+    "starter": {
+      "name": "Starter",
+      "priceDisplay": "dès CHF 690",
+      "description": "La base idéale pour votre présence en ligne — un site web professionnel d'une page pour établir votre entreprise.",
+      "target": "Nouvelle entreprise avec marque existante",
+      "features": {
+        "0": "Site d'une page avec rédaction IA incluse",
+        "1": "Formulaire de contact + widget de réservation + bouton WhatsApp",
+        "2": "Configuration Google Business Profile + SEO de base",
+        "3": "Analytics GA4 + consentement cookies + SSL",
+        "4": "Livraison en 4 jours (urgent : 2 jours +CHF 100)"
+      }
+    },
+    "businessPro": {
+      "name": "Business Pro",
+      "priceDisplay": "dès CHF 1 990",
+      "description": "Pour les entreprises en croissance nécessitant des fonctionnalités avancées : CMS, blog, systèmes de réservation ou support multilingue.",
+      "target": "PME établies",
+      "features": {
+        "0": "5 pages principales + jusqu'à 10 pages de services dédiées",
+        "1": "3 langues incluses (ex. FR + DE + EN)",
+        "2": "SEO complet — 15-20 mots-clés, schema, Search Console",
+        "3": "Système de capture de prospects — formulaire → CRM → séquence de 3 e-mails",
+        "4": "Rédaction IA, widget de réservation, WhatsApp, GBP inclus"
+      }
+    },
+    "logoOnly": {
+      "name": "Logo Seul",
+      "priceDisplay": "CHF 299",
+      "description": "Création de logo sur mesure pour donner à votre entreprise un visage professionnel. Inclut tous les formats de fichiers nécessaires.",
+      "target": "Identité visuelle autonome",
+      "features": {
+        "0": "Concepts de logo uniques",
+        "1": "Fichiers vectoriels (AI, EPS, SVG, PDF)",
+        "2": "Droits de propriété complets",
+        "3": "Définition de la palette de couleurs",
+        "4": "Guide d'utilisation"
+      }
+    },
+    "fullBrandKit": {
+      "name": "Kit de Marque Complet",
+      "priceDisplay": "CHF 549",
+      "description": "Identité visuelle complète : logo, cartes de visite, en-tête et modèles pour les réseaux sociaux pour une image cohérente.",
+      "target": "Package d'identité complète",
+      "features": {
+        "0": "Conception de logo & variantes",
+        "1": "Conception de carte de visite",
+        "2": "En-tête & signature e-mail",
+        "3": "Kit de profils pour les réseaux sociaux",
+        "4": "Guide de style de marque"
+      }
+    },
+    "payment": {
+      "onetime": "Paiement unique",
+      "3months": "3 Mois",
+      "6months": "6 Mois",
+      "12months": "12 Mois",
+      "monthly": "/mois",
+      "total": "Total",
+      "disclaimer": "* Le prix final peut varier selon la portée et la complexité du projet",
+      "requestQuote": "Demander un Devis"
+    },
+    "section": {
+      "readyToGo": "Packages Prêts à l'Emploi",
+      "easyTitle": "Packages",
+      "packagesTitle": "Simples",
+      "intro": "Solutions préconfigurées pour les besoins courants des entreprises. Démarrez rapidement avec une tarification transparente.",
+      "mostPopular": "Le Plus Populaire",
+      "recommended": "Recommandé",
+      "hostingTitle": "Hébergement &",
+      "supportTitle": "Support",
+      "hostingBadge": "Plans Mensuels",
+      "hostingIntro": "Une fois votre site en ligne, gardez-le rapide, sécurisé et à jour avec nos plans d'hébergement géré.",
+      "defaultPlan": "Plan de Base",
+      "upgradePlan": "Plan Amélioré",
+      "perMonth": "/mois",
+      "billedMonthly": "Facturé mensuellement",
+      "installmentNote": "Remarque : Si vous payez le développement en plusieurs versements, les frais d'hébergement & support s'ajoutent à vos paiements une fois votre projet en ligne et entièrement terminé.",
+      "revisionsNote": "Chaque package comprend son propre cycle de révisions",
+      "extraRevisions": "Les révisions supplémentaires auront un coût additionnel de CHF 120 par heure",
+      "socialMediaTitle": "Marketing sur les",
+      "marketingTitle": "Réseaux Sociaux",
+      "socialMediaBadge": "Propulsé par l'IA",
+      "socialMediaIntro": "Contenu cohérent et professionnel propulsé par l'IA et affiné par des humains. Développez votre marque sur Instagram, Facebook et LinkedIn.",
+      "bestFor": "Idéal pour",
+      "addOns": "Options supplémentaires"
+    },
+    "hosting": {
+      "basic": {
+        "name": "Basic",
+        "description": "Hébergement et support essentiels pour votre site web.",
+        "features": {
+          "0": "Hébergement sécurisé sur notre plateforme",
+          "1": "Jusqu'à 2 petites modifications par mois",
+          "2": "Max 30 minutes de travail incluses",
+          "3": "Rapport Google Analytics mensuel",
+          "4": "Support par e-mail"
+        }
+      },
+      "professional": {
+        "name": "Professional",
+        "description": "Support amélioré avec réponse prioritaire et plus de flexibilité.",
+        "features": {
+          "0": "Tout ce qui est dans Basic",
+          "1": "Jusqu'à 5 modifications par mois",
+          "2": "Max 1 heure de travail incluse",
+          "3": "Support prioritaire par e-mail & chat",
+          "4": "Surveillance des performances"
+        }
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "description": "Support complet pour les entreprises qui ont besoin de plus.",
+        "features": {
+          "0": "Tout ce qui est dans Professional",
+          "1": "Modifications mineures illimitées",
+          "2": "Max 2 heures de travail incluses",
+          "3": "Contact de support dédié",
+          "4": "Surveillance de disponibilité 24h/24 7j/7"
+        }
+      }
+    },
+    "socialMedia": {
+      "starter": {
+        "name": "Social Starter",
+        "price": 249,
+        "description": "Idéal pour les petites entreprises qui débutent sur les réseaux sociaux.",
+        "features": {
+          "0": "8 publications de qualité par mois",
+          "1": "1 plateforme (Instagram, Facebook ou LinkedIn)",
+          "2": "Création de contenu assistée par IA",
+          "3": "Planification & publication",
+          "4": "Rapport de performance mensuel",
+          "5": "Vous fournissez les photos — nous les améliorons avec l'IA"
+        }
+      },
+      "growth": {
+        "name": "Social Growth",
+        "price": 399,
+        "description": "Pour les entreprises prêtes à développer leur présence sociale.",
+        "features": {
+          "0": "12 publications par mois",
+          "1": "2 plateformes (ex. Instagram + Facebook)",
+          "2": "Stories Instagram (4 à 8 par mois)",
+          "3": "Gestion de base de l'engagement",
+          "4": "Recherche & optimisation des hashtags",
+          "5": "Aperçu du calendrier de contenu"
+        }
+      },
+      "pro": {
+        "name": "Social Pro",
+        "price": 579,
+        "description": "Gestion complète des réseaux sociaux pour les marques ambitieuses.",
+        "features": {
+          "0": "16 publications par mois",
+          "1": "3 plateformes (Instagram + Facebook + LinkedIn)",
+          "2": "Gestion complète de l'engagement",
+          "3": "Appel stratégique mensuel",
+          "4": "Tests A/B & optimisation",
+          "5": "Support prioritaire"
+        }
+      }
+    },
+    "socialAddOns": {
+      "title": "Options Réseaux Sociaux",
+      "extraPlatform": {
+        "name": "Plateforme Supplémentaire",
+        "price": 99,
+        "description": "Ajouter un autre réseau social"
+      },
+      "extraReels": {
+        "name": "Reels/Vidéos Supplémentaires",
+        "price": 79,
+        "description": "Contenu vidéo additionnel (par reel)"
+      },
+      "paidAds": {
+        "name": "Gestion de Publicités Payantes",
+        "price": 199,
+        "description": "Gérer les publicités sur les réseaux sociaux (Meta/LinkedIn)"
+      }
+    },
+    "professional": {
+      "name": "Professional",
+      "priceDisplay": "CHF 1 390",
+      "description": "Un site web professionnel de 5 pages avec deux langues, bases SEO et une automatisation intégrée.",
+      "target": "Solopreneurs établis prêts à évoluer",
+      "features": {
+        "0": "Site web 5 pages (Accueil, Services, À propos, FAQ, Contact)",
+        "1": "2 langues incluses (ex. FR + DE)",
+        "2": "Google Business Profile + bases SEO",
+        "3": "1 automatisation incluse (réservation, génération de prospects ou avis)",
+        "4": "Configuration e-mail professionnel + analytics"
+      }
+    }
+  },
+  "BuilderServices": {
+    "website": {
+      "name": "Site Web Professionnel",
+      "description": "Site web sur mesure, haute performance",
+      "addOns": {
+        "10pages": {
+          "name": "10+ Pages",
+          "description": "Grand site avec de nombreuses sections"
+        },
+        "cms": {
+          "name": "CMS + Blog",
+          "description": "Gérer le contenu & publier des articles"
+        },
+        "multilang": {
+          "name": "Multilingue",
+          "description": "Atteignez un public mondial"
+        },
+        "booking": {
+          "name": "Système de Réservation Personnalisé",
+          "description": "Entièrement sur mesure, pas un simple widget"
+        },
+        "chatbot": {
+          "name": "Chatbot IA",
+          "description": "Support automatisé 24h/24"
+        },
+        "ecommerce": {
+          "name": "E-Commerce (Basique)",
+          "description": "Vendre des produits en ligne"
+        }
+      }
+    },
+    "landing": {
+      "name": "Page d'Atterrissage",
+      "description": "Page marketing à fort taux de conversion",
+      "addOns": {
+        "newsletter": {
+          "name": "Intégration Newsletter",
+          "description": "Connexion à Mailchimp, ConvertKit, etc."
+        },
+        "multilang": {
+          "name": "Multilingue",
+          "description": "Atteignez un public mondial"
+        },
+        "stripe": {
+          "name": "Bouton de Paiement Stripe",
+          "description": "Accepter des paiements directement"
+        }
+      }
+    },
+    "automation": {
+      "name": "Automatisation IA",
+      "description": "Consultation, conception de système & mise en place de l'intégration",
+      "addOns": {
+        "chatbot": {
+          "name": "Chatbot IA",
+          "description": "Support client 24h/24"
+        },
+        "rag": {
+          "name": "Base de Connaissances (RAG)",
+          "description": "Entraîner l'IA sur vos documents"
+        },
+        "voice": {
+          "name": "Agent Vocal",
+          "description": "Automatisation des appels téléphoniques"
+        },
+        "email": {
+          "name": "Automatisation E-mail",
+          "description": "Workflows e-mail intelligents"
+        }
+      }
+    },
+    "branding": {
+      "name": "Identité de Marque",
+      "description": "Conception de logo & identité visuelle",
+      "addOns": {
+        "brandkit": {
+          "name": "Kit de Marque Complet",
+          "description": "Package d'identité complète"
+        },
+        "social": {
+          "name": "Modèles Réseaux Sociaux",
+          "description": "5 modèles de publications + 3 de stories"
+        },
+        "print": {
+          "name": "Supports Imprimés",
+          "description": "Cartes de visite, en-têtes"
+        }
+      }
+    },
+    "webapp": {
+      "name": "Application Web",
+      "description": "Application responsive + authentification de base + déploiement",
+      "addOns": {
+        "advancedauth": {
+          "name": "Auth Avancée",
+          "description": "Rôles, permissions, OAuth"
+        },
+        "api": {
+          "name": "Développement API",
+          "description": "Points de terminaison API personnalisés"
+        },
+        "dashboard": {
+          "name": "Tableau de Bord Admin",
+          "description": "Gérer les données, utilisateurs, paramètres"
+        },
+        "ecommerce": {
+          "name": "E-Commerce",
+          "description": "Panier, paiement, transactions"
+        }
+      }
+    },
+    "notes": {
+      "monthlyCost": "Les applications web nécessitent une maintenance continue. Package de support minimum : CHF 89/mois",
+      "hasMonthlyNote": "Les services IA ont des coûts mensuels variables selon l'utilisation et l'implémentation. Nous en discuterons lors de notre consultation."
+    },
+    "payment": {
+      "onetime": "Paiement unique",
+      "3months": "3 Mois",
+      "6months": "6 Mois",
+      "monthly": "Mensuel",
+      "total": "Total",
+      "estimatedTotal": "Total estimé",
+      "requestQuote": "Demander un Devis Personnalisé",
+      "disclaimer": "* Le prix final peut varier selon la portée et la complexité du projet"
+    }
+  },
+  "CustomBuilder": {
+    "badge": "Construisez le Vôtre",
+    "title": "Constructeur de <highlight>Package Personnalisé</highlight>",
+    "description": "Besoin d'une solution sur mesure ? Sélectionnez un service de base et ajoutez les fonctionnalités dont vous avez besoin. Obtenez une estimation instantanée.",
+    "step1": "Choisissez Votre Service de Base",
+    "step2": "Ajoutez des Fonctionnalités & Améliorations",
+    "summary": {
+      "title": "Votre Package",
+      "subtitle": "Estimation instantanée",
+      "empty": "Sélectionnez un service de base pour commencer à construire votre package personnalisé",
+      "paymentPlan": "Plan de Paiement",
+      "total": "Total"
+    },
+    "requestQuote": "Demander un Devis"
+  },
+  "HireMe": {
+    "badge": "Disponible pour Missions",
+    "title": "Besoin d'un <highlight>Expert Dédié ?</highlight>",
+    "description": "Que vous ayez besoin de développement opérationnel, d'une consultation technique ou d'une direction de projet — je suis disponible pour travailler directement avec votre équipe.",
+    "modes": {
+      "hourly": "Horaire",
+      "daily": "Journée complète",
+      "custom": "Sur mesure"
+    },
+    "pricing": {
+      "hourly": {
+        "title": "Parlons-en !",
+        "description": "Idéal pour les petites tâches, consultations ou corrections rapides"
+      },
+      "daily": {
+        "title": "Parlons-en !",
+        "description": "Meilleur rapport qualité-prix pour une collaboration intensive d'une journée sur votre projet"
+      },
+      "custom": {
+        "title": "Parlons-en !",
+        "description": "Vous ne savez pas combien de temps vous avez besoin ? Pas d'inquiétude — déterminons cela ensemble."
+      }
+    },
+    "agreement": "Trouvons un accord sur le calendrier. Comment puis-je vous aider ?",
+    "cta": "Réserver une Consultation"
+  },
+  "AboutPage": {
+    "hero": {
+      "badge": "À propos de nous",
+      "title": "L'Innovation au Service des Résultats",
+      "description": "Nous sommes une agence technologique basée en Suisse, spécialisée dans les agents IA, le développement web et les solutions automatisées. Nous croyons que la technologie doit servir les personnes, et non l'inverse."
+    },
+    "philosophy": {
+      "title": "Notre Philosophie",
+      "description": "Nous sommes une agence technologique basée en Suisse, spécialisée dans les agents IA, le développement web et les solutions automatisées. Nous croyons que la technologie doit servir les personnes, et non l'inverse.",
+      "stats": {
+        "uptime": "Garantie de disponibilité",
+        "delivery": "Livraison plus rapide",
+        "satisfaction": "Satisfaction client",
+        "coffees": "Cafés / Mois"
+      }
+    },
+    "founder": {
+      "title": "À propos du Fondateur",
+      "description1": "Je suis développeur Full Stack et fondateur de <span class='text-cyan-400 font-semibold'>Lopes2Tech</span>, spécialisé dans les sites web haute performance, les automatisations intelligentes et les applications web pilotées par l'IA. Basé à Zurich mais originaire du Portugal (où <em>Bacalhau à Brás</em> et <em>Pastéis de Nata</em> sont une religion), je combine précision technique et passion profonde pour l'innovation digitale.",
+      "description2": "Mon caractère professionnel est défini par une volonté inébranlable de résoudre des problèmes complexes. Je n'écris pas seulement du code ; j'architecture des écosystèmes digitaux. Des plateformes SaaS évolutives aux agents IA autonomes, j'utilise une stack moderne — incluant <span class='text-white'>Next.js, TypeScript, Python et Supabase</span> — pour livrer des solutions aussi robustes qu'élégantes.",
+      "quote": "Je simplifie le paysage digital pour les entreprises, en construisant des automatisations et applications web sur mesure qui travaillent pour vous pendant que vous savourez un Pastél de Nata.",
+      "connect": "Me contacter"
+    }
+  },
+  "ContactPage": {
+    "hero": {
+      "badge": "Prenez Contact",
+      "titlePart1": "Construisons Quelque Chose",
+      "titlePart2": "d'Extraordinaire",
+      "description": "Basé à Zurich, nous offrons l'excellence digitale au monde entier."
+    },
+    "form": {
+      "title": "Démarrer une Conversation",
+      "subtitle": "Parlez-moi de votre projet. Je réponds généralement dans les 24 heures.",
+      "labels": {
+        "name": "Nom",
+        "email": "E-mail",
+        "company": "Entreprise (Optionnel)",
+        "phone": "Téléphone (Optionnel)",
+        "message": "Comment puis-je vous aider ?"
+      },
+      "errors": {
+        "nameRequired": "Le nom est requis",
+        "emailRequired": "L'e-mail est requis",
+        "emailInvalid": "Veuillez saisir un e-mail valide",
+        "messageRequired": "Le message est requis",
+        "general": "Une erreur s'est produite. Veuillez réessayer ou m'envoyer un e-mail directement."
+      },
+      "button": "Envoyer le Message",
+      "sending": "Envoi en cours...",
+      "success": {
+        "title": "Message Envoyé !",
+        "message": "Merci pour votre message. Je vous répondrai prochainement.",
+        "button": "Envoyer un Autre"
+      }
+    },
+    "location": "Zurich, Suisse"
+  },
+  "ImpressumPage": {
+    "title": "Impressum",
+    "subtitle": "Mentions Légales",
+    "backToHome": "Retour à l'accueil",
+    "companyInfo": {
+      "title": "Informations sur l'Entreprise",
+      "name": "Lopes2Tech",
+      "type": "Entreprise individuelle",
+      "representedBy": "Représentée par",
+      "representativeName": "Paulo Lopes"
+    },
+    "contact": {
+      "title": "Contact",
+      "emailLabel": "E-mail",
+      "websiteLabel": "Site web"
+    },
+    "disclaimer": {
+      "title": "Clause de non-responsabilité (Haftungsausschluss)",
+      "liabilityContent": {
+        "title": "Responsabilité pour le Contenu",
+        "text": "L'auteur décline toute responsabilité quant à l'exactitude, la précision, l'actualité, la fiabilité et l'exhaustivité des informations. Les demandes de responsabilité contre l'auteur pour des dommages matériels ou immatériels résultant de l'accès, de l'utilisation ou de la non-utilisation des informations publiées, d'une mauvaise utilisation de la connexion ou de dysfonctionnements techniques sont exclues. Toutes les offres sont sans engagement. L'auteur se réserve expressément le droit de modifier, compléter ou supprimer des parties des pages ou l'offre entière sans annonce séparée ou de cesser temporairement ou définitivement la publication."
+      },
+      "liabilityLinks": {
+        "title": "Responsabilité pour les Liens",
+        "text": "Les références et liens vers des sites tiers sont en dehors de notre domaine de responsabilité. Nous déclinons toute responsabilité pour ces sites. L'accès et l'utilisation de ces sites se font aux risques et périls de l'utilisateur."
+      }
+    },
+    "copyright": {
+      "title": "Droits d'Auteur (Urheberrechte)",
+      "text": "Les droits d'auteur et tous les autres droits sur les contenus, images, photos ou autres fichiers du site appartiennent exclusivement à <strong class='text-white'>Paulo Lopes / Lopes2Tech</strong> ou aux détenteurs de droits spécifiquement nommés. Pour la reproduction de tout élément, le consentement écrit des détenteurs des droits d'auteur doit être obtenu au préalable."
+    }
+  },
+  "PrivacyPolicyPage": {
+    "title": "Politique de Confidentialité",
+    "backToHome": "Retour à l'accueil",
+    "lastUpdated": "Dernière mise à jour :",
+    "sections": {
+      "general": {
+        "title": "1. Informations Générales",
+        "text1": "Chez Lopes2Tech, nous prenons très au sérieux la protection de vos données personnelles. Nous traitons vos données personnelles de manière confidentielle et conformément aux réglementations légales sur la protection des données — en particulier la loi fédérale suisse sur la protection des données (LPD/nDSG) et, le cas échéant, le Règlement général sur la protection des données de l'UE (RGPD).",
+        "text2": "Cette politique de confidentialité explique comment nous collectons, utilisons et protégeons vos données lorsque vous visitez notre site web ou utilisez nos services."
+      },
+      "controller": {
+        "title": "2. Responsable du Traitement",
+        "text": "La partie responsable du traitement des données sur ce site web est :"
+      },
+      "collection": {
+        "title": "3. Collecte et Traitement des Données",
+        "serverLogs": {
+          "title": "3.1 Fichiers Journaux du Serveur",
+          "text": "Lorsque vous accédez à notre site web, le fournisseur des pages collecte et stocke automatiquement des informations dans des « fichiers journaux du serveur », notamment :",
+          "list": {
+            "browser": "Type et version du navigateur",
+            "os": "Système d'exploitation utilisé",
+            "referrer": "URL de référence",
+            "host": "Nom d'hôte de l'ordinateur accédant",
+            "time": "Heure de la requête serveur",
+            "ip": "Adresse IP"
+          },
+          "note": "Ces données ne sont pas fusionnées avec d'autres sources de données. Le traitement est basé sur notre intérêt légitime à la présentation techniquement sans erreur et à l'optimisation de notre site web."
+        },
+        "contact": {
+          "title": "3.2 Formulaire de Contact et E-mail",
+          "text": "Si vous nous envoyez des demandes via le formulaire de contact ou par e-mail, vos coordonnées du formulaire de demande, y compris les coordonnées que vous y avez fournies (Nom, E-mail, Téléphone, Entreprise), seront stockées par nous dans le but de traiter la demande et en cas de questions de suivi. Nous ne transmettons pas ces données sans votre consentement."
+        },
+        "booking": {
+          "title": "3.3 Prise de Rendez-vous (Cal.com)",
+          "text": "Nous utilisons le service Cal.com pour offrir la prise de rendez-vous en ligne. Lorsque vous réservez un rendez-vous, les données que vous saisissez (Nom, E-mail, Téléphone, Motif du rendez-vous) sont traitées par Cal.com.",
+          "list": {
+            "provider": "Fournisseur : Cal.com, Inc. (USA/Mondial)",
+            "purpose": "Objectif : Planification et gestion du calendrier"
+          },
+          "note": "Veuillez consulter la politique de confidentialité de Cal.com pour plus de détails sur la gestion de leurs données."
+        },
+        "chatbot": {
+          "title": "3.4 Assistant Chatbot IA",
+          "text": "Notre site web utilise un chatbot alimenté par l'IA pour aider avec les demandes. Lorsque vous interagissez avec le chat :",
+          "list": {
+            "process": "Le texte que vous saisissez est traité pour générer une réponse.",
+            "warning": "Important : Ne saisissez pas de données de santé sensibles (noms de patients, conditions médicales) dans le chatbot public du site web.",
+            "providers": "Les données peuvent être traitées par des fournisseurs d'IA tiers (ex. OpenAI, Anthropic) uniquement dans le but de générer la réponse."
+          }
+        }
+      },
+      "cookies": {
+        "title": "4. Cookies",
+        "text": "Notre site web utilise des « cookies ». Ce sont de petits fichiers texte stockés sur votre appareil.",
+        "essential": {
+          "title": "Cookies Essentiels",
+          "text": "Nécessaires au fonctionnement technique du site web."
+        },
+        "analytical": {
+          "title": "Cookies Analytiques",
+          "text": "Nous aident à comprendre comment les visiteurs utilisent le site."
+        },
+        "note": "Vous pouvez configurer votre navigateur pour refuser les cookies, mais cela peut limiter les fonctionnalités du site web."
+      },
+      "analytics": {
+        "title": "5. Analytics et Outils Tiers",
+        "text": "Pour améliorer notre service, nous pouvons utiliser des outils d'analyse (ex. Google Analytics ou Vercel Analytics). Ces outils utilisent des cookies pour analyser le comportement des utilisateurs. Les adresses IP sont généralement anonymisées avant le traitement. Vous pouvez vous désinscrire de ce suivi via notre bannière de cookies ou les paramètres de votre navigateur."
+      },
+      "security": {
+        "title": "6. Sécurité des Données (SSL/TLS)",
+        "text": "Pour des raisons de sécurité et pour protéger la transmission de contenus confidentiels, tels que les commandes ou demandes que vous nous envoyez, ce site utilise un chiffrement SSL ou TLS. Vous pouvez reconnaître une connexion chiffrée par le fait que la ligne d'adresse du navigateur passe de « http:// » à « https:// » et par le symbole de cadenas dans la barre de votre navigateur."
+      },
+      "transfer": {
+        "title": "7. Transfert de Données à des Tiers et à l'Étranger",
+        "text": "Nous ne transmettons vos données à des tiers que si cela est nécessaire pour l'exécution du contrat (ex. hébergement, outils de planification) ou si vous avez consenti. Certains de ces prestataires peuvent être situés en dehors de la Suisse (ex. USA). Dans ces cas, nous veillons à ce que des mesures de protection appropriées des données (telles que les Clauses Contractuelles Types) soient en place pour se conformer aux normes suisses nDSG et RGPD."
+      },
+      "rights": {
+        "title": "8. Vos Droits",
+        "text": "Vous avez le droit de :",
+        "list": {
+          "info": "Demander à tout moment des informations sur vos données personnelles stockées.",
+          "correction": "Demander la correction de données incorrectes.",
+          "deletion": "Demander la suppression de vos données (droit à l'oubli), à condition qu'il n'y ait pas d'obligations légales de conservation.",
+          "revocation": "Révoquer à tout moment votre consentement au traitement des données."
+        },
+        "contact": "Pour exercer ces droits, veuillez nous contacter directement à"
+      },
+      "changes": {
+        "title": "9. Modifications de cette Politique de Confidentialité",
+        "text": "Nous nous réservons le droit d'adapter cette politique de confidentialité afin qu'elle soit toujours conforme aux exigences légales en vigueur ou pour mettre en œuvre des changements dans nos services (ex. lors de l'introduction de nouveaux services). La nouvelle politique de confidentialité s'appliquera alors à votre prochaine visite."
+      }
+    }
+  },
+  "TermsOfServicePage": {
+    "title": "Conditions Générales de Vente (CGV)",
+    "effectiveDate": "Date d'entrée en vigueur : 11 décembre 2025",
+    "lastUpdated": "Dernière mise à jour :",
+    "backToHome": "Retour à l'accueil",
+    "sections": {
+      "scope": {
+        "title": "1. Champ d'Application",
+        "text": "Les présentes Conditions Générales de Vente (ci-après « CGV ») s'appliquent à toutes les relations commerciales entre <strong>Lopes2Tech / Paulo Lopes</strong> (ci-après « Prestataire ») et ses clients (ci-après « Client »). Elles s'appliquent à tous les services fournis, y compris, sans s'y limiter, le développement de sites web, l'ingénierie logicielle, les automatisations IA et le conseil."
+      },
+      "subject": {
+        "title": "2. Objet du Contrat",
+        "text": "Le Prestataire fournit des services dans le domaine de l'informatique et de l'automatisation. La portée spécifique des services est définie dans l'offre individuelle ou le contrat de service respectif.",
+        "services": {
+          "web": {
+            "title": "Web & Logiciel",
+            "description": "Développement de sites web, d'applications et de tableaux de bord."
+          },
+          "ai": {
+            "title": "IA & Automatisation",
+            "description": "Mise en place de chatbots, agents vocaux et automatisations de workflows."
+          },
+          "maintenance": {
+            "title": "Maintenance",
+            "description": "Services de support et d'hébergement continus."
+          }
+        }
+      },
+      "conclusion": {
+        "title": "3. Conclusion du Contrat",
+        "text": "Les offres du Prestataire sont valables 30 jours sauf indication contraire. Le contrat est conclu lors de :",
+        "list": {
+          "acceptance": "L'acceptation écrite de l'offre par le Client (un e-mail suffit).",
+          "deposit": "Le paiement d'un acompte initial.",
+          "commencement": "Le début de la prestation effective de services par le Prestataire avec la connaissance du Client."
+        }
+      },
+      "obligations": {
+        "title": "4. Obligations du Client",
+        "text": "Le Client s'engage à :",
+        "list": {
+          "content": "Fournir tous les contenus nécessaires (textes, images, logos) en temps utile.",
+          "access": "Accorder les droits d'accès nécessaires (hébergement, clés API, registre de domaine) requis pour le projet.",
+          "review": "Examiner les livrables et fournir des retours dans les <strong>5 jours ouvrables</strong>. En l'absence de retour dans ce délai, le livrable est réputé accepté."
+        }
+      },
+      "pricing": {
+        "title": "5. Tarification et Conditions de Paiement",
+        "projectServices": {
+          "title": "5.1 Services de Projet",
+          "text": "Sauf accord contraire dans l'offre individuelle, les conditions de paiement suivantes s'appliquent :",
+          "small": {
+            "title": "Petits Projets",
+            "subtitle": "Jusqu'à CHF 2 500",
+            "text": "100% des frais de projet sont dus immédiatement à la conclusion du contrat."
+          },
+          "standard": {
+            "title": "Projets Standards & Grands",
+            "subtitle": "Au-dessus de CHF 2 500",
+            "deposit": "50% d'Acompte : Dû immédiatement pour réserver les ressources.",
+            "final": "50% Paiement Final : Dû à l'achèvement/livraison."
+          },
+          "terms": "Les factures sont payables dans les 20 jours nets."
+        },
+        "recurring": {
+          "title": "5.2 Services Récurrents",
+          "text": "Les frais pour la maintenance continue ou les composants SaaS (ex. hébergement de Chatbot) sont facturés mensuellement ou annuellement à l'avance. Le délai de résiliation pour les services récurrents est de 30 jours à la fin du mois, sauf si une durée minimale de contrat a été convenue."
+        },
+        "cancellation": {
+          "title": "5.3 Annulation de Projet",
+          "list": {
+            "beforeWork": "Le Client peut annuler le contrat avant le début des travaux et recevoir un remboursement intégral de l'acompte.",
+            "afterWork": "Si les travaux ont déjà commencé, le Client est tenu de payer tous les travaux effectués à ce jour, calculés au taux horaire convenu ou une part proportionnelle des frais totaux.",
+            "contractorTermination": "Le Prestataire peut résilier le contrat si le Client ne fournit pas les matériaux ou retours nécessaires pendant plus de 30 jours malgré des rappels."
+          }
+        }
+      },
+      "ip": {
+        "title": "6. Propriété Intellectuelle & Droits d'Utilisation",
+        "list": {
+          "rights": "Après paiement intégral des honoraires convenus, le Client reçoit les droits d'utilisation du logiciel/site web créé.",
+          "reuse": "Le Prestataire se réserve le droit de réutiliser les modules de code génériques, bibliothèques et modèles de conception développés pendant le projet pour d'autres clients (pratique standard d'ingénierie logicielle).",
+          "guarantee": "Le Client garantit que tous les matériaux fournis au Prestataire (images, textes) ne violent pas les droits de tiers."
+        }
+      },
+      "ai": {
+        "title": "7. Dispositions Spécifiques aux Services IA",
+        "text": "Le Client reconnaît que les services impliquant l'Intelligence Artificielle (IA) (ex. Chatbots, systèmes RAG, Agents Vocaux) dépendent de fournisseurs tiers (ex. OpenAI, Anthropic, Retell AI).",
+        "accuracy": {
+          "label": "Exactitude :",
+          "text": "Le Prestataire ne peut garantir que les sorties IA sont exactes à 100%. Le Client est responsable de vérifier les informations critiques générées par l'IA."
+        },
+        "availability": {
+          "label": "Disponibilité :",
+          "text": "Le Prestataire n'est pas responsable des interruptions de service causées par des défaillances d'API tierces (ex. si ChatGPT est indisponible)."
+        },
+        "costs": {
+          "label": "Coûts :",
+          "text": "Sauf strictement inclus dans un forfait fixe, les coûts d'utilisation d'API variables (utilisation de tokens) peuvent être facturés au Client ou payés directement par le Client au fournisseur."
+        }
+      },
+      "warranty": {
+        "title": "8. Garantie et Responsabilité",
+        "warranty": {
+          "title": "8.1 Garantie",
+          "text": "Le Prestataire garantit que le logiciel/site web est fonctionnel et exempt de défauts critiques au moment de l'acceptation. La période de garantie est de 3 mois à compter de la livraison.",
+          "note": "La garantie ne couvre pas les défauts causés par des mises à jour de tiers (ex. une mise à jour de plugin WordPress cassant le site) ou des modifications non autorisées par le Client.",
+          "postWarranty": "Après l'expiration de la période de garantie, les corrections de bugs et les mises à jour sont fournies dans le cadre du plan de maintenance actif ou facturées à l'heure à CHF 120/heure."
+        },
+        "liability": {
+          "title": "8.2 Responsabilité",
+          "text": "Dans la mesure permise par le droit suisse, la responsabilité du Prestataire est limitée au dol et à la faute grave. La responsabilité pour négligence légère, dommages indirects ou dommages consécutifs (ex. perte de bénéfices, perte de données) est exclue.",
+          "note": "Le Prestataire n'est pas responsable des violations de la vie privée causées par l'utilisation abusive par le Client des outils fournis (ex. saisie de données de patients dans un champ non sécurisé)."
+        },
+        "forceMajeure": {
+          "title": "8.3 Force Majeure",
+          "text": "Aucune des parties ne sera tenue responsable des retards ou des manquements à l'exécution résultant d'événements indépendants de leur volonté raisonnable, y compris, sans s'y limiter, les catastrophes naturelles, pandémies, guerres, grèves, actions gouvernementales ou défaillances d'infrastructure."
+        }
+      },
+      "dataProtection": {
+        "title": "9. Protection des Données et Confidentialité",
+        "text": "Les deux parties s'engagent à traiter tous les secrets commerciaux et informations confidentielles obtenus pendant la relation commerciale comme strictement confidentiels. Le Prestataire traite les données personnelles conformément à la loi fédérale suisse sur la protection des données (nDSG).",
+        "retention": "Les fichiers de projet, sauvegardes et données connexes sont conservés pendant 12 mois après l'achèvement du projet. Les clients sont responsables du téléchargement et de l'archivage de leurs fichiers de projet avant l'expiration de cette période."
+      },
+      "final": {
+        "title": "10. Dispositions Finales",
+        "severability": {
+          "title": "Divisibilité",
+          "text": "Si des dispositions individuelles de ces CGV sont invalides, la validité des dispositions restantes reste inaffectée."
+        },
+        "jurisdiction": {
+          "title": "For Juridique",
+          "text": "Le for juridique exclusif pour tous les litiges découlant de ce contrat est Zurich, Suisse."
+        },
+        "law": {
+          "title": "Droit Applicable",
+          "text": "Le droit suisse s'applique exclusivement."
+        },
+        "contact": {
+          "title": "Contact pour les Questions Juridiques",
+          "text": "Pour toute question concernant ces conditions générales, veuillez contacter : E-mail : paulo@lopes2tech.ch | Tél : +41 78 798 95 33"
+        }
+      }
+    }
+  },
+  "ServicesPage": {
+    "hero": {
+      "badge": "Notre Expertise & Services",
+      "titlePart1": "Construisons Quelque Chose",
+      "titlePart2": "d'Extraordinaire",
+      "description": "Grâce au développement propulsé par l'IA, nous livrons des solutions 10x plus vite que les agences traditionnelles. Du développement web à l'automatisation intelligente, nous construisons des sites haute performance, des logiciels sur mesure et des workflows qui optimisent les opérations et stimulent la croissance des PME et startups."
+    },
+    "explore": {
+      "title": "Explorez Nos Services",
+      "intro": "Découvrez notre offre de services complète adaptée à vos besoins."
+    },
+    "cta": {
+      "title": "Prêt à Démarrer Votre Projet ?",
+      "subtitle": "Discutons de la façon dont nous pouvons vous aider à construire quelque chose d'extraordinaire.",
+      "button": "Commencer"
+    },
+    "ServiceRequest": {
+      "title": "Demander un Service",
+      "subtitle": "Démarrer avec {package}",
+      "name": "Nom Complet",
+      "email": "Adresse E-mail",
+      "company": "Entreprise (Optionnel)",
+      "message": "Message",
+      "defaultMessage": "Je suis intéressé par le package {package}. Veuillez me contacter avec plus de détails.",
+      "submit": "Envoyer la Demande",
+      "sending": "Envoi en cours...",
+      "successTitle": "Demande Envoyée !",
+      "successMessage": "Nous avons reçu votre demande et vous répondrons prochainement.",
+      "error": "Une erreur s'est produite. Veuillez réessayer ou nous contacter directement.",
+      "close": "Fermer"
+    }
+  },
+  "Services": {
+    "defaultDescription": "Mise en œuvre complète de {title} adaptée à vos besoins spécifiques. Nous garantissons haute performance, évolutivité et expérience utilisateur optimale.",
+    "close": "Fermer",
+    "gotIt": "Compris",
+    "requestQuote": "Demander un Devis",
+    "map": {
+      "websites": {
+        "title": "Sites Web Professionnels",
+        "corporate": {
+          "title": "Sites Web Corporate",
+          "1page": "Site d'une Page",
+          "5pages": "Jusqu'à 5 Pages",
+          "10pages": "10+ Pages",
+          "multipage": "Site Corporate Multi-Pages"
+        },
+        "specialized": {
+          "title": "Sites Web Spécialisés",
+          "portfolio": "Site Portfolio",
+          "agency": "Site d'Agence",
+          "service": "Site pour Entreprise de Services"
+        },
+        "advanced": {
+          "title": "Fonctionnalités Avancées",
+          "cms": "Site avec CMS",
+          "multilang": "Site Multilingue",
+          "integrations": "Intégrations Personnalisées"
+        }
+      },
+      "landing": {
+        "title": "Pages d'Atterrissage",
+        "conversion": {
+          "title": "Pages de Conversion",
+          "single": "Page d'Atterrissage Unique",
+          "ab": "Variantes A/B Testing",
+          "product": "Page de Lancement Produit",
+          "leadgen": "Page de Génération de Prospects"
+        },
+        "campaign": {
+          "title": "Pages de Campagne",
+          "event": "Page d'Atterrissage Événement",
+          "download": "Page de Téléchargement/Inscription",
+          "webinar": "Inscription Webinaire"
+        }
+      },
+      "automation": {
+        "title": "Automatisation",
+        "ai": {
+          "title": "Assistants IA",
+          "rag": "Base de Connaissances (RAG)",
+          "voice": "Agent Vocal",
+          "chatbot": "Chatbot IA",
+          "support": "Bot de Support Client"
+        },
+        "business": {
+          "title": "Automatisation d'Entreprise",
+          "workflow": "Automatisation de Workflow",
+          "email": "Automatisation E-mail",
+          "data": "Traitement de Données",
+          "document": "Document IA"
+        }
+      },
+      "ecommerce": {
+        "title": "E-Commerce",
+        "stores": {
+          "title": "Boutiques en Ligne",
+          "small": "Petite Boutique (jusqu'à 50 produits)",
+          "medium": "Boutique Moyenne (50-500 produits)",
+          "large": "Grande Boutique (500+ produits)",
+          "custom": "Plateforme E-commerce Personnalisée"
+        },
+        "specialized": {
+          "title": "Commerce Spécialisé",
+          "subscription": "E-commerce par Abonnement",
+          "marketplace": "Marketplace Multi-Vendeurs",
+          "headless": "Commerce Headless",
+          "digital": "Boutique de Produits Numériques"
+        }
+      },
+      "webapps": {
+        "title": "Applications Web",
+        "business": {
+          "title": "Applications d'Entreprise",
+          "saas": "Plateforme SaaS",
+          "internal": "Outils Internes",
+          "crm": "Système CRM",
+          "dashboard": "Tableau de Bord/Panel Admin"
+        },
+        "custom": {
+          "title": "Logiciels Sur Mesure",
+          "pwa": "Application Web Progressive (PWA)",
+          "fullstack": "Application Full-Stack",
+          "api": "Développement API",
+          "database": "Conception de Base de Données"
+        }
+      }
+    }
+  },
+  "ServicesHubPage": {
+    "stats": {
+      "projects": "Projets Livrés",
+      "countries": "Pays Servis",
+      "rating": "Note Moyenne",
+      "response": "Temps de Réponse Moyen"
+    },
+    "services": {
+      "webDev": {
+        "badge": "Développement Web",
+        "title": "Sites Web Professionnels",
+        "desc1": "Votre site web est votre atout commercial le plus puissant — et les premières impressions sont permanentes. Nous concevons et développons des sites web sur mesure, haute performance, construits de A à Z pour les entreprises suisses : rapides, mobile-first et conçus pour convertir les visiteurs en clients.",
+        "desc2": "Nous n'utilisons pas de templates. Chaque projet commence avec votre marque, vos objectifs et votre audience. Le résultat est un site qui vous ressemble — qui inspire confiance dès qu'on y atterrit, et qui fidélise.",
+        "bullet1": "Design 100% sur mesure — aucun template, jamais",
+        "bullet2": "Mobile-first & optimisé pour les Core Web Vitals",
+        "bullet3": "Architecture SEO-ready dès le premier jour",
+        "bullet4": "Support multilingue (FR / DE / EN / IT)"
+      },
+      "marketing": {
+        "badge": "Réseaux Sociaux & Publicités",
+        "title": "Marketing Digital",
+        "desc1": "Être en ligne ne suffit pas — vous devez être visible là où se trouvent vos clients. Nous construisons et exécutons des stratégies de marketing digital basées sur les données qui développent votre audience, amplifient votre marque et génèrent des prospects qualifiés directement vers votre entreprise.",
+        "desc2": "Des campagnes publicitaires Meta et Instagram ciblées à la stratégie de contenu organique et à la gestion de communauté, chaque action que nous prenons est mesurée, affinée et alignée avec vos objectifs de croissance. Pas de métriques de vanité — uniquement des résultats qui comptent.",
+        "bullet1": "Campagnes publicitaires Meta, Instagram & Google",
+        "bullet2": "Stratégie de contenu, création & planification",
+        "bullet3": "Analytics, reporting & optimisation continue",
+        "bullet4": "Gestion de communauté & voix de marque"
+      },
+      "seo": {
+        "badge": "Optimisation pour les Moteurs de Recherche",
+        "title": "Développement SEO",
+        "desc1": "Se classer sur Google en Suisse nécessite plus que des mots-clés — cela exige une base techniquement solide que les moteurs de recherche comprennent et font confiance. Nous combinons une expertise SEO technique approfondie avec la stratégie de contenu pour construire une visibilité organique durable à long terme.",
+        "desc2": "De l'architecture du site et des Core Web Vitals au balisage de données structurées et à l'implémentation hreflang multilingue, nous couvrons chaque signal qui détermine où votre entreprise apparaît dans les résultats de recherche. L'objectif n'est pas le trafic — c'est le bon trafic.",
+        "bullet1": "Audits SEO techniques & Core Web Vitals",
+        "bullet2": "SEO multilingue (FR / DE / EN)",
+        "bullet3": "Implémentation de données structurées Schema.org",
+        "bullet4": "Optimisation on-page & stratégie de mots-clés"
+      },
+      "automation": {
+        "badge": "Automatisation de Workflows",
+        "title": "Automatisation",
+        "desc1": "Le temps de votre équipe est trop précieux pour être consacré à des tâches manuelles et répétitives. Nous analysons vos opérations, identifions les goulots d'étranglement et les remplaçons par des automatisations intelligentes qui fonctionnent 24h/24 — avec précision, fiabilité et sans surveillance.",
+        "desc2": "Des workflows CRM et séquences de suivi automatisées au traitement des factures et aux intégrations multi-systèmes, nous construisons des pipelines personnalisés en utilisant les principales plateformes d'automatisation. Résultat : votre entreprise fonctionne plus efficacement, votre équipe se concentre sur ce qui compte, et rien ne passe à travers les mailles.",
+        "bullet1": "Automatisation CRM & workflows e-mail",
+        "bullet2": "Routage de prospects & suivis propulsés par l'IA",
+        "bullet3": "Traitement de factures, documents & données",
+        "bullet4": "Pipelines n8n, Zapier & Make personnalisés"
+      },
+      "ecommerce": {
+        "badge": "Commerce en Ligne",
+        "title": "E-Commerce",
+        "desc1": "Vendre en ligne en Suisse signifie gagner la confiance à chaque étape — de la première page produit à la confirmation de commande. Nous construisons des solutions e-commerce adaptées au marché suisse : rapides, sécurisées et conçues pour réduire les frictions et maximiser les conversions.",
+        "desc2": "Que vous lanciez votre première boutique ou fassiez évoluer une opération existante, nous gérons la stack complète. Design sur mesure, intégration des paiements (y compris TWINT), gestion des produits et support continu — tout ce dont vous avez besoin pour vendre en toute confiance.",
+        "bullet1": "Boutiques Shopify & WooCommerce personnalisées",
+        "bullet2": "Méthodes de paiement suisses : TWINT, carte & facture",
+        "bullet3": "Multi-langue & multi-devise prêt",
+        "bullet4": "Gestion des produits & automatisation des stocks"
+      },
+      "webApps": {
+        "badge": "Logiciel Sur Mesure",
+        "title": "Applications Web",
+        "desc1": "Quand les logiciels standard ne correspondent pas à votre workflow, nous les construisons de zéro. Plateformes de réservation, portails clients, tableaux de bord internes, outils SaaS — nous concevons des applications web sur mesure adaptées précisément à la façon dont votre entreprise fonctionne.",
+        "desc2": "Chaque application que nous construisons est déployée dans le cloud, sécurisée par conception et construite pour évoluer avec votre croissance. Que vous ayez besoin d'un MVP pour valider une idée ou d'un système de qualité production pour remplacer un outil interne défaillant, nous livrons des logiciels qui fonctionnent de manière fiable dès le premier jour.",
+        "bullet1": "Plateformes de réservation",
+        "bullet2": "Portails clients & tableaux de bord internes",
+        "bullet3": "MVPs SaaS & outils métier sur mesure",
+        "bullet4": "Intégrations API & pipelines de données tiers"
+      },
+      "ai": {
+        "badge": "Intelligence Artificielle",
+        "title": "Intégration IA",
+        "desc1": "L'IA n'est plus un avantage concurrentiel — elle devient rapidement une exigence de base. Nous intégrons des solutions IA intelligentes directement dans votre entreprise : des chatbots qui gèrent les demandes en permanence, des outils qui extraient des insights de vos données, et des automatisations qui apprennent et s'améliorent continuellement.",
+        "desc2": "De l'ajout d'un assistant intelligent à votre site web à la construction de workflows IA entièrement personnalisés et d'outils alimentés par GPT, nous rendons l'IA pratique, mesurable et immédiatement utile — pas une expérience scientifique, mais une partie opérationnelle de votre activité qui génère du ROI dès le premier jour.",
+        "bullet1": "Chatbots IA & assistants virtuels",
+        "bullet2": "Traitement de documents & images avec IA",
+        "bullet3": "Intégrations GPT & Claude personnalisées",
+        "bullet4": "Analytics propulsés par l'IA & reporting automatisé"
+      }
+    },
+    "explore": "Explorer {title}"
+  },
+  "FeaturedProjects": {
+    "badge": "Produits SaaS Internes",
+    "title": "Logiciels Conçus pour",
+    "titleHighlight": "Votre Secteur",
+    "subtitle": "Produits SaaS verticaux conçus de zéro — chacun résolvant un problème réel pour un secteur spécifique.",
+    "hint": "Cliquez sur un produit pour explorer ses fonctionnalités",
+    "dialog": {
+      "close": "Fermer",
+      "visitWebsite": "Visiter le Site",
+      "keyFeatures": "Fonctionnalités Clés"
+    },
+    "projects": {
+      "mimesa": {
+        "industryLabel": "Pour les Restaurants",
+        "tagline": "Plateforme de Réservation & Gestion de Restaurant",
+        "description": "miMesa est une plateforme tout-en-un pour les restaurants afin de gérer réservations, tables et clients — réduisant les no-shows et augmentant l'efficacité pour que votre équipe se concentre sur l'hospitalité.",
+        "features": {
+          "0": "Système de réservation intelligent avec disponibilité en temps réel",
+          "1": "Plan de salle interactif avec gestion par glisser-déposer",
+          "2": "Confirmations & rappels automatiques par SMS/e-mail",
+          "3": "Profils clients avec préférences, visites & historique de dépenses",
+          "4": "Gestionnaire de walk-in & liste d'attente avec suivi de file en direct",
+          "5": "Support multilingue pour les clients internationaux",
+          "6": "Tableau de bord analytics : couverts, heures de pointe, tendances de revenus"
+        }
+      },
+      "clinika": {
+        "industryLabel": "Pour les Cliniques",
+        "tagline": "Plateforme de Réservation & CRM pour Cliniques",
+        "description": "ClíniKa OS est une plateforme complète de gestion de cabinet pour les cliniques et professionnels de santé — de la réservation en ligne aux dossiers patients conformes RGPD, le tout dans un tableau de bord sécurisé.",
+        "features": {
+          "0": "Page de réservation publique optimisée pour mobile",
+          "1": "Tableau de bord de gestion du calendrier et des rendez-vous",
+          "2": "CRM de base pour les profils clients et l'historique des visites",
+          "3": "Confirmations & rappels e-mail automatiques à 24h",
+          "4": "Gestion d'équipe avec horaires & services individuels",
+          "5": "Accès multi-rôles (Propriétaire, Admin, Réceptionniste)",
+          "6": "Hébergement européen conforme RGPD"
+        }
+      },
+      "darkmonkey": {
+        "industryLabel": "E-Commerce",
+        "tagline": "Plateforme E-Commerce Premium Gamifiée",
+        "description": "Dark Monkey est une plateforme e-commerce premium gamifiée où le shopping ressemble à une progression. Construite avec des drops limités, des niveaux XP, de la personnalisation de produits et un écosystème de marque qui fidélise les clients.",
+        "features": {
+          "0": "Système XP gamifié — Bronze → Argent → Or → niveaux VIP",
+          "1": "Drops en édition limitée avec comptes à rebours & files d'attente",
+          "2": "Moteur de personnalisation de produits avec aperçu en direct",
+          "3": "Stripe Checkout avec Apple Pay & Google Pay",
+          "4": "Missions, badges & réalisations de design à collectionner",
+          "5": "Récompenses de fidélité, parrainages & automatisation panier abandonné",
+          "6": "Mobile-first, mis en cache en bordure pour des performances ultra-rapides"
+        }
+      },
+      "menteiq": {
+        "industryLabel": "OS Business IA",
+        "tagline": "CRM Natif IA & Centre de Commande Business",
+        "description": "menteIQ est un centre de commande business natif IA pour les freelances, consultants et PME européens. Chat IA multi-modèles (GPT-4, Claude, Gemini), pipeline CRM, facturation QR-Bill, et base de connaissances RAG — le tout dans une seule plateforme construite pour la conformité suisse & UE.",
+        "features": {
+          "0": "Chat IA multi-modèles — GPT-4o, Claude 3.5, Gemini Pro",
+          "1": "CRM avec pipeline Kanban (Prospect → Client → Churné)",
+          "2": "Génération de factures Swiss QR-Bill & EU SEPA",
+          "3": "Base de Connaissances RAG — l'IA répond depuis vos propres documents",
+          "4": "Import CSV/Excel en masse avec détection des doublons",
+          "5": "Prêt RGPD : export & suppression de données en un clic",
+          "6": "Packs verticaux : Consultant, Assurance, Comptabilité (v2)"
+        }
+      }
+    }
+  },
+  "InsightsPage": {
+    "badge": "Notre Blog",
+    "title": "Insights &",
+    "titleHighlight": "Intelligence",
+    "description": "Explorer l'intersection de l'IA, des workflows automatisés et du développement haute performance."
+  },
+  "BlogPost": {
+    "backToInsights": "Retour aux Insights",
+    "relatedArticles": "Articles Connexes",
+    "backToAllInsights": "Retour à tous les Insights",
+    "postNotFound": "Article Introuvable",
+    "backToInsightsNotFound": "Retour aux Insights",
+    "authorBio": "Fondateur de Lopes2Tech, spécialisé dans les workflows de développement propulsés par l'IA et les applications web haute performance pour les entreprises suisses.",
+    "shareArticle": "Partager cet article",
+    "share": "Partager :",
+    "tableOfContents": "Table des Matières"
+  },
+  "PortfolioPage": {
+    "meta": {
+      "title": "Portfolio | Lopes2Tech - Applications Web & Sites Construits en Suisse",
+      "description": "Explorez notre portfolio d'applications web sur mesure, plateformes SaaS et sites web construits pour les entreprises suisses.",
+      "ogTitle": "Portfolio | Lopes2Tech",
+      "ogDescription": "Applications web sur mesure, plateformes SaaS et sites web construits pour les entreprises suisses."
+    },
+    "badge": "Nos Réalisations",
+    "title": "Success Stories &",
+    "titleHighlight": "Excellence Digitale",
+    "subtitle": "Notre portfolio représente une fusion de solutions robustes construites pour des clients ambitieux et de projets propriétaires développés en interne.",
+    "subtitleSecondary": "Des tableaux de bord CRM de niveau entreprise aux expériences de marque immersives, notre portfolio reflète notre engagement envers la précision suisse et l'innovation.",
+    "filters": {
+      "webApps": "Applications Web",
+      "websites": "Sites Web"
+    },
+    "badges": {
+      "inDevelopment": "En Développement",
+      "viewProject": "Voir le Projet",
+      "comingSoon": "Bientôt Disponible",
+      "onHold": "En Pause",
+      "live": "En Ligne"
+    },
+    "detail": {
+      "backToPortfolio": "Retour au Portfolio",
+      "visitLiveSite": "Ouvrir l'App",
+      "webApp": "Application Web",
+      "website": "Site Web"
+    },
+    "projects": {
+      "clinika-os": {
+        "title": "Clinika OS - Réservation & CRM pour Cliniques",
+        "description": "Une plateforme complète de gestion de cabinet pour les cliniques et professionnels de santé. De la réservation en ligne aux dossiers patients conformes RGPD, le tout dans un tableau de bord sécurisé.",
+        "category": "HealthTech SaaS"
+      },
+      "dark-monkey": {
+        "title": "Dark Monkey - E-Commerce Gamifié",
+        "description": "Une plateforme e-commerce premium gamifiée où le shopping ressemble à une progression. Construite avec des drops limités, des niveaux XP, de la personnalisation de produits et un écosystème de marque qui fidélise les clients.",
+        "category": "E-Commerce"
+      },
+      "mimesa": {
+        "title": "miMesa - OS Restaurant",
+        "description": "Le système d'exploitation pour les restaurants modernes. Gérez réservations, tables et clients avec élégance. Conçu pour économiser du temps et augmenter les revenus.",
+        "category": "Gastronomie & Réservations"
+      },
+      "draftmode": {
+        "title": "DraftMode CRM",
+        "description": "Plateforme CRM moderne conçue pour les consultants et les petites et moyennes entreprises. Des réponses concrètes, des workflows optimisés.",
+        "category": "CRM pour Consultants"
+      },
+      "pali-ai": {
+        "title": "Pali AI",
+        "description": "Assistant Personnel Next-Gen avec Conscience Contextuelle.",
+        "category": "Application IA"
+      },
+      "menteiq": {
+        "title": "menteIQ - Centre de Commande Business IA",
+        "description": "CRM natif IA & OS business pour freelances, consultants et PME européens. Chat IA multi-modèles, facturation Swiss QR-Bill, base de connaissances RAG et gestion des données conforme RGPD.",
+        "category": "OS Business IA"
+      },
+      "theraflow": {
+        "title": "TheraFlow CRM - Gestion de Cabinet",
+        "description": "La plateforme sécurisée tout-en-un pour la planification, les dossiers clients et la facturation. Conçue pour les thérapeutes, coachs et cliniques afin de simplifier l'administration et garantir la conformité RGPD.",
+        "category": "HealthTech SaaS"
+      },
+      "finito-pro": {
+        "title": "Finito Pro - Gestion Artisanale Suisse",
+        "description": "La solution digitale tout-en-un pour les artisans suisses. Gestion de projets, facturation QR, suivi du temps et planification des ressources. 100% Suisse Made & Sécurisé.",
+        "category": "SaaS pour Artisans"
+      },
+      "noff": {
+        "title": "Noff - Communication Intelligente & Recrutement",
+        "description": "Une carte de visite numérique et une plateforme d'optimisation d'équipe. Propose une analyse scientifique de la personnalité pour améliorer la collaboration et des outils de recrutement intelligents pour trouver le profil culturel parfait.",
+        "category": "Carte de Visite Numérique"
+      },
+      "ribeiro-consulting": {
+        "title": "Ribeiro Consulting - Intégration Stratégique d'Entreprise",
+        "description": "Gestion intégrée, comptabilité et conseil financier pour les PME et particuliers suisses. Propose une médiation d'assurance certifiée, l'optimisation fiscale et un soutien administratif stratégique.",
+        "category": "Conseil d'Entreprise"
+      },
+      "costeleta-dourada": {
+        "title": "Costeleta Dourada - Gastronomie Authentique de l'Alentejo",
+        "description": "Un site web de restaurant traditionnel de l'Alentejo présentant leur menu et offrant un système de réservation de table facile.",
+        "category": "Gastronomie & Réservations"
+      },
+      "forma": {
+        "title": "FORMA - Studio d'Architecture",
+        "description": "Site web de cabinet d'architecture moderne présentant des designs innovants, des solutions de construction durables et des projets primés qui façonnent l'avenir des espaces urbains.",
+        "category": "Architecture & Design"
+      },
+      "alentseguros": {
+        "title": "Alentseguros - Portail d'Assurance Certifié",
+        "description": "Une plateforme digitale moderne pour la gestion d'assurance. Propose un portail client sécurisé, des demandes de devis instantanées et un support multicanal pour une couverture personnelle et professionnelle complète.",
+        "category": "Assurance & FinTech"
+      },
+      "silvio-photography": {
+        "title": "Silvio Photography - Art & Émotion",
+        "description": "Portfolio de photographie professionnelle spécialisé dans les portraits, événements et branding commercial. Capturer des histoires authentiques et des récits visuels à travers Lisbonne et le Portugal.",
+        "category": "Portfolio Photographique"
+      },
+      "apex-consulting": {
+        "title": "Apex Consulting - Stratégie & Croissance",
+        "description": "Site web d'agence de conseil professionnel axé sur la clarté, la confiance et l'excellence corporate. Design épuré et moderne qui communique autorité et expertise.",
+        "category": "Conseil d'Entreprise"
+      },
+      "nexus-accounting": {
+        "title": "Nexus Accounting",
+        "description": "Site web de services comptables et financiers professionnels avec un design moderne et une navigation conviviale.",
+        "category": "Comptabilité & Finance"
+      },
+      "elite-estates": {
+        "title": "Elite Estates - Immobilier de Luxe",
+        "description": "Site web immobilier exclusif présentant des propriétés ultra-premium dans le monde entier. Design élégant noir et or, recherche de propriétés sophistiquée et services de conciergerie haut de gamme.",
+        "category": "Immobilier de Luxe"
+      },
+      "serene-spa": {
+        "title": "Serene Spa - Bien-être Holistique",
+        "description": "Un site web de bien-être tranquille avec une esthétique verte apaisante, des menus de soins détaillés et une expérience de réservation élégante. Conçu pour incarner la paix et le rajeunissement.",
+        "category": "Bien-être & Luxe"
+      },
+      "safira-reinigung": {
+        "title": "Safira Reinigung - Nettoyage Professionnel",
+        "description": "Un site web multilingue pour une entreprise de nettoyage suisse à Zurich, Bâle et Saint-Gall. Présente les services, un formulaire de contact et une localisation complète DE/EN/PT.",
+        "category": "Services de Nettoyage"
+      }
+    }
+  },
+  "FAQPage": {
+    "badge": "Foire Aux Questions",
+    "title": "Vous avez des Questions ?",
+    "titleHighlight": "Nous avons des Réponses",
+    "description": "Tout ce que vous devez savoir sur nos services de création web, marketing sur les réseaux sociaux et automatisation à Zurich, en Suisse.",
+    "all": "Tous",
+    "categories": {
+      "socialMedia": "Réseaux Sociaux",
+      "webDesign": "Création Web",
+      "general": "Général",
+      "seoMarketing": "SEO & Marketing",
+      "pricing": "Tarifs & Paiements",
+      "automation": "Automatisation"
+    },
+    "ctaTitle": "Vous avez encore des questions ?",
+    "ctaDescription": "Réservez une consultation gratuite de 30 minutes pour discuter de votre projet",
+    "ctaButton": "Nous Contacter",
+    "faqs": {
+      "q1": {
+        "question": "Combien coûte la gestion des réseaux sociaux à Zurich ?",
+        "answer": "Notre gestion des réseaux sociaux propulsée par l'IA commence à CHF 249/mois pour le package Social Starter (8 publications/mois, 1 plateforme). Le package Social Growth est à CHF 399/mois (12 publications, 2 plateformes), et Social Pro à CHF 579/mois (16 publications, 3 plateformes avec gestion complète de l'engagement).",
+        "category": "socialMedia"
+      },
+      "q2": {
+        "question": "Qu'est-ce qui est inclus dans vos packages de sites web ?",
+        "answer": "Nos packages de sites web vont de CHF 690 (Starter) à CHF 2 450 (Business Pro). Tous les packages incluent un design responsive mobile, le SEO de base et un déploiement professionnel. Les niveaux supérieurs incluent le branding, le SEO avancé, l'automatisation et l'intégration CMS. Nous proposons également des plans de paiement flexibles sur 3 à 12 mois.",
+        "category": "webDesign"
+      },
+      "q3": {
+        "question": "Parlez-vous allemand et portugais ?",
+        "answer": "Oui ! Notre fondateur Paulo parle couramment l'anglais, l'allemand, le français et le portugais. Nous servons des clients internationaux et comprenons la culture des affaires suisses. Notre site web est disponible dans les quatre langues.",
+        "category": "general"
+      },
+      "q4": {
+        "question": "Combien de temps faut-il pour créer un site web ?",
+        "answer": "Les sites Starter (CHF 690) sont livrés en environ 1 semaine. Les sites professionnels (5 pages, 2 langues) prennent 2 semaines. Les projets plus complexes (Business Pro, applications personnalisées) prennent généralement 2 à 3 semaines selon les fonctionnalités et la complexité.",
+        "category": "webDesign"
+      },
+      "q5": {
+        "question": "Quelles plateformes gérez-vous pour les réseaux sociaux ?",
+        "answer": "Nous gérons Instagram, Facebook, LinkedIn et Google Business Profile. Nos packages incluent 1 à 3 plateformes selon le niveau choisi. Nous proposons également des options supplémentaires pour des plateformes additionnelles à CHF 99/mois par plateforme.",
+        "category": "socialMedia"
+      },
+      "q6": {
+        "question": "Proposez-vous des services SEO ?",
+        "answer": "Oui ! Le SEO de base (balises meta, sitemap, optimisation des pages) est inclus dans tous les packages de sites web. Nous proposons également une optimisation SEO continue dans le cadre de notre plan Growth Care (CHF 179/mois) qui inclut des rapports SEO mensuels et des améliorations proactives.",
+        "category": "seoMarketing"
+      },
+      "q7": {
+        "question": "Quelle est la différence entre Social Starter, Growth et Pro ?",
+        "answer": "Social Starter (CHF 249/mois) inclut 8 publications/mois sur 1 plateforme — idéal pour les petites entreprises qui débutent. Social Growth (CHF 399/mois) ajoute 12 publications, 2 plateformes, des Stories et la gestion de l'engagement — idéal pour les entreprises en croissance. Social Pro (CHF 579/mois) offre 16 publications, 3 plateformes, un engagement complet, des appels stratégiques mensuels et des tests A/B — le meilleur pour les marques ambitieuses.",
+        "category": "socialMedia"
+      },
+      "q8": {
+        "question": "Puis-je payer mon site web en plusieurs fois ?",
+        "answer": "Absolument ! Nous offrons des plans de paiement sur 3 mois (+5%), 6 mois (+10%) et 12 mois (+15%). Par exemple, un site à CHF 2 000 peut être payé en CHF 192/mois sur 12 mois. Le premier paiement est dû au démarrage du projet, puis facturation mensuelle automatique via Stripe.",
+        "category": "pricing"
+      },
+      "q9": {
+        "question": "Fournissez-vous des photos pour les publications sur les réseaux sociaux ?",
+        "answer": "Vous fournissez les photos (depuis votre téléphone/entreprise) et nous les améliorons avec des outils IA professionnels — suppression d'arrière-plan, correction des couleurs, mise à l'échelle, etc. Cela maintient les coûts bas tout en livrant des résultats professionnels. Nous ne faisons pas de séances photo, mais nous transformons vos photos brutes en contenu époustouflant.",
+        "category": "socialMedia"
+      },
+      "q10": {
+        "question": "Qu'en est-il du contenu vidéo (Reels) ?",
+        "answer": "Les Reels et le contenu vidéo sont disponibles en option à CHF 79 par vidéo. La production vidéo est plus intensive en temps, nous la tarifons donc séparément. Faites-nous part de vos besoins et nous créerons un package personnalisé.",
+        "category": "socialMedia"
+      },
+      "q11": {
+        "question": "Travaillez-vous avec des clients en dehors de Zurich ?",
+        "answer": "Oui ! Nous servons toute la Suisse et travaillons à distance avec des clients au Portugal et à l'international. Notre base à Zurich signifie que nous comprenons le marché suisse, mais nos services sont disponibles dans le monde entier.",
+        "category": "general"
+      },
+      "q12": {
+        "question": "Que se passe-t-il après le lancement de mon site web ?",
+        "answer": "Après le lancement, vous pouvez choisir l'auto-hébergement ou utiliser nos plans d'hébergement géré (à partir de CHF 39/mois). Nos plans incluent les mises à jour de sécurité, les sauvegardes, les petites modifications de contenu et le support. De nombreux clients ajoutent également la gestion des réseaux sociaux pour générer du trafic vers leur nouveau site.",
+        "category": "webDesign"
+      },
+      "q13": {
+        "question": "Pouvez-vous gérer des campagnes publicitaires payantes sur les réseaux sociaux ?",
+        "answer": "Oui ! La gestion de publicités payantes est disponible en option à CHF 199/mois. Nous gérons les publicités Meta (Facebook/Instagram) et LinkedIn — mise en place des campagnes, optimisation, tests A/B et rapports mensuels. Le budget publicitaire est facturé séparément par les plateformes.",
+        "category": "seoMarketing"
+      },
+      "q14": {
+        "question": "Qu'est-ce qui distingue votre gestion des réseaux sociaux ?",
+        "answer": "Nous utilisons l'IA pour créer du contenu 10x plus vite que les agences traditionnelles, en vous répercutant ces économies (60 à 70% moins cher que les concurrents). L'IA génère des idées de publications, des légendes et des hashtags, puis nous ajoutons la touche humaine pour la voix de marque et la qualité. Vous obtenez vitesse + qualité à des prix imbattables.",
+        "category": "socialMedia"
+      },
+      "q15": {
+        "question": "Proposez-vous des services d'automatisation d'entreprise ?",
+        "answer": "Oui ! Nous sommes spécialisés dans l'automatisation d'entreprise — systèmes de capture de prospects (CHF 449), prise de rendez-vous (CHF 369), collecte d'avis (CHF 329) et workflows personnalisés. Nous pouvons automatiser les tâches répétitives pour vous économiser des heures par semaine.",
+        "category": "automation"
+      }
+    }
+  },
+  "ServiceMeta": {
+    "webDesign": {
+      "title": "Création de Sites Web Zurich | Lopes2Tech",
+      "description": "Sites web sur mesure pour les PME suisses dès CHF 690. Sites rapides, optimisés SEO, mobile-first construits en Next.js avec configuration Google Business Profile et SSL inclus. Basé à Zurich.",
+      "ogTitle": "Création de Sites Web Zurich | Lopes2Tech",
+      "ogDescription": "Sites web sur mesure et haute performance pour les entreprises suisses. SEO-ready, mobile-first, conçus pour convertir les visiteurs en clients. Dès CHF 690."
+    },
+    "seoDevelopment": {
+      "title": "Agence SEO Zurich | Lopes2Tech",
+      "description": "SEO technique pour les entreprises suisses. Optimisation Core Web Vitals, balisage Schema, SEO multilingue et SEO programmatique. Progressez sur Google. Basé à Zurich.",
+      "ogTitle": "Agence SEO Zurich | Lopes2Tech",
+      "ogDescription": "SEO technique pour les entreprises suisses — Core Web Vitals, balisage Schema, SEO multilingue. Progressez sur Google et attirez des prospects qualifiés."
+    },
+    "aiIntegration": {
+      "title": "Intégration IA Zurich | Lopes2Tech",
+      "description": "Chatbots IA sur mesure et intégrations LLM pour les entreprises suisses. Bases de connaissances RAG, intégrations GPT-4 & API Claude, automatisation de workflows. Basé à Zurich, Suisse.",
+      "ogTitle": "Intégration IA Zurich | Lopes2Tech",
+      "ogDescription": "Chatbots IA sur mesure et intégrations LLM pour les entreprises suisses — automatisez les workflows et offrez des expériences client plus intelligentes avec RAG."
+    },
+    "businessAutomation": {
+      "title": "Automatisation d'Entreprise Zurich | Lopes2Tech",
+      "description": "Automatisation des processus métier pour les PME suisses. Éliminez les tâches répétitives avec n8n, Make et des workflows propulsés par l'IA. Automatisez les prospects, factures et CRM. Basé à Zurich.",
+      "ogTitle": "Automatisation d'Entreprise Zurich | Lopes2Tech",
+      "ogDescription": "Workflows d'automatisation sur mesure pour les entreprises suisses — éliminez les tâches manuelles et faites évoluer vos opérations sans recruter du personnel supplémentaire."
+    },
+    "ecommerce": {
+      "title": "E-Commerce Suisse | Lopes2Tech",
+      "description": "Développement de boutiques en ligne sur mesure pour les entreprises suisses. Paiements TWINT, PostFinance & Stripe, support multilingue et SEO avancé intégrés. Basé à Zurich.",
+      "ogTitle": "E-Commerce Suisse | Lopes2Tech",
+      "ogDescription": "Boutiques en ligne à fort taux de conversion pour les entreprises suisses — paiements TWINT & Stripe, multilingue, rapide, sécurisé et construit pour croître."
+    },
+    "socialMediaMarketing": {
+      "title": "Marketing sur les Réseaux Sociaux Zurich | Lopes2Tech",
+      "description": "Gestion des réseaux sociaux propulsée par l'IA pour les entreprises suisses dès CHF 249/mois. Création de contenu, Meta Ads, Google Ads et gestion de communauté. Basé à Zurich.",
+      "ogTitle": "Marketing sur les Réseaux Sociaux Zurich | Lopes2Tech",
+      "ogDescription": "Réseaux sociaux et marketing digital propulsés par l'IA pour les entreprises suisses. Création de contenu, Meta Ads et Google Ads — tout géré pour vous."
+    },
+    "webApps": {
+      "title": "Développement d'Applications Web Zurich | Lopes2Tech",
+      "description": "Développement d'applications web et SaaS sur mesure pour les entreprises suisses. Portails clients, tableaux de bord, systèmes de réservation et outils internes en Next.js. Basé à Zurich.",
+      "ogTitle": "Développement d'Applications Web Zurich | Lopes2Tech",
+      "ogDescription": "Applications web et SaaS sur mesure pour les entreprises suisses — portails, tableaux de bord et outils internes construits pour évoluer avec Next.js."
+    }
+  },
+  "ServiceLinks": {
+    "heading": "Vous Pourriez Aussi Avoir Besoin",
+    "subtitle": "Explorez les services complémentaires",
+    "services": {
+      "webDesign": {
+        "name": "Création Web",
+        "description": "Sites web sur mesure conçus pour convertir les visiteurs en clients"
+      },
+      "seo": {
+        "name": "SEO",
+        "description": "Progressez dans les résultats de recherche suisses"
+      },
+      "aiIntegration": {
+        "name": "Intégration IA",
+        "description": "Automatisez avec des workflows intelligents propulsés par l'IA"
+      },
+      "businessAutomation": {
+        "name": "Automatisation",
+        "description": "Éliminez les tâches répétitives et faites évoluer vos opérations"
+      },
+      "ecommerce": {
+        "name": "E-Commerce",
+        "description": "Lancez votre boutique en ligne suisse"
+      },
+      "webApps": {
+        "name": "Applications Web",
+        "description": "Portails sur mesure et plateformes SaaS"
+      },
+      "socialMedia": {
+        "name": "Marketing Digital",
+        "description": "Développez votre marque sur les réseaux sociaux"
+      }
+    }
+  },
+  "WebDesignPage": {
+    "badge": "Création Web Professionnelle",
+    "title": "Création de Sites Web",
+    "titleHighlight": "pour les Entreprises à Zurich",
+    "description": "Sites web rapides, abordables et professionnels construits avec une technologie moderne. Dès CHF 690 avec configuration Google Business Profile et e-mail inclus.",
+    "pill1": "Livraison Rapide (1-2 semaines)",
+    "pill2": "Responsive Mobile",
+    "pill3": "SEO Optimisé",
+    "paymentPlans": {
+      "onetime": "Paiement Unique",
+      "3months": "3 Mois",
+      "6months": "6 Mois",
+      "12months": "12 Mois"
+    },
+    "packages": {
+      "starter": {
+        "name": "Starter",
+        "description": "Présence en ligne complète pour les nouvelles entreprises",
+        "f1": "Site d'une page avec rédaction IA incluse",
+        "f2": "Formulaire de contact + widget de réservation + bouton WhatsApp",
+        "f3": "Configuration Google Business Profile + SEO de base",
+        "f4": "Analytics GA4, consentement cookies, SSL",
+        "f5": "Livraison en 4–5 jours (urgent : 1 jour +CHF 100)"
+      },
+      "businessPro": {
+        "name": "Business Pro",
+        "description": "Jusqu'à 15 pages, 3+ langues, CMS avancé — conçu pour générer des prospects",
+        "f1": "Jusqu'à 15 pages (5 pages principales + jusqu'à 10 pages de services)",
+        "f2": "3+ langues incluses (ex. FR + DE + EN)",
+        "f3": "Blog ou portfolio avec CMS avancé inclus",
+        "f4": "Capture de prospects — formulaire → CRM → séquence de 3 e-mails",
+        "f5": "SEO complet, rédaction IA, widget de réservation, WhatsApp, GBP"
+      },
+      "professional": {
+        "name": "Professional",
+        "description": "Site 5 pages avec 2 langues, SEO et automatisation inclus",
+        "f1": "Site 5 pages (Accueil, Services, À propos, FAQ, Contact)",
+        "f2": "2 langues incluses (ex. FR + DE)",
+        "f3": "Google Business Profile + bases SEO",
+        "f4": "1 automatisation incluse (réservation, génération de prospects ou avis)",
+        "f5": "Configuration e-mail professionnel + analytics"
+      }
+    },
+    "retainerLabel": "Maintenance Mensuelle — CHF 39/mois",
+    "retainerDesc": "Gardez votre site à jour, sécurisé et fonctionnel pour seulement CHF 39/mois. Inclut les mises à jour mineures de contenu, les correctifs de sécurité, la surveillance de disponibilité et le support e-mail prioritaire.",
+    "total": "Total",
+    "months": "mois",
+    "cta": {
+      "title": "Prêt à Lancer Votre Site Web ?",
+      "description": "Réservez une consultation gratuite pour discuter de votre projet. Livraison rapide, tarification transparente.",
+      "button": "Obtenir un Devis pour Votre Site"
+    },
+    "hosting": {
+      "badge": "Plans Mensuels",
+      "title": "Hébergement &",
+      "titleHighlight": "Support",
+      "intro": "Une fois votre site en ligne, gardez-le rapide, sécurisé et à jour avec nos plans d'hébergement géré.",
+      "recommended": "Recommandé",
+      "defaultPlan": "Plan de Base",
+      "billedMonthly": "Facturé mensuellement",
+      "installmentNote": "Remarque : Si vous payez le développement en plusieurs versements, les frais d'hébergement & support s'ajoutent à vos paiements une fois votre projet en ligne et entièrement terminé.",
+      "plans": {
+        "basic": {
+          "name": "Basic",
+          "description": "Hébergement et support essentiels pour votre site web.",
+          "f1": "Hébergement sécurisé sur notre plateforme",
+          "f2": "Jusqu'à 2 petites modifications par mois",
+          "f3": "Max 30 minutes de travail incluses",
+          "f4": "Rapport Google Analytics mensuel",
+          "f5": "Support par e-mail"
+        },
+        "professional": {
+          "name": "Professional",
+          "description": "Support amélioré avec réponse prioritaire et plus de flexibilité.",
+          "f1": "Tout ce qui est dans Basic",
+          "f2": "Jusqu'à 5 modifications par mois",
+          "f3": "Max 1 heure de travail incluse",
+          "f4": "Support prioritaire par e-mail & chat",
+          "f5": "Surveillance des performances"
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "description": "Support complet pour les entreprises qui ont besoin de plus.",
+          "f1": "Tout ce qui est dans Professional",
+          "f2": "Modifications mineures illimitées",
+          "f3": "Max 2 heures de travail incluses",
+          "f4": "Contact de support dédié",
+          "f5": "Surveillance de disponibilité 24h/24 7j/7"
+        }
+      }
+    },
+    "faq": {
+      "title": "Foire Aux Questions",
+      "subtitle": "Création de Sites Web en Suisse",
+      "q1": "Combien coûte un site web en Suisse ?",
+      "a1": "Nos packages de sites web commencent à CHF 690 pour un site d'une page (Starter), CHF 1 390 pour un site professionnel de 5 pages (Professional) et CHF 1 990 pour jusqu'à 15 pages avec 3+ langues et CMS (Business Pro). Tous les packages incluent SSL, design responsive mobile, configuration Google Business Profile et SEO de base.",
+      "q2": "Combien de temps faut-il pour créer un site web ?",
+      "a2": "Les sites Starter sont livrés en 4–5 jours (option urgente : 1 jour pour +CHF 100). Les sites Professional prennent environ 2 semaines. Business Pro avec CMS et configuration multilingue prend généralement 2 à 3 semaines selon la disponibilité du contenu.",
+      "q3": "Créez-vous des sites web en français, allemand et anglais ?",
+      "a3": "Oui ! Les sites multilingues sont notre spécialité. Le package Professional inclut 2 langues (ex. FR + DE), et Business Pro inclut 3+ langues. Nous servons les entreprises suisses en français, allemand, anglais, italien et portugais.",
+      "q4": "Le SEO est-il inclus dans le prix du site web ?",
+      "a4": "Le SEO de base est inclus dans chaque package — balises meta, génération de sitemap, configuration de Google Search Console, Google Business Profile et vitesses de chargement rapides. Pour une amélioration SEO mensuelle continue, nous proposons des packages SEO dédiés.",
+      "q5": "Puis-je mettre à jour mon site web moi-même après le lancement ?",
+      "a5": "Le package Business Pro inclut un CMS (système de gestion de contenu) pour que vous puissiez mettre à jour vous-même les textes, images et articles de blog. Pour Starter et Professional, nous gérons les mises à jour dans le cadre de nos plans d'hébergement mensuels (dès CHF 39/mois).",
+      "q6": "Servez-vous les entreprises suisses en dehors de Zurich ?",
+      "a6": "Absolument ! Nous travaillons avec des entreprises dans toute la Suisse — Bâle, Berne, Genève, Lausanne, Lucerne et au-delà. Tous les projets sont gérés à distance avec des appels vidéo et une communication en ligne rapide."
+    }
+  },
+  "SEOPage": {
+    "badge": "Ingénierie SEO Technique",
+    "title": "Développement SEO",
+    "titleHighlight": "pour les Entreprises Suisses",
+    "description": "Arrêtez de deviner. Commencez à optimiser votre classement Google. Audits SEO techniques, balisage Schema, optimisation Core Web Vitals et SEO programmatique.",
+    "pill1": "Core Web Vitals",
+    "pill2": "Balisage Schema",
+    "pill3": "SSR/SSG",
+    "packages": {
+      "audit": {
+        "name": "Audit SEO",
+        "description": "Audit technique complet pour découvrir ce qui freine vos classements",
+        "f1": "Audit technique complet",
+        "f2": "Rapport Core Web Vitals",
+        "f3": "Analyse du balisage Schema",
+        "f4": "Benchmarking concurrentiel",
+        "f5": "Recommandations actionnables"
+      },
+      "starter": {
+        "name": "SEO Starter",
+        "description": "Optimisation technique continue pour améliorer régulièrement vos classements",
+        "f1": "Optimisation technique mensuelle",
+        "f2": "SEO on-page pour jusqu'à 20 pages",
+        "f3": "Surveillance Google Search Console",
+        "f4": "Rapport de performance mensuel",
+        "f5": "Suivi des mots-clés"
+      },
+      "growth": {
+        "name": "SEO Growth",
+        "description": "Stratégie SEO complète avec SEO programmatique et Schema avancé",
+        "f1": "Tout ce qui est dans Starter",
+        "f2": "Configuration SEO programmatique",
+        "f3": "Implémentation Schema avancée",
+        "f4": "Stratégie de contenu & briefs",
+        "f5": "Analyse de backlinks",
+        "f6": "Support prioritaire"
+      }
+    },
+    "cta": {
+      "title": "Prêt à Progresser dans les Classements ?",
+      "description": "Réservez une consultation gratuite pour discuter de votre stratégie SEO et commencer à grimper dans les classements.",
+      "button": "Démarrer Votre Stratégie SEO"
+    },
+    "faq": {
+      "title": "Foire Aux Questions",
+      "subtitle": "Services SEO en Suisse",
+      "q1": "Combien de temps faut-il pour voir des résultats SEO en Suisse ?",
+      "a1": "Les améliorations SEO techniques (Core Web Vitals, balisage Schema, correction d'erreurs d'exploration) peuvent montrer des résultats en 2 à 8 semaines. La construction de contenu et d'autorité prend généralement 3 à 6 mois pour déplacer significativement les classements. Nous fournissons des rapports mensuels pour que vous voyiez toujours la progression.",
+      "q2": "Qu'est-ce que le SEO technique et pourquoi est-il important ?",
+      "a2": "Le SEO technique se concentre sur la façon dont les moteurs de recherche explorent et indexent votre site — vitesse de page, utilisabilité mobile, données structurées, Core Web Vitals et correction des erreurs d'exploration. Sans une base technique solide, même un excellent contenu ne se classera pas.",
+      "q3": "Proposez-vous du SEO multilingue pour l'allemand, le français et l'italien ?",
+      "a3": "Oui ! Les quatre régions linguistiques de la Suisse nécessitent un SEO multilingue dédié. Nous implémentons des balises hreflang, des métadonnées localisées et des stratégies de mots-clés spécifiques aux langues pour l'allemand, le français, l'anglais, l'italien et le portugais.",
+      "q4": "Qu'est-ce que le balisage Schema et comment aide-t-il ?",
+      "a4": "Le balisage Schema est une donnée structurée qui indique à Google exactement ce dont parle votre page. Il permet d'obtenir des résultats enrichis dans la recherche — étoiles d'évaluation, FAQ, prix et informations sur l'entreprise — ce qui améliore significativement les taux de clics.",
+      "q5": "Proposez-vous un SEO continu ou des audits ponctuels ?",
+      "a5": "Les deux. Notre Audit SEO (CHF 490) est une analyse approfondie ponctuelle avec des recommandations actionnables. Pour une amélioration continue, nos plans SEO Starter (CHF 390/mois) et SEO Growth (CHF 790/mois) incluent une optimisation, un reporting et un suivi des mots-clés continus.",
+      "q6": "Comment mesurez-vous le succès SEO ?",
+      "a6": "Nous suivons les classements des mots-clés, le trafic organique, les scores Core Web Vitals, les taux de clics et les événements de conversion dans Google Search Console et GA4. Vous recevez un rapport de performance mensuel avec des métriques claires et les prochaines étapes."
+    }
+  },
+  "AutomationPage": {
+    "badge": "Automatisation Intelligente",
+    "title": "Automatisation d'Entreprise",
+    "titleHighlight": "pour les Entreprises Suisses",
+    "description": "Éliminez les tâches répétitives. Connectez vos outils. Faites évoluer vos opérations sans augmenter vos effectifs. Workflows personnalisés propulsés par l'IA.",
+    "pill1": "Zapier/Make",
+    "pill2": "Scripts Personnalisés",
+    "pill3": "Intégration CRM",
+    "packages": {
+      "starter": {
+        "name": "Automation Starter",
+        "description": "Automatisez votre premier workflow et commencez à économiser du temps immédiatement",
+        "f1": "1 workflow automatisé",
+        "f2": "Intégration d'outils (jusqu'à 3)",
+        "f3": "Configuration & documentation",
+        "f4": "Support 30 jours",
+        "f5": "Session de formation"
+      },
+      "growth": {
+        "name": "Automation Growth",
+        "description": "Automatisez plusieurs workflows et connectez toute votre stack d'outils",
+        "f1": "Jusqu'à 5 workflows automatisés",
+        "f2": "Intégrations avancées",
+        "f3": "Gestion des erreurs & surveillance",
+        "f4": "Support 60 jours",
+        "f5": "Automatisation e-mail/calendrier"
+      },
+      "enterprise": {
+        "name": "Automation Enterprise",
+        "description": "Automatisation illimitée avec logique de décision propulsée par l'IA",
+        "f1": "Workflows illimités",
+        "f2": "Développement API personnalisé",
+        "f3": "Logique de décision propulsée par l'IA",
+        "f4": "Maintenance continue",
+        "f5": "Support dédié"
+      }
+    },
+    "cta": {
+      "title": "Prêt à Automatiser ?",
+      "description": "Réservez une consultation gratuite pour identifier quels processus peuvent être automatisés pour un impact maximal.",
+      "button": "Obtenir Votre Évaluation d'Automatisation"
+    },
+    "faq": {
+      "title": "Foire Aux Questions",
+      "subtitle": "Automatisation d'Entreprise en Suisse",
+      "q1": "Quels processus métier peuvent être automatisés ?",
+      "a1": "Les automatisations courantes incluent : capture de prospects → CRM → séquences de suivi e-mail, prise de rendez-vous et rappels, génération de factures et suivi des paiements, flux d'intégration client, campagnes de demande d'avis et planification des réseaux sociaux. Si vous le faites de manière répétitive, nous pouvons probablement l'automatiser.",
+      "q2": "Quels outils utilisez-vous pour l'automatisation ?",
+      "a2": "Nous utilisons n8n, Make (anciennement Integromat), Zapier et des scripts Python personnalisés selon vos besoins et votre budget. Pour une logique métier complexe, nous construisons des API personnalisées qui relient vos outils existants de manière transparente.",
+      "q3": "Combien de temps faut-il pour construire une automatisation ?",
+      "a3": "Les workflows simples (connecter 2 à 3 outils) peuvent être opérationnels en 1 à 2 jours. Les automatisations multi-étapes avec gestion des erreurs et surveillance prennent généralement 1 à 2 semaines. Nous documentons chaque automatisation pour que votre équipe puisse la maintenir.",
+      "q4": "L'automatisation fonctionnera-t-elle avec mon logiciel existant ?",
+      "a4": "Nous connectons plus de 5 000 applications, dont Google Workspace, HubSpot, Salesforce, Pipedrive, Slack, WhatsApp Business, Calendly et la plupart des systèmes CRM/ERP utilisés en Suisse.",
+      "q5": "Quel ROI puis-je attendre de l'automatisation ?",
+      "a5": "La plupart des clients économisent 10 à 30 heures par mois sur des tâches répétitives dès le premier mois. Un workflow d'automatisation typique à CHF 490 se rentabilise dans la première semaine d'utilisation — et continue d'économiser chaque mois après.",
+      "q6": "Formez-vous mon équipe sur les automatisations que vous construisez ?",
+      "a6": "Oui ! Chaque package inclut une documentation complète et une session de formation pour que votre équipe puisse surveiller, ajuster et étendre les workflows elle-même. Nous offrons également un support post-lancement de 30 à 60 jours pour gérer les cas limites."
+    }
+  },
+  "AIPage": {
+    "badge": "Solutions Propulsées par l'IA",
+    "title": "Intégration IA",
+    "titleHighlight": "& Chatbots Intelligents",
+    "description": "Déployez des agents IA qui comprennent votre entreprise. Bases de connaissances RAG, chatbots personnalisés et intégrations API GPT/Claude.",
+    "pill1": "RAG/Base de Connaissances",
+    "pill2": "Appel de Fonctions",
+    "pill3": "Support 24h/24",
+    "packages": {
+      "chatbot": {
+        "name": "Chatbot IA",
+        "description": "Déployez un chatbot IA sur mesure entraîné sur la connaissance de votre entreprise",
+        "f1": "Chatbot IA personnalisé",
+        "f2": "Base de connaissances (jusqu'à 50 pages)",
+        "f3": "Intégration widget site web",
+        "f4": "Analytics de base",
+        "f5": "Période d'ajustement de 30 jours"
+      },
+      "workflow": {
+        "name": "Workflow IA",
+        "description": "Workflows propulsés par l'IA qui automatisent les e-mails, documents et interactions clients",
+        "f1": "Tout ce qui est dans Chatbot",
+        "f2": "Triage d'e-mails par IA",
+        "f3": "Traitement de documents",
+        "f4": "Intégration CRM",
+        "f5": "Tableau de bord analytics avancé"
+      },
+      "custom": {
+        "name": "IA Sur Mesure",
+        "description": "IA de niveau entreprise avec orchestration multi-agents et fine-tuning personnalisé",
+        "f1": "Tout ce qui est dans Workflow",
+        "f2": "Fine-tuning LLM personnalisé",
+        "f3": "Orchestration multi-agents",
+        "f4": "Voix vers action",
+        "f5": "Sécurité entreprise"
+      }
+    },
+    "cta": {
+      "title": "Prêt pour l'IA ?",
+      "description": "Réservez une consultation gratuite pour explorer comment l'IA peut transformer vos opérations commerciales.",
+      "button": "Construire Votre Agent IA"
+    },
+    "faq": {
+      "title": "Foire Aux Questions",
+      "subtitle": "Intégration IA en Suisse",
+      "q1": "Qu'est-ce qu'un chatbot IA et comment peut-il aider mon entreprise ?",
+      "a1": "Un chatbot IA est un assistant automatisé 24h/24 entraîné sur la connaissance de votre entreprise. Il peut répondre aux questions des clients, qualifier les prospects, gérer les réservations et escalader les problèmes complexes — tout cela sans intervention humaine. Les entreprises suisses l'utilisent pour réduire les coûts de support et répondre plus rapidement.",
+      "q2": "Avec quels modèles d'IA travaillez-vous ?",
+      "a2": "Nous travaillons avec GPT-4o, Claude 3.5, Gemini et des modèles open-source comme Llama selon vos besoins. Pour les déploiements suisses/UE sensibles à la confidentialité, nous pouvons mettre en place des solutions entièrement sur site ou hébergées dans l'UE sans que les données quittent la Suisse.",
+      "q3": "Qu'est-ce que RAG et pourquoi est-ce important ?",
+      "a3": "RAG (Retrieval-Augmented Generation) permet à l'IA de rechercher dans vos propres documents, FAQ, catalogues de produits et base de connaissances avant de répondre. Cela signifie que les réponses sont précises, à jour et spécifiques à votre entreprise — pas des hallucinations IA génériques.",
+      "q4": "L'IA peut-elle s'intégrer à mes outils existants ?",
+      "a4": "Oui ! Nous intégrons l'IA avec votre CRM, calendrier, WhatsApp, e-mail, Slack, Google Workspace et les API personnalisées. L'IA peut lire depuis et écrire dans vos systèmes existants — qualifiant les prospects directement dans HubSpot, par exemple.",
+      "q5": "Combien coûte l'intégration IA ?",
+      "a5": "Notre package Chatbot IA commence à CHF 890 (chatbot personnalisé + base de connaissances de 50 pages + widget site web). Workflow IA (chatbot + triage e-mail + intégration CRM) est à CHF 1 890. L'IA sur mesure avec orchestration multi-agents commence à partir de CHF 2 990.",
+      "q6": "Nos données d'entreprise sont-elles sécurisées avec l'IA ?",
+      "a6": "Absolument. Pour la conformité suisse et UE, nous pouvons déployer des solutions qui gardent toutes les données en Suisse ou dans l'UE. Nous n'utilisons jamais vos données d'entreprise pour entraîner des modèles IA généraux, et nous implémentons des contrôles d'accès stricts et un chiffrement des données."
+    }
+  },
+  "WebAppsPage": {
+    "badge": "Développement Full-Stack",
+    "title": "Applications Web Sur Mesure",
+    "titleHighlight": "Construites pour Évoluer",
+    "description": "Des MVPs aux plateformes entreprise. Applications SaaS full-stack, tableaux de bord, portails clients et APIs construits avec une technologie moderne.",
+    "pill1": "React/Next.js",
+    "pill2": "TypeScript",
+    "pill3": "Cloud-Native",
+    "packages": {
+      "mvp": {
+        "name": "Lancement MVP",
+        "description": "Amenez votre idée sur le marché rapidement avec un MVP lean et fonctionnel",
+        "f1": "Ensemble de fonctionnalités principales",
+        "f2": "Authentification utilisateur",
+        "f3": "Tableau de bord de base",
+        "f4": "Design responsive",
+        "f5": "1 mois de support post-lancement"
+      },
+      "standard": {
+        "name": "Plateforme Standard",
+        "description": "Plateforme complète avec paiements, i18n et pipeline CI/CD",
+        "f1": "Tout ce qui est dans MVP",
+        "f2": "Intégration paiement (Stripe)",
+        "f3": "Multi-langue (i18n)",
+        "f4": "Accès basé sur les rôles",
+        "f5": "Pipeline CI/CD",
+        "f6": "3 mois de support"
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "description": "Plateforme de niveau entreprise avec architecture multi-tenant et SLA",
+        "f1": "Tout ce qui est dans Standard",
+        "f2": "Intégrations personnalisées",
+        "f3": "Analytics avancées",
+        "f4": "Architecture multi-tenant",
+        "f5": "Garantie SLA",
+        "f6": "Maintenance continue"
+      }
+    },
+    "cta": {
+      "title": "Prêt à Construire ?",
+      "description": "Réservez une consultation gratuite pour cadrer votre projet et obtenir une feuille de route détaillée.",
+      "button": "Démarrer Votre Projet"
+    },
+    "faq": {
+      "title": "Foire Aux Questions",
+      "subtitle": "Développement d'Applications Web en Suisse",
+      "q1": "Quelle est la différence entre un site web et une application web ?",
+      "a1": "Un site web est principalement informatif. Une application web dispose d'une fonctionnalité interactive : authentification utilisateur, gestion des données, paiements, accès basé sur les rôles et logique métier complexe. Des exemples incluent les tableaux de bord SaaS, portails clients, systèmes de réservation et outils internes.",
+      "q2": "Combien de temps faut-il pour construire une application web ?",
+      "a2": "Un MVP peut être en ligne en 4 à 6 semaines. Une plateforme standard avec paiements, support multilingue et pipeline CI/CD prend généralement 8 à 12 semaines. Les plateformes entreprise avec intégrations personnalisées et SLA prennent 12 à 20 semaines. Les délais dépendent de la portée et de la complexité des fonctionnalités.",
+      "q3": "Quelle stack technologique utilisez-vous ?",
+      "a3": "Nous construisons avec Next.js, TypeScript, React, Supabase (PostgreSQL), Stripe et Vercel. Cette stack éprouvée est utilisée par les principales entreprises dans le monde et est idéale pour des applications web rapides, évolutives et maintenables.",
+      "q4": "Pouvez-vous construire un produit SaaS pour mon idée d'entreprise ?",
+      "a4": "Absolument ! Nous sommes spécialisés dans les MVPs SaaS pour les fondateurs et entreprises suisses. Nous aidons à cadrer votre produit, construire les fonctionnalités principales et lancer rapidement — pour que vous puissiez valider avec de vrais utilisateurs avant d'investir davantage.",
+      "q5": "Proposez-vous une maintenance post-lancement ?",
+      "a5": "Oui. Notre package Enterprise inclut une maintenance continue. Pour les niveaux MVP et Standard, nous proposons des plans de retainer mensuels à partir de CHF 490/mois couvrant les mises à jour de sécurité, les corrections de bugs, la surveillance des performances et le support prioritaire.",
+      "q6": "Comment gérez-vous la sécurité des données et la conformité RGPD ?",
+      "a6": "Nous suivons les meilleures pratiques de sécurité : sécurité au niveau des lignes sur toutes les bases de données, authentification sécurisée (JWT/OAuth), données chiffrées en transit et au repos, et gestion des données conforme au RGPD. Les entreprises suisses peuvent déployer sur une infrastructure basée dans l'UE/CH."
+    }
+  },
+  "EcommercePage": {
+    "badge": "Solutions E-Commerce",
+    "title": "E-Commerce",
+    "titleHighlight": "pour les Entreprises Suisses",
+    "description": "Lancez votre boutique en ligne. Shopify, WooCommerce ou solutions entièrement sur mesure avec intégration des paiements suisses et support multi-devise.",
+    "pill1": "Paiements Suisses",
+    "pill2": "Multi-Devise",
+    "pill3": "Mobile-First",
+    "packages": {
+      "starter": {
+        "name": "Boutique Starter",
+        "description": "Lancez votre boutique en ligne avec tout ce dont vous avez besoin pour commencer à vendre",
+        "f1": "Jusqu'à 50 produits",
+        "f2": "Design responsive mobile",
+        "f3": "Configuration passerelle de paiement",
+        "f4": "SEO de base",
+        "f5": "Formation à la gestion des produits"
+      },
+      "growth": {
+        "name": "Boutique Growth",
+        "description": "Boutique complète avec paiements suisses, SEO avancé et outils marketing",
+        "f1": "Produits illimités",
+        "f2": "Design sur mesure",
+        "f3": "SEO avancé & analytics",
+        "f4": "Méthodes de paiement suisses (TWINT, PostFinance)",
+        "f5": "Configuration d'automatisation marketing"
+      },
+      "enterprise": {
+        "name": "Commerce Enterprise",
+        "description": "E-commerce entreprise avec checkout sur mesure, intégration ERP et fonctionnalités B2B",
+        "f1": "Tout ce qui est dans Growth",
+        "f2": "Flux de checkout personnalisé",
+        "f3": "Intégration ERP",
+        "f4": "Support multi-devise",
+        "f5": "Fonctionnalités B2B wholesale",
+        "f6": "Support prioritaire"
+      }
+    },
+    "cta": {
+      "title": "Prêt à Vendre en Ligne ?",
+      "description": "Réservez une consultation gratuite pour planifier votre boutique en ligne et commencer à vendre.",
+      "button": "Lancer Votre Boutique"
+    },
+    "faq": {
+      "title": "Foire Aux Questions",
+      "subtitle": "E-Commerce en Suisse",
+      "q1": "Quelle plateforme e-commerce est la meilleure pour les entreprises suisses ?",
+      "a1": "Cela dépend de vos besoins. Shopify est idéal pour les boutiques simples qui doivent lancer rapidement. WooCommerce convient aux entreprises déjà sur WordPress. Les boutiques Next.js sur mesure offrent performances et flexibilité maximales. Nous recommanderons la meilleure solution selon votre volume, vos besoins de personnalisation et votre budget.",
+      "q2": "Prenez-vous en charge TWINT et les méthodes de paiement suisses ?",
+      "a2": "Oui ! Nous intégrons TWINT, PostFinance, Stripe et les cartes de crédit/débit standard — les méthodes de paiement que préfèrent les clients suisses. Nos packages Growth et Enterprise incluent la configuration complète de la passerelle de paiement suisse.",
+      "q3": "Pouvez-vous créer une boutique multilingue pour le marché suisse ?",
+      "a3": "Absolument. La Suisse a quatre langues officielles. Nous construisons des boutiques en allemand, français, italien et anglais avec changement de devise automatique (CHF, EUR, USD) et tarification spécifique à la région si nécessaire.",
+      "q4": "Ma boutique en ligne se classera-t-elle sur Google ?",
+      "a4": "Oui ! Nos packages Growth et Enterprise incluent un SEO avancé — balisage Schema pour les produits, pages de catégories et collections optimisées, vitesses de chargement rapides et configuration du sitemap. Nous intégrons également les flux Google Shopping.",
+      "q5": "Combien de produits ma boutique peut-elle gérer ?",
+      "a5": "Notre Boutique Starter gère jusqu'à 50 produits. Boutique Growth est illimitée. Tous les packages incluent des outils d'import/export de produits et de gestion des stocks. Pour les boutiques à fort volume, nous pouvons implémenter des architectures optimisées pour les bases de données.",
+      "q6": "Quel support proposez-vous après le lancement de la boutique ?",
+      "a6": "La formation est incluse dans chaque package pour que vous puissiez gérer votre boutique vous-même. Nous proposons des plans de maintenance mensuelle pour les mises à jour de sécurité, les sauvegardes et les petites modifications. Notre équipe est également disponible pour des ajouts de fonctionnalités personnalisées au fur et à mesure de la croissance de votre entreprise."
+    }
+  },
+  "DigitalMarketingPage": {
+    "badge": "Marketing Digital Propulsé par l'IA",
+    "title": "Marketing Digital",
+    "titleHighlight": "pour les Entreprises à Zurich",
+    "description": "Du contenu sur les réseaux sociaux aux campagnes Meta Ads et Google Ads — nous gérons toute votre présence marketing digitale. Propulsé par l'IA, affiné par des humains et conçu pour développer votre marque.",
+    "whyUs": {
+      "title1": "Rapidité Propulsée par l'IA",
+      "desc1": "Nous créons du contenu 10x plus vite que les agences traditionnelles grâce à l'IA, en vous répercutant les économies (60 à 70% moins cher).",
+      "title2": "Croissance Constante",
+      "desc2": "Ne manquez jamais une publication. Votre marque reste active même quand vous êtes occupé. 8 à 16 publications par mois, chaque mois.",
+      "title3": "Pas de Séances Photo",
+      "desc3": "Vous fournissez des photos depuis votre téléphone. Nous les améliorons avec des outils IA professionnels. Simple, abordable, résultats époustouflants."
+    },
+    "contentSection": {
+      "badge": "Gestion de Contenu",
+      "title": "Plans de Contenu pour les",
+      "titleHighlight": "Réseaux Sociaux",
+      "description": "Création de contenu assistée par IA, planification et rapports mensuels inclus dans chaque plan"
+    },
+    "addOnsTitle": "Options de Contenu",
+    "addOns": {
+      "extraPlatform": {
+        "name": "Plateforme Supplémentaire",
+        "description": "Ajouter un autre canal digital"
+      },
+      "extraReels": {
+        "name": "Reels/Vidéos Supplémentaires",
+        "description": "Contenu vidéo additionnel"
+      },
+      "landingPage": {
+        "name": "Page d'Atterrissage",
+        "description": "Page d'atterrissage dédiée pour les publicités"
+      }
+    },
+    "adSection": {
+      "badge": "Publicité Payante",
+      "title": "Gestion des",
+      "titleHighlight": "Campagnes Publicitaires",
+      "description": "Nous gérons vos campagnes publicitaires — stratégie, créatifs, ciblage et optimisation.",
+      "adBudgetNote": "Le budget publicitaire est payé directement à Meta/Google par vous",
+      "adBudgetDisclaimer": "* Le budget publicitaire (ex. CHF 300–2000+/mois) est payé directement à Meta ou Google par vous. Nous recommandons un budget publicitaire mensuel minimum de CHF 300 par canal."
+    },
+    "packages": {
+      "digitalStarter": {
+        "name": "Digital Starter",
+        "description": "Idéal pour les petites entreprises qui débutent dans le marketing digital",
+        "f1": "8 publications de qualité par mois",
+        "f2": "1 plateforme (Instagram, Facebook ou LinkedIn)",
+        "f3": "Création de contenu assistée par IA",
+        "f4": "Planification & publication",
+        "f5": "Rapport de performance mensuel",
+        "f6": "Vous fournissez les photos — nous les améliorons avec l'IA"
+      },
+      "digitalGrowth": {
+        "name": "Digital Growth",
+        "description": "Pour les entreprises prêtes à développer leur présence digitale",
+        "f1": "12 publications par mois",
+        "f2": "2 plateformes (ex. Instagram + Facebook)",
+        "f3": "Stories Instagram (4 à 8 par mois)",
+        "f4": "Gestion de base de l'engagement",
+        "f5": "Recherche & optimisation des hashtags",
+        "f6": "Aperçu du calendrier de contenu"
+      },
+      "digitalPro": {
+        "name": "Digital Pro",
+        "description": "Gestion complète du marketing digital pour les marques ambitieuses",
+        "f1": "16 publications par mois",
+        "f2": "3 plateformes (Instagram + Facebook + LinkedIn)",
+        "f3": "Gestion complète de l'engagement",
+        "f4": "Appel stratégique mensuel",
+        "f5": "Tests A/B & optimisation",
+        "f6": "Support prioritaire"
+      },
+      "metaAds": {
+        "name": "Meta Ads",
+        "description": "Gestion complète de vos campagnes publicitaires Meta & Instagram",
+        "f1": "Configuration de campagne & stratégie",
+        "f2": "Créatif publicitaire (texte + visuels)",
+        "f3": "Ciblage d'audience & reciblage",
+        "f4": "Tests A/B & optimisation",
+        "f5": "Rapport de performance mensuel",
+        "f6": "Couverture Meta & Instagram"
+      },
+      "googleAds": {
+        "name": "Google Ads",
+        "description": "Campagnes Google Search & Display gérées de bout en bout",
+        "f1": "Recherche de mots-clés & stratégie d'enchères",
+        "f2": "Campagnes Search + Display",
+        "f3": "Rédaction d'annonces & extensions",
+        "f4": "Configuration du suivi des conversions",
+        "f5": "Rapport analytics mensuel",
+        "f6": "Réseau Google Search & Display"
+      },
+      "bundle": {
+        "name": "Bundle Meta + Google",
+        "description": "Les deux canaux, une stratégie intégrée — économisez CHF 99/mois",
+        "f1": "Tout ce qui est dans le plan Meta Ads",
+        "f2": "Tout ce qui est dans le plan Google Ads",
+        "f3": "Stratégie & reporting cross-canal",
+        "f4": "Insights d'audience unifiés",
+        "f5": "Optimisation prioritaire des campagnes",
+        "f6": "Économisez CHF 99/mois vs. plans séparés"
+      }
+    },
+    "billedMonthly": "Facturé mensuellement",
+    "mgmtFee": "Frais de gestion · budget publicitaire facturé séparément",
+    "cta": {
+      "title": "Prêt à Développer Votre Présence Digitale ?",
+      "description": "Réservez une consultation gratuite pour discuter de votre stratégie marketing digitale",
+      "button": "Démarrer Votre Stratégie Digitale"
+    },
+    "faq": {
+      "title": "Foire Aux Questions",
+      "subtitle": "Marketing sur les Réseaux Sociaux en Suisse",
+      "q1": "Combien coûte la gestion des réseaux sociaux en Suisse ?",
+      "a1": "Notre plan Digital Starter est à CHF 249/mois (8 publications/mois, 1 plateforme). Digital Growth est à CHF 399/mois (12 publications, 2 plateformes, Stories). Digital Pro est à CHF 579/mois (16 publications, 3 plateformes, gestion complète de l'engagement). Tous les plans incluent la création de contenu assistée par IA et les rapports mensuels.",
+      "q2": "Comment créez-vous du contenu sans séance photo ?",
+      "a2": "Vous nous envoyez des photos depuis votre téléphone ou entreprise. Nous les améliorons professionnellement avec des outils IA — suppression d'arrière-plan, correction des couleurs, superpositions de branding et mise à l'échelle. Cela maintient les coûts 60 à 70% inférieurs à ceux des agences traditionnelles tout en livrant des résultats professionnels.",
+      "q3": "Quelles plateformes gérez-vous ?",
+      "a3": "Nous gérons Instagram, Facebook, LinkedIn et Google Business Profile. Chaque plan couvre 1 à 3 plateformes. Des plateformes supplémentaires sont disponibles en option à CHF 99/mois chacune. Nous recommanderons les bonnes plateformes selon l'endroit où vos clients passent leur temps.",
+      "q4": "Pouvez-vous également gérer des campagnes publicitaires payantes ?",
+      "a4": "Oui ! Nous gérons Meta Ads (Facebook + Instagram) à partir de CHF 399/mois et Google Ads à partir de CHF 449/mois. Nous proposons également un bundle combiné à CHF 699/mois. Le budget publicitaire est facturé séparément directement par Meta et Google.",
+      "q5": "Rédigez-vous des légendes en français et dans d'autres langues suisses ?",
+      "a5": "Oui ! Nous créons du contenu dans n'importe quelle langue parlée par votre audience — français, allemand, anglais, italien ou portugais. Cela est particulièrement précieux pour les entreprises suisses servant plusieurs régions linguistiques.",
+      "q6": "Combien de temps faut-il pour commencer à gérer nos réseaux sociaux ?",
+      "a6": "Nous pouvons accueillir de nouveaux clients en 1 semaine. Après un appel de lancement pour comprendre la voix de votre marque, votre audience cible et vos objectifs, nous préparons le calendrier de contenu de votre premier mois pour votre approbation avant de publier quoi que ce soit."
+    }
+  },
+  "MediumBanner": {
+    "eyebrow": "Aussi sur Medium",
+    "headline": "Articles approfondis sur l'IA, le développement web & l'automatisation",
+    "description": "Je publie des articles techniques approfondis sur mon profil Medium — couvrant les agents IA, Next.js, l'automatisation métier et la performance web.",
+    "cta": "Suivre sur Medium"
+  }
+}

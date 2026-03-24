@@ -11,7 +11,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     description: "Meet Paulo Lopes, founder of Lopes2Tech. Specializing in AI-powered web development, SEO, and business automation for Swiss SMEs. Based in Zurich.",
     alternates: {
       canonical,
-      languages: { "x-default": `${BASE_URL}/en${path}`, en: `${BASE_URL}/en${path}`, de: `${BASE_URL}/de${path}`, pt: `${BASE_URL}/pt${path}` },
+      languages: { "x-default": `${BASE_URL}/en${path}`, en: `${BASE_URL}/en${path}`, de: `${BASE_URL}/de${path}`, pt: `${BASE_URL}/pt${path}`, fr: `${BASE_URL}/fr${path}`, it: `${BASE_URL}/it${path}` },
     },
     openGraph: { title: "About Lopes2Tech | AI-Powered Web Development in Zurich", description: "Meet Paulo Lopes, founder of Lopes2Tech. AI-powered web development and business automation for Swiss businesses.", url: canonical },
   };

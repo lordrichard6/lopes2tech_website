@@ -11,7 +11,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     description: "Get in touch for a free consultation. Web development, SEO, AI integration, and business automation services in Zurich, Switzerland. EN/DE/PT.",
     alternates: {
       canonical,
-      languages: { "x-default": `${BASE_URL}/en${path}`, en: `${BASE_URL}/en${path}`, de: `${BASE_URL}/de${path}`, pt: `${BASE_URL}/pt${path}` },
+      languages: { "x-default": `${BASE_URL}/en${path}`, en: `${BASE_URL}/en${path}`, de: `${BASE_URL}/de${path}`, pt: `${BASE_URL}/pt${path}`, fr: `${BASE_URL}/fr${path}`, it: `${BASE_URL}/it${path}` },
     },
     openGraph: { title: "Contact Lopes2Tech | Free Consultation", description: "Get in touch for a free consultation. Web development, SEO, AI, and automation in Zurich.", url: canonical },
   };

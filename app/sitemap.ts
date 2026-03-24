@@ -4,7 +4,7 @@ import { projects } from './[locale]/portfolio/projects';
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = 'https://lopes2tech.ch';
-    const locales = ['en', 'pt', 'de'];
+    const locales = ['en', 'pt', 'de', 'fr', 'it'];
 
     // Dynamic date for frequently updated pages; static for legal/policy pages
     const now = new Date().toISOString();

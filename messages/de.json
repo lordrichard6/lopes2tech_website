@@ -2050,5 +2050,11 @@
         "description": "Ihre Marke auf sozialen Kanälen ausbauen"
       }
     }
+  },
+  "MediumBanner": {
+    "eyebrow": "Auch auf Medium",
+    "headline": "Fundierte Artikel über KI, Webentwicklung & Automatisierung",
+    "description": "Auf meinem Medium-Profil veröffentliche ich technische Tiefenanalysen zu KI-Agenten, Next.js, Geschäftsautomatisierung und Web-Performance.",
+    "cta": "Auf Medium folgen"
   }
 }

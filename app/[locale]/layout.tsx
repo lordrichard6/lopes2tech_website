@@ -41,6 +41,8 @@ export const metadata: Metadata = {
       'en': '/en',
       'de': '/de',
       'pt': '/pt',
+      'fr': '/fr',
+      'it': '/it',
       'x-default': '/en',
     },
   },
@@ -79,7 +81,7 @@ export const metadata: Metadata = {
 };
 
 export function generateStaticParams() {
-  return ['en', 'pt', 'de'].map((locale) => ({ locale }));
+  return ['en', 'pt', 'de', 'fr', 'it'].map((locale) => ({ locale }));
 }
 
 export default async function RootLayout({
@@ -92,7 +94,7 @@ export default async function RootLayout({
   const { locale } = await params;
 
   // Ensure that the incoming `locale` is valid
-  if (!['en', 'pt', 'de'].includes(locale)) {
+  if (!['en', 'pt', 'de', 'fr', 'it'].includes(locale)) {
     notFound();
   }
 

@@ -1,6 +1,8 @@
 import blogPostsEn from "@/data/blog-posts.json";
 import blogPostsDe from "@/data/blog-posts-de.json";
 import blogPostsPt from "@/data/blog-posts-pt.json";
+import blogPostsFr from "@/data/blog-posts-fr.json";
+import blogPostsIt from "@/data/blog-posts-it.json";
 
 const BASE_URL = "https://lopes2tech.ch";
 
@@ -18,6 +20,8 @@ const blogPostsByLocale: Record<string, BlogPost[]> = {
   en: blogPostsEn as BlogPost[],
   de: blogPostsDe as BlogPost[],
   pt: blogPostsPt as BlogPost[],
+  fr: blogPostsFr as BlogPost[],
+  it: blogPostsIt as BlogPost[],
 };
 
 export async function GET(

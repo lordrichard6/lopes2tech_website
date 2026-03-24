@@ -9,9 +9,12 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Calendar, Clock, ArrowLeft, User, Share2 } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
+import MediumBanner from "@/components/MediumBanner";
 import blogPostsEn from "@/data/blog-posts.json";
 import blogPostsDe from "@/data/blog-posts-de.json";
 import blogPostsPt from "@/data/blog-posts-pt.json";
+import blogPostsFr from "@/data/blog-posts-fr.json";
+import blogPostsIt from "@/data/blog-posts-it.json";
 
 interface BlogPost {
     id: string;
@@ -31,6 +34,8 @@ const blogPostsByLocale: Record<string, BlogPost[]> = {
     en: blogPostsEn as BlogPost[],
     de: blogPostsDe as BlogPost[],
     pt: blogPostsPt as BlogPost[],
+    fr: blogPostsFr as BlogPost[],
+    it: blogPostsIt as BlogPost[],
 };
 
 export default function BlogPostContent() {
@@ -150,6 +155,9 @@ export default function BlogPostContent() {
                         {t('backToInsights')}
                     </Link>
 
+                    {/* Medium Banner */}
+                    <MediumBanner />
+
                     {/* Header */}
                     <motion.header
                         initial={{ opacity: 0, y: 20 }}
@@ -188,7 +196,7 @@ export default function BlogPostContent() {
                             <span className="flex items-center gap-2">
                                 <Calendar className="w-4 h-4" />
                                 {new Date(post.date).toLocaleDateString(
-                                    locale === 'de' ? 'de-CH' : locale === 'pt' ? 'pt-PT' : 'en-GB',
+                                    locale === 'de' ? 'de-CH' : locale === 'pt' ? 'pt-PT' : locale === 'fr' ? 'fr-CH' : locale === 'it' ? 'it-CH' : 'en-GB',
                                     { month: 'long', day: 'numeric', year: 'numeric' }
                                 )}
                             </span>

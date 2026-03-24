@@ -18,6 +18,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
                 en: `${BASE_URL}/en/portfolio/${slug}`,
                 de: `${BASE_URL}/de/portfolio/${slug}`,
                 pt: `${BASE_URL}/pt/portfolio/${slug}`,
+                fr: `${BASE_URL}/fr/portfolio/${slug}`,
             },
         },
         openGraph: {

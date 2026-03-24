@@ -3,6 +3,8 @@ import BlogPostContent from "./BlogPostContent";
 import blogPostsEn from "@/data/blog-posts.json";
 import blogPostsDe from "@/data/blog-posts-de.json";
 import blogPostsPt from "@/data/blog-posts-pt.json";
+import blogPostsFr from "@/data/blog-posts-fr.json";
+import blogPostsIt from "@/data/blog-posts-it.json";
 
 interface BlogPost {
     slug: string;
@@ -16,6 +18,8 @@ const blogPostsByLocale: Record<string, BlogPost[]> = {
     en: blogPostsEn as BlogPost[],
     de: blogPostsDe as BlogPost[],
     pt: blogPostsPt as BlogPost[],
+    fr: blogPostsFr as BlogPost[],
+    it: blogPostsIt as BlogPost[],
 };
 
 const BASE_URL = "https://lopes2tech.ch";
@@ -42,6 +46,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
                 en: `${BASE_URL}/en/insights/${slug}`,
                 de: `${BASE_URL}/de/insights/${slug}`,
                 pt: `${BASE_URL}/pt/insights/${slug}`,
+                fr: `${BASE_URL}/fr/insights/${slug}`,
             },
         },
         openGraph: {
