@@ -15,7 +15,8 @@
       "webApps": "Aplicações Web",
       "ecommerce": "E-Commerce",
       "socialMedia": "Marketing Digital"
-    }
+    },
+    "ebooks": "Loja"
   },
   "Packages": {
     "starter": {
@@ -2056,5 +2057,57 @@
     "headline": "Artigos aprofundados sobre IA, desenvolvimento web e automação",
     "description": "Publico artigos técnicos detalhados no meu perfil do Medium — sobre agentes de IA, Next.js, automação de negócios e performance web.",
     "cta": "Seguir no Medium"
+  },
+  "EbooksPage": {
+    "meta": {
+      "title": "Ebooks & Livros Digitais | Lopes2Tech",
+      "description": "Ebooks ilustrados sobre história, cultura e produtividade. Download imediato em PDF. Compre diretamente ou na Amazon e Etsy.",
+      "ogTitle": "Ebooks & Livros Digitais | Lopes2Tech",
+      "ogDescription": "Ebooks ilustrados sobre história, cultura e produtividade — download imediato em PDF."
+    },
+    "badge": "Biblioteca Digital",
+    "title": "Livros que Vale",
+    "titleHighlight": "a Pena Ler",
+    "description": "Ebooks ilustrados sobre história, cultura e produtividade — escritos para serem genuinamente divertidos. Download imediato em PDF, legível em qualquer dispositivo.",
+    "featured": "Destaque",
+    "book": "livro",
+    "books": "livros",
+    "buyDirect": "Compra Direta",
+    "trust": {
+      "instant": "Download imediato",
+      "drm": "Sem DRM — leia em qualquer lugar",
+      "multilingual": "Vários idiomas disponíveis"
+    },
+    "guarantee": {
+      "instant": {
+        "title": "Download Imediato",
+        "desc": "O seu PDF fica disponível imediatamente após o pagamento."
+      },
+      "device": {
+        "title": "Qualquer Dispositivo",
+        "desc": "Telemóvel, tablet, computador ou e-reader."
+      },
+      "quality": {
+        "title": "Totalmente Ilustrado",
+        "desc": "Arte original em cada livro."
+      }
+    },
+    "thankYou": {
+      "title": "Encomenda Confirmada!",
+      "subtitle": "Obrigado por adquirir {book}.",
+      "yourBook": "o seu livro",
+      "steps": {
+        "email": {
+          "title": "Verifique o seu email",
+          "desc": "Um email de confirmação com o link de download foi enviado para o endereço que utilizou no checkout."
+        },
+        "read": {
+          "title": "Comece a ler",
+          "desc": "Abra o PDF em qualquer dispositivo. Não precisa de nenhuma aplicação especial."
+        }
+      },
+      "support": "Dúvidas? Contacte-nos em",
+      "backToShop": "Voltar à Loja"
+    }
   }
 }

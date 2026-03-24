@@ -15,7 +15,8 @@
       "webApps": "Web Apps",
       "ecommerce": "E-Commerce",
       "socialMedia": "Digital Marketing"
-    }
+    },
+    "ebooks": "Shop"
   },
   "Packages": {
     "starter": {
@@ -2056,5 +2057,57 @@
     "headline": "Deep-dive articles on AI, web development & automation",
     "description": "I publish in-depth technical articles on my Medium profile — covering AI agents, Next.js, business automation, and web performance.",
     "cta": "Follow on Medium"
+  },
+  "EbooksPage": {
+    "meta": {
+      "title": "Ebooks & Digital Books | Lopes2Tech",
+      "description": "Illustrated ebooks on history, culture, and productivity. Instant PDF download. Buy direct or on Amazon and Etsy.",
+      "ogTitle": "Ebooks & Digital Books | Lopes2Tech",
+      "ogDescription": "Illustrated ebooks on history, culture, and productivity — instant PDF download."
+    },
+    "badge": "Digital Library",
+    "title": "Books Worth",
+    "titleHighlight": "Reading",
+    "description": "Illustrated ebooks on history, culture, and productivity — written to actually be enjoyable. Instant PDF download, read on any device.",
+    "featured": "Featured",
+    "book": "book",
+    "books": "books",
+    "buyDirect": "Buy Direct",
+    "trust": {
+      "instant": "Instant download",
+      "drm": "No DRM — read anywhere",
+      "multilingual": "Multiple languages available"
+    },
+    "guarantee": {
+      "instant": {
+        "title": "Instant Download",
+        "desc": "Your PDF arrives immediately after payment."
+      },
+      "device": {
+        "title": "Any Device",
+        "desc": "Phone, tablet, computer, or e-reader."
+      },
+      "quality": {
+        "title": "Fully Illustrated",
+        "desc": "Original artwork in every book."
+      }
+    },
+    "thankYou": {
+      "title": "Order Confirmed!",
+      "subtitle": "Thank you for purchasing {book}.",
+      "yourBook": "your book",
+      "steps": {
+        "email": {
+          "title": "Check your email",
+          "desc": "A confirmation email with your download link has been sent to the address you used at checkout."
+        },
+        "read": {
+          "title": "Start reading",
+          "desc": "Open the PDF on any device — phone, tablet, computer, or e-reader. No special app needed."
+        }
+      },
+      "support": "Questions? Contact us at",
+      "backToShop": "Back to the Shop"
+    }
   }
 }

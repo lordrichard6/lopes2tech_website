@@ -15,7 +15,8 @@
       "webApps": "Applications Web",
       "ecommerce": "E-Commerce",
       "socialMedia": "Marketing Digital"
-    }
+    },
+    "ebooks": "Boutique"
   },
   "Hero": {
     "title1": "Sites Web & Automatisations",
@@ -2056,5 +2057,57 @@
     "headline": "Articles approfondis sur l'IA, le développement web & l'automatisation",
     "description": "Je publie des articles techniques approfondis sur mon profil Medium — couvrant les agents IA, Next.js, l'automatisation métier et la performance web.",
     "cta": "Suivre sur Medium"
+  },
+  "EbooksPage": {
+    "meta": {
+      "title": "Ebooks & Livres Numériques | Lopes2Tech",
+      "description": "Ebooks illustrés sur l'histoire, la culture et la productivité. Téléchargement PDF immédiat. Achetez directement ou sur Amazon et Etsy.",
+      "ogTitle": "Ebooks & Livres Numériques | Lopes2Tech",
+      "ogDescription": "Ebooks illustrés sur l'histoire, la culture et la productivité — téléchargement PDF immédiat."
+    },
+    "badge": "Bibliothèque Numérique",
+    "title": "Des Livres qui Valent",
+    "titleHighlight": "la Peine",
+    "description": "Ebooks illustrés sur l'histoire, la culture et la productivité — écrits pour être vraiment agréables. Téléchargement PDF immédiat, lisible sur tous les appareils.",
+    "featured": "En Vedette",
+    "book": "livre",
+    "books": "livres",
+    "buyDirect": "Achat Direct",
+    "trust": {
+      "instant": "Téléchargement immédiat",
+      "drm": "Sans DRM — lisez partout",
+      "multilingual": "Plusieurs langues disponibles"
+    },
+    "guarantee": {
+      "instant": {
+        "title": "Téléchargement Immédiat",
+        "desc": "Votre PDF est disponible immédiatement après le paiement."
+      },
+      "device": {
+        "title": "Tous Appareils",
+        "desc": "Téléphone, tablette, ordinateur ou liseuse."
+      },
+      "quality": {
+        "title": "Entièrement Illustré",
+        "desc": "Illustrations originales dans chaque livre."
+      }
+    },
+    "thankYou": {
+      "title": "Commande Confirmée !",
+      "subtitle": "Merci pour votre achat de {book}.",
+      "yourBook": "votre livre",
+      "steps": {
+        "email": {
+          "title": "Vérifiez votre email",
+          "desc": "Un email de confirmation avec votre lien de téléchargement a été envoyé à l'adresse utilisée lors du paiement."
+        },
+        "read": {
+          "title": "Commencez à lire",
+          "desc": "Ouvrez le PDF sur n'importe quel appareil. Aucune application spéciale n'est nécessaire."
+        }
+      },
+      "support": "Des questions ? Contactez-nous à",
+      "backToShop": "Retour à la Boutique"
+    }
   }
 }

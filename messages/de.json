@@ -15,7 +15,8 @@
       "webApps": "Web-Anwendungen",
       "ecommerce": "E-Commerce",
       "socialMedia": "Digitales Marketing"
-    }
+    },
+    "ebooks": "Shop"
   },
   "Packages": {
     "starter": {
@@ -2056,5 +2057,57 @@
     "headline": "Fundierte Artikel über KI, Webentwicklung & Automatisierung",
     "description": "Auf meinem Medium-Profil veröffentliche ich technische Tiefenanalysen zu KI-Agenten, Next.js, Geschäftsautomatisierung und Web-Performance.",
     "cta": "Auf Medium folgen"
+  },
+  "EbooksPage": {
+    "meta": {
+      "title": "Ebooks & Digitale Bücher | Lopes2Tech",
+      "description": "Illustrierte Ebooks zu Geschichte, Kultur und Produktivität. Sofortiger PDF-Download. Direkt kaufen oder auf Amazon und Etsy.",
+      "ogTitle": "Ebooks & Digitale Bücher | Lopes2Tech",
+      "ogDescription": "Illustrierte Ebooks zu Geschichte, Kultur und Produktivität — sofortiger PDF-Download."
+    },
+    "badge": "Digitale Bibliothek",
+    "title": "Bücher, die sich",
+    "titleHighlight": "lohnen",
+    "description": "Illustrierte Ebooks zu Geschichte, Kultur und Produktivität — geschrieben, um tatsächlich Spass zu machen. Sofortiger PDF-Download, auf jedem Gerät lesbar.",
+    "featured": "Empfohlen",
+    "book": "Buch",
+    "books": "Bücher",
+    "buyDirect": "Direkt kaufen",
+    "trust": {
+      "instant": "Sofortiger Download",
+      "drm": "Kein DRM — überall lesbar",
+      "multilingual": "Mehrere Sprachen verfügbar"
+    },
+    "guarantee": {
+      "instant": {
+        "title": "Sofortiger Download",
+        "desc": "Ihr PDF ist sofort nach der Zahlung verfügbar."
+      },
+      "device": {
+        "title": "Jedes Gerät",
+        "desc": "Smartphone, Tablet, Computer oder E-Reader."
+      },
+      "quality": {
+        "title": "Vollständig illustriert",
+        "desc": "Originalkunstwerke in jedem Buch."
+      }
+    },
+    "thankYou": {
+      "title": "Bestellung bestätigt!",
+      "subtitle": "Vielen Dank für den Kauf von {book}.",
+      "yourBook": "Ihrem Buch",
+      "steps": {
+        "email": {
+          "title": "E-Mail überprüfen",
+          "desc": "Eine Bestätigungs-E-Mail mit Ihrem Download-Link wurde an die bei der Bestellung verwendete Adresse gesendet."
+        },
+        "read": {
+          "title": "Lesen beginnen",
+          "desc": "Öffnen Sie das PDF auf einem beliebigen Gerät. Keine spezielle App erforderlich."
+        }
+      },
+      "support": "Fragen? Kontaktieren Sie uns unter",
+      "backToShop": "Zurück zum Shop"
+    }
   }
 }

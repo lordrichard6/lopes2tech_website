@@ -73,6 +73,7 @@ export default function Navbar() {
         { key: "services", href: "/services" },
         { key: "portfolio", href: "/portfolio" },
         { key: "insights", href: "/insights" },
+        { key: "ebooks", href: "/ebooks" },
         { key: "about", href: "/about" },
         { key: "contact", href: "/contact" },
     ];
