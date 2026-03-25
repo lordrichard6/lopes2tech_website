@@ -23,6 +23,7 @@ export default function BlogPostContent() {
 
     const [readProgress, setReadProgress] = useState(0);
     const [copied, setCopied] = useState(false);
+    const [tagsExpanded, setTagsExpanded] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -178,7 +179,7 @@ export default function BlogPostContent() {
                     >
                         {/* Tags */}
                         <div className="flex flex-wrap gap-2 mb-6">
-                            {post.tags.map((tag) => (
+                            {(tagsExpanded ? post.tags : post.tags.slice(0, 3)).map((tag) => (
                                 <span
                                     key={tag}
                                     className="px-3 py-1 text-xs font-bold text-cyan-400 bg-cyan-400/10 rounded-full uppercase tracking-wider border border-cyan-400/20"
@@ -186,6 +187,15 @@ export default function BlogPostContent() {
                                     {tag}
                                 </span>
                             ))}
+                            {post.tags.length > 3 && (
+                                <button
+                                    onClick={() => setTagsExpanded(v => !v)}
+                                    className="px-3 py-1 text-xs font-bold text-slate-400 bg-white/5 rounded-full border border-white/10 hover:border-cyan-400/30 hover:text-white transition-all"
+                                    aria-label={tagsExpanded ? "Show fewer tags" : `Show ${post.tags.length - 3} more tags`}
+                                >
+                                    {tagsExpanded ? "↑ less" : `+${post.tags.length - 3}`}
+                                </button>
+                            )}
                         </div>
 
                         {/* Title */}
