@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Link } from "@/navigation";
@@ -8,38 +9,17 @@ import Footer from "@/components/Footer";
 import { BookOpen, Calendar, Clock } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import MediumBanner from "@/components/MediumBanner";
-import blogPostsEn from "@/data/blog-posts.json";
-import blogPostsDe from "@/data/blog-posts-de.json";
-import blogPostsPt from "@/data/blog-posts-pt.json";
-import blogPostsFr from "@/data/blog-posts-fr.json";
-import blogPostsIt from "@/data/blog-posts-it.json";
-
-interface BlogPost {
-    id: string;
-    slug: string;
-    title: string;
-    excerpt: string;
-    date: string;
-    readTime: string;
-    image: string;
-    author: string;
-    authorRole: string;
-    tags: string[];
-}
-
-const blogPostsByLocale: Record<string, BlogPost[]> = {
-    en: blogPostsEn as BlogPost[],
-    de: blogPostsDe as BlogPost[],
-    pt: blogPostsPt as BlogPost[],
-    fr: blogPostsFr as BlogPost[],
-    it: blogPostsIt as BlogPost[],
-};
+import { blogPostsByLocale } from "@/lib/blog";
 
 export default function InsightsPage() {
     const locale = useLocale();
     const t = useTranslations('InsightsPage');
     const posts = [...(blogPostsByLocale[locale] || blogPostsByLocale.en)]
         .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
+    const [selectedTag, setSelectedTag] = useState<string | null>(null);
+    const allTags = [...new Set(posts.flatMap(p => p.tags))].sort();
+    const filteredPosts = selectedTag ? posts.filter(p => p.tags.includes(selectedTag)) : posts;
 
     return (
         <main className="min-h-screen bg-[#0f172a]">
@@ -97,9 +77,39 @@ export default function InsightsPage() {
                     {/* Medium Banner */}
                     <MediumBanner />
 
+                    {/* Tag Filter */}
+                    <div className="flex flex-wrap gap-2 mb-10 justify-center" role="group" aria-label={t('filterLabel')}>
+                        <button
+                            onClick={() => setSelectedTag(null)}
+                            className={`px-4 py-1.5 rounded-full text-sm font-semibold transition-all duration-200 ${
+                                !selectedTag
+                                    ? 'bg-cyan-400 text-slate-900'
+                                    : 'bg-white/5 text-slate-400 border border-white/10 hover:border-cyan-400/30 hover:text-white'
+                            }`}
+                        >
+                            {t('filterAll')}
+                        </button>
+                        {allTags.map(tag => (
+                            <button
+                                key={tag}
+                                onClick={() => setSelectedTag(selectedTag === tag ? null : tag)}
+                                className={`px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-200 ${
+                                    selectedTag === tag
+                                        ? 'bg-cyan-400/20 text-cyan-400 border border-cyan-400/50'
+                                        : 'bg-white/5 text-slate-400 border border-white/10 hover:border-cyan-400/30 hover:text-white'
+                                }`}
+                            >
+                                {tag}
+                            </button>
+                        ))}
+                    </div>
+
                     {/* Blog Grid */}
+                    {filteredPosts.length === 0 && (
+                        <p className="text-center text-slate-500 py-16">{t('noResults')}</p>
+                    )}
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {posts.map((post, idx) => (
+                        {filteredPosts.map((post, idx) => (
                             <motion.div
                                 key={post.id}
                                 initial={{ opacity: 0, y: 20 }}
@@ -117,6 +127,8 @@ export default function InsightsPage() {
                                                 src={post.image}
                                                 alt={post.title}
                                                 fill
+                                                sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+                                                priority={idx < 6}
                                                 className="object-cover transition-transform duration-700 group-hover:scale-110"
                                             />
                                             <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-[#0f172a]/40 to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-500" />
@@ -170,6 +182,34 @@ export default function InsightsPage() {
             </section>
 
             <Footer />
+
+            {/* CollectionPage structured data for Google */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "CollectionPage",
+                        name: "Lopes2Tech Insights",
+                        description: "Expert articles on AI workflows, technical SEO, web development, and business automation for Swiss businesses.",
+                        url: `https://lopes2tech.ch/${locale}/insights`,
+                        publisher: {
+                            "@type": "Organization",
+                            name: "Lopes2Tech",
+                            url: "https://lopes2tech.ch",
+                        },
+                        hasPart: posts.map((post) => ({
+                            "@type": "BlogPosting",
+                            headline: post.title,
+                            description: post.excerpt,
+                            url: `https://lopes2tech.ch/${locale}/insights/${post.slug}`,
+                            image: `https://lopes2tech.ch${post.image}`,
+                            datePublished: post.date,
+                            author: { "@type": "Person", name: post.author },
+                        })),
+                    }),
+                }}
+            />
         </main>
     );
 }

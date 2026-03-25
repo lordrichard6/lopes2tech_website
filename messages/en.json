@@ -1091,7 +1091,10 @@
     "badge": "Our Blog",
     "title": "Insights &",
     "titleHighlight": "Intelligence",
-    "description": "Exploring the intersection of AI, automated workflows, and high-performance development."
+    "description": "Exploring the intersection of AI, automated workflows, and high-performance development.",
+    "filterAll": "All topics",
+    "filterLabel": "Filter by topic",
+    "noResults": "No articles found for this topic."
   },
   "BlogPost": {
     "backToInsights": "Back to Insights",
@@ -1102,7 +1105,17 @@
     "authorBio": "Founder of Lopes2Tech, specializing in AI-powered development workflows and high-performance web applications for Swiss businesses.",
     "shareArticle": "Share this article",
     "share": "Share:",
-    "tableOfContents": "Table of Contents"
+    "tableOfContents": "Table of Contents",
+    "shareLinkedIn": "Share on LinkedIn",
+    "shareX": "Share on X",
+    "shareWhatsApp": "Share on WhatsApp",
+    "copyLink": "Copy link",
+    "linkCopied": "Link copied!",
+    "breadcrumbHome": "Home",
+    "breadcrumbNav": "Breadcrumb navigation",
+    "ctaTitle": "Ready to grow your Swiss business?",
+    "ctaDescription": "We build fast, intelligent websites and systems that generate leads while you sleep. Let's talk about your next project.",
+    "ctaButton": "Book a free consultation"
   },
   "CookieConsent": {
     "title": "We value your privacy",
@@ -2074,20 +2087,26 @@
     "book": "book",
     "books": "books",
     "buyDirect": "Buy Direct",
+    "buyDigital": "Buy Digital",
+    "buyPhysical": "Buy Physical",
     "freeDownload": "Free Download",
     "freeLabel": "Free",
     "physicalCopy": "Physical Copy",
     "comingSoon": {
       "title": "Physical copies — coming soon",
-      "desc": "We're evaluating print partners to bring you the best quality physical edition. Sign up below or check back soon.",
+      "desc": "We're working on bringing you printed editions. Stay tuned!",
       "close": "Got it"
     },
-    "printPartners": {
-      "title": "Physical copies are on the way",
-      "desc": "We're partnering with leading print-on-demand platforms to offer printed editions shipped directly to your door. Evaluating two options:",
-      "gelato": "Local European printing network — fastest delivery to Switzerland and the EU.",
-      "lulu": "Established global print platform with facilities in France, the UK, and the US.",
-      "eta": "Expected to launch soon. Follow the shop for updates."
+    "marketplace": {
+      "also": "Also available on",
+      "etsy": {
+        "title": "Shop on Etsy",
+        "desc": "Browse our full catalogue on Etsy — PDF ebooks with instant delivery."
+      },
+      "amazon": {
+        "title": "Shop on Amazon Kindle",
+        "desc": "Read our ebooks on any Kindle device or the free Kindle app."
+      }
     },
     "digitalNotice": "These are digital ebooks — you receive a PDF file, not a physical book.",
     "digitalLabel": "Digital PDF — no physical copy",

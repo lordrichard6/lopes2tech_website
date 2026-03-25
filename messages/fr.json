@@ -1204,7 +1204,10 @@
     "badge": "Notre Blog",
     "title": "Insights &",
     "titleHighlight": "Intelligence",
-    "description": "Explorer l'intersection de l'IA, des workflows automatisés et du développement haute performance."
+    "description": "Explorer l'intersection de l'IA, des workflows automatisés et du développement haute performance.",
+    "filterAll": "Tous les sujets",
+    "filterLabel": "Filtrer par sujet",
+    "noResults": "Aucun article trouvé pour ce sujet."
   },
   "BlogPost": {
     "backToInsights": "Retour aux Insights",
@@ -1215,7 +1218,17 @@
     "authorBio": "Fondateur de Lopes2Tech, spécialisé dans les workflows de développement propulsés par l'IA et les applications web haute performance pour les entreprises suisses.",
     "shareArticle": "Partager cet article",
     "share": "Partager :",
-    "tableOfContents": "Table des Matières"
+    "tableOfContents": "Table des Matières",
+    "shareLinkedIn": "Partager sur LinkedIn",
+    "shareX": "Partager sur X",
+    "shareWhatsApp": "Partager sur WhatsApp",
+    "copyLink": "Copier le lien",
+    "linkCopied": "Lien copié !",
+    "breadcrumbHome": "Accueil",
+    "breadcrumbNav": "Fil d'Ariane",
+    "ctaTitle": "Prêt à développer votre entreprise suisse ?",
+    "ctaDescription": "Nous construisons des sites web rapides et intelligents qui génèrent des leads en permanence. Parlons de votre prochain projet.",
+    "ctaButton": "Réserver une consultation gratuite"
   },
   "PortfolioPage": {
     "meta": {
@@ -2074,20 +2087,26 @@
     "book": "livre",
     "books": "livres",
     "buyDirect": "Achat Direct",
+    "buyDigital": "Acheter Numérique",
+    "buyPhysical": "Acheter Physique",
     "freeDownload": "Téléchargement Gratuit",
     "freeLabel": "Gratuit",
     "physicalCopy": "Copie Physique",
     "comingSoon": {
       "title": "Copies physiques — bientôt disponibles",
-      "desc": "Nous évaluons des partenaires d'impression pour vous proposer la meilleure édition physique possible. Revenez bientôt.",
+      "desc": "Nous travaillons à vous proposer des éditions imprimées. Restez connecté !",
       "close": "Compris"
     },
-    "printPartners": {
-      "title": "Les copies physiques arrivent",
-      "desc": "Nous nous associons à des plateformes d'impression à la demande pour vous livrer des éditions imprimées directement. Deux options à l'étude :",
-      "gelato": "Réseau d'impression européen local — livraison la plus rapide en Suisse et dans l'UE.",
-      "lulu": "Plateforme d'impression mondiale établie avec des installations en France, au Royaume-Uni et aux États-Unis.",
-      "eta": "Lancement prévu prochainement. Suivez la boutique pour les mises à jour."
+    "marketplace": {
+      "also": "Aussi disponible sur",
+      "etsy": {
+        "title": "Acheter sur Etsy",
+        "desc": "Parcourez notre catalogue complet sur Etsy — ebooks PDF avec livraison immédiate."
+      },
+      "amazon": {
+        "title": "Acheter sur Amazon Kindle",
+        "desc": "Lisez nos ebooks sur n'importe quel appareil Kindle ou l'application Kindle gratuite."
+      }
     },
     "digitalNotice": "Ce sont des livres numériques — vous recevez un fichier PDF, pas un livre physique.",
     "digitalLabel": "PDF numérique — pas d'exemplaire physique",

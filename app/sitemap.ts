@@ -1,5 +1,5 @@
 import type { MetadataRoute } from 'next';
-import blogPosts from '@/data/blog-posts.json';
+import { blogPostsByLocale } from '@/lib/blog';
 import { projects } from './[locale]/portfolio/projects';
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -32,9 +32,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
         { path: '/services/ecommerce', changeFrequency: 'monthly' as const, priority: 0.9, lastMod: '2026-03-23' },
         { path: '/services/social-media-marketing', changeFrequency: 'monthly' as const, priority: 0.9, lastMod: '2026-03-23' },
     ];
-    // NOTE: Blog locale files (blog-posts-de.json, blog-posts-pt.json) must be kept in sync
-    // with blog-posts.json manually. Slugs and dates should match across all three files.
-
     const routes: MetadataRoute.Sitemap = [];
 
     // Generate all locale/page combinations
@@ -49,9 +46,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
         });
     });
 
-    // Add individual blog post URLs
-    const posts = blogPosts as { slug: string; date: string }[];
+    // Add individual blog post URLs — each locale reads its own JSON so slugs & dates are accurate
     locales.forEach((locale) => {
+        const posts = blogPostsByLocale[locale] ?? blogPostsByLocale.en;
         posts.forEach((post) => {
             routes.push({
                 url: `${baseUrl}/${locale}/insights/${post.slug}`,

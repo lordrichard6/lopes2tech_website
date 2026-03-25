@@ -7,36 +7,10 @@ import Image from "next/image";
 import { Link } from "@/navigation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Calendar, Clock, ArrowLeft, User, Share2 } from "lucide-react";
+import { Calendar, Clock, ArrowLeft, ChevronRight, User, Share2 } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import MediumBanner from "@/components/MediumBanner";
-import blogPostsEn from "@/data/blog-posts.json";
-import blogPostsDe from "@/data/blog-posts-de.json";
-import blogPostsPt from "@/data/blog-posts-pt.json";
-import blogPostsFr from "@/data/blog-posts-fr.json";
-import blogPostsIt from "@/data/blog-posts-it.json";
-
-interface BlogPost {
-    id: string;
-    slug: string;
-    title: string;
-    excerpt: string;
-    date: string;
-    readTime: string;
-    image: string;
-    author: string;
-    authorRole: string;
-    tags: string[];
-    content: string;
-}
-
-const blogPostsByLocale: Record<string, BlogPost[]> = {
-    en: blogPostsEn as BlogPost[],
-    de: blogPostsDe as BlogPost[],
-    pt: blogPostsPt as BlogPost[],
-    fr: blogPostsFr as BlogPost[],
-    it: blogPostsIt as BlogPost[],
-};
+import { blogPostsByLocale } from "@/lib/blog";
 
 export default function BlogPostContent() {
     const params = useParams();
@@ -48,6 +22,7 @@ export default function BlogPostContent() {
     const post = allPosts.find(p => p.slug === slug);
 
     const [readProgress, setReadProgress] = useState(0);
+    const [copied, setCopied] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -89,10 +64,11 @@ export default function BlogPostContent() {
     const breadcrumbSchema = {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
+        "@id": `https://lopes2tech.ch/${locale}/insights/${post.slug}#breadcrumb`,
         "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "Home", "item": `https://lopes2tech.ch/${locale}` },
             { "@type": "ListItem", "position": 2, "name": "Insights", "item": `https://lopes2tech.ch/${locale}/insights` },
-            { "@type": "ListItem", "position": 3, "name": post.title }
+            { "@type": "ListItem", "position": 3, "name": post.title, "item": `https://lopes2tech.ch/${locale}/insights/${post.slug}` }
         ]
     };
 
@@ -113,8 +89,26 @@ export default function BlogPostContent() {
 
     return (
         <main className="min-h-screen bg-[#0f172a]">
+            {/* Print styles */}
+            <style>{`
+                @media print {
+                    .print-hide { display: none !important; }
+                    body { background: white !important; }
+                    .prose-invert { --tw-prose-body: #1a1a1a; --tw-prose-headings: #000; }
+                    article { padding-top: 1rem !important; }
+                    a[href]::after { content: " (" attr(href) ")"; font-size: 0.75em; color: #666; }
+                }
+            `}</style>
+
             {/* Reading Progress Bar */}
-            <div className="fixed top-0 left-0 right-0 z-[60] h-1 bg-transparent">
+            <div
+                role="progressbar"
+                aria-valuenow={Math.round(readProgress)}
+                aria-valuemin={0}
+                aria-valuemax={100}
+                aria-label="Reading progress"
+                className="print-hide fixed top-0 left-0 right-0 z-[60] h-1 bg-transparent"
+            >
                 <div
                     className="h-full bg-gradient-to-r from-cyan-400 to-purple-500 transition-all duration-150"
                     style={{ width: `${readProgress}%` }}
@@ -149,14 +143,32 @@ export default function BlogPostContent() {
                     {/* Back Button */}
                     <Link
                         href="/insights"
-                        className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 mb-8 transition-colors"
+                        className="print-hide inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 mb-4 transition-colors"
                     >
                         <ArrowLeft className="w-4 h-4" />
                         {t('backToInsights')}
                     </Link>
 
-                    {/* Medium Banner */}
-                    <MediumBanner />
+                    {/* Breadcrumb */}
+                    <nav aria-label={t('breadcrumbNav')} className="mb-8">
+                        <ol className="flex items-center gap-1.5 text-sm text-slate-500 flex-wrap">
+                            <li>
+                                <Link href="/" className="hover:text-cyan-400 transition-colors">
+                                    {t('breadcrumbHome')}
+                                </Link>
+                            </li>
+                            <li aria-hidden="true"><ChevronRight className="w-3 h-3" /></li>
+                            <li>
+                                <Link href="/insights" className="hover:text-cyan-400 transition-colors">
+                                    Insights
+                                </Link>
+                            </li>
+                            <li aria-hidden="true"><ChevronRight className="w-3 h-3" /></li>
+                            <li className="text-slate-300 truncate max-w-[200px] sm:max-w-sm" aria-current="page">
+                                {post.title}
+                            </li>
+                        </ol>
+                    </nav>
 
                     {/* Header */}
                     <motion.header
@@ -208,14 +220,14 @@ export default function BlogPostContent() {
                     </motion.header>
 
                     {/* Social Share */}
-                    <div className="flex items-center gap-3 mb-8">
+                    <div className="print-hide flex items-center gap-3 mb-8">
                         <span className="text-sm text-slate-500">{t('share')}</span>
                         <a
                             href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(`https://lopes2tech.ch/${locale}/insights/${post.slug}`)}`}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center justify-center w-9 h-9 rounded-lg bg-white/5 border border-white/10 text-white/60 hover:text-white hover:border-cyan-500/50 hover:bg-cyan-500/10 transition-all"
-                            aria-label="Share on LinkedIn"
+                            aria-label={t('shareLinkedIn')}
                         >
                             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
                         </a>
@@ -224,7 +236,7 @@ export default function BlogPostContent() {
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center justify-center w-9 h-9 rounded-lg bg-white/5 border border-white/10 text-white/60 hover:text-white hover:border-cyan-500/50 hover:bg-cyan-500/10 transition-all"
-                            aria-label="Share on X"
+                            aria-label={t('shareX')}
                         >
                             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
                         </a>
@@ -233,16 +245,38 @@ export default function BlogPostContent() {
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center justify-center w-9 h-9 rounded-lg bg-white/5 border border-white/10 text-white/60 hover:text-white hover:border-cyan-500/50 hover:bg-cyan-500/10 transition-all"
-                            aria-label="Share on WhatsApp"
+                            aria-label={t('shareWhatsApp')}
                         >
                             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
                         </a>
                         <button
-                            onClick={() => navigator.clipboard.writeText(`https://lopes2tech.ch/${locale}/insights/${post.slug}`)}
-                            className="flex items-center justify-center w-9 h-9 rounded-lg bg-white/5 border border-white/10 text-white/60 hover:text-white hover:border-cyan-500/50 hover:bg-cyan-500/10 transition-all"
-                            aria-label="Copy link"
+                            onClick={async () => {
+                                const url = `https://lopes2tech.ch/${locale}/insights/${post.slug}`;
+                                try {
+                                    await navigator.clipboard.writeText(url);
+                                } catch {
+                                    // Fallback for browsers that block clipboard API
+                                    const el = document.createElement('input');
+                                    el.value = url;
+                                    el.style.position = 'fixed';
+                                    el.style.opacity = '0';
+                                    document.body.appendChild(el);
+                                    el.select();
+                                    document.execCommand('copy');
+                                    document.body.removeChild(el);
+                                }
+                                setCopied(true);
+                                setTimeout(() => setCopied(false), 2000);
+                            }}
+                            className={`flex items-center justify-center gap-1.5 px-3 h-9 rounded-lg border transition-all text-xs font-medium ${
+                                copied
+                                    ? 'bg-cyan-500/20 border-cyan-500/50 text-cyan-400'
+                                    : 'bg-white/5 border-white/10 text-white/60 hover:text-white hover:border-cyan-500/50 hover:bg-cyan-500/10'
+                            }`}
+                            aria-label={copied ? t('linkCopied') : t('copyLink')}
                         >
                             <Share2 className="w-4 h-4" />
+                            <span className="hidden sm:inline">{copied ? t('linkCopied') : t('copyLink')}</span>
                         </button>
                     </div>
 
@@ -284,7 +318,15 @@ export default function BlogPostContent() {
                                             <li key={idx}>
                                                 <a
                                                     href={`#${id}`}
-                                                    className="text-sm text-slate-400 hover:text-cyan-400 transition-colors flex items-center gap-2"
+                                                    onClick={(e) => {
+                                                        e.preventDefault();
+                                                        const el = document.getElementById(id);
+                                                        if (el) {
+                                                            el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                                                            window.history.pushState(null, '', `#${id}`);
+                                                        }
+                                                    }}
+                                                    className="text-sm text-slate-400 hover:text-cyan-400 transition-colors flex items-center gap-2 cursor-pointer"
                                                 >
                                                     <span className="w-1.5 h-1.5 rounded-full bg-cyan-400/40 flex-shrink-0" />
                                                     {text}
@@ -302,23 +344,7 @@ export default function BlogPostContent() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.2 }}
-                        className="prose prose-invert prose-lg max-w-none
-                            prose-headings:text-white prose-headings:font-bold
-                            prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6
-                            prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-4
-                            prose-p:text-slate-300 prose-p:leading-relaxed prose-p:mb-6
-                            prose-a:text-cyan-400 prose-a:no-underline hover:prose-a:underline
-                            prose-strong:text-white prose-strong:font-bold
-                            prose-em:text-slate-300
-                            prose-ul:text-slate-300 prose-ul:my-6
-                            prose-ol:text-slate-300 prose-ol:my-6
-                            prose-li:my-2
-                            prose-code:text-cyan-400 prose-code:bg-cyan-400/10 prose-code:px-2 prose-code:py-1 prose-code:rounded
-                            prose-pre:bg-slate-900 prose-pre:border prose-pre:border-white/10 prose-pre:rounded-xl
-                            prose-blockquote:border-l-cyan-400 prose-blockquote:text-slate-400
-                            prose-table:border-collapse prose-table:w-full
-                            prose-th:border prose-th:border-white/10 prose-th:bg-white/5 prose-th:p-3 prose-th:text-left
-                            prose-td:border prose-td:border-white/10 prose-td:p-3"
+                        className="prose prose-invert prose-lg max-w-none prose-headings:text-white prose-headings:font-bold prose-h2:text-3xl prose-h2:mt-14 prose-h2:mb-6 prose-h2:leading-snug prose-h3:text-2xl prose-h3:mt-10 prose-h3:mb-4 prose-h4:text-xl prose-h4:mt-8 prose-h4:mb-3 prose-h4:text-cyan-300 prose-p:text-slate-300 prose-p:leading-relaxed prose-p:mb-6 prose-a:text-cyan-400 prose-a:no-underline hover:prose-a:underline prose-strong:text-white prose-strong:font-bold prose-em:text-slate-300 prose-ul:text-slate-300 prose-ul:my-6 prose-ul:space-y-2 prose-ol:text-slate-300 prose-ol:my-6 prose-ol:space-y-2 prose-li:my-1 prose-li:pl-1 prose-code:text-cyan-400 prose-code:bg-cyan-400/10 prose-code:px-2 prose-code:py-1 prose-code:rounded prose-code:text-sm prose-code:font-normal prose-pre:bg-slate-900 prose-pre:border prose-pre:border-white/10 prose-pre:rounded-xl prose-pre:overflow-x-auto prose-blockquote:border-l-4 prose-blockquote:border-l-cyan-400 prose-blockquote:text-slate-300 prose-blockquote:not-italic prose-blockquote:text-xl prose-blockquote:font-medium prose-table:border-collapse prose-table:w-full prose-th:border prose-th:border-white/10 prose-th:bg-white/5 prose-th:p-3 prose-th:text-left prose-td:border prose-td:border-white/10 prose-td:p-3 prose-img:rounded-2xl prose-img:border prose-img:border-white/10 prose-img:shadow-2xl prose-img:my-10 prose-figure:my-10 prose-figcaption:text-slate-500 prose-figcaption:text-sm prose-figcaption:text-center prose-figcaption:mt-3 prose-figcaption:italic prose-hr:border-white/10 prose-hr:my-12"
                         dangerouslySetInnerHTML={{ __html: processedContent }}
                     />
 
@@ -343,15 +369,38 @@ export default function BlogPostContent() {
                         </p>
                     </motion.div>
 
+                    {/* CTA Block */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.35 }}
+                        className="print-hide mt-12 p-8 rounded-2xl border border-cyan-400/20 bg-gradient-to-br from-cyan-500/5 to-purple-500/5"
+                    >
+                        <h3 className="text-2xl font-bold text-white mb-3">{t('ctaTitle')}</h3>
+                        <p className="text-slate-400 mb-6 max-w-xl">{t('ctaDescription')}</p>
+                        <Link
+                            href="/contact"
+                            className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-cyan-500 to-purple-600 text-white font-semibold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300"
+                        >
+                            {t('ctaButton')}
+                        </Link>
+                    </motion.div>
+
+                    {/* Medium Banner */}
+                    <div className="print-hide">
+                        <MediumBanner />
+                    </div>
+
                     {/* Related Posts */}
                     {relatedPosts.length > 0 && (
-                        <motion.div
+                        <motion.section
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.4 }}
                             className="mt-16"
+                            aria-labelledby="related-articles-heading"
                         >
-                            <h2 className="text-2xl font-bold text-white mb-8">{t('relatedArticles')}</h2>
+                            <h2 id="related-articles-heading" className="text-2xl font-bold text-white mb-8">{t('relatedArticles')}</h2>
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                                 {relatedPosts.map((related) => (
                                     <Link
@@ -380,11 +429,11 @@ export default function BlogPostContent() {
                                     </Link>
                                 ))}
                             </div>
-                        </motion.div>
+                        </motion.section>
                     )}
 
                     {/* Back to Insights */}
-                    <div className="mt-12 text-center">
+                    <div className="print-hide mt-12 text-center">
                         <Link
                             href="/insights"
                             className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-cyan-500/10 text-cyan-400 font-semibold border border-cyan-500/20 hover:bg-cyan-500/20 hover:border-cyan-500/50 transition-all duration-300"
