@@ -74,9 +74,6 @@ export default function InsightsPage() {
                         </p>
                     </motion.div>
 
-                    {/* Medium Banner */}
-                    <MediumBanner />
-
                     {/* Tag Filter */}
                     <div className="flex flex-wrap gap-2 mb-10 justify-center" role="group" aria-label={t('filterLabel')}>
                         <button
@@ -177,6 +174,11 @@ export default function InsightsPage() {
                                 </Link>
                             </motion.div>
                         ))}
+                    </div>
+
+                    {/* Medium Banner */}
+                    <div className="mt-16">
+                        <MediumBanner />
                     </div>
                 </div>
             </section>
