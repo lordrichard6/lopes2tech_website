@@ -18,7 +18,9 @@ export default function InsightsPage() {
         .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
     const [selectedTag, setSelectedTag] = useState<string | null>(null);
+    const [tagsExpanded, setTagsExpanded] = useState(false);
     const allTags = [...new Set(posts.flatMap(p => p.tags))].sort();
+    const visibleTags = tagsExpanded ? allTags : allTags.slice(0, 4);
     const filteredPosts = selectedTag ? posts.filter(p => p.tags.includes(selectedTag)) : posts;
 
     return (
@@ -86,7 +88,7 @@ export default function InsightsPage() {
                         >
                             {t('filterAll')}
                         </button>
-                        {allTags.map(tag => (
+                        {visibleTags.map(tag => (
                             <button
                                 key={tag}
                                 onClick={() => setSelectedTag(selectedTag === tag ? null : tag)}
@@ -99,6 +101,15 @@ export default function InsightsPage() {
                                 {tag}
                             </button>
                         ))}
+                        {allTags.length > 4 && (
+                            <button
+                                onClick={() => setTagsExpanded(v => !v)}
+                                className="px-4 py-1.5 rounded-full text-sm font-bold text-slate-400 bg-white/5 border border-white/10 hover:border-cyan-400/30 hover:text-white transition-all duration-200"
+                                aria-label={tagsExpanded ? "Show fewer topics" : "Show all topics"}
+                            >
+                                {tagsExpanded ? "↑" : "···"}
+                            </button>
+                        )}
                     </div>
 
                     {/* Blog Grid */}
