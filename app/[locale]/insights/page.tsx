@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { Link } from "@/navigation";
 import Navbar from "@/components/Navbar";
@@ -78,37 +78,66 @@ export default function InsightsPage() {
 
                     {/* Tag Filter */}
                     <div className="flex flex-wrap gap-2 mb-10 justify-center" role="group" aria-label={t('filterLabel')}>
-                        <button
+                        {/* "All topics" pill — always visible */}
+                        <motion.button
+                            layout
                             onClick={() => setSelectedTag(null)}
-                            className={`px-4 py-1.5 rounded-full text-sm font-semibold transition-all duration-200 ${
+                            className={`px-4 py-1.5 rounded-full text-sm font-semibold transition-colors duration-200 ${
                                 !selectedTag
                                     ? 'bg-cyan-400 text-slate-900'
                                     : 'bg-white/5 text-slate-400 border border-white/10 hover:border-cyan-400/30 hover:text-white'
                             }`}
                         >
                             {t('filterAll')}
-                        </button>
-                        {visibleTags.map(tag => (
-                            <button
+                        </motion.button>
+
+                        {/* First 4 tags — always visible */}
+                        {allTags.slice(0, 4).map(tag => (
+                            <motion.button
+                                layout
                                 key={tag}
                                 onClick={() => setSelectedTag(selectedTag === tag ? null : tag)}
-                                className={`px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-200 ${
+                                className={`px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider transition-colors duration-200 ${
                                     selectedTag === tag
                                         ? 'bg-cyan-400/20 text-cyan-400 border border-cyan-400/50'
                                         : 'bg-white/5 text-slate-400 border border-white/10 hover:border-cyan-400/30 hover:text-white'
                                 }`}
                             >
                                 {tag}
-                            </button>
+                            </motion.button>
                         ))}
+
+                        {/* Extra tags — animated in/out */}
+                        <AnimatePresence>
+                            {tagsExpanded && allTags.slice(4).map((tag, i) => (
+                                <motion.button
+                                    key={tag}
+                                    initial={{ opacity: 0, scale: 0.8 }}
+                                    animate={{ opacity: 1, scale: 1 }}
+                                    exit={{ opacity: 0, scale: 0.8 }}
+                                    transition={{ duration: 0.15, delay: i * 0.04 }}
+                                    onClick={() => setSelectedTag(selectedTag === tag ? null : tag)}
+                                    className={`px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider transition-colors duration-200 ${
+                                        selectedTag === tag
+                                            ? 'bg-cyan-400/20 text-cyan-400 border border-cyan-400/50'
+                                            : 'bg-white/5 text-slate-400 border border-white/10 hover:border-cyan-400/30 hover:text-white'
+                                    }`}
+                                >
+                                    {tag}
+                                </motion.button>
+                            ))}
+                        </AnimatePresence>
+
+                        {/* Expand / collapse toggle */}
                         {allTags.length > 4 && (
-                            <button
+                            <motion.button
+                                layout
                                 onClick={() => setTagsExpanded(v => !v)}
-                                className="px-4 py-1.5 rounded-full text-sm font-bold text-slate-400 bg-white/5 border border-white/10 hover:border-cyan-400/30 hover:text-white transition-all duration-200"
+                                className="px-4 py-1.5 rounded-full text-sm font-bold text-slate-400 bg-white/5 border border-white/10 hover:border-cyan-400/30 hover:text-white transition-colors duration-200"
                                 aria-label={tagsExpanded ? "Show fewer topics" : "Show all topics"}
                             >
                                 {tagsExpanded ? "↑" : "···"}
-                            </button>
+                            </motion.button>
                         )}
                     </div>
 
