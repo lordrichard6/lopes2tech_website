@@ -193,7 +193,7 @@ export default function BlogPostContent() {
                                     className="px-3 py-1 text-xs font-bold text-slate-400 bg-white/5 rounded-full border border-white/10 hover:border-cyan-400/30 hover:text-white transition-all"
                                     aria-label={tagsExpanded ? "Show fewer tags" : `Show ${post.tags.length - 3} more tags`}
                                 >
-                                    {tagsExpanded ? "↑ less" : `+${post.tags.length - 3}`}
+                                    {tagsExpanded ? "↑" : "···"}
                                 </button>
                             )}
                         </div>
