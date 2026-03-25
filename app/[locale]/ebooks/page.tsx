@@ -1,10 +1,10 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { BookOpen, Download, Star, Globe, FileText, AlertCircle, BookMarked, X, Printer } from "lucide-react";
+import { BookOpen, Download, Star, Globe, FileText, AlertCircle, X, Printer } from "lucide-react";
 import { useTranslations, useLocale } from "next-intl";
 import { useState } from "react";
 
@@ -176,32 +176,6 @@ function ComingSoonModal({ onClose }: { onClose: () => void }) {
                     {t("comingSoon.desc")}
                 </p>
 
-                {/* Platforms */}
-                <div className="space-y-3 mb-6">
-                    {[
-                        { name: "Gelato", url: "https://gelato.com", desc: t("printPartners.gelato") },
-                        { name: "Lulu Direct", url: "https://lulu.com", desc: t("printPartners.lulu") },
-                    ].map((p) => (
-                        <a
-                            key={p.name}
-                            href={p.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="flex items-start gap-3 p-3 rounded-xl border border-white/10 bg-white/5 hover:border-cyan-400/30 hover:bg-white/10 transition-all duration-200 group"
-                        >
-                            <div className="flex-shrink-0 mt-0.5 w-6 h-6 rounded-full bg-cyan-400/20 flex items-center justify-center">
-                                <BookMarked className="w-3 h-3 text-cyan-400" />
-                            </div>
-                            <div>
-                                <p className="text-white text-xs font-bold group-hover:text-cyan-400 transition-colors">
-                                    {p.name} ↗
-                                </p>
-                                <p className="text-slate-500 text-xs leading-relaxed">{p.desc}</p>
-                            </div>
-                        </a>
-                    ))}
-                </div>
-
                 <button
                     onClick={onClose}
                     className="w-full py-2.5 rounded-xl border border-white/10 text-slate-400 text-sm font-semibold hover:border-white/20 hover:text-white transition-all duration-200"
@@ -225,16 +199,16 @@ function EbookCard({ book, index, onPhysicalClick }: { book: typeof EBOOKS[numbe
             transition={{ delay: index * 0.08, duration: 0.5, ease: "easeOut" }}
             className="group relative flex flex-col rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm overflow-hidden hover:border-cyan-400/30 transition-all duration-500 hover:shadow-[0_0_40px_rgba(6,182,212,0.07)]"
         >
-            {book.featured && (
-                <div className="absolute top-3 right-3 z-10 px-2.5 py-1 rounded-full bg-gradient-to-r from-cyan-500 to-purple-600 text-white text-[10px] font-bold uppercase tracking-widest shadow-lg">
-                    {t("featured")}
-                </div>
-            )}
-            {book.isFree && (
+            {/* isFree badge takes priority over featured to avoid overlap */}
+            {book.isFree ? (
                 <div className="absolute top-3 right-3 z-10 px-2.5 py-1 rounded-full bg-gradient-to-r from-emerald-500 to-teal-500 text-white text-[10px] font-bold uppercase tracking-widest shadow-lg">
                     {t("free")}
                 </div>
-            )}
+            ) : book.featured ? (
+                <div className="absolute top-3 right-3 z-10 px-2.5 py-1 rounded-full bg-gradient-to-r from-cyan-500 to-purple-600 text-white text-[10px] font-bold uppercase tracking-widest shadow-lg">
+                    {t("featured")}
+                </div>
+            ) : null}
 
             {/* Cover */}
             <div className="relative w-full aspect-[3/4] bg-slate-800/50 overflow-hidden">
@@ -317,20 +291,25 @@ function EbookCard({ book, index, onPhysicalClick }: { book: typeof EBOOKS[numbe
                         >
                             <span className="flex items-center gap-2">
                                 <Download className="w-4 h-4" />
-                                {t("buyDirect")}
+                                {t("buyDigital")}
                             </span>
                             <span className="font-bold">CHF {book.price.toFixed(2)}</span>
                         </a>
                     )}
 
-                    {/* Physical copy — coming soon */}
-                    <button
-                        onClick={onPhysicalClick}
-                        className="flex items-center justify-center gap-2 w-full px-4 py-2.5 rounded-xl border border-white/10 bg-white/5 text-slate-400 text-xs font-semibold hover:border-cyan-400/20 hover:text-slate-300 transition-all duration-300"
-                    >
-                        <Printer className="w-3.5 h-3.5" />
-                        {t("physicalCopy")}
-                    </button>
+                    {/* Physical copy — coming soon (not shown for free books) */}
+                    {!book.isFree && (
+                        <button
+                            onClick={onPhysicalClick}
+                            className="flex items-center justify-between w-full px-4 py-3 rounded-xl bg-gradient-to-r from-emerald-500 to-green-600 text-white text-sm font-semibold shadow-[0_0_20px_rgba(16,185,129,0.2)] hover:shadow-[0_0_30px_rgba(16,185,129,0.4)] transition-all duration-300 hover:scale-[1.02]"
+                        >
+                            <span className="flex items-center gap-2">
+                                <Printer className="w-4 h-4" />
+                                {t("buyPhysical")}
+                            </span>
+                            <span className="font-bold">CHF 22.90</span>
+                        </button>
+                    )}
 
                     {/* Amazon + Etsy — only shown when URLs are set */}
                     {(book.amazonLink || book.etsyLink) && (
@@ -378,7 +357,9 @@ export default function EbooksPage() {
 
     return (
         <main className="min-h-screen bg-[#0f172a]">
-            {showComingSoon && <ComingSoonModal onClose={() => setShowComingSoon(false)} />}
+            <AnimatePresence>
+                {showComingSoon && <ComingSoonModal onClose={() => setShowComingSoon(false)} />}
+            </AnimatePresence>
 
             {/* JSON-LD injected server-side via layout.tsx EbooksJsonLd */}
             <script
@@ -500,7 +481,7 @@ export default function EbooksPage() {
 
                             <div className={`grid gap-8 ${
                                 books.length === 1
-                                    ? "grid-cols-1 max-w-sm"
+                                    ? "grid-cols-1 max-w-sm mx-auto"
                                     : books.length === 2
                                     ? "grid-cols-1 sm:grid-cols-2 max-w-2xl"
                                     : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
@@ -512,46 +493,58 @@ export default function EbooksPage() {
                         </div>
                     ))}
 
-                    {/* Print partners section */}
+                    {/* Marketplace cards */}
                     <motion.div
                         initial={{ opacity: 0, y: 16 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.5 }}
-                        className="mb-8 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm px-8 py-7"
+                        className="mb-8"
                     >
-                        <div className="flex items-center gap-3 mb-3">
-                            <div className="w-8 h-8 rounded-full bg-cyan-400/10 flex items-center justify-center flex-shrink-0">
-                                <Printer className="w-4 h-4 text-cyan-400" />
-                            </div>
-                            <h2 className="text-white font-bold text-base">{t("printPartners.title")}</h2>
-                        </div>
-                        <p className="text-slate-400 text-sm mb-5 leading-relaxed">
-                            {t("printPartners.desc")}
+                        <p className="text-slate-500 text-xs font-semibold uppercase tracking-widest mb-4">
+                            {t("marketplace.also")}
                         </p>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                            {[
-                                { name: "Gelato", url: "https://gelato.com", desc: t("printPartners.gelato") },
-                                { name: "Lulu Direct", url: "https://lulu.com", desc: t("printPartners.lulu") },
-                            ].map((p) => (
-                                <a
-                                    key={p.name}
-                                    href={p.url}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="flex items-start gap-3 p-4 rounded-xl border border-white/10 bg-white/5 hover:border-cyan-400/30 transition-all duration-200 group"
-                                >
-                                    <BookMarked className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" />
-                                    <div>
-                                        <p className="text-white text-sm font-bold group-hover:text-cyan-400 transition-colors">
-                                            {p.name} ↗
-                                        </p>
-                                        <p className="text-slate-500 text-xs leading-relaxed mt-0.5">{p.desc}</p>
-                                    </div>
-                                </a>
-                            ))}
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            {/* Etsy */}
+                            <a
+                                href="https://lopes2techstudio.etsy.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="group flex items-center gap-5 p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm hover:border-orange-400/40 hover:bg-orange-400/5 transition-all duration-300 hover:shadow-[0_0_30px_rgba(249,115,22,0.08)]"
+                            >
+                                <div className="flex-shrink-0 w-14 h-14 rounded-xl bg-orange-500/10 border border-orange-400/20 flex items-center justify-center">
+                                    <EtsyIcon className="w-7 h-7 text-orange-400" />
+                                </div>
+                                <div className="flex-1 min-w-0">
+                                    <p className="text-white font-bold text-base group-hover:text-orange-400 transition-colors">
+                                        {t("marketplace.etsy.title")} ↗
+                                    </p>
+                                    <p className="text-slate-400 text-sm mt-0.5 leading-snug">
+                                        {t("marketplace.etsy.desc")}
+                                    </p>
+                                </div>
+                            </a>
+
+                            {/* Amazon */}
+                            <a
+                                href="https://www.amazon.com/s?k=lopes2tech"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="group flex items-center gap-5 p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm hover:border-amber-400/40 hover:bg-amber-400/5 transition-all duration-300 hover:shadow-[0_0_30px_rgba(251,191,36,0.08)]"
+                            >
+                                <div className="flex-shrink-0 w-14 h-14 rounded-xl bg-amber-500/10 border border-amber-400/20 flex items-center justify-center">
+                                    <AmazonIcon className="w-7 h-7 text-amber-400" />
+                                </div>
+                                <div className="flex-1 min-w-0">
+                                    <p className="text-white font-bold text-base group-hover:text-amber-400 transition-colors">
+                                        {t("marketplace.amazon.title")} ↗
+                                    </p>
+                                    <p className="text-slate-400 text-sm mt-0.5 leading-snug">
+                                        {t("marketplace.amazon.desc")}
+                                    </p>
+                                </div>
+                            </a>
                         </div>
-                        <p className="text-slate-600 text-xs mt-4">{t("printPartners.eta")}</p>
                     </motion.div>
 
                     {/* Guarantee strip */}

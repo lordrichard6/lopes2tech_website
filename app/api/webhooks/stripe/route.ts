@@ -39,6 +39,8 @@ const EBOOK_BY_LINK: Record<string, { key: string; title: string; driveUrl: stri
         title: "100 Things Portugal",
         driveUrl: process.env.GDRIVE_PORTUGAL ?? "",
     },
+    // productivity tracker removed from shop — keeping entry so old test links
+    // don't cause "unknown payment link" warnings in logs
     plink_1TEVrcGisvlguHA4IjLuBu0V: {
         key: "productivity",
         title: "30-Day Productivity Tracker",
@@ -293,11 +295,13 @@ export async function POST(req: NextRequest) {
         });
 
         if (error) {
-            console.error("Failed to send ebook email:", error);
-            return NextResponse.json({ error: "Email delivery failed" }, { status: 500 });
+            // Return 200 so Stripe does NOT retry — the payment is complete and a retry
+            // would trigger a duplicate email on the next attempt.
+            // The missing email is logged; handle manually if needed.
+            console.error(`❌ Email delivery failed for ${book.key} → ${buyerEmail}:`, error);
+        } else {
+            console.log(`✅ Ebook email sent: ${book.key} → ${buyerEmail}`);
         }
-
-        console.log(`✅ Ebook email sent: ${book.key} → ${buyerEmail}`);
     }
 
     return NextResponse.json({ received: true });
