@@ -295,14 +295,15 @@ export default function BlogPostContent() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.1 }}
-                        className="relative aspect-[16/9] rounded-2xl overflow-hidden mb-12 border border-white/10"
+                        className="relative aspect-[16/9] rounded-2xl overflow-hidden mb-12 border border-white/10 isolate"
+                        style={{ transform: 'translateZ(0)', WebkitTransform: 'translateZ(0)' }}
                     >
                         <Image
                             src={post.image}
                             alt={post.title}
                             fill
                             sizes="(max-width: 768px) 100vw, (max-width: 1024px) 80vw, 75vw"
-                            className="object-cover"
+                            className="object-cover [backface-visibility:hidden] [transform:translateZ(0)]"
                             priority
                         />
                     </motion.div>

@@ -119,14 +119,14 @@ export default function InsightsPage() {
                                 >
                                     <div className="h-full flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm shadow-xl hover:shadow-2xl hover:border-cyan-400/30 transition-all duration-500">
                                         {/* Image */}
-                                        <div className="relative aspect-[16/9] overflow-hidden">
+                                        <div className="relative aspect-[16/9] overflow-hidden isolate" style={{ transform: 'translateZ(0)', WebkitTransform: 'translateZ(0)' }}>
                                             <Image
                                                 src={post.image}
                                                 alt={post.title}
                                                 fill
                                                 sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
                                                 priority={idx < 6}
-                                                className="object-cover transition-transform duration-700 group-hover:scale-110"
+                                                className="object-cover transition-transform duration-700 group-hover:scale-110 [backface-visibility:hidden] [transform:translateZ(0)]"
                                             />
                                             <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-[#0f172a]/40 to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-500" />
                                         </div>
