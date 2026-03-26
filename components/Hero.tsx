@@ -7,7 +7,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { trackCTAClick } from "@/lib/analytics";
 import { sendBookingNotificationEmail } from "@/app/actions/contact";
-import { BOOKING_URL } from "@/lib/constants";
+import { WHATSAPP_URL } from "@/lib/constants";
 
 export default function Hero() {
     const t = useTranslations('Hero');
@@ -154,10 +154,9 @@ export default function Hero() {
                         className="flex gap-6 mb-8"
                     >
                         <a
-                            href={BOOKING_URL}
+                            href={WHATSAPP_URL}
                             target="_blank"
                             rel="noopener noreferrer"
-                            onClick={handleBookingClick}
                             className="group relative px-8 py-4 rounded-xl bg-cyan-500/10 text-white font-semibold border border-[#00f5ff] shadow-[0_0_15px_rgba(0,245,255,0.3),inset_0_0_15px_rgba(0,245,255,0.1)] hover:bg-cyan-500/20 hover:shadow-[0_0_25px_rgba(0,245,255,0.6),inset_0_0_20px_rgba(0,245,255,0.2)] hover:-translate-y-[2px] transition-all flex items-center gap-2 overflow-hidden"
                         >
                             <span className="relative z-10">{t('cta')}</span>

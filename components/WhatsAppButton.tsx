@@ -1,14 +1,12 @@
 "use client";
 
 import { useState } from "react";
-
-const WHATSAPP_NUMBER = "41787989533";
-const WHATSAPP_MESSAGE = "Hi Paulo! I found your website and I'd like to discuss a project.";
+import { WHATSAPP_URL } from "@/lib/constants";
 
 export default function WhatsAppButton() {
     const [hovered, setHovered] = useState(false);
 
-    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
+    const url = WHATSAPP_URL;
 
     return (
         <a
