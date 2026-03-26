@@ -315,7 +315,7 @@ export default function FeaturedProjects() {
     return (
         <>
             <section className="relative py-28 bg-[#080d1a] overflow-hidden">
-                {/* Grid lines background */}
+                {/* Grid lines background — fades in from top */}
                 <div
                     className="absolute inset-0 pointer-events-none"
                     style={{
@@ -324,6 +324,8 @@ export default function FeaturedProjects() {
                             linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px)
                         `,
                         backgroundSize: '60px 60px',
+                        maskImage: 'linear-gradient(to bottom, transparent 0%, black 18%)',
+                        WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, black 18%)',
                     }}
                 />
                 {/* Ambient glows */}
