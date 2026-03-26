@@ -45,12 +45,22 @@ const personSchema = {
     ],
 };
 
+const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://lopes2tech.ch" },
+        { "@type": "ListItem", "position": 2, "name": "About", "item": "https://lopes2tech.ch/en/about" },
+    ]
+};
+
 export default function AboutPage() {
     const t = useTranslations('AboutPage');
 
     return (
         <main className="min-h-screen bg-[#0f172a]">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <Navbar />
 
             {/* Small Hero Section */}

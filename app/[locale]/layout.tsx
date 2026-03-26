@@ -10,6 +10,7 @@ import GoogleAnalytics from '@/components/GoogleAnalytics';
 import CookieConsent from '@/components/CookieConsent';
 import Clarity from '@/components/Clarity';
 import ServiceWorkerRegister from '@/components/ServiceWorkerRegister';
+import WhatsAppButton from '@/components/WhatsAppButton';
 
 const inter = Inter({
   variable: "--font-inter",
@@ -127,6 +128,7 @@ export default async function RootLayout({
           <Clarity />
           <CookieConsent />
           <ServiceWorkerRegister />
+          <WhatsAppButton />
         </NextIntlClientProvider>
       </body>
     </html>

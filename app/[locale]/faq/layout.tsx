@@ -13,7 +13,18 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       canonical,
       languages: { "x-default": `${BASE_URL}/en${path}`, en: `${BASE_URL}/en${path}`, de: `${BASE_URL}/de${path}`, pt: `${BASE_URL}/pt${path}`, fr: `${BASE_URL}/fr${path}`, it: `${BASE_URL}/it${path}` },
     },
-    openGraph: { title: "FAQ | Lopes2Tech", description: "Answers to common questions about our web design, SEO, and automation services in Zurich.", url: canonical },
+    openGraph: {
+      title: "FAQ | Lopes2Tech",
+      description: "Answers to common questions about our web design, SEO, and automation services in Zurich.",
+      url: canonical,
+      images: [{ url: `${BASE_URL}/og-image.png`, width: 1200, height: 630, alt: "Lopes2Tech FAQ" }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "FAQ | Lopes2Tech - Web Design, SEO & Social Media Pricing",
+      description: "Frequently asked questions about web design, SEO, social media marketing, and business automation services. Pricing, timelines, and packages explained.",
+      images: [`${BASE_URL}/og-image.png`],
+    },
   };
 }
 

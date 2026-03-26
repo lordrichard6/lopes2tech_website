@@ -19,6 +19,13 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       title: t("ogTitle"),
       description: t("ogDescription"),
       url: canonical,
+      images: [{ url: `${BASE_URL}/og-image.png`, width: 1200, height: 630, alt: t("title") }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("ogTitle"),
+      description: t("ogDescription"),
+      images: [`${BASE_URL}/og-image.png`],
     },
   };
 }

@@ -87,8 +87,18 @@ export default function ContactPage() {
         setFormData({ name: "", email: "", company: "", phone: "", message: "" });
     };
 
+    const breadcrumbSchema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://lopes2tech.ch" },
+            { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://lopes2tech.ch/en/contact" },
+        ]
+    };
+
     return (
         <main className="min-h-screen bg-[#0f172a] relative">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <Navbar />
 
             {/* Video Background */}
