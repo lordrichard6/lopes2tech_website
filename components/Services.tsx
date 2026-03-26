@@ -22,15 +22,17 @@ export default function Services() {
   return (
     <section id="services" className="relative py-12 bg-[#080d1a] min-h-screen flex flex-col justify-start pt-24 md:pt-32">
 
-      {/* Grid lines — fades in/out at edges */}
+      {/* Diagonal lines pattern — fades in/out at edges */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
-          backgroundImage: `
-            linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px)
-          `,
-          backgroundSize: '60px 60px',
+          backgroundImage: `repeating-linear-gradient(
+            45deg,
+            rgba(255,255,255,0.03) 0px,
+            rgba(255,255,255,0.03) 1px,
+            transparent 1px,
+            transparent 40px
+          )`,
           maskImage: 'linear-gradient(to bottom, transparent 0%, black 14%, black 86%, transparent 100%)',
           WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, black 14%, black 86%, transparent 100%)',
         }}

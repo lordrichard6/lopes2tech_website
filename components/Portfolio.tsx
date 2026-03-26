@@ -9,15 +9,9 @@ import { useTranslations } from "next-intl";
 
 // Static config (images, links, layout) — content comes from translations
 const projectsConfig = [
-    { id: "mimesa", image: "/proj/mimesa_mockup.webp", link: "https://website-mimesa.vercel.app/", className: "md:col-span-2 md:row-span-2" },
-    { id: "menteiq", image: "/proj/orbitcrm_mockup.webp", link: "https://orbitcrm-gilt.vercel.app/", className: "md:col-span-1 md:row-span-1" },
-    { id: "theraflow", image: "/proj/theraflow_mockup.webp", link: "https://www.theraflow-crm.ch/", className: "md:col-span-1 md:row-span-1" },
-    { id: "finito", image: "/proj/finito_mockup.webp", link: "https://www.finitopro.ch/", className: "md:col-span-1 md:row-span-1" },
-    { id: "noff", image: "/proj/noff_mockup.webp", link: "https://noff.ch", className: "md:col-span-1 md:row-span-1" },
-    { id: "ribeiro", image: "/proj/ribeiro_mockup.webp", link: "https://ribeiroconsulting.ch/pt", className: "md:col-span-1 md:row-span-1" },
-    { id: "costeleta", image: "/proj/costeleta_mockup.webp", link: "https://costeleta-dourada.vercel.app/", className: "md:col-span-1 md:row-span-2" },
-    { id: "forma", image: "/proj/forma_mockup.webp", link: "https://forma-architects-fawn.vercel.app/", className: "md:col-span-2 md:row-span-2" },
-    { id: "alentseguros", image: "/proj/alentseguros_mockup.webp", link: "https://alenteseguros.vercel.app/", className: "md:col-span-3 md:row-span-1" },
+    { id: "ribeiro", image: "/proj/ribeiro_mockup.webp", link: "https://ribeiroconsulting.ch/pt", className: "md:col-span-2 md:row-span-2" },
+    { id: "silvio", image: "/proj/silvio_mockup.webp", link: "https://www.silviovalentt.pt/", className: "md:col-span-1 md:row-span-1" },
+    { id: "safira", image: "/proj/safira_reinigung_mockup.webp", link: "https://www.safira-reinigung.ch/", className: "md:col-span-1 md:row-span-1" },
 ];
 
 export default function Portfolio() {
@@ -64,7 +58,7 @@ export default function Portfolio() {
                 </div>
 
                 {/* Bento Grid (3 Columns) */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[280px]">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[320px]">
                     {projectsConfig.map((project, idx) => {
                         const title = t(`projects.${project.id}.title`);
                         const description = t(`projects.${project.id}.description`);

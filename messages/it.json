@@ -18,6 +18,54 @@
     },
     "ebooks": "Negozio"
   },
+  "WhoSection": {
+    "badge": "L'AGENZIA DIETRO IL CODICE",
+    "titlePre": "Chi è",
+    "subtitle": "Siamo un'agenzia digitale altamente specializzata e completamente automatizzata che mette la tua azienda sulla mappa — ottimizzata per consegnare ad ogni cliente un prodotto 100% personalizzato, trattato come un membro della famiglia, più velocemente di quanto la maggior parte delle agenzie fissi il primo appuntamento.",
+    "intro": "Mentre la maggior parte delle agenzie digitali ti consegna un tema WordPress riciclato, trascina il tuo brand in Wix o ti addebita un abbonamento Webflow mensile — noi sviluppiamo ogni riga di codice da zero. Lopes2Tech è uno studio full-stack specializzato con una profonda comprensione dell'intero funnel di crescita digitale: dalla prima impressione pubblicitaria alla vendita conclusa.",
+    "notUsLabel": "Le altre agenzie",
+    "yesUsLabel": "Lopes2Tech",
+    "notUs": {
+      "wix": "Trascina e rilascia Wix",
+      "wordpress": "Temi WordPress",
+      "webflow": "Abbonamenti Webflow",
+      "templates": "Template riciclati",
+      "plugins": "Plugin gonfiati",
+      "bloated": "Siti generici e lenti"
+    },
+    "yesUs": {
+      "nextjs": "Codice custom Next.js",
+      "typescript": "TypeScript & Supabase",
+      "custom": "Design pixel-perfect",
+      "seo": "SEO tecnico integrato",
+      "analytics": "GA4 + Meta Pixel collegati",
+      "ads": "Meta & Google Ads gestiti"
+    },
+    "diff": {
+      "engineering": {
+        "title": "Codice Vero. Zero Scorciatoie.",
+        "desc": "Costruito con Next.js, TypeScript & Supabase. Nessun plugin, nessun builder — solo codice veloce e pronto per la produzione."
+      },
+      "marketing": {
+        "title": "Architettura Marketing-First",
+        "desc": "Ogni sito viene consegnato con GA4, Meta Pixel, struttura ottimizzata per la conversione e SEO. Costruiamo macchine per i lead."
+      },
+      "ads": {
+        "title": "Ads a Pagamento. Fatti Bene.",
+        "desc": "Gestione completa Meta Ads (FB & IG) e Google Ads — dalla strategia creativa al tracciamento ROI."
+      },
+      "automation": {
+        "title": "Automazioni che Risparmiano Ore",
+        "desc": "Il tuo CRM, moduli, inbox e strumenti — connessi e automatizzati. Meno lavoro manuale, più ricavi."
+      }
+    },
+    "stats": {
+      "projects":  "Progetti Consegnati",
+      "rating":    "Soddisfazione Clienti",
+      "countries": "Paesi Serviti",
+      "delivery":  "Tempo Medio di Consegna"
+    }
+  },
   "Hero": {
     "title1": "Siti Web & Automazioni",
     "title2": "per le Aziende di Servizi",
@@ -91,7 +139,17 @@
       },
       "ribeiro": {
         "title": "Ribeiro Consulting",
-        "description": "Consulenza professionale.",
+        "description": "Sito web professionale per uno studio di consulenza con sede in Svizzera.",
+        "category": "Sito Web"
+      },
+      "silvio": {
+        "title": "Silvio Photography",
+        "description": "Portfolio fotografico elegante per ritratti, eventi e lavori commerciali.",
+        "category": "Portfolio"
+      },
+      "safira": {
+        "title": "Safira Reinigung",
+        "description": "Sito multilingue per un'azienda di pulizie professionale in Svizzera.",
         "category": "Sito Web"
       },
       "costeleta": {

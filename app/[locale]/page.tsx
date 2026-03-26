@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import WhoIsLopes2Tech from "@/components/WhoIsLopes2Tech";
 import FeaturedProjects from "@/components/FeaturedProjects";
 import Services from "@/components/Services";
 import Portfolio from "@/components/Portfolio";
@@ -34,6 +35,7 @@ export default function Home() {
     <main className="min-h-screen">
       <Navbar />
       <Hero />
+      <WhoIsLopes2Tech />
       <ErrorBoundary>
         <FeaturedProjects />
       </ErrorBoundary>

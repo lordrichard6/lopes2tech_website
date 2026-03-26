@@ -340,6 +340,54 @@
       "disclaimer": "* Final price may vary based on project scope and complexity"
     }
   },
+  "WhoSection": {
+    "badge": "THE AGENCY BEHIND THE CODE",
+    "titlePre": "Who is",
+    "subtitle": "We are a highly specialized, fully automated digital agency that puts your business on the map — precision-optimized to deliver every client a fully custom product, treated like family, faster than most agencies can schedule their first meeting.",
+    "intro": "While most digital agencies hand you a recycled WordPress theme, drag and drop your brand into Wix, or bill you monthly for a Webflow subscription — we engineer every line of code from scratch. Lopes2Tech is a specialized full-stack studio with a deep understanding of the entire digital growth funnel: from the first ad impression to the closed sale. We don't just build websites. We build growth engines.",
+    "notUsLabel": "Other agencies",
+    "yesUsLabel": "Lopes2Tech",
+    "notUs": {
+      "wix": "Wix drag-and-drop",
+      "wordpress": "WordPress themes",
+      "webflow": "Webflow subscriptions",
+      "templates": "Recycled templates",
+      "plugins": "Bloated plugin stacks",
+      "bloated": "Generic, slow sites"
+    },
+    "yesUs": {
+      "nextjs": "Next.js custom code",
+      "typescript": "TypeScript & Supabase",
+      "custom": "Pixel-perfect design",
+      "seo": "Technical SEO built-in",
+      "analytics": "GA4 + Meta Pixel wired",
+      "ads": "Meta & Google Ads managed"
+    },
+    "diff": {
+      "engineering": {
+        "title": "Real Code. Zero Shortcuts.",
+        "desc": "Custom-built with Next.js, TypeScript & Supabase. No plugins, no builders — just fast, production-grade code that performs and scales."
+      },
+      "marketing": {
+        "title": "Marketing-First Architecture",
+        "desc": "Every site ships with GA4, Meta Pixel, conversion-optimized structure, and SEO. We build lead machines, not digital brochures."
+      },
+      "ads": {
+        "title": "Paid Ads. Done Right.",
+        "desc": "Full Meta Ads (FB & IG) and Google Ads management — from creative strategy to ROI tracking. We run the complete paid media stack."
+      },
+      "automation": {
+        "title": "Automations That Save Hours",
+        "desc": "Your CRM, forms, inbox, and tools — connected and automated. Less manual work, more revenue. Built with n8n, Zapier & custom APIs."
+      }
+    },
+    "stats": {
+      "projects":  "Projects Delivered",
+      "rating":    "Client Satisfaction",
+      "countries": "Countries Served",
+      "delivery":  "Avg. Delivery Time"
+    }
+  },
   "Hero": {
     "title1": "Websites & Automations",
     "title2": "for Service Businesses",
@@ -413,7 +461,17 @@
       },
       "ribeiro": {
         "title": "Ribeiro Consulting",
-        "description": "Professional consulting.",
+        "description": "Professional consulting website built for a Swiss-based consulting firm.",
+        "category": "Website"
+      },
+      "silvio": {
+        "title": "Silvio Photography",
+        "description": "Elegant photography portfolio capturing portraits, events, and commercial work.",
+        "category": "Portfolio"
+      },
+      "safira": {
+        "title": "Safira Reinigung",
+        "description": "Multilingual website for a professional Swiss cleaning company.",
         "category": "Website"
       },
       "costeleta": {
