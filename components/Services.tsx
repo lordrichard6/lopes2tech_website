@@ -20,15 +20,40 @@ export default function Services() {
   const t = useTranslations('ServicesSection');
 
   return (
-    <section id="services" className="relative py-12 bg-[#f3f0e7] overflow-hidden min-h-screen flex flex-col justify-start pt-24 md:pt-32">
-      <div className="max-w-[1200px] mx-auto px-6 w-full">
+    <section id="services" className="relative py-12 bg-[#080d1a] overflow-hidden min-h-screen flex flex-col justify-start pt-24 md:pt-32">
+
+      {/* Grid lines — fades in/out at edges */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          backgroundImage: `
+            linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px)
+          `,
+          backgroundSize: '60px 60px',
+          maskImage: 'linear-gradient(to bottom, transparent 0%, black 14%, black 86%, transparent 100%)',
+          WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, black 14%, black 86%, transparent 100%)',
+        }}
+      />
+
+      {/* Ambient glows */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <div className="absolute top-[20%] left-[5%] w-[400px] h-[300px] rounded-full bg-cyan-500/5 blur-[100px]" />
+        <div className="absolute bottom-[15%] right-[5%] w-[400px] h-[300px] rounded-full bg-purple-500/5 blur-[100px]" />
+      </div>
+
+      <div className="relative z-10 max-w-[1200px] mx-auto px-6 w-full">
 
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-6 md:mb-10">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#0f172a]">
+          <span className="inline-block px-4 py-1.5 rounded-full bg-white/5 text-slate-400 font-semibold text-sm mb-5 border border-white/10">
             {t('title')}
+          </span>
+          <h2 className="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight">
+            <span className="text-white">Our </span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">Expertise</span>
           </h2>
-          <p className="text-lg text-[#64748b]">
+          <p className="text-lg text-slate-400">
             {t('subtitle')}
           </p>
         </div>
