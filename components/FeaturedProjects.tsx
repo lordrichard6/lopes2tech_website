@@ -17,6 +17,8 @@ const projectsConfig = [
         logo: "/logos/mimesa_icon.png",
         logoSize: { w: 32, h: 32 },
         mockup: "/proj/mimesa_screen.webp",
+        version: "v0.6",
+        stage: "Alpha",
         websiteUrl: "https://www.mimesa.ch/",
         accent: "#F5A623",
         cardGlow: "rgba(245,166,35,0.18)",
@@ -41,6 +43,8 @@ const projectsConfig = [
         logo: "/logos/clinika_logo.svg",
         logoSize: { w: 34, h: 36 },
         mockup: "/proj/clinika_os_screen.webp",
+        version: "v1.0",
+        stage: null,
         websiteUrl: "https://www.clinika-os.ch/",
         accent: "#71DCC6",
         cardGlow: "rgba(113,220,198,0.15)",
@@ -65,6 +69,8 @@ const projectsConfig = [
         logo: "/logos/darkmonkey_logo.webp",
         logoSize: { w: 40, h: 40 },
         mockup: "/proj/darkmonkey_screen.webp",
+        version: "v1.0",
+        stage: null,
         websiteUrl: "https://www.dark-monkey.ch/",
         accent: "#C9A84C",
         cardGlow: "rgba(201,168,76,0.15)",
@@ -89,6 +95,8 @@ const projectsConfig = [
         logo: "/logos/menteiq_logo_white.svg",
         logoSize: { w: 48, h: 30 },
         mockup: "/proj/menteiq_screen.webp",
+        version: "v0.8",
+        stage: "Beta",
         websiteUrl: "https://menteiq.ch/",
         accent: "#7C3AED",
         cardGlow: "rgba(124,58,237,0.15)",
@@ -213,10 +221,23 @@ function ProjectCard({ project, index, onClick }: { project: Project; index: num
                         background: 'linear-gradient(to bottom, transparent 20%, rgba(13,17,30,0.85) 75%, rgba(13,17,30,1) 100%)',
                     }}
                 />
-                {/* LIVE badge */}
-                <div className="absolute top-3 right-3 flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-black/50 backdrop-blur-sm border border-white/10">
-                    <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
-                    <span className="text-xs font-bold text-green-400 uppercase tracking-wider">Live</span>
+                {/* Top-right badges */}
+                <div className="absolute top-3 right-3 flex items-center gap-2">
+                    {/* Stage badge (Alpha/Beta) */}
+                    {project.stage && (
+                        <div className="flex items-center px-2 py-1 rounded-full bg-black/50 backdrop-blur-sm border border-amber-400/30 text-amber-400 text-[10px] font-bold uppercase tracking-wider">
+                            {project.stage}
+                        </div>
+                    )}
+                    {/* Version */}
+                    <div className="flex items-center px-2 py-1 rounded-full bg-black/50 backdrop-blur-sm border border-white/15 text-slate-300 text-[10px] font-bold tracking-wider">
+                        {project.version}
+                    </div>
+                    {/* LIVE */}
+                    <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-black/50 backdrop-blur-sm border border-white/10">
+                        <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
+                        <span className="text-xs font-bold text-green-400 uppercase tracking-wider">Live</span>
+                    </div>
                 </div>
                 {/* Logo + name — overlaid on the bottom of the image */}
                 <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between">
