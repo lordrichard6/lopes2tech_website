@@ -347,8 +347,8 @@ export default function FeaturedProjects() {
                 {/* Ambient glows */}
                 <div className="absolute inset-0 pointer-events-none overflow-hidden">
                     <div className="absolute top-[160px] left-1/4 w-[500px] h-[300px] rounded-full bg-amber-500/6 blur-[120px]" />
-                    <div className="absolute bottom-0 right-1/4 w-[500px] h-[300px] rounded-full bg-cyan-500/6 blur-[100px]" />
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[200px] rounded-full bg-purple-500/5 blur-[120px]" />
+                    <div className="absolute bottom-[15%] right-1/4 w-[500px] h-[300px] rounded-full bg-cyan-500/6 blur-[100px]" />
+                    <div className="absolute top-[40%] left-1/2 -translate-x-1/2 w-[600px] h-[200px] rounded-full bg-purple-500/5 blur-[120px]" />
                 </div>
 
                 <div className="relative z-10 max-w-[1200px] mx-auto px-6">
