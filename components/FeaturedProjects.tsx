@@ -330,7 +330,7 @@ export default function FeaturedProjects() {
 
     return (
         <>
-            <section className="relative py-28 bg-[#080d1a] overflow-hidden">
+            <section className="relative py-28 bg-[#080d1a]">
                 {/* Grid lines background — fades in from top */}
                 <div
                     className="absolute inset-0 pointer-events-none"

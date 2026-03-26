@@ -20,7 +20,7 @@ export default function Services() {
   const t = useTranslations('ServicesSection');
 
   return (
-    <section id="services" className="relative py-12 bg-[#080d1a] overflow-hidden min-h-screen flex flex-col justify-start pt-24 md:pt-32">
+    <section id="services" className="relative py-12 bg-[#080d1a] min-h-screen flex flex-col justify-start pt-24 md:pt-32">
 
       {/* Grid lines — fades in/out at edges */}
       <div
