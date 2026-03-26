@@ -197,9 +197,6 @@ function ProjectCard({ project, index, onClick }: { project: Project; index: num
                     : '0 4px 24px -8px rgba(0,0,0,0.4)',
             }}
         >
-            {/* Accent top bar */}
-            <div className="h-[3px] w-full flex-shrink-0" style={{ background: project.accent }} />
-
             {/* Mockup image */}
             <div className="relative w-full overflow-hidden" style={{ height: '200px' }}>
                 <Image
@@ -213,7 +210,7 @@ function ProjectCard({ project, index, onClick }: { project: Project; index: num
                 <div
                     className="absolute inset-0"
                     style={{
-                        background: 'linear-gradient(to bottom, transparent 30%, rgba(13,17,30,0.7) 70%, rgba(13,17,30,1) 100%)',
+                        background: 'linear-gradient(to bottom, transparent 20%, rgba(13,17,30,0.85) 75%, rgba(13,17,30,1) 100%)',
                     }}
                 />
                 {/* LIVE badge */}
@@ -221,31 +218,26 @@ function ProjectCard({ project, index, onClick }: { project: Project; index: num
                     <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
                     <span className="text-xs font-bold text-green-400 uppercase tracking-wider">Live</span>
                 </div>
-            </div>
-
-            {/* Content */}
-            <div className="flex flex-col flex-1 px-6 pb-6 -mt-2">
-                {/* Logo + name row */}
-                <div className="flex items-center justify-between mb-3">
+                {/* Logo + name — overlaid on the bottom of the image */}
+                <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between">
                     <div className="flex items-center gap-3">
-                        <div className="flex-shrink-0 p-1.5 rounded-lg bg-white/5 border border-white/10">
+                        <div className="flex-shrink-0 p-1.5 rounded-lg bg-black/50 backdrop-blur-sm border border-white/15">
                             <Image
                                 src={project.logo}
                                 alt={project.name}
                                 width={project.logoSize.w}
                                 height={project.logoSize.h}
                                 className="object-contain"
-                                style={{ maxHeight: '28px', width: 'auto' }}
+                                style={{ maxHeight: '24px', width: 'auto' }}
                             />
                         </div>
-                        <h3 className="text-lg font-extrabold text-white tracking-tight">{project.name}</h3>
+                        <h3 className="text-lg font-extrabold text-white tracking-tight drop-shadow-lg">{project.name}</h3>
                     </div>
                     {/* Industry pill */}
                     <div
-                        className="flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider border"
+                        className="flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider border bg-black/50 backdrop-blur-sm"
                         style={{
-                            background: `${project.industryColor}15`,
-                            borderColor: `${project.industryColor}40`,
+                            borderColor: `${project.industryColor}50`,
                             color: project.industryColor,
                         }}
                     >
@@ -253,7 +245,10 @@ function ProjectCard({ project, index, onClick }: { project: Project; index: num
                         <span>{project.industryLabel}</span>
                     </div>
                 </div>
+            </div>
 
+            {/* Content below image */}
+            <div className="flex flex-col flex-1 px-6 pb-6 pt-4">
                 {/* Tagline */}
                 <p className="text-sm font-semibold mb-4" style={{ color: project.accent }}>
                     {project.tagline}
