@@ -574,6 +574,7 @@
       "privacy": "Datenschutzerklärung",
       "terms": "Nutzungsbedingungen"
     },
+    "description": "KI-gestützte Webentwicklung, SEO & Automatisierung für Schweizer Unternehmen.",
     "copyright": "Alle Rechte vorbehalten."
   },
   "AboutPage": {
@@ -1080,6 +1081,7 @@
     "title": "Software für",
     "titleHighlight": "Ihre Branche",
     "subtitle": "Vertikale SaaS-Produkte von Grund auf entwickelt — jedes löst ein echtes Problem für eine bestimmte Branche.",
+    "learnMore": "Mehr erfahren",
     "hint": "Klicken Sie auf ein Produkt, um seine Funktionen zu erkunden",
     "dialog": {
       "close": "Schliessen",

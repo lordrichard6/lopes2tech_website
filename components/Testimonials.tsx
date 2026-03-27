@@ -52,9 +52,9 @@ export default function Testimonials() {
                             <Quote className="absolute top-6 right-6 w-8 h-8 text-cyan-400/20" />
 
                             {/* Stars */}
-                            <div className="flex gap-1 mb-4">
-                                {Array.from({ length: 5 }).map((_, i) => (
-                                    <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                            <div className="flex gap-1 mb-4" aria-label="5 out of 5 stars">
+                                {[0,1,2,3,4].map((i) => (
+                                    <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" aria-hidden="true" />
                                 ))}
                             </div>
 
@@ -65,8 +65,8 @@ export default function Testimonials() {
 
                             {/* Author */}
                             <div className="flex items-center gap-3">
-                                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-cyan-400 to-purple-500 flex items-center justify-center text-white text-sm font-bold">
-                                    {t(`items.${id}.name`).charAt(0)}
+                                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-cyan-400 to-purple-500 flex items-center justify-center text-white text-sm font-bold" aria-hidden="true">
+                                    {t(`items.${id}.name`).charAt(0) || '?'}
                                 </div>
                                 <div>
                                     <p className="text-white font-semibold text-sm">{t(`items.${id}.name`)}</p>

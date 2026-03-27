@@ -126,7 +126,7 @@ export default function Services() {
               <div className="relative z-20 h-full p-6 md:p-8 flex flex-col justify-end items-start text-left">
 
                 {/* Badge */}
-                <div className="absolute top-6 right-6 px-4 py-1.5 rounded-full bg-gradient-to-br from-[#0e7490] via-[#0891b2] to-[#06b6d4] text-white text-[0.7rem] font-bold uppercase tracking-wider shadow-lg opacity-100 md:opacity-0 md:translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                <div className="absolute top-6 right-6 px-4 py-1.5 rounded-full bg-gradient-to-br from-[#0e7490] via-[#0891b2] to-[#06b6d4] text-white text-[0.7rem] font-bold uppercase tracking-wider shadow-lg opacity-100 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
                   {t('getStarted')}
                 </div>
 

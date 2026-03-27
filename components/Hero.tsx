@@ -163,7 +163,7 @@ export default function Hero() {
                             <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
 
                             {/* Shiny wipe effect */}
-                            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out" />
+                            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out motion-reduce:hidden" />
                         </a>
                     </motion.div>
                 </div>

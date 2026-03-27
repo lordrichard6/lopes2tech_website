@@ -192,7 +192,9 @@ export default function Process() {
     );
 }
 
-function StepItem({ step, t }: { step: any, t: any }) {
+type Step = typeof steps[0];
+
+function StepItem({ step, t }: { step: Step; t: ReturnType<typeof useTranslations<"Process">> }) {
     return (
         <>
             {/* The Icon sitting ON the line */}

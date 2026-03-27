@@ -33,8 +33,8 @@ export default function Portfolio() {
                 <div className="absolute bottom-[20%] right-[5%] w-[300px] h-[300px] rounded-full bg-cyan-500/10 blur-[80px]" />
 
                 {/* Subtle Floating Icons */}
-                <motion.div animate={{ y: [0, -20, 0] }} transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }} className="absolute top-[15%] left-[10%] text-cyan-500/30 text-5xl"><Mail /></motion.div>
-                <motion.div animate={{ y: [0, 25, 0] }} transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }} className="absolute bottom-[25%] right-[10%] text-cyan-500/30 text-5xl"><Code /></motion.div>
+                <motion.div animate={{ y: [0, -20, 0] }} transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }} className="absolute top-[15%] left-[10%] text-cyan-500/30 text-3xl md:text-5xl"><Mail /></motion.div>
+                <motion.div animate={{ y: [0, 25, 0] }} transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }} className="absolute bottom-[25%] right-[10%] text-cyan-500/30 text-3xl md:text-5xl"><Code /></motion.div>
             </div>
 
             <div className="relative z-10 max-w-[1200px] mx-auto px-6">
@@ -58,7 +58,7 @@ export default function Portfolio() {
                 </div>
 
                 {/* Bento Grid (3 Columns) */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[320px]">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[260px] md:auto-rows-[320px]">
                     {projectsConfig.map((project, idx) => {
                         const title = t(`projects.${project.id}.title`);
                         const description = t(`projects.${project.id}.description`);

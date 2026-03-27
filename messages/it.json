@@ -252,6 +252,7 @@
       "privacy": "Informativa sulla Privacy",
       "terms": "Termini di Servizio"
     },
+    "description": "Sviluppo web AI, SEO & automazione per le aziende svizzere.",
     "copyright": "Tutti i diritti riservati."
   },
   "CookieConsent": {
@@ -1112,6 +1113,7 @@
     "title": "Software Costruito per",
     "titleHighlight": "il Vostro Settore",
     "subtitle": "Prodotti SaaS verticali progettati da zero — ognuno risolve un problema reale per un settore specifico.",
+    "learnMore": "Scopri di più",
     "hint": "Cliccate su qualsiasi prodotto per esplorarne le funzionalità",
     "dialog": {
       "close": "Chiudi",

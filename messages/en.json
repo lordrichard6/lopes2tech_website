@@ -574,6 +574,7 @@
       "privacy": "Privacy Policy",
       "terms": "Terms of Service"
     },
+    "description": "AI-powered web development, SEO & automation for Swiss businesses.",
     "copyright": "All rights reserved."
   },
   "AboutPage": {
@@ -1080,6 +1081,7 @@
     "title": "Software Built for",
     "titleHighlight": "Your Industry",
     "subtitle": "Vertical SaaS products designed from scratch — each one solving a real problem for a specific industry.",
+    "learnMore": "Learn more",
     "hint": "Click any product to explore its features",
     "dialog": {
       "close": "Close",

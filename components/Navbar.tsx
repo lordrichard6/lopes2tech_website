@@ -105,7 +105,7 @@ export default function Navbar() {
             >
                 <nav className="flex justify-between items-center px-6 py-3">
                     {/* Logo */}
-                    <Link href="/" className="flex items-center gap-2 group relative">
+                    <Link href="/" aria-label="Lopes2Tech – Go to homepage" className="flex items-center gap-2 group relative">
                         <div className="relative w-[45px] h-[45px] animate-logo-glow transition-transform duration-300 group-hover:scale-105">
                             <Image
                                 src="/logo_w.svg"

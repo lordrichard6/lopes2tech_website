@@ -574,6 +574,7 @@
       "privacy": "Política de Privacidade",
       "terms": "Termos de Serviço"
     },
+    "description": "Desenvolvimento web com IA, SEO & automação para empresas suíças.",
     "copyright": "Todos os direitos reservados."
   },
   "AboutPage": {
@@ -1080,6 +1081,7 @@
     "title": "Software Criado para a",
     "titleHighlight": "Sua Indústria",
     "subtitle": "Produtos SaaS verticais desenvolvidos do zero — cada um resolvendo um problema real para um setor específico.",
+    "learnMore": "Saber mais",
     "hint": "Clique em qualquer produto para explorar as suas funcionalidades",
     "dialog": {
       "close": "Fechar",

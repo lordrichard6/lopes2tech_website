@@ -8,7 +8,7 @@ import NewsletterSignup from "@/components/NewsletterSignup";
 
 export default function Footer() {
     const t = useTranslations('Footer');
-    const currentYear = new Date().getFullYear();
+    const currentYear = new Date().getFullYear(); // module-level would be ideal but this is fine for SSR
 
     return (
         <footer className="relative pt-16 pb-8 bg-[#0a0e27] text-white overflow-hidden text-center">
@@ -44,7 +44,7 @@ export default function Footer() {
                                 className="relative z-10 h-[60px] w-auto transition-transform duration-500 group-hover:scale-110 drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
                             />
                         </div>
-                        <p className="text-white/50 text-sm leading-relaxed text-center md:text-left">AI-powered web development, SEO & automation for Swiss businesses.</p>
+                        <p className="text-white/50 text-sm leading-relaxed text-center md:text-left">{t('description')}</p>
                         <NewsletterSignup />
                     </div>
 
@@ -107,10 +107,10 @@ export default function Footer() {
                         </ul>
                         <div className="flex items-center gap-3">
                             {[
-                                { icon: Mail, href: "mailto:paulo@lopes2tech.ch", label: "Email" },
-                                { icon: Linkedin, href: "https://www.linkedin.com/company/lopes2tech/", label: "LinkedIn" },
-                                { icon: Instagram, href: "https://www.instagram.com/lopes2tech/", label: "Instagram" },
-                                { icon: FileText, href: "https://medium.com/@paulolopesreizinho", label: "Medium" }
+                                { icon: Mail, href: "mailto:paulo@lopes2tech.ch", label: "Send us an email" },
+                                { icon: Linkedin, href: "https://www.linkedin.com/company/lopes2tech/", label: "Visit our LinkedIn profile" },
+                                { icon: Instagram, href: "https://www.instagram.com/lopes2tech/", label: "Visit our Instagram profile" },
+                                { icon: FileText, href: "https://medium.com/@paulolopesreizinho", label: "Read our Medium articles" }
                             ].map((social, idx) => (
                                 <a
                                     key={idx}

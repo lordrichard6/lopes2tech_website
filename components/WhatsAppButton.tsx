@@ -1,9 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { WHATSAPP_URL, CONTACT_EMAIL } from "@/lib/constants";
-
-const INSTAGRAM_URL = "https://www.instagram.com/paulo_reizinho/";
+import { WHATSAPP_URL, CONTACT_EMAIL, INSTAGRAM_URL } from "@/lib/constants";
 
 interface FloatingButtonProps {
     href: string;

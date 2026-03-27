@@ -72,7 +72,7 @@ export default function CTA() {
                         <ArrowRight className="w-5 h-5 relative z-10 transition-transform duration-300 group-hover:translate-x-1" />
 
                         {/* Shine Effect */}
-                        <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-500 ease-in-out z-0" />
+                        <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-500 ease-in-out z-0 motion-reduce:hidden" />
                     </Link>
                 </motion.div>
             </div>
