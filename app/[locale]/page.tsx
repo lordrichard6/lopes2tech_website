@@ -6,6 +6,7 @@ import FeaturedProjects from "@/components/FeaturedProjects";
 import Services from "@/components/Services";
 import Portfolio from "@/components/Portfolio";
 import Process from "@/components/Process";
+import MultiWaveTransition from "@/components/MultiWaveTransition";
 import CTA from "@/components/CTA";
 import Testimonials from "@/components/Testimonials";
 import Footer from "@/components/Footer";
@@ -44,6 +45,7 @@ export default function Home() {
         <Portfolio />
       </ErrorBoundary>
       <Process />
+      <MultiWaveTransition />
       <Testimonials />
       <CTA />
       <Footer />
