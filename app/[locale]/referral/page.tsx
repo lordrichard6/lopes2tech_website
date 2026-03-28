@@ -107,17 +107,6 @@ const rewardCategories: RewardCategory[] = [
     ],
   },
   {
-    title: "Retainer Packages (Monthly)",
-    type: "recurring",
-    color: "indigo",
-    icon: Repeat,
-    rows: [
-      { service: "Lite Retainer (6h/mo)", price: "CHF 630/mo", reward: "CHF 95/mo", note: "× 6 months = CHF 567" },
-      { service: "Pro Retainer (12h/mo)", price: "CHF 1,200/mo", reward: "CHF 180/mo", note: "× 6 months = CHF 1,080" },
-      { service: "Enterprise Retainer (20h/mo)", price: "CHF 1,900/mo", reward: "CHF 285/mo", note: "× 6 months = CHF 1,710" },
-    ],
-  },
-  {
     title: "AI & Automation Setup",
     type: "one-time",
     color: "emerald",
