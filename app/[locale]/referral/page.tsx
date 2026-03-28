@@ -136,8 +136,9 @@ const perks = [
   "No referral limit — refer 10 clients, earn 10 times",
   "No expiry on your referrals",
   "Paid via bank transfer (IBAN) or Twint",
-  "You don't need to be a client yourself",
+  "You don't need to be a client yourself to refer",
   "We handle all the sales — you just make the intro",
+  "Refer someone AND hire us? You get 20% off one service",
 ];
 
 export default function ReferralPage() {
@@ -237,6 +238,34 @@ export default function ReferralPage() {
                 </motion.div>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* Dual benefit banner */}
+        <section className="py-12 px-6">
+          <div className="max-w-5xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="relative overflow-hidden rounded-3xl border border-amber-500/30 bg-gradient-to-r from-amber-500/10 via-orange-500/5 to-amber-500/10 p-8 md:p-10"
+            >
+              <div className="absolute top-0 right-0 w-64 h-64 bg-amber-500/10 rounded-full blur-[80px] pointer-events-none" />
+              <div className="relative z-10 flex flex-col md:flex-row items-start md:items-center gap-6">
+                <div className="w-14 h-14 flex-shrink-0 rounded-2xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center">
+                  <Gift className="w-7 h-7 text-amber-400" />
+                </div>
+                <div className="flex-1">
+                  <p className="text-amber-400 font-bold uppercase tracking-widest text-xs mb-2">Bonus perk for referrers</p>
+                  <h3 className="text-xl md:text-2xl font-extrabold text-white mb-2">
+                    Refer someone <span className="text-amber-400">&amp;</span> become a client yourself? Get <span className="text-amber-400">20% off</span> one service.
+                  </h3>
+                  <p className="text-slate-400 text-sm leading-relaxed max-w-2xl">
+                    If you refer a client to us and later decide to hire us yourself, you unlock a <strong className="text-white">20% discount on any single service</strong> — website, ads, automation, branding, whatever you need. No expiry. Just let us know you referred someone and the discount is yours.
+                  </p>
+                </div>
+              </div>
+            </motion.div>
           </div>
         </section>
 
