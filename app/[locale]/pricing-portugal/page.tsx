@@ -53,7 +53,7 @@ const colorMap = {
 const comparisonRows = [
   { service: "Landing Page (1 página)",     market: "€500+",    ours: "€249",    savings: "~50%", anchor: "cat-websites"  },
   { service: "Website Business Pro",        market: "€3.500+",  ours: "€1.390",  savings: "~60%", anchor: "cat-websites"  },
-  { service: "Kit de Marca Completo",       market: "€2.000+",  ours: "€476",    savings: "~76%", anchor: "cat-branding"  },
+  { service: "Kit de Marca Completo",       market: "€2.000+",  ours: "€390",    savings: "~80%", anchor: "cat-branding"  },
   { service: "Gestão Google Ads",           market: "€350+/mês", ours: "€279/mês", savings: "~20%", anchor: "cat-marketing" },
   { service: "Fluxo de Trabalho IA — Básico", market: "€700+",  ours: "€420–840", savings: "~40%", anchor: "cat-ai"        },
 ];
@@ -115,7 +115,7 @@ const categories: PricingCategory[] = [
         service: "Apenas Logótipo",
         // Market: DEMARCA Design €200–600 (simples), €600–1,500 (médio);
         // Fixando avg €173 (freelancer) – agency rate: €500+
-        price: "€209", marketAvg: "€500+", savings: "~58%",
+        price: "€210", marketAvg: "€500+", savings: "~58%",
         pitch: "Um logótipo profissional em 3 variações. Ideal para novos negócios ou rebranding que apenas precisam do símbolo — limpo, escalável e entregue rapidamente.",
         bullets: ["3 variações de logótipo (claro, escuro, ícone)", "Ficheiros vetoriais incluídos", "Pronto para web + impressão"],
         link: "/contact",
@@ -124,7 +124,7 @@ const categories: PricingCategory[] = [
         service: "Kit de Marca Completo",
         // Market: DEMARCA intermediário €1,500–3,000; Zaask SME avg ~€2,000;
         // Full identity (logo + palette + typography + guidelines + business cards + social kit)
-        price: "€476", marketAvg: "€2.000+", savings: "~76%",
+        price: "€390", marketAvg: "€2.000+", savings: "~80%",
         pitch: "Tudo o que um negócio precisa para parecer profissional em todo o lado. Logótipo, cores, fontes, cartões de visita e kit para redes sociais — tudo num pacote.",
         bullets: ["Logótipo (3 variações)", "Paleta de cores + tipografia", "Documento de diretrizes de marca", "Design de cartões de visita", "Kit de redes sociais (imagens de perfil + capa)"],
         link: "/contact",
@@ -156,9 +156,9 @@ const categories: PricingCategory[] = [
       {
         service: "Pacote Meta + Google",
         // Market: combined Meta + Google agency fee ~€500–700/mo
-        price: "€476/mês", marketAvg: "€550+/mês", savings: "~13%",
-        pitch: "Gerencie ambos os canais com uma estratégia cross-channel unificada. Poupe €52/mês vs. comprar separadamente.",
-        bullets: ["Tudo dos dois planos", "Estratégia cross-channel", "Relatório mensal unificado", "Poupe €52/mês vs. separados"],
+        price: "€449/mês", marketAvg: "€550+/mês", savings: "~18%",
+        pitch: "Gerencie ambos os canais com uma estratégia cross-channel unificada. Poupe €79/mês vs. comprar separadamente.",
+        bullets: ["Tudo dos dois planos", "Estratégia cross-channel", "Relatório mensal unificado", "Poupe €79/mês vs. separados"],
         link: "/services/social-media-marketing",
         popular: true,
       },
@@ -167,7 +167,7 @@ const categories: PricingCategory[] = [
         // Market: Zaask avg €250/mo; Bárbara Bação BOOST €350/mo (2 posts/week + stories + 1 reel/mo)
         // Our 8 posts/mo (1 platform) is below her offer in volume but includes AI content
         // Honest: we're at market level for established quality agencies
-        price: "€343/mês", marketAvg: "€350+/mês", savings: "~2%",
+        price: "€199/mês", marketAvg: "€350+/mês", savings: "~43%",
         pitch: "Mantenha visibilidade consistente com 8 publicações por mês na sua plataforma principal.",
         bullets: ["8 publicações/mês (1 plataforma)", "Criação de conteúdo + agendamento", "Instagram, Facebook ou LinkedIn"],
         link: "/services/social-media-marketing",
@@ -176,7 +176,7 @@ const categories: PricingCategory[] = [
         service: "Social Media Crescimento",
         // Market: Bárbara Bação FLOW €400/mo (3 posts/week + 5 stories/week + 3 reels/mo)
         // Our 12 posts/mo (2 platforms) + stories + engagement — comparable scope
-        price: "€483/mês", marketAvg: "€400+/mês", savings: "~0%",
+        price: "€279/mês", marketAvg: "€400+/mês", savings: "~30%",
         pitch: "Cresça em duas plataformas com stories e gestão ativa de engagement.",
         bullets: ["12 publicações/mês (2 plataformas)", "Stories + gestão de engagement", "Check-in mensal de estratégia"],
         link: "/services/social-media-marketing",
@@ -186,7 +186,7 @@ const categories: PricingCategory[] = [
         // Market: Bárbara Bação MAGNET €500/mo (5 posts/week + reels + stories);
         // Our 16 posts/mo (3 platforms) + reels + monthly strategy call — comparable but higher price
         // Agência Duna Super €300/mo for 7 posts/week (but lower quality offering)
-        price: "€693/mês", marketAvg: "€500+/mês", savings: "~0%",
+        price: "€449/mês", marketAvg: "€500+/mês", savings: "~10%",
         pitch: "Máquina de conteúdo completa — 3 plataformas, reels e chamadas mensais de estratégia para marcas ambiciosas.",
         bullets: ["16 publicações/mês (3 plataformas)", "Reels + stories", "Chamada mensal de estratégia"],
         link: "/services/social-media-marketing",
@@ -199,7 +199,7 @@ const categories: PricingCategory[] = [
       {
         service: "Agente de Suporte ao Cliente com IA",
         // No established PT market pricing — using European lower-end benchmarks
-        price: "€1.750–6.300", marketAvg: "€4.000–12.000", savings: "~55%",
+        price: "€1.750–6.000", marketAvg: "€4.000–12.000", savings: "~55%",
         pitch: "Um chatbot inteligente que trata das consultas dos clientes 24/7 no seu website, WhatsApp ou app — treinado no seu negócio.",
         bullets: ["Construído com base no seu conhecimento", "Integração WhatsApp + widget web", "Escalada para humano quando necessário", "+ plano mensal de manutenção obrigatório"],
         link: "/services/ai-integration",
@@ -207,14 +207,14 @@ const categories: PricingCategory[] = [
       },
       {
         service: "Agente de Vendas e Outreach com IA",
-        price: "€1.750–4.900", marketAvg: "€3.500–10.000", savings: "~55%",
+        price: "€1.750–5.000", marketAvg: "€3.500–10.000", savings: "~55%",
         pitch: "Pipeline automatizado de prospeção e outreach — desde pesquisa no LinkedIn até sequências de email personalizadas.",
         bullets: ["Prospeção + enriquecimento de leads", "Sequências de email personalizadas por IA", "Integração com CRM", "+ plano mensal de manutenção obrigatório"],
         link: "/services/ai-integration",
       },
       {
         service: "Agente de Voz com IA",
-        price: "€2.800–7.000", marketAvg: "€6.000–15.000", savings: "~55%",
+        price: "€2.500–7.000", marketAvg: "€6.000–15.000", savings: "~55%",
         pitch: "Um agente telefónico com IA que atende chamadas, qualifica leads e marca reuniões — em qualquer idioma.",
         bullets: ["Chamadas inbound + outbound", "Qualificação de leads + marcação de reuniões", "Integração Twilio / VAPI", "+ plano mensal de manutenção obrigatório"],
         link: "/services/ai-integration",
@@ -250,7 +250,7 @@ const categories: PricingCategory[] = [
       {
         service: "Otimização de Velocidade",
         // PT market: typically bundled; standalone ~€150–300
-        price: "€133", marketAvg: "€200+", savings: "~34%",
+        price: "€89", marketAvg: "€200+", savings: "~55%",
         pitch: "Websites mais rápidos têm melhor posicionamento e convertem melhor. Extraímos cada milissegundo do seu site existente.",
         bullets: ["Cache + compressão de imagens", "Melhoria dos Core Web Vitals", "Relatório de desempenho antes/depois"],
         link: "/services/seo-development",
@@ -259,7 +259,7 @@ const categories: PricingCategory[] = [
       {
         service: "Boost Google Business",
         // PT market: small agencies charge €80–200 for GBP setup + optimization
-        price: "€56", marketAvg: "€100+", savings: "~44%",
+        price: "€49", marketAvg: "€100+", savings: "~51%",
         pitch: "Seja encontrado no Google Maps e na pesquisa local com um Perfil Google Business totalmente otimizado.",
         bullets: ["Configuração ou otimização do GBP", "3 publicações publicadas", "Otimização de categoria + palavras-chave"],
         link: "/services/seo-development",
@@ -267,7 +267,7 @@ const categories: PricingCategory[] = [
       {
         service: "Avaliação de Automação",
         // PT market: consulting session ~€150–300
-        price: "€112", marketAvg: "€200+", savings: "~44%",
+        price: "€99", marketAvg: "€200+", savings: "~50%",
         pitch: "Um PDF de 1 página identificando 3–5 processos manuais no seu negócio que poderiam ser automatizados com IA.",
         bullets: ["Sessão de mapeamento de processos", "Relatório de oportunidades de automação", "Recomendações de ferramentas incluídas"],
         link: "/services/business-automation",
@@ -425,7 +425,7 @@ export default function PricingPortugalPage() {
         <section className="py-12 px-6">
           <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { icon: TrendingDown, value: "até 76%", label: "Poupança em websites e branding vs. agências PT", color: "text-cyan-400"    },
+              { icon: TrendingDown, value: "até 80%", label: "Poupança em websites e branding vs. agências PT", color: "text-cyan-400"    },
               { icon: Clock,        value: "4–7",      label: "Dias de entrega típica — não meses",             color: "text-purple-400"  },
               { icon: BadgeCheck,   value: "0",        label: "Taxas ocultas ou custos surpresa",               color: "text-emerald-400" },
             ].map((stat, i) => (
