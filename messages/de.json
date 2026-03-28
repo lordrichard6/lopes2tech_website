@@ -1583,6 +1583,40 @@
       "a6": "Wir tracken Keyword-Rankings, organischen Traffic, Core Web Vitals-Scores, Klickraten und Conversion-Events in Google Search Console und GA4. Sie erhalten einen monatlichen Performance-Bericht mit klaren Kennzahlen und nächsten Schritten."
     }
   },
+  "AICare": {
+    "label": "Laufender Support",
+    "title": "Monatliche Wartungspläne",
+    "subtitle": "Jede KI oder Automatisierung, die wir entwickeln, erfordert Wartung, da sich Plattformen weiterentwickeln, APIs sich ändern und Ihr Unternehmen wächst. Ein Wartungsplan hält alles am Laufen, ohne dass Sie einen Finger rühren müssen.",
+    "note": "Wartungsplan für alle KI-Projekte erforderlich. Auswahl bei Vertragsunterzeichnung.",
+    "overage": "Überschreitung:",
+    "perMonth": "/Mo.",
+    "plans": [
+      {
+        "name": "Lite",
+        "price": "CHF 249",
+        "hours": "1 Std. Support / Monat",
+        "response": "≤ 1 Werktag",
+        "overage": "CHF 120/h",
+        "features": ["Fehlerbehebung & Monitoring", "Plattform-Updates", "Prioritäts-E-Mail-Support", "Monatlicher Statuscheck"]
+      },
+      {
+        "name": "Pro",
+        "price": "CHF 399",
+        "hours": "3 Std. Support / Monat",
+        "response": "≤ 8 Werktag-Stunden",
+        "overage": "CHF 110/h",
+        "features": ["Alles aus Lite", "Monatlicher Performance-Bericht", "Kleinere Funktionsverbesserungen", "Proaktive Empfehlungen"]
+      },
+      {
+        "name": "Scale",
+        "price": "CHF 799",
+        "hours": "8 Std. Support / Monat",
+        "response": "≤ 4 Werktag-Stunden",
+        "overage": "CHF 100/h",
+        "features": ["Alles aus Pro", "A/B-Tests & Optimierung", "Vierteljährlicher Roadmap-Call", "Schnellstes SLA"]
+      }
+    ]
+  },
   "AutomationPage": {
     "badge": "Intelligente Automatisierung",
     "title": "Business-Automatisierung",

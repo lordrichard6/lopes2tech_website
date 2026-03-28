@@ -1681,6 +1681,40 @@
       "a6": "Monitoriamo il posizionamento delle parole chiave, il traffico organico, i punteggi Core Web Vitals, i tassi di clic e gli eventi di conversione in Google Search Console e GA4. Ricevete un report mensile sulle performance con metriche chiare e prossimi passi."
     }
   },
+  "AICare": {
+    "label": "Supporto continuativo",
+    "title": "Piani di manutenzione mensili",
+    "subtitle": "Ogni IA o automazione che sviluppiamo richiede manutenzione man mano che le piattaforme evolvono, le API cambiano e la vostra azienda cresce. Un piano di manutenzione mantiene tutto funzionante senza che dobbiate muovere un dito.",
+    "note": "Piano di manutenzione obbligatorio per tutti i progetti AI. Da scegliere alla firma del contratto.",
+    "overage": "Eccedenza:",
+    "perMonth": "/mese",
+    "plans": [
+      {
+        "name": "Lite",
+        "price": "CHF 249",
+        "hours": "1h di supporto / mese",
+        "response": "≤ 1 giorno lavorativo",
+        "overage": "CHF 120/h",
+        "features": ["Correzione bug e monitoraggio", "Aggiornamenti di piattaforma", "Supporto email prioritario", "Verifica mensile dello stato"]
+      },
+      {
+        "name": "Pro",
+        "price": "CHF 399",
+        "hours": "3h di supporto / mese",
+        "response": "≤ 8 ore lavorative",
+        "overage": "CHF 110/h",
+        "features": ["Tutto incluso in Lite", "Report mensile sulle performance", "Miglioramenti minori alle funzionalità", "Raccomandazioni proattive"]
+      },
+      {
+        "name": "Scale",
+        "price": "CHF 799",
+        "hours": "8h di supporto / mese",
+        "response": "≤ 4 ore lavorative",
+        "overage": "CHF 100/h",
+        "features": ["Tutto incluso in Pro", "Test A/B e ottimizzazione", "Chiamata trimestrale di roadmap", "SLA di risposta più rapido"]
+      }
+    ]
+  },
   "AutomationPage": {
     "badge": "Automazione Intelligente",
     "title": "Automazione Aziendale",

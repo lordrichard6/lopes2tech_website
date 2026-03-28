@@ -1759,6 +1759,40 @@
       "a6": "Nous suivons les classements des mots-clés, le trafic organique, les scores Core Web Vitals, les taux de clics et les événements de conversion dans Google Search Console et GA4. Vous recevez un rapport de performance mensuel avec des métriques claires et les prochaines étapes."
     }
   },
+  "AICare": {
+    "label": "Support continu",
+    "title": "Plans de maintenance mensuels",
+    "subtitle": "Chaque IA ou automatisation que nous développons nécessite une maintenance au fur et à mesure que les plateformes évoluent, que les API changent et que votre entreprise se développe. Un plan de maintenance garde tout en ordre sans que vous ayez à lever le petit doigt.",
+    "note": "Plan de maintenance obligatoire pour tous les projets IA. À choisir lors de la signature du contrat.",
+    "overage": "Dépassement :",
+    "perMonth": "/mois",
+    "plans": [
+      {
+        "name": "Lite",
+        "price": "CHF 249",
+        "hours": "1h de support / mois",
+        "response": "≤ 1 jour ouvrable",
+        "overage": "CHF 120/h",
+        "features": ["Corrections de bugs et surveillance", "Mises à jour de plateforme", "Support email prioritaire", "Bilan mensuel"]
+      },
+      {
+        "name": "Pro",
+        "price": "CHF 399",
+        "hours": "3h de support / mois",
+        "response": "≤ 8 heures ouvrables",
+        "overage": "CHF 110/h",
+        "features": ["Tout ce qui est inclus dans Lite", "Rapport mensuel de performance", "Améliorations mineures de fonctionnalités", "Recommandations proactives"]
+      },
+      {
+        "name": "Scale",
+        "price": "CHF 799",
+        "hours": "8h de support / mois",
+        "response": "≤ 4 heures ouvrables",
+        "overage": "CHF 100/h",
+        "features": ["Tout ce qui est inclus dans Pro", "Tests A/B et optimisation", "Appel trimestriel de feuille de route", "SLA de réponse le plus rapide"]
+      }
+    ]
+  },
   "AutomationPage": {
     "badge": "Automatisation Intelligente",
     "title": "Automatisation d'Entreprise",

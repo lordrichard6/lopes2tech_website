@@ -1583,6 +1583,40 @@
       "a6": "Rastreamos rankings de keywords, tráfego orgânico, pontuações de Core Web Vitals, taxas de clique e eventos de conversão no Google Search Console e GA4. Recebe um relatório de desempenho mensal com métricas claras e próximos passos."
     }
   },
+  "AICare": {
+    "label": "Suporte contínuo",
+    "title": "Planos de Manutenção Mensal",
+    "subtitle": "Toda a IA ou automação que construímos requer manutenção à medida que as plataformas evoluem, as APIs mudam e o seu negócio cresce. Um plano de manutenção mantém tudo a funcionar sem que tenha de mover um dedo.",
+    "note": "Plano de manutenção obrigatório para todos os projetos de IA. A escolha é feita no momento da assinatura do contrato.",
+    "overage": "Excedente:",
+    "perMonth": "/mês",
+    "plans": [
+      {
+        "name": "Lite",
+        "price": "CHF 249",
+        "hours": "1h de suporte / mês",
+        "response": "≤ 1 dia útil",
+        "overage": "CHF 120/h",
+        "features": ["Correção de erros e monitorização", "Atualizações de plataforma", "Suporte prioritário por email", "Verificação mensal de estado"]
+      },
+      {
+        "name": "Pro",
+        "price": "CHF 399",
+        "hours": "3h de suporte / mês",
+        "response": "≤ 8 horas úteis",
+        "overage": "CHF 110/h",
+        "features": ["Tudo incluído no Lite", "Relatório mensal de desempenho", "Melhorias menores de funcionalidades", "Recomendações proativas"]
+      },
+      {
+        "name": "Scale",
+        "price": "CHF 799",
+        "hours": "8h de suporte / mês",
+        "response": "≤ 4 horas úteis",
+        "overage": "CHF 100/h",
+        "features": ["Tudo incluído no Pro", "Testes A/B e otimização", "Chamada trimestral de roadmap", "SLA de resposta mais rápida"]
+      }
+    ]
+  },
   "AutomationPage": {
     "badge": "Automação Inteligente",
     "title": "Automação de Negócios",

@@ -1642,6 +1642,40 @@
       "a6": "Yes! Every package includes full documentation and a training session so your team can monitor, adjust, and extend the workflows themselves. We also offer 30–60 day post-launch support to catch any edge cases."
     }
   },
+  "AICare": {
+    "label": "Ongoing support",
+    "title": "Monthly Care Plans",
+    "subtitle": "Every AI or automation we build requires maintenance as platforms evolve, APIs change, and your business grows. A care plan keeps everything running without you lifting a finger.",
+    "note": "Care plan required for all AI projects. Choose at contract signing.",
+    "overage": "Overage:",
+    "perMonth": "/mo",
+    "plans": [
+      {
+        "name": "Lite",
+        "price": "CHF 249",
+        "hours": "1h support / month",
+        "response": "≤ 1 business day",
+        "overage": "CHF 120/h",
+        "features": ["Bug fixes & monitoring", "Platform updates", "Priority email support", "Monthly status check"]
+      },
+      {
+        "name": "Pro",
+        "price": "CHF 399",
+        "hours": "3h support / month",
+        "response": "≤ 8 business hours",
+        "overage": "CHF 110/h",
+        "features": ["Everything in Lite", "Monthly performance report", "Minor feature improvements", "Proactive recommendations"]
+      },
+      {
+        "name": "Scale",
+        "price": "CHF 799",
+        "hours": "8h support / month",
+        "response": "≤ 4 business hours",
+        "overage": "CHF 100/h",
+        "features": ["Everything in Pro", "A/B testing & optimisation", "Quarterly roadmap call", "Fastest response SLA"]
+      }
+    ]
+  },
   "AIPage": {
     "badge": "AI-Powered Solutions",
     "title": "AI Integration",

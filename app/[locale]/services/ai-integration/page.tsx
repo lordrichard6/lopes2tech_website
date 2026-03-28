@@ -11,6 +11,7 @@ import { aiIntegrationPackages } from "@/data/packages-data";
 import ServiceFAQ from "@/components/ServiceFAQ";
 import ServiceBreadcrumb from "@/components/ServiceBreadcrumb";
 import RelatedServices from "@/components/RelatedServices";
+import AICareSection from "@/components/AICareSection";
 
 const packageConfig = aiIntegrationPackages;
 
@@ -170,6 +171,8 @@ export default function AIIntegrationPage() {
                             ))}
                         </div>
                     </motion.div>
+
+                    <AICareSection />
 
                     <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5 }}
                         className="mt-20 text-center p-8 bg-gradient-to-br from-cyan-500/10 to-purple-500/10 border border-white/10 rounded-3xl backdrop-blur-sm"
