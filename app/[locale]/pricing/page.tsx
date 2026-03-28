@@ -8,6 +8,7 @@ import {
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ServiceFAQ from "@/components/ServiceFAQ";
 import { WHATSAPP_URL } from "@/lib/constants";
 import { useTranslations } from "next-intl";
 
@@ -634,6 +635,19 @@ export default function PricingPage() {
             </div>
           </div>
         </section>
+
+        {/* ── FAQ ───────────────────────────────────────────────────────────── */}
+        {(() => {
+          const faqItems = t.raw("faq.items") as Array<{ q: string; a: string }>;
+          return (
+            <ServiceFAQ
+              title={t("faq.title")}
+              subtitle={t("faq.subtitle")}
+              pageUrl="/pricing"
+              items={faqItems.map(item => ({ question: item.q, answer: item.a }))}
+            />
+          );
+        })()}
 
         {/* ── CTA ───────────────────────────────────────────────────────────── */}
         <section className="py-24 px-6 text-center">

@@ -2308,6 +2308,53 @@
       "title": "Get a Quote in 24 Hours",
       "description": "Tell us what you need and we'll send a precise quote — no vague estimates, no surprise fees.",
       "button": "Message Us on WhatsApp"
+    },
+    "faq": {
+      "label": "Common questions",
+      "title": "Pricing FAQ",
+      "subtitle": "Everything you need to know before making a decision.",
+      "items": [
+        {
+          "q": "How can you offer prices 40–60% below Zurich agencies?",
+          "a": "As a solo technical founder powered by AI tools, there's no agency overhead — no account managers, no large offices, no sales teams. What you pay for is pure execution: design, code, and strategy. AI handles repetitive production tasks, which cuts delivery time without cutting quality."
+        },
+        {
+          "q": "Are there any hidden fees?",
+          "a": "None. Every price on this page is the full price. The only additions are: ad spend (billed directly by Meta/Google to you), AI platform costs for enterprise AI projects (also billed directly to you), and optional payment plan markups if you choose instalments."
+        },
+        {
+          "q": "Do I need to sign a long-term contract?",
+          "a": "For one-time projects (websites, branding), there's no ongoing commitment — you pay, we deliver. For monthly services (ads, social media, care plans), we ask for a 3-month minimum commitment, then it's month-to-month. Cancel anytime with 30 days notice."
+        },
+        {
+          "q": "How do you maintain quality at these prices?",
+          "a": "Speed and AI. Modern AI tools handle repetitive tasks like copywriting, image optimisation, and code boilerplate — dramatically cutting production time without affecting quality. You still get custom design, real strategy, and direct access to the founder throughout every project."
+        },
+        {
+          "q": "Can I combine services for a discount?",
+          "a": "Yes. Bundling is already built into the pricing — the Meta + Google Bundle saves CHF 99/mo vs. buying each separately. For larger combinations (website + branding + care plan), reach out and we'll put together a custom quote tailored to your needs."
+        },
+        {
+          "q": "Do prices include VAT?",
+          "a": "Lopes2Tech currently operates below the Swiss VAT registration threshold, so no VAT is charged. All prices shown are final — what you see is what you pay."
+        },
+        {
+          "q": "What payment methods do you accept?",
+          "a": "Bank transfer (IBAN), Stripe (credit/debit card), and Twint for Swiss clients. For instalment plans, billing is automated monthly via Stripe. Invoices are issued in CHF."
+        },
+        {
+          "q": "What if I am not happy with the result?",
+          "a": "Every project includes revision rounds — typically 2–3 depending on the package. We don't sign off until you're satisfied. My reputation is built on referrals, so your satisfaction is the business. If something is genuinely off-target, we fix it."
+        },
+        {
+          "q": "Is there a cheaper way to get started?",
+          "a": "Yes — the Quick Wins section. A Website Audit for CHF 99 or a Google Business Boost for CHF 80 are perfect low-risk entry points. They deliver immediate value and let you experience how we work before committing to a larger project."
+        },
+        {
+          "q": "How accurate are the Zurich market averages shown?",
+          "a": "Every market comparison on this page was researched against publicly listed prices from 12+ Swiss agencies including resign.ch, webtree.ch, peakline-agency.ch, cynatic.ch, digitalcreators.ch and others — cross-referenced in March 2026. These are documented figures, not estimates."
+        }
+      ]
     }
   },
   "Referral": {

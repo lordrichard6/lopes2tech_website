@@ -2308,6 +2308,53 @@
       "title": "Obtenha um Orçamento em 24 Horas",
       "description": "Diga-nos o que precisa e enviaremos um orçamento preciso — sem estimativas vagas, sem taxas surpresa.",
       "button": "Contacte-nos pelo WhatsApp"
+    },
+    "faq": {
+      "label": "Perguntas frequentes",
+      "title": "FAQ de Preços",
+      "subtitle": "Tudo o que precisa de saber antes de tomar uma decisão.",
+      "items": [
+        {
+          "q": "Como pode oferecer preços 40–60% abaixo das agências de Zurique?",
+          "a": "Como fundador técnico solo com ferramentas de IA, não há gastos gerais de agência — sem gestores de conta, sem grandes escritórios, sem equipas de vendas. O que paga é execução pura: design, código e estratégia. A IA trata das tarefas de produção repetitivas, o que reduz o tempo de entrega sem comprometer a qualidade."
+        },
+        {
+          "q": "Existem taxas ocultas?",
+          "a": "Nenhuma. Cada preço nesta página é o preço final. As únicas adições são: despesas com anúncios (faturadas diretamente pela Meta/Google), custos de plataformas de IA para projetos de IA empresariais (também faturados diretamente) e eventuais acréscimos por planos de pagamento em prestações."
+        },
+        {
+          "q": "Preciso de assinar um contrato de longa duração?",
+          "a": "Para projetos pontuais (websites, branding), não há compromisso contínuo — paga, entregamos. Para serviços mensais (anúncios, redes sociais, planos de manutenção), pedimos um compromisso mínimo de 3 meses, depois é mês a mês. Cancelamento a qualquer momento com 30 dias de aviso."
+        },
+        {
+          "q": "Como mantém a qualidade a estes preços?",
+          "a": "Velocidade e IA. As ferramentas de IA modernas tratam de tarefas repetitivas como redação, otimização de imagens e código base — reduzindo drasticamente o tempo de produção sem afetar a qualidade. Continua a ter design personalizado, estratégia real e acesso direto ao fundador em cada projeto."
+        },
+        {
+          "q": "Posso combinar serviços para obter desconto?",
+          "a": "Sim. Os pacotes já estão integrados nos preços — o Bundle Meta + Google poupa CHF 99/mo em comparação com a compra separada. Para combinações maiores (website + branding + plano de manutenção), entre em contacto e elaboramos um orçamento personalizado."
+        },
+        {
+          "q": "Os preços incluem IVA?",
+          "a": "A Lopes2Tech opera atualmente abaixo do limiar de registo de IVA suíço, pelo que não é cobrado IVA. Todos os preços apresentados são finais — o que vê é o que paga."
+        },
+        {
+          "q": "Que métodos de pagamento aceitam?",
+          "a": "Transferência bancária (IBAN), Stripe (cartão de crédito/débito) e Twint para clientes suíços. Para planos de prestações, a faturação é automatizada mensalmente via Stripe. As faturas são emitidas em CHF."
+        },
+        {
+          "q": "E se não ficar satisfeito com o resultado?",
+          "a": "Cada projeto inclui rondas de revisão — tipicamente 2–3 dependendo do pacote. Não damos o trabalho por concluído até estar satisfeito. A minha reputação baseia-se em referências, por isso a sua satisfação é o negócio. Se algo estiver genuinamente fora do objetivo, corrigimos."
+        },
+        {
+          "q": "Existe uma forma mais económica de começar?",
+          "a": "Sim — a secção Quick Wins. Uma Auditoria de Website por CHF 99 ou um Google Business Boost por CHF 80 são pontos de entrada perfeitos com baixo risco. Entregam valor imediato e permitem experimentar como trabalhamos antes de se comprometer com um projeto maior."
+        },
+        {
+          "q": "Quão precisas são as médias de mercado de Zurique apresentadas?",
+          "a": "Cada comparação de mercado nesta página foi investigada com base em preços publicamente listados de mais de 12 agências suíças, incluindo resign.ch, webtree.ch, peakline-agency.ch, cynatic.ch, digitalcreators.ch e outras — cruzados em March 2026. São valores documentados, não estimativas."
+        }
+      ]
     }
   },
   "Referral": {

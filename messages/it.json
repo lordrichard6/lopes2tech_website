@@ -2308,6 +2308,53 @@
       "title": "Ricevi un Preventivo in 24 Ore",
       "description": "Dicci di cosa hai bisogno e ti invieremo un preventivo preciso — nessuna stima vaga, nessuna commissione a sorpresa.",
       "button": "Scrivici su WhatsApp"
+    },
+    "faq": {
+      "label": "Domande frequenti",
+      "title": "FAQ sui Prezzi",
+      "subtitle": "Tutto quello che deve sapere prima di prendere una decisione.",
+      "items": [
+        {
+          "q": "Come può offrire prezzi 40–60% inferiori alle agenzie di Zurigo?",
+          "a": "Come fondatore tecnico in proprio supportato da strumenti IA, non ci sono costi generali di agenzia — nessun account manager, nessun grande ufficio, nessun team di vendita. Quello che paga è pura esecuzione: design, codice e strategia. L'IA gestisce le attività di produzione ripetitive, riducendo i tempi di consegna senza compromettere la qualità."
+        },
+        {
+          "q": "Ci sono commissioni nascoste?",
+          "a": "Nessuna. Ogni prezzo su questa pagina è il prezzo finale. Le uniche aggiunte sono: spese pubblicitarie (fatturate direttamente da Meta/Google), costi delle piattaforme IA per progetti enterprise (anch'essi fatturati direttamente), e eventuali maggiorazioni per piani di pagamento rateizzato."
+        },
+        {
+          "q": "Devo firmare un contratto a lungo termine?",
+          "a": "Per i progetti una tantum (siti web, branding), non c'è impegno continuativo — paga, consegniamo. Per i servizi mensili (pubblicità, social media, piani di manutenzione), chiediamo un impegno minimo di 3 mesi, poi è mese per mese. Disdetta in qualsiasi momento con 30 giorni di preavviso."
+        },
+        {
+          "q": "Come mantiene la qualità a questi prezzi?",
+          "a": "Velocità e IA. Gli strumenti IA moderni gestiscono attività ripetitive come la redazione di testi, l'ottimizzazione delle immagini e il codice di base — riducendo drasticamente i tempi di produzione senza influire sulla qualità. Ottiene comunque design personalizzato, strategia reale e accesso diretto al fondatore durante ogni progetto."
+        },
+        {
+          "q": "Posso combinare servizi per ottenere uno sconto?",
+          "a": "Sì. I pacchetti sono già integrati nei prezzi — il Bundle Meta + Google fa risparmiare CHF 99/mo rispetto all'acquisto separato. Per combinazioni più ampie (sito web + branding + piano di manutenzione), ci contatti e prepareremo un preventivo personalizzato."
+        },
+        {
+          "q": "I prezzi includono l'IVA?",
+          "a": "Lopes2Tech opera attualmente al di sotto della soglia di registrazione IVA svizzera, quindi non viene addebitata alcuna IVA. Tutti i prezzi mostrati sono definitivi — quello che vede è quello che paga."
+        },
+        {
+          "q": "Quali metodi di pagamento accettate?",
+          "a": "Bonifico bancario (IBAN), Stripe (carta di credito/debito) e Twint per i clienti svizzeri. Per i piani rateizzati, la fatturazione è automatizzata mensilmente tramite Stripe. Le fatture sono emesse in CHF."
+        },
+        {
+          "q": "E se non sono soddisfatto del risultato?",
+          "a": "Ogni progetto include cicli di revisione — tipicamente 2–3 a seconda del pacchetto. Non chiudiamo il progetto finché non è soddisfatto. La mia reputazione si basa sui referral, quindi la sua soddisfazione è il nostro obiettivo. Se qualcosa è genuinamente fuori bersaglio, lo correggiamo."
+        },
+        {
+          "q": "Esiste un modo più economico per iniziare?",
+          "a": "Sì — la sezione Quick Wins. Un Audit del Sito Web per CHF 99 o un Google Business Boost per CHF 80 sono punti di ingresso perfetti a basso rischio. Forniscono valore immediato e Le permettono di sperimentare il nostro modo di lavorare prima di impegnarsi in un progetto più grande."
+        },
+        {
+          "q": "Quanto sono accurate le medie di mercato di Zurigo mostrate?",
+          "a": "Ogni confronto di mercato su questa pagina è stato ricercato confrontando i prezzi pubblicamente elencati di oltre 12 agenzie svizzere, tra cui resign.ch, webtree.ch, peakline-agency.ch, cynatic.ch, digitalcreators.ch e altre — verificati incrociando i dati nel March 2026. Sono cifre documentate, non stime."
+        }
+      ]
     }
   },
   "Referral": {

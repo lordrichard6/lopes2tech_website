@@ -2308,6 +2308,53 @@
       "title": "Obtenez un Devis en 24 Heures",
       "description": "Dites-nous ce dont vous avez besoin et nous vous enverrons un devis précis — pas d'estimations vagues, pas de frais surprises.",
       "button": "Écrivez-nous sur WhatsApp"
+    },
+    "faq": {
+      "label": "Questions fréquentes",
+      "title": "FAQ Tarifs",
+      "subtitle": "Tout ce que vous devez savoir avant de prendre une décision.",
+      "items": [
+        {
+          "q": "Comment pouvez-vous proposer des prix 40–60% inférieurs aux agences zurichoises ?",
+          "a": "En tant que fondateur technique solo assisté par des outils IA, il n'y a aucun surcoût d'agence — pas de chefs de compte, pas de grands bureaux, pas d'équipes commerciales. Ce que vous payez, c'est de l'exécution pure : design, code et stratégie. L'IA prend en charge les tâches de production répétitives, ce qui réduit les délais de livraison sans compromettre la qualité."
+        },
+        {
+          "q": "Y a-t-il des frais cachés ?",
+          "a": "Aucun. Chaque prix sur cette page est le prix total. Les seuls ajouts sont : les dépenses publicitaires (facturées directement par Meta/Google), les coûts des plateformes IA pour les projets IA enterprise (également facturés directement), et les éventuelles majorations pour paiement en plusieurs fois."
+        },
+        {
+          "q": "Dois-je signer un contrat à long terme ?",
+          "a": "Pour les projets ponctuels (sites web, branding), il n'y a aucun engagement continu — vous payez, nous livrons. Pour les services mensuels (publicités, réseaux sociaux, plans de maintenance), nous demandons un engagement minimum de 3 mois, puis c'est du mois au mois. Résiliation à tout moment avec 30 jours de préavis."
+        },
+        {
+          "q": "Comment maintenez-vous la qualité à ces prix ?",
+          "a": "Vitesse et IA. Les outils IA modernes gèrent les tâches répétitives comme la rédaction, l'optimisation des images et le code de base — réduisant considérablement le temps de production sans affecter la qualité. Vous bénéficiez toujours d'un design sur mesure, d'une vraie stratégie et d'un accès direct au fondateur tout au long de chaque projet."
+        },
+        {
+          "q": "Puis-je combiner des services pour obtenir une réduction ?",
+          "a": "Oui. Les offres groupées sont déjà intégrées dans la tarification — le Bundle Meta + Google économise CHF 99/mo par rapport à l'achat séparé. Pour des combinaisons plus importantes (site web + branding + plan de maintenance), contactez-nous et nous préparerons un devis personnalisé."
+        },
+        {
+          "q": "Les prix incluent-ils la TVA ?",
+          "a": "Lopes2Tech opère actuellement en dessous du seuil d'immatriculation à la TVA suisse, donc aucune TVA n'est facturée. Tous les prix affichés sont définitifs — ce que vous voyez est ce que vous payez."
+        },
+        {
+          "q": "Quels moyens de paiement acceptez-vous ?",
+          "a": "Virement bancaire (IBAN), Stripe (carte de crédit/débit) et Twint pour les clients suisses. Pour les plans de paiement échelonné, la facturation est automatisée mensuellement via Stripe. Les factures sont émises en CHF."
+        },
+        {
+          "q": "Et si je ne suis pas satisfait du résultat ?",
+          "a": "Chaque projet comprend des rounds de révision — généralement 2–3 selon le forfait. Nous ne validons pas tant que vous n'êtes pas satisfait. Ma réputation repose sur les recommandations, donc votre satisfaction est l'enjeu. Si quelque chose est vraiment hors cible, nous le corrigeons."
+        },
+        {
+          "q": "Existe-t-il un moyen moins coûteux de commencer ?",
+          "a": "Oui — la section Quick Wins. Un Audit de Site Web pour CHF 99 ou un Google Business Boost pour CHF 80 sont des points d'entrée parfaits à faible risque. Ils apportent une valeur immédiate et vous permettent d'expérimenter notre façon de travailler avant de vous engager dans un projet plus important."
+        },
+        {
+          "q": "Quelle est la précision des moyennes du marché zurichois affichées ?",
+          "a": "Chaque comparaison de marché sur cette page a été recherchée à partir des prix publiquement listés de plus de 12 agences suisses, dont resign.ch, webtree.ch, peakline-agency.ch, cynatic.ch, digitalcreators.ch et d'autres — croisés en March 2026. Ce sont des chiffres documentés, pas des estimations."
+        }
+      ]
     }
   },
   "Referral": {

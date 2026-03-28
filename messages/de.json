@@ -2308,6 +2308,53 @@
       "title": "Angebot in 24 Stunden erhalten",
       "description": "Sagen Sie uns, was Sie brauchen, und wir senden Ihnen ein genaues Angebot — keine vagen Schätzungen, keine Überraschungsgebühren.",
       "button": "Schreiben Sie uns auf WhatsApp"
+    },
+    "faq": {
+      "label": "Häufige Fragen",
+      "title": "Preise FAQ",
+      "subtitle": "Alles, was Sie wissen müssen, bevor Sie eine Entscheidung treffen.",
+      "items": [
+        {
+          "q": "Wie können Sie Preise 40–60% unter Zürcher Agenturen anbieten?",
+          "a": "Als technischer Solo-Gründer mit KI-Tools gibt es keinen Agentur-Overhead — keine Account-Manager, keine grossen Büros, keine Verkaufsteams. Sie bezahlen für reine Ausführung: Design, Code und Strategie. KI übernimmt repetitive Produktionsaufgaben, was die Lieferzeit verkürzt, ohne die Qualität zu beeinträchtigen."
+        },
+        {
+          "q": "Gibt es versteckte Gebühren?",
+          "a": "Keine. Jeder Preis auf dieser Seite ist der Gesamtpreis. Die einzigen Zusätze sind: Werbeausgaben (direkt von Meta/Google an Sie verrechnet), KI-Plattformkosten für Enterprise-KI-Projekte (ebenfalls direkt an Sie verrechnet) und optionale Aufpreise bei Ratenzahlung."
+        },
+        {
+          "q": "Muss ich einen langfristigen Vertrag unterzeichnen?",
+          "a": "Für einmalige Projekte (Websites, Branding) gibt es keine laufende Verpflichtung — Sie zahlen, wir liefern. Für monatliche Dienste (Werbung, Social Media, Pflegepläne) bitten wir um eine Mindestlaufzeit von 3 Monaten, danach monatlich kündbar. Kündigung jederzeit mit 30 Tagen Vorlauf möglich."
+        },
+        {
+          "q": "Wie wahren Sie die Qualität bei diesen Preisen?",
+          "a": "Geschwindigkeit und KI. Moderne KI-Tools übernehmen repetitive Aufgaben wie Texterstellung, Bildoptimierung und Code-Boilerplate — das reduziert die Produktionszeit dramatisch, ohne die Qualität zu beeinflussen. Sie erhalten weiterhin individuelles Design, echte Strategie und direkten Zugang zum Gründer während des gesamten Projekts."
+        },
+        {
+          "q": "Kann ich Dienste für einen Rabatt kombinieren?",
+          "a": "Ja. Bündelung ist bereits in der Preisgestaltung berücksichtigt — das Meta + Google Bundle spart CHF 99/mo gegenüber dem Einzelkauf. Für grössere Kombinationen (Website + Branding + Pflegeplan) kontaktieren Sie uns und wir erstellen ein massgeschneidertes Angebot."
+        },
+        {
+          "q": "Sind die Preise inklusive MWST?",
+          "a": "Lopes2Tech operiert derzeit unterhalb der Schweizer MWST-Registrierungsschwelle, daher wird keine MWST erhoben. Alle angezeigten Preise sind Endpreise — was Sie sehen, zahlen Sie."
+        },
+        {
+          "q": "Welche Zahlungsmethoden akzeptieren Sie?",
+          "a": "Banküberweisung (IBAN), Stripe (Kredit-/Debitkarte) und Twint für Schweizer Kunden. Bei Ratenplänen erfolgt die Abrechnung automatisch monatlich über Stripe. Rechnungen werden in CHF ausgestellt."
+        },
+        {
+          "q": "Was, wenn ich mit dem Ergebnis nicht zufrieden bin?",
+          "a": "Jedes Projekt beinhaltet Überarbeitungsrunden — in der Regel 2–3 je nach Paket. Wir geben das Projekt nicht frei, bis Sie zufrieden sind. Mein Ruf basiert auf Empfehlungen, daher ist Ihre Zufriedenheit das Geschäft. Wenn etwas wirklich nicht passt, beheben wir es."
+        },
+        {
+          "q": "Gibt es eine günstigere Möglichkeit, anzufangen?",
+          "a": "Ja — der Quick-Wins-Bereich. Ein Website-Audit für CHF 99 oder ein Google Business Boost für CHF 80 sind perfekte risikoarme Einstiegspunkte. Sie liefern sofortigen Mehrwert und ermöglichen es Ihnen, unsere Arbeitsweise kennenzulernen, bevor Sie sich für ein grösseres Projekt entscheiden."
+        },
+        {
+          "q": "Wie genau sind die angezeigten Zürcher Marktdurchschnitte?",
+          "a": "Jeder Marktvergleich auf dieser Seite wurde anhand öffentlich gelisteter Preise von mehr als 12 Schweizer Agenturen recherchiert, darunter resign.ch, webtree.ch, peakline-agency.ch, cynatic.ch, digitalcreators.ch und andere — Querverweise wurden im March 2026 vorgenommen. Dies sind dokumentierte Zahlen, keine Schätzungen."
+        }
+      ]
     }
   },
   "Referral": {
