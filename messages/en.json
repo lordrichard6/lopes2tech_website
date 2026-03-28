@@ -2208,5 +2208,149 @@
       "downloadNow": "Download your book now",
       "backToShop": "Back to the Shop"
     }
+  },
+  "Referral": {
+    "badge": "Referral Program",
+    "hero": {
+      "h1a": "Refer a client.",
+      "h1b": "Get paid.",
+      "subtitlePre": "Know someone who needs a website, paid ads, or automations? Make the intro and earn up to",
+      "highlight1": "10% per project",
+      "subtitleMid": "or",
+      "highlight2": "15% of their monthly retainer",
+      "subtitlePost": "for 6 months. No limits. No forms. Just a WhatsApp message.",
+      "cta": "Send a referral now"
+    },
+    "howItWorks": {
+      "label": "How it works",
+      "title": "3 steps. That's it.",
+      "steps": [
+        {
+          "title": "Know someone who needs a website or digital help?",
+          "description": "Think of a friend, colleague, or business owner who could benefit from a professional website, paid ads, or automation. That's your referral."
+        },
+        {
+          "title": "Send them our way",
+          "description": "Share our website or just send us a WhatsApp with their name and contact. We'll take it from there — no follow-up needed from you."
+        },
+        {
+          "title": "Get paid when they sign",
+          "description": "Once they sign a contract and pay the deposit, we transfer your reward. Simple, transparent, no paperwork."
+        }
+      ]
+    },
+    "dualBenefit": {
+      "label": "Bonus perk for referrers",
+      "title1": "Refer someone",
+      "title2": "become a client yourself? Get",
+      "title3": "20% off",
+      "title4": "one service.",
+      "descPre": "If you refer a client to us and later decide to hire us yourself, you unlock a",
+      "descHighlight": "20% discount on any single service",
+      "descPost": "— website, ads, automation, branding, whatever you need. No expiry. Just let us know you referred someone and the discount is yours."
+    },
+    "rewards": {
+      "label": "What you earn",
+      "title": "Your rewards, by service",
+      "subtitlePre": "One-time services pay",
+      "subtitleHighlight1": "10%",
+      "subtitleMid": "on deposit. Monthly services pay",
+      "subtitleHighlight2": "15% for 6 months",
+      "subtitlePost": "Click any service to see the pitch.",
+      "colService": "Service",
+      "colPrice": "Price",
+      "colReward": "Your Reward",
+      "badgeOneTime": "10% one-time",
+      "badgeRecurring": "15% × 6 months",
+      "viewService": "View full service page",
+      "footerNote": "Rewards are paid after the referred client completes their deposit or first monthly payment. Monthly rewards are transferred at the end of each month.",
+      "noteOnDeposit": "Paid on deposit",
+      "noteOnDelivery": "Paid on delivery",
+      "noteScales": "Scales with site size",
+      "categories": [
+        {
+          "title": "Website Packages",
+          "rows": [
+            { "service": "Starter Website", "pitch": "Perfect for new businesses, freelancers, or anyone who needs a clean online presence fast. Delivered in 4–5 days — no waiting weeks.", "bullets": ["One-page custom website", "AI-written copy included", "Booking widget + WhatsApp button", "Mobile responsive", "Delivered in 4–5 days"] },
+            { "service": "Professional Website", "pitch": "For established solopreneurs ready to upgrade. Multi-page, multi-language, with SEO baked in from day one.", "bullets": ["5-page website", "2 languages included", "1 automation included", "SEO foundations", "Delivered in 5–6 days"] },
+            { "service": "Business Pro Website", "pitch": "The full package for SMEs. Up to 10 service pages, 3 languages, lead capture system — everything to compete online seriously.", "bullets": ["5 core pages + up to 10 service pages", "3 languages included", "SEO + lead capture system", "Delivered in 6–7 days"] },
+            { "service": "Campaign Landing Page", "pitch": "A conversion-focused single page for ad campaigns, product launches, or lead magnets. Built to convert traffic into leads.", "bullets": ["Conversion-optimized design", "Integrated with ads tracking", "CTA + lead capture form", "Fast delivery"] }
+          ]
+        },
+        {
+          "title": "Branding",
+          "rows": [
+            { "service": "Logo Only", "pitch": "A professional logo in 3 variations. Great for new businesses or rebrands that just need the mark — clean, scalable, and delivered fast.", "bullets": ["3 logo variations (light, dark, icon)", "Vector files included", "Ready for web + print"] },
+            { "service": "Full Brand Kit", "pitch": "Everything a business needs to look professional everywhere. Logo, colors, fonts, business cards, and a social media kit — all in one package.", "bullets": ["Logo (3 variations)", "Color palette + typography", "Brand guidelines document", "Business cards design", "Social media kit (profile + cover images)"] }
+          ]
+        },
+        {
+          "title": "Setup & Quick Wins",
+          "rows": [
+            { "service": "Google Business Profile Setup", "pitch": "Local businesses live and die by their GBP. A fully optimized profile with photos, services, and 3 posts — boosts local visibility immediately.", "bullets": ["Full GBP setup or optimization", "Photos, services, categories set", "3 posts published", "Shows up better in Google Maps"] },
+            { "service": "Analytics & Tracking Setup (GA4)", "pitch": "Essential for any business running ads. Without tracking, you're flying blind. We set up GA4 + Meta Pixel so every click is measured.", "bullets": ["Google Analytics 4 setup", "Meta Pixel installation", "Conversion events configured", "Dashboard + reporting ready"] },
+            { "service": "Email Domain Setup", "pitch": "Professional email like paulo@yourbusiness.ch instead of Gmail. Sets up Google Workspace or Microsoft 365 — makes any business look credible.", "bullets": ["Professional email address setup", "Google Workspace or Microsoft 365", "Email signatures configured", "Mobile + desktop access"] },
+            { "service": "Website Audit", "pitch": "The easiest sell — CHF 99 for a 1-page report with 5 specific improvements. Perfect foot-in-the-door for clients who are hesitant to commit.", "bullets": ["1-page PDF report", "5 specific actionable improvements", "SEO + speed + UX assessed", "Delivered within 48h"] },
+            { "service": "Speed Optimization", "pitch": "A slow website loses customers and ranks lower on Google. One-time fix: caching, image compression, and performance boost.", "bullets": ["Image compression", "Caching setup", "Core Web Vitals improvement", "Better Google rankings"] },
+            { "service": "Google Business Boost", "pitch": "Fastest win for any local business. Quick GBP optimization + 3 posts published. Great entry-point service.", "bullets": ["Quick GBP optimization", "3 posts published", "Category + attributes updated"] },
+            { "service": "Automation Assessment", "pitch": "We analyze their workflow and deliver a PDF identifying 3–5 processes they could automate. Sells itself — and often leads to a full automation project.", "bullets": ["In-depth workflow review", "1-page PDF with 3–5 automation opportunities", "ROI estimate per automation", "Delivered within 48h"] }
+          ]
+        },
+        {
+          "title": "Website Add-Ons",
+          "rows": [
+            { "service": "Blog / CMS Setup", "pitch": "Gives the client a blog they can actually edit themselves — no developer needed after setup. Great for SEO and content marketing.", "bullets": ["Sanity or Notion-powered CMS", "Client can add/edit posts with no code", "SEO-ready blog structure"] },
+            { "service": "Extra Service Page", "pitch": "Each additional service page targets a new keyword and expands their Google presence. Low cost, high SEO value.", "bullets": ["SEO-optimized page", "Matches existing design", "Indexed and submitted to Google"] },
+            { "service": "Extra Language", "pitch": "Reach more customers in their native language. AI-assisted translation + proper hreflang tags so Google ranks each language correctly.", "bullets": ["AI-assisted translation", "hreflang tags setup", "Language switcher added", "Price scales with number of pages"] },
+            { "service": "Local SEO Boost", "pitch": "Structured data (schema), Search Console setup, sitemap submission — the technical SEO foundation most websites are missing.", "bullets": ["Schema markup added", "Google Search Console configured", "Sitemap submitted", "Bing Webmaster Tools setup"] },
+            { "service": "Social Proof Widget", "pitch": "Auto-updating Google Reviews feed embedded on the website. Nothing sells better than real client reviews visible right on the homepage.", "bullets": ["Google Reviews auto-synced", "Embedded widget on website", "Boosts trust and conversions"] },
+            { "service": "Newsletter Integration", "pitch": "Email list = owned audience. We set up the signup form + a welcome email automation so every subscriber gets followed up automatically.", "bullets": ["Brevo or Mailchimp connected", "Signup form embedded on site", "Welcome email automation active"] },
+            { "service": "Review Collection Automation", "pitch": "Most businesses have happy clients who never leave reviews. This sends 3 automated emails after a job is done asking for a Google review.", "bullets": ["3-email automated sequence", "Triggered after job completion", "Direct link to Google Review form", "More 5-star reviews on autopilot"] },
+            { "service": "Appointment Booking System", "pitch": "Replaces back-and-forth scheduling with a professional booking widget. Syncs with Google Calendar and sends reminders automatically.", "bullets": ["Cal.com or Calendly setup", "Google Calendar sync", "Automated reminders (email + SMS)", "Embedded on website"] },
+            { "service": "Lead Capture System", "pitch": "Turns website visitors into leads — automatically. Form submission triggers a CRM entry, an auto-reply email, and a team notification.", "bullets": ["Contact form → CRM pipeline", "Auto-reply email to lead", "Team notification (email or WhatsApp)", "Full lead tracking"] },
+            { "service": "AI FAQ Chatbot", "pitch": "A chatbot trained on the client's own content — answers FAQs, qualifies leads, and works 24/7 without any human involvement.", "bullets": ["Trained on client's content", "Handles FAQs automatically", "Lead qualification built-in", "Embedded on website", "+ API usage costs"] }
+          ]
+        },
+        {
+          "title": "Marketing & Ads (Monthly)",
+          "rows": [
+            { "service": "Meta Ads Management", "pitch": "Full Meta Ads management — Facebook + Instagram. We handle the strategy, creatives, targeting, retargeting, A/B tests, and monthly reporting. Ad spend is paid separately to Meta.", "bullets": ["Campaign setup + ongoing management", "Ad creative (copy + visuals)", "Audience targeting + retargeting", "A/B testing", "Monthly performance report"] },
+            { "service": "Google Ads Management", "pitch": "Capture high-intent buyers searching on Google. We run Search + Display campaigns with full keyword research, ad copy, and conversion tracking. Ad spend paid separately.", "bullets": ["Keyword research", "Search + Display campaigns", "Ad copy written and tested", "Conversion tracking setup", "Monthly analytics report"] },
+            { "service": "Meta + Google Bundle", "pitch": "Both channels managed together — Meta for awareness + retargeting, Google for intent-driven search. Unified strategy and reporting. Saves CHF 99/mo vs. buying separately.", "bullets": ["Everything in Meta + Google Ads plans", "Cross-channel strategy", "Unified monthly report", "Save CHF 99/mo vs. separate"] },
+            { "service": "Social Media Management – Starter", "pitch": "For businesses that need a consistent social presence but don't have time to post. 8 posts/month on 1 platform, fully handled.", "bullets": ["8 posts/month", "1 platform (Instagram, Facebook, or LinkedIn)", "Content creation + scheduling", "No client effort needed"] },
+            { "service": "Social Media Management – Growth", "pitch": "Scale across 2 platforms with stories and engagement management included. Builds community, not just posts.", "bullets": ["12 posts/month", "2 platforms", "Stories included", "Engagement management"] },
+            { "service": "Social Media Management – Pro", "pitch": "Full social media presence across 3 platforms with Reels and a monthly strategy call. For brands that want to dominate their niche online.", "bullets": ["16 posts/month", "3 platforms", "Reels included", "Monthly strategy call"] }
+          ]
+        },
+        {
+          "title": "AI & Automation Setup",
+          "rows": [
+            { "service": "AI Workflow – Light", "pitch": "Simple automation connecting their existing tools — forms, emails, CRM, Slack, WhatsApp. Built on n8n or Make. Saves hours of manual work every week.", "bullets": ["App-to-app automation", "Built on n8n or Make", "e.g. Form → CRM → Email → Notification", "Delivered in 1–2 weeks"] },
+            { "service": "AI Workflow – Full", "pitch": "Complex multi-step automations with AI decision-making. Think intelligent routing, content generation, scoring, and fully automated pipelines.", "bullets": ["Multi-step complex automation", "AI decision logic included", "API integrations", "Full documentation + handover"] },
+            { "service": "AI Customer Support Agent", "pitch": "A 24/7 AI agent that handles customer queries, bookings, and escalations — without a human. Huge ROI for businesses with repetitive support load.", "bullets": ["Handles FAQs, bookings, complaints", "Available 24/7", "Escalates to human when needed", "WhatsApp + website + email channels"] },
+            { "service": "AI Sales & Outreach Agent", "pitch": "Automated lead prospecting, personalized outreach, and follow-up sequences powered by AI. For businesses that want to scale outbound without hiring.", "bullets": ["Lead sourcing + enrichment", "Personalized outreach emails", "Automated follow-up sequences", "CRM integration"] },
+            { "service": "AI Voice Agent", "pitch": "An AI that answers phone calls, qualifies leads, and books appointments — sounds human, works around the clock. Game-changer for service businesses.", "bullets": ["Answers inbound calls", "Qualifies leads by voice", "Books appointments in real-time", "Per-minute cost billed to client"] },
+            { "service": "AI Knowledge-Base / RAG", "pitch": "AI trained on the client's own documents, manuals, and data. Answers complex internal or customer questions instantly — like a company expert available 24/7.", "bullets": ["Trained on client's own documents", "Answers complex queries instantly", "Internal staff tool or customer-facing", "Continuously updatable"] }
+          ]
+        }
+      ]
+    },
+    "perks": {
+      "label": "The fine print (it's not fine print)",
+      "title": "No catches. Seriously.",
+      "items": [
+        "No referral limit — refer 10 clients, earn 10 times",
+        "No expiry on your referrals",
+        "Paid via bank transfer (IBAN) or Twint",
+        "You don't need to be a client yourself to refer",
+        "We handle all the sales — you just make the intro",
+        "Refer someone AND hire us? You get 20% off one service"
+      ]
+    },
+    "finalCta": {
+      "title": "Ready to make your first referral?",
+      "description": "Just drop us a WhatsApp with the name and contact of who you're referring. We'll take it from there and keep you updated on every step.",
+      "button": "Send referral on WhatsApp"
+    }
   }
 }
