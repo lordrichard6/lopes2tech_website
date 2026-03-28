@@ -80,6 +80,7 @@ export default function Footer() {
                                 { href: "/insights", label: t('companyLinks.insights') },
                                 { href: "/faq", label: t('companyLinks.faq') },
                                 { href: "/contact", label: t('companyLinks.contact') },
+                                { href: "/referral", label: t('companyLinks.referral') },
                             ].map((link) => (
                                 <li key={link.href}>
                                     <Link href={link.href} className="text-white/60 text-sm hover:text-cyan-400 transition-colors">
