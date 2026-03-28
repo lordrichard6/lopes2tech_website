@@ -60,7 +60,7 @@
     },
     "fullBrandKit": {
       "name": "Volles Marken-Kit",
-      "priceDisplay": "CHF 549",
+      "priceDisplay": "CHF 680",
       "description": "Umfassendes Branding: Logo, Visitenkarten, Briefkopf und Social-Media-Vorlagen für einen einheitlichen Look.",
       "target": "Komplettes Identitätspaket",
       "features": {
@@ -144,7 +144,7 @@
     "socialMedia": {
       "starter": {
         "name": "Social Starter",
-        "price": 249,
+        "price": 490,
         "description": "Perfekt für kleine Unternehmen, die mit Social Media starten.",
         "features": {
           "0": "8 hochwertige Beiträge pro Monat",
@@ -157,7 +157,7 @@
       },
       "growth": {
         "name": "Social Growth",
-        "price": 399,
+        "price": 690,
         "description": "Für Unternehmen, die ihre Social-Media-Präsenz skalieren möchten.",
         "features": {
           "0": "12 Beiträge pro Monat",
@@ -170,7 +170,7 @@
       },
       "pro": {
         "name": "Social Pro",
-        "price": 579,
+        "price": 990,
         "description": "Vollständiges Social-Media-Management für ambitionierte Marken.",
         "features": {
           "0": "16 Beiträge pro Monat",
@@ -382,10 +382,10 @@
       }
     },
     "stats": {
-      "projects":  "Abgeschlossene Projekte",
-      "rating":    "Kundenzufriedenheit",
+      "projects": "Abgeschlossene Projekte",
+      "rating": "Kundenzufriedenheit",
       "countries": "Bediente Länder",
-      "delivery":  "Ø Lieferzeit"
+      "delivery": "Ø Lieferzeit"
     }
   },
   "Hero": {
@@ -1598,7 +1598,12 @@
         "hours": "1 Std. Support / Monat",
         "response": "≤ 1 Werktag",
         "overage": "CHF 120/h",
-        "features": ["Fehlerbehebung & Monitoring", "Plattform-Updates", "Prioritäts-E-Mail-Support", "Monatlicher Statuscheck"]
+        "features": [
+          "Fehlerbehebung & Monitoring",
+          "Plattform-Updates",
+          "Prioritäts-E-Mail-Support",
+          "Monatlicher Statuscheck"
+        ]
       },
       {
         "name": "Pro",
@@ -1606,7 +1611,12 @@
         "hours": "3 Std. Support / Monat",
         "response": "≤ 8 Werktag-Stunden",
         "overage": "CHF 110/h",
-        "features": ["Alles aus Lite", "Monatlicher Performance-Bericht", "Kleinere Funktionsverbesserungen", "Proaktive Empfehlungen"]
+        "features": [
+          "Alles aus Lite",
+          "Monatlicher Performance-Bericht",
+          "Kleinere Funktionsverbesserungen",
+          "Proaktive Empfehlungen"
+        ]
       },
       {
         "name": "Scale",
@@ -1614,7 +1624,12 @@
         "hours": "8 Std. Support / Monat",
         "response": "≤ 4 Werktag-Stunden",
         "overage": "CHF 100/h",
-        "features": ["Alles aus Pro", "A/B-Tests & Optimierung", "Vierteljährlicher Roadmap-Call", "Schnellstes SLA"]
+        "features": [
+          "Alles aus Pro",
+          "A/B-Tests & Optimierung",
+          "Vierteljährlicher Roadmap-Call",
+          "Schnellstes SLA"
+        ]
       }
     ]
   },
@@ -1972,13 +1987,13 @@
       "title": "Häufig gestellte Fragen",
       "subtitle": "Social-Media-Marketing in der Schweiz",
       "q1": "Was kostet Social-Media-Management in der Schweiz?",
-      "a1": "Unser Digital Starter Plan kostet CHF 249/Monat (8 Beiträge/Monat, 1 Plattform). Digital Growth kostet CHF 399/Monat (12 Beiträge, 2 Plattformen, Stories). Digital Pro kostet CHF 579/Monat (16 Beiträge, 3 Plattformen, vollständiges Engagement-Management). Alle Pläne beinhalten KI-gestützte Content-Erstellung und monatliches Reporting.",
+      "a1": "Unser Digital Starter Plan kostet CHF 490/Monat (8 Beiträge/Monat, 1 Plattform). Digital Growth kostet CHF 690/Monat (12 Beiträge, 2 Plattformen, Stories). Digital Pro kostet CHF 990/Monat (16 Beiträge, 3 Plattformen, vollständiges Engagement-Management). Alle Pläne beinhalten KI-gestützte Content-Erstellung und monatliches Reporting.",
       "q2": "Wie erstellen Sie Content ohne Fotoshooting?",
       "a2": "Sie schicken uns Fotos von Ihrem Smartphone oder Unternehmen. Wir verbessern sie professionell mit KI-Tools — Hintergrundentfernung, Farbkorrektur, Branding-Overlays und Upscaling. Das hält die Kosten 60–70% günstiger als traditionelle Agenturen.",
       "q3": "Welche Plattformen verwalten Sie?",
       "a3": "Wir verwalten Instagram, Facebook, LinkedIn und Google Business Profile. Jeder Plan deckt 1–3 Plattformen ab. Zusätzliche Plattformen sind als Add-on für CHF 99/Monat pro Plattform verfügbar.",
       "q4": "Können Sie auch bezahlte Werbekampagnen managen?",
-      "a4": "Ja! Wir verwalten Meta Ads (Facebook + Instagram) ab CHF 399/Monat und Google Ads ab CHF 449/Monat. Wir bieten auch ein kombiniertes Bundle für CHF 699/Monat an. Das Werbebudget wird separat direkt von Meta und Google abgerechnet.",
+      "a4": "Ja! Wir verwalten Meta Ads (Facebook + Instagram) ab CHF 690/Monat und Google Ads ab CHF 449/Monat. Wir bieten auch ein kombiniertes Bundle für CHF 699/Monat an. Das Werbebudget wird separat direkt von Meta und Google abgerechnet.",
       "q5": "Erstellen Sie Inhalte auf Deutsch und anderen Schweizer Sprachen?",
       "a5": "Ja! Wir erstellen Content in jeder Sprache, die Ihre Zielgruppe spricht — Deutsch, Englisch, Französisch, Italienisch oder Portugiesisch. Besonders wertvoll für Schweizer Unternehmen, die mehrere Sprachregionen ansprechen.",
       "q6": "Wie schnell können Sie mit unserem Social-Media-Management starten?",
@@ -2005,7 +2020,7 @@
     "faqs": {
       "q1": {
         "question": "Was kostet Social-Media-Management in Zürich?",
-        "answer": "Unser KI-gestütztes Social-Media-Management beginnt bei CHF 249/Monat für das Social Starter-Paket (8 Beiträge/Monat, 1 Plattform). Das Social Growth-Paket kostet CHF 399/Monat (12 Beiträge, 2 Plattformen) und Social Pro CHF 579/Monat (16 Beiträge, 3 Plattformen inklusive vollständigem Engagement-Management).",
+        "answer": "Unser KI-gestütztes Social-Media-Management beginnt bei CHF 490/Monat für das Social Starter-Paket (8 Beiträge/Monat, 1 Plattform). Das Social Growth-Paket kostet CHF 690/Monat (12 Beiträge, 2 Plattformen) und Social Pro CHF 990/Monat (16 Beiträge, 3 Plattformen inklusive vollständigem Engagement-Management).",
         "category": "socialMedia"
       },
       "q2": {
@@ -2035,7 +2050,7 @@
       },
       "q7": {
         "question": "Was ist der Unterschied zwischen Social Starter, Growth und Pro?",
-        "answer": "Social Starter (CHF 249/Mo) umfasst 8 Beiträge/Monat auf 1 Plattform — ideal für kleine Unternehmen, die anfangen. Social Growth (CHF 399/Mo) fügt 12 Beiträge, 2 Plattformen, Stories und Engagement-Management hinzu — ideal für wachsende Unternehmen. Social Pro (CHF 579/Mo) liefert 16 Beiträge, 3 Plattformen, vollständiges Engagement, monatliche Strategie-Calls und A/B-Tests — am besten für ambitionierte Marken.",
+        "answer": "Social Starter (CHF 490/Mo) umfasst 8 Beiträge/Monat auf 1 Plattform — ideal für kleine Unternehmen, die anfangen. Social Growth (CHF 690/Mo) fügt 12 Beiträge, 2 Plattformen, Stories und Engagement-Management hinzu — ideal für wachsende Unternehmen. Social Pro (CHF 990/Mo) liefert 16 Beiträge, 3 Plattformen, vollständiges Engagement, monatliche Strategie-Calls und A/B-Tests — am besten für ambitionierte Marken.",
         "category": "socialMedia"
       },
       "q8": {
@@ -2116,7 +2131,7 @@
     },
     "socialMediaMarketing": {
       "title": "Social Media Marketing Zürich | Lopes2Tech",
-      "description": "KI-gestütztes Social-Media-Management für Schweizer Unternehmen ab CHF 249/Monat. Content-Erstellung, Meta Ads, Google Ads und Community-Management. Standort Zürich.",
+      "description": "KI-gestütztes Social-Media-Management für Schweizer Unternehmen ab CHF 490/Monat. Content-Erstellung, Meta Ads, Google Ads und Community-Management. Standort Zürich.",
       "ogTitle": "Social Media Marketing Zürich | Lopes2Tech",
       "ogDescription": "KI-gestütztes Social-Media- und Digitalmarketing für Schweizer Unternehmen. Content-Erstellung, Meta Ads und Google Ads — komplett für Sie verwaltet."
     },
@@ -2295,463 +2310,463 @@
       "button": "Schreiben Sie uns auf WhatsApp"
     }
   },
-  "Referral":   {
-      "badge": "Empfehlungsprogramm",
-      "hero": {
-          "h1a": "Empfehlen Sie einen Kunden.",
-          "h1b": "Kassieren Sie.",
-          "subtitlePre": "Kennen Sie jemanden, der eine Website, bezahlte Anzeigen oder Automatisierungen braucht? Stellen Sie uns vor und verdienen Sie bis zu",
-          "highlight1": "10% pro Projekt",
-          "subtitleMid": "oder",
-          "highlight2": "15% der monatlichen Vergütung",
-          "subtitlePost": "für 6 Monate. Keine Limits. Keine Formulare. Nur eine WhatsApp-Nachricht.",
-          "cta": "Jetzt eine Empfehlung senden"
-      },
-      "howItWorks": {
-          "label": "So funktioniert es",
-          "title": "3 Schritte. Das ist alles.",
-          "steps": [
-              {
-                  "title": "Kennen Sie jemanden, der eine Website oder digitale Unterstützung braucht?",
-                  "description": "Denken Sie an einen Freund, Kollegen oder Unternehmer, der von einer professionellen Website, bezahlten Anzeigen oder Automatisierung profitieren könnte. Das ist Ihre Empfehlung."
-              },
-              {
-                  "title": "Leiten Sie uns weiter",
-                  "description": "Teilen Sie unsere Website oder schicken Sie uns einen WhatsApp mit Name und Kontakt der Person. Wir übernehmen alles weitere — kein Nachfassen nötig."
-              },
-              {
-                  "title": "Erhalten Sie Ihre Zahlung, wenn sie unterschreiben",
-                  "description": "Sobald sie den Vertrag unterzeichnen und die Anzahlung leisten, überweisen wir Ihre Prämie. Einfach, transparent, kein Papierkram."
-              }
+  "Referral": {
+    "badge": "Empfehlungsprogramm",
+    "hero": {
+      "h1a": "Empfehlen Sie einen Kunden.",
+      "h1b": "Kassieren Sie.",
+      "subtitlePre": "Kennen Sie jemanden, der eine Website, bezahlte Anzeigen oder Automatisierungen braucht? Stellen Sie uns vor und verdienen Sie bis zu",
+      "highlight1": "10% pro Projekt",
+      "subtitleMid": "oder",
+      "highlight2": "15% der monatlichen Vergütung",
+      "subtitlePost": "für 6 Monate. Keine Limits. Keine Formulare. Nur eine WhatsApp-Nachricht.",
+      "cta": "Jetzt eine Empfehlung senden"
+    },
+    "howItWorks": {
+      "label": "So funktioniert es",
+      "title": "3 Schritte. Das ist alles.",
+      "steps": [
+        {
+          "title": "Kennen Sie jemanden, der eine Website oder digitale Unterstützung braucht?",
+          "description": "Denken Sie an einen Freund, Kollegen oder Unternehmer, der von einer professionellen Website, bezahlten Anzeigen oder Automatisierung profitieren könnte. Das ist Ihre Empfehlung."
+        },
+        {
+          "title": "Leiten Sie uns weiter",
+          "description": "Teilen Sie unsere Website oder schicken Sie uns einen WhatsApp mit Name und Kontakt der Person. Wir übernehmen alles weitere — kein Nachfassen nötig."
+        },
+        {
+          "title": "Erhalten Sie Ihre Zahlung, wenn sie unterschreiben",
+          "description": "Sobald sie den Vertrag unterzeichnen und die Anzahlung leisten, überweisen wir Ihre Prämie. Einfach, transparent, kein Papierkram."
+        }
+      ]
+    },
+    "dualBenefit": {
+      "label": "Bonus für Empfehlende",
+      "title1": "Empfehlen Sie jemanden",
+      "title2": "und werden selbst Kunde? Erhalten Sie",
+      "title3": "20% Rabatt",
+      "title4": "auf einen Service.",
+      "descPre": "Wenn Sie uns einen Kunden empfehlen und später selbst unsere Leistungen in Anspruch nehmen, erhalten Sie einen",
+      "descHighlight": "20% Rabatt auf einen einzelnen Service",
+      "descPost": "— Website, Anzeigen, Automatisierung, Branding, was auch immer Sie benötigen. Kein Ablaufdatum. Sagen Sie uns einfach, dass Sie jemanden empfohlen haben, und der Rabatt gehört Ihnen."
+    },
+    "rewards": {
+      "label": "Was Sie verdienen",
+      "title": "Ihre Prämien nach Service",
+      "subtitlePre": "Einmalige Services zahlen",
+      "subtitleHighlight1": "10%",
+      "subtitleMid": "auf die Anzahlung. Monatliche Services zahlen",
+      "subtitleHighlight2": "15% für 6 Monate",
+      "subtitlePost": "Klicken Sie auf einen Service, um den Pitch zu sehen.",
+      "colService": "Service",
+      "colPrice": "Preis",
+      "colReward": "Ihre Prämie",
+      "badgeOneTime": "10% einmalig",
+      "badgeRecurring": "15% × 6 Monate",
+      "viewService": "Vollständige Service-Seite ansehen",
+      "footerNote": "Prämien werden ausgezahlt, nachdem der empfohlene Kunde die Anzahlung oder die erste monatliche Zahlung geleistet hat. Monatliche Prämien werden am Ende jedes Monats überwiesen.",
+      "noteOnDeposit": "Bei Anzahlung fällig",
+      "noteOnDelivery": "Bei Lieferung fällig",
+      "noteScales": "Abhängig von der Website-Grösse",
+      "categories": [
+        {
+          "title": "Website-Pakete",
+          "rows": [
+            {
+              "service": "Starter Website",
+              "pitch": "Perfekt für neue Unternehmen, Freelancer oder alle, die schnell eine ansprechende Online-Präsenz benötigen. Geliefert in 4–5 Tagen — kein wochenlangen Warten.",
+              "bullets": [
+                "Einseitige individuelle Website",
+                "KI-erstellte Texte inklusive",
+                "Buchungs-Widget + WhatsApp-Button",
+                "Mobilgeräte-optimiert",
+                "Geliefert in 4–5 Tagen"
+              ]
+            },
+            {
+              "service": "Professionelle Website",
+              "pitch": "Für etablierte Solopreneure, die bereit sind aufzusteigen. Mehrseitig, mehrsprachig, mit SEO von Anfang an.",
+              "bullets": [
+                "5-seitige Website",
+                "2 Sprachen inklusive",
+                "1 Automatisierung inklusive",
+                "SEO-Grundlagen",
+                "Geliefert in 5–6 Tagen"
+              ]
+            },
+            {
+              "service": "Business Pro Website",
+              "pitch": "Das Komplettpaket für KMUs. Bis zu 10 Service-Seiten, 3 Sprachen, Lead-Capture-System — alles, um online ernsthaft zu konkurrieren.",
+              "bullets": [
+                "5 Hauptseiten + bis zu 10 Service-Seiten",
+                "3 Sprachen inklusive",
+                "SEO + Lead-Capture-System",
+                "Geliefert in 6–7 Tagen"
+              ]
+            },
+            {
+              "service": "Kampagnen-Landingpage",
+              "pitch": "Eine konversionsorientierte Einzelseite für Werbekampagnen, Produktlaunches oder Lead-Magneten. Gebaut, um Traffic in Leads umzuwandeln.",
+              "bullets": [
+                "Konversionsoptimiertes Design",
+                "Integration mit Anzeigen-Tracking",
+                "CTA + Lead-Capture-Formular",
+                "Schnelle Lieferung"
+              ]
+            }
           ]
-      },
-      "dualBenefit": {
-          "label": "Bonus für Empfehlende",
-          "title1": "Empfehlen Sie jemanden",
-          "title2": "und werden selbst Kunde? Erhalten Sie",
-          "title3": "20% Rabatt",
-          "title4": "auf einen Service.",
-          "descPre": "Wenn Sie uns einen Kunden empfehlen und später selbst unsere Leistungen in Anspruch nehmen, erhalten Sie einen",
-          "descHighlight": "20% Rabatt auf einen einzelnen Service",
-          "descPost": "— Website, Anzeigen, Automatisierung, Branding, was auch immer Sie benötigen. Kein Ablaufdatum. Sagen Sie uns einfach, dass Sie jemanden empfohlen haben, und der Rabatt gehört Ihnen."
-      },
-      "rewards": {
-          "label": "Was Sie verdienen",
-          "title": "Ihre Prämien nach Service",
-          "subtitlePre": "Einmalige Services zahlen",
-          "subtitleHighlight1": "10%",
-          "subtitleMid": "auf die Anzahlung. Monatliche Services zahlen",
-          "subtitleHighlight2": "15% für 6 Monate",
-          "subtitlePost": "Klicken Sie auf einen Service, um den Pitch zu sehen.",
-          "colService": "Service",
-          "colPrice": "Preis",
-          "colReward": "Ihre Prämie",
-          "badgeOneTime": "10% einmalig",
-          "badgeRecurring": "15% × 6 Monate",
-          "viewService": "Vollständige Service-Seite ansehen",
-          "footerNote": "Prämien werden ausgezahlt, nachdem der empfohlene Kunde die Anzahlung oder die erste monatliche Zahlung geleistet hat. Monatliche Prämien werden am Ende jedes Monats überwiesen.",
-          "noteOnDeposit": "Bei Anzahlung fällig",
-          "noteOnDelivery": "Bei Lieferung fällig",
-          "noteScales": "Abhängig von der Website-Grösse",
-          "categories": [
-              {
-                  "title": "Website-Pakete",
-                  "rows": [
-                      {
-                          "service": "Starter Website",
-                          "pitch": "Perfekt für neue Unternehmen, Freelancer oder alle, die schnell eine ansprechende Online-Präsenz benötigen. Geliefert in 4–5 Tagen — kein wochenlangen Warten.",
-                          "bullets": [
-                              "Einseitige individuelle Website",
-                              "KI-erstellte Texte inklusive",
-                              "Buchungs-Widget + WhatsApp-Button",
-                              "Mobilgeräte-optimiert",
-                              "Geliefert in 4–5 Tagen"
-                          ]
-                      },
-                      {
-                          "service": "Professionelle Website",
-                          "pitch": "Für etablierte Solopreneure, die bereit sind aufzusteigen. Mehrseitig, mehrsprachig, mit SEO von Anfang an.",
-                          "bullets": [
-                              "5-seitige Website",
-                              "2 Sprachen inklusive",
-                              "1 Automatisierung inklusive",
-                              "SEO-Grundlagen",
-                              "Geliefert in 5–6 Tagen"
-                          ]
-                      },
-                      {
-                          "service": "Business Pro Website",
-                          "pitch": "Das Komplettpaket für KMUs. Bis zu 10 Service-Seiten, 3 Sprachen, Lead-Capture-System — alles, um online ernsthaft zu konkurrieren.",
-                          "bullets": [
-                              "5 Hauptseiten + bis zu 10 Service-Seiten",
-                              "3 Sprachen inklusive",
-                              "SEO + Lead-Capture-System",
-                              "Geliefert in 6–7 Tagen"
-                          ]
-                      },
-                      {
-                          "service": "Kampagnen-Landingpage",
-                          "pitch": "Eine konversionsorientierte Einzelseite für Werbekampagnen, Produktlaunches oder Lead-Magneten. Gebaut, um Traffic in Leads umzuwandeln.",
-                          "bullets": [
-                              "Konversionsoptimiertes Design",
-                              "Integration mit Anzeigen-Tracking",
-                              "CTA + Lead-Capture-Formular",
-                              "Schnelle Lieferung"
-                          ]
-                      }
-                  ]
-              },
-              {
-                  "title": "Branding",
-                  "rows": [
-                      {
-                          "service": "Nur Logo",
-                          "pitch": "Ein professionelles Logo in 3 Varianten. Ideal für neue Unternehmen oder Rebranding, die nur die Marke brauchen — sauber, skalierbar und schnell geliefert.",
-                          "bullets": [
-                              "3 Logo-Varianten (hell, dunkel, Icon)",
-                              "Vektordateien inklusive",
-                              "Bereit für Web + Druck"
-                          ]
-                      },
-                      {
-                          "service": "Komplettes Brand Kit",
-                          "pitch": "Alles, was ein Unternehmen braucht, um überall professionell auszusehen. Logo, Farben, Schriften, Visitenkarten und ein Social-Media-Kit — alles in einem Paket.",
-                          "bullets": [
-                              "Logo (3 Varianten)",
-                              "Farbpalette + Typografie",
-                              "Brand-Guidelines-Dokument",
-                              "Visitenkarten-Design",
-                              "Social-Media-Kit (Profil- + Titelbilder)"
-                          ]
-                      }
-                  ]
-              },
-              {
-                  "title": "Einrichtung & Quick Wins",
-                  "rows": [
-                      {
-                          "service": "Google Business Profile Einrichtung",
-                          "pitch": "Lokale Unternehmen stehen und fallen mit ihrem GBP. Ein vollständig optimiertes Profil mit Fotos, Services und 3 Beiträgen — steigert die lokale Sichtbarkeit sofort.",
-                          "bullets": [
-                              "Vollständige GBP-Einrichtung oder Optimierung",
-                              "Fotos, Services, Kategorien eingestellt",
-                              "3 Beiträge veröffentlicht",
-                              "Bessere Sichtbarkeit in Google Maps"
-                          ]
-                      },
-                      {
-                          "service": "Analytics & Tracking Einrichtung (GA4)",
-                          "pitch": "Unverzichtbar für jedes Unternehmen, das Anzeigen schaltet. Ohne Tracking tappen Sie im Dunkeln. Wir richten GA4 + Meta Pixel ein, damit jeder Klick gemessen wird.",
-                          "bullets": [
-                              "Google Analytics 4 Einrichtung",
-                              "Meta Pixel Installation",
-                              "Conversion-Events konfiguriert",
-                              "Dashboard + Berichte bereit"
-                          ]
-                      },
-                      {
-                          "service": "Professionelle E-Mail-Domain Einrichtung",
-                          "pitch": "Professionelle E-Mail wie paulo@ihrgeschaeft.ch statt Gmail. Richtet Google Workspace oder Microsoft 365 ein — macht jedes Unternehmen glaubwürdiger.",
-                          "bullets": [
-                              "Professionelle E-Mail-Adresse eingerichtet",
-                              "Google Workspace oder Microsoft 365",
-                              "E-Mail-Signaturen konfiguriert",
-                              "Mobiler + Desktop-Zugriff"
-                          ]
-                      },
-                      {
-                          "service": "Website-Audit",
-                          "pitch": "Der einfachste Verkauf — CHF 99 für einen einseitigen Bericht mit 5 konkreten Verbesserungen. Perfekter Einstieg für zögerliche Kunden.",
-                          "bullets": [
-                              "1-seitiger PDF-Bericht",
-                              "5 konkrete, umsetzbare Verbesserungen",
-                              "SEO + Geschwindigkeit + UX bewertet",
-                              "Innerhalb von 48 Stunden geliefert"
-                          ]
-                      },
-                      {
-                          "service": "Geschwindigkeitsoptimierung",
-                          "pitch": "Eine langsame Website verliert Kunden und rankt schlechter bei Google. Einmalige Lösung: Caching, Bildkomprimierung und Leistungssteigerung.",
-                          "bullets": [
-                              "Bildkomprimierung",
-                              "Caching-Einrichtung",
-                              "Core Web Vitals Verbesserung",
-                              "Besseres Google-Ranking"
-                          ]
-                      },
-                      {
-                          "service": "Google Business Boost",
-                          "pitch": "Schnellster Gewinn für jedes lokale Unternehmen. Schnelle GBP-Optimierung + 3 veröffentlichte Beiträge. Grossartiger Einstiegs-Service.",
-                          "bullets": [
-                              "Schnelle GBP-Optimierung",
-                              "3 Beiträge veröffentlicht",
-                              "Kategorien + Attribute aktualisiert"
-                          ]
-                      },
-                      {
-                          "service": "Automatisierungs-Assessment",
-                          "pitch": "Wir analysieren den Arbeitsablauf des Kunden und erstellen ein PDF mit 3–5 automatisierbaren Prozessen. Verkauft sich von selbst — und führt oft zu einem vollständigen Automatisierungsprojekt.",
-                          "bullets": [
-                              "Eingehende Arbeitsablauf-Analyse",
-                              "1-seitiges PDF mit 3–5 Automatisierungsmöglichkeiten",
-                              "ROI-Schätzung pro Automatisierung",
-                              "Innerhalb von 48 Stunden geliefert"
-                          ]
-                      }
-                  ]
-              },
-              {
-                  "title": "Website-Add-ons",
-                  "rows": [
-                      {
-                          "service": "Blog / CMS Einrichtung",
-                          "pitch": "Gibt dem Kunden einen Blog, den er selbst bearbeiten kann — nach der Einrichtung kein Entwickler mehr nötig. Ideal für SEO und Content-Marketing.",
-                          "bullets": [
-                              "Sanity- oder Notion-basiertes CMS",
-                              "Kunde kann Beiträge ohne Code hinzufügen/bearbeiten",
-                              "SEO-gerechte Blog-Struktur"
-                          ]
-                      },
-                      {
-                          "service": "Zusätzliche Service-Seite",
-                          "pitch": "Jede weitere Service-Seite zielt auf ein neues Keyword ab und erweitert die Google-Präsenz. Geringer Aufwand, hoher SEO-Wert.",
-                          "bullets": [
-                              "SEO-optimierte Seite",
-                              "Passt zum bestehenden Design",
-                              "Indexiert und bei Google eingereicht"
-                          ]
-                      },
-                      {
-                          "service": "Zusätzliche Sprache",
-                          "pitch": "Erreichen Sie mehr Kunden in ihrer Muttersprache. KI-unterstützte Übersetzung + korrekte hreflang-Tags, damit Google jede Sprache richtig rankt.",
-                          "bullets": [
-                              "KI-unterstützte Übersetzung",
-                              "hreflang-Tags eingerichtet",
-                              "Sprachumschalter hinzugefügt",
-                              "Preis skaliert mit Seitenanzahl"
-                          ]
-                      },
-                      {
-                          "service": "Local SEO Boost",
-                          "pitch": "Strukturierte Daten (Schema), Search Console Einrichtung, Sitemap-Einreichung — das technische SEO-Fundament, das den meisten Websites fehlt.",
-                          "bullets": [
-                              "Schema-Markup hinzugefügt",
-                              "Google Search Console konfiguriert",
-                              "Sitemap eingereicht",
-                              "Bing Webmaster Tools eingerichtet"
-                          ]
-                      },
-                      {
-                          "service": "Social-Proof-Widget",
-                          "pitch": "Automatisch aktualisierter Google-Reviews-Feed auf der Website eingebettet. Nichts verkauft besser als echte Kundenbewertungen, die direkt auf der Startseite sichtbar sind.",
-                          "bullets": [
-                              "Google Reviews automatisch synchronisiert",
-                              "Widget auf Website eingebettet",
-                              "Steigert Vertrauen und Conversions"
-                          ]
-                      },
-                      {
-                          "service": "Newsletter-Integration",
-                          "pitch": "E-Mail-Liste = eigenes Publikum. Wir richten das Anmeldeformular + eine Willkommens-E-Mail-Automatisierung ein, damit jeder Abonnent automatisch nachgefasst wird.",
-                          "bullets": [
-                              "Brevo oder Mailchimp verbunden",
-                              "Anmeldeformular auf der Website eingebettet",
-                              "Willkommens-E-Mail-Automatisierung aktiv"
-                          ]
-                      },
-                      {
-                          "service": "Bewertungs-Sammlungs-Automatisierung",
-                          "pitch": "Die meisten Unternehmen haben zufriedene Kunden, die nie eine Bewertung hinterlassen. Diese sendet 3 automatisierte E-Mails nach Auftragsabschluss und bittet um eine Google-Bewertung.",
-                          "bullets": [
-                              "Automatisierte 3-E-Mail-Sequenz",
-                              "Ausgelöst nach Auftragsabschluss",
-                              "Direktlink zum Google-Bewertungsformular",
-                              "Mehr 5-Sterne-Bewertungen auf Autopilot"
-                          ]
-                      },
-                      {
-                          "service": "Terminbuchungssystem",
-                          "pitch": "Ersetzt hin- und hergehende Terminabsprachen durch ein professionelles Buchungs-Widget. Synchronisiert mit Google Kalender und sendet automatisch Erinnerungen.",
-                          "bullets": [
-                              "Cal.com oder Calendly Einrichtung",
-                              "Google Kalender-Synchronisation",
-                              "Automatische Erinnerungen (E-Mail + SMS)",
-                              "Auf Website eingebettet"
-                          ]
-                      },
-                      {
-                          "service": "Lead-Capture-System",
-                          "pitch": "Verwandelt Website-Besucher automatisch in Leads. Die Formularübermittlung löst einen CRM-Eintrag, eine automatische Antwort-E-Mail und eine Team-Benachrichtigung aus.",
-                          "bullets": [
-                              "Kontaktformular → CRM-Pipeline",
-                              "Automatische Antwort-E-Mail an Lead",
-                              "Team-Benachrichtigung (E-Mail oder WhatsApp)",
-                              "Vollständiges Lead-Tracking"
-                          ]
-                      },
-                      {
-                          "service": "KI-FAQ-Chatbot",
-                          "pitch": "Ein Chatbot, trainiert auf den eigenen Inhalten des Kunden — beantwortet FAQs, qualifiziert Leads und arbeitet 24/7 ohne jegliche menschliche Beteiligung.",
-                          "bullets": [
-                              "Trainiert auf Kundeninhalten",
-                              "Beantwortet FAQs automatisch",
-                              "Lead-Qualifizierung eingebaut",
-                              "Auf Website eingebettet",
-                              "+ API-Nutzungskosten"
-                          ]
-                      }
-                  ]
-              },
-              {
-                  "title": "Marketing & Anzeigen (Monatlich)",
-                  "rows": [
-                      {
-                          "service": "Meta Ads Management",
-                          "pitch": "Vollständiges Meta Ads Management — Facebook + Instagram. Wir kümmern uns um Strategie, Creatives, Targeting, Retargeting, A/B-Tests und monatliche Berichte. Der Anzeigenbudget wird separat an Meta gezahlt.",
-                          "bullets": [
-                              "Kampagnen-Setup + laufendes Management",
-                              "Anzeigen-Creative (Copy + Visuals)",
-                              "Zielgruppen-Targeting + Retargeting",
-                              "A/B-Tests",
-                              "Monatlicher Leistungsbericht"
-                          ]
-                      },
-                      {
-                          "service": "Google Ads Management",
-                          "pitch": "Gewinnen Sie kaufbereite Interessenten, die auf Google suchen. Wir schalten Search + Display Kampagnen mit vollständiger Keyword-Recherche, Anzeigentexten und Conversion-Tracking. Anzeigenbudget separat.",
-                          "bullets": [
-                              "Keyword-Recherche",
-                              "Search + Display Kampagnen",
-                              "Anzeigentexte geschrieben und getestet",
-                              "Conversion-Tracking eingerichtet",
-                              "Monatlicher Analytics-Bericht"
-                          ]
-                      },
-                      {
-                          "service": "Meta + Google Bundle",
-                          "pitch": "Beide Kanäle gemeinsam verwaltet — Meta für Awareness + Retargeting, Google für intent-getriebene Suche. Einheitliche Strategie und Berichte. Spart CHF 99/Monat gegenüber Einzelkauf.",
-                          "bullets": [
-                              "Alles aus Meta + Google Ads-Plänen",
-                              "Cross-Channel-Strategie",
-                              "Einheitlicher Monatsbericht",
-                              "CHF 99/Monat sparen gegenüber separat"
-                          ]
-                      },
-                      {
-                          "service": "Social-Media-Management – Starter",
-                          "pitch": "Für Unternehmen, die eine konsistente Social-Media-Präsenz brauchen, aber keine Zeit zum Posten haben. 8 Beiträge/Monat auf 1 Plattform, vollständig verwaltet.",
-                          "bullets": [
-                              "8 Beiträge/Monat",
-                              "1 Plattform (Instagram, Facebook oder LinkedIn)",
-                              "Content-Erstellung + Planung",
-                              "Kein Aufwand für den Kunden"
-                          ]
-                      },
-                      {
-                          "service": "Social-Media-Management – Growth",
-                          "pitch": "Skalieren Sie auf 2 Plattformen mit Stories und Engagement-Management inklusive. Baut Community auf, nicht nur Beiträge.",
-                          "bullets": [
-                              "12 Beiträge/Monat",
-                              "2 Plattformen",
-                              "Stories inklusive",
-                              "Engagement-Management"
-                          ]
-                      },
-                      {
-                          "service": "Social-Media-Management – Pro",
-                          "pitch": "Vollständige Social-Media-Präsenz auf 3 Plattformen mit Reels und monatlichem Strategie-Call. Für Marken, die ihre Nische online dominieren wollen.",
-                          "bullets": [
-                              "16 Beiträge/Monat",
-                              "3 Plattformen",
-                              "Reels inklusive",
-                              "Monatlicher Strategie-Call"
-                          ]
-                      }
-                  ]
-              },
-              {
-                  "title": "KI & Automatisierungs-Einrichtung",
-                  "rows": [
-                      {
-                          "service": "KI-Workflow – Light",
-                          "pitch": "Einfache Automatisierung, die bestehende Tools verbindet — Formulare, E-Mails, CRM, Slack, WhatsApp. Gebaut auf n8n oder Make. Spart jede Woche Stunden manueller Arbeit.",
-                          "bullets": [
-                              "App-zu-App-Automatisierung",
-                              "Gebaut auf n8n oder Make",
-                              "z.B. Formular → CRM → E-Mail → Benachrichtigung",
-                              "Geliefert in 1–2 Wochen"
-                          ]
-                      },
-                      {
-                          "service": "KI-Workflow – Full",
-                          "pitch": "Komplexe mehrstufige Automatisierungen mit KI-Entscheidungslogik. Denken Sie an intelligentes Routing, Content-Generierung, Scoring und vollautomatisierte Pipelines.",
-                          "bullets": [
-                              "Mehrstufige komplexe Automatisierung",
-                              "KI-Entscheidungslogik inklusive",
-                              "API-Integrationen",
-                              "Vollständige Dokumentation + Übergabe"
-                          ]
-                      },
-                      {
-                          "service": "KI-Kundensupport-Agent",
-                          "pitch": "Ein 24/7-KI-Agent, der Kundenanfragen, Buchungen und Eskalationen ohne menschliche Beteiligung bearbeitet. Enormer ROI für Unternehmen mit hohem repetitivem Support-Aufkommen.",
-                          "bullets": [
-                              "Bearbeitet FAQs, Buchungen, Beschwerden",
-                              "Rund um die Uhr verfügbar",
-                              "Eskaliert bei Bedarf an einen Menschen",
-                              "WhatsApp + Website + E-Mail-Kanäle"
-                          ]
-                      },
-                      {
-                          "service": "KI-Vertriebs- und Outreach-Agent",
-                          "pitch": "Automatisierte Lead-Akquise, personalisierte Kontaktaufnahme und Follow-up-Sequenzen mit KI. Für Unternehmen, die Outbound skalieren wollen, ohne einzustellen.",
-                          "bullets": [
-                              "Lead-Beschaffung + Anreicherung",
-                              "Personalisierte Outreach-E-Mails",
-                              "Automatisierte Follow-up-Sequenzen",
-                              "CRM-Integration"
-                          ]
-                      },
-                      {
-                          "service": "KI-Voice-Agent",
-                          "pitch": "Eine KI, die Anrufe entgegennimmt, Leads qualifiziert und Termine bucht — klingt menschlich, arbeitet rund um die Uhr. Bahnbrechend für Dienstleistungsunternehmen.",
-                          "bullets": [
-                              "Nimmt eingehende Anrufe entgegen",
-                              "Qualifiziert Leads per Stimme",
-                              "Bucht Termine in Echtzeit",
-                              "Kosten pro Minute werden dem Kunden berechnet"
-                          ]
-                      },
-                      {
-                          "service": "KI-Wissensdatenbank / RAG",
-                          "pitch": "KI, trainiert auf den eigenen Dokumenten, Handbüchern und Daten des Kunden. Beantwortet komplexe interne oder Kundenfragen sofort — wie ein Unternehmensexperte, der rund um die Uhr verfügbar ist.",
-                          "bullets": [
-                              "Trainiert auf eigenen Kundendokumenten",
-                              "Beantwortet komplexe Anfragen sofort",
-                              "Internes Mitarbeitertool oder kundenorientiert",
-                              "Kontinuierlich aktualisierbar"
-                          ]
-                      }
-                  ]
-              }
+        },
+        {
+          "title": "Branding",
+          "rows": [
+            {
+              "service": "Nur Logo",
+              "pitch": "Ein professionelles Logo in 3 Varianten. Ideal für neue Unternehmen oder Rebranding, die nur die Marke brauchen — sauber, skalierbar und schnell geliefert.",
+              "bullets": [
+                "3 Logo-Varianten (hell, dunkel, Icon)",
+                "Vektordateien inklusive",
+                "Bereit für Web + Druck"
+              ]
+            },
+            {
+              "service": "Komplettes Brand Kit",
+              "pitch": "Alles, was ein Unternehmen braucht, um überall professionell auszusehen. Logo, Farben, Schriften, Visitenkarten und ein Social-Media-Kit — alles in einem Paket.",
+              "bullets": [
+                "Logo (3 Varianten)",
+                "Farbpalette + Typografie",
+                "Brand-Guidelines-Dokument",
+                "Visitenkarten-Design",
+                "Social-Media-Kit (Profil- + Titelbilder)"
+              ]
+            }
           ]
-      },
-      "perks": {
-          "label": "Das Kleingedruckte (ist kein Kleingedrucktes)",
-          "title": "Keine Haken. Wirklich.",
-          "items": [
-              "Kein Empfehlungslimit — empfehlen Sie 10 Kunden, verdienen Sie 10 Mal",
-              "Ihre Empfehlungen laufen nicht ab",
-              "Zahlung per Banküberweisung (IBAN) oder Twint",
-              "Sie müssen kein Kunde sein, um empfehlen zu können",
-              "Wir kümmern uns um den gesamten Verkauf — Sie stellen nur vor",
-              "Empfehlen Sie jemanden UND beauftragen uns selbst? Sie erhalten 20% Rabatt auf einen Service"
+        },
+        {
+          "title": "Einrichtung & Quick Wins",
+          "rows": [
+            {
+              "service": "Google Business Profile Einrichtung",
+              "pitch": "Lokale Unternehmen stehen und fallen mit ihrem GBP. Ein vollständig optimiertes Profil mit Fotos, Services und 3 Beiträgen — steigert die lokale Sichtbarkeit sofort.",
+              "bullets": [
+                "Vollständige GBP-Einrichtung oder Optimierung",
+                "Fotos, Services, Kategorien eingestellt",
+                "3 Beiträge veröffentlicht",
+                "Bessere Sichtbarkeit in Google Maps"
+              ]
+            },
+            {
+              "service": "Analytics & Tracking Einrichtung (GA4)",
+              "pitch": "Unverzichtbar für jedes Unternehmen, das Anzeigen schaltet. Ohne Tracking tappen Sie im Dunkeln. Wir richten GA4 + Meta Pixel ein, damit jeder Klick gemessen wird.",
+              "bullets": [
+                "Google Analytics 4 Einrichtung",
+                "Meta Pixel Installation",
+                "Conversion-Events konfiguriert",
+                "Dashboard + Berichte bereit"
+              ]
+            },
+            {
+              "service": "Professionelle E-Mail-Domain Einrichtung",
+              "pitch": "Professionelle E-Mail wie paulo@ihrgeschaeft.ch statt Gmail. Richtet Google Workspace oder Microsoft 365 ein — macht jedes Unternehmen glaubwürdiger.",
+              "bullets": [
+                "Professionelle E-Mail-Adresse eingerichtet",
+                "Google Workspace oder Microsoft 365",
+                "E-Mail-Signaturen konfiguriert",
+                "Mobiler + Desktop-Zugriff"
+              ]
+            },
+            {
+              "service": "Website-Audit",
+              "pitch": "Der einfachste Verkauf — CHF 99 für einen einseitigen Bericht mit 5 konkreten Verbesserungen. Perfekter Einstieg für zögerliche Kunden.",
+              "bullets": [
+                "1-seitiger PDF-Bericht",
+                "5 konkrete, umsetzbare Verbesserungen",
+                "SEO + Geschwindigkeit + UX bewertet",
+                "Innerhalb von 48 Stunden geliefert"
+              ]
+            },
+            {
+              "service": "Geschwindigkeitsoptimierung",
+              "pitch": "Eine langsame Website verliert Kunden und rankt schlechter bei Google. Einmalige Lösung: Caching, Bildkomprimierung und Leistungssteigerung.",
+              "bullets": [
+                "Bildkomprimierung",
+                "Caching-Einrichtung",
+                "Core Web Vitals Verbesserung",
+                "Besseres Google-Ranking"
+              ]
+            },
+            {
+              "service": "Google Business Boost",
+              "pitch": "Schnellster Gewinn für jedes lokale Unternehmen. Schnelle GBP-Optimierung + 3 veröffentlichte Beiträge. Grossartiger Einstiegs-Service.",
+              "bullets": [
+                "Schnelle GBP-Optimierung",
+                "3 Beiträge veröffentlicht",
+                "Kategorien + Attribute aktualisiert"
+              ]
+            },
+            {
+              "service": "Automatisierungs-Assessment",
+              "pitch": "Wir analysieren den Arbeitsablauf des Kunden und erstellen ein PDF mit 3–5 automatisierbaren Prozessen. Verkauft sich von selbst — und führt oft zu einem vollständigen Automatisierungsprojekt.",
+              "bullets": [
+                "Eingehende Arbeitsablauf-Analyse",
+                "1-seitiges PDF mit 3–5 Automatisierungsmöglichkeiten",
+                "ROI-Schätzung pro Automatisierung",
+                "Innerhalb von 48 Stunden geliefert"
+              ]
+            }
           ]
-      },
-      "finalCta": {
-          "title": "Bereit für Ihre erste Empfehlung?",
-          "description": "Schicken Sie uns einfach einen WhatsApp mit Name und Kontakt der Person, die Sie empfehlen. Wir übernehmen alles weitere und halten Sie bei jedem Schritt auf dem Laufenden.",
-          "button": "Empfehlung per WhatsApp senden"
-      }
+        },
+        {
+          "title": "Website-Add-ons",
+          "rows": [
+            {
+              "service": "Blog / CMS Einrichtung",
+              "pitch": "Gibt dem Kunden einen Blog, den er selbst bearbeiten kann — nach der Einrichtung kein Entwickler mehr nötig. Ideal für SEO und Content-Marketing.",
+              "bullets": [
+                "Sanity- oder Notion-basiertes CMS",
+                "Kunde kann Beiträge ohne Code hinzufügen/bearbeiten",
+                "SEO-gerechte Blog-Struktur"
+              ]
+            },
+            {
+              "service": "Zusätzliche Service-Seite",
+              "pitch": "Jede weitere Service-Seite zielt auf ein neues Keyword ab und erweitert die Google-Präsenz. Geringer Aufwand, hoher SEO-Wert.",
+              "bullets": [
+                "SEO-optimierte Seite",
+                "Passt zum bestehenden Design",
+                "Indexiert und bei Google eingereicht"
+              ]
+            },
+            {
+              "service": "Zusätzliche Sprache",
+              "pitch": "Erreichen Sie mehr Kunden in ihrer Muttersprache. KI-unterstützte Übersetzung + korrekte hreflang-Tags, damit Google jede Sprache richtig rankt.",
+              "bullets": [
+                "KI-unterstützte Übersetzung",
+                "hreflang-Tags eingerichtet",
+                "Sprachumschalter hinzugefügt",
+                "Preis skaliert mit Seitenanzahl"
+              ]
+            },
+            {
+              "service": "Local SEO Boost",
+              "pitch": "Strukturierte Daten (Schema), Search Console Einrichtung, Sitemap-Einreichung — das technische SEO-Fundament, das den meisten Websites fehlt.",
+              "bullets": [
+                "Schema-Markup hinzugefügt",
+                "Google Search Console konfiguriert",
+                "Sitemap eingereicht",
+                "Bing Webmaster Tools eingerichtet"
+              ]
+            },
+            {
+              "service": "Social-Proof-Widget",
+              "pitch": "Automatisch aktualisierter Google-Reviews-Feed auf der Website eingebettet. Nichts verkauft besser als echte Kundenbewertungen, die direkt auf der Startseite sichtbar sind.",
+              "bullets": [
+                "Google Reviews automatisch synchronisiert",
+                "Widget auf Website eingebettet",
+                "Steigert Vertrauen und Conversions"
+              ]
+            },
+            {
+              "service": "Newsletter-Integration",
+              "pitch": "E-Mail-Liste = eigenes Publikum. Wir richten das Anmeldeformular + eine Willkommens-E-Mail-Automatisierung ein, damit jeder Abonnent automatisch nachgefasst wird.",
+              "bullets": [
+                "Brevo oder Mailchimp verbunden",
+                "Anmeldeformular auf der Website eingebettet",
+                "Willkommens-E-Mail-Automatisierung aktiv"
+              ]
+            },
+            {
+              "service": "Bewertungs-Sammlungs-Automatisierung",
+              "pitch": "Die meisten Unternehmen haben zufriedene Kunden, die nie eine Bewertung hinterlassen. Diese sendet 3 automatisierte E-Mails nach Auftragsabschluss und bittet um eine Google-Bewertung.",
+              "bullets": [
+                "Automatisierte 3-E-Mail-Sequenz",
+                "Ausgelöst nach Auftragsabschluss",
+                "Direktlink zum Google-Bewertungsformular",
+                "Mehr 5-Sterne-Bewertungen auf Autopilot"
+              ]
+            },
+            {
+              "service": "Terminbuchungssystem",
+              "pitch": "Ersetzt hin- und hergehende Terminabsprachen durch ein professionelles Buchungs-Widget. Synchronisiert mit Google Kalender und sendet automatisch Erinnerungen.",
+              "bullets": [
+                "Cal.com oder Calendly Einrichtung",
+                "Google Kalender-Synchronisation",
+                "Automatische Erinnerungen (E-Mail + SMS)",
+                "Auf Website eingebettet"
+              ]
+            },
+            {
+              "service": "Lead-Capture-System",
+              "pitch": "Verwandelt Website-Besucher automatisch in Leads. Die Formularübermittlung löst einen CRM-Eintrag, eine automatische Antwort-E-Mail und eine Team-Benachrichtigung aus.",
+              "bullets": [
+                "Kontaktformular → CRM-Pipeline",
+                "Automatische Antwort-E-Mail an Lead",
+                "Team-Benachrichtigung (E-Mail oder WhatsApp)",
+                "Vollständiges Lead-Tracking"
+              ]
+            },
+            {
+              "service": "KI-FAQ-Chatbot",
+              "pitch": "Ein Chatbot, trainiert auf den eigenen Inhalten des Kunden — beantwortet FAQs, qualifiziert Leads und arbeitet 24/7 ohne jegliche menschliche Beteiligung.",
+              "bullets": [
+                "Trainiert auf Kundeninhalten",
+                "Beantwortet FAQs automatisch",
+                "Lead-Qualifizierung eingebaut",
+                "Auf Website eingebettet",
+                "+ API-Nutzungskosten"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Marketing & Anzeigen (Monatlich)",
+          "rows": [
+            {
+              "service": "Meta Ads Management",
+              "pitch": "Vollständiges Meta Ads Management — Facebook + Instagram. Wir kümmern uns um Strategie, Creatives, Targeting, Retargeting, A/B-Tests und monatliche Berichte. Der Anzeigenbudget wird separat an Meta gezahlt.",
+              "bullets": [
+                "Kampagnen-Setup + laufendes Management",
+                "Anzeigen-Creative (Copy + Visuals)",
+                "Zielgruppen-Targeting + Retargeting",
+                "A/B-Tests",
+                "Monatlicher Leistungsbericht"
+              ]
+            },
+            {
+              "service": "Google Ads Management",
+              "pitch": "Gewinnen Sie kaufbereite Interessenten, die auf Google suchen. Wir schalten Search + Display Kampagnen mit vollständiger Keyword-Recherche, Anzeigentexten und Conversion-Tracking. Anzeigenbudget separat.",
+              "bullets": [
+                "Keyword-Recherche",
+                "Search + Display Kampagnen",
+                "Anzeigentexte geschrieben und getestet",
+                "Conversion-Tracking eingerichtet",
+                "Monatlicher Analytics-Bericht"
+              ]
+            },
+            {
+              "service": "Meta + Google Bundle",
+              "pitch": "Beide Kanäle gemeinsam verwaltet — Meta für Awareness + Retargeting, Google für intent-getriebene Suche. Einheitliche Strategie und Berichte. Spart CHF 99/Monat gegenüber Einzelkauf.",
+              "bullets": [
+                "Alles aus Meta + Google Ads-Plänen",
+                "Cross-Channel-Strategie",
+                "Einheitlicher Monatsbericht",
+                "CHF 99/Monat sparen gegenüber separat"
+              ]
+            },
+            {
+              "service": "Social-Media-Management – Starter",
+              "pitch": "Für Unternehmen, die eine konsistente Social-Media-Präsenz brauchen, aber keine Zeit zum Posten haben. 8 Beiträge/Monat auf 1 Plattform, vollständig verwaltet.",
+              "bullets": [
+                "8 Beiträge/Monat",
+                "1 Plattform (Instagram, Facebook oder LinkedIn)",
+                "Content-Erstellung + Planung",
+                "Kein Aufwand für den Kunden"
+              ]
+            },
+            {
+              "service": "Social-Media-Management – Growth",
+              "pitch": "Skalieren Sie auf 2 Plattformen mit Stories und Engagement-Management inklusive. Baut Community auf, nicht nur Beiträge.",
+              "bullets": [
+                "12 Beiträge/Monat",
+                "2 Plattformen",
+                "Stories inklusive",
+                "Engagement-Management"
+              ]
+            },
+            {
+              "service": "Social-Media-Management – Pro",
+              "pitch": "Vollständige Social-Media-Präsenz auf 3 Plattformen mit Reels und monatlichem Strategie-Call. Für Marken, die ihre Nische online dominieren wollen.",
+              "bullets": [
+                "16 Beiträge/Monat",
+                "3 Plattformen",
+                "Reels inklusive",
+                "Monatlicher Strategie-Call"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "KI & Automatisierungs-Einrichtung",
+          "rows": [
+            {
+              "service": "KI-Workflow – Light",
+              "pitch": "Einfache Automatisierung, die bestehende Tools verbindet — Formulare, E-Mails, CRM, Slack, WhatsApp. Gebaut auf n8n oder Make. Spart jede Woche Stunden manueller Arbeit.",
+              "bullets": [
+                "App-zu-App-Automatisierung",
+                "Gebaut auf n8n oder Make",
+                "z.B. Formular → CRM → E-Mail → Benachrichtigung",
+                "Geliefert in 1–2 Wochen"
+              ]
+            },
+            {
+              "service": "KI-Workflow – Full",
+              "pitch": "Komplexe mehrstufige Automatisierungen mit KI-Entscheidungslogik. Denken Sie an intelligentes Routing, Content-Generierung, Scoring und vollautomatisierte Pipelines.",
+              "bullets": [
+                "Mehrstufige komplexe Automatisierung",
+                "KI-Entscheidungslogik inklusive",
+                "API-Integrationen",
+                "Vollständige Dokumentation + Übergabe"
+              ]
+            },
+            {
+              "service": "KI-Kundensupport-Agent",
+              "pitch": "Ein 24/7-KI-Agent, der Kundenanfragen, Buchungen und Eskalationen ohne menschliche Beteiligung bearbeitet. Enormer ROI für Unternehmen mit hohem repetitivem Support-Aufkommen.",
+              "bullets": [
+                "Bearbeitet FAQs, Buchungen, Beschwerden",
+                "Rund um die Uhr verfügbar",
+                "Eskaliert bei Bedarf an einen Menschen",
+                "WhatsApp + Website + E-Mail-Kanäle"
+              ]
+            },
+            {
+              "service": "KI-Vertriebs- und Outreach-Agent",
+              "pitch": "Automatisierte Lead-Akquise, personalisierte Kontaktaufnahme und Follow-up-Sequenzen mit KI. Für Unternehmen, die Outbound skalieren wollen, ohne einzustellen.",
+              "bullets": [
+                "Lead-Beschaffung + Anreicherung",
+                "Personalisierte Outreach-E-Mails",
+                "Automatisierte Follow-up-Sequenzen",
+                "CRM-Integration"
+              ]
+            },
+            {
+              "service": "KI-Voice-Agent",
+              "pitch": "Eine KI, die Anrufe entgegennimmt, Leads qualifiziert und Termine bucht — klingt menschlich, arbeitet rund um die Uhr. Bahnbrechend für Dienstleistungsunternehmen.",
+              "bullets": [
+                "Nimmt eingehende Anrufe entgegen",
+                "Qualifiziert Leads per Stimme",
+                "Bucht Termine in Echtzeit",
+                "Kosten pro Minute werden dem Kunden berechnet"
+              ]
+            },
+            {
+              "service": "KI-Wissensdatenbank / RAG",
+              "pitch": "KI, trainiert auf den eigenen Dokumenten, Handbüchern und Daten des Kunden. Beantwortet komplexe interne oder Kundenfragen sofort — wie ein Unternehmensexperte, der rund um die Uhr verfügbar ist.",
+              "bullets": [
+                "Trainiert auf eigenen Kundendokumenten",
+                "Beantwortet komplexe Anfragen sofort",
+                "Internes Mitarbeitertool oder kundenorientiert",
+                "Kontinuierlich aktualisierbar"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "perks": {
+      "label": "Das Kleingedruckte (ist kein Kleingedrucktes)",
+      "title": "Keine Haken. Wirklich.",
+      "items": [
+        "Kein Empfehlungslimit — empfehlen Sie 10 Kunden, verdienen Sie 10 Mal",
+        "Ihre Empfehlungen laufen nicht ab",
+        "Zahlung per Banküberweisung (IBAN) oder Twint",
+        "Sie müssen kein Kunde sein, um empfehlen zu können",
+        "Wir kümmern uns um den gesamten Verkauf — Sie stellen nur vor",
+        "Empfehlen Sie jemanden UND beauftragen uns selbst? Sie erhalten 20% Rabatt auf einen Service"
+      ]
+    },
+    "finalCta": {
+      "title": "Bereit für Ihre erste Empfehlung?",
+      "description": "Schicken Sie uns einfach einen WhatsApp mit Name und Kontakt der Person, die Sie empfehlen. Wir übernehmen alles weitere und halten Sie bei jedem Schritt auf dem Laufenden.",
+      "button": "Empfehlung per WhatsApp senden"
+    }
   }
 }

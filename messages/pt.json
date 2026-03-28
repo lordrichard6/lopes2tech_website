@@ -60,7 +60,7 @@
     },
     "fullBrandKit": {
       "name": "Kit de Marca Completo",
-      "priceDisplay": "CHF 549",
+      "priceDisplay": "CHF 680",
       "description": "Branding abrangente: logótipo, cartões de visita, papel timbrado e modelos de redes sociais para um visual coeso.",
       "target": "Pacote de identidade completo",
       "features": {
@@ -144,7 +144,7 @@
     "socialMedia": {
       "starter": {
         "name": "Social Starter",
-        "price": 249,
+        "price": 490,
         "description": "Perfeito para pequenas empresas a começar nas redes sociais.",
         "features": {
           "0": "8 publicações de alta qualidade por mês",
@@ -157,7 +157,7 @@
       },
       "growth": {
         "name": "Social Growth",
-        "price": 399,
+        "price": 690,
         "description": "Para empresas prontas para escalar a sua presença social.",
         "features": {
           "0": "12 publicações por mês",
@@ -170,7 +170,7 @@
       },
       "pro": {
         "name": "Social Pro",
-        "price": 579,
+        "price": 990,
         "description": "Gestão completa de redes sociais para marcas ambiciosas.",
         "features": {
           "0": "16 publicações por mês",
@@ -382,10 +382,10 @@
       }
     },
     "stats": {
-      "projects":  "Projetos Entregues",
-      "rating":    "Satisfação dos Clientes",
+      "projects": "Projetos Entregues",
+      "rating": "Satisfação dos Clientes",
       "countries": "Países Servidos",
-      "delivery":  "Tempo Médio de Entrega"
+      "delivery": "Tempo Médio de Entrega"
     }
   },
   "Hero": {
@@ -1598,7 +1598,12 @@
         "hours": "1h de suporte / mês",
         "response": "≤ 1 dia útil",
         "overage": "CHF 120/h",
-        "features": ["Correção de erros e monitorização", "Atualizações de plataforma", "Suporte prioritário por email", "Verificação mensal de estado"]
+        "features": [
+          "Correção de erros e monitorização",
+          "Atualizações de plataforma",
+          "Suporte prioritário por email",
+          "Verificação mensal de estado"
+        ]
       },
       {
         "name": "Pro",
@@ -1606,7 +1611,12 @@
         "hours": "3h de suporte / mês",
         "response": "≤ 8 horas úteis",
         "overage": "CHF 110/h",
-        "features": ["Tudo incluído no Lite", "Relatório mensal de desempenho", "Melhorias menores de funcionalidades", "Recomendações proativas"]
+        "features": [
+          "Tudo incluído no Lite",
+          "Relatório mensal de desempenho",
+          "Melhorias menores de funcionalidades",
+          "Recomendações proativas"
+        ]
       },
       {
         "name": "Scale",
@@ -1614,7 +1624,12 @@
         "hours": "8h de suporte / mês",
         "response": "≤ 4 horas úteis",
         "overage": "CHF 100/h",
-        "features": ["Tudo incluído no Pro", "Testes A/B e otimização", "Chamada trimestral de roadmap", "SLA de resposta mais rápida"]
+        "features": [
+          "Tudo incluído no Pro",
+          "Testes A/B e otimização",
+          "Chamada trimestral de roadmap",
+          "SLA de resposta mais rápida"
+        ]
       }
     ]
   },
@@ -1972,13 +1987,13 @@
       "title": "Perguntas Frequentes",
       "subtitle": "Marketing nas Redes Sociais na Suíça",
       "q1": "Quanto custa a gestão de redes sociais na Suíça?",
-      "a1": "O nosso plano Digital Starter custa CHF 249/mês (8 publicações/mês, 1 plataforma). Digital Growth custa CHF 399/mês (12 publicações, 2 plataformas, Stories). Digital Pro custa CHF 579/mês (16 publicações, 3 plataformas, gestão de engagement completa). Todos os planos incluem criação de conteúdo com IA e relatórios mensais.",
+      "a1": "O nosso plano Digital Starter custa CHF 490/mês (8 publicações/mês, 1 plataforma). Digital Growth custa CHF 690/mês (12 publicações, 2 plataformas, Stories). Digital Pro custa CHF 990/mês (16 publicações, 3 plataformas, gestão de engagement completa). Todos os planos incluem criação de conteúdo com IA e relatórios mensais.",
       "q2": "Como criam conteúdo sem uma sessão fotográfica?",
       "a2": "Envia-nos fotos do seu smartphone ou empresa. Melhoramo-las profissionalmente com ferramentas de IA — remoção de fundo, correção de cor, overlays de marca e upscaling. Isto mantém os custos 60–70% mais baixos do que agências tradicionais.",
       "q3": "Que plataformas gerem?",
       "a3": "Gerimos Instagram, Facebook, LinkedIn e Google Business Profile. Cada plano cobre 1–3 plataformas. Plataformas adicionais estão disponíveis como add-on por CHF 99/mês cada. Recomendaremos as plataformas certas baseados em onde os seus clientes estão.",
       "q4": "Também gerem campanhas de anúncios pagos?",
-      "a4": "Sim! Gerimos Meta Ads (Facebook + Instagram) a partir de CHF 399/mês e Google Ads a partir de CHF 449/mês. Também oferecemos um bundle combinado por CHF 699/mês. O orçamento de anúncios é faturado separadamente diretamente pela Meta e Google.",
+      "a4": "Sim! Gerimos Meta Ads (Facebook + Instagram) a partir de CHF 690/mês e Google Ads a partir de CHF 449/mês. Também oferecemos um bundle combinado por CHF 699/mês. O orçamento de anúncios é faturado separadamente diretamente pela Meta e Google.",
       "q5": "Criam legendas em alemão e outras línguas suíças?",
       "a5": "Sim! Criamos conteúdo em qualquer língua que o seu público fale — alemão, inglês, francês, italiano ou português. Particularmente valioso para empresas suíças que servem múltiplas regiões linguísticas.",
       "q6": "Com que rapidez podem começar a gerir as nossas redes sociais?",
@@ -2005,7 +2020,7 @@
     "faqs": {
       "q1": {
         "question": "Quanto custa a gestão de redes sociais em Zurique?",
-        "answer": "A nossa gestão de redes sociais com IA começa em CHF 249/mês para o pacote Social Starter (8 publicações/mês, 1 plataforma). O pacote Social Growth é CHF 399/mês (12 publicações, 2 plataformas) e Social Pro é CHF 579/mês (16 publicações, 3 plataformas incluindo gestão completa de engagement).",
+        "answer": "A nossa gestão de redes sociais com IA começa em CHF 490/mês para o pacote Social Starter (8 publicações/mês, 1 plataforma). O pacote Social Growth é CHF 690/mês (12 publicações, 2 plataformas) e Social Pro é CHF 990/mês (16 publicações, 3 plataformas incluindo gestão completa de engagement).",
         "category": "socialMedia"
       },
       "q2": {
@@ -2035,7 +2050,7 @@
       },
       "q7": {
         "question": "Qual é a diferença entre Social Starter, Growth e Pro?",
-        "answer": "Social Starter (CHF 249/mês) inclui 8 publicações/mês em 1 plataforma — perfeito para pequenas empresas a começar. Social Growth (CHF 399/mês) adiciona 12 publicações, 2 plataformas, Stories e gestão de engagement — ideal para empresas em crescimento. Social Pro (CHF 579/mês) entrega 16 publicações, 3 plataformas, engagement completo, chamadas mensais de estratégia e testes A/B — melhor para marcas ambiciosas.",
+        "answer": "Social Starter (CHF 490/mês) inclui 8 publicações/mês em 1 plataforma — perfeito para pequenas empresas a começar. Social Growth (CHF 690/mês) adiciona 12 publicações, 2 plataformas, Stories e gestão de engagement — ideal para empresas em crescimento. Social Pro (CHF 990/mês) entrega 16 publicações, 3 plataformas, engagement completo, chamadas mensais de estratégia e testes A/B — melhor para marcas ambiciosas.",
         "category": "socialMedia"
       },
       "q8": {
@@ -2116,7 +2131,7 @@
     },
     "socialMediaMarketing": {
       "title": "Marketing Redes Sociais Zurique | Lopes2Tech",
-      "description": "Gestão de redes sociais com IA para empresas suíças a partir de CHF 249/mês. Criação de conteúdo, Meta Ads, Google Ads e gestão de comunidade. Sediado em Zurique.",
+      "description": "Gestão de redes sociais com IA para empresas suíças a partir de CHF 490/mês. Criação de conteúdo, Meta Ads, Google Ads e gestão de comunidade. Sediado em Zurique.",
       "ogTitle": "Marketing Redes Sociais Zurique | Lopes2Tech",
       "ogDescription": "Marketing digital com IA para empresas suíças. Criação de conteúdo, Meta Ads e Google Ads — tudo gerido para si."
     },
@@ -2295,463 +2310,463 @@
       "button": "Contacte-nos pelo WhatsApp"
     }
   },
-  "Referral":   {
-      "badge": "Programa de Referência",
-      "hero": {
-          "h1a": "Refira um cliente.",
-          "h1b": "Receba o seu pagamento.",
-          "subtitlePre": "Conhece alguém que precise de um website, anúncios pagos ou automações? Faça a apresentação e ganhe até",
-          "highlight1": "10% por projeto",
-          "subtitleMid": "ou",
-          "highlight2": "15% do valor mensal",
-          "subtitlePost": "durante 6 meses. Sem limites. Sem formulários. Basta uma mensagem no WhatsApp.",
-          "cta": "Enviar uma referência agora"
-      },
-      "howItWorks": {
-          "label": "Como funciona",
-          "title": "3 passos. É tudo.",
-          "steps": [
-              {
-                  "title": "Conhece alguém que precise de um website ou apoio digital?",
-                  "description": "Pense num amigo, colega ou empresário que pudesse beneficiar de um website profissional, anúncios pagos ou automação. Essa é a sua referência."
-              },
-              {
-                  "title": "Encaminhe-nos para essa pessoa",
-                  "description": "Partilhe o nosso website ou envie-nos um WhatsApp com o nome e contacto da pessoa. Nós tratamos do resto — não precisa de fazer mais nada."
-              },
-              {
-                  "title": "Receba o pagamento quando assinarem",
-                  "description": "Assim que assinarem o contrato e pagarem o sinal, transferimos a sua recompensa. Simples, transparente, sem papelada."
-              }
+  "Referral": {
+    "badge": "Programa de Referência",
+    "hero": {
+      "h1a": "Refira um cliente.",
+      "h1b": "Receba o seu pagamento.",
+      "subtitlePre": "Conhece alguém que precise de um website, anúncios pagos ou automações? Faça a apresentação e ganhe até",
+      "highlight1": "10% por projeto",
+      "subtitleMid": "ou",
+      "highlight2": "15% do valor mensal",
+      "subtitlePost": "durante 6 meses. Sem limites. Sem formulários. Basta uma mensagem no WhatsApp.",
+      "cta": "Enviar uma referência agora"
+    },
+    "howItWorks": {
+      "label": "Como funciona",
+      "title": "3 passos. É tudo.",
+      "steps": [
+        {
+          "title": "Conhece alguém que precise de um website ou apoio digital?",
+          "description": "Pense num amigo, colega ou empresário que pudesse beneficiar de um website profissional, anúncios pagos ou automação. Essa é a sua referência."
+        },
+        {
+          "title": "Encaminhe-nos para essa pessoa",
+          "description": "Partilhe o nosso website ou envie-nos um WhatsApp com o nome e contacto da pessoa. Nós tratamos do resto — não precisa de fazer mais nada."
+        },
+        {
+          "title": "Receba o pagamento quando assinarem",
+          "description": "Assim que assinarem o contrato e pagarem o sinal, transferimos a sua recompensa. Simples, transparente, sem papelada."
+        }
+      ]
+    },
+    "dualBenefit": {
+      "label": "Vantagem extra para quem refere",
+      "title1": "Refere alguém",
+      "title2": "e também se torna cliente? Obtenha",
+      "title3": "20% de desconto",
+      "title4": "num serviço.",
+      "descPre": "Se nos indicar um cliente e mais tarde decidir contratar os nossos serviços, desbloqueia um",
+      "descHighlight": "desconto de 20% num único serviço",
+      "descPost": "— website, anúncios, automação, branding, o que precisar. Sem prazo de validade. Basta mencionar que fez uma referência e o desconto é seu."
+    },
+    "rewards": {
+      "label": "O que ganha",
+      "title": "As suas recompensas, por serviço",
+      "subtitlePre": "Os serviços pontuais pagam",
+      "subtitleHighlight1": "10%",
+      "subtitleMid": "sobre o sinal. Os serviços mensais pagam",
+      "subtitleHighlight2": "15% durante 6 meses",
+      "subtitlePost": "Clique em qualquer serviço para ver a proposta.",
+      "colService": "Serviço",
+      "colPrice": "Preço",
+      "colReward": "A sua Recompensa",
+      "badgeOneTime": "10% uma vez",
+      "badgeRecurring": "15% × 6 meses",
+      "viewService": "Ver página completa do serviço",
+      "footerNote": "As recompensas são pagas após o cliente referido completar o sinal ou o primeiro pagamento mensal. As recompensas mensais são transferidas no final de cada mês.",
+      "noteOnDeposit": "Pago sobre o sinal",
+      "noteOnDelivery": "Pago na entrega",
+      "noteScales": "Escala com o tamanho do site",
+      "categories": [
+        {
+          "title": "Pacotes de Website",
+          "rows": [
+            {
+              "service": "Website Starter",
+              "pitch": "Perfeito para novos negócios, freelancers ou quem precisa de uma presença online cuidada rapidamente. Entregue em 4–5 dias — sem esperar semanas.",
+              "bullets": [
+                "Website personalizado de uma página",
+                "Copywriting com IA incluído",
+                "Widget de marcação + botão WhatsApp",
+                "Totalmente responsivo para mobile",
+                "Entregue em 4–5 dias"
+              ]
+            },
+            {
+              "service": "Website Profissional",
+              "pitch": "Para empreendedores estabelecidos prontos a dar um salto. Multi-página, multi-idioma, com SEO integrado desde o primeiro dia.",
+              "bullets": [
+                "Website de 5 páginas",
+                "2 idiomas incluídos",
+                "1 automação incluída",
+                "Fundações de SEO",
+                "Entregue em 5–6 dias"
+              ]
+            },
+            {
+              "service": "Website Business Pro",
+              "pitch": "O pacote completo para PMEs. Até 10 páginas de serviços, 3 idiomas, sistema de captação de leads — tudo para competir online a sério.",
+              "bullets": [
+                "5 páginas principais + até 10 páginas de serviços",
+                "3 idiomas incluídos",
+                "SEO + sistema de captação de leads",
+                "Entregue em 6–7 dias"
+              ]
+            },
+            {
+              "service": "Landing Page de Campanha",
+              "pitch": "Uma página única focada em conversão para campanhas de anúncios, lançamentos de produtos ou lead magnets. Construída para converter tráfego em leads.",
+              "bullets": [
+                "Design otimizado para conversão",
+                "Integrado com tracking de anúncios",
+                "CTA + formulário de captação de leads",
+                "Entrega rápida"
+              ]
+            }
           ]
-      },
-      "dualBenefit": {
-          "label": "Vantagem extra para quem refere",
-          "title1": "Refere alguém",
-          "title2": "e também se torna cliente? Obtenha",
-          "title3": "20% de desconto",
-          "title4": "num serviço.",
-          "descPre": "Se nos indicar um cliente e mais tarde decidir contratar os nossos serviços, desbloqueia um",
-          "descHighlight": "desconto de 20% num único serviço",
-          "descPost": "— website, anúncios, automação, branding, o que precisar. Sem prazo de validade. Basta mencionar que fez uma referência e o desconto é seu."
-      },
-      "rewards": {
-          "label": "O que ganha",
-          "title": "As suas recompensas, por serviço",
-          "subtitlePre": "Os serviços pontuais pagam",
-          "subtitleHighlight1": "10%",
-          "subtitleMid": "sobre o sinal. Os serviços mensais pagam",
-          "subtitleHighlight2": "15% durante 6 meses",
-          "subtitlePost": "Clique em qualquer serviço para ver a proposta.",
-          "colService": "Serviço",
-          "colPrice": "Preço",
-          "colReward": "A sua Recompensa",
-          "badgeOneTime": "10% uma vez",
-          "badgeRecurring": "15% × 6 meses",
-          "viewService": "Ver página completa do serviço",
-          "footerNote": "As recompensas são pagas após o cliente referido completar o sinal ou o primeiro pagamento mensal. As recompensas mensais são transferidas no final de cada mês.",
-          "noteOnDeposit": "Pago sobre o sinal",
-          "noteOnDelivery": "Pago na entrega",
-          "noteScales": "Escala com o tamanho do site",
-          "categories": [
-              {
-                  "title": "Pacotes de Website",
-                  "rows": [
-                      {
-                          "service": "Website Starter",
-                          "pitch": "Perfeito para novos negócios, freelancers ou quem precisa de uma presença online cuidada rapidamente. Entregue em 4–5 dias — sem esperar semanas.",
-                          "bullets": [
-                              "Website personalizado de uma página",
-                              "Copywriting com IA incluído",
-                              "Widget de marcação + botão WhatsApp",
-                              "Totalmente responsivo para mobile",
-                              "Entregue em 4–5 dias"
-                          ]
-                      },
-                      {
-                          "service": "Website Profissional",
-                          "pitch": "Para empreendedores estabelecidos prontos a dar um salto. Multi-página, multi-idioma, com SEO integrado desde o primeiro dia.",
-                          "bullets": [
-                              "Website de 5 páginas",
-                              "2 idiomas incluídos",
-                              "1 automação incluída",
-                              "Fundações de SEO",
-                              "Entregue em 5–6 dias"
-                          ]
-                      },
-                      {
-                          "service": "Website Business Pro",
-                          "pitch": "O pacote completo para PMEs. Até 10 páginas de serviços, 3 idiomas, sistema de captação de leads — tudo para competir online a sério.",
-                          "bullets": [
-                              "5 páginas principais + até 10 páginas de serviços",
-                              "3 idiomas incluídos",
-                              "SEO + sistema de captação de leads",
-                              "Entregue em 6–7 dias"
-                          ]
-                      },
-                      {
-                          "service": "Landing Page de Campanha",
-                          "pitch": "Uma página única focada em conversão para campanhas de anúncios, lançamentos de produtos ou lead magnets. Construída para converter tráfego em leads.",
-                          "bullets": [
-                              "Design otimizado para conversão",
-                              "Integrado com tracking de anúncios",
-                              "CTA + formulário de captação de leads",
-                              "Entrega rápida"
-                          ]
-                      }
-                  ]
-              },
-              {
-                  "title": "Branding",
-                  "rows": [
-                      {
-                          "service": "Apenas Logótipo",
-                          "pitch": "Um logótipo profissional em 3 variações. Ideal para novos negócios ou rebranding que só precisam da marca — limpo, escalável e entregue rapidamente.",
-                          "bullets": [
-                              "3 variações do logótipo (claro, escuro, ícone)",
-                              "Ficheiros vetoriais incluídos",
-                              "Pronto para web + impressão"
-                          ]
-                      },
-                      {
-                          "service": "Kit de Marca Completo",
-                          "pitch": "Tudo o que um negócio precisa para ter uma aparência profissional em todo o lado. Logótipo, cores, tipografia, cartões de visita e kit de redes sociais — tudo num só pacote.",
-                          "bullets": [
-                              "Logótipo (3 variações)",
-                              "Paleta de cores + tipografia",
-                              "Documento de brand guidelines",
-                              "Design de cartões de visita",
-                              "Kit de redes sociais (imagens de perfil + capa)"
-                          ]
-                      }
-                  ]
-              },
-              {
-                  "title": "Configuração e Quick Wins",
-                  "rows": [
-                      {
-                          "service": "Configuração do Google Business Profile",
-                          "pitch": "Os negócios locais dependem muito do GBP. Um perfil totalmente otimizado com fotos, serviços e 3 publicações — melhora a visibilidade local de imediato.",
-                          "bullets": [
-                              "Configuração ou otimização completa do GBP",
-                              "Fotos, serviços e categorias definidos",
-                              "3 publicações feitas",
-                              "Melhor visibilidade no Google Maps"
-                          ]
-                      },
-                      {
-                          "service": "Configuração de Analytics e Tracking (GA4)",
-                          "pitch": "Essencial para qualquer negócio que faça anúncios. Sem tracking, está a navegar às cegas. Configuramos o GA4 + Meta Pixel para que cada clique seja medido.",
-                          "bullets": [
-                              "Configuração do Google Analytics 4",
-                              "Instalação do Meta Pixel",
-                              "Eventos de conversão configurados",
-                              "Dashboard + relatórios prontos"
-                          ]
-                      },
-                      {
-                          "service": "Configuração de E-mail Profissional",
-                          "pitch": "E-mail profissional como paulo@seunegocio.ch em vez de Gmail. Configura o Google Workspace ou Microsoft 365 — dá credibilidade a qualquer negócio.",
-                          "bullets": [
-                              "Configuração de endereço de e-mail profissional",
-                              "Google Workspace ou Microsoft 365",
-                              "Assinaturas de e-mail configuradas",
-                              "Acesso mobile + desktop"
-                          ]
-                      },
-                      {
-                          "service": "Auditoria de Website",
-                          "pitch": "A venda mais fácil — CHF 99 por um relatório de 1 página com 5 melhorias específicas. Perfeito como primeira abordagem para clientes hesitantes.",
-                          "bullets": [
-                              "Relatório PDF de 1 página",
-                              "5 melhorias específicas e acionáveis",
-                              "SEO + velocidade + UX avaliados",
-                              "Entregue em 48h"
-                          ]
-                      },
-                      {
-                          "service": "Otimização de Velocidade",
-                          "pitch": "Um website lento perde clientes e posiciona-se mais abaixo no Google. Correção única: caching, compressão de imagens e melhoria de desempenho.",
-                          "bullets": [
-                              "Compressão de imagens",
-                              "Configuração de caching",
-                              "Melhoria dos Core Web Vitals",
-                              "Melhores posições no Google"
-                          ]
-                      },
-                      {
-                          "service": "Google Business Boost",
-                          "pitch": "O ganho mais rápido para qualquer negócio local. Otimização rápida do GBP + 3 publicações feitas. Excelente serviço de entrada.",
-                          "bullets": [
-                              "Otimização rápida do GBP",
-                              "3 publicações feitas",
-                              "Categorias + atributos atualizados"
-                          ]
-                      },
-                      {
-                          "service": "Avaliação de Automação",
-                          "pitch": "Analisamos o fluxo de trabalho do cliente e entregamos um PDF com 3–5 processos que poderiam ser automatizados. Vende-se sozinho — e muitas vezes leva a um projeto de automação completo.",
-                          "bullets": [
-                              "Revisão aprofundada do fluxo de trabalho",
-                              "PDF de 1 página com 3–5 oportunidades de automação",
-                              "Estimativa de ROI por automação",
-                              "Entregue em 48h"
-                          ]
-                      }
-                  ]
-              },
-              {
-                  "title": "Add-Ons para Website",
-                  "rows": [
-                      {
-                          "service": "Blog / Configuração de CMS",
-                          "pitch": "Permite ao cliente ter um blog que pode editar ele próprio — sem precisar de programador após a configuração. Ótimo para SEO e marketing de conteúdo.",
-                          "bullets": [
-                              "CMS em Sanity ou Notion",
-                              "O cliente pode adicionar/editar publicações sem código",
-                              "Estrutura de blog pronta para SEO"
-                          ]
-                      },
-                      {
-                          "service": "Página de Serviço Extra",
-                          "pitch": "Cada página de serviço adicional segmenta uma nova palavra-chave e expande a presença no Google. Baixo custo, alto valor de SEO.",
-                          "bullets": [
-                              "Página otimizada para SEO",
-                              "Corresponde ao design existente",
-                              "Indexada e submetida ao Google"
-                          ]
-                      },
-                      {
-                          "service": "Idioma Extra",
-                          "pitch": "Alcance mais clientes no seu idioma nativo. Tradução assistida por IA + tags hreflang corretas para o Google posicionar cada idioma corretamente.",
-                          "bullets": [
-                              "Tradução assistida por IA",
-                              "Configuração de tags hreflang",
-                              "Seletor de idioma adicionado",
-                              "Preço escala com o número de páginas"
-                          ]
-                      },
-                      {
-                          "service": "Local SEO Boost",
-                          "pitch": "Dados estruturados (schema), configuração do Search Console, submissão de sitemap — as bases técnicas de SEO que a maioria dos websites não tem.",
-                          "bullets": [
-                              "Schema markup adicionado",
-                              "Google Search Console configurado",
-                              "Sitemap submetido",
-                              "Bing Webmaster Tools configurado"
-                          ]
-                      },
-                      {
-                          "service": "Widget de Prova Social",
-                          "pitch": "Feed de Google Reviews atualizado automaticamente e incorporado no website. Nada vende melhor do que reviews reais de clientes visíveis na página inicial.",
-                          "bullets": [
-                              "Google Reviews sincronizados automaticamente",
-                              "Widget incorporado no website",
-                              "Aumenta a confiança e as conversões"
-                          ]
-                      },
-                      {
-                          "service": "Integração de Newsletter",
-                          "pitch": "Lista de e-mail = audiência própria. Configuramos o formulário de inscrição + uma automação de e-mail de boas-vindas para que cada subscritor seja acompanhado automaticamente.",
-                          "bullets": [
-                              "Brevo ou Mailchimp conectados",
-                              "Formulário de inscrição incorporado no site",
-                              "Automação de e-mail de boas-vindas ativa"
-                          ]
-                      },
-                      {
-                          "service": "Automação de Recolha de Reviews",
-                          "pitch": "A maioria dos negócios tem clientes satisfeitos que nunca deixam reviews. Esta automação envia 3 e-mails automáticos após a conclusão de um trabalho a pedir uma Google Review.",
-                          "bullets": [
-                              "Sequência automatizada de 3 e-mails",
-                              "Acionada após conclusão do trabalho",
-                              "Link direto para o formulário de Google Review",
-                              "Mais reviews de 5 estrelas no piloto automático"
-                          ]
-                      },
-                      {
-                          "service": "Sistema de Marcação de Consultas",
-                          "pitch": "Substitui a troca de mensagens para marcar horários por um widget de marcação profissional. Sincroniza com o Google Calendar e envia lembretes automaticamente.",
-                          "bullets": [
-                              "Configuração do Cal.com ou Calendly",
-                              "Sincronização com Google Calendar",
-                              "Lembretes automáticos (e-mail + SMS)",
-                              "Incorporado no website"
-                          ]
-                      },
-                      {
-                          "service": "Sistema de Captação de Leads",
-                          "pitch": "Transforma visitantes do website em leads — automaticamente. O envio do formulário desencadeia uma entrada no CRM, um e-mail de resposta automática e uma notificação à equipa.",
-                          "bullets": [
-                              "Formulário de contacto → pipeline de CRM",
-                              "E-mail de resposta automática ao lead",
-                              "Notificação à equipa (e-mail ou WhatsApp)",
-                              "Tracking completo de leads"
-                          ]
-                      },
-                      {
-                          "service": "Chatbot de FAQ com IA",
-                          "pitch": "Um chatbot treinado com o conteúdo do próprio cliente — responde a FAQs, qualifica leads e trabalha 24/7 sem qualquer intervenção humana.",
-                          "bullets": [
-                              "Treinado com o conteúdo do cliente",
-                              "Responde a FAQs automaticamente",
-                              "Qualificação de leads incorporada",
-                              "Incorporado no website",
-                              "+ custos de utilização da API"
-                          ]
-                      }
-                  ]
-              },
-              {
-                  "title": "Marketing e Anúncios (Mensal)",
-                  "rows": [
-                      {
-                          "service": "Gestão de Meta Ads",
-                          "pitch": "Gestão completa de Meta Ads — Facebook + Instagram. Tratamos da estratégia, criativos, segmentação, retargeting, testes A/B e relatórios mensais. O investimento em anúncios é pago separadamente à Meta.",
-                          "bullets": [
-                              "Configuração de campanhas + gestão contínua",
-                              "Criativo de anúncios (copy + visuais)",
-                              "Segmentação de audiência + retargeting",
-                              "Testes A/B",
-                              "Relatório de desempenho mensal"
-                          ]
-                      },
-                      {
-                          "service": "Gestão de Google Ads",
-                          "pitch": "Capture compradores de alta intenção que pesquisam no Google. Gerimos campanhas de Search + Display com pesquisa completa de palavras-chave, copy de anúncios e tracking de conversão. Investimento em anúncios pago separadamente.",
-                          "bullets": [
-                              "Pesquisa de palavras-chave",
-                              "Campanhas de Search + Display",
-                              "Copy de anúncios escrito e testado",
-                              "Configuração de tracking de conversão",
-                              "Relatório de analytics mensal"
-                          ]
-                      },
-                      {
-                          "service": "Pacote Meta + Google",
-                          "pitch": "Ambos os canais geridos em conjunto — Meta para awareness + retargeting, Google para pesquisa por intenção. Estratégia e relatórios unificados. Poupa CHF 99/mês face à compra separada.",
-                          "bullets": [
-                              "Tudo nos planos Meta + Google Ads",
-                              "Estratégia cross-channel",
-                              "Relatório mensal unificado",
-                              "Poupe CHF 99/mês face a separado"
-                          ]
-                      },
-                      {
-                          "service": "Gestão de Redes Sociais – Starter",
-                          "pitch": "Para negócios que precisam de uma presença social consistente mas não têm tempo para publicar. 8 publicações/mês numa plataforma, totalmente geridas.",
-                          "bullets": [
-                              "8 publicações/mês",
-                              "1 plataforma (Instagram, Facebook ou LinkedIn)",
-                              "Criação de conteúdo + agendamento",
-                              "Sem esforço do cliente"
-                          ]
-                      },
-                      {
-                          "service": "Gestão de Redes Sociais – Growth",
-                          "pitch": "Expanda para 2 plataformas com stories e gestão de engagement incluídos. Constrói comunidade, não apenas publicações.",
-                          "bullets": [
-                              "12 publicações/mês",
-                              "2 plataformas",
-                              "Stories incluídas",
-                              "Gestão de engagement"
-                          ]
-                      },
-                      {
-                          "service": "Gestão de Redes Sociais – Pro",
-                          "pitch": "Presença completa nas redes sociais em 3 plataformas com Reels e uma chamada de estratégia mensal. Para marcas que querem dominar o seu nicho online.",
-                          "bullets": [
-                              "16 publicações/mês",
-                              "3 plataformas",
-                              "Reels incluídos",
-                              "Chamada de estratégia mensal"
-                          ]
-                      }
-                  ]
-              },
-              {
-                  "title": "IA e Configuração de Automação",
-                  "rows": [
-                      {
-                          "service": "Workflow de IA – Light",
-                          "pitch": "Automação simples que liga as ferramentas existentes — formulários, e-mails, CRM, Slack, WhatsApp. Construído em n8n ou Make. Poupa horas de trabalho manual todas as semanas.",
-                          "bullets": [
-                              "Automação entre aplicações",
-                              "Construído em n8n ou Make",
-                              "ex. Formulário → CRM → E-mail → Notificação",
-                              "Entregue em 1–2 semanas"
-                          ]
-                      },
-                      {
-                          "service": "Workflow de IA – Full",
-                          "pitch": "Automações complexas multi-etapas com tomada de decisão por IA. Pense em encaminhamento inteligente, geração de conteúdo, scoring e pipelines totalmente automatizados.",
-                          "bullets": [
-                              "Automação complexa multi-etapas",
-                              "Lógica de decisão com IA incluída",
-                              "Integrações via API",
-                              "Documentação completa + entrega"
-                          ]
-                      },
-                      {
-                          "service": "Agente de Suporte ao Cliente com IA",
-                          "pitch": "Um agente de IA disponível 24/7 que trata de consultas de clientes, marcações e escalamentos — sem intervenção humana. ROI enorme para negócios com elevado volume de suporte repetitivo.",
-                          "bullets": [
-                              "Trata de FAQs, marcações e reclamações",
-                              "Disponível 24/7",
-                              "Escala para humano quando necessário",
-                              "WhatsApp + website + canais de e-mail"
-                          ]
-                      },
-                      {
-                          "service": "Agente de Vendas e Outreach com IA",
-                          "pitch": "Prospeção automatizada de leads, outreach personalizado e sequências de follow-up com IA. Para negócios que querem escalar o outbound sem contratar.",
-                          "bullets": [
-                              "Identificação + enriquecimento de leads",
-                              "E-mails de outreach personalizados",
-                              "Sequências de follow-up automáticas",
-                              "Integração com CRM"
-                          ]
-                      },
-                      {
-                          "service": "Agente de Voz com IA",
-                          "pitch": "Uma IA que atende chamadas telefónicas, qualifica leads e marca consultas — soa humana, trabalha sem parar. Uma mudança de paradigma para negócios de serviços.",
-                          "bullets": [
-                              "Atende chamadas recebidas",
-                              "Qualifica leads por voz",
-                              "Marca consultas em tempo real",
-                              "Custo por minuto cobrado ao cliente"
-                          ]
-                      },
-                      {
-                          "service": "Base de Conhecimento com IA / RAG",
-                          "pitch": "IA treinada nos documentos, manuais e dados do próprio cliente. Responde a perguntas complexas internas ou de clientes de forma instantânea — como um especialista da empresa disponível 24/7.",
-                          "bullets": [
-                              "Treinada nos documentos do próprio cliente",
-                              "Responde a questões complexas de forma instantânea",
-                              "Ferramenta interna para colaboradores ou voltada para clientes",
-                              "Atualizável continuamente"
-                          ]
-                      }
-                  ]
-              }
+        },
+        {
+          "title": "Branding",
+          "rows": [
+            {
+              "service": "Apenas Logótipo",
+              "pitch": "Um logótipo profissional em 3 variações. Ideal para novos negócios ou rebranding que só precisam da marca — limpo, escalável e entregue rapidamente.",
+              "bullets": [
+                "3 variações do logótipo (claro, escuro, ícone)",
+                "Ficheiros vetoriais incluídos",
+                "Pronto para web + impressão"
+              ]
+            },
+            {
+              "service": "Kit de Marca Completo",
+              "pitch": "Tudo o que um negócio precisa para ter uma aparência profissional em todo o lado. Logótipo, cores, tipografia, cartões de visita e kit de redes sociais — tudo num só pacote.",
+              "bullets": [
+                "Logótipo (3 variações)",
+                "Paleta de cores + tipografia",
+                "Documento de brand guidelines",
+                "Design de cartões de visita",
+                "Kit de redes sociais (imagens de perfil + capa)"
+              ]
+            }
           ]
-      },
-      "perks": {
-          "label": "A letra pequena (que não é bem letra pequena)",
-          "title": "Sem armadilhas. A sério.",
-          "items": [
-              "Sem limite de referências — refira 10 clientes, ganhe 10 vezes",
-              "As suas referências não têm prazo de validade",
-              "Pagamento por transferência bancária (IBAN) ou Twint",
-              "Não precisa de ser cliente para poder referir",
-              "Tratamos de todas as vendas — só precisa de fazer a apresentação",
-              "Refere alguém E contrata-nos? Obtenha 20% de desconto num serviço"
+        },
+        {
+          "title": "Configuração e Quick Wins",
+          "rows": [
+            {
+              "service": "Configuração do Google Business Profile",
+              "pitch": "Os negócios locais dependem muito do GBP. Um perfil totalmente otimizado com fotos, serviços e 3 publicações — melhora a visibilidade local de imediato.",
+              "bullets": [
+                "Configuração ou otimização completa do GBP",
+                "Fotos, serviços e categorias definidos",
+                "3 publicações feitas",
+                "Melhor visibilidade no Google Maps"
+              ]
+            },
+            {
+              "service": "Configuração de Analytics e Tracking (GA4)",
+              "pitch": "Essencial para qualquer negócio que faça anúncios. Sem tracking, está a navegar às cegas. Configuramos o GA4 + Meta Pixel para que cada clique seja medido.",
+              "bullets": [
+                "Configuração do Google Analytics 4",
+                "Instalação do Meta Pixel",
+                "Eventos de conversão configurados",
+                "Dashboard + relatórios prontos"
+              ]
+            },
+            {
+              "service": "Configuração de E-mail Profissional",
+              "pitch": "E-mail profissional como paulo@seunegocio.ch em vez de Gmail. Configura o Google Workspace ou Microsoft 365 — dá credibilidade a qualquer negócio.",
+              "bullets": [
+                "Configuração de endereço de e-mail profissional",
+                "Google Workspace ou Microsoft 365",
+                "Assinaturas de e-mail configuradas",
+                "Acesso mobile + desktop"
+              ]
+            },
+            {
+              "service": "Auditoria de Website",
+              "pitch": "A venda mais fácil — CHF 99 por um relatório de 1 página com 5 melhorias específicas. Perfeito como primeira abordagem para clientes hesitantes.",
+              "bullets": [
+                "Relatório PDF de 1 página",
+                "5 melhorias específicas e acionáveis",
+                "SEO + velocidade + UX avaliados",
+                "Entregue em 48h"
+              ]
+            },
+            {
+              "service": "Otimização de Velocidade",
+              "pitch": "Um website lento perde clientes e posiciona-se mais abaixo no Google. Correção única: caching, compressão de imagens e melhoria de desempenho.",
+              "bullets": [
+                "Compressão de imagens",
+                "Configuração de caching",
+                "Melhoria dos Core Web Vitals",
+                "Melhores posições no Google"
+              ]
+            },
+            {
+              "service": "Google Business Boost",
+              "pitch": "O ganho mais rápido para qualquer negócio local. Otimização rápida do GBP + 3 publicações feitas. Excelente serviço de entrada.",
+              "bullets": [
+                "Otimização rápida do GBP",
+                "3 publicações feitas",
+                "Categorias + atributos atualizados"
+              ]
+            },
+            {
+              "service": "Avaliação de Automação",
+              "pitch": "Analisamos o fluxo de trabalho do cliente e entregamos um PDF com 3–5 processos que poderiam ser automatizados. Vende-se sozinho — e muitas vezes leva a um projeto de automação completo.",
+              "bullets": [
+                "Revisão aprofundada do fluxo de trabalho",
+                "PDF de 1 página com 3–5 oportunidades de automação",
+                "Estimativa de ROI por automação",
+                "Entregue em 48h"
+              ]
+            }
           ]
-      },
-      "finalCta": {
-          "title": "Pronto para fazer a sua primeira referência?",
-          "description": "Envie-nos um WhatsApp com o nome e contacto de quem está a referir. Nós tratamos do resto e mantemo-lo informado em cada etapa.",
-          "button": "Enviar referência pelo WhatsApp"
-      }
+        },
+        {
+          "title": "Add-Ons para Website",
+          "rows": [
+            {
+              "service": "Blog / Configuração de CMS",
+              "pitch": "Permite ao cliente ter um blog que pode editar ele próprio — sem precisar de programador após a configuração. Ótimo para SEO e marketing de conteúdo.",
+              "bullets": [
+                "CMS em Sanity ou Notion",
+                "O cliente pode adicionar/editar publicações sem código",
+                "Estrutura de blog pronta para SEO"
+              ]
+            },
+            {
+              "service": "Página de Serviço Extra",
+              "pitch": "Cada página de serviço adicional segmenta uma nova palavra-chave e expande a presença no Google. Baixo custo, alto valor de SEO.",
+              "bullets": [
+                "Página otimizada para SEO",
+                "Corresponde ao design existente",
+                "Indexada e submetida ao Google"
+              ]
+            },
+            {
+              "service": "Idioma Extra",
+              "pitch": "Alcance mais clientes no seu idioma nativo. Tradução assistida por IA + tags hreflang corretas para o Google posicionar cada idioma corretamente.",
+              "bullets": [
+                "Tradução assistida por IA",
+                "Configuração de tags hreflang",
+                "Seletor de idioma adicionado",
+                "Preço escala com o número de páginas"
+              ]
+            },
+            {
+              "service": "Local SEO Boost",
+              "pitch": "Dados estruturados (schema), configuração do Search Console, submissão de sitemap — as bases técnicas de SEO que a maioria dos websites não tem.",
+              "bullets": [
+                "Schema markup adicionado",
+                "Google Search Console configurado",
+                "Sitemap submetido",
+                "Bing Webmaster Tools configurado"
+              ]
+            },
+            {
+              "service": "Widget de Prova Social",
+              "pitch": "Feed de Google Reviews atualizado automaticamente e incorporado no website. Nada vende melhor do que reviews reais de clientes visíveis na página inicial.",
+              "bullets": [
+                "Google Reviews sincronizados automaticamente",
+                "Widget incorporado no website",
+                "Aumenta a confiança e as conversões"
+              ]
+            },
+            {
+              "service": "Integração de Newsletter",
+              "pitch": "Lista de e-mail = audiência própria. Configuramos o formulário de inscrição + uma automação de e-mail de boas-vindas para que cada subscritor seja acompanhado automaticamente.",
+              "bullets": [
+                "Brevo ou Mailchimp conectados",
+                "Formulário de inscrição incorporado no site",
+                "Automação de e-mail de boas-vindas ativa"
+              ]
+            },
+            {
+              "service": "Automação de Recolha de Reviews",
+              "pitch": "A maioria dos negócios tem clientes satisfeitos que nunca deixam reviews. Esta automação envia 3 e-mails automáticos após a conclusão de um trabalho a pedir uma Google Review.",
+              "bullets": [
+                "Sequência automatizada de 3 e-mails",
+                "Acionada após conclusão do trabalho",
+                "Link direto para o formulário de Google Review",
+                "Mais reviews de 5 estrelas no piloto automático"
+              ]
+            },
+            {
+              "service": "Sistema de Marcação de Consultas",
+              "pitch": "Substitui a troca de mensagens para marcar horários por um widget de marcação profissional. Sincroniza com o Google Calendar e envia lembretes automaticamente.",
+              "bullets": [
+                "Configuração do Cal.com ou Calendly",
+                "Sincronização com Google Calendar",
+                "Lembretes automáticos (e-mail + SMS)",
+                "Incorporado no website"
+              ]
+            },
+            {
+              "service": "Sistema de Captação de Leads",
+              "pitch": "Transforma visitantes do website em leads — automaticamente. O envio do formulário desencadeia uma entrada no CRM, um e-mail de resposta automática e uma notificação à equipa.",
+              "bullets": [
+                "Formulário de contacto → pipeline de CRM",
+                "E-mail de resposta automática ao lead",
+                "Notificação à equipa (e-mail ou WhatsApp)",
+                "Tracking completo de leads"
+              ]
+            },
+            {
+              "service": "Chatbot de FAQ com IA",
+              "pitch": "Um chatbot treinado com o conteúdo do próprio cliente — responde a FAQs, qualifica leads e trabalha 24/7 sem qualquer intervenção humana.",
+              "bullets": [
+                "Treinado com o conteúdo do cliente",
+                "Responde a FAQs automaticamente",
+                "Qualificação de leads incorporada",
+                "Incorporado no website",
+                "+ custos de utilização da API"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Marketing e Anúncios (Mensal)",
+          "rows": [
+            {
+              "service": "Gestão de Meta Ads",
+              "pitch": "Gestão completa de Meta Ads — Facebook + Instagram. Tratamos da estratégia, criativos, segmentação, retargeting, testes A/B e relatórios mensais. O investimento em anúncios é pago separadamente à Meta.",
+              "bullets": [
+                "Configuração de campanhas + gestão contínua",
+                "Criativo de anúncios (copy + visuais)",
+                "Segmentação de audiência + retargeting",
+                "Testes A/B",
+                "Relatório de desempenho mensal"
+              ]
+            },
+            {
+              "service": "Gestão de Google Ads",
+              "pitch": "Capture compradores de alta intenção que pesquisam no Google. Gerimos campanhas de Search + Display com pesquisa completa de palavras-chave, copy de anúncios e tracking de conversão. Investimento em anúncios pago separadamente.",
+              "bullets": [
+                "Pesquisa de palavras-chave",
+                "Campanhas de Search + Display",
+                "Copy de anúncios escrito e testado",
+                "Configuração de tracking de conversão",
+                "Relatório de analytics mensal"
+              ]
+            },
+            {
+              "service": "Pacote Meta + Google",
+              "pitch": "Ambos os canais geridos em conjunto — Meta para awareness + retargeting, Google para pesquisa por intenção. Estratégia e relatórios unificados. Poupa CHF 99/mês face à compra separada.",
+              "bullets": [
+                "Tudo nos planos Meta + Google Ads",
+                "Estratégia cross-channel",
+                "Relatório mensal unificado",
+                "Poupe CHF 99/mês face a separado"
+              ]
+            },
+            {
+              "service": "Gestão de Redes Sociais – Starter",
+              "pitch": "Para negócios que precisam de uma presença social consistente mas não têm tempo para publicar. 8 publicações/mês numa plataforma, totalmente geridas.",
+              "bullets": [
+                "8 publicações/mês",
+                "1 plataforma (Instagram, Facebook ou LinkedIn)",
+                "Criação de conteúdo + agendamento",
+                "Sem esforço do cliente"
+              ]
+            },
+            {
+              "service": "Gestão de Redes Sociais – Growth",
+              "pitch": "Expanda para 2 plataformas com stories e gestão de engagement incluídos. Constrói comunidade, não apenas publicações.",
+              "bullets": [
+                "12 publicações/mês",
+                "2 plataformas",
+                "Stories incluídas",
+                "Gestão de engagement"
+              ]
+            },
+            {
+              "service": "Gestão de Redes Sociais – Pro",
+              "pitch": "Presença completa nas redes sociais em 3 plataformas com Reels e uma chamada de estratégia mensal. Para marcas que querem dominar o seu nicho online.",
+              "bullets": [
+                "16 publicações/mês",
+                "3 plataformas",
+                "Reels incluídos",
+                "Chamada de estratégia mensal"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "IA e Configuração de Automação",
+          "rows": [
+            {
+              "service": "Workflow de IA – Light",
+              "pitch": "Automação simples que liga as ferramentas existentes — formulários, e-mails, CRM, Slack, WhatsApp. Construído em n8n ou Make. Poupa horas de trabalho manual todas as semanas.",
+              "bullets": [
+                "Automação entre aplicações",
+                "Construído em n8n ou Make",
+                "ex. Formulário → CRM → E-mail → Notificação",
+                "Entregue em 1–2 semanas"
+              ]
+            },
+            {
+              "service": "Workflow de IA – Full",
+              "pitch": "Automações complexas multi-etapas com tomada de decisão por IA. Pense em encaminhamento inteligente, geração de conteúdo, scoring e pipelines totalmente automatizados.",
+              "bullets": [
+                "Automação complexa multi-etapas",
+                "Lógica de decisão com IA incluída",
+                "Integrações via API",
+                "Documentação completa + entrega"
+              ]
+            },
+            {
+              "service": "Agente de Suporte ao Cliente com IA",
+              "pitch": "Um agente de IA disponível 24/7 que trata de consultas de clientes, marcações e escalamentos — sem intervenção humana. ROI enorme para negócios com elevado volume de suporte repetitivo.",
+              "bullets": [
+                "Trata de FAQs, marcações e reclamações",
+                "Disponível 24/7",
+                "Escala para humano quando necessário",
+                "WhatsApp + website + canais de e-mail"
+              ]
+            },
+            {
+              "service": "Agente de Vendas e Outreach com IA",
+              "pitch": "Prospeção automatizada de leads, outreach personalizado e sequências de follow-up com IA. Para negócios que querem escalar o outbound sem contratar.",
+              "bullets": [
+                "Identificação + enriquecimento de leads",
+                "E-mails de outreach personalizados",
+                "Sequências de follow-up automáticas",
+                "Integração com CRM"
+              ]
+            },
+            {
+              "service": "Agente de Voz com IA",
+              "pitch": "Uma IA que atende chamadas telefónicas, qualifica leads e marca consultas — soa humana, trabalha sem parar. Uma mudança de paradigma para negócios de serviços.",
+              "bullets": [
+                "Atende chamadas recebidas",
+                "Qualifica leads por voz",
+                "Marca consultas em tempo real",
+                "Custo por minuto cobrado ao cliente"
+              ]
+            },
+            {
+              "service": "Base de Conhecimento com IA / RAG",
+              "pitch": "IA treinada nos documentos, manuais e dados do próprio cliente. Responde a perguntas complexas internas ou de clientes de forma instantânea — como um especialista da empresa disponível 24/7.",
+              "bullets": [
+                "Treinada nos documentos do próprio cliente",
+                "Responde a questões complexas de forma instantânea",
+                "Ferramenta interna para colaboradores ou voltada para clientes",
+                "Atualizável continuamente"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "perks": {
+      "label": "A letra pequena (que não é bem letra pequena)",
+      "title": "Sem armadilhas. A sério.",
+      "items": [
+        "Sem limite de referências — refira 10 clientes, ganhe 10 vezes",
+        "As suas referências não têm prazo de validade",
+        "Pagamento por transferência bancária (IBAN) ou Twint",
+        "Não precisa de ser cliente para poder referir",
+        "Tratamos de todas as vendas — só precisa de fazer a apresentação",
+        "Refere alguém E contrata-nos? Obtenha 20% de desconto num serviço"
+      ]
+    },
+    "finalCta": {
+      "title": "Pronto para fazer a sua primeira referência?",
+      "description": "Envie-nos um WhatsApp com o nome e contacto de quem está a referir. Nós tratamos do resto e mantemo-lo informado em cada etapa.",
+      "button": "Enviar referência pelo WhatsApp"
+    }
   }
 }

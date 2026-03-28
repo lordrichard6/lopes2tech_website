@@ -21,7 +21,7 @@ const socialMediaPackages = [
     {
         key: "starter",
         name: "Packages.socialMedia.starter.name",
-        price: 299,
+        price: 490,
         description: "Packages.socialMedia.starter.description",
         features: [
             "Packages.socialMedia.starter.features.0",
@@ -36,7 +36,7 @@ const socialMediaPackages = [
     {
         key: "growth",
         name: "Packages.socialMedia.growth.name",
-        price: 399,
+        price: 690,
         description: "Packages.socialMedia.growth.description",
         features: [
             "Packages.socialMedia.growth.features.0",
@@ -51,7 +51,7 @@ const socialMediaPackages = [
     {
         key: "pro",
         name: "Packages.socialMedia.pro.name",
-        price: 649,
+        price: 990,
         description: "Packages.socialMedia.pro.description",
         features: [
             "Packages.socialMedia.pro.features.0",

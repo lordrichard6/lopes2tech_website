@@ -66,15 +66,15 @@ export const webAppsPackages = [
 // ─── Social Media / Digital Marketing ────────────────────────────────────────
 
 export const socialMediaContentPackages = [
-    { key: "digitalStarter", price: 299, priceEUR: 209, popular: false },
-    { key: "digitalGrowth",  price: 399, priceEUR: 279, popular: true  },
-    { key: "digitalPro",     price: 649, priceEUR: 449, popular: false },
+    { key: "digitalStarter", price: 490, priceEUR: 343, popular: false },
+    { key: "digitalGrowth",  price: 690, priceEUR: 483, popular: true  },
+    { key: "digitalPro",     price: 990, priceEUR: 693, popular: false },
 ];
 
 export const socialMediaAdPackages = [
     { key: "metaAds",   price: 349, priceEUR: 249, popular: false },
     { key: "googleAds", price: 399, priceEUR: 279, popular: true  },
-    { key: "bundle",    price: 649, priceEUR: 449, popular: false },
+    { key: "bundle",    price: 680, priceEUR: 476, popular: false },
 ];
 
 export const socialMediaAddOns = [

@@ -46,7 +46,7 @@ const categoryMeta: CategoryMeta[] = [
     color: "pink", icon: Palette, type: "one-time",
     rows: [
       { price: "CHF 299", reward: "CHF 30", noteKey: "delivery" },
-      { price: "CHF 549", reward: "CHF 55", noteKey: "delivery" },
+      { price: "CHF 680", reward: "CHF 68", noteKey: "delivery" },
     ],
   },
   {
@@ -56,9 +56,9 @@ const categoryMeta: CategoryMeta[] = [
       { price: "CHF 329", reward: "CHF 33" },
       { price: "CHF 169", reward: "CHF 17" },
       { price: "CHF 99",  reward: "CHF 10" },
-      { price: "CHF 129", reward: "CHF 13" },
-      { price: "CHF 69",  reward: "CHF 7"  },
-      { price: "CHF 149", reward: "CHF 15", link: "/services/business-automation" },
+      { price: "CHF 190", reward: "CHF 19" },
+      { price: "CHF 80",  reward: "CHF 8"  },
+      { price: "CHF 160", reward: "CHF 16", link: "/services/business-automation" },
     ],
   },
   {
@@ -69,7 +69,7 @@ const categoryMeta: CategoryMeta[] = [
       { price: "From CHF 100", reward: "From CHF 10",  noteKey: "scales" },
       { price: "CHF 199",      reward: "CHF 20",       link: "/services/seo-development" },
       { price: "CHF 99",       reward: "CHF 10" },
-      { price: "CHF 149",      reward: "CHF 15" },
+      { price: "CHF 160",      reward: "CHF 16" },
       { price: "CHF 329",      reward: "CHF 33", link: "/services/business-automation" },
       { price: "CHF 369",      reward: "CHF 37", link: "/services/business-automation" },
       { price: "CHF 449",      reward: "CHF 45", link: "/services/business-automation" },
@@ -81,10 +81,10 @@ const categoryMeta: CategoryMeta[] = [
     rows: [
       { price: "CHF 349/mo", reward: "CHF 52/mo", noteRaw: "× 6 months = CHF 314", link: "/services/social-media-marketing" },
       { price: "CHF 399/mo", reward: "CHF 60/mo", noteRaw: "× 6 months = CHF 359", link: "/services/social-media-marketing" },
-      { price: "CHF 649/mo", reward: "CHF 97/mo", noteRaw: "× 6 months = CHF 584", link: "/services/social-media-marketing" },
-      { price: "CHF 299/mo", reward: "CHF 45/mo", noteRaw: "× 6 months = CHF 269", link: "/services/social-media-marketing" },
-      { price: "CHF 399/mo", reward: "CHF 60/mo", noteRaw: "× 6 months = CHF 359", link: "/services/social-media-marketing" },
-      { price: "CHF 649/mo", reward: "CHF 97/mo", noteRaw: "× 6 months = CHF 584", link: "/services/social-media-marketing" },
+      { price: "CHF 680/mo", reward: "CHF 102/mo", noteRaw: "× 6 months = CHF 612", link: "/services/social-media-marketing" },
+      { price: "CHF 490/mo", reward: "CHF 74/mo", noteRaw: "× 6 months = CHF 444", link: "/services/social-media-marketing" },
+      { price: "CHF 690/mo", reward: "CHF 104/mo", noteRaw: "× 6 months = CHF 624", link: "/services/social-media-marketing" },
+      { price: "CHF 990/mo", reward: "CHF 149/mo", noteRaw: "× 6 months = CHF 894", link: "/services/social-media-marketing" },
     ],
   },
   {

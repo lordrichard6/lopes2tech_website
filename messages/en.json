@@ -60,7 +60,7 @@
     },
     "fullBrandKit": {
       "name": "Full Brand Kit",
-      "priceDisplay": "CHF 549",
+      "priceDisplay": "CHF 680",
       "description": "Comprehensive branding: logo, business cards, letterhead, and social media templates for a cohesive look.",
       "target": "Complete identity package",
       "features": {
@@ -144,7 +144,7 @@
     "socialMedia": {
       "starter": {
         "name": "Social Starter",
-        "price": 249,
+        "price": 490,
         "description": "Perfect for small businesses getting started with social media.",
         "features": {
           "0": "8 high-quality posts per month",
@@ -157,7 +157,7 @@
       },
       "growth": {
         "name": "Social Growth",
-        "price": 399,
+        "price": 690,
         "description": "For businesses ready to scale their social presence.",
         "features": {
           "0": "12 posts per month",
@@ -170,7 +170,7 @@
       },
       "pro": {
         "name": "Social Pro",
-        "price": 579,
+        "price": 990,
         "description": "Complete social media management for ambitious brands.",
         "features": {
           "0": "16 posts per month",
@@ -382,10 +382,10 @@
       }
     },
     "stats": {
-      "projects":  "Projects Delivered",
-      "rating":    "Client Satisfaction",
+      "projects": "Projects Delivered",
+      "rating": "Client Satisfaction",
       "countries": "Countries Served",
-      "delivery":  "Avg. Delivery Time"
+      "delivery": "Avg. Delivery Time"
     }
   },
   "Hero": {
@@ -1657,7 +1657,12 @@
         "hours": "1h support / month",
         "response": "≤ 1 business day",
         "overage": "CHF 120/h",
-        "features": ["Bug fixes & monitoring", "Platform updates", "Priority email support", "Monthly status check"]
+        "features": [
+          "Bug fixes & monitoring",
+          "Platform updates",
+          "Priority email support",
+          "Monthly status check"
+        ]
       },
       {
         "name": "Pro",
@@ -1665,7 +1670,12 @@
         "hours": "3h support / month",
         "response": "≤ 8 business hours",
         "overage": "CHF 110/h",
-        "features": ["Everything in Lite", "Monthly performance report", "Minor feature improvements", "Proactive recommendations"]
+        "features": [
+          "Everything in Lite",
+          "Monthly performance report",
+          "Minor feature improvements",
+          "Proactive recommendations"
+        ]
       },
       {
         "name": "Scale",
@@ -1673,7 +1683,12 @@
         "hours": "8h support / month",
         "response": "≤ 4 business hours",
         "overage": "CHF 100/h",
-        "features": ["Everything in Pro", "A/B testing & optimisation", "Quarterly roadmap call", "Fastest response SLA"]
+        "features": [
+          "Everything in Pro",
+          "A/B testing & optimisation",
+          "Quarterly roadmap call",
+          "Fastest response SLA"
+        ]
       }
     ]
   },
@@ -1972,13 +1987,13 @@
       "title": "Frequently Asked Questions",
       "subtitle": "Social Media Marketing in Switzerland",
       "q1": "How much does social media management cost in Switzerland?",
-      "a1": "Our Digital Starter plan is CHF 249/month (8 posts/month, 1 platform). Digital Growth is CHF 399/month (12 posts, 2 platforms, Stories). Digital Pro is CHF 579/month (16 posts, 3 platforms, full engagement management). All plans include AI-assisted content creation and monthly reporting.",
+      "a1": "Our Digital Starter plan is CHF 490/month (8 posts/month, 1 platform). Digital Growth is CHF 690/month (12 posts, 2 platforms, Stories). Digital Pro is CHF 990/month (16 posts, 3 platforms, full engagement management). All plans include AI-assisted content creation and monthly reporting.",
       "q2": "How do you create content without a photoshoot?",
       "a2": "You send us photos from your phone or business. We professionally enhance them using AI tools — background removal, colour correction, branding overlays, and upscaling. This keeps costs 60–70% lower than traditional agencies while delivering professional results.",
       "q3": "Which platforms do you manage?",
       "a3": "We manage Instagram, Facebook, LinkedIn, and Google Business Profile. Each plan covers 1–3 platforms. Additional platforms are available as add-ons for CHF 99/month each. We'll recommend the right platforms based on where your customers spend time.",
       "q4": "Can you also run paid ad campaigns?",
-      "a4": "Yes! We manage Meta Ads (Facebook + Instagram) from CHF 399/month and Google Ads from CHF 449/month. We also offer a combined bundle at CHF 699/month. Ad spend is billed separately directly by Meta and Google.",
+      "a4": "Yes! We manage Meta Ads (Facebook + Instagram) from CHF 690/month and Google Ads from CHF 449/month. We also offer a combined bundle at CHF 699/month. Ad spend is billed separately directly by Meta and Google.",
       "q5": "Do you write captions in German and other Swiss languages?",
       "a5": "Yes! We create content in any language your audience speaks — German, English, French, Italian, or Portuguese. This is especially valuable for Swiss businesses serving multiple language regions.",
       "q6": "How quickly can you start managing our social media?",
@@ -2005,7 +2020,7 @@
     "faqs": {
       "q1": {
         "question": "How much does social media management cost in Zurich?",
-        "answer": "Our AI-powered social media management starts at CHF 249/month for the Social Starter package (8 posts/month, 1 platform). The Social Growth package is CHF 399/month (12 posts, 2 platforms), and Social Pro is CHF 579/month (16 posts, 3 platforms including full engagement management).",
+        "answer": "Our AI-powered social media management starts at CHF 490/month for the Social Starter package (8 posts/month, 1 platform). The Social Growth package is CHF 690/month (12 posts, 2 platforms), and Social Pro is CHF 990/month (16 posts, 3 platforms including full engagement management).",
         "category": "socialMedia"
       },
       "q2": {
@@ -2035,7 +2050,7 @@
       },
       "q7": {
         "question": "What's the difference between Social Starter, Growth, and Pro?",
-        "answer": "Social Starter (CHF 249/mo) includes 8 posts/month on 1 platform - perfect for small businesses getting started. Social Growth (CHF 399/mo) adds 12 posts, 2 platforms, Stories, and engagement management - ideal for scaling businesses. Social Pro (CHF 579/mo) delivers 16 posts, 3 platforms, full engagement, monthly strategy calls, and A/B testing - best for ambitious brands.",
+        "answer": "Social Starter (CHF 490/mo) includes 8 posts/month on 1 platform - perfect for small businesses getting started. Social Growth (CHF 690/mo) adds 12 posts, 2 platforms, Stories, and engagement management - ideal for scaling businesses. Social Pro (CHF 990/mo) delivers 16 posts, 3 platforms, full engagement, monthly strategy calls, and A/B testing - best for ambitious brands.",
         "category": "socialMedia"
       },
       "q8": {
@@ -2116,7 +2131,7 @@
     },
     "socialMediaMarketing": {
       "title": "Social Media Marketing Zurich | Lopes2Tech",
-      "description": "AI-powered social media management for Swiss businesses from CHF 249/month. Content creation, Meta Ads, Google Ads, and community management. Based in Zurich.",
+      "description": "AI-powered social media management for Swiss businesses from CHF 490/month. Content creation, Meta Ads, Google Ads, and community management. Based in Zurich.",
       "ogTitle": "Social Media Marketing Zurich | Lopes2Tech",
       "ogDescription": "AI-powered social media and digital marketing for Swiss businesses. Content creation, Meta Ads, and Google Ads — all managed for you."
     },
@@ -2357,66 +2372,381 @@
         {
           "title": "Website Packages",
           "rows": [
-            { "service": "Starter Website", "pitch": "Perfect for new businesses, freelancers, or anyone who needs a clean online presence fast. Delivered in 4–5 days — no waiting weeks.", "bullets": ["One-page custom website", "AI-written copy included", "Booking widget + WhatsApp button", "Mobile responsive", "Delivered in 4–5 days"] },
-            { "service": "Professional Website", "pitch": "For established solopreneurs ready to upgrade. Multi-page, multi-language, with SEO baked in from day one.", "bullets": ["5-page website", "2 languages included", "1 automation included", "SEO foundations", "Delivered in 5–6 days"] },
-            { "service": "Business Pro Website", "pitch": "The full package for SMEs. Up to 10 service pages, 3 languages, lead capture system — everything to compete online seriously.", "bullets": ["5 core pages + up to 10 service pages", "3 languages included", "SEO + lead capture system", "Delivered in 6–7 days"] },
-            { "service": "Campaign Landing Page", "pitch": "A conversion-focused single page for ad campaigns, product launches, or lead magnets. Built to convert traffic into leads.", "bullets": ["Conversion-optimized design", "Integrated with ads tracking", "CTA + lead capture form", "Fast delivery"] }
+            {
+              "service": "Starter Website",
+              "pitch": "Perfect for new businesses, freelancers, or anyone who needs a clean online presence fast. Delivered in 4–5 days — no waiting weeks.",
+              "bullets": [
+                "One-page custom website",
+                "AI-written copy included",
+                "Booking widget + WhatsApp button",
+                "Mobile responsive",
+                "Delivered in 4–5 days"
+              ]
+            },
+            {
+              "service": "Professional Website",
+              "pitch": "For established solopreneurs ready to upgrade. Multi-page, multi-language, with SEO baked in from day one.",
+              "bullets": [
+                "5-page website",
+                "2 languages included",
+                "1 automation included",
+                "SEO foundations",
+                "Delivered in 5–6 days"
+              ]
+            },
+            {
+              "service": "Business Pro Website",
+              "pitch": "The full package for SMEs. Up to 10 service pages, 3 languages, lead capture system — everything to compete online seriously.",
+              "bullets": [
+                "5 core pages + up to 10 service pages",
+                "3 languages included",
+                "SEO + lead capture system",
+                "Delivered in 6–7 days"
+              ]
+            },
+            {
+              "service": "Campaign Landing Page",
+              "pitch": "A conversion-focused single page for ad campaigns, product launches, or lead magnets. Built to convert traffic into leads.",
+              "bullets": [
+                "Conversion-optimized design",
+                "Integrated with ads tracking",
+                "CTA + lead capture form",
+                "Fast delivery"
+              ]
+            }
           ]
         },
         {
           "title": "Branding",
           "rows": [
-            { "service": "Logo Only", "pitch": "A professional logo in 3 variations. Great for new businesses or rebrands that just need the mark — clean, scalable, and delivered fast.", "bullets": ["3 logo variations (light, dark, icon)", "Vector files included", "Ready for web + print"] },
-            { "service": "Full Brand Kit", "pitch": "Everything a business needs to look professional everywhere. Logo, colors, fonts, business cards, and a social media kit — all in one package.", "bullets": ["Logo (3 variations)", "Color palette + typography", "Brand guidelines document", "Business cards design", "Social media kit (profile + cover images)"] }
+            {
+              "service": "Logo Only",
+              "pitch": "A professional logo in 3 variations. Great for new businesses or rebrands that just need the mark — clean, scalable, and delivered fast.",
+              "bullets": [
+                "3 logo variations (light, dark, icon)",
+                "Vector files included",
+                "Ready for web + print"
+              ]
+            },
+            {
+              "service": "Full Brand Kit",
+              "pitch": "Everything a business needs to look professional everywhere. Logo, colors, fonts, business cards, and a social media kit — all in one package.",
+              "bullets": [
+                "Logo (3 variations)",
+                "Color palette + typography",
+                "Brand guidelines document",
+                "Business cards design",
+                "Social media kit (profile + cover images)"
+              ]
+            }
           ]
         },
         {
           "title": "Setup & Quick Wins",
           "rows": [
-            { "service": "Google Business Profile Setup", "pitch": "Local businesses live and die by their GBP. A fully optimized profile with photos, services, and 3 posts — boosts local visibility immediately.", "bullets": ["Full GBP setup or optimization", "Photos, services, categories set", "3 posts published", "Shows up better in Google Maps"] },
-            { "service": "Analytics & Tracking Setup (GA4)", "pitch": "Essential for any business running ads. Without tracking, you're flying blind. We set up GA4 + Meta Pixel so every click is measured.", "bullets": ["Google Analytics 4 setup", "Meta Pixel installation", "Conversion events configured", "Dashboard + reporting ready"] },
-            { "service": "Email Domain Setup", "pitch": "Professional email like paulo@yourbusiness.ch instead of Gmail. Sets up Google Workspace or Microsoft 365 — makes any business look credible.", "bullets": ["Professional email address setup", "Google Workspace or Microsoft 365", "Email signatures configured", "Mobile + desktop access"] },
-            { "service": "Website Audit", "pitch": "The easiest sell — CHF 99 for a 1-page report with 5 specific improvements. Perfect foot-in-the-door for clients who are hesitant to commit.", "bullets": ["1-page PDF report", "5 specific actionable improvements", "SEO + speed + UX assessed", "Delivered within 48h"] },
-            { "service": "Speed Optimization", "pitch": "A slow website loses customers and ranks lower on Google. One-time fix: caching, image compression, and performance boost.", "bullets": ["Image compression", "Caching setup", "Core Web Vitals improvement", "Better Google rankings"] },
-            { "service": "Google Business Boost", "pitch": "Fastest win for any local business. Quick GBP optimization + 3 posts published. Great entry-point service.", "bullets": ["Quick GBP optimization", "3 posts published", "Category + attributes updated"] },
-            { "service": "Automation Assessment", "pitch": "We analyze their workflow and deliver a PDF identifying 3–5 processes they could automate. Sells itself — and often leads to a full automation project.", "bullets": ["In-depth workflow review", "1-page PDF with 3–5 automation opportunities", "ROI estimate per automation", "Delivered within 48h"] }
+            {
+              "service": "Google Business Profile Setup",
+              "pitch": "Local businesses live and die by their GBP. A fully optimized profile with photos, services, and 3 posts — boosts local visibility immediately.",
+              "bullets": [
+                "Full GBP setup or optimization",
+                "Photos, services, categories set",
+                "3 posts published",
+                "Shows up better in Google Maps"
+              ]
+            },
+            {
+              "service": "Analytics & Tracking Setup (GA4)",
+              "pitch": "Essential for any business running ads. Without tracking, you're flying blind. We set up GA4 + Meta Pixel so every click is measured.",
+              "bullets": [
+                "Google Analytics 4 setup",
+                "Meta Pixel installation",
+                "Conversion events configured",
+                "Dashboard + reporting ready"
+              ]
+            },
+            {
+              "service": "Email Domain Setup",
+              "pitch": "Professional email like paulo@yourbusiness.ch instead of Gmail. Sets up Google Workspace or Microsoft 365 — makes any business look credible.",
+              "bullets": [
+                "Professional email address setup",
+                "Google Workspace or Microsoft 365",
+                "Email signatures configured",
+                "Mobile + desktop access"
+              ]
+            },
+            {
+              "service": "Website Audit",
+              "pitch": "The easiest sell — CHF 99 for a 1-page report with 5 specific improvements. Perfect foot-in-the-door for clients who are hesitant to commit.",
+              "bullets": [
+                "1-page PDF report",
+                "5 specific actionable improvements",
+                "SEO + speed + UX assessed",
+                "Delivered within 48h"
+              ]
+            },
+            {
+              "service": "Speed Optimization",
+              "pitch": "A slow website loses customers and ranks lower on Google. One-time fix: caching, image compression, and performance boost.",
+              "bullets": [
+                "Image compression",
+                "Caching setup",
+                "Core Web Vitals improvement",
+                "Better Google rankings"
+              ]
+            },
+            {
+              "service": "Google Business Boost",
+              "pitch": "Fastest win for any local business. Quick GBP optimization + 3 posts published. Great entry-point service.",
+              "bullets": [
+                "Quick GBP optimization",
+                "3 posts published",
+                "Category + attributes updated"
+              ]
+            },
+            {
+              "service": "Automation Assessment",
+              "pitch": "We analyze their workflow and deliver a PDF identifying 3–5 processes they could automate. Sells itself — and often leads to a full automation project.",
+              "bullets": [
+                "In-depth workflow review",
+                "1-page PDF with 3–5 automation opportunities",
+                "ROI estimate per automation",
+                "Delivered within 48h"
+              ]
+            }
           ]
         },
         {
           "title": "Website Add-Ons",
           "rows": [
-            { "service": "Blog / CMS Setup", "pitch": "Gives the client a blog they can actually edit themselves — no developer needed after setup. Great for SEO and content marketing.", "bullets": ["Sanity or Notion-powered CMS", "Client can add/edit posts with no code", "SEO-ready blog structure"] },
-            { "service": "Extra Service Page", "pitch": "Each additional service page targets a new keyword and expands their Google presence. Low cost, high SEO value.", "bullets": ["SEO-optimized page", "Matches existing design", "Indexed and submitted to Google"] },
-            { "service": "Extra Language", "pitch": "Reach more customers in their native language. AI-assisted translation + proper hreflang tags so Google ranks each language correctly.", "bullets": ["AI-assisted translation", "hreflang tags setup", "Language switcher added", "Price scales with number of pages"] },
-            { "service": "Local SEO Boost", "pitch": "Structured data (schema), Search Console setup, sitemap submission — the technical SEO foundation most websites are missing.", "bullets": ["Schema markup added", "Google Search Console configured", "Sitemap submitted", "Bing Webmaster Tools setup"] },
-            { "service": "Social Proof Widget", "pitch": "Auto-updating Google Reviews feed embedded on the website. Nothing sells better than real client reviews visible right on the homepage.", "bullets": ["Google Reviews auto-synced", "Embedded widget on website", "Boosts trust and conversions"] },
-            { "service": "Newsletter Integration", "pitch": "Email list = owned audience. We set up the signup form + a welcome email automation so every subscriber gets followed up automatically.", "bullets": ["Brevo or Mailchimp connected", "Signup form embedded on site", "Welcome email automation active"] },
-            { "service": "Review Collection Automation", "pitch": "Most businesses have happy clients who never leave reviews. This sends 3 automated emails after a job is done asking for a Google review.", "bullets": ["3-email automated sequence", "Triggered after job completion", "Direct link to Google Review form", "More 5-star reviews on autopilot"] },
-            { "service": "Appointment Booking System", "pitch": "Replaces back-and-forth scheduling with a professional booking widget. Syncs with Google Calendar and sends reminders automatically.", "bullets": ["Cal.com or Calendly setup", "Google Calendar sync", "Automated reminders (email + SMS)", "Embedded on website"] },
-            { "service": "Lead Capture System", "pitch": "Turns website visitors into leads — automatically. Form submission triggers a CRM entry, an auto-reply email, and a team notification.", "bullets": ["Contact form → CRM pipeline", "Auto-reply email to lead", "Team notification (email or WhatsApp)", "Full lead tracking"] },
-            { "service": "AI FAQ Chatbot", "pitch": "A chatbot trained on the client's own content — answers FAQs, qualifies leads, and works 24/7 without any human involvement.", "bullets": ["Trained on client's content", "Handles FAQs automatically", "Lead qualification built-in", "Embedded on website", "+ API usage costs"] }
+            {
+              "service": "Blog / CMS Setup",
+              "pitch": "Gives the client a blog they can actually edit themselves — no developer needed after setup. Great for SEO and content marketing.",
+              "bullets": [
+                "Sanity or Notion-powered CMS",
+                "Client can add/edit posts with no code",
+                "SEO-ready blog structure"
+              ]
+            },
+            {
+              "service": "Extra Service Page",
+              "pitch": "Each additional service page targets a new keyword and expands their Google presence. Low cost, high SEO value.",
+              "bullets": [
+                "SEO-optimized page",
+                "Matches existing design",
+                "Indexed and submitted to Google"
+              ]
+            },
+            {
+              "service": "Extra Language",
+              "pitch": "Reach more customers in their native language. AI-assisted translation + proper hreflang tags so Google ranks each language correctly.",
+              "bullets": [
+                "AI-assisted translation",
+                "hreflang tags setup",
+                "Language switcher added",
+                "Price scales with number of pages"
+              ]
+            },
+            {
+              "service": "Local SEO Boost",
+              "pitch": "Structured data (schema), Search Console setup, sitemap submission — the technical SEO foundation most websites are missing.",
+              "bullets": [
+                "Schema markup added",
+                "Google Search Console configured",
+                "Sitemap submitted",
+                "Bing Webmaster Tools setup"
+              ]
+            },
+            {
+              "service": "Social Proof Widget",
+              "pitch": "Auto-updating Google Reviews feed embedded on the website. Nothing sells better than real client reviews visible right on the homepage.",
+              "bullets": [
+                "Google Reviews auto-synced",
+                "Embedded widget on website",
+                "Boosts trust and conversions"
+              ]
+            },
+            {
+              "service": "Newsletter Integration",
+              "pitch": "Email list = owned audience. We set up the signup form + a welcome email automation so every subscriber gets followed up automatically.",
+              "bullets": [
+                "Brevo or Mailchimp connected",
+                "Signup form embedded on site",
+                "Welcome email automation active"
+              ]
+            },
+            {
+              "service": "Review Collection Automation",
+              "pitch": "Most businesses have happy clients who never leave reviews. This sends 3 automated emails after a job is done asking for a Google review.",
+              "bullets": [
+                "3-email automated sequence",
+                "Triggered after job completion",
+                "Direct link to Google Review form",
+                "More 5-star reviews on autopilot"
+              ]
+            },
+            {
+              "service": "Appointment Booking System",
+              "pitch": "Replaces back-and-forth scheduling with a professional booking widget. Syncs with Google Calendar and sends reminders automatically.",
+              "bullets": [
+                "Cal.com or Calendly setup",
+                "Google Calendar sync",
+                "Automated reminders (email + SMS)",
+                "Embedded on website"
+              ]
+            },
+            {
+              "service": "Lead Capture System",
+              "pitch": "Turns website visitors into leads — automatically. Form submission triggers a CRM entry, an auto-reply email, and a team notification.",
+              "bullets": [
+                "Contact form → CRM pipeline",
+                "Auto-reply email to lead",
+                "Team notification (email or WhatsApp)",
+                "Full lead tracking"
+              ]
+            },
+            {
+              "service": "AI FAQ Chatbot",
+              "pitch": "A chatbot trained on the client's own content — answers FAQs, qualifies leads, and works 24/7 without any human involvement.",
+              "bullets": [
+                "Trained on client's content",
+                "Handles FAQs automatically",
+                "Lead qualification built-in",
+                "Embedded on website",
+                "+ API usage costs"
+              ]
+            }
           ]
         },
         {
           "title": "Marketing & Ads (Monthly)",
           "rows": [
-            { "service": "Meta Ads Management", "pitch": "Full Meta Ads management — Facebook + Instagram. We handle the strategy, creatives, targeting, retargeting, A/B tests, and monthly reporting. Ad spend is paid separately to Meta.", "bullets": ["Campaign setup + ongoing management", "Ad creative (copy + visuals)", "Audience targeting + retargeting", "A/B testing", "Monthly performance report"] },
-            { "service": "Google Ads Management", "pitch": "Capture high-intent buyers searching on Google. We run Search + Display campaigns with full keyword research, ad copy, and conversion tracking. Ad spend paid separately.", "bullets": ["Keyword research", "Search + Display campaigns", "Ad copy written and tested", "Conversion tracking setup", "Monthly analytics report"] },
-            { "service": "Meta + Google Bundle", "pitch": "Both channels managed together — Meta for awareness + retargeting, Google for intent-driven search. Unified strategy and reporting. Saves CHF 99/mo vs. buying separately.", "bullets": ["Everything in Meta + Google Ads plans", "Cross-channel strategy", "Unified monthly report", "Save CHF 99/mo vs. separate"] },
-            { "service": "Social Media Management – Starter", "pitch": "For businesses that need a consistent social presence but don't have time to post. 8 posts/month on 1 platform, fully handled.", "bullets": ["8 posts/month", "1 platform (Instagram, Facebook, or LinkedIn)", "Content creation + scheduling", "No client effort needed"] },
-            { "service": "Social Media Management – Growth", "pitch": "Scale across 2 platforms with stories and engagement management included. Builds community, not just posts.", "bullets": ["12 posts/month", "2 platforms", "Stories included", "Engagement management"] },
-            { "service": "Social Media Management – Pro", "pitch": "Full social media presence across 3 platforms with Reels and a monthly strategy call. For brands that want to dominate their niche online.", "bullets": ["16 posts/month", "3 platforms", "Reels included", "Monthly strategy call"] }
+            {
+              "service": "Meta Ads Management",
+              "pitch": "Full Meta Ads management — Facebook + Instagram. We handle the strategy, creatives, targeting, retargeting, A/B tests, and monthly reporting. Ad spend is paid separately to Meta.",
+              "bullets": [
+                "Campaign setup + ongoing management",
+                "Ad creative (copy + visuals)",
+                "Audience targeting + retargeting",
+                "A/B testing",
+                "Monthly performance report"
+              ]
+            },
+            {
+              "service": "Google Ads Management",
+              "pitch": "Capture high-intent buyers searching on Google. We run Search + Display campaigns with full keyword research, ad copy, and conversion tracking. Ad spend paid separately.",
+              "bullets": [
+                "Keyword research",
+                "Search + Display campaigns",
+                "Ad copy written and tested",
+                "Conversion tracking setup",
+                "Monthly analytics report"
+              ]
+            },
+            {
+              "service": "Meta + Google Bundle",
+              "pitch": "Both channels managed together — Meta for awareness + retargeting, Google for intent-driven search. Unified strategy and reporting. Saves CHF 99/mo vs. buying separately.",
+              "bullets": [
+                "Everything in Meta + Google Ads plans",
+                "Cross-channel strategy",
+                "Unified monthly report",
+                "Save CHF 99/mo vs. separate"
+              ]
+            },
+            {
+              "service": "Social Media Management – Starter",
+              "pitch": "For businesses that need a consistent social presence but don't have time to post. 8 posts/month on 1 platform, fully handled.",
+              "bullets": [
+                "8 posts/month",
+                "1 platform (Instagram, Facebook, or LinkedIn)",
+                "Content creation + scheduling",
+                "No client effort needed"
+              ]
+            },
+            {
+              "service": "Social Media Management – Growth",
+              "pitch": "Scale across 2 platforms with stories and engagement management included. Builds community, not just posts.",
+              "bullets": [
+                "12 posts/month",
+                "2 platforms",
+                "Stories included",
+                "Engagement management"
+              ]
+            },
+            {
+              "service": "Social Media Management – Pro",
+              "pitch": "Full social media presence across 3 platforms with Reels and a monthly strategy call. For brands that want to dominate their niche online.",
+              "bullets": [
+                "16 posts/month",
+                "3 platforms",
+                "Reels included",
+                "Monthly strategy call"
+              ]
+            }
           ]
         },
         {
           "title": "AI & Automation Setup",
           "rows": [
-            { "service": "AI Workflow – Light", "pitch": "Simple automation connecting their existing tools — forms, emails, CRM, Slack, WhatsApp. Built on n8n or Make. Saves hours of manual work every week.", "bullets": ["App-to-app automation", "Built on n8n or Make", "e.g. Form → CRM → Email → Notification", "Delivered in 1–2 weeks"] },
-            { "service": "AI Workflow – Full", "pitch": "Complex multi-step automations with AI decision-making. Think intelligent routing, content generation, scoring, and fully automated pipelines.", "bullets": ["Multi-step complex automation", "AI decision logic included", "API integrations", "Full documentation + handover"] },
-            { "service": "AI Customer Support Agent", "pitch": "A 24/7 AI agent that handles customer queries, bookings, and escalations — without a human. Huge ROI for businesses with repetitive support load.", "bullets": ["Handles FAQs, bookings, complaints", "Available 24/7", "Escalates to human when needed", "WhatsApp + website + email channels"] },
-            { "service": "AI Sales & Outreach Agent", "pitch": "Automated lead prospecting, personalized outreach, and follow-up sequences powered by AI. For businesses that want to scale outbound without hiring.", "bullets": ["Lead sourcing + enrichment", "Personalized outreach emails", "Automated follow-up sequences", "CRM integration"] },
-            { "service": "AI Voice Agent", "pitch": "An AI that answers phone calls, qualifies leads, and books appointments — sounds human, works around the clock. Game-changer for service businesses.", "bullets": ["Answers inbound calls", "Qualifies leads by voice", "Books appointments in real-time", "Per-minute cost billed to client"] },
-            { "service": "AI Knowledge-Base / RAG", "pitch": "AI trained on the client's own documents, manuals, and data. Answers complex internal or customer questions instantly — like a company expert available 24/7.", "bullets": ["Trained on client's own documents", "Answers complex queries instantly", "Internal staff tool or customer-facing", "Continuously updatable"] }
+            {
+              "service": "AI Workflow – Light",
+              "pitch": "Simple automation connecting their existing tools — forms, emails, CRM, Slack, WhatsApp. Built on n8n or Make. Saves hours of manual work every week.",
+              "bullets": [
+                "App-to-app automation",
+                "Built on n8n or Make",
+                "e.g. Form → CRM → Email → Notification",
+                "Delivered in 1–2 weeks"
+              ]
+            },
+            {
+              "service": "AI Workflow – Full",
+              "pitch": "Complex multi-step automations with AI decision-making. Think intelligent routing, content generation, scoring, and fully automated pipelines.",
+              "bullets": [
+                "Multi-step complex automation",
+                "AI decision logic included",
+                "API integrations",
+                "Full documentation + handover"
+              ]
+            },
+            {
+              "service": "AI Customer Support Agent",
+              "pitch": "A 24/7 AI agent that handles customer queries, bookings, and escalations — without a human. Huge ROI for businesses with repetitive support load.",
+              "bullets": [
+                "Handles FAQs, bookings, complaints",
+                "Available 24/7",
+                "Escalates to human when needed",
+                "WhatsApp + website + email channels"
+              ]
+            },
+            {
+              "service": "AI Sales & Outreach Agent",
+              "pitch": "Automated lead prospecting, personalized outreach, and follow-up sequences powered by AI. For businesses that want to scale outbound without hiring.",
+              "bullets": [
+                "Lead sourcing + enrichment",
+                "Personalized outreach emails",
+                "Automated follow-up sequences",
+                "CRM integration"
+              ]
+            },
+            {
+              "service": "AI Voice Agent",
+              "pitch": "An AI that answers phone calls, qualifies leads, and books appointments — sounds human, works around the clock. Game-changer for service businesses.",
+              "bullets": [
+                "Answers inbound calls",
+                "Qualifies leads by voice",
+                "Books appointments in real-time",
+                "Per-minute cost billed to client"
+              ]
+            },
+            {
+              "service": "AI Knowledge-Base / RAG",
+              "pitch": "AI trained on the client's own documents, manuals, and data. Answers complex internal or customer questions instantly — like a company expert available 24/7.",
+              "bullets": [
+                "Trained on client's own documents",
+                "Answers complex queries instantly",
+                "Internal staff tool or customer-facing",
+                "Continuously updatable"
+              ]
+            }
           ]
         }
       ]

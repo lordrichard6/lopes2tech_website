@@ -80,7 +80,7 @@ export const packagesData: Package[] = [
     {
         key: "fullBrandKit",
         name: "Packages.fullBrandKit.name",
-        price: 549,
+        price: 680,
         priceDisplay: "Packages.fullBrandKit.priceDisplay",
         description: "Packages.fullBrandKit.description",
         target: "Packages.fullBrandKit.target",
