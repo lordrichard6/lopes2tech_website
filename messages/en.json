@@ -568,6 +568,7 @@
       "insights": "Insights & Blog",
       "contact": "Contact",
       "faq": "FAQ",
+      "pricing": "Pricing",
       "referral": "Referral Program"
     },
     "links": {
@@ -2241,6 +2242,57 @@
       "support": "Questions? Contact us at",
       "downloadNow": "Download your book now",
       "backToShop": "Back to the Shop"
+    }
+  },
+  "Pricing": {
+    "badge": "Transparent Pricing",
+    "hero": {
+      "h1a": "Swiss Quality.",
+      "h1b": "Honest Prices.",
+      "subtitle": "40–50% below Zurich agency rates. No hidden fees. No retainer traps. Just transparent pricing and work that delivers.",
+      "cta": "Get a Free Quote"
+    },
+    "stats": {
+      "s1value": "40–60%",
+      "s1label": "Average savings vs. Zurich agencies",
+      "s2value": "Days",
+      "s2label": "Typical delivery — not months",
+      "s3value": "0",
+      "s3label": "Hidden fees or surprise costs"
+    },
+    "comparison": {
+      "label": "Market comparison",
+      "title": "How We Compare to Zurich Agencies",
+      "colService": "Service",
+      "colMarket": "Zurich Average",
+      "colOurs": "Lopes2Tech",
+      "colSavings": "You Save",
+      "disclaimer": "Market averages based on publicly listed agency rates in the Zurich area (2026)."
+    },
+    "tables": {
+      "label": "Full Price List",
+      "title": "Every Service. Every Price.",
+      "subtitle": "No hidden fees. No surprise invoices. What you see is what you pay.",
+      "colService": "Service",
+      "colPrice": "Our Price",
+      "colMarket": "Market Avg",
+      "colSavings": "Savings",
+      "badgeOneTime": "One-time",
+      "badgeRecurring": "Monthly",
+      "viewService": "View service page",
+      "footerNote": "All prices in CHF (Swiss Francs). Ad spend billed directly by Meta/Google. AI platform costs are pass-through."
+    },
+    "paymentPlans": {
+      "label": "Flexible financing",
+      "title": "Pay in Instalments",
+      "subtitle": "Split any project into 3, 6, or 12 monthly payments. No credit check — just choose at contract signing.",
+      "terms": "Automatic monthly billing via Stripe. Project site remains on hosting until fully paid."
+    },
+    "cta": {
+      "label": "Ready to start?",
+      "title": "Get a Quote in 24 Hours",
+      "description": "Tell us what you need and we'll send a precise quote — no vague estimates, no surprise fees.",
+      "button": "Message Us on WhatsApp"
     }
   },
   "Referral": {

@@ -246,6 +246,7 @@
       "insights": "Insights & Blog",
       "contact": "Contact",
       "faq": "FAQ",
+      "pricing": "Tarifs",
       "referral": "Programme de Parrainage"
     },
     "links": {
@@ -2241,6 +2242,57 @@
       "support": "Des questions ? Contactez-nous à",
       "downloadNow": "Télécharger votre livre maintenant",
       "backToShop": "Retour à la Boutique"
+    }
+  },
+  "Pricing": {
+    "badge": "Tarifs Transparents",
+    "hero": {
+      "h1a": "Qualité Suisse.",
+      "h1b": "Prix Honnêtes.",
+      "subtitle": "40–50% en dessous des tarifs des agences zurichoises. Pas de frais cachés. Pas de pièges aux honoraires fixes. Juste des prix transparents et un travail qui délivre.",
+      "cta": "Obtenir un Devis Gratuit"
+    },
+    "stats": {
+      "s1value": "40–60%",
+      "s1label": "Économies moyennes vs. agences zurichoises",
+      "s2value": "Days",
+      "s2label": "Délai de livraison typique — pas des mois",
+      "s3value": "0",
+      "s3label": "Frais cachés ou coûts surprises"
+    },
+    "comparison": {
+      "label": "Comparaison du marché",
+      "title": "Comment nous nous comparons aux agences zurichoises",
+      "colService": "Service",
+      "colMarket": "Moyenne zurichoise",
+      "colOurs": "Lopes2Tech",
+      "colSavings": "Vous économisez",
+      "disclaimer": "Moyennes du marché basées sur les tarifs d'agences publiquement listés dans la région de Zurich (2026)."
+    },
+    "tables": {
+      "label": "Liste complète des tarifs",
+      "title": "Chaque Service. Chaque Prix.",
+      "subtitle": "Pas de frais cachés. Pas de factures surprises. Ce que vous voyez est ce que vous payez.",
+      "colService": "Service",
+      "colPrice": "Notre Prix",
+      "colMarket": "Moy. du marché",
+      "colSavings": "Économies",
+      "badgeOneTime": "Unique",
+      "badgeRecurring": "Mensuel",
+      "viewService": "Voir la page du service",
+      "footerNote": "Tous les prix en CHF (Francs suisses). Les dépenses publicitaires sont facturées directement par Meta/Google. Les coûts des plateformes IA sont répercutés."
+    },
+    "paymentPlans": {
+      "label": "Financement flexible",
+      "title": "Payer en Plusieurs Fois",
+      "subtitle": "Répartissez n'importe quel projet en 3, 6 ou 12 paiements mensuels. Pas de vérification de crédit — choisissez simplement lors de la signature du contrat.",
+      "terms": "Facturation mensuelle automatique via Stripe. Le site du projet reste hébergé jusqu'au paiement complet."
+    },
+    "cta": {
+      "label": "Prêt à commencer ?",
+      "title": "Obtenez un Devis en 24 Heures",
+      "description": "Dites-nous ce dont vous avez besoin et nous vous enverrons un devis précis — pas d'estimations vagues, pas de frais surprises.",
+      "button": "Écrivez-nous sur WhatsApp"
     }
   },
   "Referral":   {

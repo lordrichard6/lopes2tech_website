@@ -246,6 +246,7 @@
       "insights": "Insights & Blog",
       "contact": "Contatti",
       "faq": "FAQ",
+      "pricing": "Prezzi",
       "referral": "Programma di Referral"
     },
     "links": {
@@ -2241,6 +2242,57 @@
       "support": "Domande? Contattateci a",
       "downloadNow": "Scarica il tuo libro ora",
       "backToShop": "Torna al Negozio"
+    }
+  },
+  "Pricing": {
+    "badge": "Prezzi Trasparenti",
+    "hero": {
+      "h1a": "Qualità Svizzera.",
+      "h1b": "Prezzi Onesti.",
+      "subtitle": "40–50% sotto le tariffe delle agenzie di Zurigo. Nessuna commissione nascosta. Nessuna trappola di retainer. Solo prezzi trasparenti e lavoro che consegna risultati.",
+      "cta": "Richiedi un Preventivo Gratuito"
+    },
+    "stats": {
+      "s1value": "40–60%",
+      "s1label": "Risparmio medio vs. agenzie di Zurigo",
+      "s2value": "Days",
+      "s2label": "Consegna tipica — non mesi",
+      "s3value": "0",
+      "s3label": "Commissioni nascoste o costi a sorpresa"
+    },
+    "comparison": {
+      "label": "Confronto di mercato",
+      "title": "Come ci confrontiamo con le agenzie di Zurigo",
+      "colService": "Servizio",
+      "colMarket": "Media di Zurigo",
+      "colOurs": "Lopes2Tech",
+      "colSavings": "Risparmi",
+      "disclaimer": "Le medie di mercato sono basate sulle tariffe di agenzie pubblicamente elencate nell'area di Zurigo (2026)."
+    },
+    "tables": {
+      "label": "Listino Prezzi Completo",
+      "title": "Ogni Servizio. Ogni Prezzo.",
+      "subtitle": "Nessuna commissione nascosta. Nessuna fattura a sorpresa. Quello che vedi è quello che paghi.",
+      "colService": "Servizio",
+      "colPrice": "Il Nostro Prezzo",
+      "colMarket": "Media di Mercato",
+      "colSavings": "Risparmio",
+      "badgeOneTime": "Una tantum",
+      "badgeRecurring": "Mensile",
+      "viewService": "Vedi pagina del servizio",
+      "footerNote": "Tutti i prezzi in CHF (Franchi Svizzeri). Le spese pubblicitarie sono fatturate direttamente da Meta/Google. I costi delle piattaforme AI sono trasferiti."
+    },
+    "paymentPlans": {
+      "label": "Finanziamento flessibile",
+      "title": "Paga a Rate",
+      "subtitle": "Suddividi qualsiasi progetto in 3, 6 o 12 pagamenti mensili. Nessun controllo del credito — scegli semplicemente alla firma del contratto.",
+      "terms": "Fatturazione mensile automatica via Stripe. Il sito del progetto rimane in hosting fino al pagamento completo."
+    },
+    "cta": {
+      "label": "Pronto per iniziare?",
+      "title": "Ricevi un Preventivo in 24 Ore",
+      "description": "Dicci di cosa hai bisogno e ti invieremo un preventivo preciso — nessuna stima vaga, nessuna commissione a sorpresa.",
+      "button": "Scrivici su WhatsApp"
     }
   },
   "Referral":   {

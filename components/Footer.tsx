@@ -80,6 +80,7 @@ export default function Footer() {
                                 { href: "/insights", label: t('companyLinks.insights') },
                                 { href: "/faq", label: t('companyLinks.faq') },
                                 { href: "/contact", label: t('companyLinks.contact') },
+                                { href: "/pricing", label: t('companyLinks.pricing') },
                                 { href: "/referral", label: t('companyLinks.referral') },
                             ].map((link) => (
                                 <li key={link.href}>

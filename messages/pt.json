@@ -568,6 +568,7 @@
       "insights": "Insights & Blog",
       "contact": "Contacto",
       "faq": "FAQ",
+      "pricing": "Preços",
       "referral": "Programa de Afiliados"
     },
     "links": {
@@ -2241,6 +2242,57 @@
       "support": "Dúvidas? Contacte-nos em",
       "downloadNow": "Descarregar o livro agora",
       "backToShop": "Voltar à Loja"
+    }
+  },
+  "Pricing": {
+    "badge": "Preços Transparentes",
+    "hero": {
+      "h1a": "Qualidade Suíça.",
+      "h1b": "Preços Honestos.",
+      "subtitle": "40–50% abaixo das tarifas das agências de Zurique. Sem taxas ocultas. Sem contratos de retenção. Apenas preços transparentes e trabalho que entrega resultados.",
+      "cta": "Obter um Orçamento Gratuito"
+    },
+    "stats": {
+      "s1value": "40–60%",
+      "s1label": "Poupança média vs. agências de Zurique",
+      "s2value": "Days",
+      "s2label": "Entrega típica — não meses",
+      "s3value": "0",
+      "s3label": "Taxas ocultas ou custos surpresa"
+    },
+    "comparison": {
+      "label": "Comparação de mercado",
+      "title": "Como nos Comparamos com as Agências de Zurique",
+      "colService": "Serviço",
+      "colMarket": "Média de Zurique",
+      "colOurs": "Lopes2Tech",
+      "colSavings": "Poupa",
+      "disclaimer": "Médias de mercado baseadas em tarifas de agências publicamente listadas na área de Zurique (2026)."
+    },
+    "tables": {
+      "label": "Lista Completa de Preços",
+      "title": "Todos os Serviços. Todos os Preços.",
+      "subtitle": "Sem taxas ocultas. Sem faturas surpresa. O que vê é o que paga.",
+      "colService": "Serviço",
+      "colPrice": "Nosso Preço",
+      "colMarket": "Média do Mercado",
+      "colSavings": "Poupança",
+      "badgeOneTime": "Uma vez",
+      "badgeRecurring": "Mensal",
+      "viewService": "Ver página do serviço",
+      "footerNote": "Todos os preços em CHF (Francos Suíços). Despesas com anúncios faturadas diretamente pela Meta/Google. Custos de plataformas de IA são repercutidos."
+    },
+    "paymentPlans": {
+      "label": "Financiamento flexível",
+      "title": "Pague em Prestações",
+      "subtitle": "Divida qualquer projeto em 3, 6 ou 12 pagamentos mensais. Sem verificação de crédito — basta escolher na assinatura do contrato.",
+      "terms": "Faturação mensal automática via Stripe. O site do projeto permanece no alojamento até ao pagamento total."
+    },
+    "cta": {
+      "label": "Pronto para começar?",
+      "title": "Obtenha um Orçamento em 24 Horas",
+      "description": "Diga-nos o que precisa e enviaremos um orçamento preciso — sem estimativas vagas, sem taxas surpresa.",
+      "button": "Contacte-nos pelo WhatsApp"
     }
   },
   "Referral":   {

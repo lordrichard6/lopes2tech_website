@@ -568,6 +568,7 @@
       "insights": "Einblicke & Blog",
       "contact": "Kontakt",
       "faq": "FAQ",
+      "pricing": "Preise",
       "referral": "Empfehlungsprogramm"
     },
     "links": {
@@ -2241,6 +2242,57 @@
       "support": "Fragen? Kontaktieren Sie uns unter",
       "downloadNow": "Buch jetzt herunterladen",
       "backToShop": "Zurück zum Shop"
+    }
+  },
+  "Pricing": {
+    "badge": "Transparente Preise",
+    "hero": {
+      "h1a": "Schweizer Qualität.",
+      "h1b": "Ehrliche Preise.",
+      "subtitle": "40–50% unter den Zürcher Agenturpreisen. Keine versteckten Gebühren. Keine Retainer-Fallen. Nur transparente Preise und Arbeit, die liefert.",
+      "cta": "Kostenloses Angebot einholen"
+    },
+    "stats": {
+      "s1value": "40–60%",
+      "s1label": "Durchschnittliche Einsparungen gegenüber Zürcher Agenturen",
+      "s2value": "Days",
+      "s2label": "Typische Lieferzeit — nicht Monate",
+      "s3value": "0",
+      "s3label": "Versteckte Gebühren oder Überraschungskosten"
+    },
+    "comparison": {
+      "label": "Marktvergleich",
+      "title": "Wie wir uns mit Zürcher Agenturen vergleichen",
+      "colService": "Leistung",
+      "colMarket": "Zürcher Durchschnitt",
+      "colOurs": "Lopes2Tech",
+      "colSavings": "Sie sparen",
+      "disclaimer": "Marktdurchschnitte basieren auf öffentlich aufgeführten Agenturpreisen im Raum Zürich (2026)."
+    },
+    "tables": {
+      "label": "Vollständige Preisliste",
+      "title": "Jede Leistung. Jeder Preis.",
+      "subtitle": "Keine versteckten Gebühren. Keine Überraschungsrechnungen. Was Sie sehen, zahlen Sie.",
+      "colService": "Leistung",
+      "colPrice": "Unser Preis",
+      "colMarket": "Marktdurchschnitt",
+      "colSavings": "Ersparnis",
+      "badgeOneTime": "Einmalig",
+      "badgeRecurring": "Monatlich",
+      "viewService": "Zur Leistungsseite",
+      "footerNote": "Alle Preise in CHF (Schweizer Franken). Werbeausgaben werden direkt von Meta/Google verrechnet. KI-Plattformkosten werden weitergegeben."
+    },
+    "paymentPlans": {
+      "label": "Flexible Finanzierung",
+      "title": "In Raten zahlen",
+      "subtitle": "Teilen Sie jedes Projekt in 3, 6 oder 12 monatliche Zahlungen auf. Keine Bonitätsprüfung — einfach bei Vertragsunterzeichnung wählen.",
+      "terms": "Automatische monatliche Abrechnung via Stripe. Die Projektwebsite bleibt im Hosting bis zur vollständigen Bezahlung."
+    },
+    "cta": {
+      "label": "Bereit loszulegen?",
+      "title": "Angebot in 24 Stunden erhalten",
+      "description": "Sagen Sie uns, was Sie brauchen, und wir senden Ihnen ein genaues Angebot — keine vagen Schätzungen, keine Überraschungsgebühren.",
+      "button": "Schreiben Sie uns auf WhatsApp"
     }
   },
   "Referral":   {
