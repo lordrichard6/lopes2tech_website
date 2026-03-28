@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Gift, Zap, CheckCircle, ArrowRight, Users, Repeat, BadgeCheck } from "lucide-react";
+import { Gift, Zap, CheckCircle, ArrowRight, Users, Repeat, BadgeCheck, Globe, Palette, Settings, Megaphone, Bot, Wrench } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { WHATSAPP_URL } from "@/lib/constants";
@@ -24,14 +24,124 @@ const steps = [
   },
 ];
 
-const rewards = [
-  { service: "Starter Website (CHF 690)", reward: "CHF 70", type: "one-time", note: "Paid on deposit" },
-  { service: "Professional Website (CHF 1,390)", reward: "CHF 140", type: "one-time", note: "Paid on deposit" },
-  { service: "Business Pro Website (CHF 1,990)", reward: "CHF 200", type: "one-time", note: "Paid on deposit" },
-  { service: "Meta or Google Ads Management", reward: "15% × 6mo", type: "recurring", note: "~CHF 52–97/mo" },
-  { service: "Monthly Care Plans", reward: "15% × 6mo", type: "recurring", note: "~CHF 6–25/mo" },
-  { service: "AI Workflow / Automation Setup", reward: "10% of setup", type: "one-time", note: "CHF 60–500" },
+type RewardRow = { service: string; price: string; reward: string; note?: string };
+type RewardCategory = {
+  title: string;
+  type: "one-time" | "recurring";
+  color: string;
+  icon: React.ElementType;
+  rows: RewardRow[];
+};
+
+const rewardCategories: RewardCategory[] = [
+  {
+    title: "Website Packages",
+    type: "one-time",
+    color: "cyan",
+    icon: Globe,
+    rows: [
+      { service: "Starter Website", price: "CHF 690", reward: "CHF 69", note: "Paid on deposit" },
+      { service: "Professional Website", price: "CHF 1,390", reward: "CHF 139", note: "Paid on deposit" },
+      { service: "Business Pro Website", price: "CHF 1,990", reward: "CHF 199", note: "Paid on deposit" },
+      { service: "Campaign Landing Page", price: "CHF 350", reward: "CHF 35", note: "Paid on deposit" },
+    ],
+  },
+  {
+    title: "Branding",
+    type: "one-time",
+    color: "pink",
+    icon: Palette,
+    rows: [
+      { service: "Logo Only", price: "CHF 299", reward: "CHF 30", note: "Paid on delivery" },
+      { service: "Full Brand Kit", price: "CHF 549", reward: "CHF 55", note: "Paid on delivery" },
+    ],
+  },
+  {
+    title: "Setup & Quick Wins",
+    type: "one-time",
+    color: "amber",
+    icon: Settings,
+    rows: [
+      { service: "Google Business Profile Setup", price: "CHF 249", reward: "CHF 25" },
+      { service: "Analytics & Tracking Setup (GA4)", price: "CHF 329", reward: "CHF 33" },
+      { service: "Email Domain Setup", price: "CHF 169", reward: "CHF 17" },
+      { service: "Website Audit", price: "CHF 99", reward: "CHF 10" },
+      { service: "Speed Optimization", price: "CHF 129", reward: "CHF 13" },
+      { service: "Google Business Boost", price: "CHF 69", reward: "CHF 7" },
+      { service: "Automation Assessment", price: "CHF 149", reward: "CHF 15" },
+    ],
+  },
+  {
+    title: "Website Add-Ons",
+    type: "one-time",
+    color: "teal",
+    icon: Wrench,
+    rows: [
+      { service: "Blog / CMS Setup", price: "CHF 350", reward: "CHF 35" },
+      { service: "Extra Service Page", price: "CHF 150/page", reward: "CHF 15/page" },
+      { service: "Extra Language", price: "CHF 200–300", reward: "CHF 20–30" },
+      { service: "Local SEO Boost", price: "CHF 199", reward: "CHF 20" },
+      { service: "Social Proof Widget", price: "CHF 99", reward: "CHF 10" },
+      { service: "Newsletter Integration", price: "CHF 149", reward: "CHF 15" },
+      { service: "Review Collection Automation", price: "CHF 329", reward: "CHF 33" },
+      { service: "Appointment Booking System", price: "CHF 369", reward: "CHF 37" },
+      { service: "Lead Capture System", price: "CHF 449", reward: "CHF 45" },
+      { service: "AI FAQ Chatbot", price: "CHF 699–850", reward: "CHF 70–85" },
+    ],
+  },
+  {
+    title: "Marketing & Ads (Monthly)",
+    type: "recurring",
+    color: "purple",
+    icon: Megaphone,
+    rows: [
+      { service: "Meta Ads Management", price: "CHF 349/mo", reward: "CHF 52/mo", note: "× 6 months = CHF 314" },
+      { service: "Google Ads Management", price: "CHF 399/mo", reward: "CHF 60/mo", note: "× 6 months = CHF 359" },
+      { service: "Meta + Google Bundle", price: "CHF 649/mo", reward: "CHF 97/mo", note: "× 6 months = CHF 584" },
+      { service: "Social Starter (8 posts/mo)", price: "CHF 299/mo", reward: "CHF 45/mo", note: "× 6 months = CHF 269" },
+      { service: "Social Growth (12 posts/mo)", price: "CHF 399/mo", reward: "CHF 60/mo", note: "× 6 months = CHF 359" },
+      { service: "Social Pro (16 posts/mo)", price: "CHF 649/mo", reward: "CHF 97/mo", note: "× 6 months = CHF 584" },
+      { service: "Leads Starter", price: "CHF 299/mo", reward: "CHF 45/mo", note: "× 6 months = CHF 269" },
+      { service: "Leads Growth", price: "CHF 479/mo", reward: "CHF 72/mo", note: "× 6 months = CHF 431" },
+      { service: "Leads Pro", price: "CHF 699/mo", reward: "CHF 105/mo", note: "× 6 months = CHF 629" },
+    ],
+  },
+  {
+    title: "Retainer Packages (Monthly)",
+    type: "recurring",
+    color: "indigo",
+    icon: Repeat,
+    rows: [
+      { service: "Lite Retainer (6h/mo)", price: "CHF 630/mo", reward: "CHF 95/mo", note: "× 6 months = CHF 567" },
+      { service: "Pro Retainer (12h/mo)", price: "CHF 1,200/mo", reward: "CHF 180/mo", note: "× 6 months = CHF 1,080" },
+      { service: "Enterprise Retainer (20h/mo)", price: "CHF 1,900/mo", reward: "CHF 285/mo", note: "× 6 months = CHF 1,710" },
+    ],
+  },
+  {
+    title: "AI & Automation Setup",
+    type: "one-time",
+    color: "emerald",
+    icon: Bot,
+    rows: [
+      { service: "AI Workflow – Light", price: "CHF 600–1,200", reward: "CHF 60–120" },
+      { service: "AI Workflow – Full", price: "CHF 1,500–5,000", reward: "CHF 150–500" },
+      { service: "AI Customer Support Agent", price: "CHF 2,500–9,000", reward: "CHF 250–900" },
+      { service: "AI Sales & Outreach Agent", price: "CHF 2,500–7,000", reward: "CHF 250–700" },
+      { service: "AI Voice Agent", price: "CHF 4,000–10,000", reward: "CHF 400–1,000" },
+      { service: "AI Knowledge-Base / RAG", price: "CHF 3,500–10,000", reward: "CHF 350–1,000" },
+    ],
+  },
 ];
+
+const colorMap: Record<string, { badge: string; header: string; icon: string }> = {
+  cyan:    { badge: "bg-cyan-500/15 text-cyan-400 border-cyan-500/20",    header: "bg-cyan-500/10 border-cyan-500/20",    icon: "text-cyan-400" },
+  pink:    { badge: "bg-pink-500/15 text-pink-400 border-pink-500/20",    header: "bg-pink-500/10 border-pink-500/20",    icon: "text-pink-400" },
+  amber:   { badge: "bg-amber-500/15 text-amber-400 border-amber-500/20", header: "bg-amber-500/10 border-amber-500/20", icon: "text-amber-400" },
+  teal:    { badge: "bg-teal-500/15 text-teal-400 border-teal-500/20",    header: "bg-teal-500/10 border-teal-500/20",    icon: "text-teal-400" },
+  purple:  { badge: "bg-purple-500/15 text-purple-400 border-purple-500/20", header: "bg-purple-500/10 border-purple-500/20", icon: "text-purple-400" },
+  indigo:  { badge: "bg-indigo-500/15 text-indigo-400 border-indigo-500/20", header: "bg-indigo-500/10 border-indigo-500/20", icon: "text-indigo-400" },
+  emerald: { badge: "bg-emerald-500/15 text-emerald-400 border-emerald-500/20", header: "bg-emerald-500/10 border-emerald-500/20", icon: "text-emerald-400" },
+};
 
 const perks = [
   "No referral limit — refer 10 clients, earn 10 times",
@@ -141,40 +251,66 @@ export default function ReferralPage() {
           </div>
         </section>
 
-        {/* Rewards table */}
+        {/* Rewards tables */}
         <section className="py-24 px-6 bg-white/[0.02]">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-14">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-16">
               <p className="text-purple-400 font-bold uppercase tracking-widest text-sm mb-3">What you earn</p>
-              <h2 className="text-3xl md:text-4xl font-extrabold">Your rewards, by service</h2>
+              <h2 className="text-3xl md:text-4xl font-extrabold mb-3">Your rewards, by service</h2>
+              <p className="text-slate-400 text-sm">One-time services pay <span className="text-white font-semibold">10%</span> on deposit. Monthly services pay <span className="text-white font-semibold">15% for 6 months</span>.</p>
             </div>
-            <div className="rounded-2xl border border-white/10 overflow-hidden">
-              <div className="grid grid-cols-3 bg-white/10 px-6 py-3 text-xs font-bold uppercase tracking-wider text-slate-400">
-                <span>Service</span>
-                <span className="text-center">Your Reward</span>
-                <span className="text-right">Note</span>
-              </div>
-              {rewards.map((row, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, x: -10 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.05 }}
-                  className="grid grid-cols-3 px-6 py-4 border-t border-white/5 items-center hover:bg-white/[0.03] transition-colors"
-                >
-                  <span className="text-sm text-white font-medium">{row.service}</span>
-                  <span className="text-center">
-                    <span className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold ${row.type === "recurring" ? "bg-purple-500/15 text-purple-400 border border-purple-500/20" : "bg-cyan-500/15 text-cyan-400 border border-cyan-500/20"}`}>
-                      {row.type === "recurring" && <Repeat className="w-3 h-3" />}
-                      {row.reward}
-                    </span>
-                  </span>
-                  <span className="text-right text-xs text-slate-500">{row.note}</span>
-                </motion.div>
-              ))}
+
+            <div className="space-y-10">
+              {rewardCategories.map((cat, ci) => {
+                const c = colorMap[cat.color];
+                return (
+                  <motion.div
+                    key={ci}
+                    initial={{ opacity: 0, y: 16 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: ci * 0.06 }}
+                    className="rounded-2xl border border-white/10 overflow-hidden"
+                  >
+                    {/* Category header */}
+                    <div className={`flex items-center gap-3 px-6 py-4 border-b border-white/10 ${c.header}`}>
+                      <cat.icon className={`w-5 h-5 ${c.icon}`} />
+                      <span className="font-bold text-white text-sm uppercase tracking-wider">{cat.title}</span>
+                      <span className={`ml-auto inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold border ${c.badge}`}>
+                        {cat.type === "recurring" && <Repeat className="w-3 h-3" />}
+                        {cat.type === "one-time" ? "10% one-time" : "15% × 6 months"}
+                      </span>
+                    </div>
+
+                    {/* Column headers */}
+                    <div className="grid grid-cols-3 px-6 py-2 bg-white/5 text-xs font-semibold uppercase tracking-wider text-slate-500">
+                      <span>Service</span>
+                      <span className="text-center">Price</span>
+                      <span className="text-right">Your Reward</span>
+                    </div>
+
+                    {/* Rows */}
+                    {cat.rows.map((row, ri) => (
+                      <div
+                        key={ri}
+                        className="grid grid-cols-3 px-6 py-3.5 border-t border-white/5 items-center hover:bg-white/[0.03] transition-colors"
+                      >
+                        <span className="text-sm text-white font-medium pr-4">{row.service}</span>
+                        <span className="text-center text-sm text-slate-400">{row.price}</span>
+                        <span className="text-right">
+                          <span className={`inline-flex flex-col items-end`}>
+                            <span className={`text-sm font-bold ${c.icon}`}>{row.reward}</span>
+                            {row.note && <span className="text-xs text-slate-600">{row.note}</span>}
+                          </span>
+                        </span>
+                      </div>
+                    ))}
+                  </motion.div>
+                );
+              })}
             </div>
-            <p className="text-center text-xs text-slate-600 mt-4">Rewards are paid after the referred client completes their deposit or first monthly payment.</p>
+
+            <p className="text-center text-xs text-slate-600 mt-6">Rewards are paid after the referred client completes their deposit or first monthly payment. Monthly rewards are transferred at the end of each month.</p>
           </div>
         </section>
 
