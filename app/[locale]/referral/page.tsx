@@ -78,8 +78,8 @@ const rewardCategories: RewardCategory[] = [
     icon: Wrench,
     rows: [
       { service: "Blog / CMS Setup", price: "CHF 350", reward: "CHF 35" },
-      { service: "Extra Service Page", price: "CHF 150/page", reward: "CHF 15/page" },
-      { service: "Extra Language", price: "CHF 200–300", reward: "CHF 20–30" },
+      { service: "Extra Service Page", price: "CHF 80/page", reward: "CHF 8/page" },
+      { service: "Extra Language", price: "From CHF 100", reward: "From CHF 10", note: "Scales with site size" },
       { service: "Local SEO Boost", price: "CHF 199", reward: "CHF 20" },
       { service: "Social Proof Widget", price: "CHF 99", reward: "CHF 10" },
       { service: "Newsletter Integration", price: "CHF 149", reward: "CHF 15" },
