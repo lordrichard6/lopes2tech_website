@@ -2270,7 +2270,7 @@
     "stats": {
       "s1value": "40–60%",
       "s1label": "Durchschnittliche Einsparungen gegenüber Zürcher Agenturen",
-      "s2value": "Days",
+      "s2value": "4–7",
       "s2label": "Typische Lieferzeit — nicht Monate",
       "s3value": "0",
       "s3label": "Versteckte Gebühren oder Überraschungskosten"
@@ -2355,6 +2355,336 @@
           "a": "Jeder Marktvergleich auf dieser Seite wurde anhand öffentlich gelisteter Preise von mehr als 12 Schweizer Agenturen recherchiert, darunter resign.ch, webtree.ch, peakline-agency.ch, cynatic.ch, digitalcreators.ch und andere — Querverweise wurden im March 2026 vorgenommen. Dies sind dokumentierte Zahlen, keine Schätzungen."
         }
       ]
+    },
+    "research": {
+      "label": "Recherchierte Daten — keine Schätzungen",
+      "body": "Alle Marktdurchschnitte auf dieser Seite stammen aus realen, öffentlich gelisteten Preisen — verifiziert bei 12+ Schweizer Agenturen im März 2026.",
+      "sourcePrefix": "Quellen:",
+      "sourceConnector": "und aggregierte Marktdaten von"
+    },
+    "mostPopular": "Am beliebtesten",
+    "marketAvgLabel": "Marktdurchschnitt:",
+    "planList": [
+      {
+        "name": "Vorauszahlung",
+        "markup": "0% Aufschlag",
+        "desc": "Bester Preis. 50% Anzahlung, 50% bei Launch.",
+        "badge": "Bestes Angebot"
+      },
+      {
+        "name": "3-Monats-Plan",
+        "markup": "+5%",
+        "desc": "CHF 690 → CHF 242/Monat · CHF 2.000 → CHF 700/Monat",
+        "badge": ""
+      },
+      {
+        "name": "6-Monats-Plan",
+        "markup": "+10%",
+        "desc": "CHF 690 → CHF 127/Monat · CHF 2.000 → CHF 367/Monat",
+        "badge": ""
+      },
+      {
+        "name": "12 Monate",
+        "markup": "+15%",
+        "desc": "CHF 690 → CHF 66/Monat · CHF 2.000 → CHF 192/Monat",
+        "badge": "Am zugänglichsten"
+      }
+    ],
+    "comparisonRows": [
+      {
+        "service": "Starter-Website (1 Seite)"
+      },
+      {
+        "service": "Professionelle Website (5 Seiten)"
+      },
+      {
+        "service": "Business Pro Website"
+      },
+      {
+        "service": "Vollständiges Markenpaket"
+      },
+      {
+        "service": "Meta-Anzeigenverwaltung"
+      }
+    ],
+    "categories": [
+      {
+        "title": "Website-Pakete",
+        "rows": [
+          {
+            "service": "Starter-Website",
+            "pitch": "Perfekt für neue Unternehmen, Freelancer oder alle, die schnell eine professionelle Online-Präsenz benötigen. In 4–5 Tagen geliefert — kein wochenlangen Warten.",
+            "bullets": [
+              "Einseitige individuelle Website",
+              "KI-erstellte Texte inklusive",
+              "Buchungs-Widget + WhatsApp-Button",
+              "Mobiloptimiert",
+              "Lieferung in 4–5 Tagen"
+            ]
+          },
+          {
+            "service": "Professionelle Website",
+            "pitch": "Für etablierte Solopreneure, die bereit sind für ein Upgrade. Mehrseitig, mehrsprachig, mit SEO von Anfang an.",
+            "bullets": [
+              "5-seitige Website",
+              "2 Sprachen inklusive",
+              "1 Automatisierung inklusive",
+              "SEO-Grundlagen",
+              "Lieferung in 5–6 Tagen"
+            ]
+          },
+          {
+            "service": "Business Pro Website",
+            "pitch": "Das Komplettpaket für KMUs. Bis zu 10 Service-Seiten, 3 Sprachen, Lead-Erfassungssystem — alles, um online ernsthaft zu konkurrieren.",
+            "bullets": [
+              "5 Kernseiten + bis zu 10 Service-Seiten",
+              "3 Sprachen inklusive",
+              "SEO + Lead-Erfassungssystem",
+              "Lieferung in 6–7 Tagen"
+            ]
+          },
+          {
+            "service": "Kampagnen-Landingpage",
+            "pitch": "Eine konversionsorientierte Einzelseite für Werbekampagnen, Produktlaunches oder Lead-Magneten. Entwickelt, um Traffic in Leads umzuwandeln.",
+            "bullets": [
+              "Konversionsoptimiertes Design",
+              "Anzeigen-Tracking-Integration",
+              "CTA + Lead-Erfassungsformular",
+              "Schnelle Lieferung"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Branding",
+        "rows": [
+          {
+            "service": "Nur Logo",
+            "pitch": "Ein professionelles Logo in 3 Varianten. Ideal für neue Unternehmen oder Rebranding, die nur das Zeichen benötigen — sauber, skalierbar und schnell geliefert.",
+            "bullets": [
+              "3 Logo-Varianten (hell, dunkel, Symbol)",
+              "Vektordateien inklusive",
+              "Bereit für Web + Druck"
+            ]
+          },
+          {
+            "service": "Vollständiges Markenpaket",
+            "pitch": "Alles, was ein Unternehmen braucht, um überall professionell auszusehen. Logo, Farben, Schriften, Visitenkarten und ein Social-Media-Kit — alles in einem Paket.",
+            "bullets": [
+              "Logo (3 Varianten)",
+              "Farbpalette + Typografie",
+              "Markenrichtlinien-Dokument",
+              "Visitenkarten-Design",
+              "Social-Media-Kit (Profil- + Titelbilder)"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Marketing & Werbung",
+        "rows": [
+          {
+            "service": "Meta-Anzeigenverwaltung",
+            "pitch": "Vollständiges Kampagnenmanagement auf Facebook und Instagram. Wir kümmern uns um Creatives, Targeting und Optimierung, damit Ihre Anzeigen wirklich konvertieren.",
+            "bullets": [
+              "Kampagnenaufbau + Anzeigen-Creative",
+              "Zielgruppen-Targeting + Retargeting",
+              "A/B-Tests",
+              "Monatlicher Leistungsbericht"
+            ]
+          },
+          {
+            "service": "Google Ads Verwaltung",
+            "pitch": "Such- und Display-Kampagnen für Konversionen. Keyword-Recherche, Anzeigentexte und monatliches Reporting inklusive.",
+            "bullets": [
+              "Keyword-Recherche + Kampagnenaufbau",
+              "Such- & Display-Anzeigen",
+              "Konversionsverfolgung",
+              "Monatlicher Analysebericht"
+            ]
+          },
+          {
+            "service": "Meta + Google Paket",
+            "pitch": "Führen Sie beide Kanäle mit einer einheitlichen kanalübergreifenden Strategie. Sparen Sie CHF 99/Monat gegenüber dem Einzelkauf.",
+            "bullets": [
+              "Alles aus beiden Plänen",
+              "Kanalübergreifende Strategie",
+              "Einheitliches monatliches Reporting",
+              "CHF 99/Monat sparen vs. einzeln"
+            ]
+          },
+          {
+            "service": "Social Media Starter",
+            "pitch": "Bleiben Sie mit 8 Beiträgen pro Monat auf Ihrer stärksten Plattform konstant sichtbar.",
+            "bullets": [
+              "8 Beiträge/Monat (1 Plattform)",
+              "Content-Erstellung + Planung",
+              "Instagram, Facebook oder LinkedIn"
+            ]
+          },
+          {
+            "service": "Social Media Wachstum",
+            "pitch": "Wachsen Sie auf zwei Plattformen mit Stories und aktivem Engagement-Management.",
+            "bullets": [
+              "12 Beiträge/Monat (2 Plattformen)",
+              "Stories + Engagement-Management",
+              "Monatliches Strategie-Check-in"
+            ]
+          },
+          {
+            "service": "Social Media Pro",
+            "pitch": "Vollständige Content-Maschine — 3 Plattformen, Reels und monatliche Strategie-Calls für ambitionierte Marken.",
+            "bullets": [
+              "16 Beiträge/Monat (3 Plattformen)",
+              "Reels + Stories",
+              "Monatlicher Strategie-Call"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "KI & Automatisierung",
+        "rows": [
+          {
+            "service": "KI-Kundensupport-Agent",
+            "pitch": "Ein intelligenter Chatbot, der Kundenanfragen 24/7 auf Ihrer Website, WhatsApp oder App bearbeitet — trainiert auf Ihr Unternehmen.",
+            "bullets": [
+              "Aufgebaut auf Ihrer Wissensdatenbank",
+              "WhatsApp + Web-Widget-Integration",
+              "Weiterleitung an Mensch bei Bedarf",
+              "+ erforderlicher monatlicher Wartungsplan"
+            ]
+          },
+          {
+            "service": "KI-Vertriebs- und Outreach-Agent",
+            "pitch": "Automatisierte Prospektions- und Outreach-Pipeline — von LinkedIn-Recherche bis zu personalisierten E-Mail-Sequenzen.",
+            "bullets": [
+              "Lead-Beschaffung + Anreicherung",
+              "KI-personalisierte E-Mail-Sequenzen",
+              "CRM-Integration",
+              "+ erforderlicher monatlicher Wartungsplan"
+            ]
+          },
+          {
+            "service": "KI-Sprach-Agent",
+            "pitch": "Ein KI-Telefonagent, der Anrufe bearbeitet, Leads qualifiziert und Termine bucht — in jeder Sprache.",
+            "bullets": [
+              "Eingehende + ausgehende Anrufe",
+              "Lead-Qualifizierung + Terminbuchung",
+              "Twilio / VAPI-Integration",
+              "+ erforderlicher monatlicher Wartungsplan"
+            ]
+          },
+          {
+            "service": "KI-Workflow — Einfach",
+            "pitch": "Automatisieren Sie einen repetitiven Prozess von Anfang bis Ende mit n8n oder Make. Perfekter Einstieg in die Automatisierung.",
+            "bullets": [
+              "1 automatisierter Workflow",
+              "Tool-Integration (CRM, E-Mail, Slack...)",
+              "Vollständige Dokumentation",
+              "+ optionaler Wartungsplan"
+            ]
+          },
+          {
+            "service": "KI-Workflow — Vollständig",
+            "pitch": "Komplexe mehrstufige Automatisierungen, die Ihren gesamten Tool-Stack mit integrierter KI-Entscheidungslogik verbinden.",
+            "bullets": [
+              "Mehrere verbundene Workflows",
+              "KI-Denkschritte",
+              "Individuelle API-Integrationen",
+              "+ erforderlicher monatlicher Wartungsplan"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Schnelle Erfolge",
+        "rows": [
+          {
+            "service": "Website-Analyse",
+            "pitch": "Eine einseitige PDF mit 5 spezifischen, umsetzbaren Verbesserungen für Ihre bestehende Website.",
+            "bullets": [
+              "Performance + SEO-Überprüfung",
+              "UX + Konversionsanalyse",
+              "Lieferung in 48h",
+              "Wird auf Upgrade angerechnet, wenn Sie fortfahren"
+            ]
+          },
+          {
+            "service": "Geschwindigkeitsoptimierung",
+            "pitch": "Schnellere Websites ranken höher und konvertieren besser. Wir holen jede Millisekunde aus Ihrer bestehenden Website heraus.",
+            "bullets": [
+              "Caching + Bildkomprimierung",
+              "Core Web Vitals Verbesserung",
+              "Leistungsbericht vorher/nachher"
+            ]
+          },
+          {
+            "service": "Google Business Boost",
+            "pitch": "Werden Sie in Google Maps und der lokalen Suche gefunden mit einem vollständig optimierten Google Unternehmensprofil.",
+            "bullets": [
+              "GBP-Einrichtung oder Optimierung",
+              "3 Beiträge veröffentlicht",
+              "Kategorie + Keyword-Optimierung"
+            ]
+          },
+          {
+            "service": "Automatisierungsanalyse",
+            "pitch": "Eine einseitige PDF mit 3–5 manuellen Prozessen in Ihrem Unternehmen, die mit KI automatisiert werden könnten.",
+            "bullets": [
+              "Prozessanalyse-Sitzung",
+              "Automatisierungsmöglichkeitsbericht",
+              "Tool-Empfehlungen inklusive"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Monatliche Wartung & Hosting",
+        "rows": [
+          {
+            "service": "Nur Hosting",
+            "pitch": "Schnelles, sicheres Hosting mit täglichen Backups, SSL-Zertifikat und Uptime-Monitoring. Einrichten und vergessen.",
+            "bullets": [
+              "Vercel / Cloud-Hosting",
+              "SSL-Zertifikat",
+              "Tägliche Backups",
+              "Uptime-Monitoring"
+            ]
+          },
+          {
+            "service": "Basis-Wartung",
+            "pitch": "Alles im Hosting plus wöchentliche Updates, 1 Stunde Support/Änderungen pro Monat und priorisierte E-Mail-Antwort.",
+            "bullets": [
+              "Alles aus Nur Hosting",
+              "Wöchentliche Plattform-Updates",
+              "1h Support/Änderungen pro Monat",
+              "Priorisierter E-Mail-Support"
+            ]
+          },
+          {
+            "service": "Wachstums-Wartung",
+            "pitch": "Aktive monatliche Wartung mit SEO-Reporting, 2h Support und proaktiven Verbesserungsvorschlägen für Ihre Website.",
+            "bullets": [
+              "Alles aus Basis-Wartung",
+              "Monatlicher SEO-Leistungsbericht",
+              "2h Support pro Monat",
+              "Proaktive Verbesserungsvorschläge"
+            ]
+          }
+        ]
+      }
+    ],
+    "aiMonthlyNote": "* Wiederkehrende KI- und Automatisierungs-Workflows beinhalten eine monatliche Wartungs- und Update-Gebühr.",
+    "websitesHostingNote": "* Ein Mindest-Hosting-Paket von CHF 27/Monat ist erforderlich, damit Ihre Website online bleibt.",
+    "hourly": {
+      "label": "Stundenberatung",
+      "title": "Brauchen Sie mich auf Abruf?",
+      "subtitle": "Buchen Sie eine Stunde für Strategiesitzungen, technische Audits oder Implementierungsunterstützung.",
+      "rate": "CHF 80",
+      "unit": "/ Stunde",
+      "desc": "Abrechnung in 1-Stunden-Einheiten. Mindestens 1 Stunde. Per Videoanruf oder persönlich verfügbar.",
+      "cta": "Sitzung buchen"
     }
   },
   "Referral": {

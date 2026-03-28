@@ -2270,7 +2270,7 @@
     "stats": {
       "s1value": "40–60%",
       "s1label": "Poupança média vs. agências de Zurique",
-      "s2value": "Days",
+      "s2value": "4–7",
       "s2label": "Entrega típica — não meses",
       "s3value": "0",
       "s3label": "Taxas ocultas ou custos surpresa"
@@ -2355,6 +2355,336 @@
           "a": "Cada comparação de mercado nesta página foi investigada com base em preços publicamente listados de mais de 12 agências suíças, incluindo resign.ch, webtree.ch, peakline-agency.ch, cynatic.ch, digitalcreators.ch e outras — cruzados em March 2026. São valores documentados, não estimativas."
         }
       ]
+    },
+    "research": {
+      "label": "Dados verificados — não estimativas",
+      "body": "Todas as médias de mercado nesta página provêm de preços reais e publicamente listados — verificados em 12+ agências suíças em março de 2026.",
+      "sourcePrefix": "Fontes incluem:",
+      "sourceConnector": "e dados agregados do mercado de"
+    },
+    "mostPopular": "Mais Popular",
+    "marketAvgLabel": "Média de mercado:",
+    "planList": [
+      {
+        "name": "Pagamento Antecipado",
+        "markup": "0% adicional",
+        "desc": "Melhor preço. 50% de entrada, 50% no lançamento.",
+        "badge": "Melhor Valor"
+      },
+      {
+        "name": "Plano 3 Meses",
+        "markup": "+5%",
+        "desc": "CHF 690 → CHF 242/mês · CHF 2.000 → CHF 700/mês",
+        "badge": ""
+      },
+      {
+        "name": "Plano 6 Meses",
+        "markup": "+10%",
+        "desc": "CHF 690 → CHF 127/mês · CHF 2.000 → CHF 367/mês",
+        "badge": ""
+      },
+      {
+        "name": "12 Meses",
+        "markup": "+15%",
+        "desc": "CHF 690 → CHF 66/mês · CHF 2.000 → CHF 192/mês",
+        "badge": "Mais Acessível"
+      }
+    ],
+    "comparisonRows": [
+      {
+        "service": "Website Inicial (1 página)"
+      },
+      {
+        "service": "Website Profissional (5 páginas)"
+      },
+      {
+        "service": "Website Business Pro"
+      },
+      {
+        "service": "Kit de Marca Completo"
+      },
+      {
+        "service": "Gestão de Anúncios Meta"
+      }
+    ],
+    "categories": [
+      {
+        "title": "Pacotes de Website",
+        "rows": [
+          {
+            "service": "Website Inicial",
+            "pitch": "Perfeito para novos negócios, freelancers ou qualquer pessoa que precise de uma presença online rápida e profissional. Entregue em 4–5 dias — sem esperar semanas.",
+            "bullets": [
+              "Website personalizado de uma página",
+              "Texto escrito por IA incluído",
+              "Widget de reservas + botão WhatsApp",
+              "Responsivo para mobile",
+              "Entregue em 4–5 dias"
+            ]
+          },
+          {
+            "service": "Website Profissional",
+            "pitch": "Para solopreneurs estabelecidos prontos para evoluir. Multi-página, multi-idioma, com SEO integrado desde o primeiro dia.",
+            "bullets": [
+              "Website de 5 páginas",
+              "2 idiomas incluídos",
+              "1 automação incluída",
+              "Bases de SEO",
+              "Entregue em 5–6 dias"
+            ]
+          },
+          {
+            "service": "Website Business Pro",
+            "pitch": "O pacote completo para PMEs. Até 10 páginas de serviços, 3 idiomas, sistema de captação de leads — tudo para competir online a sério.",
+            "bullets": [
+              "5 páginas principais + até 10 páginas de serviços",
+              "3 idiomas incluídos",
+              "SEO + sistema de captação de leads",
+              "Entregue em 6–7 dias"
+            ]
+          },
+          {
+            "service": "Landing Page de Campanha",
+            "pitch": "Uma página única focada em conversão para campanhas publicitárias, lançamentos de produtos ou lead magnets. Criada para converter tráfego em leads.",
+            "bullets": [
+              "Design otimizado para conversão",
+              "Integração de rastreamento de anúncios",
+              "CTA + formulário de captação de leads",
+              "Entrega rápida"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Branding",
+        "rows": [
+          {
+            "service": "Apenas Logótipo",
+            "pitch": "Um logótipo profissional em 3 variações. Ideal para novos negócios ou rebranding que apenas precisam do símbolo — limpo, escalável e entregue rapidamente.",
+            "bullets": [
+              "3 variações de logótipo (claro, escuro, ícone)",
+              "Ficheiros vetoriais incluídos",
+              "Pronto para web + impressão"
+            ]
+          },
+          {
+            "service": "Kit de Marca Completo",
+            "pitch": "Tudo o que um negócio precisa para parecer profissional em todo o lado. Logótipo, cores, fontes, cartões de visita e kit para redes sociais — tudo num pacote.",
+            "bullets": [
+              "Logótipo (3 variações)",
+              "Paleta de cores + tipografia",
+              "Documento de diretrizes de marca",
+              "Design de cartões de visita",
+              "Kit de redes sociais (imagens de perfil + capa)"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Marketing & Anúncios",
+        "rows": [
+          {
+            "service": "Gestão de Anúncios Meta",
+            "pitch": "Gestão completa de campanhas no Facebook e Instagram. Tratamos de criativos, segmentação e otimização para que os seus anúncios realmente convertam.",
+            "bullets": [
+              "Configuração de campanha + criativo de anúncio",
+              "Segmentação de audiência + retargeting",
+              "Testes A/B",
+              "Relatório mensal de desempenho"
+            ]
+          },
+          {
+            "service": "Gestão de Google Ads",
+            "pitch": "Campanhas de Pesquisa e Display criadas para conversões. Pesquisa de palavras-chave, texto de anúncio e relatório mensal incluídos.",
+            "bullets": [
+              "Pesquisa de palavras-chave + configuração de campanha",
+              "Anúncios de Pesquisa e Display",
+              "Rastreamento de conversões",
+              "Relatório mensal de análise"
+            ]
+          },
+          {
+            "service": "Pacote Meta + Google",
+            "pitch": "Gerencie ambos os canais com uma estratégia cross-channel unificada. Poupe CHF 99/mês vs. comprar separadamente.",
+            "bullets": [
+              "Tudo dos dois planos",
+              "Estratégia cross-channel",
+              "Relatório mensal unificado",
+              "Poupe CHF 99/mês vs. separados"
+            ]
+          },
+          {
+            "service": "Social Media Inicial",
+            "pitch": "Mantenha visibilidade consistente com 8 publicações por mês na sua plataforma principal.",
+            "bullets": [
+              "8 publicações/mês (1 plataforma)",
+              "Criação de conteúdo + agendamento",
+              "Instagram, Facebook ou LinkedIn"
+            ]
+          },
+          {
+            "service": "Social Media Crescimento",
+            "pitch": "Cresça em duas plataformas com stories e gestão ativa de engagement.",
+            "bullets": [
+              "12 publicações/mês (2 plataformas)",
+              "Stories + gestão de engagement",
+              "Check-in mensal de estratégia"
+            ]
+          },
+          {
+            "service": "Social Media Pro",
+            "pitch": "Máquina de conteúdo completa — 3 plataformas, reels e chamadas mensais de estratégia para marcas ambiciosas.",
+            "bullets": [
+              "16 publicações/mês (3 plataformas)",
+              "Reels + stories",
+              "Chamada mensal de estratégia"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "IA & Automação",
+        "rows": [
+          {
+            "service": "Agente de Suporte ao Cliente com IA",
+            "pitch": "Um chatbot inteligente que trata das consultas dos clientes 24/7 no seu website, WhatsApp ou app — treinado no seu negócio.",
+            "bullets": [
+              "Construído com base no seu conhecimento",
+              "Integração WhatsApp + widget web",
+              "Escalada para humano quando necessário",
+              "+ plano mensal de manutenção obrigatório"
+            ]
+          },
+          {
+            "service": "Agente de Vendas e Outreach com IA",
+            "pitch": "Pipeline automatizado de prospeção e outreach — desde pesquisa no LinkedIn até sequências de email personalizadas.",
+            "bullets": [
+              "Prospeção + enriquecimento de leads",
+              "Sequências de email personalizadas por IA",
+              "Integração com CRM",
+              "+ plano mensal de manutenção obrigatório"
+            ]
+          },
+          {
+            "service": "Agente de Voz com IA",
+            "pitch": "Um agente telefónico com IA que atende chamadas, qualifica leads e marca reuniões — em qualquer idioma.",
+            "bullets": [
+              "Chamadas inbound + outbound",
+              "Qualificação de leads + marcação de reuniões",
+              "Integração Twilio / VAPI",
+              "+ plano mensal de manutenção obrigatório"
+            ]
+          },
+          {
+            "service": "Fluxo de Trabalho IA — Básico",
+            "pitch": "Automatize um processo repetitivo de ponta a ponta usando n8n ou Make. Ponto de entrada perfeito na automação.",
+            "bullets": [
+              "1 fluxo de trabalho automatizado",
+              "Integração de ferramentas (CRM, email, Slack...)",
+              "Documentação completa",
+              "+ plano de manutenção opcional"
+            ]
+          },
+          {
+            "service": "Fluxo de Trabalho IA — Completo",
+            "pitch": "Automações complexas em múltiplos passos que conectam toda a sua stack de ferramentas com lógica de decisão de IA integrada.",
+            "bullets": [
+              "Múltiplos fluxos de trabalho conectados",
+              "Passos de raciocínio com IA",
+              "Integrações de API personalizadas",
+              "+ plano mensal de manutenção obrigatório"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Ganhos Rápidos",
+        "rows": [
+          {
+            "service": "Auditoria de Website",
+            "pitch": "Um PDF de 1 página com 5 melhorias específicas e acionáveis para o seu website existente.",
+            "bullets": [
+              "Revisão de desempenho + SEO",
+              "Análise de UX + conversão",
+              "Entregue em 48h",
+              "Conta para upgrade se avançar"
+            ]
+          },
+          {
+            "service": "Otimização de Velocidade",
+            "pitch": "Websites mais rápidos têm melhor posicionamento e convertem melhor. Extraímos cada milissegundo do seu site existente.",
+            "bullets": [
+              "Cache + compressão de imagens",
+              "Melhoria dos Core Web Vitals",
+              "Relatório de desempenho antes/depois"
+            ]
+          },
+          {
+            "service": "Boost Google Business",
+            "pitch": "Seja encontrado no Google Maps e na pesquisa local com um Perfil Google Business totalmente otimizado.",
+            "bullets": [
+              "Configuração ou otimização do GBP",
+              "3 publicações publicadas",
+              "Otimização de categoria + palavras-chave"
+            ]
+          },
+          {
+            "service": "Avaliação de Automação",
+            "pitch": "Um PDF de 1 página identificando 3–5 processos manuais no seu negócio que poderiam ser automatizados com IA.",
+            "bullets": [
+              "Sessão de mapeamento de processos",
+              "Relatório de oportunidades de automação",
+              "Recomendações de ferramentas incluídas"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Manutenção Mensal & Alojamento",
+        "rows": [
+          {
+            "service": "Apenas Alojamento",
+            "pitch": "Alojamento rápido e seguro com backups diários, certificado SSL e monitorização de uptime. Configure e esqueça.",
+            "bullets": [
+              "Alojamento Vercel / cloud",
+              "Certificado SSL",
+              "Backups diários",
+              "Monitorização de uptime"
+            ]
+          },
+          {
+            "service": "Manutenção Essencial",
+            "pitch": "Tudo do alojamento mais atualizações semanais, 1h de suporte/alterações por mês e resposta prioritária por email.",
+            "bullets": [
+              "Tudo do Apenas Alojamento",
+              "Atualizações semanais da plataforma",
+              "1h de suporte/alterações por mês",
+              "Suporte por email prioritário"
+            ]
+          },
+          {
+            "service": "Manutenção de Crescimento",
+            "pitch": "Manutenção mensal ativa com relatório de SEO, 2h de suporte e sugestões proativas para continuar a melhorar o seu site.",
+            "bullets": [
+              "Tudo da Manutenção Essencial",
+              "Relatório mensal de desempenho SEO",
+              "2h de suporte por mês",
+              "Sugestões proativas de melhoria"
+            ]
+          }
+        ]
+      }
+    ],
+    "aiMonthlyNote": "* Os fluxos de trabalho de IA e automação recorrentes incluem uma taxa mensal de manutenção e atualizações.",
+    "websitesHostingNote": "* É necessário um pacote mínimo de alojamento de CHF 27/mês para manter o seu website ativo e online.",
+    "hourly": {
+      "label": "Consultoria à Hora",
+      "title": "Precisa de mim a pedido?",
+      "subtitle": "Reserve uma hora para sessões de estratégia, auditorias técnicas ou apoio de implementação.",
+      "rate": "CHF 80",
+      "unit": "/ hora",
+      "desc": "Faturado em incrementos de 1 hora. Mínimo 1 hora. Disponível por videochamada ou presencialmente.",
+      "cta": "Reservar Sessão"
     }
   },
   "Referral": {

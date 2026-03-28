@@ -2270,7 +2270,7 @@
     "stats": {
       "s1value": "40–60%",
       "s1label": "Average savings vs. Zurich agencies",
-      "s2value": "Days",
+      "s2value": "4–7",
       "s2label": "Typical delivery — not months",
       "s3value": "0",
       "s3label": "Hidden fees or surprise costs"
@@ -2355,6 +2355,336 @@
           "a": "Every market comparison on this page was researched against publicly listed prices from 12+ Swiss agencies including resign.ch, webtree.ch, peakline-agency.ch, cynatic.ch, digitalcreators.ch and others — cross-referenced in March 2026. These are documented figures, not estimates."
         }
       ]
+    },
+    "research": {
+      "label": "Research-backed data — not estimates",
+      "body": "Every market average on this page comes from real, publicly listed prices — verified across 12+ Swiss agencies in March 2026.",
+      "sourcePrefix": "Sources include:",
+      "sourceConnector": "and aggregated market data from"
+    },
+    "mostPopular": "Most Popular",
+    "marketAvgLabel": "Market avg:",
+    "planList": [
+      {
+        "name": "Pay Upfront",
+        "markup": "0% markup",
+        "desc": "Best price. 50% deposit, 50% on launch.",
+        "badge": "Best Value"
+      },
+      {
+        "name": "3-Month Plan",
+        "markup": "+5%",
+        "desc": "CHF 690 → CHF 242/mo · CHF 2,000 → CHF 700/mo",
+        "badge": ""
+      },
+      {
+        "name": "6-Month Plan",
+        "markup": "+10%",
+        "desc": "CHF 690 → CHF 127/mo · CHF 2,000 → CHF 367/mo",
+        "badge": ""
+      },
+      {
+        "name": "12-Month",
+        "markup": "+15%",
+        "desc": "CHF 690 → CHF 66/mo · CHF 2,000 → CHF 192/mo",
+        "badge": "Most Accessible"
+      }
+    ],
+    "comparisonRows": [
+      {
+        "service": "Starter Website (1 page)"
+      },
+      {
+        "service": "Professional Website (5 pages)"
+      },
+      {
+        "service": "Business Pro Website"
+      },
+      {
+        "service": "Full Brand Kit"
+      },
+      {
+        "service": "Meta Ads Management"
+      }
+    ],
+    "categories": [
+      {
+        "title": "Website Packages",
+        "rows": [
+          {
+            "service": "Starter Website",
+            "pitch": "Perfect for new businesses, freelancers, or anyone who needs a clean online presence fast. Delivered in 4–5 days — no waiting weeks.",
+            "bullets": [
+              "One-page custom website",
+              "AI-written copy included",
+              "Booking widget + WhatsApp button",
+              "Mobile responsive",
+              "Delivered in 4–5 days"
+            ]
+          },
+          {
+            "service": "Professional Website",
+            "pitch": "For established solopreneurs ready to upgrade. Multi-page, multi-language, with SEO baked in from day one.",
+            "bullets": [
+              "5-page website",
+              "2 languages included",
+              "1 automation included",
+              "SEO foundations",
+              "Delivered in 5–6 days"
+            ]
+          },
+          {
+            "service": "Business Pro Website",
+            "pitch": "The full package for SMEs. Up to 10 service pages, 3 languages, lead capture system — everything to compete online seriously.",
+            "bullets": [
+              "5 core pages + up to 10 service pages",
+              "3 languages included",
+              "SEO + lead capture system",
+              "Delivered in 6–7 days"
+            ]
+          },
+          {
+            "service": "Campaign Landing Page",
+            "pitch": "A conversion-focused single page for ad campaigns, product launches, or lead magnets. Built to convert traffic into leads.",
+            "bullets": [
+              "Conversion-optimized design",
+              "Ads tracking integration",
+              "CTA + lead capture form",
+              "Fast delivery"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Branding",
+        "rows": [
+          {
+            "service": "Logo Only",
+            "pitch": "A professional logo in 3 variations. Great for new businesses or rebrands that just need the mark — clean, scalable, and delivered fast.",
+            "bullets": [
+              "3 logo variations (light, dark, icon)",
+              "Vector files included",
+              "Ready for web + print"
+            ]
+          },
+          {
+            "service": "Full Brand Kit",
+            "pitch": "Everything a business needs to look professional everywhere. Logo, colors, fonts, business cards, and a social media kit — all in one package.",
+            "bullets": [
+              "Logo (3 variations)",
+              "Color palette + typography",
+              "Brand guidelines document",
+              "Business cards design",
+              "Social media kit (profile + cover images)"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Marketing & Ads",
+        "rows": [
+          {
+            "service": "Meta Ads Management",
+            "pitch": "Full campaign management on Facebook and Instagram. We handle creatives, targeting, and optimization so your ads actually convert.",
+            "bullets": [
+              "Campaign setup + ad creative",
+              "Audience targeting + retargeting",
+              "A/B testing",
+              "Monthly performance report"
+            ]
+          },
+          {
+            "service": "Google Ads Management",
+            "pitch": "Search and Display campaigns built for conversions. Keyword research, ad copy, and monthly reporting included.",
+            "bullets": [
+              "Keyword research + campaign setup",
+              "Search & Display ads",
+              "Conversion tracking",
+              "Monthly analytics report"
+            ]
+          },
+          {
+            "service": "Meta + Google Bundle",
+            "pitch": "Run both channels with a unified cross-channel strategy. Save CHF 99/mo vs. buying separately.",
+            "bullets": [
+              "Everything in both plans",
+              "Cross-channel strategy",
+              "Unified monthly reporting",
+              "Save CHF 99/mo vs. separate"
+            ]
+          },
+          {
+            "service": "Social Media Starter",
+            "pitch": "Stay consistently visible with 8 posts per month on your best-performing platform.",
+            "bullets": [
+              "8 posts/mo (1 platform)",
+              "Content creation + scheduling",
+              "Instagram, Facebook, or LinkedIn"
+            ]
+          },
+          {
+            "service": "Social Media Growth",
+            "pitch": "Grow across two platforms with stories and active engagement management.",
+            "bullets": [
+              "12 posts/mo (2 platforms)",
+              "Stories + engagement management",
+              "Monthly strategy check-in"
+            ]
+          },
+          {
+            "service": "Social Media Pro",
+            "pitch": "Full content machine — 3 platforms, reels, and monthly strategy calls for ambitious brands.",
+            "bullets": [
+              "16 posts/mo (3 platforms)",
+              "Reels + stories",
+              "Monthly strategy call"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "AI & Automation",
+        "rows": [
+          {
+            "service": "AI Customer Support Agent",
+            "pitch": "An intelligent chatbot that handles customer enquiries 24/7 on your website, WhatsApp, or app — trained on your business.",
+            "bullets": [
+              "Built on your knowledge base",
+              "WhatsApp + web widget integration",
+              "Escalation to human when needed",
+              "+ required monthly care plan"
+            ]
+          },
+          {
+            "service": "AI Sales & Outreach Agent",
+            "pitch": "Automated prospecting and outreach pipeline — from LinkedIn research to personalised email sequences.",
+            "bullets": [
+              "Lead sourcing + enrichment",
+              "AI-personalised email sequences",
+              "CRM integration",
+              "+ required monthly care plan"
+            ]
+          },
+          {
+            "service": "AI Voice Agent",
+            "pitch": "An AI phone agent that handles calls, qualifies leads, and books appointments — in any language.",
+            "bullets": [
+              "Inbound + outbound calling",
+              "Lead qualification + appointment booking",
+              "Twilio / VAPI integration",
+              "+ required monthly care plan"
+            ]
+          },
+          {
+            "service": "AI Workflow — Light",
+            "pitch": "Automate one repetitive process end-to-end using n8n or Make. Perfect entry point into automation.",
+            "bullets": [
+              "1 automated workflow",
+              "Tool integration (CRM, email, Slack...)",
+              "Full documentation",
+              "+ optional care plan"
+            ]
+          },
+          {
+            "service": "AI Workflow — Full",
+            "pitch": "Complex multi-step automations connecting your entire toolstack with AI decision logic built in.",
+            "bullets": [
+              "Multiple connected workflows",
+              "AI reasoning steps",
+              "Custom API integrations",
+              "+ required monthly care plan"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Quick Wins",
+        "rows": [
+          {
+            "service": "Website Audit",
+            "pitch": "A focused 1-page PDF with 5 specific, actionable improvements for your existing website.",
+            "bullets": [
+              "Performance + SEO review",
+              "UX + conversion analysis",
+              "Delivered in 48h",
+              "Counts toward upgrade if you proceed"
+            ]
+          },
+          {
+            "service": "Speed Optimization",
+            "pitch": "Faster websites rank higher and convert better. We squeeze every millisecond out of your existing site.",
+            "bullets": [
+              "Caching + image compression",
+              "Core Web Vitals improvement",
+              "Before/after performance report"
+            ]
+          },
+          {
+            "service": "Google Business Boost",
+            "pitch": "Get found on Google Maps and local search with a fully optimised Google Business Profile.",
+            "bullets": [
+              "GBP setup or optimization",
+              "3 posts published",
+              "Category + keyword optimization"
+            ]
+          },
+          {
+            "service": "Automation Assessment",
+            "pitch": "A 1-page PDF identifying 3–5 manual processes in your business that could be automated with AI.",
+            "bullets": [
+              "Process mapping session",
+              "Automation opportunity report",
+              "Tool recommendations included"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Monthly Care & Hosting",
+        "rows": [
+          {
+            "service": "Just Hosting",
+            "pitch": "Fast, secure hosting with daily backups, SSL certificate, and uptime monitoring. Set it and forget it.",
+            "bullets": [
+              "Vercel / cloud hosting",
+              "SSL certificate",
+              "Daily backups",
+              "Uptime monitoring"
+            ]
+          },
+          {
+            "service": "Essential Care",
+            "pitch": "Everything in hosting plus weekly updates, 1h of support/changes per month, and priority email response.",
+            "bullets": [
+              "Everything in Just Hosting",
+              "Weekly platform updates",
+              "1h support/changes per month",
+              "Priority email support"
+            ]
+          },
+          {
+            "service": "Growth Care",
+            "pitch": "Active monthly care with SEO reporting, 2h of support, and proactive suggestions to keep improving your site.",
+            "bullets": [
+              "Everything in Essential Care",
+              "Monthly SEO performance report",
+              "2h support per month",
+              "Proactive improvement suggestions"
+            ]
+          }
+        ]
+      }
+    ],
+    "aiMonthlyNote": "* Recurring AI & automation workflows include a monthly maintenance and updates fee.",
+    "websitesHostingNote": "* A minimum hosting package of CHF 27/month is required to keep your website live and online.",
+    "hourly": {
+      "label": "Hourly Consulting",
+      "title": "Need me on-demand?",
+      "subtitle": "Book an hour for strategy sessions, technical audits, or hands-on implementation support.",
+      "rate": "CHF 80",
+      "unit": "/ hour",
+      "desc": "Billed in 1-hour increments. Minimum 1 hour. Available via video call or in person.",
+      "cta": "Book a Session"
     }
   },
   "Referral": {

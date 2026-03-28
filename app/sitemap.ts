@@ -19,6 +19,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
         { path: '/contact', changeFrequency: 'monthly' as const, priority: 0.9, lastMod: '2026-03-23' },
         { path: '/insights', changeFrequency: 'weekly' as const, priority: 0.8, lastMod: now },
         { path: '/faq', changeFrequency: 'monthly' as const, priority: 0.7, lastMod: '2026-03-23' },
+        { path: '/pricing', changeFrequency: 'monthly' as const, priority: 0.9, lastMod: '2026-03-28' },
+        { path: '/referral', changeFrequency: 'monthly' as const, priority: 0.7, lastMod: '2026-03-28' },
         // NOTE: Legal pages rarely change — keep static dates; update manually when content changes
         { path: '/privacy-policy', changeFrequency: 'yearly' as const, priority: 0.3, lastMod: '2025-08-01' },
         { path: '/terms-of-service', changeFrequency: 'yearly' as const, priority: 0.3, lastMod: '2025-08-01' },
