@@ -4,7 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   ChevronDown, ExternalLink, Globe, Palette, Megaphone, Bot, Zap, Shield,
-  ArrowRight, CheckCircle, TrendingDown, Repeat, BadgeCheck, Clock,
+  ArrowRight, CheckCircle, TrendingDown, Repeat, BadgeCheck, Clock, BarChart2,
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -50,8 +50,8 @@ const colorMap = {
 const comparisonRows = [
   { service: "Starter Website (1 page)",       market: "CHF 1,500+",   ours: "CHF 690",    savings: "54%" },
   { service: "Professional Website (5 pages)", market: "CHF 2,800+",   ours: "CHF 1,390",  savings: "50%" },
-  { service: "Business Pro Website",           market: "CHF 4,500+",   ours: "CHF 1,990",  savings: "56%" },
-  { service: "Full Brand Kit",                 market: "CHF 1,800+",   ours: "CHF 549",    savings: "70%" },
+  { service: "Business Pro Website",           market: "CHF 5,000+",   ours: "CHF 1,990",  savings: "60%" },
+  { service: "Full Brand Kit",                 market: "CHF 3,500+",   ours: "CHF 549",    savings: "84%" },
   { service: "Meta Ads Management",            market: "CHF 750+/mo",  ours: "CHF 349/mo", savings: "53%" },
 ];
 
@@ -86,8 +86,8 @@ const categories: PricingCategory[] = [
       {
         service: "Business Pro Website",
         price: "CHF 1,990",
-        marketAvg: "CHF 4,500+",
-        savings: "~56%",
+        marketAvg: "CHF 5,000+",
+        savings: "~60%",
         pitch: "The full package for SMEs. Up to 10 service pages, 3 languages, lead capture system — everything to compete online seriously.",
         bullets: ["5 core pages + up to 10 service pages", "3 languages included", "SEO + lead capture system", "Delivered in 6–7 days"],
         link: "/services/web-design",
@@ -121,8 +121,8 @@ const categories: PricingCategory[] = [
       {
         service: "Full Brand Kit",
         price: "CHF 549",
-        marketAvg: "CHF 1,800+",
-        savings: "~70%",
+        marketAvg: "CHF 3,500+",
+        savings: "~84%",
         pitch: "Everything a business needs to look professional everywhere. Logo, colors, fonts, business cards, and a social media kit — all in one package.",
         bullets: ["Logo (3 variations)", "Color palette + typography", "Brand guidelines document", "Business cards design", "Social media kit (profile + cover images)"],
       },
@@ -165,8 +165,8 @@ const categories: PricingCategory[] = [
       {
         service: "Social Media Starter",
         price: "CHF 299/mo",
-        marketAvg: "CHF 600+/mo",
-        savings: "~50%",
+        marketAvg: "CHF 1,500+/mo",
+        savings: "~80%",
         pitch: "Stay consistently visible with 8 posts per month on your best-performing platform.",
         bullets: ["8 posts/mo (1 platform)", "Content creation + scheduling", "Instagram, Facebook, or LinkedIn"],
         link: "/services/social-media-marketing",
@@ -174,8 +174,8 @@ const categories: PricingCategory[] = [
       {
         service: "Social Media Growth",
         price: "CHF 399/mo",
-        marketAvg: "CHF 800+/mo",
-        savings: "~50%",
+        marketAvg: "CHF 2,000+/mo",
+        savings: "~80%",
         pitch: "Grow across two platforms with stories and active engagement management.",
         bullets: ["12 posts/mo (2 platforms)", "Stories + engagement management", "Monthly strategy check-in"],
         link: "/services/social-media-marketing",
@@ -183,8 +183,8 @@ const categories: PricingCategory[] = [
       {
         service: "Social Media Pro",
         price: "CHF 649/mo",
-        marketAvg: "CHF 1,200+/mo",
-        savings: "~46%",
+        marketAvg: "CHF 3,000+/mo",
+        savings: "~78%",
         pitch: "Full content machine — 3 platforms, reels, and monthly strategy calls for ambitious brands.",
         bullets: ["16 posts/mo (3 platforms)", "Reels + stories", "Monthly strategy call"],
         link: "/services/social-media-marketing",
@@ -412,6 +412,35 @@ export default function PricingPage() {
                 <span className="text-slate-400 text-sm">{stat.label}</span>
               </motion.div>
             ))}
+          </div>
+        </section>
+
+        {/* ── Research-backed note ──────────────────────────────────────────── */}
+        <section className="px-6 pb-4">
+          <div className="max-w-4xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
+              className="relative overflow-hidden rounded-2xl border-2 border-amber-500/50 bg-gradient-to-r from-amber-500/10 via-orange-500/5 to-amber-500/10 p-6 md:p-8"
+            >
+              <div className="absolute top-0 right-0 w-64 h-64 bg-amber-500/10 rounded-full blur-[80px] pointer-events-none" />
+              <div className="absolute bottom-0 left-0 w-48 h-48 bg-orange-500/10 rounded-full blur-[60px] pointer-events-none" />
+              <div className="relative z-10 flex flex-col md:flex-row items-start gap-5">
+                <div className="flex-shrink-0 w-12 h-12 rounded-2xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center">
+                  <BarChart2 className="w-6 h-6 text-amber-400" />
+                </div>
+                <div>
+                  <p className="text-amber-400 font-black uppercase tracking-widest text-xs mb-2">
+                    ✦ Research-backed data — not estimates
+                  </p>
+                  <p className="text-white font-bold text-base md:text-lg mb-2 leading-snug">
+                    Every market average on this page comes from real, publicly listed prices — verified across 12+ Swiss agencies in March 2026.
+                  </p>
+                  <p className="text-slate-300 text-sm leading-relaxed">
+                    Sources include: <span className="text-amber-300/80">resign.ch</span>, <span className="text-amber-300/80">webtree.ch</span>, <span className="text-amber-300/80">peakline-agency.ch</span>, <span className="text-amber-300/80">webartistik.ch</span>, <span className="text-amber-300/80">digitalcreators.ch</span>, <span className="text-amber-300/80">cynatic.ch</span>, <span className="text-amber-300/80">authodia.ch</span>, <span className="text-amber-300/80">logodesign-agentur.ch</span>, <span className="text-amber-300/80">studioradke.com</span>, <span className="text-amber-300/80">corinaburri.com</span> and aggregated market data from <span className="text-amber-300/80">gryps.ch</span>.
+                  </p>
+                </div>
+              </div>
+            </motion.div>
           </div>
         </section>
 
