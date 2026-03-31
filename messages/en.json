@@ -1911,7 +1911,7 @@
       "title": "Ad Campaign",
       "titleHighlight": "Management",
       "description": "We manage your ad campaigns — strategy, creatives, targeting, and optimization.",
-      "adBudgetNote": "Ad spend budget is paid directly to Meta/Google by you",
+      "adBudgetNote": "Ad spend budget is paid directly to Meta/Google by you — not included in these management fees.",
       "adBudgetDisclaimer": "* Ad spend budget (e.g. CHF 300–2000+/mo) is paid directly to Meta or Google by you. We recommend a minimum monthly ad budget of CHF 300 per channel."
     },
     "packages": {
@@ -1997,7 +1997,11 @@
       "q5": "Do you write captions in German and other Swiss languages?",
       "a5": "Yes! We create content in any language your audience speaks — German, English, French, Italian, or Portuguese. This is especially valuable for Swiss businesses serving multiple language regions.",
       "q6": "How quickly can you start managing our social media?",
-      "a6": "We can onboard new clients within 1 week. After a kickoff call to understand your brand voice, target audience, and goals, we prepare your first month's content calendar for your approval before publishing anything."
+      "a6": "We can onboard new clients within 1 week. After a kickoff call to understand your brand voice, target audience, and goals, we prepare your first month's content calendar for your approval before publishing anything.",
+      "q7": "What is cold email outreach and how does it differ from ads?",
+      "a7": "Cold email is direct outreach to specific businesses via personalised email sequences. Unlike ads — which show to broad audiences and require ongoing ad spend — cold email targets decision-makers directly at a fixed monthly fee with no cost per click. It works best for B2B offers where you know exactly who your ideal client is.",
+      "q8": "Can I combine cold email with social media or ads?",
+      "a8": "Yes — and it is a powerful combination. Cold email generates direct replies from targeted prospects, while social media builds awareness and trust over time. Clients who see your content before receiving an email are significantly more likely to reply. We can help you run both channels in a coordinated strategy."
     }
   },
   "FAQPage": {

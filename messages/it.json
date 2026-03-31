@@ -2009,7 +2009,7 @@
       "title": "Gestione",
       "titleHighlight": "Campagne Pubblicitarie",
       "description": "Gestiamo le vostre campagne pubblicitarie — strategia, creatività, targeting e ottimizzazione.",
-      "adBudgetNote": "Il budget pubblicitario viene pagato direttamente a Meta/Google da voi",
+      "adBudgetNote": "Il budget pubblicitario viene pagato direttamente a Meta/Google da voi — non incluso in queste tariffe di gestione.",
       "adBudgetDisclaimer": "* Il budget pubblicitario (es. CHF 300-2000+/mese) viene pagato direttamente a Meta o Google da voi. Raccomandiamo un budget pubblicitario mensile minimo di CHF 300 per canale."
     },
     "packages": {
@@ -2095,7 +2095,11 @@
       "q5": "Scrivete didascalie in tedesco e altre lingue svizzere?",
       "a5": "Sì! Creiamo contenuti in qualsiasi lingua parli il vostro pubblico — tedesco, inglese, francese, italiano o portoghese. Questo è particolarmente prezioso per le aziende svizzere che servono più regioni linguistiche.",
       "q6": "Con quale rapidità potete iniziare a gestire i nostri social media?",
-      "a6": "Possiamo accogliere nuovi clienti entro 1 settimana. Dopo una chiamata di kickoff per comprendere la voce del vostro brand, il pubblico target e gli obiettivi, prepariamo il calendario editoriale del primo mese per la vostra approvazione prima di pubblicare qualsiasi cosa."
+      "a6": "Possiamo accogliere nuovi clienti entro 1 settimana. Dopo una chiamata di kickoff per comprendere la voce del vostro brand, il pubblico target e gli obiettivi, prepariamo il calendario editoriale del primo mese per la vostra approvazione prima di pubblicare qualsiasi cosa.",
+      "q7": "Cos'è la cold email outreach e come si differenzia dagli annunci?",
+      "a7": "La cold email è il contatto diretto con aziende specifiche tramite sequenze di email personalizzate. A differenza degli annunci — che vengono mostrati a pubblici ampi e richiedono spese continue — la cold email si rivolge direttamente ai decisori a una tariffa mensile fissa, senza costo per clic. Funziona meglio per le offerte B2B dove sai esattamente chi è il tuo cliente ideale.",
+      "q8": "Posso combinare la cold email con i social media o gli annunci?",
+      "a8": "Sì — ed è una combinazione potente. La cold email genera risposte dirette da potenziali clienti mirati, mentre i social media costruiscono consapevolezza e fiducia nel tempo. I clienti che vedono i tuoi contenuti prima di ricevere un'email hanno molte più probabilità di rispondere. Possiamo aiutarti a gestire entrambi i canali in una strategia coordinata."
     }
   },
   "ServiceMeta": {

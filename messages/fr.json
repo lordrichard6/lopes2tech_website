@@ -2087,7 +2087,7 @@
       "title": "Gestion des",
       "titleHighlight": "Campagnes Publicitaires",
       "description": "Nous gérons vos campagnes publicitaires — stratégie, créatifs, ciblage et optimisation.",
-      "adBudgetNote": "Le budget publicitaire est payé directement à Meta/Google par vous",
+      "adBudgetNote": "Le budget publicitaire est payé directement à Meta/Google par vous — non inclus dans ces frais de gestion.",
       "adBudgetDisclaimer": "* Le budget publicitaire (ex. CHF 300–2000+/mois) est payé directement à Meta ou Google par vous. Nous recommandons un budget publicitaire mensuel minimum de CHF 300 par canal."
     },
     "packages": {
@@ -2173,7 +2173,11 @@
       "q5": "Rédigez-vous des légendes en français et dans d'autres langues suisses ?",
       "a5": "Oui ! Nous créons du contenu dans n'importe quelle langue parlée par votre audience — français, allemand, anglais, italien ou portugais. Cela est particulièrement précieux pour les entreprises suisses servant plusieurs régions linguistiques.",
       "q6": "Combien de temps faut-il pour commencer à gérer nos réseaux sociaux ?",
-      "a6": "Nous pouvons accueillir de nouveaux clients en 1 semaine. Après un appel de lancement pour comprendre la voix de votre marque, votre audience cible et vos objectifs, nous préparons le calendrier de contenu de votre premier mois pour votre approbation avant de publier quoi que ce soit."
+      "a6": "Nous pouvons accueillir de nouveaux clients en 1 semaine. Après un appel de lancement pour comprendre la voix de votre marque, votre audience cible et vos objectifs, nous préparons le calendrier de contenu de votre premier mois pour votre approbation avant de publier quoi que ce soit.",
+      "q7": "Qu'est-ce que la prospection par email froid et en quoi diffère-t-elle des publicités ?",
+      "a7": "L'email froid consiste à contacter directement des entreprises spécifiques via des séquences d'emails personnalisées. Contrairement aux publicités — qui s'affichent auprès d'audiences larges et nécessitent des dépenses continues — l'email froid cible les décideurs directement pour un forfait mensuel fixe, sans coût par clic. Cela fonctionne mieux pour les offres B2B où vous savez exactement qui est votre client idéal.",
+      "q8": "Puis-je combiner l'email froid avec les réseaux sociaux ou les publicités ?",
+      "a8": "Oui — et c'est une combinaison puissante. L'email froid génère des réponses directes de prospects ciblés, tandis que les réseaux sociaux construisent la notoriété et la confiance dans le temps. Les clients qui voient votre contenu avant de recevoir un email sont beaucoup plus susceptibles de répondre. Nous pouvons vous aider à gérer les deux canaux dans une stratégie coordonnée."
     }
   },
   "MediumBanner": {

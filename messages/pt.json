@@ -1911,7 +1911,7 @@
       "title": "Gestão de",
       "titleHighlight": "Campanhas Publicitárias",
       "description": "Gerimos as suas campanhas publicitárias — estratégia, criativos, targeting e otimização.",
-      "adBudgetNote": "O orçamento de publicidade é pago diretamente por si ao Meta/Google",
+      "adBudgetNote": "O orçamento de publicidade é pago diretamente por si ao Meta/Google — não incluído nestas taxas de gestão.",
       "adBudgetDisclaimer": "* O orçamento de publicidade (ex: CHF 300–2000+/mês) é pago diretamente por si ao Meta ou Google. Recomendamos um orçamento mínimo mensal de CHF 300 por canal."
     },
     "packages": {
@@ -1997,7 +1997,11 @@
       "q5": "Criam legendas em alemão e outras línguas suíças?",
       "a5": "Sim! Criamos conteúdo em qualquer língua que o seu público fale — alemão, inglês, francês, italiano ou português. Particularmente valioso para empresas suíças que servem múltiplas regiões linguísticas.",
       "q6": "Com que rapidez podem começar a gerir as nossas redes sociais?",
-      "a6": "Podemos integrar novos clientes dentro de 1 semana. Após uma call de kickoff para entender a voz da sua marca, público-alvo e objetivos, preparamos o calendário de conteúdo do primeiro mês para aprovação — antes de publicar qualquer coisa."
+      "a6": "Podemos integrar novos clientes dentro de 1 semana. Após uma call de kickoff para entender a voz da sua marca, público-alvo e objetivos, preparamos o calendário de conteúdo do primeiro mês para aprovação — antes de publicar qualquer coisa.",
+      "q7": "O que é a prospeção por email frio e como difere dos anúncios?",
+      "a7": "O email frio é a prospeção direta a empresas específicas através de sequências de email personalizadas. Ao contrário dos anúncios — que são mostrados a audiências amplas e exigem gastos contínuos — o email frio direciona-se a decisores diretamente a uma taxa mensal fixa, sem custo por clique. Funciona melhor para ofertas B2B onde sabe exatamente quem é o seu cliente ideal.",
+      "q8": "Posso combinar email frio com redes sociais ou anúncios?",
+      "a8": "Sim — e é uma combinação poderosa. O email frio gera respostas diretas de potenciais clientes, enquanto as redes sociais constroem notoriedade e confiança ao longo do tempo. Clientes que veem o seu conteúdo antes de receberem um email têm muito mais probabilidade de responder. Podemos ajudá-lo a gerir ambos os canais com uma estratégia coordenada."
     }
   },
   "FAQPage": {
