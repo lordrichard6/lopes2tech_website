@@ -6,7 +6,8 @@ import { useTranslations } from "next-intl";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ServiceRequestDialog from "@/components/ServiceRequestDialog";
-import { Check, Star, TrendingUp, Instagram, Facebook, Linkedin, Sparkles, ArrowRight, Zap, Search } from "lucide-react";
+import { Check, Star, TrendingUp, Instagram, Facebook, Linkedin, Sparkles, ArrowRight, Zap, Search, Mail } from "lucide-react";
+import Link from "next/link";
 import { socialMediaContentPackages, socialMediaAdPackages, socialMediaAddOns } from "@/data/packages-data";
 import ServiceFAQ from "@/components/ServiceFAQ";
 import ServiceBreadcrumb from "@/components/ServiceBreadcrumb";
@@ -375,6 +376,149 @@ export default function DigitalMarketingPage() {
 
                         <p className="text-center text-slate-500 text-sm mt-8">
                             {t("adSection.adBudgetDisclaimer")}
+                        </p>
+                    </motion.div>
+
+                    {/* Divider */}
+                    <div className="relative my-24">
+                        <div className="absolute inset-0 flex items-center">
+                            <div className="w-full border-t border-white/10" />
+                        </div>
+                        <div className="relative flex justify-center">
+                            <span className="px-6 py-2 bg-[#0f172a] text-slate-500 text-sm uppercase tracking-widest">or</span>
+                        </div>
+                    </div>
+
+                    {/* Section 3: Cold Email Outreach */}
+                    <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }} className="mb-24">
+                        <div className="text-center mb-12">
+                            <div className="inline-block px-4 py-1.5 mb-4 text-xs font-bold uppercase tracking-widest text-cyan-400 bg-cyan-400/10 border border-cyan-400/20 rounded-full">
+                                <Mail className="inline w-3.5 h-3.5 mr-1.5 -mt-0.5" />
+                                Cold Email Outreach
+                            </div>
+                            <h2 className="text-4xl font-extrabold text-white mb-4">
+                                Reach clients{" "}
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400">
+                                    directly in their inbox
+                                </span>
+                            </h2>
+                            <p className="text-slate-400 max-w-2xl mx-auto">
+                                Fully done-for-you cold email campaigns. We source the leads, write the sequences, set up the infrastructure, and manage the sending.{" "}
+                                <span className="text-white font-medium">You only reply to interested prospects.</span>
+                            </p>
+                        </div>
+
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                            {[
+                                {
+                                    name: "Campaign Starter",
+                                    price: "CHF 249",
+                                    contacts: "50 contacts/mo",
+                                    replies: "~1–4 replies/mo",
+                                    popular: false,
+                                    features: [
+                                        "50 targeted leads/month",
+                                        "3-step personalised email sequence",
+                                        "Lead sourcing from Google Maps",
+                                        "Instantly.ai campaign setup",
+                                        "Deliverability monitoring",
+                                        "Monthly performance report",
+                                    ],
+                                },
+                                {
+                                    name: "Campaign Growth",
+                                    price: "CHF 399",
+                                    contacts: "100 contacts/mo",
+                                    replies: "~3–8 replies/mo",
+                                    popular: true,
+                                    features: [
+                                        "100 targeted leads/month",
+                                        "3-step personalised email sequence",
+                                        "A/B test on subject lines",
+                                        "Lead sourcing from Google Maps",
+                                        "Instantly.ai campaign setup",
+                                        "Deliverability monitoring",
+                                        "Monthly report + recommendations",
+                                    ],
+                                },
+                                {
+                                    name: "Campaign Pro",
+                                    price: "CHF 699",
+                                    contacts: "250 contacts/mo",
+                                    replies: "~8–20 replies/mo",
+                                    popular: false,
+                                    features: [
+                                        "250 targeted leads/month",
+                                        "3-step personalised email sequence",
+                                        "A/B test on subject lines + copy",
+                                        "Multi-segment targeting",
+                                        "Lead sourcing from Google Maps",
+                                        "Priority deliverability monitoring",
+                                        "Monthly strategy call + report",
+                                    ],
+                                },
+                            ].map((pkg, index) => (
+                                <motion.div
+                                    key={pkg.name}
+                                    initial={{ opacity: 0, y: 30 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true }}
+                                    transition={{ delay: 0.1 * index }}
+                                    className={`relative rounded-3xl p-8 border transition-all duration-500 flex flex-col ${
+                                        pkg.popular
+                                            ? "bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border-cyan-500/30 shadow-[0_0_40px_rgba(34,211,238,0.15)]"
+                                            : "bg-slate-900/50 border-white/10 hover:border-white/20"
+                                    }`}
+                                >
+                                    {pkg.popular && (
+                                        <div className="absolute -top-4 left-1/2 -translate-x-1/2">
+                                            <div className="flex items-center gap-1.5 px-4 py-1.5 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full text-white text-sm font-bold shadow-lg">
+                                                <Star className="w-4 h-4 fill-current" />
+                                                Most Popular
+                                            </div>
+                                        </div>
+                                    )}
+                                    <div className="mb-3">
+                                        <h3 className="text-2xl font-bold text-white mb-1">{pkg.name}</h3>
+                                        <p className="text-slate-500 text-xs">{pkg.contacts} · {pkg.replies}</p>
+                                    </div>
+                                    <div className="mb-6">
+                                        <div className="flex items-baseline gap-1">
+                                            <span className="text-4xl font-extrabold text-white">{pkg.price}</span>
+                                            <span className="text-slate-400">/mo</span>
+                                        </div>
+                                        <p className="text-sm text-slate-500 mt-1">+ CHF 149 one-time setup (new clients only)</p>
+                                    </div>
+                                    <ul className="space-y-3 mb-8 flex-1">
+                                        {pkg.features.map((feature, idx) => (
+                                            <li key={idx} className="flex items-start gap-3">
+                                                <div className={`mt-0.5 w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 ${pkg.popular ? "bg-cyan-500" : "bg-cyan-500/20"}`}>
+                                                    <Check className={`w-3 h-3 ${pkg.popular ? "text-white" : "text-cyan-400"}`} />
+                                                </div>
+                                                <span className="text-slate-300 text-sm">{feature}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                    <button
+                                        onClick={() => handleRequest(pkg.name)}
+                                        className={`w-full flex items-center justify-center gap-2 py-3 rounded-xl font-semibold transition-all duration-300 ${
+                                            pkg.popular
+                                                ? "bg-gradient-to-r from-cyan-500 to-blue-500 text-white shadow-[0_0_20px_rgba(34,211,238,0.3)] hover:shadow-[0_0_30px_rgba(34,211,238,0.5)] hover:-translate-y-0.5"
+                                                : "bg-white/10 text-white hover:bg-white/20"
+                                        }`}
+                                    >
+                                        Get Started
+                                        <ArrowRight className="w-4 h-4" />
+                                    </button>
+                                </motion.div>
+                            ))}
+                        </div>
+
+                        <p className="text-center text-slate-500 text-sm">
+                            Minimum 2-month commitment · Cancel anytime after · Need leads only?{" "}
+                            <Link href="/services/cold-email" className="text-cyan-400 hover:underline">
+                                See full cold email details →
+                            </Link>
                         </p>
                     </motion.div>
 
