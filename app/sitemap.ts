@@ -33,6 +33,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         { path: '/services/web-apps', changeFrequency: 'monthly' as const, priority: 0.9, lastMod: '2026-03-23' },
         { path: '/services/ecommerce', changeFrequency: 'monthly' as const, priority: 0.9, lastMod: '2026-03-23' },
         { path: '/services/social-media-marketing', changeFrequency: 'monthly' as const, priority: 0.9, lastMod: '2026-03-23' },
+        { path: '/services/cold-email',             changeFrequency: 'monthly' as const, priority: 0.9, lastMod: '2026-03-31' },
     ];
     const routes: MetadataRoute.Sitemap = [];
 
