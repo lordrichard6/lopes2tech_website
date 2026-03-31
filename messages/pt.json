@@ -2239,6 +2239,10 @@
       "socialMedia": {
         "name": "Marketing em Redes Sociais",
         "description": "Faça crescer a sua marca nas redes sociais"
+      },
+      "coldEmail": {
+        "name": "Outreach por Email Frio",
+        "description": "Alcance prospects diretamente na caixa de entrada"
       }
     }
   },
@@ -3218,7 +3222,8 @@
       "title": "Alcance os seus clientes ideais.",
       "titleHighlight": "Enquanto dorme.",
       "description": "Tratamos de tudo — encontramos os contactos certos, escrevemos os emails, configuramos a infraestrutura e enviamos as sequências. Só precisa de fazer uma coisa: responder aos interessados.",
-      "cta": "Iniciar Campanha"
+      "cta": "Iniciar Campanha",
+      "seePricing": "Ver preços"
     },
     "stats": {
       "replyRate": {
@@ -3232,6 +3237,10 @@
       "toolsCost": {
         "value": "CHF 0",
         "label": "Ferramentas a comprar — tratamos de tudo"
+      },
+      "setupFee": {
+        "value": "CHF 149",
+        "label": "Configuração única · Nunca mais cobrada"
       }
     },
     "includes": {
@@ -3417,6 +3426,9 @@
       "title": "Construa um pipeline de clientes previsível",
       "description": "Pare de esperar por referências. Deixe-nos construir e gerir o seu outreach — enquanto se foca em entregar valor aos clientes que respondem.",
       "button": "Agendar Chamada Gratuita"
+    },
+    "metadata": {
+      "description": "Alcance os seus clientes ideais com campanhas de email frio totalmente geridas. Prospeção de leads, copywriting, configuração técnica e envios — tudo tratado. A partir de CHF 390/mês."
     }
   }
 }

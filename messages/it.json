@@ -2239,6 +2239,10 @@
       "socialMedia": {
         "name": "Marketing Social Media",
         "description": "Fate crescere il vostro brand sui canali social"
+      },
+      "coldEmail": {
+        "name": "Cold Email Outreach",
+        "description": "Raggiungi i prospect direttamente nella loro casella"
       }
     }
   },
@@ -3218,7 +3222,8 @@
       "title": "Raggiungi i tuoi clienti ideali.",
       "titleHighlight": "Mentre dormi.",
       "description": "Gestiamo tutto noi — trovare i contatti giusti, scrivere le email, configurare l'infrastruttura e inviare le sequenze. Devi fare una sola cosa: rispondere ai potenziali clienti interessati.",
-      "cta": "Avvia la campagna"
+      "cta": "Avvia la campagna",
+      "seePricing": "Vedi i prezzi"
     },
     "stats": {
       "replyRate": {
@@ -3232,6 +3237,10 @@
       "toolsCost": {
         "value": "CHF 0",
         "label": "Strumenti da acquistare — pensiamo a tutto noi"
+      },
+      "setupFee": {
+        "value": "CHF 149",
+        "label": "Configurazione unica · Mai più addebitata"
       }
     },
     "includes": {
@@ -3417,6 +3426,9 @@
       "title": "Costruisci una pipeline clienti prevedibile",
       "description": "Smetti di aspettare referral. Lascia che costruiamo e gestiamo il tuo cold outreach — mentre ti concentri sui clienti che rispondono.",
       "button": "Chiamata strategica gratuita"
+    },
+    "metadata": {
+      "description": "Raggiungi i tuoi clienti ideali con campagne di cold email completamente gestite. Prospezione, copywriting, configurazione tecnica e invio — tutto gestito. Da CHF 390/mese."
     }
   }
 }

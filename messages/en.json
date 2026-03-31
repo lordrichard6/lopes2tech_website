@@ -2239,6 +2239,10 @@
       "socialMedia": {
         "name": "Social Media Marketing",
         "description": "Grow your brand across social channels"
+      },
+      "coldEmail": {
+        "name": "Cold Email Outreach",
+        "description": "Reach prospects directly in their inbox"
       }
     }
   },
@@ -3218,7 +3222,8 @@
       "title": "Reach your ideal clients.",
       "titleHighlight": "While you sleep.",
       "description": "We handle everything — finding the right contacts, writing the emails, setting up the infrastructure, and sending the sequences. You only need to do one thing: reply to interested prospects.",
-      "cta": "Start Your Campaign"
+      "cta": "Start Your Campaign",
+      "seePricing": "See pricing"
     },
     "stats": {
       "replyRate": {
@@ -3232,6 +3237,10 @@
       "toolsCost": {
         "value": "CHF 0",
         "label": "Tools to buy — we handle everything"
+      },
+      "setupFee": {
+        "value": "CHF 149",
+        "label": "One-time setup · Never charged again"
       }
     },
     "includes": {
@@ -3417,6 +3426,9 @@
       "title": "Build a predictable client pipeline",
       "description": "Stop waiting for referrals. Let us build and run your cold outreach — while you focus on delivering for the clients who reply.",
       "button": "Get a Free Strategy Call"
+    },
+    "metadata": {
+      "description": "Reach your ideal Swiss clients with fully managed cold email campaigns. Lead sourcing, copywriting, technical setup, and sending — all handled. From CHF 390/mo."
     }
   }
 }

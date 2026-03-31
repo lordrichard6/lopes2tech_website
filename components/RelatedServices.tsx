@@ -3,9 +3,9 @@
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Link } from "@/navigation";
-import { ArrowRight, Globe, Search, Bot, Workflow, ShoppingCart, AppWindow, Share2 } from "lucide-react";
+import { ArrowRight, Globe, Search, Bot, Workflow, ShoppingCart, AppWindow, Share2, Mail } from "lucide-react";
 
-type ServiceKey = "webDesign" | "seo" | "aiIntegration" | "businessAutomation" | "ecommerce" | "webApps" | "socialMedia";
+type ServiceKey = "webDesign" | "seo" | "aiIntegration" | "businessAutomation" | "ecommerce" | "webApps" | "socialMedia" | "coldEmail";
 
 const serviceConfig: Record<ServiceKey, { slug: string; icon: React.ElementType; color: string }> = {
     webDesign:          { slug: "web-design",             icon: Globe,         color: "text-cyan-400" },
@@ -15,6 +15,7 @@ const serviceConfig: Record<ServiceKey, { slug: string; icon: React.ElementType;
     ecommerce:          { slug: "ecommerce",               icon: ShoppingCart,  color: "text-pink-400" },
     webApps:            { slug: "web-apps",                icon: AppWindow,     color: "text-cyan-400" },
     socialMedia:        { slug: "social-media-marketing",  icon: Share2,        color: "text-purple-400" },
+    coldEmail:          { slug: "cold-email",              icon: Mail,          color: "text-cyan-400" },
 };
 
 const relatedMap: Record<string, ServiceKey[]> = {
@@ -25,6 +26,7 @@ const relatedMap: Record<string, ServiceKey[]> = {
     "web-apps":               ["webDesign", "seo", "businessAutomation"],
     "ecommerce":              ["webDesign", "seo", "socialMedia"],
     "social-media-marketing": ["webDesign", "seo", "ecommerce"],
+    "cold-email":             ["socialMedia", "webDesign", "seo"],
 };
 
 interface RelatedServicesProps {

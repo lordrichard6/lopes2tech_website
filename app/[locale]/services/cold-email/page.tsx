@@ -4,13 +4,14 @@ import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import {
   Mail, CheckCircle, ArrowRight,
-  Zap, Target, BarChart2,
-  Shield, Users, Clock, Repeat, BadgeCheck,
+  Zap, Target, BarChart2, FileText,
+  Shield, Users, Clock, Repeat, BadgeCheck, DollarSign,
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ServiceFAQ from "@/components/ServiceFAQ";
 import ServiceBreadcrumb from "@/components/ServiceBreadcrumb";
+import RelatedServices from "@/components/RelatedServices";
 import { WHATSAPP_URL } from "@/lib/constants";
 
 // Static config — icons, colors, prices (never translated)
@@ -20,8 +21,23 @@ const packageConfig = [
   { key: "pro",     price: "CHF 990", isPro: true,  popular: false, color: "border-purple-500/30 bg-purple-500/5", accent: "text-purple-400" },
 ] as const;
 
-const includesIcons = [Target, Mail, Shield, Zap, BarChart2, BarChart2];
-const stepNums = ["1", "2", "3", "4"];
+// Fix #1 — unique icon per "What's Included" card (no duplicates)
+const includesIcons = [Target, Mail, Shield, Zap, BarChart2, FileText];
+
+const statConfig = [
+  { icon: Users,       statKey: "replyRate",  color: "text-cyan-400"    },
+  { icon: Clock,       statKey: "launchDays", color: "text-purple-400"  },
+  { icon: BadgeCheck,  statKey: "toolsCost",  color: "text-emerald-400" },
+  { icon: DollarSign,  statKey: "setupFee",   color: "text-yellow-400"  },
+] as const;
+
+// Fix #2 & #3 — booleans live in static config, not derived from translated strings
+const compRowConfig = [
+  { effortLow: false, trackingGood: false, highlight: false },
+  { effortLow: false, trackingGood: false, highlight: false },
+  { effortLow: true,  trackingGood: true,  highlight: false },
+  { effortLow: true,  trackingGood: true,  highlight: true  },
+];
 
 export default function ColdEmailPage() {
   const t = useTranslations("ColdEmailPage");
@@ -100,33 +116,41 @@ export default function ColdEmailPage() {
               {t("hero.description")}
             </motion.p>
 
-            <motion.a
+            {/* Fix #7 — primary CTA + secondary anchor to pricing */}
+            <motion.div
               initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.3 }}
-              href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-cyan-400 text-[#080d1a] font-bold text-lg hover:bg-cyan-300 transition-all duration-300 shadow-[0_0_30px_rgba(34,211,238,0.3)] hover:shadow-[0_0_50px_rgba(34,211,238,0.5)] hover:-translate-y-0.5"
+              className="flex flex-col sm:flex-row items-center justify-center gap-4"
             >
-              {t("hero.cta")}
-              <ArrowRight className="w-5 h-5" />
-            </motion.a>
+              <a
+                href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-cyan-400 text-[#080d1a] font-bold text-lg hover:bg-cyan-300 transition-all duration-300 shadow-[0_0_30px_rgba(34,211,238,0.3)] hover:shadow-[0_0_50px_rgba(34,211,238,0.5)] hover:-translate-y-0.5"
+              >
+                {t("hero.cta")}
+                <ArrowRight className="w-5 h-5" />
+              </a>
+              <a
+                href="#pricing"
+                className="inline-flex items-center gap-2 px-6 py-4 rounded-full border border-white/20 text-slate-300 font-semibold hover:border-white/40 hover:text-white transition-all duration-300 text-base"
+              >
+                {t("hero.seePricing")}
+              </a>
+            </motion.div>
           </div>
         </section>
 
         {/* ── Stats ────────────────────────────────────────────────────────── */}
+        {/* Fix #9 — 4 stat cards, 2×2 on mobile, 4 columns on desktop */}
         <section className="py-12 px-6">
-          <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
-            {([
-              { icon: Users,      statKey: "replyRate",  color: "text-cyan-400"    },
-              { icon: Clock,      statKey: "launchDays", color: "text-purple-400"  },
-              { icon: BadgeCheck, statKey: "toolsCost",  color: "text-emerald-400" },
-            ] as const).map(({ icon: Icon, statKey, color }, i) => (
+          <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6">
+            {statConfig.map(({ icon: Icon, statKey, color }, i) => (
               <motion.div
                 key={statKey}
                 initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}
-                className="flex flex-col items-center text-center p-8 rounded-2xl border border-white/10 bg-white/[0.03]"
+                className="flex flex-col items-center text-center p-6 rounded-2xl border border-white/10 bg-white/[0.03]"
               >
-                <Icon className={`w-8 h-8 mb-4 ${color}`} />
-                <span className={`text-4xl font-black mb-2 ${color}`}>{t(`stats.${statKey}.value`)}</span>
-                <span className="text-slate-400 text-sm">{t(`stats.${statKey}.label`)}</span>
+                <Icon className={`w-7 h-7 mb-3 ${color}`} />
+                <span className={`text-3xl font-black mb-1.5 ${color}`}>{t(`stats.${statKey}.value`)}</span>
+                <span className="text-slate-400 text-xs leading-snug">{t(`stats.${statKey}.label`)}</span>
               </motion.div>
             ))}
           </div>
@@ -160,7 +184,7 @@ export default function ColdEmailPage() {
         </section>
 
         {/* ── Packages ─────────────────────────────────────────────────────── */}
-        <section className="py-24 px-6 bg-white/[0.02]">
+        <section id="pricing" className="py-24 px-6 bg-white/[0.02]">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-14">
               <p className="text-purple-400 font-bold uppercase tracking-widest text-sm mb-3">{t("packages.badge")}</p>
@@ -182,7 +206,8 @@ export default function ColdEmailPage() {
                         {t("packages.mostPopular")}
                       </span>
                     )}
-                    <p className="text-white font-bold text-lg mb-1">{t(`packages.${pkg.key}.name`)}</p>
+                    {/* Fix #10 — package name is h3, not p */}
+                    <h3 className="text-white font-bold text-lg mb-1">{t(`packages.${pkg.key}.name`)}</h3>
                     <p className="text-slate-400 text-xs mb-5">{t(`packages.${pkg.key}.contacts`)} · {t(`packages.${pkg.key}.replies`)}</p>
                     <div className="flex items-end gap-1 mb-6">
                       {pkg.isPro ? (
@@ -245,7 +270,7 @@ export default function ColdEmailPage() {
                   className="flex gap-5 p-6 rounded-2xl border border-white/10 bg-white/[0.03]"
                 >
                   <div className="flex-shrink-0 w-10 h-10 rounded-full bg-cyan-500/20 border border-cyan-500/30 flex items-center justify-center">
-                    <span className="text-cyan-400 font-black text-sm">{stepNums[i]}</span>
+                    <span className="text-cyan-400 font-black text-sm">{i + 1}</span>
                   </div>
                   <div>
                     <h3 className="font-bold text-white mb-1">{step.title}</h3>
@@ -258,6 +283,7 @@ export default function ColdEmailPage() {
         </section>
 
         {/* ── Market Comparison ────────────────────────────────────────────── */}
+        {/* Fix #8 — semantic <table> for accessibility and SEO */}
         <section className="py-24 px-6 bg-white/[0.02]">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -270,33 +296,32 @@ export default function ColdEmailPage() {
               initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
               className="rounded-2xl border border-white/10 overflow-hidden"
             >
-              <div className="grid grid-cols-5 px-6 py-3 bg-white/5 text-xs font-semibold uppercase tracking-wider text-slate-500">
-                <span className="col-span-2">{t("comparison.headers.option")}</span>
-                <span className="text-center">{t("comparison.headers.cost")}</span>
-                <span className="text-center">{t("comparison.headers.effort")}</span>
-                <span className="text-center">{t("comparison.headers.tracking")}</span>
-              </div>
-              {compRows.map((row, i) => {
-                const isHighlight = i === compRows.length - 1;
-                const effortLow = row.effort === "Very low" || row.effort === "Low" ||
-                  row.effort === "Muito baixo" || row.effort === "Baixo" ||
-                  row.effort === "Sehr niedrig" || row.effort === "Niedrig" ||
-                  row.effort === "Très faible" || row.effort === "Faible" ||
-                  row.effort === "Molto basso" || row.effort === "Basso";
-                const trackingYes = row.tracking === "Yes" || row.tracking === "Sim" ||
-                  row.tracking === "Ja" || row.tracking === "Oui" || row.tracking === "Sì";
-                return (
-                  <div
-                    key={i}
-                    className={`grid grid-cols-5 px-6 py-4 border-t border-white/5 text-sm ${isHighlight ? "bg-cyan-500/5" : ""}`}
-                  >
-                    <span className={`col-span-2 font-medium ${isHighlight ? "text-cyan-400" : "text-white"}`}>{row.option}</span>
-                    <span className={`text-center ${isHighlight ? "text-emerald-400 font-bold" : "text-slate-400"}`}>{row.cost}</span>
-                    <span className={`text-center ${effortLow ? "text-emerald-400" : "text-red-400"}`}>{row.effort}</span>
-                    <span className={`text-center ${trackingYes ? "text-emerald-400" : "text-slate-500"}`}>{row.tracking}</span>
-                  </div>
-                );
-              })}
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="bg-white/5 text-xs font-semibold uppercase tracking-wider text-slate-500">
+                    <th className="text-left px-6 py-3 w-2/5">{t("comparison.headers.option")}</th>
+                    <th className="text-center px-4 py-3">{t("comparison.headers.cost")}</th>
+                    <th className="text-center px-4 py-3">{t("comparison.headers.effort")}</th>
+                    <th className="text-center px-4 py-3">{t("comparison.headers.tracking")}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {compRows.map((row, i) => {
+                    const { effortLow, trackingGood, highlight } = compRowConfig[i] ?? {};
+                    return (
+                      <tr
+                        key={i}
+                        className={`border-t border-white/5 ${highlight ? "bg-cyan-500/5" : ""}`}
+                      >
+                        <td className={`px-6 py-4 font-medium ${highlight ? "text-cyan-400" : "text-white"}`}>{row.option}</td>
+                        <td className={`px-4 py-4 text-center ${highlight ? "text-emerald-400 font-bold" : "text-slate-400"}`}>{row.cost}</td>
+                        <td className={`px-4 py-4 text-center ${effortLow ? "text-emerald-400" : "text-red-400"}`}>{row.effort}</td>
+                        <td className={`px-4 py-4 text-center ${trackingGood ? "text-emerald-400" : "text-slate-500"}`}>{row.tracking}</td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
             </motion.div>
           </div>
         </section>
@@ -330,6 +355,9 @@ export default function ColdEmailPage() {
             </motion.div>
           </div>
         </section>
+
+        {/* Fix #6 — RelatedServices at the bottom */}
+        <RelatedServices currentSlug="cold-email" />
 
       </main>
 

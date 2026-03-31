@@ -1589,6 +1589,10 @@
       "socialMedia": {
         "name": "Marketing Digital",
         "description": "Développez votre marque sur les réseaux sociaux"
+      },
+      "coldEmail": {
+        "name": "Outreach par Email Froid",
+        "description": "Atteignez vos prospects directement dans leur boîte mail"
       }
     }
   },
@@ -3218,7 +3222,8 @@
       "title": "Atteignez vos clients idéaux.",
       "titleHighlight": "Pendant que vous dormez.",
       "description": "Nous gérons tout — trouver les bons contacts, rédiger les emails, configurer l'infrastructure et envoyer les séquences. Vous n'avez qu'une seule chose à faire : répondre aux prospects intéressés.",
-      "cta": "Lancer ma campagne"
+      "cta": "Lancer ma campagne",
+      "seePricing": "Voir les tarifs"
     },
     "stats": {
       "replyRate": {
@@ -3232,6 +3237,10 @@
       "toolsCost": {
         "value": "CHF 0",
         "label": "Outils à acheter — nous gérons tout"
+      },
+      "setupFee": {
+        "value": "CHF 149",
+        "label": "Configuration unique · Jamais rechargée"
       }
     },
     "includes": {
@@ -3417,6 +3426,9 @@
       "title": "Construisez un pipeline client prévisible",
       "description": "Arrêtez d'attendre les recommandations. Laissez-nous construire et gérer votre cold outreach — pendant que vous vous concentrez sur la livraison pour les clients qui répondent.",
       "button": "Appel stratégique gratuit"
+    },
+    "metadata": {
+      "description": "Atteignez vos clients idéaux avec des campagnes d'email froid entièrement gérées. Prospection, rédaction, configuration technique et envoi — tout géré. À partir de CHF 390/mois."
     }
   }
 }

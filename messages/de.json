@@ -2239,6 +2239,10 @@
       "socialMedia": {
         "name": "Social Media Marketing",
         "description": "Ihre Marke auf sozialen Kanälen ausbauen"
+      },
+      "coldEmail": {
+        "name": "Cold-Email-Outreach",
+        "description": "Interessenten direkt im Posteingang erreichen"
       }
     }
   },
@@ -3218,7 +3222,8 @@
       "title": "Erreichen Sie Ihre Wunschkunden.",
       "titleHighlight": "Während Sie schlafen.",
       "description": "Wir übernehmen alles — die richtigen Kontakte finden, E-Mails schreiben, Infrastruktur einrichten und Sequenzen versenden. Sie müssen nur eines tun: auf interessierte Interessenten antworten.",
-      "cta": "Kampagne starten"
+      "cta": "Kampagne starten",
+      "seePricing": "Preise ansehen"
     },
     "stats": {
       "replyRate": {
@@ -3232,6 +3237,10 @@
       "toolsCost": {
         "value": "CHF 0",
         "label": "Zu kaufende Tools — wir kümmern uns um alles"
+      },
+      "setupFee": {
+        "value": "CHF 149",
+        "label": "Einmalige Einrichtung · Nie wieder berechnet"
       }
     },
     "includes": {
@@ -3417,6 +3426,9 @@
       "title": "Bauen Sie eine planbare Kunden-Pipeline",
       "description": "Hören Sie auf, auf Empfehlungen zu warten. Lassen Sie uns Ihr Cold-Outreach aufbauen und verwalten — während Sie sich auf die Kunden konzentrieren, die antworten.",
       "button": "Kostenloses Strategiegespräch"
+    },
+    "metadata": {
+      "description": "Erreichen Sie Ihre Wunschkunden mit vollständig verwalteten Cold-Email-Kampagnen. Lead-Prospektion, Texterstellung, technisches Setup und Versand — alles erledigt. Ab CHF 390/Mo."
     }
   }
 }
