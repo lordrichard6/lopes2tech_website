@@ -459,6 +459,8 @@ export default function DigitalMarketingPage() {
                                     popular: false,
                                     features: [
                                         "100 hyper-local leads/month — sourced live from Google Maps",
+                                        "1 sending inbox — configured & warmed up",
+                                        "1–2 week inbox warmup before launch",
                                         "3-step personalised email sequence",
                                         "Instantly.ai campaign setup",
                                         "Deliverability monitoring",
@@ -473,6 +475,8 @@ export default function DigitalMarketingPage() {
                                     popular: true,
                                     features: [
                                         "250 hyper-local leads/month — sourced live from Google Maps",
+                                        "Up to 3 sending inboxes — configured & warmed up",
+                                        "1–2 week inbox warmup before launch",
                                         "3-step personalised email sequence",
                                         "A/B test on subject lines",
                                         "Instantly.ai campaign setup",
@@ -488,6 +492,8 @@ export default function DigitalMarketingPage() {
                                     popular: false,
                                     features: [
                                         "500+ hyper-local leads/month — sourced live from Google Maps",
+                                        "5+ sending inboxes — configured & warmed up",
+                                        "1–2 week inbox warmup before launch",
                                         "Multi-segment targeting (industries, cities, or offers)",
                                         "3-step sequence per segment",
                                         "A/B test on subject lines + copy",
