@@ -79,14 +79,44 @@ export default function BlogPostContent() {
         .slice(0, 3);
 
     // Process content to add IDs to h2 headings for table of contents
-    const processedContent = post.content.replace(
-        /<h2([^>]*)>(.*?)<\/h2>/gi,
-        (match, attrs, text) => {
-            const plainText = text.replace(/<[^>]*>/g, '');
-            const id = plainText.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-            return `<h2${attrs} id="${id}">${text}</h2>`;
-        }
-    );
+    const processedContent = post.content
+        .replace(
+            /<h2([^>]*)>(.*?)<\/h2>/gi,
+            (match, attrs, text) => {
+                const plainText = text.replace(/<[^>]*>/g, '');
+                const id = plainText.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+                return `<h2${attrs} id="${id}">${text}</h2>`;
+            }
+        )
+        .replace(
+            /<!--\s*IMAGE:\s*([^|]+)\|\s*([^|]+)\|\s*PROMPT:\s*([\s\S]*?)\s*-->/gi,
+            (match, filename, description, prompt) => {
+                const safePrompt = prompt.trim().replace(/&/g, '&amp;').replace(/"/g, '&quot;');
+                return `
+                <figure class="not-prose my-10">
+                    <div class="rounded-2xl border-2 border-dashed border-white/20 bg-white/[0.03] px-6 py-7 space-y-4">
+                        <div class="flex items-center gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white/20 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                            <div>
+                                <p class="text-xs font-mono text-white/20 uppercase tracking-widest">${filename.trim()}</p>
+                                <p class="text-sm text-white/50 mt-0.5">${description.trim()}</p>
+                            </div>
+                        </div>
+                        <div class="rounded-xl border border-white/10 bg-black/40 p-4">
+                            <div class="flex items-center justify-between gap-4 mb-3">
+                                <p class="text-xs font-mono text-cyan-400/60 uppercase tracking-widest">DALL·E 3 prompt</p>
+                                <button
+                                    onclick="navigator.clipboard.writeText(this.dataset.p).then(()=>{this.textContent='Copied!';this.classList.add('text-cyan-400','border-cyan-400/40');setTimeout(()=>{this.textContent='Copy prompt';this.classList.remove('text-cyan-400','border-cyan-400/40')},2000)})"
+                                    data-p="${safePrompt}"
+                                    class="flex-shrink-0 text-xs font-medium text-white/40 border border-white/15 rounded-lg px-3 py-1.5 hover:text-white hover:border-white/30 transition-all cursor-pointer"
+                                >Copy prompt</button>
+                            </div>
+                            <p class="text-xs text-slate-400 leading-relaxed">${prompt.trim()}</p>
+                        </div>
+                    </div>
+                </figure>`;
+            }
+        );
 
     return (
         <main className="min-h-screen bg-[#0f172a]">
@@ -364,18 +394,29 @@ export default function BlogPostContent() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.3 }}
-                        className="mt-16 p-8 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm"
+                        className="mt-16 relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] p-8"
                     >
-                        <div className="flex items-center gap-4 mb-4">
-                            <div className="w-16 h-16 rounded-full bg-gradient-to-br from-cyan-400 to-purple-500 flex items-center justify-center text-white text-2xl font-bold">
-                                {post.author.charAt(0)}
+                        {/* Subtle ambient glow */}
+                        <div className="absolute -top-10 -left-10 w-40 h-40 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
+                        <div className="relative z-10 flex items-center gap-5 mb-5">
+                            <div className="relative flex-shrink-0">
+                                <div className="w-16 h-16 rounded-full overflow-hidden ring-2 ring-cyan-400/40 shadow-lg shadow-cyan-500/20">
+                                    <Image
+                                        src="/founder_fancy.webp"
+                                        alt={post.author}
+                                        width={64}
+                                        height={64}
+                                        className="object-cover w-full h-full"
+                                    />
+                                </div>
+                                <span className="absolute -bottom-0.5 -right-0.5 w-4 h-4 bg-cyan-400 rounded-full border-2 border-[#0f172a]" />
                             </div>
                             <div>
-                                <h3 className="text-xl font-bold text-white">{post.author}</h3>
-                                <p className="text-slate-400">{post.authorRole}</p>
+                                <h3 className="text-lg font-bold text-white leading-tight">{post.author}</h3>
+                                <p className="text-sm text-cyan-400 font-medium">{post.authorRole}</p>
                             </div>
                         </div>
-                        <p className="text-slate-300">
+                        <p className="relative z-10 text-slate-300 leading-relaxed border-t border-white/8 pt-5">
                             {t('authorBio')}
                         </p>
                     </motion.div>
@@ -385,20 +426,26 @@ export default function BlogPostContent() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.35 }}
-                        className="print-hide mt-12 p-8 rounded-2xl border border-cyan-400/20 bg-gradient-to-br from-cyan-500/5 to-purple-500/5"
+                        className="print-hide mt-8 relative overflow-hidden rounded-2xl border border-cyan-400/30 bg-gradient-to-br from-cyan-500/10 via-[#0f172a] to-purple-500/10 p-10"
                     >
-                        <h3 className="text-2xl font-bold text-white mb-3">{t('ctaTitle')}</h3>
-                        <p className="text-slate-400 mb-6 max-w-xl">{t('ctaDescription')}</p>
-                        <Link
-                            href="/contact"
-                            className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-cyan-500 to-purple-600 text-white font-semibold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300"
-                        >
-                            {t('ctaButton')}
-                        </Link>
+                        {/* Strong ambient glows */}
+                        <div className="absolute -top-16 -left-16 w-64 h-64 bg-cyan-500/15 rounded-full blur-3xl pointer-events-none" />
+                        <div className="absolute -bottom-16 -right-16 w-64 h-64 bg-purple-500/15 rounded-full blur-3xl pointer-events-none" />
+                        <div className="relative z-10">
+                            <p className="text-xs font-bold uppercase tracking-widest text-cyan-400 mb-3">Ready to start?</p>
+                            <h3 className="text-3xl font-extrabold text-white mb-4 leading-tight">{t('ctaTitle')}</h3>
+                            <p className="text-slate-400 mb-8 max-w-xl text-lg leading-relaxed">{t('ctaDescription')}</p>
+                            <Link
+                                href="/contact"
+                                className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-cyan-500 to-purple-600 text-white font-bold text-base hover:shadow-xl hover:shadow-cyan-500/30 hover:scale-105 transition-all duration-300"
+                            >
+                                {t('ctaButton')}
+                            </Link>
+                        </div>
                     </motion.div>
 
                     {/* Medium Banner */}
-                    <div className="print-hide">
+                    <div className="print-hide mt-8">
                         <MediumBanner />
                     </div>
 

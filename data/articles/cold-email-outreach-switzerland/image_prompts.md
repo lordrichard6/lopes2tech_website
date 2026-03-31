@@ -1,63 +1,53 @@
 # Image Prompts — cold-email-outreach-switzerland
 
 ## Global Style Direction
-Dark navy/slate background (#080d1a tone), cyan (#22d3ee) and purple (#a855f7) accent colours.
-Clean, professional, minimal. Swiss corporate aesthetic. No people's faces. No generic stock photos.
-Consistent glow/neon accents. All images 1280×720px, 16:9, saved as .webp.
+**Style:** Cinematic Dark Office — near-photorealistic renders with dramatic studio lighting.
+Dark desk environments, laptop/monitor screens as the focal point, cold blue accent lighting.
+Premium B2B tech atmosphere — like Apple product photography applied to email infrastructure.
+No readable text or personal data visible on any screen. No human faces.
+All images 1280×720px, 16:9, saved as .webp.
 
 ---
 
-## cover.webp — Hero / Cover Image
+## cold-email-cover.webp — Hero / Cover Image
 **Placement:** Top of article, full-width
-**Goal:** Convey "cold email = reaching decision-makers directly, systematically"
-
-**Midjourney prompt:**
-`dark navy background, glowing cyan envelope icon with digital circuit lines radiating outward, minimalist flat style, Swiss corporate aesthetic, purple and cyan gradient accents, no text, clean and professional --ar 16:9 --style raw`
+**Goal:** The tension of the moment before sending — a finger hovering over Enter, campaign dashboard glowing behind it. Specific to cold email, cinematic, memorable.
 
 **DALL-E 3 prompt:**
-`A minimalist digital illustration on a very dark navy background. A glowing cyan email envelope at the center, with geometric circuit-board lines radiating outward to represent systematic outreach. Purple and cyan gradient accents. Clean, professional Swiss corporate aesthetic. No text. 16:9 ratio.`
+`Cinematic extreme close-up of a human hand, index finger pressing down on a laptop keyboard's Enter key. In the background, slightly out of focus but clearly legible, a dark monitor displays a sleek email campaign dashboard. A glowing rectangular button with the word "Launch" written in bright white text on a cold electric blue background is prominently visible on the screen — sharp enough to read, radiating a strong blue glow that illuminates the entire scene. The screen glow spills across the back of the hand casting cold blue light on the knuckles. Deep shadows everywhere else. The atmosphere is tense, deliberate, late-night. The button is the second focal point of the image — not fully blurred, intentionally visible and glowing. Hyperrealistic 8K cinematic render, no face visible. 16:9 ratio.`
 
 ---
 
-## image-01.webp — Personalised Cold Email in Inbox
-**Placement:** After "What Cold Email Outreach Actually Is" section
-**Goal:** Show what a well-crafted cold email looks like in an inbox — not spam, professional
-
-**Midjourney prompt:**
-`dark-themed email client interface on laptop screen, one open email highlighted with subtle cyan glow, professional inbox view, minimal UI, dark navy background, soft depth of field, Swiss office atmosphere, no visible text or personal data --ar 16:9 --style raw`
+## cold-email-dns-terminal.webp — DNS & Infrastructure Setup
+**Placement:** After "Why 99% of DIY Campaigns Fail Before They Send" section
+**Goal:** Visualise the technical infrastructure layer — subdomain, DNS records, the invisible setup that determines deliverability.
 
 **DALL-E 3 prompt:**
-`A dark-themed email inbox interface displayed on a laptop screen. One email is highlighted open with a subtle cyan/teal glow to indicate it's being read. The interface is minimal and professional, with a dark navy background. No readable personal data or text content visible. Clean Swiss office atmosphere with soft depth of field. 16:9 ratio.`
+`Cinematic dark scene of a laptop on a dim desk, screen glowing with cold blue terminal code. Sitting on top of the laptop lid, a tiny adorable clay figurine — small, round, soft matte texture like a Pixar character — is perched cross-legged, holding a miniature glowing envelope in both hands and staring at it with curiosity. The figurine is warm-toned clay (cream or soft terracotta) which contrasts beautifully against the cold blue screen glow behind it. The screen light softly illuminates the tiny character from behind like a backlight halo. The rest of the scene is deep shadow. The figurine is sharply in focus, detailed and tactile. Hyperrealistic render with a mix of cinematic photography and 3D clay toy aesthetic. No readable text. No human figures. 16:9 ratio.`
 
 ---
 
-## image-02.webp — 4-Step Process Diagram
-**Placement:** After "What a Real Campaign Looks Like" section
-**Goal:** Visually show the four campaign phases
-
-**Midjourney prompt:**
-`minimalist dark infographic showing 4 connected steps: lead sourcing, technical setup, email sequence, monthly reporting. Horizontal flow with cyan numbered circles, dark navy background, purple connecting lines, clean sans-serif labels, modern Swiss design aesthetic --ar 16:9 --style raw`
+## cold-email-warmup-graph.webp — Inbox Warmup Pool
+**Placement:** After "Inbox Warmup: The Step Everyone Skips" section
+**Goal:** Visualise the warmup process — multiple inboxes gradually building reputation over 14 days.
 
 **DALL-E 3 prompt:**
-`A clean, minimalist dark-background infographic showing four horizontal steps connected by lines: (1) Lead Sourcing, (2) Technical Setup, (3) Email Sequence, (4) Reporting. Each step is represented by a glowing cyan numbered circle. Dark navy (#080d1a) background with purple connecting lines. Modern Swiss corporate design style. No decorative clipart. 16:9 ratio.`
+`Overhead bird's-eye cinematic shot of a dark minimalist desk at night. A large curved monitor displays a glowing analytics dashboard with a single upward-curving line graph in electric cyan. A sleek mechanical keyboard and a small espresso cup are visible on the desk. Sitting on the desk right in front of the monitor, a tiny adorable clay figurine — same warm cream or soft terracotta matte texture as a Pixar character — stands with arms raised above its head in pure excitement and joy, staring up at the rising graph on the screen. The cold blue screen glow illuminates the tiny character from the front, casting a warm-meets-cold light contrast on its round clay body. The figurine is sharply in focus and full of personality. Deep shadows in the corners of the desk. Hyperrealistic render blending cinematic desk photography with 3D clay toy aesthetic. No readable text. No human figures. 16:9 ratio.`
 
 ---
 
-## image-03.webp — Comparison Chart
-**Placement:** After "Cold Email vs. The Alternatives" section
-**Goal:** Visual comparison of cold email vs LinkedIn, Google Ads, SEO
-
-**Midjourney prompt:**
-`minimalist dark comparison matrix chart, 4 rows (Cold Email, LinkedIn, Google Ads, SEO) vs 3 columns (Cost, Speed, Effort), cyan checkmarks for best scores, dark navy background, clean modern data visualization, Swiss design, no text visible --ar 16:9 --style raw`
+## cold-email-campaign-dashboard.webp — Instantly.ai Campaign Dashboard
+**Placement:** After "How We Run Campaigns End-to-End on Instantly.ai" section
+**Goal:** Visualise an active cold email campaign in execution — sequence steps, live metrics, reply tracking.
 
 **DALL-E 3 prompt:**
-`A minimal, clean comparison matrix on a dark navy background. Four rows representing different marketing channels and three columns representing metrics (Cost, Speed, Effort). Cyan/teal checkmarks and indicators show which channels score best. The "Cold Email" row is highlighted with a subtle cyan glow. Modern Swiss corporate data visualization style. No readable text labels. 16:9 ratio.`
+`Low-angle dramatic cinematic shot of a MacBook Pro on a dark desk, the screen displaying a sophisticated dark SaaS dashboard with glowing metric cards and a multi-step workflow diagram in cyan and white. Sitting on the desk leaning against the base of the MacBook, a tiny adorable clay figurine — warm cream or soft terracotta matte texture, Pixar-like — is pointing enthusiastically at the screen with one tiny arm, the other arm on its hip, looking proud and confident as if presenting the campaign results. The cold blue screen glow spills across the desk surface and illuminates the clay character from the front. The figurine is sharply in focus and full of personality. Deep shadows behind the laptop, background fades to pure black. Hyperrealistic render blending cinematic photography with 3D clay toy aesthetic. No readable text on screen. No human figures. 16:9 ratio.`
 
 ---
 
 ## Notes
 - Generate all 4 images in the same session for visual consistency
-- Save as: cover.webp, image-01.webp, image-02.webp, image-03.webp
+- Save as: cold-email-cover.webp, cold-email-dns-terminal.webp, cold-email-warmup-graph.webp, cold-email-campaign-dashboard.webp
 - Place in: `public/assets/blog/cold-email-outreach-switzerland/`
-- After placing images, update `"image"` field in blog-posts.json to `/assets/blog/cold-email-outreach-switzerland/cover.webp`
+- After placing images, update `"image"` field in blog-posts.json to `/assets/blog/cold-email-outreach-switzerland/cold-email-cover.webp`
 - Replace `<!-- IMAGE: -->` comments in content with full `<figure>` blocks
