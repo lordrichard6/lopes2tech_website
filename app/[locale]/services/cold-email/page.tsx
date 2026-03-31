@@ -18,7 +18,7 @@ const packages = [
   {
     key: "starter",
     name: "Campaign Starter",
-    price: "CHF 399",
+    price: "CHF 390",
     period: "/mo",
     contacts: "100 contacts/mo",
     replies: "~3–8 replies/mo",

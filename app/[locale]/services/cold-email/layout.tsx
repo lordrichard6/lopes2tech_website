@@ -6,7 +6,7 @@ const PATH     = "/services/cold-email";
 export const metadata: Metadata = {
   title: "Cold Email Outreach — Done-for-You | Lopes2Tech",
   description:
-    "Reach your ideal Swiss clients with fully managed cold email campaigns. Lead sourcing, copywriting, technical setup, and sending — all handled. From CHF 249/mo.",
+    "Reach your ideal Swiss clients with fully managed cold email campaigns. Lead sourcing, copywriting, technical setup, and sending — all handled. From CHF 390/mo.",
   alternates: {
     canonical: `${BASE_URL}/en${PATH}`,
     languages: {
@@ -21,14 +21,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Cold Email Outreach — Done-for-You | Lopes2Tech",
     description:
-      "Reach your ideal Swiss clients with fully managed cold email campaigns. From CHF 249/mo.",
+      "Reach your ideal Swiss clients with fully managed cold email campaigns. From CHF 390/mo.",
     url: `${BASE_URL}/en${PATH}`,
     images: [{ url: `${BASE_URL}/og-image.png`, width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Cold Email Outreach — Done-for-You | Lopes2Tech",
-    description: "Fully managed cold email campaigns. From CHF 249/mo.",
+    description: "Fully managed cold email campaigns. From CHF 390/mo.",
     images: [`${BASE_URL}/og-image.png`],
   },
 };

@@ -426,7 +426,7 @@ export default function DigitalMarketingPage() {
                             <div className="w-full border-t border-white/10" />
                         </div>
                         <div className="relative flex justify-center">
-                            <span className="px-6 py-2 bg-[#0f172a] text-slate-500 text-sm uppercase tracking-widest">or</span>
+                            <span className="px-6 py-2 bg-[#0f172a] text-slate-500 text-sm uppercase tracking-widest">{t("coldEmail.divider")}</span>
                         </div>
                     </div>
 
@@ -435,75 +435,43 @@ export default function DigitalMarketingPage() {
                         <div className="text-center mb-12">
                             <div className="inline-block px-4 py-1.5 mb-4 text-xs font-bold uppercase tracking-widest text-cyan-400 bg-cyan-400/10 border border-cyan-400/20 rounded-full">
                                 <Mail className="inline w-3.5 h-3.5 mr-1.5 -mt-0.5" />
-                                Cold Email Outreach
+                                {t("coldEmail.badge")}
                             </div>
                             <h2 className="text-4xl font-extrabold text-white mb-4">
-                                Reach clients{" "}
+                                {t("coldEmail.title")}{" "}
                                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400">
-                                    directly in their inbox
+                                    {t("coldEmail.titleHighlight")}
                                 </span>
                             </h2>
                             <p className="text-slate-400 max-w-2xl mx-auto">
-                                Fully done-for-you cold email campaigns. We source the leads, write the sequences, set up the infrastructure, and manage the sending.{" "}
-                                <span className="text-white font-medium">You only reply to interested prospects.</span>
+                                {t("coldEmail.description")}{" "}
+                                <span className="text-white font-medium">{t("coldEmail.descriptionHighlight")}</span>
                             </p>
                         </div>
 
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-                            {[
+                            {([
                                 {
-                                    name: "Campaign Starter",
-                                    price: "CHF 399",
-                                    contacts: "100 contacts/mo",
-                                    replies: "~3–8 replies/mo",
+                                    key: "starter",
+                                    price: "CHF 390",
+                                    isPro: false,
                                     popular: false,
-                                    features: [
-                                        "100 hyper-local leads/month — sourced live from Google Maps",
-                                        "1 sending inbox — configured & warmed up",
-                                        "1–2 week inbox warmup before launch",
-                                        "3-step personalised email sequence",
-                                        "Instantly.ai campaign setup",
-                                        "Deliverability monitoring",
-                                        "Monthly performance report",
-                                    ],
                                 },
                                 {
-                                    name: "Campaign Growth",
+                                    key: "growth",
                                     price: "CHF 590",
-                                    contacts: "250 contacts/mo",
-                                    replies: "~8–20 replies/mo",
+                                    isPro: false,
                                     popular: true,
-                                    features: [
-                                        "250 hyper-local leads/month — sourced live from Google Maps",
-                                        "Up to 3 sending inboxes — configured & warmed up",
-                                        "1–2 week inbox warmup before launch",
-                                        "3-step personalised email sequence",
-                                        "A/B test on subject lines",
-                                        "Instantly.ai campaign setup",
-                                        "Deliverability monitoring",
-                                        "Monthly report + recommendations",
-                                    ],
                                 },
                                 {
-                                    name: "Campaign Pro",
-                                    price: "From CHF 990",
-                                    contacts: "500+ contacts/mo",
-                                    replies: "~15–40 replies/mo",
+                                    key: "pro",
+                                    price: "CHF 990",
+                                    isPro: true,
                                     popular: false,
-                                    features: [
-                                        "500+ hyper-local leads/month — sourced live from Google Maps",
-                                        "5+ sending inboxes — configured & warmed up",
-                                        "1–2 week inbox warmup before launch",
-                                        "Multi-segment targeting (industries, cities, or offers)",
-                                        "3-step sequence per segment",
-                                        "A/B test on subject lines + copy",
-                                        "Priority deliverability monitoring",
-                                        "Monthly strategy call + report",
-                                    ],
                                 },
-                            ].map((pkg, index) => (
+                            ] as const).map((pkg, index) => (
                                 <motion.div
-                                    key={pkg.name}
+                                    key={pkg.key}
                                     initial={{ opacity: 0, y: 30 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true }}
@@ -518,32 +486,28 @@ export default function DigitalMarketingPage() {
                                         <div className="absolute -top-4 left-1/2 -translate-x-1/2">
                                             <div className="flex items-center gap-1.5 px-4 py-1.5 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full text-white text-sm font-bold shadow-lg">
                                                 <Star className="w-4 h-4 fill-current" />
-                                                Most Popular
+                                                {t("coldEmail.mostPopular")}
                                             </div>
                                         </div>
                                     )}
                                     <div className="mb-3">
-                                        <h3 className="text-2xl font-bold text-white mb-1">{pkg.name}</h3>
-                                        <p className="text-slate-500 text-xs">{pkg.contacts} · {pkg.replies}</p>
+                                        <h3 className="text-2xl font-bold text-white mb-1">{t(`coldEmail.packages.${pkg.key}.name`)}</h3>
+                                        <p className="text-slate-500 text-xs">{t(`coldEmail.packages.${pkg.key}.contacts`)} · {t(`coldEmail.packages.${pkg.key}.replies`)}</p>
                                     </div>
                                     <div className="mb-6">
                                         <div className="flex items-baseline gap-1">
-                                            {pkg.price.startsWith("From") ? (
-                                                <>
-                                                    <span className="text-slate-400 text-sm">From</span>
-                                                    <span className="text-4xl font-extrabold text-white">CHF 990</span>
-                                                </>
-                                            ) : (
-                                                <span className="text-4xl font-extrabold text-white">{pkg.price}</span>
+                                            {pkg.isPro && (
+                                                <span className="text-slate-400 text-sm">{t("coldEmail.from")}</span>
                                             )}
-                                            <span className="text-slate-400">/mo</span>
+                                            <span className="text-4xl font-extrabold text-white">{pkg.price}</span>
+                                            <span className="text-slate-400">{t("coldEmail.perMonth")}</span>
                                         </div>
                                         <p className="text-sm text-slate-500 mt-1">
-                                            {pkg.price.startsWith("From") ? "Custom pricing based on volume" : "+ CHF 149 one-time setup (new clients only)"}
+                                            {pkg.isPro ? t("coldEmail.customPricing") : t("coldEmail.setupFee")}
                                         </p>
                                     </div>
                                     <ul className="space-y-3 mb-8 flex-1">
-                                        {pkg.features.map((feature, idx) => (
+                                        {(t.raw(`coldEmail.packages.${pkg.key}.features`) as string[]).map((feature: string, idx: number) => (
                                             <li key={idx} className="flex items-start gap-3">
                                                 <div className={`mt-0.5 w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 ${pkg.popular ? "bg-cyan-500" : "bg-cyan-500/20"}`}>
                                                     <Check className={`w-3 h-3 ${pkg.popular ? "text-white" : "text-cyan-400"}`} />
@@ -553,14 +517,14 @@ export default function DigitalMarketingPage() {
                                         ))}
                                     </ul>
                                     <button
-                                        onClick={() => handleRequest(pkg.name)}
+                                        onClick={() => handleRequest(t(`coldEmail.packages.${pkg.key}.name`))}
                                         className={`w-full flex items-center justify-center gap-2 py-3 rounded-xl font-semibold transition-all duration-300 ${
                                             pkg.popular
                                                 ? "bg-gradient-to-r from-cyan-500 to-blue-500 text-white shadow-[0_0_20px_rgba(34,211,238,0.3)] hover:shadow-[0_0_30px_rgba(34,211,238,0.5)] hover:-translate-y-0.5"
                                                 : "bg-white/10 text-white hover:bg-white/20"
                                         }`}
                                     >
-                                        Get Started
+                                        {t("coldEmail.getStarted")}
                                         <ArrowRight className="w-4 h-4" />
                                     </button>
                                 </motion.div>
@@ -568,9 +532,9 @@ export default function DigitalMarketingPage() {
                         </div>
 
                         <p className="text-center text-slate-500 text-sm">
-                            Minimum 2-month commitment · Cancel anytime after · Prices in CHF (Swiss market) · Need leads only?{" "}
+                            {t("coldEmail.footerNote")}{" "}
                             <Link href="/services/cold-email" className="text-cyan-400 hover:underline">
-                                See full cold email details →
+                                {t("coldEmail.footerLink")}
                             </Link>
                         </p>
                     </motion.div>
