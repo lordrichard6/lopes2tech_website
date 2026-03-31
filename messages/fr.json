@@ -2193,7 +2193,7 @@
       "mostPopular": "Le plus populaire",
       "from": "À partir de",
       "perMonth": "/mois",
-      "setupFee": "+ CHF 149 configuration unique (nouveaux clients uniquement)",
+      "setupFee": "+ CHF 150 configuration unique (nouveaux clients uniquement)",
       "customPricing": "Tarification personnalisée selon le volume",
       "getStarted": "Commencer",
       "footerNote": "Engagement minimum de 2 mois · Résiliation libre ensuite · Prix en CHF (marché suisse) · Besoin uniquement de leads ?",
@@ -3239,7 +3239,7 @@
         "label": "Outils à acheter — nous gérons tout"
       },
       "setupFee": {
-        "value": "CHF 149",
+        "value": "CHF 150",
         "label": "Configuration unique · Jamais rechargée"
       }
     },
@@ -3276,7 +3276,7 @@
     "packages": {
       "badge": "Tarifs",
       "title": "Des tarifs simples et transparents",
-      "subtitle": "+ CHF 149 frais de configuration uniques (nouveaux clients uniquement) · Minimum 2 mois · Résiliation libre ensuite",
+      "subtitle": "+ CHF 150 frais de configuration uniques (nouveaux clients uniquement) · Minimum 2 mois · Résiliation libre ensuite",
       "mostPopular": "Le plus populaire",
       "from": "À partir de CHF",
       "perMonth": "/mois",
@@ -3401,7 +3401,7 @@
         },
         {
           "question": "À quoi servent les frais de configuration ?",
-          "answer": "Les CHF 149 uniques couvrent : la création et configuration d'un sous-domaine d'envoi, la mise en place des enregistrements DNS SPF/DKIM/DMARC, la connexion à Instantly.ai, et un réchauffement d'email de 2 semaines. Facturés une seule fois — jamais lors des renouvellements."
+          "answer": "Les CHF 150 uniques couvrent : la création et configuration d'un sous-domaine d'envoi, la mise en place des enregistrements DNS SPF/DKIM/DMARC, la connexion à Instantly.ai, et un réchauffement d'email de 2 semaines. Facturés une seule fois — jamais lors des renouvellements."
         },
         {
           "question": "Mon domaine principal sera-t-il en danger ?",

@@ -2013,7 +2013,7 @@
       "mostPopular": "Am beliebtesten",
       "from": "Ab",
       "perMonth": "/Mo.",
-      "setupFee": "+ CHF 149 einmalige Einrichtung (nur Neukunden)",
+      "setupFee": "+ CHF 150 einmalige Einrichtung (nur Neukunden)",
       "customPricing": "Individuelle Preise je nach Volumen",
       "getStarted": "Jetzt starten",
       "footerNote": "Mindestlaufzeit 2 Monate · Danach monatlich kündbar · Preise in CHF (Schweizer Markt) · Nur Leads benötigt?",
@@ -3239,7 +3239,7 @@
         "label": "Zu kaufende Tools — wir kümmern uns um alles"
       },
       "setupFee": {
-        "value": "CHF 149",
+        "value": "CHF 150",
         "label": "Einmalige Einrichtung · Nie wieder berechnet"
       }
     },
@@ -3276,7 +3276,7 @@
     "packages": {
       "badge": "Preise",
       "title": "Einfache, transparente Preise",
-      "subtitle": "+ CHF 149 einmalige Einrichtungsgebühr (nur Neukunden) · Mindestlaufzeit 2 Monate · Danach monatlich kündbar",
+      "subtitle": "+ CHF 150 einmalige Einrichtungsgebühr (nur Neukunden) · Mindestlaufzeit 2 Monate · Danach monatlich kündbar",
       "mostPopular": "Am beliebtesten",
       "from": "Ab CHF",
       "perMonth": "/Mo.",
@@ -3401,7 +3401,7 @@
         },
         {
           "question": "Wofür ist die Einrichtungsgebühr?",
-          "answer": "Die einmalige CHF 149 Einrichtungsgebühr deckt: Erstellung und Konfiguration einer Versand-Subdomain, Einrichtung von SPF/DKIM/DMARC-DNS-Einträgen, Verbindung des Postfachs mit Instantly.ai und ein 2-wöchiges E-Mail-Warmup. Diese wird nur einmalig berechnet — nie bei Verlängerungen."
+          "answer": "Die einmalige CHF 150 Einrichtungsgebühr deckt: Erstellung und Konfiguration einer Versand-Subdomain, Einrichtung von SPF/DKIM/DMARC-DNS-Einträgen, Verbindung des Postfachs mit Instantly.ai und ein 2-wöchiges E-Mail-Warmup. Diese wird nur einmalig berechnet — nie bei Verlängerungen."
         },
         {
           "question": "Wird meine Hauptdomain gefährdet?",

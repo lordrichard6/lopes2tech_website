@@ -2013,7 +2013,7 @@
       "mostPopular": "Most Popular",
       "from": "From",
       "perMonth": "/mo",
-      "setupFee": "+ CHF 149 one-time setup (new clients only)",
+      "setupFee": "+ CHF 150 one-time setup (new clients only)",
       "customPricing": "Custom pricing based on volume",
       "getStarted": "Get Started",
       "footerNote": "Minimum 2-month commitment · Cancel anytime after · Prices in CHF (Swiss market) · Need leads only?",
@@ -3239,7 +3239,7 @@
         "label": "Tools to buy — we handle everything"
       },
       "setupFee": {
-        "value": "CHF 149",
+        "value": "CHF 150",
         "label": "One-time setup · Never charged again"
       }
     },
@@ -3276,7 +3276,7 @@
     "packages": {
       "badge": "Pricing",
       "title": "Simple, transparent pricing",
-      "subtitle": "+ CHF 149 one-time setup fee (new clients only) · Minimum 2 months · Cancel anytime after",
+      "subtitle": "+ CHF 150 one-time setup fee (new clients only) · Minimum 2 months · Cancel anytime after",
       "mostPopular": "Most Popular",
       "from": "From CHF",
       "perMonth": "/mo",
@@ -3401,7 +3401,7 @@
         },
         {
           "question": "What is the setup fee for?",
-          "answer": "The one-time CHF 149 setup fee covers: creating and configuring a sending subdomain (to protect your main domain), setting up SPF/DKIM/DMARC DNS records, connecting the inbox to Instantly.ai, and running a 2-week email warmup so your first campaign hits the inbox instead of spam. This is only charged once — never on renewals."
+          "answer": "The one-time CHF 150 setup fee covers: creating and configuring a sending subdomain (to protect your main domain), setting up SPF/DKIM/DMARC DNS records, connecting the inbox to Instantly.ai, and running a 2-week email warmup so your first campaign hits the inbox instead of spam. This is only charged once — never on renewals."
         },
         {
           "question": "Will my main domain be at risk?",

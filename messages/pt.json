@@ -2013,7 +2013,7 @@
       "mostPopular": "Mais Popular",
       "from": "A partir de",
       "perMonth": "/mês",
-      "setupFee": "+ CHF 149 configuração única (apenas novos clientes)",
+      "setupFee": "+ CHF 150 configuração única (apenas novos clientes)",
       "customPricing": "Preço personalizado conforme o volume",
       "getStarted": "Começar",
       "footerNote": "Compromisso mínimo de 2 meses · Cancelamento livre após · Preços em CHF (mercado suíço) · Precisa só de leads?",
@@ -3239,7 +3239,7 @@
         "label": "Ferramentas a comprar — tratamos de tudo"
       },
       "setupFee": {
-        "value": "CHF 149",
+        "value": "CHF 150",
         "label": "Configuração única · Nunca mais cobrada"
       }
     },
@@ -3276,7 +3276,7 @@
     "packages": {
       "badge": "Preços",
       "title": "Preços simples e transparentes",
-      "subtitle": "+ CHF 149 taxa de configuração única (apenas novos clientes) · Mínimo 2 meses · Cancelamento livre após",
+      "subtitle": "+ CHF 150 taxa de configuração única (apenas novos clientes) · Mínimo 2 meses · Cancelamento livre após",
       "mostPopular": "Mais Popular",
       "from": "A partir de CHF",
       "perMonth": "/mês",
@@ -3401,7 +3401,7 @@
         },
         {
           "question": "Para que serve a taxa de configuração?",
-          "answer": "A taxa única de CHF 149 cobre: criação e configuração de um subdomínio de envio (para proteger o seu domínio principal), configuração de registos DNS SPF/DKIM/DMARC, ligação da caixa ao Instantly.ai, e execução de um aquecimento de email de 2 semanas para que a primeira campanha chegue à caixa de entrada em vez de spam. Só é cobrada uma vez — nunca nas renovações."
+          "answer": "A taxa única de CHF 150 cobre: criação e configuração de um subdomínio de envio (para proteger o seu domínio principal), configuração de registos DNS SPF/DKIM/DMARC, ligação da caixa ao Instantly.ai, e execução de um aquecimento de email de 2 semanas para que a primeira campanha chegue à caixa de entrada em vez de spam. Só é cobrada uma vez — nunca nas renovações."
         },
         {
           "question": "O meu domínio principal ficará em risco?",

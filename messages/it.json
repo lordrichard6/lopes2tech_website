@@ -2111,7 +2111,7 @@
       "mostPopular": "Più popolare",
       "from": "Da",
       "perMonth": "/mese",
-      "setupFee": "+ CHF 149 configurazione una tantum (solo nuovi clienti)",
+      "setupFee": "+ CHF 150 configurazione una tantum (solo nuovi clienti)",
       "customPricing": "Prezzo personalizzato in base al volume",
       "getStarted": "Inizia ora",
       "footerNote": "Impegno minimo di 2 mesi · Disdetta libera dopo · Prezzi in CHF (mercato svizzero) · Hai bisogno solo dei lead?",
@@ -3239,7 +3239,7 @@
         "label": "Strumenti da acquistare — pensiamo a tutto noi"
       },
       "setupFee": {
-        "value": "CHF 149",
+        "value": "CHF 150",
         "label": "Configurazione unica · Mai più addebitata"
       }
     },
@@ -3276,7 +3276,7 @@
     "packages": {
       "badge": "Prezzi",
       "title": "Prezzi semplici e trasparenti",
-      "subtitle": "+ CHF 149 fee di configurazione una tantum (solo nuovi clienti) · Minimo 2 mesi · Disdetta libera dopo",
+      "subtitle": "+ CHF 150 fee di configurazione una tantum (solo nuovi clienti) · Minimo 2 mesi · Disdetta libera dopo",
       "mostPopular": "Più popolare",
       "from": "Da CHF",
       "perMonth": "/mese",
@@ -3401,7 +3401,7 @@
         },
         {
           "question": "A cosa serve la fee di configurazione?",
-          "answer": "La fee una tantum di CHF 149 copre: creazione e configurazione di un sottodominio di invio, impostazione dei record DNS SPF/DKIM/DMARC, connessione a Instantly.ai e un riscaldamento email di 2 settimane. Addebitata solo una volta — mai sui rinnovi."
+          "answer": "La fee una tantum di CHF 150 copre: creazione e configurazione di un sottodominio di invio, impostazione dei record DNS SPF/DKIM/DMARC, connessione a Instantly.ai e un riscaldamento email di 2 settimane. Addebitata solo una volta — mai sui rinnovi."
         },
         {
           "question": "Il mio dominio principale sarà a rischio?",
