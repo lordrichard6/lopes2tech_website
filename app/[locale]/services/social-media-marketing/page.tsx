@@ -412,14 +412,13 @@ export default function DigitalMarketingPage() {
                             {[
                                 {
                                     name: "Campaign Starter",
-                                    price: "CHF 249",
-                                    contacts: "50 contacts/mo",
-                                    replies: "~1–4 replies/mo",
+                                    price: "CHF 399",
+                                    contacts: "100 contacts/mo",
+                                    replies: "~3–8 replies/mo",
                                     popular: false,
                                     features: [
-                                        "50 targeted leads/month",
+                                        "100 hyper-local leads/month — sourced live from Google Maps",
                                         "3-step personalised email sequence",
-                                        "Lead sourcing from Google Maps",
                                         "Instantly.ai campaign setup",
                                         "Deliverability monitoring",
                                         "Monthly performance report",
@@ -427,15 +426,14 @@ export default function DigitalMarketingPage() {
                                 },
                                 {
                                     name: "Campaign Growth",
-                                    price: "CHF 399",
-                                    contacts: "100 contacts/mo",
-                                    replies: "~3–8 replies/mo",
+                                    price: "CHF 590",
+                                    contacts: "250 contacts/mo",
+                                    replies: "~8–20 replies/mo",
                                     popular: true,
                                     features: [
-                                        "100 targeted leads/month",
+                                        "250 hyper-local leads/month — sourced live from Google Maps",
                                         "3-step personalised email sequence",
                                         "A/B test on subject lines",
-                                        "Lead sourcing from Google Maps",
                                         "Instantly.ai campaign setup",
                                         "Deliverability monitoring",
                                         "Monthly report + recommendations",
@@ -443,16 +441,15 @@ export default function DigitalMarketingPage() {
                                 },
                                 {
                                     name: "Campaign Pro",
-                                    price: "CHF 699",
-                                    contacts: "250 contacts/mo",
-                                    replies: "~8–20 replies/mo",
+                                    price: "From CHF 990",
+                                    contacts: "500+ contacts/mo",
+                                    replies: "~15–40 replies/mo",
                                     popular: false,
                                     features: [
-                                        "250 targeted leads/month",
-                                        "3-step personalised email sequence",
+                                        "500+ hyper-local leads/month — sourced live from Google Maps",
+                                        "Multi-segment targeting (industries, cities, or offers)",
+                                        "3-step sequence per segment",
                                         "A/B test on subject lines + copy",
-                                        "Multi-segment targeting",
-                                        "Lead sourcing from Google Maps",
                                         "Priority deliverability monitoring",
                                         "Monthly strategy call + report",
                                     ],
@@ -484,7 +481,14 @@ export default function DigitalMarketingPage() {
                                     </div>
                                     <div className="mb-6">
                                         <div className="flex items-baseline gap-1">
-                                            <span className="text-4xl font-extrabold text-white">{pkg.price}</span>
+                                            {pkg.price.startsWith("From") ? (
+                                                <>
+                                                    <span className="text-slate-400 text-sm">From</span>
+                                                    <span className="text-4xl font-extrabold text-white">CHF 990</span>
+                                                </>
+                                            ) : (
+                                                <span className="text-4xl font-extrabold text-white">{pkg.price}</span>
+                                            )}
                                             <span className="text-slate-400">/mo</span>
                                         </div>
                                         <p className="text-sm text-slate-500 mt-1">+ CHF 149 one-time setup (new clients only)</p>

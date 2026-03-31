@@ -18,17 +18,16 @@ const packages = [
   {
     key: "starter",
     name: "Campaign Starter",
-    price: "CHF 249",
+    price: "CHF 399",
     period: "/mo",
-    contacts: "50 contacts/mo",
-    replies: "~1–4 replies/mo",
+    contacts: "100 contacts/mo",
+    replies: "~3–8 replies/mo",
     popular: false,
     color: "border-white/10 bg-white/[0.03]",
     accent: "text-cyan-400",
     features: [
-      "50 targeted leads/month",
+      "100 hyper-local leads/month — sourced live from Google Maps",
       "3-step personalised email sequence",
-      "Lead sourcing from Google Maps",
       "Instantly.ai campaign setup",
       "Deliverability monitoring",
       "Monthly performance report",
@@ -37,18 +36,17 @@ const packages = [
   {
     key: "growth",
     name: "Campaign Growth",
-    price: "CHF 399",
+    price: "CHF 590",
     period: "/mo",
-    contacts: "100 contacts/mo",
-    replies: "~3–8 replies/mo",
+    contacts: "250 contacts/mo",
+    replies: "~8–20 replies/mo",
     popular: true,
     color: "border-cyan-500/30 bg-cyan-500/5",
     accent: "text-cyan-400",
     features: [
-      "100 targeted leads/month",
+      "250 hyper-local leads/month — sourced live from Google Maps",
       "3-step personalised email sequence",
       "A/B test on subject lines",
-      "Lead sourcing from Google Maps",
       "Instantly.ai campaign setup",
       "Deliverability monitoring",
       "Monthly performance report + recommendations",
@@ -57,22 +55,21 @@ const packages = [
   {
     key: "pro",
     name: "Campaign Pro",
-    price: "CHF 699",
+    price: "From CHF 990",
     period: "/mo",
-    contacts: "250 contacts/mo",
-    replies: "~8–20 replies/mo",
+    contacts: "500+ contacts/mo",
+    replies: "~15–40 replies/mo",
     popular: false,
-    color: "border-white/10 bg-white/[0.03]",
+    color: "border-purple-500/30 bg-purple-500/5",
     accent: "text-purple-400",
     features: [
-      "250 targeted leads/month",
-      "3-step personalised email sequence",
+      "500+ hyper-local leads/month — sourced live from Google Maps",
+      "Multi-segment targeting (industries, cities, or offers)",
+      "3-step personalised email sequence per segment",
       "A/B test on subject lines + copy",
-      "Multi-segment targeting",
-      "Lead sourcing from Google Maps",
-      "Instantly.ai campaign setup",
       "Priority deliverability monitoring",
-      "Monthly strategy call + report",
+      "Monthly strategy call + full performance report",
+      "Custom volume available — price scales with contacts",
     ],
   },
 ];
@@ -319,8 +316,17 @@ export default function ColdEmailPage() {
                   <p className="text-white font-bold text-lg mb-1">{pkg.name}</p>
                   <p className="text-slate-400 text-xs mb-5">{pkg.contacts} · {pkg.replies}</p>
                   <div className="flex items-end gap-1 mb-6">
-                    <span className="text-slate-400 text-base mb-0.5">CHF</span>
-                    <span className={`text-4xl font-black ${pkg.accent}`}>{pkg.price.replace("CHF ", "")}</span>
+                    {pkg.price.startsWith("From") ? (
+                      <>
+                        <span className="text-slate-400 text-sm mb-1.5">From CHF</span>
+                        <span className={`text-4xl font-black ${pkg.accent}`}>990</span>
+                      </>
+                    ) : (
+                      <>
+                        <span className="text-slate-400 text-base mb-0.5">CHF</span>
+                        <span className={`text-4xl font-black ${pkg.accent}`}>{pkg.price.replace("CHF ", "")}</span>
+                      </>
+                    )}
                     <span className="text-slate-400 text-sm mb-1">{pkg.period}</span>
                   </div>
                   <ul className="space-y-2 mb-8 flex-1">
