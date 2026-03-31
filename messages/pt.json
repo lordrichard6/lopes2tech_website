@@ -2002,6 +2002,68 @@
       "a7": "O email frio é a prospeção direta a empresas específicas através de sequências de email personalizadas. Ao contrário dos anúncios — que são mostrados a audiências amplas e exigem gastos contínuos — o email frio direciona-se a decisores diretamente a uma taxa mensal fixa, sem custo por clique. Funciona melhor para ofertas B2B onde sabe exatamente quem é o seu cliente ideal.",
       "q8": "Posso combinar email frio com redes sociais ou anúncios?",
       "a8": "Sim — e é uma combinação poderosa. O email frio gera respostas diretas de potenciais clientes, enquanto as redes sociais constroem notoriedade e confiança ao longo do tempo. Clientes que veem o seu conteúdo antes de receberem um email têm muito mais probabilidade de responder. Podemos ajudá-lo a gerir ambos os canais com uma estratégia coordenada."
+    },
+    "coldEmail": {
+      "badge": "Outreach por Email Frio",
+      "title": "Alcance clientes",
+      "titleHighlight": "diretamente na caixa de entrada",
+      "description": "Campanhas de email frio 100% geridas por nós. Fazemos a prospeção de leads, escrevemos as sequências, configuramos a infraestrutura e gerimos os envios.",
+      "descriptionHighlight": "Você só responde aos interessados.",
+      "divider": "ou",
+      "mostPopular": "Mais Popular",
+      "from": "A partir de",
+      "perMonth": "/mês",
+      "setupFee": "+ CHF 149 configuração única (apenas novos clientes)",
+      "customPricing": "Preço personalizado conforme o volume",
+      "getStarted": "Começar",
+      "footerNote": "Compromisso mínimo de 2 meses · Cancelamento livre após · Preços em CHF (mercado suíço) · Precisa só de leads?",
+      "footerLink": "Ver detalhes completos →",
+      "packages": {
+        "starter": {
+          "name": "Campaign Starter",
+          "contacts": "100 contactos/mês",
+          "replies": "~3–8 respostas/mês",
+          "features": [
+            "100 leads hiper-locais/mês — recolhidas em tempo real no Google Maps",
+            "1 caixa de envio — configurada e aquecida",
+            "1–2 semanas de aquecimento da caixa antes do lançamento",
+            "Sequência de 3 emails personalizada",
+            "Configuração da campanha no Instantly.ai",
+            "Monitorização de entregabilidade",
+            "Relatório mensal de desempenho"
+          ]
+        },
+        "growth": {
+          "name": "Campaign Growth",
+          "contacts": "250 contactos/mês",
+          "replies": "~8–20 respostas/mês",
+          "features": [
+            "250 leads hiper-locais/mês — recolhidas em tempo real no Google Maps",
+            "Até 3 caixas de envio — configuradas e aquecidas",
+            "1–2 semanas de aquecimento da caixa antes do lançamento",
+            "Sequência de 3 emails personalizada",
+            "Teste A/B em linhas de assunto",
+            "Configuração da campanha no Instantly.ai",
+            "Monitorização de entregabilidade",
+            "Relatório mensal + recomendações"
+          ]
+        },
+        "pro": {
+          "name": "Campaign Pro",
+          "contacts": "500+ contactos/mês",
+          "replies": "~15–40 respostas/mês",
+          "features": [
+            "500+ leads hiper-locais/mês — recolhidas em tempo real no Google Maps",
+            "5+ caixas de envio — configuradas e aquecidas",
+            "1–2 semanas de aquecimento da caixa antes do lançamento",
+            "Segmentação múltipla (indústrias, cidades ou ofertas)",
+            "Sequência de 3 emails por segmento",
+            "Teste A/B em linhas de assunto e corpo",
+            "Monitorização de entregabilidade prioritária",
+            "Chamada mensal de estratégia + relatório"
+          ]
+        }
+      }
     }
   },
   "FAQPage": {
@@ -3148,6 +3210,213 @@
       "title": "Pronto para fazer a sua primeira referência?",
       "description": "Envie-nos um WhatsApp com o nome e contacto de quem está a referir. Nós tratamos do resto e mantemo-lo informado em cada etapa.",
       "button": "Enviar referência pelo WhatsApp"
+    }
+  },
+  "ColdEmailPage": {
+    "hero": {
+      "badge": "Outreach por Email Frio — 100% Gerido",
+      "title": "Alcance os seus clientes ideais.",
+      "titleHighlight": "Enquanto dorme.",
+      "description": "Tratamos de tudo — encontramos os contactos certos, escrevemos os emails, configuramos a infraestrutura e enviamos as sequências. Só precisa de fazer uma coisa: responder aos interessados.",
+      "cta": "Iniciar Campanha"
+    },
+    "stats": {
+      "replyRate": {
+        "value": "3–8%",
+        "label": "Taxa média de resposta — benchmark do setor"
+      },
+      "launchDays": {
+        "value": "3–5",
+        "label": "Dias úteis até ao lançamento da campanha"
+      },
+      "toolsCost": {
+        "value": "CHF 0",
+        "label": "Ferramentas a comprar — tratamos de tudo"
+      }
+    },
+    "includes": {
+      "badge": "Cada Campanha Inclui",
+      "title": "Tudo tratado. Nada a configurar.",
+      "items": [
+        {
+          "title": "Prospeção de Leads",
+          "desc": "Leads frescos e verificados retirados do Google Maps em tempo real — não uma base de dados com 2 anos. Ajustados ao seu perfil de cliente ideal."
+        },
+        {
+          "title": "Copywriting de Email",
+          "desc": "Uma sequência personalizada de 3 etapas criada para a sua oferta e público específicos. Não é um template genérico — escrita para o seu nicho."
+        },
+        {
+          "title": "Configuração Técnica",
+          "desc": "Configuração de domínio/subdomínio, SPF, DKIM, DMARC e aquecimento de email. Os seus emails chegam à caixa de entrada — não ao spam."
+        },
+        {
+          "title": "Agendamento da Campanha",
+          "desc": "Sequências enviadas via Instantly.ai com timing inteligente e limites diários que protegem a saúde do seu domínio."
+        },
+        {
+          "title": "Monitorização de Entregabilidade",
+          "desc": "Taxa de rejeição e pontuação de spam monitorizadas ao longo do mês. Detetamos problemas antes de prejudicarem o seu domínio."
+        },
+        {
+          "title": "Relatório Mensal",
+          "desc": "Resumo claro de enviados / abertos / respondidos / rejeitados — mais o que vamos ajustar no próximo mês e porquê."
+        }
+      ]
+    },
+    "packages": {
+      "badge": "Preços",
+      "title": "Preços simples e transparentes",
+      "subtitle": "+ CHF 149 taxa de configuração única (apenas novos clientes) · Mínimo 2 meses · Cancelamento livre após",
+      "mostPopular": "Mais Popular",
+      "from": "A partir de CHF",
+      "perMonth": "/mês",
+      "getStarted": "Começar",
+      "leadsOnly": "Precisa apenas de leads, sem gestão de campanha? Fornecemos listas verificadas a partir de CHF 90 por lista. Pergunte via WhatsApp.",
+      "starter": {
+        "name": "Campaign Starter",
+        "contacts": "100 contactos/mês",
+        "replies": "~3–8 respostas/mês",
+        "features": [
+          "100 leads hiper-locais/mês — recolhidos em tempo real no Google Maps",
+          "1 caixa de envio — configurada e aquecida",
+          "1–2 semanas de aquecimento antes do lançamento",
+          "Sequência de 3 emails personalizada",
+          "Configuração no Instantly.ai",
+          "Monitorização de entregabilidade",
+          "Relatório mensal de desempenho"
+        ]
+      },
+      "growth": {
+        "name": "Campaign Growth",
+        "contacts": "250 contactos/mês",
+        "replies": "~8–20 respostas/mês",
+        "features": [
+          "250 leads hiper-locais/mês — recolhidos em tempo real no Google Maps",
+          "Até 3 caixas de envio — configuradas e aquecidas",
+          "1–2 semanas de aquecimento antes do lançamento",
+          "Sequência de 3 emails personalizada",
+          "Teste A/B em linhas de assunto",
+          "Configuração no Instantly.ai",
+          "Monitorização de entregabilidade",
+          "Relatório mensal + recomendações"
+        ]
+      },
+      "pro": {
+        "name": "Campaign Pro",
+        "contacts": "500+ contactos/mês",
+        "replies": "~15–40 respostas/mês",
+        "features": [
+          "500+ leads hiper-locais/mês — recolhidos em tempo real no Google Maps",
+          "5+ caixas de envio — configuradas e aquecidas",
+          "1–2 semanas de aquecimento antes do lançamento",
+          "Segmentação múltipla (indústrias, cidades ou ofertas)",
+          "Sequência de 3 emails personalizada por segmento",
+          "Teste A/B em linhas de assunto + corpo",
+          "Monitorização de entregabilidade prioritária",
+          "Chamada mensal de estratégia + relatório completo",
+          "Volume personalizado disponível — preço escala com os contactos"
+        ]
+      }
+    },
+    "howItWorks": {
+      "badge": "Como Funciona",
+      "title": "Do zero às respostas em menos de uma semana",
+      "steps": [
+        {
+          "title": "Defina o seu cliente ideal",
+          "desc": "Diga-nos quem quer alcançar: setor, cidade e tipo de empresa. Por exemplo: 'clínicas dentárias no Porto' ou 'escritórios de advogados em Lisboa'. Quanto mais específico, melhores os resultados."
+        },
+        {
+          "title": "Nós construímos a sua campanha",
+          "desc": "Fazemos a lista de leads, escrevemos a sequência de 3 emails personalizada, configuramos a infraestrutura de envio e preparamos tudo no Instantly. Normalmente pronto em 3–5 dias úteis."
+        },
+        {
+          "title": "Campanha entra em produção",
+          "desc": "Os emails são enviados em lotes diários com delays inteligentes para maximizar a entregabilidade. Monitorizamos taxas de abertura, rejeições e respostas ao longo do mês para manter o domínio saudável."
+        },
+        {
+          "title": "Respostas chegam — otimizamos",
+          "desc": "Os interessados respondem diretamente para a sua caixa de entrada. No final de cada mês enviamos um relatório e ajustamos a campanha seguinte com base no que está a funcionar."
+        }
+      ]
+    },
+    "comparison": {
+      "badge": "Comparação de Mercado",
+      "title": "Como nos comparamos",
+      "subtitle": "Uma agência de cold email completa cobra CHF 2.000–8.000/mês pelo mesmo resultado.",
+      "headers": {
+        "option": "Opção",
+        "cost": "Custo/mês",
+        "effort": "O seu esforço",
+        "tracking": "Tracking"
+      },
+      "rows": [
+        {
+          "option": "Outreach manual no LinkedIn",
+          "cost": "CHF 0–60",
+          "effort": "Muito alto",
+          "tracking": "Nenhum"
+        },
+        {
+          "option": "Ferramentas DIY (Apollo + Instantly)",
+          "cost": "CHF 150–400",
+          "effort": "Muito alto",
+          "tracking": "Básico"
+        },
+        {
+          "option": "Agência de cold email (serviço completo)",
+          "cost": "CHF 2.000+",
+          "effort": "Baixo",
+          "tracking": "Sim"
+        },
+        {
+          "option": "Lopes2Tech",
+          "cost": "CHF 390–990+",
+          "effort": "Muito baixo",
+          "tracking": "Sim"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Perguntas Frequentes",
+      "subtitle": "Tudo o que precisa de saber antes de começar.",
+      "items": [
+        {
+          "question": "Funcionará para o meu setor?",
+          "answer": "O cold email funciona em quase todos os contextos B2B onde existe um decisor claro a alcançar. Funciona especialmente bem para serviços profissionais (advogados, contabilistas, clínicas), agências, consultores, empresas de software e negócios locais que visam outras empresas. Não é adequado para B2C ou setores altamente regulados (finanças, farmacêuticos) sem etapas adicionais de conformidade."
+        },
+        {
+          "question": "Quantas respostas posso esperar realisticamente?",
+          "answer": "O benchmark do setor para campanhas de cold email bem direcionadas é uma taxa de resposta de 3–8%. Em 100 contactos, isso significa 3–8 respostas por mês — nem todas irão converter. Os resultados dependem muito da clareza da oferta, da especificidade do target e da compelling da sua proposta de valor. Somos transparentes quanto a isto desde o início."
+        },
+        {
+          "question": "Para que serve a taxa de configuração?",
+          "answer": "A taxa única de CHF 149 cobre: criação e configuração de um subdomínio de envio (para proteger o seu domínio principal), configuração de registos DNS SPF/DKIM/DMARC, ligação da caixa ao Instantly.ai, e execução de um aquecimento de email de 2 semanas para que a primeira campanha chegue à caixa de entrada em vez de spam. Só é cobrada uma vez — nunca nas renovações."
+        },
+        {
+          "question": "O meu domínio principal ficará em risco?",
+          "answer": "Não. Usamos sempre um subdomínio de envio (ex.: mail.seudominio.com) — nunca o domínio principal. Isso isola completamente a reputação do seu email principal da campanha. Na improvável eventualidade de problemas de entregabilidade, o seu email de negócios não é afetado."
+        },
+        {
+          "question": "Quanto tempo até ver resultados?",
+          "answer": "As primeiras 2 semanas são dedicadas ao aquecimento (necessário para a colocação na caixa de entrada). As campanhas normalmente entram em produção na semana 3. As primeiras respostas chegam geralmente dias após o lançamento. Espere os primeiros dados significativos e recomendações de otimização após o primeiro mês completo."
+        },
+        {
+          "question": "Posso cancelar após o compromisso mínimo?",
+          "answer": "Sim. Após o mínimo de 2 meses, o serviço é mensal. Cancele a qualquer momento com 30 dias de aviso — sem contratos anuais, sem penalidades."
+        },
+        {
+          "question": "Preciso de comprar ferramentas ou software?",
+          "answer": "Não. Tratamos do Instantly.ai, da base de dados de leads, da verificação de email e de toda a infraestrutura técnica. Não precisa de comprar ou configurar nada."
+        }
+      ]
+    },
+    "cta": {
+      "badge": "Pronto para Começar?",
+      "title": "Construa um pipeline de clientes previsível",
+      "description": "Pare de esperar por referências. Deixe-nos construir e gerir o seu outreach — enquanto se foca em entregar valor aos clientes que respondem.",
+      "button": "Agendar Chamada Gratuita"
     }
   }
 }

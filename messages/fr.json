@@ -2178,6 +2178,68 @@
       "a7": "L'email froid consiste à contacter directement des entreprises spécifiques via des séquences d'emails personnalisées. Contrairement aux publicités — qui s'affichent auprès d'audiences larges et nécessitent des dépenses continues — l'email froid cible les décideurs directement pour un forfait mensuel fixe, sans coût par clic. Cela fonctionne mieux pour les offres B2B où vous savez exactement qui est votre client idéal.",
       "q8": "Puis-je combiner l'email froid avec les réseaux sociaux ou les publicités ?",
       "a8": "Oui — et c'est une combinaison puissante. L'email froid génère des réponses directes de prospects ciblés, tandis que les réseaux sociaux construisent la notoriété et la confiance dans le temps. Les clients qui voient votre contenu avant de recevoir un email sont beaucoup plus susceptibles de répondre. Nous pouvons vous aider à gérer les deux canaux dans une stratégie coordonnée."
+    },
+    "coldEmail": {
+      "badge": "Outreach par Email Froid",
+      "title": "Atteignez vos clients",
+      "titleHighlight": "directement dans leur boîte mail",
+      "description": "Campagnes d'email froid entièrement gérées pour vous. Nous sourceons les prospects, rédigeons les séquences, configurons l'infrastructure et gérons les envois.",
+      "descriptionHighlight": "Vous répondez uniquement aux prospects intéressés.",
+      "divider": "ou",
+      "mostPopular": "Le plus populaire",
+      "from": "À partir de",
+      "perMonth": "/mois",
+      "setupFee": "+ CHF 149 configuration unique (nouveaux clients uniquement)",
+      "customPricing": "Tarification personnalisée selon le volume",
+      "getStarted": "Commencer",
+      "footerNote": "Engagement minimum de 2 mois · Résiliation libre ensuite · Prix en CHF (marché suisse) · Besoin uniquement de leads ?",
+      "footerLink": "Voir tous les détails →",
+      "packages": {
+        "starter": {
+          "name": "Campaign Starter",
+          "contacts": "100 contacts/mois",
+          "replies": "~3–8 réponses/mois",
+          "features": [
+            "100 leads hyper-locaux/mois — sourcés en direct sur Google Maps",
+            "1 boîte d'envoi — configurée & réchauffée",
+            "1–2 semaines de chauffe de boîte avant le lancement",
+            "Séquence email personnalisée en 3 étapes",
+            "Configuration de campagne Instantly.ai",
+            "Surveillance de la délivrabilité",
+            "Rapport de performance mensuel"
+          ]
+        },
+        "growth": {
+          "name": "Campaign Growth",
+          "contacts": "250 contacts/mois",
+          "replies": "~8–20 réponses/mois",
+          "features": [
+            "250 leads hyper-locaux/mois — sourcés en direct sur Google Maps",
+            "Jusqu'à 3 boîtes d'envoi — configurées & réchauffées",
+            "1–2 semaines de chauffe de boîte avant le lancement",
+            "Séquence email personnalisée en 3 étapes",
+            "Test A/B sur les lignes d'objet",
+            "Configuration de campagne Instantly.ai",
+            "Surveillance de la délivrabilité",
+            "Rapport mensuel + recommandations"
+          ]
+        },
+        "pro": {
+          "name": "Campaign Pro",
+          "contacts": "500+ contacts/mois",
+          "replies": "~15–40 réponses/mois",
+          "features": [
+            "500+ leads hyper-locaux/mois — sourcés en direct sur Google Maps",
+            "5+ boîtes d'envoi — configurées & réchauffées",
+            "1–2 semaines de chauffe de boîte avant le lancement",
+            "Ciblage multi-segment (secteurs, villes ou offres)",
+            "Séquence en 3 étapes par segment",
+            "Test A/B sur lignes d'objet + contenu",
+            "Surveillance prioritaire de la délivrabilité",
+            "Appel stratégique mensuel + rapport"
+          ]
+        }
+      }
     }
   },
   "MediumBanner": {
@@ -3148,6 +3210,213 @@
       "title": "Prêt pour votre première recommandation ?",
       "description": "Envoyez-nous juste un WhatsApp avec le nom et les coordonnées de la personne que vous recommandez. Nous prenons le relais et vous tenons informé à chaque étape.",
       "button": "Envoyer une recommandation par WhatsApp"
+    }
+  },
+  "ColdEmailPage": {
+    "hero": {
+      "badge": "Cold Outreach — Entièrement géré",
+      "title": "Atteignez vos clients idéaux.",
+      "titleHighlight": "Pendant que vous dormez.",
+      "description": "Nous gérons tout — trouver les bons contacts, rédiger les emails, configurer l'infrastructure et envoyer les séquences. Vous n'avez qu'une seule chose à faire : répondre aux prospects intéressés.",
+      "cta": "Lancer ma campagne"
+    },
+    "stats": {
+      "replyRate": {
+        "value": "3–8%",
+        "label": "Taux de réponse moyen — benchmark du secteur"
+      },
+      "launchDays": {
+        "value": "3–5",
+        "label": "Jours ouvrés jusqu'au lancement de la campagne"
+      },
+      "toolsCost": {
+        "value": "CHF 0",
+        "label": "Outils à acheter — nous gérons tout"
+      }
+    },
+    "includes": {
+      "badge": "Chaque campagne comprend",
+      "title": "Tout géré. Rien à configurer.",
+      "items": [
+        {
+          "title": "Prospection de leads",
+          "desc": "Des leads frais et vérifiés sourcés depuis Google Maps en temps réel — pas une base de données vieille de 2 ans. Correspondant exactement à votre profil cible."
+        },
+        {
+          "title": "Rédaction des emails",
+          "desc": "Une séquence personnalisée en 3 étapes créée pour votre offre et votre audience spécifiques. Pas un template générique — écrit pour votre niche."
+        },
+        {
+          "title": "Configuration technique",
+          "desc": "Configuration domaine/sous-domaine, SPF, DKIM, DMARC et réchauffement d'email. Vos emails arrivent en boîte de réception — pas en spam."
+        },
+        {
+          "title": "Planification de campagne",
+          "desc": "Séquences envoyées via Instantly.ai avec un timing intelligent et des limites journalières qui protègent la santé de votre domaine."
+        },
+        {
+          "title": "Surveillance de la délivrabilité",
+          "desc": "Taux de rebond et score spam suivis tout au long du mois. Nous détectons les problèmes avant qu'ils n'endommagent votre domaine."
+        },
+        {
+          "title": "Rapport mensuel",
+          "desc": "Récapitulatif clair des envoyés / ouverts / répondus / rejetés — plus ce que nous ajustons le mois prochain et pourquoi."
+        }
+      ]
+    },
+    "packages": {
+      "badge": "Tarifs",
+      "title": "Des tarifs simples et transparents",
+      "subtitle": "+ CHF 149 frais de configuration uniques (nouveaux clients uniquement) · Minimum 2 mois · Résiliation libre ensuite",
+      "mostPopular": "Le plus populaire",
+      "from": "À partir de CHF",
+      "perMonth": "/mois",
+      "getStarted": "Commencer",
+      "leadsOnly": "Besoin uniquement de leads, sans gestion de campagne ? Nous fournissons des listes vérifiées à partir de CHF 90 par liste. Demandez via WhatsApp.",
+      "starter": {
+        "name": "Campaign Starter",
+        "contacts": "100 contacts/mois",
+        "replies": "~3–8 réponses/mois",
+        "features": [
+          "100 leads hyper-locaux/mois — sourcés en direct sur Google Maps",
+          "1 boîte d'envoi — configurée & réchauffée",
+          "1–2 semaines de réchauffement avant le lancement",
+          "Séquence email personnalisée en 3 étapes",
+          "Configuration de campagne Instantly.ai",
+          "Surveillance de la délivrabilité",
+          "Rapport mensuel de performance"
+        ]
+      },
+      "growth": {
+        "name": "Campaign Growth",
+        "contacts": "250 contacts/mois",
+        "replies": "~8–20 réponses/mois",
+        "features": [
+          "250 leads hyper-locaux/mois — sourcés en direct sur Google Maps",
+          "Jusqu'à 3 boîtes d'envoi — configurées & réchauffées",
+          "1–2 semaines de réchauffement avant le lancement",
+          "Séquence email personnalisée en 3 étapes",
+          "Test A/B sur les lignes d'objet",
+          "Configuration de campagne Instantly.ai",
+          "Surveillance de la délivrabilité",
+          "Rapport mensuel + recommandations"
+        ]
+      },
+      "pro": {
+        "name": "Campaign Pro",
+        "contacts": "500+ contacts/mois",
+        "replies": "~15–40 réponses/mois",
+        "features": [
+          "500+ leads hyper-locaux/mois — sourcés en direct sur Google Maps",
+          "5+ boîtes d'envoi — configurées & réchauffées",
+          "1–2 semaines de réchauffement avant le lancement",
+          "Ciblage multi-segment (secteurs, villes ou offres)",
+          "Séquence email personnalisée en 3 étapes par segment",
+          "Test A/B sur lignes d'objet + contenu",
+          "Surveillance prioritaire de la délivrabilité",
+          "Appel stratégique mensuel + rapport complet",
+          "Volume personnalisé disponible — le prix évolue avec les contacts"
+        ]
+      }
+    },
+    "howItWorks": {
+      "badge": "Comment ça fonctionne",
+      "title": "De zéro aux réponses en moins d'une semaine",
+      "steps": [
+        {
+          "title": "Définissez votre client idéal",
+          "desc": "Dites-nous qui vous souhaitez atteindre : secteur, ville et type d'entreprise. Par exemple : 'cabinets dentaires à Genève' ou 'cabinets d'avocats à Zurich'. Plus vous êtes précis, meilleurs seront les résultats."
+        },
+        {
+          "title": "Nous construisons votre campagne",
+          "desc": "Nous sourceons la liste de leads, rédigeons la séquence email personnalisée en 3 étapes, configurons l'infrastructure d'envoi et mettons tout en place dans Instantly. Généralement prêt en 3–5 jours ouvrés."
+        },
+        {
+          "title": "La campagne se lance",
+          "desc": "Les emails partent en lots journaliers avec des délais intelligents pour maximiser la délivrabilité. Nous surveillons les taux d'ouverture, les rebonds et les réponses tout au long du mois."
+        },
+        {
+          "title": "Les réponses arrivent — nous optimisons",
+          "desc": "Les prospects intéressés répondent directement dans votre boîte. À la fin de chaque mois, nous envoyons un rapport de performance et ajustons la campagne suivante en fonction de ce qui fonctionne."
+        }
+      ]
+    },
+    "comparison": {
+      "badge": "Comparaison du marché",
+      "title": "Comment nous nous comparons",
+      "subtitle": "Une agence d'email froid full-service facture CHF 2 000–8 000/mois pour le même résultat.",
+      "headers": {
+        "option": "Option",
+        "cost": "Coût/mois",
+        "effort": "Votre effort",
+        "tracking": "Suivi"
+      },
+      "rows": [
+        {
+          "option": "Outreach manuel sur LinkedIn",
+          "cost": "CHF 0–60",
+          "effort": "Très élevé",
+          "tracking": "Aucun"
+        },
+        {
+          "option": "Outils DIY (Apollo + Instantly)",
+          "cost": "CHF 150–400",
+          "effort": "Très élevé",
+          "tracking": "Basique"
+        },
+        {
+          "option": "Agence cold email (full-service)",
+          "cost": "CHF 2 000+",
+          "effort": "Faible",
+          "tracking": "Oui"
+        },
+        {
+          "option": "Lopes2Tech",
+          "cost": "CHF 390–990+",
+          "effort": "Très faible",
+          "tracking": "Oui"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Questions fréquentes",
+      "subtitle": "Tout ce que vous devez savoir avant de commencer.",
+      "items": [
+        {
+          "question": "Est-ce que ça fonctionnera pour mon secteur ?",
+          "answer": "L'email froid fonctionne dans presque tous les contextes B2B où il y a un décideur clair à atteindre. Il fonctionne particulièrement bien pour les services professionnels (avocats, comptables, cliniques), les agences, les consultants, les éditeurs de logiciels et les entreprises locales ciblant d'autres entreprises."
+        },
+        {
+          "question": "Combien de réponses puis-je réalistement espérer ?",
+          "answer": "Le benchmark du secteur pour des campagnes d'email froid bien ciblées et personnalisées est un taux de réponse de 3–8%. Sur 100 contacts, cela représente 3–8 réponses par mois — toutes ne convertiront pas. Les résultats dépendent fortement de la clarté de l'offre, de la précision du ciblage et de la force de votre proposition de valeur."
+        },
+        {
+          "question": "À quoi servent les frais de configuration ?",
+          "answer": "Les CHF 149 uniques couvrent : la création et configuration d'un sous-domaine d'envoi, la mise en place des enregistrements DNS SPF/DKIM/DMARC, la connexion à Instantly.ai, et un réchauffement d'email de 2 semaines. Facturés une seule fois — jamais lors des renouvellements."
+        },
+        {
+          "question": "Mon domaine principal sera-t-il en danger ?",
+          "answer": "Non. Nous utilisons toujours un sous-domaine d'envoi (ex. : mail.votredomaine.com) — jamais votre domaine principal. Cela isole complètement la réputation de votre email principal de la campagne."
+        },
+        {
+          "question": "Combien de temps avant de voir des résultats ?",
+          "answer": "Les 2 premières semaines sont consacrées au réchauffement. Les campagnes se lancent généralement à la semaine 3. Les premières réponses arrivent habituellement quelques jours après le lancement. Attendez les premières données significatives après le premier mois complet."
+        },
+        {
+          "question": "Puis-je annuler après l'engagement minimum ?",
+          "answer": "Oui. Après le minimum de 2 mois, le service est mensuel. Annulez à tout moment avec 30 jours de préavis — pas de contrats annuels, pas de pénalités."
+        },
+        {
+          "question": "Dois-je acheter des outils ou des logiciels ?",
+          "answer": "Non. Nous gérons Instantly.ai, la base de données de leads, la vérification des emails et toute l'infrastructure technique. Vous n'avez rien à acheter ni à configurer."
+        }
+      ]
+    },
+    "cta": {
+      "badge": "Prêt à commencer ?",
+      "title": "Construisez un pipeline client prévisible",
+      "description": "Arrêtez d'attendre les recommandations. Laissez-nous construire et gérer votre cold outreach — pendant que vous vous concentrez sur la livraison pour les clients qui répondent.",
+      "button": "Appel stratégique gratuit"
     }
   }
 }

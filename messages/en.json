@@ -2002,6 +2002,68 @@
       "a7": "Cold email is direct outreach to specific businesses via personalised email sequences. Unlike ads — which show to broad audiences and require ongoing ad spend — cold email targets decision-makers directly at a fixed monthly fee with no cost per click. It works best for B2B offers where you know exactly who your ideal client is.",
       "q8": "Can I combine cold email with social media or ads?",
       "a8": "Yes — and it is a powerful combination. Cold email generates direct replies from targeted prospects, while social media builds awareness and trust over time. Clients who see your content before receiving an email are significantly more likely to reply. We can help you run both channels in a coordinated strategy."
+    },
+    "coldEmail": {
+      "badge": "Cold Email Outreach",
+      "title": "Reach clients",
+      "titleHighlight": "directly in their inbox",
+      "description": "Fully done-for-you cold email campaigns. We source the leads, write the sequences, set up the infrastructure, and manage the sending.",
+      "descriptionHighlight": "You only reply to interested prospects.",
+      "divider": "or",
+      "mostPopular": "Most Popular",
+      "from": "From",
+      "perMonth": "/mo",
+      "setupFee": "+ CHF 149 one-time setup (new clients only)",
+      "customPricing": "Custom pricing based on volume",
+      "getStarted": "Get Started",
+      "footerNote": "Minimum 2-month commitment · Cancel anytime after · Prices in CHF (Swiss market) · Need leads only?",
+      "footerLink": "See full cold email details →",
+      "packages": {
+        "starter": {
+          "name": "Campaign Starter",
+          "contacts": "100 contacts/mo",
+          "replies": "~3–8 replies/mo",
+          "features": [
+            "100 hyper-local leads/month — sourced live from Google Maps",
+            "1 sending inbox — configured & warmed up",
+            "1–2 week inbox warmup before launch",
+            "3-step personalised email sequence",
+            "Instantly.ai campaign setup",
+            "Deliverability monitoring",
+            "Monthly performance report"
+          ]
+        },
+        "growth": {
+          "name": "Campaign Growth",
+          "contacts": "250 contacts/mo",
+          "replies": "~8–20 replies/mo",
+          "features": [
+            "250 hyper-local leads/month — sourced live from Google Maps",
+            "Up to 3 sending inboxes — configured & warmed up",
+            "1–2 week inbox warmup before launch",
+            "3-step personalised email sequence",
+            "A/B test on subject lines",
+            "Instantly.ai campaign setup",
+            "Deliverability monitoring",
+            "Monthly report + recommendations"
+          ]
+        },
+        "pro": {
+          "name": "Campaign Pro",
+          "contacts": "500+ contacts/mo",
+          "replies": "~15–40 replies/mo",
+          "features": [
+            "500+ hyper-local leads/month — sourced live from Google Maps",
+            "5+ sending inboxes — configured & warmed up",
+            "1–2 week inbox warmup before launch",
+            "Multi-segment targeting (industries, cities, or offers)",
+            "3-step sequence per segment",
+            "A/B test on subject lines + copy",
+            "Priority deliverability monitoring",
+            "Monthly strategy call + report"
+          ]
+        }
+      }
     }
   },
   "FAQPage": {
@@ -3148,6 +3210,213 @@
       "title": "Ready to make your first referral?",
       "description": "Just drop us a WhatsApp with the name and contact of who you're referring. We'll take it from there and keep you updated on every step.",
       "button": "Send referral on WhatsApp"
+    }
+  },
+  "ColdEmailPage": {
+    "hero": {
+      "badge": "Done-for-You Cold Outreach",
+      "title": "Reach your ideal clients.",
+      "titleHighlight": "While you sleep.",
+      "description": "We handle everything — finding the right contacts, writing the emails, setting up the infrastructure, and sending the sequences. You only need to do one thing: reply to interested prospects.",
+      "cta": "Start Your Campaign"
+    },
+    "stats": {
+      "replyRate": {
+        "value": "3–8%",
+        "label": "Average reply rate — industry benchmark"
+      },
+      "launchDays": {
+        "value": "3–5",
+        "label": "Business days to campaign launch"
+      },
+      "toolsCost": {
+        "value": "CHF 0",
+        "label": "Tools to buy — we handle everything"
+      }
+    },
+    "includes": {
+      "badge": "Every Campaign Includes",
+      "title": "Everything handled. Nothing to set up.",
+      "items": [
+        {
+          "title": "Lead Prospecting",
+          "desc": "Fresh, verified leads sourced from Google Maps in real time — not a 2-year-old database. Matched to your exact target profile."
+        },
+        {
+          "title": "Email Copywriting",
+          "desc": "A personalised 3-step sequence crafted for your specific offer and audience. Not a generic template — written for your niche."
+        },
+        {
+          "title": "Technical Setup",
+          "desc": "Domain/subdomain config, SPF, DKIM, DMARC, and email warmup. Your emails reach the inbox — not spam."
+        },
+        {
+          "title": "Campaign Scheduling",
+          "desc": "Sequences sent via Instantly.ai with smart timing and daily limits that protect your domain health."
+        },
+        {
+          "title": "Deliverability Monitoring",
+          "desc": "Bounce rate and spam score tracked throughout the month. We catch problems before they damage your domain."
+        },
+        {
+          "title": "Monthly Report",
+          "desc": "Clear breakdown of sent / opened / replied / bounced — plus what we're adjusting next month and why."
+        }
+      ]
+    },
+    "packages": {
+      "badge": "Pricing",
+      "title": "Simple, transparent pricing",
+      "subtitle": "+ CHF 149 one-time setup fee (new clients only) · Minimum 2 months · Cancel anytime after",
+      "mostPopular": "Most Popular",
+      "from": "From CHF",
+      "perMonth": "/mo",
+      "getStarted": "Get Started",
+      "leadsOnly": "Need leads only, without campaign management? We provide verified lead lists from CHF 90 per list. Ask via WhatsApp.",
+      "starter": {
+        "name": "Campaign Starter",
+        "contacts": "100 contacts/mo",
+        "replies": "~3–8 replies/mo",
+        "features": [
+          "100 hyper-local leads/month — sourced live from Google Maps",
+          "1 sending inbox — configured & warmed up",
+          "1–2 week inbox warmup before launch",
+          "3-step personalised email sequence",
+          "Instantly.ai campaign setup",
+          "Deliverability monitoring",
+          "Monthly performance report"
+        ]
+      },
+      "growth": {
+        "name": "Campaign Growth",
+        "contacts": "250 contacts/mo",
+        "replies": "~8–20 replies/mo",
+        "features": [
+          "250 hyper-local leads/month — sourced live from Google Maps",
+          "Up to 3 sending inboxes — configured & warmed up",
+          "1–2 week inbox warmup before launch",
+          "3-step personalised email sequence",
+          "A/B test on subject lines",
+          "Instantly.ai campaign setup",
+          "Deliverability monitoring",
+          "Monthly performance report + recommendations"
+        ]
+      },
+      "pro": {
+        "name": "Campaign Pro",
+        "contacts": "500+ contacts/mo",
+        "replies": "~15–40 replies/mo",
+        "features": [
+          "500+ hyper-local leads/month — sourced live from Google Maps",
+          "5+ sending inboxes — configured & warmed up",
+          "1–2 week inbox warmup before launch",
+          "Multi-segment targeting (industries, cities, or offers)",
+          "3-step personalised email sequence per segment",
+          "A/B test on subject lines + copy",
+          "Priority deliverability monitoring",
+          "Monthly strategy call + full performance report",
+          "Custom volume available — price scales with contacts"
+        ]
+      }
+    },
+    "howItWorks": {
+      "badge": "How It Works",
+      "title": "From zero to replies in under a week",
+      "steps": [
+        {
+          "title": "Define your ideal client",
+          "desc": "Tell us who you want to reach: industry, city, and company type. For example: 'dental clinics in Zurich' or 'law firms in Geneva'. The more specific, the better the results."
+        },
+        {
+          "title": "We build your campaign",
+          "desc": "We source the lead list, write the personalised 3-step email sequence, configure the sending infrastructure, and set everything up in Instantly. Typically ready in 3–5 business days."
+        },
+        {
+          "title": "Campaign goes live",
+          "desc": "Emails go out in daily batches with smart delays to maximise deliverability. We monitor open rates, bounces, and replies throughout the month to keep your domain healthy."
+        },
+        {
+          "title": "Replies come in — we optimise",
+          "desc": "Interested prospects reply directly to your inbox. At the end of each month we send a performance report and adjust the next campaign based on what's working."
+        }
+      ]
+    },
+    "comparison": {
+      "badge": "Market Comparison",
+      "title": "How we compare",
+      "subtitle": "A full-service cold email agency charges CHF 2,000–8,000/month for the same outcome.",
+      "headers": {
+        "option": "Option",
+        "cost": "Cost/mo",
+        "effort": "Your effort",
+        "tracking": "Tracking"
+      },
+      "rows": [
+        {
+          "option": "Manual LinkedIn outreach",
+          "cost": "CHF 0–60",
+          "effort": "Very high",
+          "tracking": "None"
+        },
+        {
+          "option": "DIY tools (Apollo + Instantly)",
+          "cost": "CHF 150–400",
+          "effort": "Very high",
+          "tracking": "Basic"
+        },
+        {
+          "option": "Cold email agency (full-service)",
+          "cost": "CHF 2,000+",
+          "effort": "Low",
+          "tracking": "Yes"
+        },
+        {
+          "option": "Lopes2Tech",
+          "cost": "CHF 390–990+",
+          "effort": "Very low",
+          "tracking": "Yes"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Everything you need to know before starting.",
+      "items": [
+        {
+          "question": "Will this work for my industry?",
+          "answer": "Cold email works in almost any B2B context where there is a clear decision-maker to reach. It works especially well for professional services (lawyers, accountants, clinics), agencies, consultants, software companies, and local businesses targeting other businesses. It is not suitable for B2C or highly regulated industries (finance, pharmaceuticals) without additional compliance steps."
+        },
+        {
+          "question": "How many replies can I realistically expect?",
+          "answer": "Industry benchmark for well-targeted, personalised cold email campaigns is 3–8% reply rate. On 100 contacts that means 3–8 replies per month — not all of which will convert. Results depend heavily on offer clarity, target specificity, and how compelling your value proposition is. We are transparent about this upfront."
+        },
+        {
+          "question": "What is the setup fee for?",
+          "answer": "The one-time CHF 149 setup fee covers: creating and configuring a sending subdomain (to protect your main domain), setting up SPF/DKIM/DMARC DNS records, connecting the inbox to Instantly.ai, and running a 2-week email warmup so your first campaign hits the inbox instead of spam. This is only charged once — never on renewals."
+        },
+        {
+          "question": "Will my main domain be at risk?",
+          "answer": "No. We always use a sending subdomain (e.g., mail.yourdomain.com) — never your main domain. This completely isolates your primary email reputation from the campaign. In the unlikely event of any deliverability issues, your business email is unaffected."
+        },
+        {
+          "question": "How long before I see results?",
+          "answer": "The first 2 weeks are spent on warmup (required for inbox placement). Campaigns typically go live in week 3. First replies usually start coming in within days of launch. Expect the first meaningful data and optimisation recommendations after the first full month."
+        },
+        {
+          "question": "Can I cancel after the minimum commitment?",
+          "answer": "Yes. After the 2-month minimum, the service is month-to-month. Cancel any time with 30 days' notice — no annual contracts, no penalties."
+        },
+        {
+          "question": "Do I need to buy any tools or software?",
+          "answer": "No. We handle Instantly.ai, the lead database, email verification, and all technical infrastructure. You do not need to purchase or set up anything yourself."
+        }
+      ]
+    },
+    "cta": {
+      "badge": "Ready to Start?",
+      "title": "Build a predictable client pipeline",
+      "description": "Stop waiting for referrals. Let us build and run your cold outreach — while you focus on delivering for the clients who reply.",
+      "button": "Get a Free Strategy Call"
     }
   }
 }
