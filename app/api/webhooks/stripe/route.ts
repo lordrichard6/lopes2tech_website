@@ -2,12 +2,17 @@ import Stripe from "stripe";
 import { Resend } from "resend";
 import { NextRequest, NextResponse } from "next/server";
 
-// ─── Stripe client ────────────────────────────────────────────────────────────
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY ?? "", {
-    apiVersion: "2026-02-25.clover",
-});
+// ─── Stripe client (lazy) ────────────────────────────────────────────────────
+// Instantiated lazily so a missing key never crashes at module load time (build)
+let stripe: Stripe | null = null;
+function getStripe(): Stripe {
+    if (!stripe) stripe = new Stripe(process.env.STRIPE_SECRET_KEY ?? "", {
+        apiVersion: "2026-02-25.clover",
+    });
+    return stripe;
+}
 
-// Instantiated lazily inside the handler so a missing key never crashes at module load time
+// Resend — also lazy
 let resend: Resend | null = null;
 function getResend(): Resend {
     if (!resend) resend = new Resend(process.env.RESEND_API_KEY);
@@ -236,7 +241,7 @@ export async function POST(req: NextRequest) {
     // ── Verify signature ──────────────────────────────────────────────────────
     let event: Stripe.Event;
     try {
-        event = stripe.webhooks.constructEvent(body, sig, webhookSecret);
+        event = getStripe().webhooks.constructEvent(body, sig, webhookSecret);
     } catch (err) {
         console.error("Webhook signature verification failed:", err);
         return NextResponse.json({ error: "Invalid signature" }, { status: 400 });
