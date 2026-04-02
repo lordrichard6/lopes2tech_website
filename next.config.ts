@@ -9,6 +9,15 @@ const nextConfig: NextConfig = {
   reactCompiler: true,
   compress: true, // Enable gzip/brotli compression
 
+  redirects: async () => [
+    // Redirect non-locale onboarding URLs to the default locale
+    {
+      source: '/onboarding/:path*',
+      destination: '/en/onboarding/:path*',
+      permanent: false,
+    },
+  ],
+
   headers: async () => [
     {
       source: '/:path*',
