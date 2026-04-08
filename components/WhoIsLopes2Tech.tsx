@@ -6,10 +6,10 @@ import { useTranslations } from "next-intl";
 import { Code2, TrendingUp, Megaphone, Zap, CheckCircle2, X } from "lucide-react";
 
 const differentiators = [
-  { key: "engineering", icon: Code2,       color: "from-cyan-500/20 to-cyan-500/5",    border: "border-cyan-500/20",    glow: "rgba(6,182,212,0.15)"  },
-  { key: "marketing",   icon: TrendingUp,  color: "from-purple-500/20 to-purple-500/5", border: "border-purple-500/20", glow: "rgba(168,85,247,0.15)" },
-  { key: "ads",         icon: Megaphone,   color: "from-rose-500/20 to-rose-500/5",    border: "border-rose-500/20",    glow: "rgba(244,63,94,0.15)",   mobileOnly: true },
-  { key: "automation",  icon: Zap,         color: "from-amber-500/20 to-amber-500/5",  border: "border-amber-500/20",  glow: "rgba(245,158,11,0.15)",  mobileOnly: true },
+  { key: "engineering", icon: Code2,       color: "from-cyan-500/20 to-cyan-500/5",     border: "border-cyan-500/20",    glow: "rgba(6,182,212,0.15)"  },
+  { key: "marketing",   icon: TrendingUp,  color: "from-purple-500/20 to-purple-500/5", border: "border-purple-500/20",  glow: "rgba(168,85,247,0.15)" },
+  { key: "ads",         icon: Megaphone,   color: "from-rose-500/20 to-rose-500/5",     border: "border-rose-500/20",    glow: "rgba(244,63,94,0.15)"  },
+  { key: "automation",  icon: Zap,         color: "from-amber-500/20 to-amber-500/5",   border: "border-amber-500/20",   glow: "rgba(245,158,11,0.15)" },
 ];
 
 const notUs = ["wix", "wordpress", "webflow", "templates", "plugins", "bloated"];
@@ -161,7 +161,7 @@ export default function WhoIsLopes2Tech() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-4xl md:text-6xl font-extrabold tracking-tight text-white leading-[1.1] flex flex-wrap items-center justify-center gap-x-4 gap-y-3"
+            className="text-4xl md:text-6xl font-extrabold tracking-tight text-white leading-[1.1] flex flex-wrap items-center justify-center gap-x-4 gap-y-3 font-[family-name:var(--font-display)]"
           >
             <span>{t("titlePre")}</span>
             <span className="inline-flex items-center gap-3">
@@ -241,7 +241,7 @@ export default function WhoIsLopes2Tech() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: i * 0.08 }}
-                    className={`rounded-2xl border ${d.border} bg-gradient-to-br ${d.color} p-5 backdrop-blur-sm ${'mobileOnly' in d && d.mobileOnly ? 'md:hidden' : ''}`}
+                    className={`rounded-2xl border ${d.border} bg-gradient-to-br ${d.color} p-5 backdrop-blur-sm`}
                     style={{ boxShadow: `0 4px 30px ${d.glow}` }}
                   >
                     <Icon className="w-6 h-6 mb-3 text-white/70" />
@@ -337,9 +337,6 @@ export default function WhoIsLopes2Tech() {
 
       </div>
 
-      <style>{`
-        @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
-      `}</style>
     </section>
   );
 }

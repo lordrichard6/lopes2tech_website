@@ -28,12 +28,12 @@ export default function CTA() {
                 <motion.div
                     animate={{ y: [0, -30, 0] }}
                     transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-                    className="absolute -top-[100px] left-[10%] w-[400px] h-[400px] rounded-full bg-cyan-400 blur-[60px] opacity-40 mix-blend-screen"
+                    className="absolute -top-[100px] left-[10%] w-[400px] h-[400px] rounded-full bg-cyan-400 blur-[80px] opacity-20 md:mix-blend-screen will-change-transform motion-reduce:animate-none"
                 />
                 <motion.div
                     animate={{ y: [0, 30, 0] }}
                     transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 5 }}
-                    className="absolute -bottom-[150px] right-[10%] w-[500px] h-[500px] rounded-full bg-purple-500 blur-[60px] opacity-40 mix-blend-screen"
+                    className="absolute -bottom-[150px] right-[10%] w-[500px] h-[500px] rounded-full bg-purple-500 blur-[80px] opacity-20 md:mix-blend-screen will-change-transform motion-reduce:animate-none"
                 />
             </div>
 
@@ -42,7 +42,7 @@ export default function CTA() {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="text-4xl md:text-6xl font-extrabold mb-6 text-transparent bg-clip-text bg-gradient-to-br from-white to-slate-400 tracking-tight leading-[1.1]"
+                    className="text-4xl md:text-6xl font-extrabold mb-6 text-transparent bg-clip-text bg-gradient-to-br from-white to-slate-400 tracking-tight leading-[1.1] font-[family-name:var(--font-display)]"
                 >
                     {t('title')}
                 </motion.h2>

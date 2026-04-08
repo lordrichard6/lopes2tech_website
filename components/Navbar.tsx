@@ -22,13 +22,23 @@ export default function Navbar() {
     const locale = useLocale();
 
     useEffect(() => {
-        const handleScroll = () => {
-            setIsScrolled(window.scrollY > 50);
-        };
-
-        window.addEventListener("scroll", handleScroll);
+        const handleScroll = () => setIsScrolled(window.scrollY > 50);
+        window.addEventListener("scroll", handleScroll, { passive: true });
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
+
+    // Close menu on route change
+    useEffect(() => {
+        setIsMenuOpen(false);
+        setIsServicesOpen(false);
+        setIsLangOpen(false);
+    }, [pathname]);
+
+    // Lock body scroll when mobile menu is open
+    useEffect(() => {
+        document.body.style.overflow = isMenuOpen ? 'hidden' : '';
+        return () => { document.body.style.overflow = ''; };
+    }, [isMenuOpen]);
 
     // Close language dropdown on outside click
     useEffect(() => {
@@ -151,8 +161,10 @@ export default function Navbar() {
                                         aria-haspopup="true"
                                         aria-expanded={isServicesOpen}
                                         className={clsx(
-                                            "relative text-[0.95rem] font-medium transition-all duration-300 nav-link-shadow inline-flex items-center gap-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 rounded",
-                                            pathname.startsWith("/services") ? "text-white" : "text-white/70 hover:text-white"
+                                            "relative text-[0.95rem] font-medium transition-all duration-300 nav-link-shadow inline-flex items-center gap-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 rounded pb-1 border-b-2",
+                                            pathname.startsWith("/services")
+                                                ? "text-white border-cyan-400"
+                                                : "text-white/70 hover:text-white border-transparent"
                                         )}
                                     >
                                         {t("services")}
@@ -198,8 +210,10 @@ export default function Navbar() {
                                     <Link
                                         href={link.href}
                                         className={clsx(
-                                            "relative text-[0.95rem] font-medium transition-all duration-300 nav-link-shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 rounded",
-                                            pathname === link.href ? "text-white" : "text-white/70 hover:text-white"
+                                            "relative text-[0.95rem] font-medium transition-all duration-300 nav-link-shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 rounded pb-1 border-b-2",
+                                            pathname === link.href
+                                                ? "text-white border-cyan-400"
+                                                : "text-white/70 hover:text-white border-transparent"
                                         )}
                                     >
                                         {t(link.key)}
@@ -208,6 +222,14 @@ export default function Navbar() {
                             )
                         )}
                     </ul>
+
+                    {/* Desktop CTA */}
+                    <Link
+                        href="/contact"
+                        className="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-cyan-500 text-white text-sm font-semibold hover:bg-cyan-400 transition-colors duration-200 shrink-0"
+                    >
+                        {t('cta')}
+                    </Link>
 
                     {/* Desktop Controls */}
                     <div className="hidden md:flex items-center gap-4 pl-6 border-l border-white/10 h-[32px]">
@@ -273,7 +295,10 @@ export default function Navbar() {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: "-100%" }}
                         transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-                        className="fixed inset-0 z-[60] bg-gradient-to-br from-[#08080c]/98 to-[#14141e]/99 backdrop-blur-xl flex flex-col items-center gap-6 pt-28 overflow-x-hidden overflow-y-auto"
+                        aria-modal="true"
+                    role="dialog"
+                    aria-label="Navigation menu"
+                    className="fixed inset-0 z-[60] bg-gradient-to-br from-[#08080c]/98 to-[#14141e]/99 backdrop-blur-xl flex flex-col items-center gap-6 pt-28 overflow-x-hidden overflow-y-auto"
                     >
                         {/* Background glows — decorative */}
                         <div aria-hidden="true" className="absolute top-[-10%] right-[-10%] w-[300px] h-[300px] rounded-full bg-cyan-500/15 blur-[60px] pointer-events-none" />

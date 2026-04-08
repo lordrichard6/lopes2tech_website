@@ -2,8 +2,9 @@
 
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ChevronDown } from "lucide-react";
 import Image from "next/image";
+import { Link } from "@/navigation";
 import { useTranslations } from "next-intl";
 import { trackCTAClick } from "@/lib/analytics";
 import { sendBookingNotificationEmail } from "@/app/actions/contact";
@@ -127,19 +128,19 @@ export default function Hero() {
                 <div className="w-full md:max-w-[60%] flex flex-col items-center md:items-start text-center md:text-left relative z-20">
                     <motion.h1
                         style={{ y: yTitle }}
-                        initial={{ opacity: 0, y: 30 }}
-                        animate={{ opacity: 1, y: 0 }}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
                         transition={{ duration: 0.8, delay: 0.5 }}
-                        className="text-[2.2rem] leading-[1.1] font-extrabold tracking-tight text-white mb-4 md:text-[3.5rem] break-words hyphens-auto text-balance"
+                        className="text-[2.2rem] leading-[1.1] font-extrabold tracking-tight text-white mb-4 md:text-[3.5rem] break-words hyphens-auto text-balance font-[family-name:var(--font-display)]"
                     >
                         <span className="block neon-text-purple">{t('title1')}</span>
                         <span className="block neon-text-blue">{t('title2')}</span>
                     </motion.h1>
 
                     <motion.p
-                        style={{ y: yText }}
-                        initial={{ opacity: 0, y: 30 }}
-                        animate={{ opacity: 1, y: 0 }}
+                        style={{ y: yText, textShadow: '0 2px 20px rgba(0,0,0,0.6)' }}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
                         transition={{ duration: 0.8, delay: 0.8 }}
                         className="text-white text-[1rem] md:text-[1.25rem] leading-[1.6] max-w-[700px] mb-8"
                     >
@@ -148,10 +149,10 @@ export default function Hero() {
 
                     <motion.div
                         style={{ y: yButton }}
-                        initial={{ opacity: 0, y: 30 }}
-                        animate={{ opacity: 1, y: 0 }}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
                         transition={{ duration: 0.8, delay: 1 }}
-                        className="flex gap-6 mb-8"
+                        className="flex flex-wrap items-center gap-4 mb-8"
                     >
                         <a
                             href={WHATSAPP_URL}
@@ -161,10 +162,16 @@ export default function Hero() {
                         >
                             <span className="relative z-10">{t('cta')}</span>
                             <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-
-                            {/* Shiny wipe effect */}
                             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out motion-reduce:hidden" />
                         </a>
+
+                        <Link
+                            href="/portfolio"
+                            className="group flex items-center gap-1.5 text-white/60 hover:text-white text-sm font-medium transition-colors duration-200"
+                        >
+                            {t('seeWork')}
+                            <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
+                        </Link>
                     </motion.div>
                 </div>
 
@@ -189,6 +196,21 @@ export default function Hero() {
                     </motion.div>
                 </div>
             </div>
+
+            {/* Scroll-down indicator */}
+            <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 1.8, duration: 0.6 }}
+                className="absolute bottom-[148px] left-1/2 -translate-x-1/2 z-[15] flex flex-col items-center gap-1.5 pointer-events-none motion-reduce:hidden"
+            >
+                <motion.div
+                    animate={{ y: [0, 6, 0] }}
+                    transition={{ duration: 1.4, repeat: Infinity, ease: "easeInOut" }}
+                >
+                    <ChevronDown className="w-5 h-5 text-white/30" />
+                </motion.div>
+            </motion.div>
 
             {/* Foreground Wave (In Front of Content) */}
             <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0] z-20 pointer-events-none">

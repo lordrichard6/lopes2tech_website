@@ -11,6 +11,7 @@ html, body {
   --color-accent: var(--accent-color);
   --color-neon-purple: var(--tech-neon-color);
   --font-sans: var(--font-inter);
+  --font-display: var(--font-display);
 
   --animate-float: float 6s ease-in-out infinite;
   --animate-wave: wave 3s ease-in-out infinite;
@@ -42,6 +43,12 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: var(--font-sans), sans-serif;
+}
+
+/* Spin keyframe — shared by WhoIsLopes2Tech rotating rings */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
 }
 
 /* Animations from Angular Project */

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google"; // Using Inter to match Angular project
+import { Inter, Space_Grotesk } from "next/font/google";
 import "../globals.css";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
@@ -16,6 +16,13 @@ const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
   display: "swap",
+});
+
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-display",
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["500", "600", "700"],
 });
 
 // Viewport configuration (Next.js 14+ best practice)
@@ -112,7 +119,7 @@ export default async function RootLayout({
         <link rel="alternate" type="application/rss+xml" title="Lopes2Tech Insights" href={`/${locale}/insights/feed.xml`} />
       </head>
       <body
-        className={`${inter.variable} antialiased`}
+        className={`${inter.variable} ${spaceGrotesk.variable} antialiased`}
         suppressHydrationWarning
       >
         <a
