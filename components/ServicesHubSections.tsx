@@ -21,7 +21,7 @@ const serviceConfig = [
 ];
 
 const statsConfig = [
-    { value: "50+",  key: "projects"  },
+    { value: "19",   key: "projects"  },
     { value: "3",    key: "countries" },
     { value: "5.0★", key: "rating"   },
     { value: "24h",  key: "response"  },
