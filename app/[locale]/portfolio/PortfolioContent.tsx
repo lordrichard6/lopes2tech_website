@@ -4,7 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import Image from "next/image";
 import { Link } from "@/navigation";
-import { ChevronLeft, ChevronRight, Layers, Monitor, ExternalLink, ArrowRight, Code, Clock, Pause, Circle } from "lucide-react";
+import { Layers, Monitor, ExternalLink, ArrowRight, Code, Clock, Pause, Circle } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { projects } from "./projects";
 import type { Project } from "./projects";
@@ -121,13 +121,8 @@ export default function PortfolioContent() {
     const shouldAnimate = !reducedMotion;
 
     const [activeFilter, setActiveFilter] = useState<"web-app" | "website">("website");
-    const [currentPage, setCurrentPage]   = useState(1);
-    const itemsPerPage = 6;
 
-    const filteredProjects  = projects.filter(p => p.type === activeFilter);
-    const totalPages        = Math.ceil(filteredProjects.length / itemsPerPage);
-    const startIndex        = (currentPage - 1) * itemsPerPage;
-    const paginatedProjects = filteredProjects.slice(startIndex, startIndex + itemsPerPage);
+    const filteredProjects = projects.filter(p => p.type === activeFilter);
 
     // #5 — Stats computed from source of truth
     const totalProjects  = projects.length;
@@ -137,14 +132,6 @@ export default function PortfolioContent() {
 
     const handleFilterChange = (filter: "web-app" | "website") => {
         setActiveFilter(filter);
-        setCurrentPage(1);
-    };
-
-    const goToPage = (page: number) => {
-        if (page >= 1 && page <= totalPages) {
-            setCurrentPage(page);
-            window.scrollTo({ top: 0, behavior: "smooth" });
-        }
     };
 
     // Blur-up helpers
@@ -284,14 +271,14 @@ export default function PortfolioContent() {
                 {/* ── Projects Grid ─────────────────────────────────────── */}
                 <AnimatePresence mode="wait">
                     <motion.div
-                        key={`${activeFilter}-${currentPage}`}
+                        key={activeFilter}
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -10 }}
                         transition={{ duration: 0.3, ease: EASE }}
                         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12"
                     >
-                        {paginatedProjects.map((project, idx) => {
+                        {filteredProjects.map((project, idx) => {
                             // #4 — first card is the featured magazine card
                             const isFeatured = idx === 0;
 
@@ -330,51 +317,6 @@ export default function PortfolioContent() {
                     </motion.div>
                 </AnimatePresence>
 
-                {/* ── Pagination ────────────────────────────────────────── */}
-                {totalPages > 1 && (
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ delay: 0.3, ease: EASE }}
-                        className="flex items-center justify-center gap-2"
-                    >
-                        <button
-                            onClick={() => goToPage(currentPage - 1)}
-                            disabled={currentPage === 1}
-                            className="p-3 rounded-full bg-white/5 border border-white/10 text-white hover:bg-white/10 transition-colors duration-300 disabled:opacity-30 disabled:cursor-not-allowed focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/60"
-                            aria-label="Previous page"
-                        >
-                            <ChevronLeft className="w-5 h-5" />
-                        </button>
-
-                        <div className="flex gap-2">
-                            {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
-                                <button
-                                    key={page}
-                                    onClick={() => goToPage(page)}
-                                    className={`w-10 h-10 rounded-full font-semibold transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/60 ${
-                                        page === currentPage
-                                            ? "bg-gradient-to-r from-cyan-500 to-violet-600 text-white"
-                                            : "bg-white/5 border border-white/10 text-slate-400 hover:bg-white/10 hover:text-white"
-                                    }`}
-                                    aria-label={`Page ${page}`}
-                                    aria-current={page === currentPage ? "page" : undefined}
-                                >
-                                    {page}
-                                </button>
-                            ))}
-                        </div>
-
-                        <button
-                            onClick={() => goToPage(currentPage + 1)}
-                            disabled={currentPage === totalPages}
-                            className="p-3 rounded-full bg-white/5 border border-white/10 text-white hover:bg-white/10 transition-colors duration-300 disabled:opacity-30 disabled:cursor-not-allowed focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/60"
-                            aria-label="Next page"
-                        >
-                            <ChevronRight className="w-5 h-5" />
-                        </button>
-                    </motion.div>
-                )}
 
                 {/* ── #6 — Bottom CTA ───────────────────────────────────── */}
                 <motion.div
