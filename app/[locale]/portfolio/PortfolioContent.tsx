@@ -37,7 +37,10 @@ function ProjectCard({
                         src={project.image}
                         alt={t(`projects.${project.slug}.title`)}
                         fill
-                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        sizes={isFeatured
+                                        ? "(max-width: 768px) 100vw, 66vw"
+                                        : "(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                                    }
                         priority={idx < 3}
                         className="object-cover transition-transform duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:scale-105"
                     />
@@ -104,9 +107,9 @@ function ProjectCard({
                     {/* #9 — Card footer meta row */}
                     <div className="mt-4 pt-4 border-t border-white/5 flex items-center">
                         {project.link ? (
-                            <span className="text-xs font-semibold text-cyan-400 flex items-center gap-1 transition-gap duration-300 group-hover:gap-1.5">
+                            <span className="text-xs font-semibold text-cyan-400 flex items-center gap-1.5">
                                 {t("badges.viewProject")}
-                                <ExternalLink className="w-3 h-3" />
+                                <ExternalLink className="w-3 h-3 transition-transform duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                             </span>
                         ) : project.isInDevelopment ? (
                             <span className="text-xs text-slate-600 uppercase tracking-wider">{t("badges.inDevelopment")}</span>
@@ -149,7 +152,7 @@ export default function PortfolioContent() {
             : { initial: { opacity: 0 }, animate: { opacity: 1 }, transition: { duration: 0.4, delay } };
 
     return (
-        <section id="portfolio" className="relative pt-32 pb-20 overflow-hidden">
+        <section id="portfolio" className="relative pt-32 pb-32 overflow-hidden">
 
             {/* Background: subtle grid + vignette */}
             <div
@@ -197,22 +200,22 @@ export default function PortfolioContent() {
                         </span>
                     </motion.h1>
 
-                    <motion.p {...fadeIn(0.2)} className="text-xl text-slate-400 max-w-3xl mx-auto mb-4">
+                    <motion.p {...fadeIn(0.2)} className="text-xl text-slate-400 max-w-2xl mx-auto mb-4">
                         {t("subtitle")}
                     </motion.p>
-                    <motion.p {...fadeIn(0.25)} className="text-lg text-slate-500 max-w-3xl mx-auto">
+                    <motion.p {...fadeIn(0.25)} className="text-lg text-slate-500 max-w-2xl mx-auto">
                         {t("subtitleSecondary")}
                     </motion.p>
 
-                    {/* #5 — Stats strip */}
-                    <motion.div {...fadeIn(0.32)} className="flex items-center justify-center gap-8 mt-10">
+                    {/* #5 — Stats strip — flex-wrap for mobile safety */}
+                    <motion.div {...fadeIn(0.32)} className="flex flex-wrap items-center justify-center gap-6 sm:gap-8 mt-10">
                         {[
                             { value: totalProjects,  label: t("stats.projects") },
                             { value: liveCount,      label: t("stats.live")     },
                             { value: webAppsCount,   label: t("stats.webApps")  },
                             { value: websitesCount,  label: t("stats.websites") },
                         ].map(({ value, label }, i) => (
-                            <div key={label} className="flex items-center gap-8">
+                            <div key={label} className="flex items-center gap-6 sm:gap-8">
                                 <div className="text-center">
                                     <span className="block font-[family-name:var(--font-display)] text-2xl font-extrabold text-white" style={{ letterSpacing: "-0.02em" }}>
                                         {value}
@@ -221,7 +224,8 @@ export default function PortfolioContent() {
                                         {label}
                                     </span>
                                 </div>
-                                {i < 3 && <div aria-hidden="true" className="h-8 w-px bg-white/8" />}
+                                {/* Dividers hidden on mobile to avoid wrapping artefacts */}
+                                {i < 3 && <div aria-hidden="true" className="hidden sm:block h-8 w-px bg-white/8" />}
                             </div>
                         ))}
                     </motion.div>
@@ -232,11 +236,15 @@ export default function PortfolioContent() {
 
                 {/* ── Filter Toggle ─────────────────────────────────────── */}
                 <motion.div {...fadeIn(0.3)} className="flex justify-center mb-6">
-                    <div className="relative inline-flex p-1 bg-white/5 rounded-full border border-white/10">
+                    <div
+                        role="group"
+                        aria-label="Filter projects by type"
+                        className="relative inline-flex p-1 bg-white/5 rounded-full border border-white/10"
+                    >
                         <button
                             onClick={() => handleFilterChange("web-app")}
                             className={`relative z-10 px-6 py-3 rounded-full font-semibold transition-colors duration-300 flex items-center gap-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-[#080d1a] ${
-                                activeFilter === "web-app" ? "text-white" : "text-slate-400 hover:text-white"
+                                activeFilter === "web-app" ? "text-white" : "text-slate-400 hover:text-white hover:bg-white/[0.04]"
                             }`}
                         >
                             <Layers className="w-4 h-4" />
@@ -245,7 +253,7 @@ export default function PortfolioContent() {
                         <button
                             onClick={() => handleFilterChange("website")}
                             className={`relative z-10 px-6 py-3 rounded-full font-semibold transition-colors duration-300 flex items-center gap-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-[#080d1a] ${
-                                activeFilter === "website" ? "text-white" : "text-slate-400 hover:text-white"
+                                activeFilter === "website" ? "text-white" : "text-slate-400 hover:text-white hover:bg-white/[0.04]"
                             }`}
                         >
                             <Monitor className="w-4 h-4" />
@@ -253,7 +261,7 @@ export default function PortfolioContent() {
                         </button>
                         {/* Sliding pill */}
                         <div
-                            className={`absolute top-1 bottom-1 w-[calc(50%-4px)] bg-gradient-to-r from-cyan-500 to-violet-600 rounded-full transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] ${
+                            className={`absolute top-1 bottom-1 w-[calc(50%-4px)] bg-gradient-to-r from-cyan-500 to-violet-600 rounded-full will-change-transform transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] ${
                                 activeFilter === "website" ? "translate-x-[calc(100%+4px)]" : "translate-x-0"
                             }`}
                         />
@@ -284,7 +292,7 @@ export default function PortfolioContent() {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -10 }}
                         transition={{ duration: 0.3, ease: EASE }}
-                        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12"
+                        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
                     >
                         {filteredProjects.map((project, idx) => {
                             // #4 — first card is the featured magazine card
