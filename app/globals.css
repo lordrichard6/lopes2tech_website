@@ -1,6 +1,11 @@
 @import 'tailwindcss';
 
-html, body {
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
   overflow-x: hidden;
 }
 @plugin "@tailwindcss/typography";
@@ -100,19 +105,38 @@ body {
   }
 }
 
-/* Utilities */
+/* ─── Premium Easing ─────────────────────────────────────────────────────── */
+/* Use this cubic-bezier for all transitions: fast out, slow settle */
+:root {
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-premium:  cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+/* ─── Blur-up entry animation ────────────────────────────────────────────── */
+@keyframes blurUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+    filter: blur(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+/* ─── Legacy neon utilities — kept for backwards compat, unused in redesign  */
 .neon-text-purple {
   color: #fff;
-  text-shadow: 0 0 5px #fff, 0 0 10px #b845ff, 0 0 20px #b845ff, 0 0 40px #b845ff;
 }
 
 .neon-text-blue {
   color: #fff;
-  text-shadow: 0 0 5px #fff, 0 0 10px #00f5ff, 0 0 20px #00f5ff, 0 0 40px #00f5ff;
 }
 
 .nav-link-shadow:hover {
-  text-shadow: 0 0 5px #fff, 0 0 10px #b845ff, 0 0 20px #b845ff;
+  opacity: 0.9;
 }
 
 @keyframes scroll {

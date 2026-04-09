@@ -151,16 +151,17 @@ export default function WhoIsLopes2Tech() {
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="inline-block px-4 py-1.5 rounded-full bg-white/5 text-slate-400 font-semibold text-sm mb-6 border border-white/10"
+            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+            className="inline-block px-3 py-1 rounded-full bg-white/5 text-slate-400 font-semibold text-[10px] uppercase tracking-[0.2em] mb-6 border border-white/10"
           >
             {t("badge")}
           </motion.span>
 
           <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 20, filter: "blur(8px)" }}
+            whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
+            transition={{ delay: 0.1, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             className="text-4xl md:text-6xl font-extrabold tracking-tight text-white leading-[1.1] flex flex-wrap items-center justify-center gap-x-4 gap-y-3 font-[family-name:var(--font-display)]"
           >
             <span>{t("titlePre")}</span>
@@ -237,16 +238,20 @@ export default function WhoIsLopes2Tech() {
                 return (
                   <motion.div
                     key={d.key}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
+                    initial={{ opacity: 0, y: 20, filter: "blur(6px)" }}
+                    whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                     viewport={{ once: true }}
-                    transition={{ delay: i * 0.08 }}
-                    className={`rounded-2xl border ${d.border} bg-gradient-to-br ${d.color} p-5 backdrop-blur-sm`}
-                    style={{ boxShadow: `0 4px 30px ${d.glow}` }}
+                    transition={{ delay: i * 0.08, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
                   >
-                    <Icon className="w-6 h-6 mb-3 text-white/70" />
-                    <h3 className="text-white font-bold text-sm mb-1">{t(`diff.${d.key}.title`)}</h3>
-                    <p className="text-slate-400 text-xs leading-relaxed">{t(`diff.${d.key}.desc`)}</p>
+                    {/* Outer shell */}
+                    <div className={`p-[1px] rounded-2xl bg-gradient-to-br ${d.color} ring-1 ${d.border}`} style={{ boxShadow: `0 8px 32px ${d.glow}` }}>
+                      {/* Inner core */}
+                      <div className="rounded-[calc(1rem-1px)] bg-[#080d1a]/90 shadow-[inset_0_1px_1px_rgba(255,255,255,0.06)] p-5 backdrop-blur-sm">
+                        <Icon className="w-5 h-5 mb-3 text-white/60" />
+                        <h3 className="text-white font-bold text-sm mb-1">{t(`diff.${d.key}.title`)}</h3>
+                        <p className="text-slate-400 text-xs leading-relaxed">{t(`diff.${d.key}.desc`)}</p>
+                      </div>
+                    </div>
                   </motion.div>
                 );
               })}
@@ -319,20 +324,25 @@ export default function WhoIsLopes2Tech() {
 
         {/* ── Stats bar ───────────────────────────────────────── */}
         <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 24, filter: "blur(8px)" }}
+          whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           viewport={{ once: true }}
-          transition={{ delay: 0.2 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-4 p-6 md:p-8 rounded-3xl border border-white/10 bg-white/[0.03] backdrop-blur-sm"
+          transition={{ delay: 0.2, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         >
-          {stats.map((s, i) => (
-            <div key={s.key} className={`text-center ${i < stats.length - 1 ? "md:border-r border-white/10" : ""}`}>
-              <p className="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500 mb-1">
-                {s.value}
-              </p>
-              <p className="text-slate-400 text-sm font-medium">{t(`stats.${s.key}`)}</p>
+          {/* Outer shell */}
+          <div className="p-[1px] rounded-3xl bg-white/5 ring-1 ring-white/10">
+            {/* Inner core */}
+            <div className="rounded-[calc(1.5rem-1px)] bg-white/[0.02] shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] grid grid-cols-2 md:grid-cols-4 gap-4 p-6 md:p-8">
+              {stats.map((s, i) => (
+                <div key={s.key} className={`text-center ${i < stats.length - 1 ? "md:border-r border-white/10" : ""}`}>
+                  <p className="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-violet-500 mb-1">
+                    {s.value}
+                  </p>
+                  <p className="text-slate-400 text-sm font-medium">{t(`stats.${s.key}`)}</p>
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
         </motion.div>
 
       </div>

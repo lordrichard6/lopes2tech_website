@@ -39,9 +39,10 @@ export default function CTA() {
 
             <div className="relative z-20 max-w-[800px] px-6">
                 <motion.h2
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
+                    initial={{ opacity: 0, y: 20, filter: "blur(8px)" }}
+                    whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                     viewport={{ once: true }}
+                    transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
                     className="text-4xl md:text-6xl font-extrabold mb-6 text-transparent bg-clip-text bg-gradient-to-br from-white to-slate-400 tracking-tight leading-[1.1] font-[family-name:var(--font-display)]"
                 >
                     {t('title')}
@@ -66,13 +67,15 @@ export default function CTA() {
                     <Link
                         href="/contact"
                         onClick={() => trackCTAClick('homepage_cta')}
-                        className="inline-flex items-center gap-4 px-12 py-5 text-lg font-bold text-[#0f172a] bg-cyan-400 rounded-full transition-all duration-300 shadow-[0_0_20px_rgba(34,211,238,0.4)] hover:shadow-[0_0_40px_rgba(34,211,238,0.6)] hover:-translate-y-1 hover:bg-cyan-300 group overflow-hidden relative"
+                        className="inline-flex items-center gap-3 px-8 py-4 text-base font-bold text-[#0f172a] bg-cyan-400 rounded-full transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] shadow-[0_0_20px_rgba(34,211,238,0.35)] hover:shadow-[0_0_40px_rgba(34,211,238,0.55)] hover:-translate-y-1 hover:bg-cyan-300 active:scale-[0.98] group overflow-hidden relative"
                     >
                         <span className="relative z-10">{t('button')}</span>
-                        <ArrowRight className="w-5 h-5 relative z-10 transition-transform duration-300 group-hover:translate-x-1" />
-
-                        {/* Shine Effect */}
-                        <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-500 ease-in-out z-0 motion-reduce:hidden" />
+                        {/* Button-in-Button trailing icon */}
+                        <span className="w-9 h-9 rounded-full bg-[#0f172a]/15 flex items-center justify-center transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:translate-x-1 group-hover:scale-110 relative z-10">
+                            <ArrowRight className="w-4 h-4" />
+                        </span>
+                        {/* Shine */}
+                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-600 ease-[cubic-bezier(0.32,0.72,0,1)] z-0 motion-reduce:hidden" />
                     </Link>
                 </motion.div>
             </div>

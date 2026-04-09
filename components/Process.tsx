@@ -1,193 +1,151 @@
 "use client";
 
-import { useState } from "react";
 import { motion } from "framer-motion";
 import { Phone, FileText, Settings, HeartHandshake } from "lucide-react";
-import clsx from "clsx";
+import { useTranslations } from "next-intl";
 
 const steps = [
-    {
-        id: 1,
-        title: "Discovery Call",
-        description: "We dive deep into your goals to ensure we're the perfect partner.",
-        icon: Phone,
-    },
-    {
-        id: 2,
-        title: "Strategic Proposal",
-        description: "You receive a comprehensive roadmap and fixed-price quote.",
-        icon: FileText,
-    },
-    {
-        id: 3,
-        title: "Build & Automate",
-        description: "We build your custom solution with real-time progress tracking.",
-        icon: Settings,
-    },
-    {
-        id: 4,
-        title: "Launch & Support",
-        description: "We deploy your system and provide ongoing maintenance.",
-        icon: HeartHandshake,
-    },
+    { id: 1, title: "Discovery Call",       description: "We dive deep into your goals to ensure we're the perfect partner.", icon: Phone,          },
+    { id: 2, title: "Strategic Proposal",   description: "You receive a comprehensive roadmap and fixed-price quote.",        icon: FileText,        },
+    { id: 3, title: "Build & Automate",     description: "We build your custom solution with real-time progress tracking.",   icon: Settings,        },
+    { id: 4, title: "Launch & Support",     description: "We deploy your system and provide ongoing maintenance.",            icon: HeartHandshake,  },
 ];
 
-import { useTranslations } from "next-intl";
+const EASE = [0.16, 1, 0.3, 1] as const;
 
 export default function Process() {
     const t = useTranslations('Process');
-    const [activeStep, setActiveStep] = useState<number | null>(null);
 
     return (
-        <section className="relative py-24 bg-white overflow-hidden w-full">
+        <section className="relative py-32 bg-[#080d1a] overflow-hidden w-full">
 
-            {/* Background Pattern */}
-            <div className="absolute inset-0 z-0 opacity-[0.4]"
-                style={{ backgroundImage: 'radial-gradient(#e2e8f0 1px, transparent 1px)', backgroundSize: '40px 40px' }}
+            {/* Dot grid pattern — dark version */}
+            <div
+                className="absolute inset-0 z-0 pointer-events-none"
+                style={{
+                    backgroundImage: "radial-gradient(circle, rgba(255,255,255,0.06) 1px, transparent 1px)",
+                    backgroundSize: "40px 40px",
+                    maskImage: "linear-gradient(to bottom, transparent 0%, black 12%, black 88%, transparent 100%)",
+                    WebkitMaskImage: "linear-gradient(to bottom, transparent 0%, black 12%, black 88%, transparent 100%)",
+                }}
             />
 
-            {/* Header - Full Width but Centered Content */}
+            {/* Ambient glows */}
+            <div className="absolute inset-0 pointer-events-none overflow-hidden">
+                <div className="absolute top-[20%] right-[5%]  w-[400px] h-[400px] rounded-full bg-cyan-500/5   blur-[100px]" />
+                <div className="absolute bottom-[20%] left-[5%] w-[350px] h-[350px] rounded-full bg-violet-500/5 blur-[100px]" />
+            </div>
+
+            {/* Header */}
             <div className="text-center max-w-4xl mx-auto mb-20 px-6 relative z-10">
                 <motion.span
                     initial={{ opacity: 0, y: 10 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="text-cyan-600 font-bold tracking-wider uppercase text-sm mb-4 block"
+                    transition={{ duration: 0.6, ease: EASE }}
+                    className="inline-block px-3 py-1 mb-6 text-[10px] font-semibold uppercase tracking-[0.2em] text-cyan-400 bg-cyan-400/10 border border-cyan-400/20 rounded-full"
                 >
                     {t('badge')}
                 </motion.span>
+
                 <motion.h2
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
+                    initial={{ opacity: 0, y: 20, filter: "blur(8px)" }}
+                    whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                     viewport={{ once: true }}
-                    transition={{ delay: 0.1 }}
-                    className="text-4xl md:text-5xl font-extrabold mb-6 text-slate-900 tracking-tight"
+                    transition={{ delay: 0.1, duration: 0.8, ease: EASE }}
+                    className="text-4xl md:text-5xl font-extrabold mb-6 text-white tracking-tight font-[family-name:var(--font-display)]"
                 >
                     {t('titlePart1')}
-                    <span className="relative inline-block ml-3">
-                        {/* Soft Light Glow Effect */}
-                        <span className="absolute inset-0 bg-cyan-400/30 blur-2xl rounded-full scale-150 z-0"></span>
-                        <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-600">{t('titlePart2')}</span>
+                    <span className="ml-3 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
+                        {t('titlePart2')}
                     </span>
                 </motion.h2>
+
                 <motion.p
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ delay: 0.2 }}
-                    className="text-lg text-slate-600"
+                    transition={{ delay: 0.2, duration: 0.8, ease: EASE }}
+                    className="text-lg text-slate-400"
                 >
                     {t('description')}
                 </motion.p>
             </div>
 
-            {/* Full Width Desktop Curve Layout */}
-            <div className="hidden md:block relative w-full h-[400px]">
-
-                {/* The Curve SVG - Spanning Full Width */}
+            {/* Desktop curve layout */}
+            <div className="hidden md:block relative w-full h-[420px]">
                 <div className="absolute top-0 left-0 w-full h-full">
                     <svg className="w-full h-full overflow-visible" aria-hidden="true" preserveAspectRatio="none" viewBox="0 0 1440 400">
                         <defs>
                             <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                                <stop offset="0%" stopColor="#22d3ee" />
+                                <stop offset="0%"   stopColor="#22d3ee" />
                                 <stop offset="100%" stopColor="#3b82f6" />
                             </linearGradient>
                         </defs>
-
-                        {/* 
-                 Path Logic for perfect alignment:
-                 We need 4 distinct points for the 4 steps.
-                 Let's create a wave that goes:
-                 - Start (0, 200)
-                 - Point 1 (18% width, 300) - Low
-                 - Point 2 (42% width, 100) - High
-                 - Point 3 (66% width, 100) - High
-                 - Point 4 (90% width, 300) - Low
-                 - End (100% width, 200)
-               */}
+                        {/* Guide path */}
                         <path
                             d="M-100,200 C100,200 150,300 252,300 C400,300 450,100 600,100 C800,100 850,100 1000,100 C1150,100 1200,300 1350,300 C1450,300 1500,200 1600,200"
                             fill="none"
-                            stroke="#e2e8f0"
-                            strokeWidth="3"
-                            strokeDasharray="8 8"
+                            stroke="rgba(255,255,255,0.07)"
+                            strokeWidth="2"
+                            strokeDasharray="6 6"
                         />
-
-
-                        {/* Animated Gradient Line */}
+                        {/* Animated gradient line */}
                         <motion.path
                             d="M-100,200 C100,200 150,300 252,300 C400,300 450,100 600,100 C800,100 850,100 1000,100 C1150,100 1200,300 1350,300 C1450,300 1500,200 1600,200"
                             fill="none"
                             stroke="url(#lineGradient)"
-                            strokeWidth="4"
+                            strokeWidth="3"
                             initial={{ pathLength: 0 }}
                             whileInView={{ pathLength: 1 }}
                             viewport={{ once: true }}
-                            transition={{ duration: 2.5, ease: "easeInOut" }}
+                            transition={{ duration: 2.5, ease: [0.32, 0.72, 0, 1] }}
                         />
-
-                        {/* Moving Particle Effect */}
-                        <circle r="6" fill="#fff" className="filter drop-shadow-[0_0_8px_rgba(34,211,238,0.8)]">
+                        {/* Moving particle */}
+                        <circle r="5" fill="#fff" className="filter drop-shadow-[0_0_8px_rgba(34,211,238,0.9)]">
                             <animateMotion
                                 dur="6s"
                                 repeatCount="indefinite"
                                 path="M-100,200 C100,200 150,300 252,300 C400,300 450,100 600,100 C800,100 850,100 1000,100 C1150,100 1200,300 1350,300 C1450,300 1500,200 1600,200"
                             />
                         </circle>
-
                     </svg>
                 </div>
 
-                {/* Steps Container - Grid overlay matching the SVG curve points */}
+                {/* Steps grid */}
                 <div className="w-full h-full relative z-10 max-w-[1600px] mx-auto grid grid-cols-4">
-                    {/* 
-                  We manually adjust paddingTop/paddingBottom to match the SVG Y-coordinates 
-                  SVG Y coords: P1=300 (Low), P2=100 (High), P3=100 (High), P4=300 (Low)
-                  Container Height = 400px.
-                  P1 (300px down) -> needs top padding ~260px to place icon center at 300?
-                  P2 (100px down) -> needs top padding ~60px
-               */}
-
-                    {/* Step 1: Low (300) */}
-                    <div className="flex flex-col items-center pt-[260px] relative group">
-                        <StepItem step={steps[0]} t={t} />
-                    </div>
-
-                    {/* Step 2: High (100) */}
-                    <div className="flex flex-col items-center pt-[60px] relative group">
-                        <StepItem step={steps[1]} t={t} />
-                    </div>
-
-                    {/* Step 3: High (100) */}
-                    <div className="flex flex-col items-center pt-[60px] relative group">
-                        <StepItem step={steps[2]} t={t} />
-                    </div>
-
-                    {/* Step 4: Low (300) */}
-                    <div className="flex flex-col items-center pt-[260px] relative group">
-                        <StepItem step={steps[3]} t={t} />
-                    </div>
+                    <div className="flex flex-col items-center pt-[260px]"><StepItem step={steps[0]} t={t} /></div>
+                    <div className="flex flex-col items-center pt-[60px]"> <StepItem step={steps[1]} t={t} /></div>
+                    <div className="flex flex-col items-center pt-[60px]"> <StepItem step={steps[2]} t={t} /></div>
+                    <div className="flex flex-col items-center pt-[260px]"><StepItem step={steps[3]} t={t} /></div>
                 </div>
             </div>
 
-            {/* Mobile Layout */}
-            <div className="md:hidden relative border-l-2 border-slate-100 ml-6 space-y-12 pb-12 px-6">
-                {steps.map((step) => (
-                    <div key={step.id} className="relative pl-8">
-                        <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-white border-4 border-cyan-500" />
-                        <div className="bg-white border border-slate-100 p-6 rounded-2xl shadow-sm">
-                            <div className="flex items-center gap-4 mb-3">
-                                <step.icon className="w-6 h-6 text-cyan-600" />
-                                <h3 className="text-slate-900 font-bold text-lg">{t(`steps.${step.id}.title`)}</h3>
+            {/* Mobile timeline */}
+            <div className="md:hidden relative border-l border-white/10 ml-6 space-y-8 pb-8 px-6">
+                {steps.map((step, i) => (
+                    <motion.div
+                        key={step.id}
+                        initial={{ opacity: 0, x: -16 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: i * 0.08, duration: 0.6, ease: EASE }}
+                        className="relative pl-8"
+                    >
+                        <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-[#080d1a] border-2 border-cyan-500" />
+                        {/* Double-Bezel card */}
+                        <div className="p-[1px] rounded-2xl bg-white/5 ring-1 ring-white/10">
+                            <div className="rounded-[calc(1rem-1px)] bg-white/[0.03] shadow-[inset_0_1px_1px_rgba(255,255,255,0.07)] p-5">
+                                <div className="flex items-center gap-3 mb-2">
+                                    <step.icon className="w-5 h-5 text-cyan-400" />
+                                    <h3 className="text-white font-bold">{t(`steps.${step.id}.title`)}</h3>
+                                </div>
+                                <p className="text-slate-400 text-sm leading-relaxed">{t(`steps.${step.id}.description`)}</p>
                             </div>
-                            <p className="text-slate-600 text-sm leading-relaxed">
-                                {t(`steps.${step.id}.description`)}
-                            </p>
                         </div>
-                    </div>
+                    </motion.div>
                 ))}
             </div>
-
         </section>
     );
 }
@@ -197,34 +155,37 @@ type Step = typeof steps[0];
 function StepItem({ step, t }: { step: Step; t: ReturnType<typeof useTranslations<"Process">> }) {
     return (
         <>
-            {/* The Icon sitting ON the line */}
+            {/* Icon on the line */}
             <motion.div
-                initial={{ scale: 0 }}
-                whileInView={{ scale: 1 }}
+                initial={{ scale: 0, opacity: 0 }}
+                whileInView={{ scale: 1, opacity: 1 }}
                 viewport={{ once: true }}
-                className="w-16 h-16 rounded-full bg-white border-4 border-cyan-50 shadow-xl flex items-center justify-center relative z-20 group-hover:scale-110 transition-transform duration-300 group-hover:border-cyan-200 mb-6"
+                transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+                className="group/icon w-16 h-16 rounded-full bg-white/5 border border-white/10 shadow-[inset_0_1px_1px_rgba(255,255,255,0.08)] flex items-center justify-center relative z-20 hover:border-cyan-500/40 hover:bg-cyan-500/10 transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] mb-6"
             >
-                <div className="absolute inset-0 bg-cyan-100 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300" />
-                <step.icon className="w-7 h-7 text-cyan-600 relative z-10" />
-
-                {/* Number Badge */}
-                <div className="absolute -top-2 -right-2 w-7 h-7 rounded-full bg-slate-900 text-white text-xs font-bold flex items-center justify-center shadow-lg border-2 border-white z-30">
+                <step.icon className="w-7 h-7 text-cyan-400" />
+                <div className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-[#080d1a] border border-white/15 text-white text-[10px] font-bold flex items-center justify-center">
                     {step.id}
                 </div>
             </motion.div>
 
-            {/* Content hanging below or standing above? Let's just put it below for all for consistency */}
+            {/* Double-Bezel content card */}
             <motion.div
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: 12, filter: "blur(6px)" }}
+                whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                 viewport={{ once: true }}
-                className="text-center max-w-[280px] bg-white/80 backdrop-blur-sm p-4 rounded-xl border border-transparent group-hover:border-slate-100 transition-colors"
+                transition={{ delay: 0.15, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+                className="text-center max-w-[240px]"
             >
-                <h3 className="text-xl font-bold text-slate-900 mb-2">{t(`steps.${step.id}.title`)}</h3>
-                <p className="text-sm text-slate-600 leading-relaxed font-medium">
-                    {t(`steps.${step.id}.description`)}
-                </p>
+                {/* Outer shell */}
+                <div className="p-[1px] rounded-2xl bg-white/5 ring-1 ring-white/10">
+                    {/* Inner core */}
+                    <div className="rounded-[calc(1rem-1px)] bg-white/[0.03] shadow-[inset_0_1px_1px_rgba(255,255,255,0.07)] p-4">
+                        <h3 className="text-white font-bold text-base mb-1.5">{t(`steps.${step.id}.title`)}</h3>
+                        <p className="text-slate-400 text-xs leading-relaxed">{t(`steps.${step.id}.description`)}</p>
+                    </div>
+                </div>
             </motion.div>
         </>
-    )
+    );
 }

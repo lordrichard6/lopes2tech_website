@@ -107,7 +107,7 @@ export default function Navbar() {
         <>
             <header
                 className={clsx(
-                    "fixed top-6 left-0 right-0 mx-auto w-[95%] max-w-[1200px] z-[70] rounded-[20px] transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] border border-white/10 backdrop-blur-md",
+                    "fixed top-6 left-0 right-0 mx-auto w-[95%] max-w-[1200px] z-[70] rounded-full transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] border border-white/10 backdrop-blur-md",
                     isScrolled
                         ? "top-4 bg-black/85 shadow-[0_10px_40px_rgba(0,0,0,0.3)] border-white/10"
                         : "bg-black/60 shadow-[0_8px_32px_rgba(0,0,0,0.2)]"
@@ -126,14 +126,14 @@ export default function Navbar() {
                             />
                         </div>
 
-                        <div className="flex items-center gap-[1px] font-sans ml-1">
-                            <span className="font-bold text-[1.4rem] text-white tracking-tight drop-shadow-[0_0_10px_#00f3ff]">
+                        <div className="flex items-center gap-[1px] font-sans ml-1 drop-shadow-[0_0_14px_rgba(34,211,238,0.45)]">
+                            <span className="font-bold text-[1.4rem] text-white tracking-tight">
                                 lopes
                             </span>
-                            <span className="font-extrabold text-[2.4rem] leading-none text-white mx-[-1px] drop-shadow-[0_0_10px_#b845ff]">
+                            <span className="font-extrabold text-[2.4rem] leading-none text-white mx-[-1px]">
                                 2
                             </span>
-                            <span className="font-extrabold text-[1.4rem] lowercase text-white drop-shadow-[0_0_10px_#ff9900]">
+                            <span className="font-extrabold text-[1.4rem] lowercase text-white">
                                 tech
                             </span>
                         </div>

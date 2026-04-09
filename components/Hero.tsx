@@ -45,56 +45,10 @@ export default function Hero() {
                     <source src="/vids/hero.mp4" type="video/mp4" />
                 </video>
 
-                {/* Floating Elements */}
+                {/* Ambient orbs — large, deeply blurred, non-competing */}
                 <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                    {/* Circle 1 */}
-                    <motion.div
-                        animate={{
-                            y: [0, -30, 20, 0],
-                            x: [0, 20, -15, 0],
-                            rotate: [0, 120, 240, 360]
-                        }}
-                        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-                        className="absolute w-[80px] h-[80px] top-[20%] left-[10%] rounded-full bg-gradient-to-br from-cyan-500/15 to-cyan-500/10"
-                    />
-                    {/* Circle 2 */}
-                    <motion.div
-                        animate={{
-                            y: [0, -40, 30, 0],
-                            x: [0, -20, 15, 0],
-                            rotate: [0, -100, -200, -360]
-                        }}
-                        transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-                        className="absolute w-[120px] h-[120px] top-[60%] right-[15%] rounded-full bg-gradient-to-br from-cyan-500/15 to-cyan-500/10"
-                    />
-                    {/* Circle 3 */}
-                    <motion.div
-                        animate={{
-                            y: [0, 20, -20, 0],
-                            x: [0, 10, -10, 0],
-
-                        }}
-                        transition={{ duration: 8, repeat: Infinity, ease: "easeInOut", delay: 2 }}
-                        className="absolute w-[60px] h-[60px] top-[30%] right-[25%] rounded-full bg-gradient-to-br from-cyan-500/15 to-cyan-500/10"
-                    />
-                    {/* Circle 4 */}
-                    <motion.div
-                        animate={{
-                            y: [0, -50, 40, 0],
-                            rotate: [0, 180, 360]
-                        }}
-                        transition={{ duration: 9, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-                        className="absolute w-[100px] h-[100px] bottom-[20%] left-[20%] rounded-full bg-gradient-to-br from-cyan-500/15 to-cyan-500/10"
-                    />
-                    {/* Circle 5 */}
-                    <motion.div
-                        animate={{
-                            scale: [1, 1.2, 1],
-                            opacity: [0.5, 0.8, 0.5]
-                        }}
-                        transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 3 }}
-                        className="absolute w-[40px] h-[40px] top-[15%] left-[60%] rounded-full bg-gradient-to-br from-cyan-500/15 to-cyan-500/10"
-                    />
+                    <div className="absolute top-[-15%] right-[5%] w-[700px] h-[700px] rounded-full bg-cyan-500/[0.07] blur-[140px]" />
+                    <div className="absolute bottom-[5%] left-[-5%] w-[550px] h-[550px] rounded-full bg-violet-600/[0.07] blur-[120px]" />
                 </div>
 
                 {/* Background Waves */}
@@ -130,18 +84,18 @@ export default function Hero() {
                         style={{ y: yTitle }}
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
-                        transition={{ duration: 0.8, delay: 0.5 }}
-                        className="text-[2.2rem] leading-[1.1] font-extrabold tracking-tight text-white mb-4 md:text-[3.5rem] break-words hyphens-auto text-balance font-[family-name:var(--font-display)]"
+                        transition={{ duration: 0.9, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
+                        className="text-[2.2rem] leading-[1.1] font-extrabold tracking-tight mb-4 md:text-[3.5rem] break-words hyphens-auto text-balance font-[family-name:var(--font-display)]"
                     >
-                        <span className="block neon-text-purple">{t('title1')}</span>
-                        <span className="block neon-text-blue">{t('title2')}</span>
+                        <span className="block text-white">{t('title1')}</span>
+                        <span className="block text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-cyan-500">{t('title2')}</span>
                     </motion.h1>
 
                     <motion.p
                         style={{ y: yText, textShadow: '0 2px 20px rgba(0,0,0,0.6)' }}
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
-                        transition={{ duration: 0.8, delay: 0.8 }}
+                        transition={{ duration: 0.9, delay: 0.75, ease: [0.16, 1, 0.3, 1] }}
                         className="text-white text-[1rem] md:text-[1.25rem] leading-[1.6] max-w-[700px] mb-8"
                     >
                         {t('subtitle')}
@@ -151,7 +105,7 @@ export default function Hero() {
                         style={{ y: yButton }}
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
-                        transition={{ duration: 0.8, delay: 1 }}
+                        transition={{ duration: 0.9, delay: 1.0, ease: [0.16, 1, 0.3, 1] }}
                         className="flex flex-wrap items-center gap-4 mb-8"
                     >
                         <a
@@ -161,8 +115,10 @@ export default function Hero() {
                             className="group relative px-8 py-4 rounded-xl bg-cyan-500/10 text-white font-semibold border border-[#00f5ff] shadow-[0_0_15px_rgba(0,245,255,0.3),inset_0_0_15px_rgba(0,245,255,0.1)] hover:bg-cyan-500/20 hover:shadow-[0_0_25px_rgba(0,245,255,0.6),inset_0_0_20px_rgba(0,245,255,0.2)] hover:-translate-y-[2px] transition-all flex items-center gap-2 overflow-hidden"
                         >
                             <span className="relative z-10">{t('cta')}</span>
-                            <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-                            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out motion-reduce:hidden" />
+                            <span className="w-7 h-7 rounded-full bg-white/10 flex items-center justify-center transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:translate-x-1 group-hover:scale-110">
+                                <ArrowRight className="w-3.5 h-3.5" />
+                            </span>
+                            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/15 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] motion-reduce:hidden" />
                         </a>
 
                         <Link

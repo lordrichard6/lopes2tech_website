@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Monitor, Layout, Cpu, Database, ShoppingCart } from "lucide-react";
+import { Monitor, Layout, Cpu, Database, ShoppingCart, ArrowRight } from "lucide-react";
 import { Link } from "@/navigation";
 import Image from "next/image";
 import clsx from "clsx";
@@ -20,7 +20,7 @@ export default function Services() {
   const t = useTranslations('ServicesSection');
 
   return (
-    <section id="services" className="relative py-12 bg-[#080d1a] min-h-screen flex flex-col justify-start pt-24 md:pt-32">
+    <section id="services" className="relative py-16 bg-[#080d1a] min-h-screen flex flex-col justify-start pt-28 md:pt-36">
 
       {/* Diagonal lines pattern — fades in/out at edges */}
       <div
@@ -152,9 +152,14 @@ export default function Services() {
         <div className="mt-16 text-center">
           <Link
             href="/services"
-            className="inline-flex items-center gap-3 px-10 py-4 rounded-full bg-gradient-to-br from-[#0e7490] to-[#06b6d4] text-white font-semibold text-lg shadow-[0_4px_15px_rgba(14,116,144,0.3)] hover:shadow-[0_8px_25px_rgba(14,116,144,0.4)] hover:-translate-y-1 transition-all duration-300"
+            className="group inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-br from-[#0e7490] to-[#06b6d4] text-white font-semibold shadow-[0_4px_20px_rgba(14,116,144,0.3)] hover:shadow-[0_8px_32px_rgba(14,116,144,0.45)] hover:-translate-y-1 active:scale-[0.98] transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] overflow-hidden relative"
           >
-            {t('cta')}
+            <span className="relative z-10">{t('cta')}</span>
+            {/* Button-in-Button trailing icon */}
+            <span className="w-8 h-8 rounded-full bg-white/15 flex items-center justify-center transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:translate-x-1 group-hover:scale-110 relative z-10">
+              <ArrowRight className="w-3.5 h-3.5" />
+            </span>
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] motion-reduce:hidden" />
           </Link>
         </div>
 
