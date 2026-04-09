@@ -11,6 +11,7 @@ import CookieConsent from '@/components/CookieConsent';
 import Clarity from '@/components/Clarity';
 import ServiceWorkerRegister from '@/components/ServiceWorkerRegister';
 import WhatsAppButton from '@/components/WhatsAppButton';
+import SmoothScroll from '@/components/SmoothScroll';
 
 const inter = Inter({
   variable: "--font-inter",
@@ -129,7 +130,9 @@ export default async function RootLayout({
           {t('skipToContent')}
         </a>
         <NextIntlClientProvider messages={messages}>
-          <div id="main-content">{children}</div>
+          <SmoothScroll>
+            <div id="main-content">{children}</div>
+          </SmoothScroll>
           <Analytics />
           <GoogleAnalytics />
           <Clarity />
