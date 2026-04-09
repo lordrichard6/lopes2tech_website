@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from "react";
-import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
+import { useState, useRef, useEffect } from "react";
+import { motion, AnimatePresence, useReducedMotion, useInView } from "framer-motion";
 import Image from "next/image";
 import { Link } from "@/navigation";
 import { Layers, Monitor, ExternalLink, ArrowRight, Code, Clock, Pause, Circle, Sparkles } from "lucide-react";
@@ -12,6 +12,31 @@ import type { Project } from "./projects";
 const EASE   = [0.16, 1, 0.3, 1] as const;
 const VP     = { once: true, margin: "0px 0px -80px 0px" } as const;
 const SPRING = { type: "spring", stiffness: 320, damping: 22 } as const;
+
+// ── CountUp ──────────────────────────────────────────────────────────────────
+function CountUp({ to, duration = 1100, skip }: { to: number; duration?: number; skip: boolean }) {
+    const [count, setCount] = useState(skip ? to : 0);
+    const ref              = useRef<HTMLSpanElement>(null);
+    const rafRef           = useRef<number>(0);
+    const isInView         = useInView(ref, { once: true, margin: "0px 0px -80px 0px" });
+
+    useEffect(() => {
+        if (skip) { setCount(to); return; }
+        if (!isInView) return;
+        const start = performance.now();
+        const tick  = (now: number) => {
+            const progress = Math.min((now - start) / duration, 1);
+            const eased    = 1 - Math.pow(1 - progress, 3); // ease-out cubic
+            setCount(Math.round(eased * to));
+            if (progress < 1) rafRef.current = requestAnimationFrame(tick);
+            else setCount(to); // guarantee exact final value
+        };
+        rafRef.current = requestAnimationFrame(tick);
+        return () => cancelAnimationFrame(rafRef.current);
+    }, [isInView, to, duration, skip]);
+
+    return <span ref={ref}>{count}</span>;
+}
 
 // ── ProjectCard ─────────────────────────────────────────────────────────────
 function ProjectCard({
@@ -218,7 +243,7 @@ export default function PortfolioContent() {
                             <div key={label} className="flex items-center gap-6 sm:gap-8">
                                 <div className="text-center">
                                     <span className="block font-[family-name:var(--font-display)] text-2xl font-extrabold text-white" style={{ letterSpacing: "-0.02em" }}>
-                                        {value}
+                                        <CountUp to={value} skip={!shouldAnimate} />
                                     </span>
                                     <span className="block text-[10px] text-slate-500 uppercase tracking-[0.18em] mt-0.5">
                                         {label}
