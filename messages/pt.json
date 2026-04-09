@@ -344,7 +344,7 @@
   "WhoSection": {
     "badge": "A AGÊNCIA POR DETRÁS DO CÓDIGO",
     "titlePre": "Quem é a",
-    "subtitle": "Criamos websites profissionais, gerimos Meta & Google Ads, transformamos ideias de apps em realidade e automatizamos todo o teu fluxo de trabalho. A única coisa que não fazemos é a tua roupa — mas honestamente, dá-nos uma semana.",
+    "subtitle": "Criamos websites de alta performance, gerimos campanhas de paid media, desenvolvemos web apps personalizadas e automatizamos os seus fluxos de trabalho — tudo sob um mesmo teto, com precisão suíça.",
     "intro": "Enquanto a maioria das agências digitais te entrega um tema WordPress reciclado, arrasta e larga a tua marca no Wix ou te cobra uma subscrição mensal de Webflow — nós desenvolvemos cada linha de código do zero. A Lopes2Tech é um estúdio full-stack especializado com profundo conhecimento do funil de crescimento digital: desde a primeira impressão publicitária até à venda fechada.",
     "notUsLabel": "Outras agências",
     "yesUsLabel": "Lopes2Tech",
@@ -383,11 +383,12 @@
       }
     },
     "stats": {
-      "projects": "Projetos Entregues",
-      "rating": "Satisfação dos Clientes",
+      "rating": "Avaliação Google",
+      "code": "Código Personalizado",
       "countries": "Países Servidos",
       "delivery": "Tempo Médio de Entrega"
-    }
+    },
+    "ctaLink": "Veja como trabalhamos"
   },
   "Hero": {
     "badge": "O Seu Parceiro Digital em Zurique",

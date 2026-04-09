@@ -344,7 +344,7 @@
   "WhoSection": {
     "badge": "DIE AGENTUR HINTER DEM CODE",
     "titlePre": "Wer ist",
-    "subtitle": "Wir bauen professionelle Websites, schalten Meta & Google Ads, verwandeln App-Ideen in Realität und automatisieren Ihren gesamten Workflow. Das Einzige, was wir nicht machen, ist Ihre Wäsche — aber ehrlich gesagt, geben Sie uns eine Woche.",
+    "subtitle": "Wir bauen leistungsstarke Websites, schalten Paid-Media-Kampagnen, entwickeln massgeschneiderte Web-Apps und automatisieren Ihre Workflows — alles aus einer Hand, mit Schweizer Präzision.",
     "intro": "Während die meisten digitalen Agenturen Ihnen ein recyceltes WordPress-Theme geben, Ihre Marke in Wix zusammenklicken oder Ihnen ein monatliches Webflow-Abo berechnen — entwickeln wir jede Zeile Code von Grund auf. Lopes2Tech ist ein spezialisiertes Full-Stack-Studio mit tiefem Verständnis des gesamten digitalen Wachstumstrichters: vom ersten Anzeigenimpuls bis zum abgeschlossenen Verkauf.",
     "notUsLabel": "Andere Agenturen",
     "yesUsLabel": "Lopes2Tech",
@@ -383,11 +383,12 @@
       }
     },
     "stats": {
-      "projects": "Abgeschlossene Projekte",
-      "rating": "Kundenzufriedenheit",
+      "rating": "Google-Bewertung",
+      "code": "Massangefertigt",
       "countries": "Bediente Länder",
       "delivery": "Ø Lieferzeit"
-    }
+    },
+    "ctaLink": "So arbeiten wir"
   },
   "Hero": {
     "badge": "Ihr Digitaler Partner in Zürich",

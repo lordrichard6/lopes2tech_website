@@ -3,21 +3,22 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { Code2, TrendingUp, Megaphone, Zap, CheckCircle2, X } from "lucide-react";
+import { Code2, TrendingUp, Megaphone, Zap, CheckCircle2, X, ArrowRight } from "lucide-react";
+import { Link } from "@/navigation";
 
 const differentiators = [
-  { key: "engineering", icon: Code2,       color: "from-cyan-500/20 to-cyan-500/5",     border: "border-cyan-500/20",    glow: "rgba(6,182,212,0.15)"  },
-  { key: "marketing",   icon: TrendingUp,  color: "from-purple-500/20 to-purple-500/5", border: "border-purple-500/20",  glow: "rgba(168,85,247,0.15)" },
-  { key: "ads",         icon: Megaphone,   color: "from-rose-500/20 to-rose-500/5",     border: "border-rose-500/20",    glow: "rgba(244,63,94,0.15)"  },
-  { key: "automation",  icon: Zap,         color: "from-amber-500/20 to-amber-500/5",   border: "border-amber-500/20",   glow: "rgba(245,158,11,0.15)" },
+  { key: "engineering", icon: Code2,       color: "from-cyan-500/20 to-cyan-500/5",     border: "border-cyan-500/20",    glow: "rgba(6,182,212,0.15)",   iconColor: "text-cyan-400"   },
+  { key: "marketing",   icon: TrendingUp,  color: "from-purple-500/20 to-purple-500/5", border: "border-purple-500/20",  glow: "rgba(168,85,247,0.15)",  iconColor: "text-purple-400" },
+  { key: "ads",         icon: Megaphone,   color: "from-rose-500/20 to-rose-500/5",     border: "border-rose-500/20",    glow: "rgba(244,63,94,0.15)",   iconColor: "text-rose-400"   },
+  { key: "automation",  icon: Zap,         color: "from-amber-500/20 to-amber-500/5",   border: "border-amber-500/20",   glow: "rgba(245,158,11,0.15)",  iconColor: "text-amber-400"  },
 ];
 
 const notUs = ["wix", "wordpress", "webflow", "templates", "plugins", "bloated"];
 const yesUs = ["nextjs", "typescript", "custom", "seo", "analytics", "ads"];
 
 const stats = [
-  { key: "projects",  value: "50+"  },
-  { key: "rating",    value: "4.9★" },
+  { key: "rating",    value: "5.0★" },
+  { key: "code",      value: "100%" },
   { key: "countries", value: "5"    },
   { key: "delivery",  value: "7d"   },
 ];
@@ -78,12 +79,12 @@ function LightningLogo() {
           >
             <path
               d="M6 1L1 9H5L4 17L9 8H5L6 1Z"
-              fill="url(#boltGrad)"
+              fill={`url(#boltGrad-${i})`}
               stroke="rgba(103,232,249,0.6)"
               strokeWidth="0.5"
             />
             <defs>
-              <linearGradient id="boltGrad" x1="5" y1="1" x2="5" y2="17" gradientUnits="userSpaceOnUse">
+              <linearGradient id={`boltGrad-${i}`} x1="5" y1="1" x2="5" y2="17" gradientUnits="userSpaceOnUse">
                 <stop offset="0%" stopColor="#67e8f9" />
                 <stop offset="100%" stopColor="#a855f7" stopOpacity="0.6" />
               </linearGradient>
@@ -174,10 +175,10 @@ export default function WhoIsLopes2Tech() {
           </motion.h2>
 
           <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 20, filter: "blur(6px)" }}
+            whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
+            transition={{ delay: 0.2, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             className="mt-5 text-lg md:text-xl text-slate-400 max-w-2xl leading-relaxed"
           >
             {t("subtitle")}
@@ -202,10 +203,10 @@ export default function WhoIsLopes2Tech() {
 
             {/* NOT us vs YES us */}
             <motion.div
-              initial={{ opacity: 0, y: 16 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: 16, filter: "blur(6px)" }}
+              whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
               viewport={{ once: true }}
-              transition={{ delay: 0.1 }}
+              transition={{ delay: 0.1, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
               className="grid grid-cols-1 sm:grid-cols-2 gap-4"
             >
               {/* Outer shell — Not Us */}
@@ -251,12 +252,15 @@ export default function WhoIsLopes2Tech() {
                     whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                     viewport={{ once: true }}
                     transition={{ delay: i * 0.08, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+                    whileHover={{ y: -4 }}
+                    className="transition-shadow duration-500 ease-[cubic-bezier(0.32,0.72,0,1)]"
+                    style={{ ["--hover-glow" as string]: d.glow }}
                   >
                     {/* Outer shell */}
-                    <div className={`p-[1px] rounded-2xl bg-gradient-to-br ${d.color} ring-1 ${d.border}`} style={{ boxShadow: `0 8px 32px ${d.glow}` }}>
+                    <div className={`p-[1px] rounded-2xl bg-gradient-to-br ${d.color} ring-1 ${d.border} transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] hover:ring-2`} style={{ boxShadow: `0 8px 32px ${d.glow}` }}>
                       {/* Inner core */}
-                      <div className="rounded-[calc(1rem-1px)] bg-[#080d1a]/90 shadow-[inset_0_1px_1px_rgba(255,255,255,0.06)] p-5 backdrop-blur-sm">
-                        <Icon className="w-5 h-5 mb-3 text-white/60" />
+                      <div className="rounded-[calc(1rem-1px)] bg-[#080d1a]/90 shadow-[inset_0_1px_1px_rgba(255,255,255,0.06)] p-5">
+                        <Icon className={`w-5 h-5 mb-3 ${d.iconColor}`} />
                         <h3 className="text-white font-bold text-sm mb-1">{t(`diff.${d.key}.title`)}</h3>
                         <p className="text-slate-400 text-xs leading-relaxed">{t(`diff.${d.key}.desc`)}</p>
                       </div>
@@ -309,7 +313,7 @@ export default function WhoIsLopes2Tech() {
             {floatingBadges.map((b, i) => (
               <motion.div
                 key={b.label}
-                className="hidden md:block absolute px-3 py-1.5 rounded-full bg-[#0f172a]/90 border border-white/10 text-white text-xs font-semibold whitespace-nowrap backdrop-blur-md shadow-xl"
+                className="hidden md:block absolute px-3 py-1.5 rounded-full bg-[#0a0f1e] border border-white/10 text-white text-xs font-semibold whitespace-nowrap shadow-xl"
                 style={{ ...b.pos }}
                 initial={{ opacity: 0, scale: 0.7 }}
                 animate={{
@@ -352,6 +356,23 @@ export default function WhoIsLopes2Tech() {
               ))}
             </div>
           </div>
+        </motion.div>
+
+        {/* Section CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.3, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+          className="text-center mt-10"
+        >
+          <Link
+            href="/services"
+            className="group inline-flex items-center gap-2 text-white/40 hover:text-white text-sm font-medium transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)]"
+          >
+            {t('ctaLink')}
+            <ArrowRight className="w-3.5 h-3.5 transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:translate-x-1" />
+          </Link>
         </motion.div>
 
       </div>

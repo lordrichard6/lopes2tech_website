@@ -344,7 +344,7 @@
   "WhoSection": {
     "badge": "THE AGENCY BEHIND THE CODE",
     "titlePre": "Who is",
-    "subtitle": "We build professional websites, run Meta & Google Ads, turn app ideas into reality, and automate your entire workflow. The only thing we don't do is your laundry — but honestly, give us a week.",
+    "subtitle": "We build high-performance websites, run paid media campaigns, develop custom web apps, and automate your workflows — everything under one roof, delivered with Swiss precision.",
     "intro": "While most digital agencies hand you a recycled WordPress theme, drag and drop your brand into Wix, or bill you monthly for a Webflow subscription — we engineer every line of code from scratch. Lopes2Tech is a specialized full-stack studio with a deep understanding of the entire digital growth funnel: from the first ad impression to the closed sale. We don't just build websites. We build growth engines.",
     "notUsLabel": "Other agencies",
     "yesUsLabel": "Lopes2Tech",
@@ -383,11 +383,12 @@
       }
     },
     "stats": {
-      "projects": "Projects Delivered",
-      "rating": "Client Satisfaction",
+      "rating": "Google Rating",
+      "code": "Custom-Built",
       "countries": "Countries Served",
       "delivery": "Avg. Delivery Time"
-    }
+    },
+    "ctaLink": "See how we work"
   },
   "Hero": {
     "badge": "Zurich's Digital Partner",

@@ -22,7 +22,7 @@
   "WhoSection": {
     "badge": "L'AGENZIA DIETRO IL CODICE",
     "titlePre": "Chi è",
-    "subtitle": "Creiamo siti web professionali, gestiamo Meta & Google Ads, trasformiamo idee di app in realtà e automatizziamo l'intero flusso di lavoro. L'unica cosa che non facciamo è il tuo bucato — ma onestamente, dateci una settimana.",
+    "subtitle": "Creiamo siti web ad alta performance, gestiamo campagne di paid media, sviluppiamo web app personalizzate e automatizziamo i vostri workflow — tutto sotto un unico tetto, con precisione svizzera.",
     "intro": "Mentre la maggior parte delle agenzie digitali ti consegna un tema WordPress riciclato, trascina il tuo brand in Wix o ti addebita un abbonamento Webflow mensile — noi sviluppiamo ogni riga di codice da zero. Lopes2Tech è uno studio full-stack specializzato con una profonda comprensione dell'intero funnel di crescita digitale: dalla prima impressione pubblicitaria alla vendita conclusa.",
     "notUsLabel": "Le altre agenzie",
     "yesUsLabel": "Lopes2Tech",
@@ -61,11 +61,12 @@
       }
     },
     "stats": {
-      "projects": "Progetti Consegnati",
-      "rating": "Soddisfazione Clienti",
+      "rating": "Valutazione Google",
+      "code": "Codice Personalizzato",
       "countries": "Paesi Serviti",
       "delivery": "Tempo Medio di Consegna"
-    }
+    },
+    "ctaLink": "Scopri come lavoriamo"
   },
   "Hero": {
     "badge": "Il Vostro Partner Digitale a Zurigo",
