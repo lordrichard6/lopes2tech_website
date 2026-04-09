@@ -10,7 +10,7 @@ const differentiators = [
   { key: "engineering", icon: Code2,       color: "from-cyan-500/20 to-cyan-500/5",     border: "border-cyan-500/20",    glow: "rgba(6,182,212,0.15)",   iconColor: "text-cyan-400"   },
   { key: "marketing",   icon: TrendingUp,  color: "from-purple-500/20 to-purple-500/5", border: "border-purple-500/20",  glow: "rgba(168,85,247,0.15)",  iconColor: "text-purple-400" },
   { key: "ads",         icon: Megaphone,   color: "from-violet-500/20 to-violet-500/5", border: "border-violet-500/20",  glow: "rgba(139,92,246,0.15)",  iconColor: "text-violet-400" },
-  { key: "automation",  icon: Zap,         color: "from-amber-500/20 to-amber-500/5",   border: "border-amber-500/20",   glow: "rgba(245,158,11,0.15)",  iconColor: "text-amber-400"  },
+  { key: "automation",  icon: Zap,         color: "from-cyan-500/10 to-violet-500/10",  border: "border-violet-500/20",  glow: "rgba(139,92,246,0.12)",  iconColor: "text-violet-400" },
 ];
 
 const notUs = ["wix", "wordpress", "webflow", "templates", "plugins", "bloated"];
@@ -107,16 +107,12 @@ function LightningLogo() {
 }
 
 const floatingBadges = [
-  { label: "Next.js",        pos: { top: "6%",    left: "-2%"  }, floatDur: 3.0, showDur: 3.5, showDelay: 0.0,  hideDur: 3.5, cycle: 10 },
-  { label: "Meta Ads",       pos: { top: "22%",   right: "-6%" }, floatDur: 3.5, showDur: 3.5, showDelay: 1.5,  hideDur: 3.5, cycle: 11 },
-  { label: "Google Ads",     pos: { top: "52%",   right: "-4%" }, floatDur: 4.0, showDur: 3.5, showDelay: 3.0,  hideDur: 3.5, cycle: 12 },
-  { label: "n8n / Zapier",   pos: { bottom: "14%", left: "-6%" }, floatDur: 3.2, showDur: 3.5, showDelay: 4.5,  hideDur: 3.5, cycle: 13 },
-  { label: "TypeScript",     pos: { top: "38%",   left: "-8%"  }, floatDur: 3.8, showDur: 3.5, showDelay: 2.0,  hideDur: 3.5, cycle: 14 },
-  { label: "Supabase",       pos: { top: "70%",   right: "-4%" }, floatDur: 3.3, showDur: 3.5, showDelay: 5.5,  hideDur: 3.5, cycle: 11 },
-  { label: "Google Analytics", pos: { top: "12%", right: "-6%" }, floatDur: 3.6, showDur: 3.5, showDelay: 7.0,  hideDur: 3.5, cycle: 13 },
-  { label: "SaaS",           pos: { bottom: "28%", left: "-4%" }, floatDur: 4.2, showDur: 3.5, showDelay: 8.5,  hideDur: 3.5, cycle: 12 },
-  { label: "Stripe",         pos: { top: "62%",   left: "-6%"  }, floatDur: 3.1, showDur: 3.5, showDelay: 6.0,  hideDur: 3.5, cycle: 14 },
-  { label: "Tailwind CSS",   pos: { top: "30%",   right: "-7%" }, floatDur: 3.7, showDur: 3.5, showDelay: 9.0,  hideDur: 3.5, cycle: 11 },
+  { label: "Next.js",      pos: { top: "8%",     left: "-2%"  }, floatDur: 3.0, showDelay: 0.0,  cycle: 10 },
+  { label: "Meta Ads",     pos: { top: "24%",    right: "-6%" }, floatDur: 3.5, showDelay: 1.5,  cycle: 11 },
+  { label: "TypeScript",   pos: { top: "42%",    left: "-8%"  }, floatDur: 3.8, showDelay: 2.0,  cycle: 14 },
+  { label: "Google Ads",   pos: { top: "56%",    right: "-4%" }, floatDur: 4.0, showDelay: 3.0,  cycle: 12 },
+  { label: "n8n / Zapier", pos: { bottom: "18%", left: "-6%"  }, floatDur: 3.2, showDelay: 4.5,  cycle: 13 },
+  { label: "Supabase",     pos: { top: "72%",    right: "-4%" }, floatDur: 3.3, showDelay: 5.5,  cycle: 11 },
 ];
 
 export default function WhoIsLopes2Tech() {
@@ -125,8 +121,10 @@ export default function WhoIsLopes2Tech() {
   return (
     <section
       id="who"
-      className="relative py-24 md:py-32 bg-[#080d1a] overflow-x-hidden overflow-y-visible"
+      className="relative py-24 md:py-32 bg-[#080d1a]"
     >
+      {/* Overflow clip wrapper — isolates horizontal clip from vertical, fixing Safari overflow bug */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none" />
       {/* Dot grid pattern */}
       <div
         className="absolute inset-0 pointer-events-none"
@@ -174,23 +172,23 @@ export default function WhoIsLopes2Tech() {
             </span>
           </motion.h2>
 
+          <motion.p
+            initial={{ opacity: 0, y: 16, filter: "blur(6px)" }}
+            whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            className="mt-6 text-base md:text-lg text-slate-400 leading-[1.8] max-w-2xl text-center"
+          >
+            {t("intro")}
+          </motion.p>
+
         </div>
 
         {/* ── Main split layout ────────────────────────────────── */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start mb-16">
 
           {/* ── LEFT: Content ─────────────────── */}
           <div className="space-y-8">
-
-            <motion.p
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-              className="text-white/90 text-base md:text-lg leading-[1.8]"
-            >
-              {t("intro")}
-            </motion.p>
 
             {/* NOT us vs YES us */}
             <motion.div
@@ -271,16 +269,18 @@ export default function WhoIsLopes2Tech() {
             className="relative flex items-center justify-center"
           >
             <div className="absolute inset-0 rounded-full bg-cyan-500/5 blur-[80px]" />
-            <div
+            <motion.div
               className="absolute w-[380px] h-[380px] rounded-full border border-cyan-500/10"
               style={{
                 background: "conic-gradient(from 0deg, rgba(6,182,212,0.05), transparent 60%, rgba(168,85,247,0.05), transparent)",
-                animation: "spin 20s linear infinite",
               }}
+              animate={{ rotate: 360 }}
+              transition={{ duration: 22, repeat: Infinity, ease: "linear" }}
             />
-            <div
+            <motion.div
               className="absolute w-[300px] h-[300px] rounded-full border border-purple-500/10"
-              style={{ animation: "spin 15s linear infinite reverse" }}
+              animate={{ rotate: -360 }}
+              transition={{ duration: 16, repeat: Infinity, ease: "linear" }}
             />
 
             <motion.div
@@ -301,7 +301,7 @@ export default function WhoIsLopes2Tech() {
             </motion.div>
 
             {/* Floating tech badges — cycle in/out */}
-            {floatingBadges.map((b, i) => (
+            {floatingBadges.map((b) => (
               <motion.div
                 key={b.label}
                 className="hidden md:block absolute px-3 py-1.5 rounded-full bg-[#0a0f1e] border border-white/10 text-white text-xs font-semibold whitespace-nowrap shadow-xl"
@@ -338,7 +338,13 @@ export default function WhoIsLopes2Tech() {
             {/* Inner core */}
             <div className="rounded-[calc(1.5rem-1px)] bg-white/[0.02] shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] grid grid-cols-2 md:grid-cols-4 gap-4 p-6 md:p-8">
               {stats.map((s, i) => (
-                <div key={s.key} className={`text-center ${i < stats.length - 1 ? "md:border-r border-white/10" : ""}`}>
+                <div
+                  key={s.key}
+                  className={`text-center
+                    ${i < 2 ? "border-b border-white/10 pb-4 md:pb-0 md:border-b-0" : ""}
+                    ${i < stats.length - 1 ? "md:border-r md:border-white/10" : ""}
+                  `}
+                >
                   <p className="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-violet-500 mb-1">
                     {s.value}
                   </p>
@@ -359,7 +365,7 @@ export default function WhoIsLopes2Tech() {
         >
           <Link
             href="/services"
-            className="group inline-flex items-center gap-2 text-white/40 hover:text-white text-sm font-medium transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)]"
+            className="group inline-flex items-center gap-2 text-white/60 hover:text-white text-sm font-medium underline-offset-4 hover:underline transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)]"
           >
             {t('ctaLink')}
             <ArrowRight className="w-3.5 h-3.5 transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:translate-x-1" />

@@ -345,7 +345,7 @@
     "badge": "THE AGENCY BEHIND THE CODE",
     "titlePre": "Who is",
     "subtitle": "We build high-performance websites, run paid media campaigns, develop custom web apps, and automate your workflows — everything under one roof, delivered with Swiss precision.",
-    "intro": "Most agencies hand you a recycled template and call it a website. We build premium, high-performance digital products — engineered from scratch with Next.js, obsessed over at the pixel level, and architected to load fast, rank high, and convert. Beyond development, we run the complete growth stack: Meta & Google Ads, business automation, and custom web apps. Everything under one roof. No shortcuts.",
+    "intro": "There's a new sheriff in town. He builds premium websites that make people faint — custom-engineered with Next.js, obsessed over at the pixel level, and wired for speed and growth. Meta & Google Ads, business automation, custom web apps: the full service stack, one roof, zero shortcuts. And when the site is live? The support doesn't stop — I'm so attentive I could probably take care of your grandma too.",
     "notUsLabel": "Other agencies",
     "yesUsLabel": "Lopes2Tech",
     "notUs": {
@@ -400,6 +400,8 @@
   },
   "ServicesSection": {
     "title": "Our Expertise",
+    "headingPre": "Our",
+    "headingHighlight": "Expertise",
     "subtitle": "From web development to intelligent automation, we provide end-to-end digital solutions.",
     "items": {
       "web": {
@@ -430,11 +432,15 @@
   "CTASection": {
     "title": "Ready to Scale Your Business?",
     "subtitle": "Let's build something extraordinary together. Book your free consultation today.",
-    "button": "Start Project"
+    "button": "Start Project",
+    "badge": "Free Consultation",
+    "noCommitment": "Free · No commitment"
   },
   "Portfolio": {
     "badge": "SELECTED WORK",
     "title": "Built for Growth",
+    "titlePre": "Built for",
+    "titleHighlight": "Growth",
     "subtitle": "A selection of high-impact websites and applications designed for performance and scale.",
     "button": "View Full Portfolio",
     "projects": {
@@ -517,7 +523,8 @@
         "title": "Launch & Support",
         "description": "We deploy your system and provide ongoing maintenance."
       }
-    }
+    },
+    "cta": "Book a Discovery Call"
   },
   "Testimonials": {
     "badge": "Client Feedback",
@@ -535,15 +542,22 @@
         "name": "Silvio Valente",
         "role": "Professional Photographer",
         "company": "Silvio Valente Photography",
-        "text": "I needed a portfolio that truly reflected the quality of my work, and Lopes2Tech delivered exactly that. The website is clean, fast, and elegant. Clients constantly compliment how easy it is to navigate and book sessions. Couldn't be happier with the result."
+        "text": "Impeccable results and total efficiency. The technical delivery is top-notch: the site came out modern and the automations actually work, running processes on their own without any headache. A successful partnership that saved hours for my team and delivered exactly what was promised. Outstanding."
       },
-      "ana": {
-        "name": "Ana Ribeiro",
+      "rode": {
+        "name": "Rode Kassoma",
         "role": "Founder",
-        "company": "Ribeiro Consulting",
-        "text": "Working with Lopes2Tech was a seamless experience from start to finish. They understood our brand, built a professional site that generates leads, and were always responsive throughout the process. Our online presence has never looked this credible."
+        "company": "Safira Reinigung GmbH",
+        "text": "Working with Lopes2Tech was the best decision I ever made. I had hired another company that built a poorly-made website — emails crashed constantly and the site kept going offline. A friend told me about Lopes2Tech. I reached out and was helped within 24 hours. In 3 days they built me a new website and it's perfect. No more problems and my business shows up on Google consistently. Super satisfied!"
+      },
+      "ana_isabel": {
+        "name": "Ana Isabel",
+        "role": "Client",
+        "company": "",
+        "text": "Dedicated professional. Turned my aspirations into real competitive advantages. Highly recommend."
       }
-    }
+    },
+    "cta": "Read more reviews"
   },
   "Newsletter": {
     "description": "Get insights on AI, SEO & web dev delivered to your inbox.",
@@ -1088,7 +1102,7 @@
     "titleHighlight": "Your Industry",
     "subtitle": "Vertical SaaS products designed from scratch — each one solving a real problem for a specific industry.",
     "learnMore": "Learn more",
-    "hint": "Click any product to explore its features",
+    "ctaLink": "View all projects",
     "dialog": {
       "close": "Close",
       "visitWebsite": "Visit Website",

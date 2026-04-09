@@ -23,7 +23,7 @@
     "badge": "L'AGENCE DERRIÈRE LE CODE",
     "titlePre": "Qui est",
     "subtitle": "Nous créons des sites web haute performance, gérons des campagnes de paid media, développons des web apps sur-mesure et automatisons vos workflows — tout sous un même toit, avec la précision suisse.",
-    "intro": "La plupart des agences vous livrent un template recyclé et appellent ça un site web. Nous construisons des produits digitaux premium et haute performance — développés de zéro avec Next.js, soignés au pixel près et architecturés pour charger vite, bien se positionner et convertir. Au-delà du développement, nous gérons le stack de croissance complet : Meta & Google Ads, automatisation métier et web apps sur-mesure. Tout sous un même toit. Sans compromis.",
+    "intro": "Il y a un nouveau shérif en ville. Il construit des sites web premium qui font s'évanouir les gens — développés de zéro avec Next.js, travaillés au dernier pixel et optimisés pour la vitesse et la croissance. Meta & Google Ads, automatisation des processus, applications web sur mesure : le stack de services complet, un seul toit, zéro compromis. Et une fois le site en ligne ? Le support ne s'arrête pas — je suis tellement attentif que je pourrais probablement aussi m'occuper de votre grand-mère.",
     "notUsLabel": "Les autres agences",
     "yesUsLabel": "Lopes2Tech",
     "notUs": {
@@ -78,6 +78,8 @@
   },
   "ServicesSection": {
     "title": "Notre Expertise",
+    "headingPre": "Notre",
+    "headingHighlight": "Expertise",
     "subtitle": "Du développement web à l'automatisation intelligente, nous proposons des solutions digitales de bout en bout.",
     "items": {
       "web": {
@@ -108,11 +110,15 @@
   "CTASection": {
     "title": "Prêt à Développer Votre Entreprise ?",
     "subtitle": "Construisons quelque chose d'extraordinaire ensemble. Réservez votre consultation gratuite aujourd'hui.",
-    "button": "Démarrer un Projet"
+    "button": "Démarrer un Projet",
+    "badge": "Consultation Gratuite",
+    "noCommitment": "Gratuit · Sans engagement"
   },
   "Portfolio": {
     "badge": "RÉALISATIONS SÉLECTIONNÉES",
     "title": "Conçu pour la Croissance",
+    "titlePre": "Conçu pour",
+    "titleHighlight": "la Croissance",
     "subtitle": "Une sélection de sites web et d'applications à fort impact, conçus pour la performance et l'évolutivité.",
     "button": "Voir le Portfolio Complet",
     "projects": {
@@ -195,7 +201,8 @@
         "title": "Lancement & Support",
         "description": "Nous déployons votre système et assurons la maintenance continue."
       }
-    }
+    },
+    "cta": "Réserver un Appel"
   },
   "Testimonials": {
     "badge": "Avis Clients",
@@ -213,15 +220,22 @@
         "name": "Silvio Valente",
         "role": "Photographe Professionnel",
         "company": "Silvio Valente Photography",
-        "text": "J'avais besoin d'un portfolio qui reflète vraiment la qualité de mon travail, et Lopes2Tech a livré exactement cela. Le site est épuré, rapide et élégant. Les clients complimentent constamment la facilité de navigation et de réservation. Je suis plus que satisfait du résultat."
+        "text": "Résultats impeccables et efficacité totale. La livraison technique est de haut niveau : le site est moderne et les automatisations fonctionnent vraiment, faisant tourner les processus seuls et sans prise de tête. Un partenariat réussi qui a économisé des heures à mon équipe et livré exactement ce qui avait été promis. Impressionnant."
       },
-      "ana": {
-        "name": "Ana Ribeiro",
+      "rode": {
+        "name": "Rode Kassoma",
         "role": "Fondatrice",
-        "company": "Ribeiro Consulting",
-        "text": "Travailler avec Lopes2Tech a été une expérience fluide du début à la fin. Ils ont compris notre marque, construit un site professionnel qui génère des prospects, et ont toujours été réactifs tout au long du processus. Notre présence en ligne n'a jamais été aussi crédible."
+        "company": "Safira Reinigung GmbH",
+        "text": "Travailler avec Lopes2Tech a été la meilleure décision que j'aie jamais prise. Une autre entreprise m'avait créé un site mal fait — les e-mails plantaient constamment et le site tombait régulièrement. Une amie m'a parlé de Lopes2Tech. J'ai pris contact et j'ai été prise en charge en moins de 24 heures. En 3 jours, ils m'ont créé un nouveau site — il est parfait. Plus de problèmes et mon entreprise apparaît régulièrement sur Google. Super satisfaite !"
+      },
+      "ana_isabel": {
+        "name": "Ana Isabel",
+        "role": "Cliente",
+        "company": "",
+        "text": "Professionnel dévoué. A transformé mes aspirations en véritables avantages concurrentiels. Je recommande vivement."
       }
-    }
+    },
+    "cta": "Lire plus d'avis"
   },
   "Newsletter": {
     "description": "Recevez des insights sur l'IA, le SEO et le développement web directement dans votre boîte mail.",
@@ -1201,7 +1215,7 @@
     "titleHighlight": "Votre Secteur",
     "subtitle": "Produits SaaS verticaux conçus de zéro — chacun résolvant un problème réel pour un secteur spécifique.",
     "learnMore": "En savoir plus",
-    "hint": "Cliquez sur un produit pour explorer ses fonctionnalités",
+    "ctaLink": "Voir tous les projets",
     "dialog": {
       "close": "Fermer",
       "visitWebsite": "Visiter le Site",
