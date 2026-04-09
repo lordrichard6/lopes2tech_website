@@ -600,25 +600,27 @@
   "AboutPage": {
     "hero": {
       "badge": "Über Uns",
-      "title": "Innovation, die Ergebnisse Liefert",
-      "description": "Wir sind eine Schweizer Technologieagentur, spezialisiert auf KI-Agenten, Webentwicklung und automatisierte Lösungen. Wir glauben, dass Technologie den Menschen dienen sollte, nicht umgekehrt."
+      "title": "Wir bauen Ihren gesamten digitalen Fußabdruck.",
+      "description": "Premium-Websites, SEO, Automatisierung und KI — wir entwerfen und entwickeln jede Ebene Ihrer digitalen Präsenz. In Zürich ansässig, für die Welt gebaut."
     },
     "philosophy": {
       "title": "Unsere Philosophie",
-      "description": "Wir sind eine Schweizer Technologieagentur, spezialisiert auf KI-Agenten, Webentwicklung und automatisierte Lösungen. Wir glauben, dass Technologie den Menschen dienen sollte, nicht umgekehrt.",
+      "description": "Wir glauben, dass jedes Pixel, jede Millisekunde und jede Zeile Code einen Zweck erfüllen sollte. Geschwindigkeit, Handwerkskunst und Präzision — keine Optionen, sondern der Standard, den wir an jedes Projekt anlegen.",
       "stats": {
         "uptime": "Uptime Garantie",
         "delivery": "Schnellere Lieferung",
-        "satisfaction": "Kundenzufriedenheit",
+        "satisfaction": "Google-Bewertung",
         "coffees": "Kaffees / Monat"
-      }
+      },
+      "eyebrow": "Unser Ansatz"
     },
     "founder": {
       "title": "Über den Gründer",
       "description1": "Ich bin Full Stack Entwickler und der Gründer von <span class='text-cyan-400 font-semibold'>Lopes2Tech</span>, spezialisiert auf leistungsstarke Websites, intelligente Automatisierungen und KI-gesteuerte Webanwendungen. Mit Sitz in Zürich, aber ursprünglich aus Portugal (wo <em>Bacalhau à Brás</em> und <em>Pastéis de Nata</em> eine Religion sind), kombiniere ich technische Präzision mit einer tiefen Leidenschaft für digitale Innovation.",
       "description2": "Mein beruflicher Charakter ist definiert durch einen unermüdlichen Drang, komplexe Probleme zu lösen. Ich schreibe nicht nur Code; ich architekte digitale Ökosysteme. Von skalierbaren SaaS-Plattformen bis zu autonomen KI-Agenten nutze ich einen modernen Stack—einschliesslich <span class='text-white'>Next.js, TypeScript, Python und Supabase</span>—um Lösungen zu liefern, die so robust wie schön sind.",
       "quote": "Ich vereinfache die digitale Landschaft für Unternehmen, indem ich massgeschneiderte Automatisierungen und Web-Apps baue, die für Sie arbeiten, während Sie ein Pastél de Nata geniessen.",
-      "connect": "Verbinden Sie sich mit mir"
+      "connect": "Verbinden Sie sich mit mir",
+      "eyebrow": "Der Gründer"
     }
   },
   "ContactPage": {
@@ -650,10 +652,16 @@
       "success": {
         "title": "Nachricht Gesendet!",
         "message": "Danke für Ihre Nachricht. Ich werde mich in Kürze bei Ihnen melden.",
-        "button": "Weitere Senden"
-      }
+        "button": "Weitere Senden",
+        "responseTime": "Ich antworte in der Regel innerhalb von 24 Stunden."
+      },
+      "eyebrow": "Nachricht senden"
     },
-    "location": "Zürich, Schweiz"
+    "location": "Zürich, Schweiz",
+    "leftPanel": {
+      "name": "Paulo Lopes",
+      "title": "Gründer & Lead-Entwickler"
+    }
   },
   "ImpressumPage": {
     "title": "Impressum",

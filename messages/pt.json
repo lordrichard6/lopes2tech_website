@@ -600,25 +600,27 @@
   "AboutPage": {
     "hero": {
       "badge": "Sobre Nós",
-      "title": "Inovação que Gera Resultados",
-      "description": "Somos uma agência de tecnologia sediada na Suíça especializada em agentes de IA, desenvolvimento web e soluções automatizadas. Acreditamos que a tecnologia deve servir as pessoas, e não o contrário."
+      "title": "Construímos toda a sua presença digital.",
+      "description": "Websites premium, SEO, automação e IA — projetamos e desenvolvemos cada camada da sua presença digital. Com sede em Zurique, criado para o mundo."
     },
     "philosophy": {
       "title": "A Nossa Filosofia",
-      "description": "Somos uma agência de tecnologia sediada na Suíça especializada em agentes de IA, desenvolvimento web e soluções automatizadas. Acreditamos que a tecnologia deve servir as pessoas, e não o contrário.",
+      "description": "Acreditamos que cada pixel, cada milissegundo e cada linha de código deve ter um propósito. Velocidade, artesanato e precisão — não são opções, mas o padrão que aplicamos a cada projeto.",
       "stats": {
         "uptime": "Garantia de Uptime",
         "delivery": "Entrega Mais Rápida",
-        "satisfaction": "Satisfação do Cliente",
+        "satisfaction": "Avaliação Google",
         "coffees": "Cafés / Mês"
-      }
+      },
+      "eyebrow": "A Nossa Abordagem"
     },
     "founder": {
       "title": "Sobre o Fundador",
       "description1": "Sou um Full Stack Developer e fundador da <span class='text-cyan-400 font-semibold'>Lopes2Tech</span>, especializado em sites de alto desempenho, automações inteligentes e aplicações web impulsionadas por IA. Sediado em Zurique mas originário de Portugal (onde <em>Bacalhau à Brás</em> e <em>Pastéis de Nata</em> são uma religião), combino precisão técnica com uma profunda paixão pela inovação digital.",
       "description2": "O meu caráter profissional é definido por um impulso implacável para resolver problemas complexos. Não escrevo apenas código; arquiteto ecossistemas digitais. Desde plataformas SaaS escaláveis a agentes de IA autónomos, aproveito uma stack moderna—incluindo <span class='text-white'>Next.js, TypeScript, Python e Supabase</span>—para entregar soluções tão robustas quanto bonitas.",
       "quote": "Simplifico o panorama digital para empresas, construindo automações personalizadas e aplicações web que trabalham por si enquanto desfruta de um Pastel de Nata.",
-      "connect": "Conecte-se comigo"
+      "connect": "Conecte-se comigo",
+      "eyebrow": "O Fundador"
     }
   },
   "ContactPage": {
@@ -650,10 +652,16 @@
       "success": {
         "title": "Mensagem Enviada!",
         "message": "Obrigado pelo contato. Responderei em breve.",
-        "button": "Enviar Outra"
-      }
+        "button": "Enviar Outra",
+        "responseTime": "Costumo responder dentro de 24 horas."
+      },
+      "eyebrow": "Enviar Mensagem"
     },
-    "location": "Zurique, Suíça"
+    "location": "Zurique, Suíça",
+    "leftPanel": {
+      "name": "Paulo Lopes",
+      "title": "Fundador & Lead Developer"
+    }
   },
   "ImpressumPage": {
     "title": "Impressum",

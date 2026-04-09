@@ -600,25 +600,27 @@
   "AboutPage": {
     "hero": {
       "badge": "About Us",
-      "title": "Innovation That Drives Results",
-      "description": "We are a Swiss-based technology agency specializing in AI agents, web development, and automated solutions. We believe technology should serve people, not the other way around."
+      "title": "We build your entire online footprint.",
+      "description": "Premium websites, SEO, automation, and AI — we design and build every layer of your digital presence. Based in Zurich, built for the world."
     },
     "philosophy": {
       "title": "Our Philosophy",
-      "description": "We are a Swiss-based technology agency specializing in AI agents, web development, and automated solutions. We believe technology should serve people, not the other way around.",
+      "description": "We believe every pixel, every millisecond, and every line of code should serve a purpose. Speed, craftsmanship, and precision — not options, but the baseline we hold every project to.",
       "stats": {
         "uptime": "Uptime Guarantee",
         "delivery": "Faster Delivery",
-        "satisfaction": "Client Satisfaction",
+        "satisfaction": "Google Review",
         "coffees": "Coffees / Month"
-      }
+      },
+      "eyebrow": "Our Approach"
     },
     "founder": {
       "title": "About the Founder",
       "description1": "I am a Full Stack Developer and the founder of <span class='text-cyan-400 font-semibold'>Lopes2Tech</span>, specializing in high-performance websites, intelligent automations, and AI-driven web applications. Based in Zurich but originally from Portugal (where <em>Bacalhau à Brás</em> and <em>Pastéis de Nata</em> are a religion), I combine technical precision with a deep passion for digital innovation.",
       "description2": "My professional character is defined by a relentless drive to solve complex problems. I don't just write code; I architect digital ecosystems. From scalable SaaS platforms to autonomous AI agents, I leverage a modern stack—including <span class='text-white'>Next.js, TypeScript, Python, and Supabase</span>—to deliver solutions that are as robust as they are beautiful.",
       "quote": "I simplify the digital landscape for businesses, building custom automations and web apps that work for you while you enjoy a Pastél de Nata.",
-      "connect": "Connect with me"
+      "connect": "Connect with me",
+      "eyebrow": "The Founder"
     }
   },
   "ContactPage": {
@@ -650,10 +652,16 @@
       "success": {
         "title": "Message Sent!",
         "message": "Thanks for reaching out. I'll get back to you shortly.",
-        "button": "Send Another"
-      }
+        "button": "Send Another",
+        "responseTime": "I typically respond within 24 hours."
+      },
+      "eyebrow": "Send a Message"
     },
-    "location": "Zurich, Switzerland"
+    "location": "Zurich, Switzerland",
+    "leftPanel": {
+      "name": "Paulo Lopes",
+      "title": "Founder & Lead Developer"
+    }
   },
   "ImpressumPage": {
     "title": "Impressum",
