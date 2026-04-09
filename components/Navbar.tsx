@@ -223,14 +223,6 @@ export default function Navbar() {
                         )}
                     </ul>
 
-                    {/* Desktop CTA */}
-                    <Link
-                        href="/contact"
-                        className="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-cyan-500 text-white text-sm font-semibold hover:bg-cyan-400 transition-colors duration-200 shrink-0"
-                    >
-                        {t('cta')}
-                    </Link>
-
                     {/* Desktop Controls */}
                     <div className="hidden md:flex items-center gap-4 pl-6 border-l border-white/10 h-[32px]">
                         {/* Language Selector */}
