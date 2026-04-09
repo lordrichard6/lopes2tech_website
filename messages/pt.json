@@ -1378,7 +1378,7 @@
   },
   "ServicesHubPage": {
     "stats": {
-      "projects": "Projetos Entregues",
+      "projects": "Projetos Live",
       "countries": "Países Atendidos",
       "rating": "Avaliação Média",
       "response": "Tempo Médio de Resposta"

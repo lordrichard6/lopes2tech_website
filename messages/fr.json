@@ -1138,7 +1138,7 @@
   },
   "ServicesHubPage": {
     "stats": {
-      "projects": "Projets Livrés",
+      "projects": "Projets Live",
       "countries": "Pays Servis",
       "rating": "Note Moyenne",
       "response": "Temps de Réponse Moyen"

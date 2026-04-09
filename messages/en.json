@@ -1378,7 +1378,7 @@
   },
   "ServicesHubPage": {
     "stats": {
-      "projects": "Projects Delivered",
+      "projects": "Live Projects",
       "countries": "Countries Served",
       "rating": "Average Rating",
       "response": "Avg. Response Time"
