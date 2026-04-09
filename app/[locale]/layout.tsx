@@ -34,15 +34,16 @@ export const viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Lopes2Tech - AI & Automations: Tech-Accelerated Growth for Modern Business.",
-  description: "Lopes2Tech helps Swiss SMEs and startups get more leads, automate admin tasks, and scale with custom websites, AI workflows, and business automation — based in Zurich.",
+  // 57 chars — fits Google's ~60 char SERP limit with geographic keyword intact
+  title: "Lopes2Tech | Premium Websites & Digital Marketing — Zurich",
+  description: "Premium websites, automation, AI, and digital marketing for Swiss SMEs. More leads, less admin — built fast and priced below Zurich market rates.",
   manifest: '/manifest.json',
   appleWebApp: {
     capable: true,
     statusBarStyle: 'default',
     title: 'Lopes2Tech',
   },
-  keywords: ["lopes2tech", "website development", "SEO development", "AI workflows", "IT solutions Switzerland", "process automation", "app development", "custom software", "business automation", "Zurich"],
+  // keywords meta is ignored by Google since 2009 — removed
   authors: [{ name: "Paulo R. Lopes" }],
   metadataBase: new URL("https://lopes2tech.ch"),
   alternates: {
@@ -56,8 +57,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Lopes2Tech - Websites & Automations for Service Businesses",
-    description: "We help small and medium companies get more leads, automate admin, and scale without complexity.",
+    title: "Lopes2Tech — Premium Websites, Automation & Digital Marketing for Swiss Businesses",
+    description: "Premium websites, automation, AI, and digital marketing for Swiss SMEs. More leads, less admin — built fast and priced below Zurich market rates.",
     url: "https://lopes2tech.ch",
     siteName: "Lopes2Tech",
     images: [
@@ -65,7 +66,7 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Lopes2Tech - Swiss IT Solutions",
+        alt: "Lopes2Tech — Premium Websites & Digital Marketing, Zurich",
       },
     ],
     locale: "en_US",
@@ -73,8 +74,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Lopes2Tech - Websites & Automations for Service Businesses",
-    description: "We help small and medium companies get more leads, automate admin, and scale without complexity.",
+    title: "Lopes2Tech — Premium Websites, Automation & Digital Marketing for Swiss Businesses",
+    description: "Premium websites, automation, AI, and digital marketing for Swiss SMEs. More leads, less admin — built fast and priced below Zurich market rates.",
     images: ["/og-image.png"],
   },
   robots: {

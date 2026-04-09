@@ -17,15 +17,15 @@ const BASE_URL = "https://lopes2tech.ch";
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   return {
-    title: "Lopes2Tech - AI & Automations: Tech-Accelerated Growth for Modern Business",
-    description: "We help Swiss SMEs get more leads, automate admin, and scale without complexity. Web development, SEO, AI integration, and business automation in Zurich.",
+    title: "Lopes2Tech | Premium Websites & Digital Marketing — Zurich",
+    description: "Premium websites, automation, AI, and digital marketing for Swiss SMEs. More leads, less admin — built fast and priced below Zurich market rates.",
     alternates: {
       canonical: `${BASE_URL}/${locale}`,
       languages: { "x-default": `${BASE_URL}/en`, en: `${BASE_URL}/en`, de: `${BASE_URL}/de`, pt: `${BASE_URL}/pt`, fr: `${BASE_URL}/fr`, it: `${BASE_URL}/it` },
     },
     openGraph: {
-      title: "Lopes2Tech - Websites & Automations for Service Businesses",
-      description: "We help small and medium companies get more leads, automate admin, and scale without complexity.",
+      title: "Lopes2Tech — Premium Websites, Automation & Digital Marketing for Swiss Businesses",
+      description: "Premium websites, automation, AI, and digital marketing for Swiss SMEs. More leads, less admin — built fast and priced below Zurich market rates.",
       url: `${BASE_URL}/${locale}`,
     },
   };
