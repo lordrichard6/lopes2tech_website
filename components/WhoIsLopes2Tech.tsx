@@ -174,15 +174,6 @@ export default function WhoIsLopes2Tech() {
             </span>
           </motion.h2>
 
-          <motion.p
-            initial={{ opacity: 0, y: 20, filter: "blur(6px)" }}
-            whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="mt-5 text-lg md:text-xl text-slate-400 max-w-2xl leading-relaxed"
-          >
-            {t("subtitle")}
-          </motion.p>
         </div>
 
         {/* ── Main split layout ────────────────────────────────── */}
