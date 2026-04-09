@@ -1252,8 +1252,8 @@
     "stats": {
       "projects": "progetti",
       "live": "in produzione",
-      "webApps": "app web",
-      "websites": "siti web"
+      "response": "Risposta Media",
+      "countries": "Paesi"
     },
     "resultsCount": "Visualizzazione di {count} progetti",
     "cta": {

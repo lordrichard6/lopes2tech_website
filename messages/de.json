@@ -1233,8 +1233,8 @@
     "stats": {
       "projects": "Projekte",
       "live": "live",
-      "webApps": "Web-Apps",
-      "websites": "Websites"
+      "response": "Ø Reaktionszeit",
+      "countries": "Länder"
     },
     "resultsCount": "{count} Projekte angezeigt",
     "cta": {
@@ -1245,7 +1245,7 @@
       "button": "Projekt starten"
     },
     "filters": {
-      "webApps": "Web-Apps",
+      "response": "Ø Reaktionszeit",
       "websites": "Websites"
     },
     "badges": {

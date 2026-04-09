@@ -1333,8 +1333,8 @@
     "stats": {
       "projects": "projets",
       "live": "en ligne",
-      "webApps": "apps web",
-      "websites": "sites web"
+      "response": "Réponse Moy.",
+      "countries": "Pays"
     },
     "resultsCount": "Affichage de {count} projets",
     "cta": {

@@ -1233,8 +1233,8 @@
     "stats": {
       "projects": "projects",
       "live": "live",
-      "webApps": "web apps",
-      "websites": "websites"
+      "response": "Avg. Response",
+      "countries": "Countries"
     },
     "resultsCount": "Showing {count} projects",
     "cta": {

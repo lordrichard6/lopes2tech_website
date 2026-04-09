@@ -160,11 +160,9 @@ export default function PortfolioContent() {
 
     const filteredProjects = projects.filter(p => p.type === activeFilter);
 
-    // #5 — Stats computed from source of truth
+    // #5 — Stats computed from source of truth (showcase demos excluded from live count)
     const totalProjects  = projects.length;
-    const liveCount      = projects.filter(p => p.link && !p.isInDevelopment && !p.isOnHold).length;
-    const webAppsCount   = projects.filter(p => p.type === "web-app").length;
-    const websitesCount  = projects.filter(p => p.type === "website").length;
+    const liveCount      = projects.filter(p => p.link && !p.isInDevelopment && !p.isOnHold && !p.isShowcase).length;
 
     const handleFilterChange = (filter: "web-app" | "website") => {
         setActiveFilter(filter);
@@ -235,15 +233,15 @@ export default function PortfolioContent() {
                     {/* #5 — Stats strip — flex-wrap for mobile safety */}
                     <motion.div {...fadeIn(0.32)} className="flex flex-wrap items-center justify-center gap-6 sm:gap-8 mt-10">
                         {[
-                            { value: totalProjects,  label: t("stats.projects") },
-                            { value: liveCount,      label: t("stats.live")     },
-                            { value: webAppsCount,   label: t("stats.webApps")  },
-                            { value: websitesCount,  label: t("stats.websites") },
-                        ].map(({ value, label }, i) => (
+                            { numeric: totalProjects, suffix: "",   label: t("stats.projects") },
+                            { numeric: liveCount,     suffix: "",   label: t("stats.live")     },
+                            { numeric: 24,            suffix: "h",  label: t("stats.response") },
+                            { numeric: 3,             suffix: "",   label: t("stats.countries") },
+                        ].map(({ numeric, suffix, label }, i) => (
                             <div key={label} className="flex items-center gap-6 sm:gap-8">
                                 <div className="text-center">
                                     <span className="block font-[family-name:var(--font-display)] text-2xl font-extrabold text-white" style={{ letterSpacing: "-0.02em" }}>
-                                        <CountUp to={value} skip={!shouldAnimate} />
+                                        <CountUp to={numeric} skip={!shouldAnimate} />{suffix}
                                     </span>
                                     <span className="block text-[10px] text-slate-500 uppercase tracking-[0.18em] mt-0.5">
                                         {label}

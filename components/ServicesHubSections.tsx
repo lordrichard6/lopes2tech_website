@@ -24,7 +24,7 @@ const statsConfig = [
     { value: "50+",  key: "projects"  },
     { value: "3",    key: "countries" },
     { value: "5.0★", key: "rating"   },
-    { value: "48h",  key: "response"  },
+    { value: "24h",  key: "response"  },
 ];
 
 export default function ServicesHubSections() {
