@@ -390,8 +390,9 @@
     }
   },
   "Hero": {
-    "title1": "Websites & Automations",
-    "title2": "for Service Businesses",
+    "badge": "Zurich's Digital Partner",
+    "title1": "Premium Websites &",
+    "title2": "Digital Marketing",
     "subtitle": "We help small and medium companies get more leads, automate admin, and scale without complexity.",
     "cta": "Talk with me",
     "seeWork": "See our work"

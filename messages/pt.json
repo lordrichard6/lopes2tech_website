@@ -390,8 +390,9 @@
     }
   },
   "Hero": {
-    "title1": "Websites & Automação",
-    "title2": "para Empresas de Serviços",
+    "badge": "O Seu Parceiro Digital em Zurique",
+    "title1": "Websites Premium &",
+    "title2": "Marketing Digital",
     "subtitle": "Ajudamos pequenas e médias empresas a obter mais leads, automatizar a administração e escalar sem complexidade.",
     "cta": "Fale comigo",
     "seeWork": "Ver projetos"

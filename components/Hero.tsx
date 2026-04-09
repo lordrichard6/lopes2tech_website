@@ -1,7 +1,6 @@
 "use client";
 
-import { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, useReducedMotion } from "framer-motion";
 import { ArrowRight, ChevronDown } from "lucide-react";
 import Image from "next/image";
 import { Link } from "@/navigation";
@@ -12,14 +11,20 @@ import { WHATSAPP_URL } from "@/lib/constants";
 
 export default function Hero() {
     const t = useTranslations('Hero');
-    const containerRef = useRef<HTMLElement>(null);
     const { scrollY } = useScroll();
+    const reducedMotion = useReducedMotion();
 
-    // Parallax Transforms - Different speeds for depth perception
-    const yTitle = useTransform(scrollY, [0, 500], [0, 150]);
-    const yText = useTransform(scrollY, [0, 500], [0, 200]);
-    const yButton = useTransform(scrollY, [0, 500], [0, 300]); // Moves fastest (feels closest)
-    const yImage = useTransform(scrollY, [0, 500], [0, 50]);   // Moves slowest (feels furthest/heaviest)
+    // Parallax Transforms — gentle values to avoid nausea on scroll
+    // When reduced motion is preferred, pass 0 to disable all parallax
+    const yTitleRaw = useTransform(scrollY, [0, 500], [0, 60]);
+    const yTextRaw  = useTransform(scrollY, [0, 500], [0, 80]);
+    const yButtonRaw = useTransform(scrollY, [0, 500], [0, 120]);
+    const yImageRaw = useTransform(scrollY, [0, 500], [0, 30]);
+
+    const yTitle  = reducedMotion ? 0 : yTitleRaw;
+    const yText   = reducedMotion ? 0 : yTextRaw;
+    const yButton = reducedMotion ? 0 : yButtonRaw;
+    const yImage  = reducedMotion ? 0 : yImageRaw;
 
     const handleBookingClick = () => {
         trackCTAClick('hero_book_call');
@@ -28,9 +33,8 @@ export default function Hero() {
 
     return (
         <section
-            ref={containerRef}
             id="home"
-            className="relative min-h-screen flex items-end pb-[140px] overflow-hidden bg-black"
+            className="relative min-h-[100dvh] flex items-center overflow-hidden bg-black"
         >
             {/* Background Layer */}
             <div className="absolute inset-0 z-0">
@@ -40,10 +44,13 @@ export default function Hero() {
                     loop
                     playsInline
                     poster="/vids/hero-poster.jpg"
-                    className="absolute inset-0 w-full h-full object-cover opacity-100"
+                    className="absolute inset-0 w-full h-full object-cover"
                 >
                     <source src="/vids/hero.mp4" type="video/mp4" />
                 </video>
+
+                {/* Dark gradient overlay — ensures heading legibility over any video frame */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/45 to-black/20" />
 
                 {/* Ambient orbs — large, deeply blurred, non-competing */}
                 <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -61,13 +68,13 @@ export default function Hero() {
                     >
                         <motion.path
                             animate={{ x: [0, -25, 0] }}
-                            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                            transition={{ duration: 3, repeat: Infinity, ease: [0.32, 0.72, 0, 1] }}
                             d="M0,120V73.71c47.79-22.2,103.59-32.17,158-28,70.36,5.37,136.33,33.31,206.8,37.5,73.84,4.36,147.54-16.88,218.2-35.26,69.27-18,138.3-24.88,209.4-13.08,36.15,6,69.85,17.84,104.45,29.34,92.64,30.79,216.14,70.08,303.85,2.52V120Z"
                             className="fill-[#080d1a] opacity-25"
                         ></motion.path>
                         <motion.path
                             animate={{ x: [0, -25, 0] }}
-                            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 0.2 }}
+                            transition={{ duration: 4, repeat: Infinity, ease: [0.32, 0.72, 0, 1], delay: 0.2 }}
                             d="M0,120V104.19C13,83.08,27.64,63.14,47.69,47.95,99.41,8.73,165,9,224.58,28.42c31.15,10.15,60.09,26.07,89.67,39.8,40.92,19,84.73,46,130.83,49.67,36.26,2.85,70.9-9.42,98.6-31.56,31.77-25.39,62.32-62,103.63-73,40.44-10.79,81.35,6.69,119.13,24.28s75.16,39,116.92,43.05c59.73,5.85,113.28-22.88,168.9-38.84,30.2-8.66,59-6.17,87.09,7.5,22.43,10.89,48,26.93,60.65,49.24V120Z"
                             className="fill-[#080d1a] opacity-50"
                         ></motion.path>
@@ -75,15 +82,24 @@ export default function Hero() {
                 </div>
             </div>
 
-            {/* Content Container - No single Y transform anymore */}
-            <div
-                className="relative z-10 w-full max-w-[1200px] mx-auto px-4 md:px-8 mb-8 md:mb-0 flex flex-col md:flex-row items-end md:justify-between text-left gap-8 md:gap-0"
-            >
+            {/* Content Container */}
+            <div className="relative z-10 w-full max-w-[1200px] mx-auto px-4 md:px-8 py-24 md:py-0 flex flex-col md:flex-row items-center md:justify-between text-left gap-8 md:gap-0">
                 <div className="w-full md:max-w-[60%] flex flex-col items-center md:items-start text-center md:text-left relative z-20">
+
+                    {/* Eyebrow badge */}
+                    <motion.span
+                        initial={{ opacity: 0, y: 16 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+                        className="inline-block px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[10px] uppercase tracking-[0.2em] font-medium text-cyan-400 mb-5"
+                    >
+                        {t('badge')}
+                    </motion.span>
+
                     <motion.h1
                         style={{ y: yTitle }}
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
+                        initial={{ opacity: 0, y: 24, filter: "blur(8px)" }}
+                        animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                         transition={{ duration: 0.9, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
                         className="text-[2.2rem] leading-[1.1] font-extrabold tracking-tight mb-4 md:text-[3.5rem] break-words hyphens-auto text-balance font-[family-name:var(--font-display)]"
                     >
@@ -93,8 +109,8 @@ export default function Hero() {
 
                     <motion.p
                         style={{ y: yText, textShadow: '0 2px 20px rgba(0,0,0,0.6)' }}
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
+                        initial={{ opacity: 0, y: 24, filter: "blur(8px)" }}
+                        animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                         transition={{ duration: 0.9, delay: 0.75, ease: [0.16, 1, 0.3, 1] }}
                         className="text-white text-[1rem] md:text-[1.25rem] leading-[1.6] max-w-[700px] mb-8"
                     >
@@ -103,8 +119,8 @@ export default function Hero() {
 
                     <motion.div
                         style={{ y: yButton }}
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
+                        initial={{ opacity: 0, y: 24, filter: "blur(8px)" }}
+                        animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                         transition={{ duration: 0.9, delay: 1.0, ease: [0.16, 1, 0.3, 1] }}
                         className="flex flex-wrap items-center gap-4 mb-8"
                     >
@@ -112,7 +128,8 @@ export default function Hero() {
                             href={WHATSAPP_URL}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="group relative px-8 py-4 rounded-xl bg-cyan-500/10 text-white font-semibold border border-[#00f5ff] shadow-[0_0_15px_rgba(0,245,255,0.3),inset_0_0_15px_rgba(0,245,255,0.1)] hover:bg-cyan-500/20 hover:shadow-[0_0_25px_rgba(0,245,255,0.6),inset_0_0_20px_rgba(0,245,255,0.2)] hover:-translate-y-[2px] transition-all flex items-center gap-2 overflow-hidden"
+                            onClick={handleBookingClick}
+                            className="group relative px-8 py-4 rounded-full bg-cyan-500/10 text-white font-semibold border border-[#00f5ff] shadow-[0_0_15px_rgba(0,245,255,0.3),inset_0_0_15px_rgba(0,245,255,0.1)] hover:bg-cyan-500/20 hover:shadow-[0_0_25px_rgba(0,245,255,0.6),inset_0_0_20px_rgba(0,245,255,0.2)] hover:-translate-y-[2px] active:scale-[0.98] transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] flex items-center gap-2 overflow-hidden"
                         >
                             <span className="relative z-10">{t('cta')}</span>
                             <span className="w-7 h-7 rounded-full bg-white/10 flex items-center justify-center transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:translate-x-1 group-hover:scale-110">
@@ -123,10 +140,10 @@ export default function Hero() {
 
                         <Link
                             href="/portfolio"
-                            className="group flex items-center gap-1.5 text-white/60 hover:text-white text-sm font-medium transition-colors duration-200"
+                            className="group flex items-center gap-1.5 text-white/60 hover:text-white text-sm font-medium transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)]"
                         >
                             {t('seeWork')}
-                            <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
+                            <ArrowRight className="w-3.5 h-3.5 transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:translate-x-1" />
                         </Link>
                     </motion.div>
                 </div>
@@ -137,7 +154,7 @@ export default function Hero() {
                         style={{ y: yImage }}
                         initial={{ opacity: 0, scale: 0.8, x: 50 }}
                         animate={{ opacity: 1, scale: 1, x: 0 }}
-                        transition={{ duration: 1, delay: 0.5 }}
+                        transition={{ duration: 1, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
                         className="absolute bottom-[-120px] right-[-50px] w-full h-full flex items-end justify-center"
                     >
                         <Image
@@ -157,12 +174,12 @@ export default function Hero() {
             <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ delay: 1.8, duration: 0.6 }}
+                transition={{ delay: 1.8, duration: 0.6, ease: [0.32, 0.72, 0, 1] }}
                 className="absolute bottom-[148px] left-1/2 -translate-x-1/2 z-[15] flex flex-col items-center gap-1.5 pointer-events-none motion-reduce:hidden"
             >
                 <motion.div
                     animate={{ y: [0, 6, 0] }}
-                    transition={{ duration: 1.4, repeat: Infinity, ease: "easeInOut" }}
+                    transition={{ duration: 1.4, repeat: Infinity, ease: [0.32, 0.72, 0, 1] }}
                 >
                     <ChevronDown className="w-5 h-5 text-white/30" />
                 </motion.div>
