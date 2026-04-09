@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Image from "next/image";
 import { Link } from "@/navigation";
 import { X, Check, ExternalLink, ArrowRight } from "lucide-react";
@@ -201,15 +201,38 @@ function ProjectDialog({
 function ProjectCard({ project, index, onClick }: { project: Project; index: number; onClick: () => void }) {
     const [hovered, setHovered] = useState(false);
     const t = useTranslations("FeaturedProjects");
+    const cardRef = useRef<HTMLDivElement>(null);
+
+    const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+        const card = cardRef.current;
+        if (!card) return;
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        const rotateX = ((y - centerY) / centerY) * -6;
+        const rotateY = ((x - centerX) / centerX) * 6;
+        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02,1.02,1.02)`;
+    };
+
+    const handleMouseLeave = () => {
+        const card = cardRef.current;
+        if (!card) return;
+        card.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1,1,1)`;
+        setHovered(false);
+    };
 
     return (
         <motion.div
+            ref={cardRef}
             initial={{ opacity: 0, y: 32, filter: "blur(6px)" }}
             whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: index * 0.1, ease: [0.16, 1, 0.3, 1] }}
             onMouseEnter={() => setHovered(true)}
-            onMouseLeave={() => setHovered(false)}
+            onMouseLeave={handleMouseLeave}
+            onMouseMove={handleMouseMove}
             className="relative flex flex-col rounded-2xl overflow-hidden border transition-all duration-500 cursor-pointer group"
             style={{
                 borderColor: hovered ? project.cardBorder : 'rgba(255,255,255,0.08)',
@@ -217,6 +240,8 @@ function ProjectCard({ project, index, onClick }: { project: Project; index: num
                 boxShadow: hovered
                     ? `0 0 40px 0 ${project.cardGlow}, 0 24px 48px -12px rgba(0,0,0,0.5)`
                     : '0 4px 24px -8px rgba(0,0,0,0.4)',
+                transition: 'transform 0.15s ease-out, border-color 0.5s, box-shadow 0.5s',
+                willChange: 'transform',
             }}
         >
             {/* Mockup image */}
@@ -382,7 +407,7 @@ export default function FeaturedProjects() {
                         <h2 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight mb-4 font-[family-name:var(--font-display)]">
                             {t("title")}{" "}
                             <span className="relative inline-block">
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-cyan-400 to-purple-400">
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-violet-400 to-cyan-300">
                                     {t("titleHighlight")}
                                 </span>
                             </span>

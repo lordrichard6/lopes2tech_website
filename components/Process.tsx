@@ -72,53 +72,23 @@ export default function Process() {
                 </motion.p>
             </div>
 
-            {/* Desktop curve layout */}
-            <div className="hidden md:block relative w-full h-[420px]">
-                <div className="absolute top-0 left-0 w-full h-full">
-                    <svg className="w-full h-full overflow-visible" aria-hidden="true" preserveAspectRatio="none" viewBox="0 0 1440 400">
-                        <defs>
-                            <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                                <stop offset="0%"   stopColor="#22d3ee" />
-                                <stop offset="100%" stopColor="#3b82f6" />
-                            </linearGradient>
-                        </defs>
-                        {/* Guide path */}
-                        <path
-                            d="M-100,200 C100,200 150,300 252,300 C400,300 450,100 600,100 C800,100 850,100 1000,100 C1150,100 1200,300 1350,300 C1450,300 1500,200 1600,200"
-                            fill="none"
-                            stroke="rgba(255,255,255,0.07)"
-                            strokeWidth="2"
-                            strokeDasharray="6 6"
-                        />
-                        {/* Animated gradient line */}
-                        <motion.path
-                            d="M-100,200 C100,200 150,300 252,300 C400,300 450,100 600,100 C800,100 850,100 1000,100 C1150,100 1200,300 1350,300 C1450,300 1500,200 1600,200"
-                            fill="none"
-                            stroke="url(#lineGradient)"
-                            strokeWidth="3"
-                            initial={{ pathLength: 0 }}
-                            whileInView={{ pathLength: 1 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 2.5, ease: [0.32, 0.72, 0, 1] }}
-                        />
-                        {/* Moving particle */}
-                        <circle r="5" fill="#fff" className="filter drop-shadow-[0_0_8px_rgba(34,211,238,0.9)]">
-                            <animateMotion
-                                dur="6s"
-                                repeatCount="indefinite"
-                                path="M-100,200 C100,200 150,300 252,300 C400,300 450,100 600,100 C800,100 850,100 1000,100 C1150,100 1200,300 1350,300 C1450,300 1500,200 1600,200"
-                            />
-                        </circle>
-                    </svg>
+            {/* Desktop horizontal timeline */}
+            <div className="hidden md:grid grid-cols-4 gap-6 max-w-[1200px] mx-auto px-6 relative z-10">
+                {/* Connector line */}
+                <div className="absolute top-[52px] left-[12.5%] right-[12.5%] h-[1px] pointer-events-none">
+                    <div className="w-full h-full bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+                    <motion.div
+                        className="absolute inset-y-0 left-0 bg-gradient-to-r from-cyan-500 to-violet-500"
+                        initial={{ width: "0%" }}
+                        whileInView={{ width: "100%" }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 2, delay: 0.3, ease: [0.32, 0.72, 0, 1] }}
+                    />
                 </div>
 
-                {/* Steps grid */}
-                <div className="w-full h-full relative z-10 max-w-[1600px] mx-auto grid grid-cols-4">
-                    <div className="flex flex-col items-center pt-[260px]"><StepItem step={steps[0]} t={t} /></div>
-                    <div className="flex flex-col items-center pt-[60px]"> <StepItem step={steps[1]} t={t} /></div>
-                    <div className="flex flex-col items-center pt-[60px]"> <StepItem step={steps[2]} t={t} /></div>
-                    <div className="flex flex-col items-center pt-[260px]"><StepItem step={steps[3]} t={t} /></div>
-                </div>
+                {steps.map((step, i) => (
+                    <StepItem key={step.id} step={step} t={t} index={i} />
+                ))}
             </div>
 
             {/* Mobile timeline */}
@@ -152,40 +122,33 @@ export default function Process() {
 
 type Step = typeof steps[0];
 
-function StepItem({ step, t }: { step: Step; t: ReturnType<typeof useTranslations<"Process">> }) {
+function StepItem({ step, t, index }: { step: Step; t: ReturnType<typeof useTranslations<"Process">>; index: number }) {
     return (
-        <>
-            {/* Icon on the line */}
-            <motion.div
-                initial={{ scale: 0, opacity: 0 }}
-                whileInView={{ scale: 1, opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-                className="group/icon w-16 h-16 rounded-full bg-white/5 border border-white/10 shadow-[inset_0_1px_1px_rgba(255,255,255,0.08)] flex items-center justify-center relative z-20 hover:border-cyan-500/40 hover:bg-cyan-500/10 transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] mb-6"
-            >
-                <step.icon className="w-7 h-7 text-cyan-400" />
-                <div className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-[#080d1a] border border-white/15 text-white text-[10px] font-bold flex items-center justify-center">
-                    {step.id}
+        <motion.div
+            initial={{ opacity: 0, y: 24, filter: "blur(6px)" }}
+            whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+            viewport={{ once: true }}
+            transition={{ delay: index * 0.12, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+            className="relative flex flex-col items-center text-center"
+        >
+            {/* Icon circle on the line */}
+            <div className="relative z-20 mb-6">
+                <div className="w-[52px] h-[52px] rounded-full bg-[#080d1a] border border-white/10 shadow-[inset_0_1px_1px_rgba(255,255,255,0.08)] flex items-center justify-center group hover:border-cyan-500/40 hover:bg-cyan-500/10 transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)]">
+                    <step.icon className="w-5 h-5 text-cyan-400" />
                 </div>
-            </motion.div>
+            </div>
 
-            {/* Double-Bezel content card */}
-            <motion.div
-                initial={{ opacity: 0, y: 12, filter: "blur(6px)" }}
-                whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.15, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-                className="text-center max-w-[240px]"
-            >
-                {/* Outer shell */}
-                <div className="p-[1px] rounded-2xl bg-white/5 ring-1 ring-white/10">
-                    {/* Inner core */}
-                    <div className="rounded-[calc(1rem-1px)] bg-white/[0.03] shadow-[inset_0_1px_1px_rgba(255,255,255,0.07)] p-4">
-                        <h3 className="text-white font-bold text-base mb-1.5">{t(`steps.${step.id}.title`)}</h3>
-                        <p className="text-slate-400 text-xs leading-relaxed">{t(`steps.${step.id}.description`)}</p>
-                    </div>
+            {/* Double-Bezel card with large ghost number */}
+            <div className="p-[1px] rounded-2xl bg-white/5 ring-1 ring-white/10 w-full hover:ring-cyan-500/20 transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)]">
+                <div className="rounded-[calc(1rem-1px)] bg-white/[0.03] shadow-[inset_0_1px_1px_rgba(255,255,255,0.07)] p-5 relative overflow-hidden">
+                    {/* Ghost number */}
+                    <span className="absolute -bottom-3 -right-1 text-[5rem] font-extrabold text-white/[0.04] leading-none select-none font-[family-name:var(--font-display)] pointer-events-none">
+                        {String(step.id).padStart(2, '0')}
+                    </span>
+                    <h3 className="text-white font-bold text-sm mb-1.5 relative z-10">{t(`steps.${step.id}.title`)}</h3>
+                    <p className="text-slate-400 text-xs leading-relaxed relative z-10">{t(`steps.${step.id}.description`)}</p>
                 </div>
-            </motion.div>
-        </>
+            </div>
+        </motion.div>
     );
 }

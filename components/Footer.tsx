@@ -11,7 +11,7 @@ export default function Footer() {
     const currentYear = new Date().getFullYear(); // module-level would be ideal but this is fine for SSR
 
     return (
-        <footer className="relative pt-16 pb-8 bg-[#0a0e27] text-white overflow-hidden text-center">
+        <footer className="relative pt-16 pb-8 bg-[#080d1a] text-white overflow-hidden text-center">
             {/* ... (background elements) */}
             <div
                 className="absolute inset-0 z-0 pointer-events-none opacity-60"
@@ -35,7 +35,7 @@ export default function Footer() {
                     {/* Logo & Description */}
                     <div className="md:col-span-1 flex flex-col items-center md:items-start">
                         <div className="relative group cursor-pointer mb-4">
-                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[100px] h-[100px] rounded-full bg-[radial-gradient(circle,_rgba(34,211,238,0.6)_0%,_rgba(34,211,238,0.3)_40%,_rgba(168,85,247,0.2)_70%,_transparent_100%)] blur-md opacity-40 group-hover:opacity-80 transition-opacity duration-500 animate-pulse" />
+                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[100px] h-[100px] rounded-full bg-[radial-gradient(circle,_rgba(34,211,238,0.6)_0%,_rgba(34,211,238,0.3)_40%,_rgba(168,85,247,0.2)_70%,_transparent_100%)] blur-md opacity-40 group-hover:opacity-80 transition-opacity duration-500 animate-logo-glow" />
                             <Image
                                 src="/logo_w.svg"
                                 alt="Lopes2Tech - Swiss IT Solutions Logo"

@@ -32,7 +32,7 @@ export default function Testimonials() {
     const t = useTranslations('Testimonials');
 
     return (
-        <section className="relative py-32 overflow-hidden bg-[#0f172a]">
+        <section className="relative py-32 overflow-hidden bg-[#080d1a]">
             {/* Background glows */}
             <div className="absolute inset-0 pointer-events-none">
                 <div className="absolute top-[20%] right-[-5%]  w-[400px] h-[400px] rounded-full bg-violet-500/[0.06] blur-[100px]" />

@@ -98,13 +98,28 @@ export default function Hero() {
 
                     <motion.h1
                         style={{ y: yTitle }}
-                        initial={{ opacity: 0, y: 24, filter: "blur(8px)" }}
-                        animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-                        transition={{ duration: 0.9, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
                         className="text-[2.2rem] leading-[1.1] font-extrabold tracking-tight mb-4 md:text-[4.5rem] break-words hyphens-auto text-balance font-[family-name:var(--font-display)]"
                     >
-                        <span className="block text-white">{t('title1')}</span>
-                        <span className="block text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-cyan-500">{t('title2')}</span>
+                        <div className="overflow-hidden">
+                            <motion.span
+                                className="block text-white"
+                                initial={{ y: "110%", opacity: 0 }}
+                                animate={{ y: "0%", opacity: 1 }}
+                                transition={{ duration: 0.9, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
+                            >
+                                {t('title1')}
+                            </motion.span>
+                        </div>
+                        <div className="overflow-hidden">
+                            <motion.span
+                                className="block text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-cyan-500"
+                                initial={{ y: "110%", opacity: 0 }}
+                                animate={{ y: "0%", opacity: 1 }}
+                                transition={{ duration: 0.9, delay: 0.55, ease: [0.16, 1, 0.3, 1] }}
+                            >
+                                {t('title2')}
+                            </motion.span>
+                        </div>
                     </motion.h1>
 
                     <motion.p
@@ -130,7 +145,7 @@ export default function Hero() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 onClick={handleBookingClick}
-                                className="group relative px-8 py-4 rounded-full bg-cyan-500/10 text-white font-semibold border border-[#00f5ff] shadow-[0_0_15px_rgba(0,245,255,0.3),inset_0_0_15px_rgba(0,245,255,0.1)] hover:bg-cyan-500/20 hover:shadow-[0_0_25px_rgba(0,245,255,0.6),inset_0_0_20px_rgba(0,245,255,0.2)] hover:-translate-y-[2px] active:scale-[0.98] transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] flex items-center gap-2 overflow-hidden"
+                                className="group relative px-8 py-4 rounded-full bg-cyan-500/10 text-white font-semibold border border-cyan-400/30 shadow-[0_0_15px_rgba(34,211,238,0.15),inset_0_0_15px_rgba(34,211,238,0.05)] hover:bg-cyan-500/20 hover:shadow-[0_0_25px_rgba(34,211,238,0.35),inset_0_0_20px_rgba(34,211,238,0.1)] hover:-translate-y-[2px] active:scale-[0.98] transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] flex items-center gap-2 overflow-hidden"
                             >
                                 <span className="relative z-10">{t('cta')}</span>
                                 <span className="w-7 h-7 rounded-full bg-white/10 flex items-center justify-center transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:translate-x-1 group-hover:scale-110">

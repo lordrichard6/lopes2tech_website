@@ -125,6 +125,11 @@ export default function Services() {
               {/* Content */}
               <div className="relative z-20 h-full p-6 md:p-8 flex flex-col justify-end items-start text-left">
 
+                {/* Ghost step number */}
+                <span className="absolute bottom-4 right-6 text-[6rem] font-extrabold text-white/[0.05] leading-none select-none font-[family-name:var(--font-display)] pointer-events-none">
+                  {String(index + 1).padStart(2, '0')}
+                </span>
+
                 {/* Badge */}
                 <div className="absolute top-6 right-6 px-4 py-1.5 rounded-full bg-gradient-to-br from-[#0e7490] via-[#0891b2] to-[#06b6d4] text-white text-[0.7rem] font-bold uppercase tracking-wider shadow-lg opacity-100 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
                   {t('getStarted')}

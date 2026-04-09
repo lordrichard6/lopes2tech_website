@@ -12,6 +12,8 @@ import Clarity from '@/components/Clarity';
 import ServiceWorkerRegister from '@/components/ServiceWorkerRegister';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import SmoothScroll from '@/components/SmoothScroll';
+import GrainOverlay from '@/components/GrainOverlay';
+import CustomCursor from '@/components/CustomCursor';
 
 const inter = Inter({
   variable: "--font-inter",
@@ -23,7 +25,7 @@ const spaceGrotesk = Space_Grotesk({
   variable: "--font-display",
   subsets: ["latin"],
   display: "swap",
-  weight: ["500", "600", "700"],
+  weight: ["400", "500", "600", "700"],
 });
 
 // Viewport configuration (Next.js 14+ best practice)
@@ -140,6 +142,8 @@ export default async function RootLayout({
           <CookieConsent />
           <ServiceWorkerRegister />
           <WhatsAppButton />
+          <GrainOverlay />
+          <CustomCursor />
         </NextIntlClientProvider>
       </body>
     </html>

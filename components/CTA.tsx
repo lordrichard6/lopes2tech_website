@@ -10,7 +10,7 @@ export default function CTA() {
     const t = useTranslations('CTASection');
 
     return (
-        <section className="relative py-32 bg-[#0f172a] overflow-hidden flex items-center justify-center text-center">
+        <section className="relative py-32 bg-[#080d1a] overflow-hidden flex items-center justify-center text-center">
 
             {/* ... (background elements) */}
             <div className="absolute inset-0 z-0">
@@ -28,12 +28,12 @@ export default function CTA() {
                 <motion.div
                     animate={{ y: [0, -30, 0] }}
                     transition={{ duration: 10, repeat: Infinity, ease: [0.32, 0.72, 0, 1] }}
-                    className="absolute -top-[100px] left-[10%] w-[400px] h-[400px] rounded-full bg-cyan-400 blur-[80px] opacity-20 md:mix-blend-screen will-change-transform motion-reduce:animate-none"
+                    className="absolute -top-[100px] left-[10%] w-[400px] h-[400px] rounded-full bg-cyan-400 blur-[80px] opacity-[0.12] will-change-transform motion-reduce:animate-none"
                 />
                 <motion.div
                     animate={{ y: [0, 30, 0] }}
                     transition={{ duration: 10, repeat: Infinity, ease: [0.32, 0.72, 0, 1], delay: 5 }}
-                    className="absolute -bottom-[150px] right-[10%] w-[500px] h-[500px] rounded-full bg-purple-500 blur-[80px] opacity-20 md:mix-blend-screen will-change-transform motion-reduce:animate-none"
+                    className="absolute -bottom-[150px] right-[10%] w-[500px] h-[500px] rounded-full bg-purple-500 blur-[80px] opacity-[0.12] will-change-transform motion-reduce:animate-none"
                 />
             </div>
 
@@ -71,7 +71,7 @@ export default function CTA() {
                     >
                         <span className="relative z-10">{t('button')}</span>
                         {/* Button-in-Button trailing icon */}
-                        <span className="w-9 h-9 rounded-full bg-[#0f172a]/15 flex items-center justify-center transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:translate-x-1 group-hover:scale-110 relative z-10">
+                        <span className="w-9 h-9 rounded-full bg-[#080d1a]/15 flex items-center justify-center transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:translate-x-1 group-hover:scale-110 relative z-10">
                             <ArrowRight className="w-4 h-4" />
                         </span>
                         {/* Shine */}

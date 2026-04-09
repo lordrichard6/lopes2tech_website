@@ -9,7 +9,7 @@ import { Link } from "@/navigation";
 const differentiators = [
   { key: "engineering", icon: Code2,       color: "from-cyan-500/20 to-cyan-500/5",     border: "border-cyan-500/20",    glow: "rgba(6,182,212,0.15)",   iconColor: "text-cyan-400"   },
   { key: "marketing",   icon: TrendingUp,  color: "from-purple-500/20 to-purple-500/5", border: "border-purple-500/20",  glow: "rgba(168,85,247,0.15)",  iconColor: "text-purple-400" },
-  { key: "ads",         icon: Megaphone,   color: "from-rose-500/20 to-rose-500/5",     border: "border-rose-500/20",    glow: "rgba(244,63,94,0.15)",   iconColor: "text-rose-400"   },
+  { key: "ads",         icon: Megaphone,   color: "from-violet-500/20 to-violet-500/5", border: "border-violet-500/20",  glow: "rgba(139,92,246,0.15)",  iconColor: "text-violet-400" },
   { key: "automation",  icon: Zap,         color: "from-amber-500/20 to-amber-500/5",   border: "border-amber-500/20",   glow: "rgba(245,158,11,0.15)",  iconColor: "text-amber-400"  },
 ];
 
