@@ -18,7 +18,7 @@ export default function Portfolio() {
     const t = useTranslations('Portfolio');
 
     return (
-        <section id="portfolio" className="relative py-32 overflow-hidden bg-gradient-to-b from-[#0f172a] to-[#082f49]">
+        <section id="portfolio" className="relative py-32 overflow-hidden bg-[#080d1a]">
 
             {/* Top Wave Divider */}
             <div className="absolute top-0 left-0 w-full overflow-hidden leading-[0] z-10">
@@ -33,8 +33,8 @@ export default function Portfolio() {
                 <div className="absolute bottom-[20%] right-[5%] w-[300px] h-[300px] rounded-full bg-cyan-500/10 blur-[80px]" />
 
                 {/* Subtle Floating Icons */}
-                <motion.div animate={{ y: [0, -20, 0] }} transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }} className="absolute top-[15%] left-[10%] text-cyan-500/30 text-3xl md:text-5xl"><Mail /></motion.div>
-                <motion.div animate={{ y: [0, 25, 0] }} transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }} className="absolute bottom-[25%] right-[10%] text-cyan-500/30 text-3xl md:text-5xl"><Code /></motion.div>
+                <motion.div animate={{ y: [0, -20, 0] }} transition={{ duration: 6, repeat: Infinity, ease: [0.32, 0.72, 0, 1] }} className="absolute top-[15%] left-[10%] text-cyan-500/30 text-3xl md:text-5xl"><Mail /></motion.div>
+                <motion.div animate={{ y: [0, 25, 0] }} transition={{ duration: 8, repeat: Infinity, ease: [0.32, 0.72, 0, 1] }} className="absolute bottom-[25%] right-[10%] text-cyan-500/30 text-3xl md:text-5xl"><Code /></motion.div>
             </div>
 
             <div className="relative z-10 max-w-[1200px] mx-auto px-6">
@@ -42,14 +42,15 @@ export default function Portfolio() {
                 {/* Header */}
                 <div className="text-center max-w-2xl mx-auto mb-16">
                     <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
+                        initial={{ opacity: 0, y: 20, filter: "blur(8px)" }}
+                        whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                         viewport={{ once: true }}
-                        className="inline-block px-4 py-1.5 rounded-full bg-cyan-500/10 text-cyan-400 font-semibold text-sm mb-4 border border-cyan-500/20"
+                        transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+                        className="inline-block px-4 py-1.5 rounded-full bg-cyan-500/10 text-cyan-400 font-semibold text-[10px] uppercase tracking-[0.2em] mb-5 border border-cyan-500/20"
                     >
                         {t('badge')}
                     </motion.div>
-                    <h2 className="text-4xl md:text-5xl font-extrabold mb-6 text-white tracking-tight">
+                    <h2 className="text-4xl md:text-5xl font-extrabold mb-6 text-white tracking-tight font-[family-name:var(--font-display)]">
                         {t('title')}
                     </h2>
                     <p className="text-lg text-slate-400">
@@ -70,7 +71,7 @@ export default function Portfolio() {
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
-                                transition={{ delay: idx * 0.05 }}
+                                transition={{ delay: idx * 0.05, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
                                 className={clsx(
                                     "group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-sm shadow-xl",
                                     project.className
@@ -87,7 +88,7 @@ export default function Portfolio() {
                                             className="object-cover transition-transform duration-700 group-hover:scale-105"
                                         />
                                         {/* Gradient Overlay */}
-                                        <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-[#0f172a]/40 to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-500" />
+                                        <div className="absolute inset-0 bg-gradient-to-t from-[#080d1a] via-[#080d1a]/40 to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-500" />
                                     </div>
 
                                     {/* Content */}
@@ -124,12 +125,6 @@ export default function Portfolio() {
                     </Link>
                 </div>
 
-            </div>
-            {/* Bottom Wave Divider */}
-            <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0] z-10 rotate-180">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" className="relative block w-full h-[120px]">
-                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="fill-[#fff]" style={{ fill: '#ffffff' }}></path>
-                </svg>
             </div>
 
         </section>

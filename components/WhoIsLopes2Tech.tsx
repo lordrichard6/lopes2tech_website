@@ -38,14 +38,14 @@ function LightningLogo() {
       {/* Deep glow orb */}
       <motion.span
         animate={{ opacity: [0.3, 0.8, 0.3], scale: [0.9, 1.4, 0.9] }}
-        transition={{ duration: 2.4, repeat: Infinity, ease: "easeInOut" }}
+        transition={{ duration: 2.4, repeat: Infinity, ease: [0.32, 0.72, 0, 1] }}
         className="absolute rounded-full bg-cyan-400/25 blur-[18px]"
         style={{ width: "100%", height: "100%", transform: "scale(2.2)" }}
       />
       {/* Secondary purple pulse */}
       <motion.span
         animate={{ opacity: [0.2, 0.5, 0.2], scale: [1.2, 1.8, 1.2] }}
-        transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 0.8 }}
+        transition={{ duration: 3, repeat: Infinity, ease: [0.32, 0.72, 0, 1], delay: 0.8 }}
         className="absolute rounded-full bg-purple-500/15 blur-[24px]"
         style={{ width: "100%", height: "100%", transform: "scale(2.8)" }}
       />
@@ -71,7 +71,7 @@ function LightningLogo() {
             transition={{
               duration: 1.2,
               repeat: Infinity,
-              ease: "easeInOut",
+              ease: [0.32, 0.72, 0, 1],
               delay: bolt.delay,
               repeatDelay: 0.8,
             }}
@@ -194,6 +194,7 @@ export default function WhoIsLopes2Tech() {
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
+              transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
               className="text-white/90 text-base md:text-lg leading-[1.8]"
             >
               {t("intro")}
@@ -207,27 +208,35 @@ export default function WhoIsLopes2Tech() {
               transition={{ delay: 0.1 }}
               className="grid grid-cols-1 sm:grid-cols-2 gap-4"
             >
-              <div className="rounded-2xl border border-red-500/20 bg-red-500/5 p-4">
-                <p className="text-red-400 font-bold text-xs uppercase tracking-widest mb-3">{t("notUsLabel")}</p>
-                <ul className="space-y-1.5">
-                  {notUs.map(k => (
-                    <li key={k} className="flex items-center gap-2 text-slate-400 text-sm">
-                      <X className="w-3.5 h-3.5 text-red-500 shrink-0" />
-                      {t(`notUs.${k}`)}
-                    </li>
-                  ))}
-                </ul>
+              {/* Outer shell — Not Us */}
+              <div className="p-[1px] rounded-2xl ring-1 ring-red-500/20" style={{ background: 'linear-gradient(135deg, rgba(239,68,68,0.08), rgba(239,68,68,0.02))' }}>
+                {/* Inner core */}
+                <div className="rounded-[calc(1rem-1px)] bg-[#080d1a]/95 shadow-[inset_0_1px_1px_rgba(255,255,255,0.04)] p-4">
+                  <p className="text-red-400 font-bold text-xs uppercase tracking-widest mb-3">{t("notUsLabel")}</p>
+                  <ul className="space-y-1.5">
+                    {notUs.map(k => (
+                      <li key={k} className="flex items-center gap-2 text-slate-400 text-sm">
+                        <X className="w-3.5 h-3.5 text-red-500 shrink-0" />
+                        {t(`notUs.${k}`)}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
-              <div className="rounded-2xl border border-cyan-500/20 bg-cyan-500/5 p-4">
-                <p className="text-cyan-400 font-bold text-xs uppercase tracking-widest mb-3">{t("yesUsLabel")}</p>
-                <ul className="space-y-1.5">
-                  {yesUs.map(k => (
-                    <li key={k} className="flex items-center gap-2 text-slate-300 text-sm">
-                      <CheckCircle2 className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
-                      {t(`yesUs.${k}`)}
-                    </li>
-                  ))}
-                </ul>
+              {/* Outer shell — Yes Us */}
+              <div className="p-[1px] rounded-2xl ring-1 ring-cyan-500/20" style={{ background: 'linear-gradient(135deg, rgba(6,182,212,0.08), rgba(6,182,212,0.02))' }}>
+                {/* Inner core */}
+                <div className="rounded-[calc(1rem-1px)] bg-[#080d1a]/95 shadow-[inset_0_1px_1px_rgba(255,255,255,0.06)] p-4">
+                  <p className="text-cyan-400 font-bold text-xs uppercase tracking-widest mb-3">{t("yesUsLabel")}</p>
+                  <ul className="space-y-1.5">
+                    {yesUs.map(k => (
+                      <li key={k} className="flex items-center gap-2 text-slate-300 text-sm">
+                        <CheckCircle2 className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
+                        {t(`yesUs.${k}`)}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </motion.div>
 
@@ -263,7 +272,7 @@ export default function WhoIsLopes2Tech() {
             initial={{ opacity: 0, scale: 0.92, x: 30 }}
             whileInView={{ opacity: 1, scale: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.7, ease: "easeOut" }}
+            transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
             className="relative flex items-center justify-center"
           >
             <div className="absolute inset-0 rounded-full bg-cyan-500/5 blur-[80px]" />
@@ -282,7 +291,7 @@ export default function WhoIsLopes2Tech() {
             <motion.div
               className="relative w-[280px] h-[360px] sm:w-[340px] sm:h-[420px] md:w-[420px] md:h-[520px]"
               animate={{ y: [0, -14, 0] }}
-              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+              transition={{ duration: 4, repeat: Infinity, ease: [0.32, 0.72, 0, 1] }}
             >
               <Image
                 src="/paulo_god.webp"
@@ -312,7 +321,7 @@ export default function WhoIsLopes2Tech() {
                   duration: b.cycle,
                   delay: b.showDelay,
                   repeat: Infinity,
-                  ease: "easeInOut",
+                  ease: [0.32, 0.72, 0, 1],
                   times: [0, 0.15, 0.75, 1],
                 }}
               >

@@ -101,7 +101,7 @@ export default function Hero() {
                         initial={{ opacity: 0, y: 24, filter: "blur(8px)" }}
                         animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                         transition={{ duration: 0.9, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
-                        className="text-[2.2rem] leading-[1.1] font-extrabold tracking-tight mb-4 md:text-[3.5rem] break-words hyphens-auto text-balance font-[family-name:var(--font-display)]"
+                        className="text-[2.2rem] leading-[1.1] font-extrabold tracking-tight mb-4 md:text-[4.5rem] break-words hyphens-auto text-balance font-[family-name:var(--font-display)]"
                     >
                         <span className="block text-white">{t('title1')}</span>
                         <span className="block text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-cyan-500">{t('title2')}</span>
@@ -122,29 +122,43 @@ export default function Hero() {
                         initial={{ opacity: 0, y: 24, filter: "blur(8px)" }}
                         animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                         transition={{ duration: 0.9, delay: 1.0, ease: [0.16, 1, 0.3, 1] }}
-                        className="flex flex-wrap items-center gap-4 mb-8"
+                        className="flex flex-col items-center md:items-start gap-4 mb-8"
                     >
-                        <a
-                            href={WHATSAPP_URL}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            onClick={handleBookingClick}
-                            className="group relative px-8 py-4 rounded-full bg-cyan-500/10 text-white font-semibold border border-[#00f5ff] shadow-[0_0_15px_rgba(0,245,255,0.3),inset_0_0_15px_rgba(0,245,255,0.1)] hover:bg-cyan-500/20 hover:shadow-[0_0_25px_rgba(0,245,255,0.6),inset_0_0_20px_rgba(0,245,255,0.2)] hover:-translate-y-[2px] active:scale-[0.98] transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] flex items-center gap-2 overflow-hidden"
-                        >
-                            <span className="relative z-10">{t('cta')}</span>
-                            <span className="w-7 h-7 rounded-full bg-white/10 flex items-center justify-center transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:translate-x-1 group-hover:scale-110">
-                                <ArrowRight className="w-3.5 h-3.5" />
-                            </span>
-                            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/15 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] motion-reduce:hidden" />
-                        </a>
+                        <div className="flex flex-wrap items-center gap-4">
+                            <a
+                                href={WHATSAPP_URL}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                onClick={handleBookingClick}
+                                className="group relative px-8 py-4 rounded-full bg-cyan-500/10 text-white font-semibold border border-[#00f5ff] shadow-[0_0_15px_rgba(0,245,255,0.3),inset_0_0_15px_rgba(0,245,255,0.1)] hover:bg-cyan-500/20 hover:shadow-[0_0_25px_rgba(0,245,255,0.6),inset_0_0_20px_rgba(0,245,255,0.2)] hover:-translate-y-[2px] active:scale-[0.98] transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] flex items-center gap-2 overflow-hidden"
+                            >
+                                <span className="relative z-10">{t('cta')}</span>
+                                <span className="w-7 h-7 rounded-full bg-white/10 flex items-center justify-center transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:translate-x-1 group-hover:scale-110">
+                                    <ArrowRight className="w-3.5 h-3.5" />
+                                </span>
+                                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/15 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] motion-reduce:hidden" />
+                            </a>
 
-                        <Link
-                            href="/portfolio"
-                            className="group flex items-center gap-1.5 text-white/60 hover:text-white text-sm font-medium transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)]"
-                        >
-                            {t('seeWork')}
-                            <ArrowRight className="w-3.5 h-3.5 transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:translate-x-1" />
-                        </Link>
+                            <Link
+                                href="/portfolio"
+                                className="group flex items-center gap-1.5 text-white/60 hover:text-white text-sm font-medium transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)]"
+                            >
+                                {t('seeWork')}
+                                <ArrowRight className="w-3.5 h-3.5 transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:translate-x-1" />
+                            </Link>
+                        </div>
+
+                        {/* Social proof micro-signal */}
+                        <div className="flex items-center gap-2">
+                            <div className="flex gap-0.5" aria-label="5 stars">
+                                {[0, 1, 2, 3, 4].map(i => (
+                                    <svg key={i} className="w-3 h-3 fill-amber-400 text-amber-400" viewBox="0 0 20 20" aria-hidden="true">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                ))}
+                            </div>
+                            <span className="text-xs text-white/40">5.0 on Google · 4 reviews</span>
+                        </div>
                     </motion.div>
                 </div>
 

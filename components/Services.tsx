@@ -20,7 +20,7 @@ export default function Services() {
   const t = useTranslations('ServicesSection');
 
   return (
-    <section id="services" className="relative py-16 bg-[#080d1a] min-h-screen flex flex-col justify-start pt-28 md:pt-36">
+    <section id="services" className="relative py-16 bg-[#080d1a] min-h-[100dvh] flex flex-col justify-start pt-28 md:pt-36">
 
       {/* Diagonal lines pattern — fades in/out at edges */}
       <div

@@ -142,41 +142,54 @@ function ProjectDialog({
                 exit={{ opacity: 0 }}
             />
             <motion.div
-                className="relative z-10 w-full max-w-lg bg-white rounded-3xl shadow-2xl overflow-hidden"
+                className="relative z-10 w-full max-w-lg bg-[#0d1117] rounded-3xl overflow-hidden ring-1 ring-white/10 shadow-[0_24px_80px_rgba(0,0,0,0.8)]"
                 initial={{ opacity: 0, scale: 0.92, y: 24 }}
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 exit={{ opacity: 0, scale: 0.94, y: 16 }}
                 transition={{ type: "spring", stiffness: 300, damping: 28 }}
                 onClick={(e) => e.stopPropagation()}
             >
-                <div className="h-1.5 w-full" style={{ background: project.accent }} />
+                {/* Hairline accent at top */}
+                <div className="h-[1px] w-full" style={{ background: `linear-gradient(90deg, transparent, ${project.accent}, transparent)` }} />
                 <div className="p-8">
                     <div className="flex items-start justify-between mb-6">
                         <div className="flex items-center gap-4">
-                            <Image src={project.logo} alt={`${project.name} logo`} width={project.logoSize.w} height={project.logoSize.h} className="object-contain" />
+                            <div className="p-2 rounded-xl bg-white/5 ring-1 ring-white/10">
+                                <Image src={project.logo} alt={`${project.name} logo`} width={project.logoSize.w} height={project.logoSize.h} className="object-contain" style={{ maxHeight: '28px', width: 'auto' }} />
+                            </div>
                             <div>
-                                <h3 className="text-2xl font-extrabold text-gray-900 leading-tight">{project.name}</h3>
-                                <span className={`inline-block mt-1 text-xs font-semibold px-2 py-0.5 rounded-full ${project.dialogBadgeBg} ${project.dialogBadgeText}`}>
+                                <h3 className="text-xl font-extrabold text-white leading-tight">{project.name}</h3>
+                                <span className="inline-block mt-1 text-[10px] font-semibold px-2.5 py-0.5 rounded-full bg-white/5 border border-white/10 text-white/70 uppercase tracking-wider">
                                     {project.tagline}
                                 </span>
                             </div>
                         </div>
-                        <button onClick={onClose} className="flex-shrink-0 ml-4 p-2 rounded-full text-gray-400 hover:text-gray-700 hover:bg-gray-100 transition-colors" aria-label="Close">
+                        <button onClick={onClose} className="flex-shrink-0 ml-4 p-2 rounded-full text-white/40 hover:text-white hover:bg-white/10 transition-all duration-300" aria-label="Close">
                             <X className="w-5 h-5" />
                         </button>
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed mb-5">{project.description}</p>
+                    <p className="text-slate-400 text-sm leading-relaxed mb-5">{project.description}</p>
                     <ul className="space-y-2.5 mb-7">
                         {project.features.map((feature) => (
                             <li key={feature} className="flex items-start gap-3">
                                 <Check className="w-4 h-4 mt-0.5 flex-shrink-0" style={{ color: project.checkColor }} />
-                                <span className="text-sm text-gray-700">{feature}</span>
+                                <span className="text-sm text-slate-300">{feature}</span>
                             </li>
                         ))}
                     </ul>
-                    <Link href={project.websiteUrl} target="_blank" rel="noopener noreferrer" className={`inline-flex items-center gap-2 w-full justify-center px-6 py-3 rounded-xl font-semibold text-sm transition-colors duration-200 ${project.dialogBtn}`}>
-                        <ExternalLink className="w-4 h-4" />
-                        {t("dialog.visitWebsite")}
+                    {/* Button-in-Button CTA */}
+                    <Link
+                        href={project.websiteUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group/dl inline-flex items-center justify-center gap-3 w-full px-6 py-3 rounded-full font-semibold text-sm transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] overflow-hidden relative hover:-translate-y-[1px] active:scale-[0.98]"
+                        style={{ background: project.accent, color: '#0f172a' }}
+                    >
+                        <span className="relative z-10">{t("dialog.visitWebsite")}</span>
+                        <span className="w-7 h-7 rounded-full bg-black/15 flex items-center justify-center transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover/dl:translate-x-1 group-hover/dl:scale-110 relative z-10">
+                            <ExternalLink className="w-3.5 h-3.5" />
+                        </span>
+                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover/dl:translate-x-full transition-transform duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] motion-reduce:hidden" />
                     </Link>
                 </div>
             </motion.div>
@@ -191,10 +204,10 @@ function ProjectCard({ project, index, onClick }: { project: Project; index: num
 
     return (
         <motion.div
-            initial={{ opacity: 0, y: 32 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 32, filter: "blur(6px)" }}
+            whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
+            transition={{ duration: 0.7, delay: index * 0.1, ease: [0.16, 1, 0.3, 1] }}
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
             className="relative flex flex-col rounded-2xl overflow-hidden border transition-all duration-500 cursor-pointer group"
@@ -290,17 +303,19 @@ function ProjectCard({ project, index, onClick }: { project: Project; index: num
                 <div className="flex items-center gap-3">
                     <button
                         onClick={onClick}
-                        className="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold text-white border border-white/10 bg-white/5 hover:bg-white/10 hover:border-white/20 transition-all duration-200"
+                        className="group/btn flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-full text-sm font-semibold text-white border border-white/10 bg-white/5 hover:bg-white/10 hover:border-white/20 transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] overflow-hidden relative"
                     >
-                        {t('learnMore')}
-                        <ArrowRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-0.5" />
+                        <span className="relative z-10">{t('learnMore')}</span>
+                        <span className="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover/btn:translate-x-0.5 group-hover/btn:scale-110 relative z-10">
+                            <ArrowRight className="w-3 h-3" />
+                        </span>
                     </button>
                     <a
                         href={project.websiteUrl}
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={(e) => e.stopPropagation()}
-                        className="flex items-center justify-center w-10 h-10 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 hover:border-white/20 transition-all duration-200 flex-shrink-0"
+                        className="flex items-center justify-center w-10 h-10 rounded-full border border-white/10 bg-white/5 hover:bg-white/10 hover:border-white/20 transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] flex-shrink-0"
                         aria-label={`Visit ${project.name} website`}
                     >
                         <ExternalLink className="w-4 h-4 text-slate-400" />
@@ -355,15 +370,16 @@ export default function FeaturedProjects() {
                 <div className="relative z-10 max-w-[1200px] mx-auto px-6">
                     {/* Header */}
                     <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
+                        initial={{ opacity: 0, y: 20, filter: "blur(8px)" }}
+                        whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                         viewport={{ once: true }}
+                        transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
                         className="text-center mb-16"
                     >
-                        <span className="inline-block px-4 py-1.5 rounded-full bg-white/5 text-slate-400 font-semibold text-sm mb-4 border border-white/10">
+                        <span className="inline-block px-4 py-1.5 rounded-full bg-white/5 text-slate-400 font-semibold text-[10px] uppercase tracking-[0.2em] mb-5 border border-white/10">
                             {t("badge")}
                         </span>
-                        <h2 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight mb-4">
+                        <h2 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight mb-4 font-[family-name:var(--font-display)]">
                             {t("title")}{" "}
                             <span className="relative inline-block">
                                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-cyan-400 to-purple-400">

@@ -27,12 +27,12 @@ export default function CTA() {
                 {/* Glowing Orbs */}
                 <motion.div
                     animate={{ y: [0, -30, 0] }}
-                    transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
+                    transition={{ duration: 10, repeat: Infinity, ease: [0.32, 0.72, 0, 1] }}
                     className="absolute -top-[100px] left-[10%] w-[400px] h-[400px] rounded-full bg-cyan-400 blur-[80px] opacity-20 md:mix-blend-screen will-change-transform motion-reduce:animate-none"
                 />
                 <motion.div
                     animate={{ y: [0, 30, 0] }}
-                    transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 5 }}
+                    transition={{ duration: 10, repeat: Infinity, ease: [0.32, 0.72, 0, 1], delay: 5 }}
                     className="absolute -bottom-[150px] right-[10%] w-[500px] h-[500px] rounded-full bg-purple-500 blur-[80px] opacity-20 md:mix-blend-screen will-change-transform motion-reduce:animate-none"
                 />
             </div>
@@ -52,7 +52,7 @@ export default function CTA() {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ delay: 0.1 }}
+                    transition={{ delay: 0.1, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
                     className="text-lg md:text-xl text-slate-400 mb-12 max-w-[600px] mx-auto leading-relaxed"
                 >
                     {t('subtitle')}
@@ -62,7 +62,7 @@ export default function CTA() {
                     initial={{ opacity: 0, scale: 0.9 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
-                    transition={{ delay: 0.2 }}
+                    transition={{ delay: 0.2, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
                 >
                     <Link
                         href="/contact"

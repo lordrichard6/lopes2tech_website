@@ -120,7 +120,7 @@ export default function Footer() {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     aria-label={social.label}
-                                    className="relative flex items-center justify-center w-10 h-10 rounded-xl bg-white/5 border border-white/10 text-white/90 transition-all duration-400 overflow-hidden group hover:-translate-y-1 hover:border-cyan-500/50"
+                                    className="relative flex items-center justify-center w-10 h-10 rounded-xl bg-white/5 border border-white/10 text-white/90 transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] overflow-hidden group hover:-translate-y-1 hover:bg-white/10 hover:border-cyan-500/50"
                                 >
                                     <social.icon className="w-4 h-4 relative z-10" />
                                 </a>

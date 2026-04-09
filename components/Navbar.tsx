@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { X, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import clsx from "clsx";
 import { useTranslations, useLocale } from "next-intl";
@@ -274,7 +274,16 @@ export default function Navbar() {
                         aria-label="Toggle menu"
                         aria-expanded={isMenuOpen}
                     >
-                        {isMenuOpen ? <X className="w-5 h-5 text-white" /> : <Menu className="w-5 h-5 text-white/80" />}
+                        <span className="relative flex flex-col justify-center items-center w-5 h-5" aria-hidden="true">
+                            <span className={clsx(
+                                "absolute w-5 h-[1.5px] bg-white rounded-full transition-transform duration-300 ease-[cubic-bezier(0.32,0.72,0,1)]",
+                                isMenuOpen ? "rotate-45 translate-y-0" : "-translate-y-[3.5px]"
+                            )} />
+                            <span className={clsx(
+                                "absolute w-5 h-[1.5px] bg-white rounded-full transition-transform duration-300 ease-[cubic-bezier(0.32,0.72,0,1)]",
+                                isMenuOpen ? "-rotate-45 translate-y-0" : "translate-y-[3.5px]"
+                            )} />
+                        </span>
                     </button>
                 </nav>
             </header>
