@@ -3,14 +3,99 @@
 import { useState } from "react";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import Image from "next/image";
-import { Link } from "@/navigation";
-import { ChevronLeft, ChevronRight, Layers, Monitor, ArrowRight, Code, Clock, Pause, Circle } from "lucide-react";
+import { ChevronLeft, ChevronRight, Layers, Monitor, ExternalLink, Code, Clock, Pause, Circle } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { projects } from "./projects";
+
+import type { Project } from "./projects";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 const VP   = { once: true, margin: "0px 0px -80px 0px" } as const;
 
+// ── ProjectCard ─────────────────────────────────────────────────────────────
+function ProjectCard({
+    project,
+    idx,
+    t,
+}: {
+    project: Project;
+    idx: number;
+    t: ReturnType<typeof import("next-intl").useTranslations>;
+}) {
+    return (
+        /* Double-Bezel outer shell */
+        <div className="h-full p-[1px] rounded-[2rem] ring-1 ring-white/10 bg-white/[0.04] transition-shadow duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:ring-cyan-400/20">
+            {/* Inner card */}
+            <div className="h-full flex flex-col overflow-hidden rounded-[calc(2rem-1px)] bg-white/[0.06] shadow-[inset_0_1px_1px_rgba(255,255,255,0.07)] transition-colors duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:bg-white/[0.09]">
+
+                {/* Image */}
+                <div className="relative aspect-[4/3] overflow-hidden rounded-t-[calc(2rem-1px)]">
+                    <Image
+                        src={project.image}
+                        alt={t(`projects.${project.slug}.title`)}
+                        fill
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        priority={idx < 3}
+                        className="object-cover transition-transform duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:scale-105"
+                    />
+                    {/* Overlay — #080d1a unified */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#080d1a] via-[#080d1a]/30 to-transparent opacity-70 group-hover:opacity-50 transition-opacity duration-500 ease-[cubic-bezier(0.32,0.72,0,1)]" />
+
+                    {/* Status badges — no backdrop-blur */}
+                    {project.link && !project.isInDevelopment && !project.isOnHold && (
+                        <div className="absolute top-4 right-4 px-3 py-1 bg-emerald-500/90 rounded-full text-white text-xs font-bold flex items-center gap-1">
+                            <Circle className="w-2.5 h-2.5 fill-current" />
+                            {t("badges.live")}
+                        </div>
+                    )}
+                    {project.isInDevelopment && (
+                        <div className="absolute top-4 right-4 px-3 py-1 bg-violet-500/90 rounded-full text-white text-xs font-bold flex items-center gap-1">
+                            <Code className="w-3 h-3" />
+                            {t("badges.inDevelopment")}
+                        </div>
+                    )}
+                    {project.isOnHold && (
+                        <div className="absolute top-4 right-4 px-3 py-1 bg-orange-500/90 rounded-full text-white text-xs font-bold flex items-center gap-1">
+                            <Pause className="w-3 h-3" />
+                            {t("badges.onHold")}
+                        </div>
+                    )}
+                    {!project.link && !project.isInDevelopment && !project.isOnHold && (
+                        <div className="absolute top-4 right-4 px-3 py-1 bg-amber-500/90 rounded-full text-white text-xs font-bold flex items-center gap-1">
+                            <Clock className="w-3 h-3" />
+                            {t("badges.comingSoon")}
+                        </div>
+                    )}
+
+                    {/* Visit site overlay — only when a link exists */}
+                    {project.link && (
+                        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-[cubic-bezier(0.32,0.72,0,1)]">
+                            <span className="px-6 py-3 bg-white/10 border border-white/20 rounded-full text-white font-semibold flex items-center gap-2">
+                                {t("badges.viewProject")}
+                                <ExternalLink className="w-4 h-4" />
+                            </span>
+                        </div>
+                    )}
+                </div>
+
+                {/* Content */}
+                <div className="flex-1 flex flex-col p-6">
+                    <span className="inline-block px-3 py-1 mb-3 text-xs font-bold text-cyan-400 bg-cyan-400/10 rounded-full uppercase tracking-wider">
+                        {t(`projects.${project.slug}.category`)}
+                    </span>
+                    <h3 className="text-xl font-bold text-white mb-2 line-clamp-1 transition-colors duration-300 group-hover:text-cyan-400">
+                        {t(`projects.${project.slug}.title`)}
+                    </h3>
+                    <p className="text-sm text-slate-400 line-clamp-2 flex-1">
+                        {t(`projects.${project.slug}.description`)}
+                    </p>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+// ── PortfolioContent ─────────────────────────────────────────────────────────
 export default function PortfolioContent() {
     const t             = useTranslations("PortfolioPage");
     const reducedMotion = useReducedMotion();
@@ -154,75 +239,21 @@ export default function PortfolioContent() {
                                 transition={{ duration: 0.7, delay: (idx % 3) * 0.08, ease: EASE }}
                                 className="h-full"
                             >
-                                <Link href={`/portfolio/${project.slug}`} className="group block h-full">
-                                    {/* Double-Bezel outer shell */}
-                                    <div className="h-full p-[1px] rounded-[2rem] ring-1 ring-white/10 bg-white/[0.04] transition-shadow duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:ring-cyan-400/20">
-                                        {/* Inner card */}
-                                        <div className="h-full flex flex-col overflow-hidden rounded-[calc(2rem-1px)] bg-white/[0.06] shadow-[inset_0_1px_1px_rgba(255,255,255,0.07)] transition-colors duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:bg-white/[0.09]">
-
-                                            {/* Image */}
-                                            <div className="relative aspect-[4/3] overflow-hidden rounded-t-[calc(2rem-1px)]">
-                                                <Image
-                                                    src={project.image}
-                                                    alt={t(`projects.${project.slug}.title`)}
-                                                    fill
-                                                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                                                    priority={idx < 3}
-                                                    className="object-cover transition-transform duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:scale-105"
-                                                />
-                                                {/* Overlay — #080d1a unified */}
-                                                <div className="absolute inset-0 bg-gradient-to-t from-[#080d1a] via-[#080d1a]/30 to-transparent opacity-70 group-hover:opacity-50 transition-opacity duration-500 ease-[cubic-bezier(0.32,0.72,0,1)]" />
-
-                                                {/* Status badges — no backdrop-blur */}
-                                                {project.link && !project.isInDevelopment && !project.isOnHold && (
-                                                    <div className="absolute top-4 right-4 px-3 py-1 bg-emerald-500/90 rounded-full text-white text-xs font-bold flex items-center gap-1">
-                                                        <Circle className="w-2.5 h-2.5 fill-current" />
-                                                        {t("badges.live")}
-                                                    </div>
-                                                )}
-                                                {project.isInDevelopment && (
-                                                    <div className="absolute top-4 right-4 px-3 py-1 bg-violet-500/90 rounded-full text-white text-xs font-bold flex items-center gap-1">
-                                                        <Code className="w-3 h-3" />
-                                                        {t("badges.inDevelopment")}
-                                                    </div>
-                                                )}
-                                                {project.isOnHold && (
-                                                    <div className="absolute top-4 right-4 px-3 py-1 bg-orange-500/90 rounded-full text-white text-xs font-bold flex items-center gap-1">
-                                                        <Pause className="w-3 h-3" />
-                                                        {t("badges.onHold")}
-                                                    </div>
-                                                )}
-                                                {!project.link && !project.isInDevelopment && !project.isOnHold && (
-                                                    <div className="absolute top-4 right-4 px-3 py-1 bg-amber-500/90 rounded-full text-white text-xs font-bold flex items-center gap-1">
-                                                        <Clock className="w-3 h-3" />
-                                                        {t("badges.comingSoon")}
-                                                    </div>
-                                                )}
-
-                                                {/* View Project overlay — no backdrop-blur */}
-                                                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-[cubic-bezier(0.32,0.72,0,1)]">
-                                                    <span className="px-6 py-3 bg-white/10 border border-white/20 rounded-full text-white font-semibold flex items-center gap-2">
-                                                        {t("badges.viewProject")}
-                                                        <ArrowRight className="w-4 h-4" />
-                                                    </span>
-                                                </div>
-                                            </div>
-
-                                            {/* Content */}
-                                            <div className="flex-1 flex flex-col p-6">
-                                                <span className="inline-block px-3 py-1 mb-3 text-xs font-bold text-cyan-400 bg-cyan-400/10 rounded-full uppercase tracking-wider">
-                                                    {t(`projects.${project.slug}.category`)}
-                                                </span>
-                                                <h3 className="text-xl font-bold text-white mb-2 line-clamp-1 transition-colors duration-300 group-hover:text-cyan-400">
-                                                    {t(`projects.${project.slug}.title`)}
-                                                </h3>
-                                                <p className="text-sm text-slate-400 line-clamp-2 flex-1">
-                                                    {t(`projects.${project.slug}.description`)}
-                                                </p>
-                                            </div>
-                                        </div>
+                                {/* Outer wrapper: external link if available, otherwise inert */}
+                                {project.link ? (
+                                    <a
+                                        href={project.link}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="group block h-full"
+                                    >
+                                        <ProjectCard project={project} idx={idx} t={t} />
+                                    </a>
+                                ) : (
+                                    <div className="group block h-full cursor-default">
+                                        <ProjectCard project={project} idx={idx} t={t} />
                                     </div>
-                                </Link>
+                                )}
                             </motion.div>
                         ))}
                     </motion.div>
