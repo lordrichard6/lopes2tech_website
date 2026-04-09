@@ -427,7 +427,8 @@
     },
     "getStarted": "Get Started",
     "cta": "See all services",
-    "learnMore": "Learn More"
+    "learnMore": "Learn More",
+    "swipeHint": "Swipe to explore"
   },
   "CTASection": {
     "title": "Ready to Scale Your Business?",

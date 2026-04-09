@@ -105,7 +105,8 @@
     },
     "getStarted": "Commencer",
     "cta": "Voir tous les services",
-    "learnMore": "En savoir plus"
+    "learnMore": "En savoir plus",
+    "swipeHint": "Glissez pour explorer"
   },
   "CTASection": {
     "title": "Prêt à Développer Votre Entreprise ?",

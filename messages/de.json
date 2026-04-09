@@ -427,7 +427,8 @@
     },
     "getStarted": "Loslegen",
     "cta": "Alle Dienstleistungen sehen",
-    "learnMore": "Mehr erfahren"
+    "learnMore": "Mehr erfahren",
+    "swipeHint": "Wischen zum Erkunden"
   },
   "CTASection": {
     "title": "Bereit, Ihr Geschäft zu skalieren?",

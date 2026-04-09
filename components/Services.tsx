@@ -1,12 +1,14 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { Monitor, Megaphone, Cpu, ShoppingCart, AppWindow, ArrowRight } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Monitor, Megaphone, Cpu, ShoppingCart, AppWindow, ArrowRight, ChevronRight } from "lucide-react";
 import { Link } from "@/navigation";
 import Image from "next/image";
 import clsx from "clsx";
 import { useTranslations } from "next-intl";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+
+const EASE = [0.16, 1, 0.3, 1] as const;
 
 const services = [
   { key: "web",        image: "/assets/services/service_webdev.webp",           icon: Monitor,      href: "/services/web-design"            },
@@ -30,6 +32,10 @@ export default function Services() {
 
   // Track hovered card so it can be lifted above all siblings via z-index
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+
+  // Swipe hint — auto-hides after first scroll interaction on mobile
+  const [hasSwiped, setHasSwiped] = useState(false);
+  const scrollRef = useRef<HTMLDivElement>(null);
 
   return (
     <section id="services" className="relative py-24 md:py-32 bg-[#080d1a]">
@@ -99,6 +105,8 @@ export default function Services() {
             Desktop: perspective fan deck with rotateY tilt
         ── */}
         <div
+          ref={scrollRef}
+          onScroll={() => setHasSwiped(true)}
           className={clsx(
             // Mobile: horizontal scroll strip
             "flex flex-row overflow-x-auto snap-x snap-mandatory",
@@ -127,7 +135,7 @@ export default function Services() {
                 onMouseLeave={() => setHoveredIndex(null)}
                 className={clsx(
                   // Mobile: fixed width for peek effect, snap-center
-                  "snap-center shrink-0 w-[78vw] sm:w-[60vw] h-[360px]",
+                  "snap-center shrink-0 w-[78vw] sm:w-[60vw] h-[340px]",
                   // Desktop: fan width + height + negative margin stacking
                   "md:w-[320px] md:h-[480px]",
                   "group relative rounded-[24px] border border-white/10 cursor-pointer",
@@ -183,6 +191,41 @@ export default function Services() {
             </Link>
           ))}
         </div>
+
+        {/* ── Swipe hint — mobile only, auto-hides after first scroll ── */}
+        <AnimatePresence>
+          {!hasSwiped && (
+            <motion.div
+              key="swipe-hint"
+              initial={{ opacity: 0, y: 6 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 4 }}
+              transition={{ delay: 1.0, duration: 0.5, ease: EASE }}
+              className="md:hidden flex items-center justify-center gap-2 mt-3 pointer-events-none"
+              aria-hidden="true"
+            >
+              <motion.div
+                className="flex items-center"
+                animate={{ x: [0, 5, 0] }}
+                transition={{ duration: 1.1, repeat: Infinity, ease: EASE }}
+              >
+                <ChevronRight className="w-3.5 h-3.5 text-cyan-400/70" />
+                <ChevronRight className="w-3.5 h-3.5 -ml-2 text-cyan-400/35" />
+              </motion.div>
+              <span className="text-[10px] text-slate-500 uppercase tracking-[0.18em] font-semibold">
+                {t("swipeHint")}
+              </span>
+              <motion.div
+                className="flex items-center"
+                animate={{ x: [0, 5, 0] }}
+                transition={{ duration: 1.1, repeat: Infinity, ease: EASE }}
+              >
+                <ChevronRight className="w-3.5 h-3.5 text-cyan-400/35" />
+                <ChevronRight className="w-3.5 h-3.5 -ml-2 text-cyan-400/70" />
+              </motion.div>
+            </motion.div>
+          )}
+        </AnimatePresence>
 
         {/* ── CTA ── */}
         <motion.div

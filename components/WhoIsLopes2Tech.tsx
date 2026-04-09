@@ -8,7 +8,7 @@ import { Link } from "@/navigation";
 
 const differentiators = [
   { key: "engineering", icon: Code2,       color: "from-cyan-500/20 to-cyan-500/5",     border: "border-cyan-500/20",    glow: "rgba(6,182,212,0.15)",   iconColor: "text-cyan-400"   },
-  { key: "marketing",   icon: TrendingUp,  color: "from-purple-500/20 to-purple-500/5", border: "border-purple-500/20",  glow: "rgba(168,85,247,0.15)",  iconColor: "text-purple-400" },
+  { key: "marketing",   icon: TrendingUp,  color: "from-violet-500/20 to-violet-500/5", border: "border-violet-500/20",  glow: "rgba(139,92,246,0.15)",  iconColor: "text-violet-400" },
   { key: "ads",         icon: Megaphone,   color: "from-violet-500/20 to-violet-500/5", border: "border-violet-500/20",  glow: "rgba(139,92,246,0.15)",  iconColor: "text-violet-400" },
   { key: "automation",  icon: Zap,         color: "from-cyan-500/10 to-violet-500/10",  border: "border-violet-500/20",  glow: "rgba(139,92,246,0.12)",  iconColor: "text-violet-400" },
 ];
@@ -47,7 +47,7 @@ function LightningLogo() {
       <motion.span
         animate={{ opacity: [0.2, 0.5, 0.2], scale: [1.2, 1.8, 1.2] }}
         transition={{ duration: 3, repeat: Infinity, ease: [0.32, 0.72, 0, 1], delay: 0.8 }}
-        className="absolute rounded-full bg-purple-500/15 blur-[24px]"
+        className="absolute rounded-full bg-violet-500/15 blur-[24px]"
         style={{ width: "100%", height: "100%", transform: "scale(2.8)" }}
       />
 
@@ -139,7 +139,7 @@ export default function WhoIsLopes2Tech() {
       {/* Ambient glows */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className="absolute top-[10%] right-[5%]  w-[500px] h-[500px] rounded-full bg-cyan-500/5   blur-[120px]" />
-        <div className="absolute bottom-[10%] left-[5%] w-[400px] h-[400px] rounded-full bg-purple-500/5 blur-[100px]" />
+        <div className="absolute bottom-[10%] left-[5%] w-[400px] h-[400px] rounded-full bg-violet-500/5 blur-[100px]" />
       </div>
 
       <div className="relative z-10 max-w-[1200px] mx-auto px-6">
@@ -166,7 +166,7 @@ export default function WhoIsLopes2Tech() {
             <span>{t("titlePre")}</span>
             <span className="inline-flex items-center gap-3">
               <LightningLogo />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-violet-500">
                 Lopes2Tech?
               </span>
             </span>
@@ -270,15 +270,15 @@ export default function WhoIsLopes2Tech() {
           >
             <div className="absolute inset-0 rounded-full bg-cyan-500/5 blur-[80px]" />
             <motion.div
-              className="absolute w-[380px] h-[380px] rounded-full border border-cyan-500/10"
+              className="absolute w-[min(380px,90vw)] h-[min(380px,90vw)] rounded-full border border-cyan-500/10"
               style={{
-                background: "conic-gradient(from 0deg, rgba(6,182,212,0.05), transparent 60%, rgba(168,85,247,0.05), transparent)",
+                background: "conic-gradient(from 0deg, rgba(6,182,212,0.05), transparent 60%, rgba(139,92,246,0.05), transparent)",
               }}
               animate={{ rotate: 360 }}
               transition={{ duration: 22, repeat: Infinity, ease: "linear" }}
             />
             <motion.div
-              className="absolute w-[300px] h-[300px] rounded-full border border-purple-500/10"
+              className="absolute w-[min(300px,70vw)] h-[min(300px,70vw)] rounded-full border border-violet-500/10"
               animate={{ rotate: -360 }}
               transition={{ duration: 16, repeat: Infinity, ease: "linear" }}
             />
