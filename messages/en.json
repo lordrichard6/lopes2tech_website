@@ -1253,7 +1253,8 @@
       "viewProject": "View Project",
       "comingSoon": "Coming Soon",
       "onHold": "On Hold",
-      "live": "Live"
+      "live": "Live",
+      "showcase": "Showcase"
     },
     "detail": {
       "backToPortfolio": "Back to Portfolio",

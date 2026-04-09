@@ -1353,7 +1353,8 @@
       "viewProject": "Voir le Projet",
       "comingSoon": "Bientôt Disponible",
       "onHold": "En Pause",
-      "live": "En Ligne"
+      "live": "En Ligne",
+      "showcase": "Vitrine"
     },
     "detail": {
       "backToPortfolio": "Retour au Portfolio",

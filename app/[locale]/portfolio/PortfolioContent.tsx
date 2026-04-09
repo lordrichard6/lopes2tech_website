@@ -4,7 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import Image from "next/image";
 import { Link } from "@/navigation";
-import { Layers, Monitor, ExternalLink, ArrowRight, Code, Clock, Pause, Circle } from "lucide-react";
+import { Layers, Monitor, ExternalLink, ArrowRight, Code, Clock, Pause, Circle, Sparkles } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { projects } from "./projects";
 import type { Project } from "./projects";
@@ -44,7 +44,15 @@ function ProjectCard({
                     {/* Overlay */}
                     <div className="absolute inset-0 bg-gradient-to-t from-[#080d1a] via-[#080d1a]/30 to-transparent opacity-70 group-hover:opacity-50 transition-opacity duration-500 ease-[cubic-bezier(0.32,0.72,0,1)]" />
 
-                    {/* Status badges */}
+                    {/* Showcase badge — top-left */}
+                    {project.isShowcase && (
+                        <div className="absolute top-4 left-4 px-3 py-1 bg-white/10 border border-white/15 rounded-full text-white text-xs font-bold flex items-center gap-1.5">
+                            <Sparkles className="w-3 h-3 text-cyan-300" />
+                            {t("badges.showcase")}
+                        </div>
+                    )}
+
+                    {/* Status badges — top-right */}
                     {project.link && !project.isInDevelopment && !project.isOnHold && (
                         <div className="absolute top-4 right-4 px-3 py-1 bg-emerald-500/90 rounded-full text-white text-xs font-bold flex items-center gap-1">
                             <Circle className="w-2.5 h-2.5 fill-current" />
