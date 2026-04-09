@@ -157,7 +157,7 @@ export default function Hero() {
                                     </svg>
                                 ))}
                             </div>
-                            <span className="text-xs text-white/40">5.0 on Google · 4 reviews</span>
+                            <span className="text-xs text-white/40">5.0 on Google</span>
                         </div>
                     </motion.div>
                 </div>
