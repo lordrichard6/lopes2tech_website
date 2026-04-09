@@ -1230,6 +1230,20 @@
     "titleHighlight": "Digital Excellence",
     "subtitle": "Our portfolio represents a fusion of robust solutions built for ambitious clients and proprietary ventures developed in-house.",
     "subtitleSecondary": "From enterprise-grade CRM dashboards to immersive brand experiences, our portfolio reflects our commitment to Swiss precision and innovation.",
+    "stats": {
+      "projects": "projects",
+      "live": "live",
+      "webApps": "web apps",
+      "websites": "websites"
+    },
+    "resultsCount": "Showing {count} projects",
+    "cta": {
+      "eyebrow": "Ready to build?",
+      "title": "Let's create something",
+      "titleHighlight": "worth showing.",
+      "subtitle": "From web apps to full brand presences — book a free consultation.",
+      "button": "Start a Project"
+    },
     "filters": {
       "webApps": "Web Apps",
       "websites": "Websites"

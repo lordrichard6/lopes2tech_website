@@ -1230,6 +1230,20 @@
     "titleHighlight": "Digitale Exzellenz",
     "subtitle": "Unser Portfolio repräsentiert eine Fusion aus robusten Lösungen für ambitionierte Kunden und eigenen Projekten, die intern entwickelt wurden.",
     "subtitleSecondary": "Von Enterprise-CRM-Dashboards bis hin zu immersiven Markenerlebnissen spiegelt unser Portfolio unser Engagement für Schweizer Präzision und Innovation wider.",
+    "stats": {
+      "projects": "Projekte",
+      "live": "live",
+      "webApps": "Web-Apps",
+      "websites": "Websites"
+    },
+    "resultsCount": "{count} Projekte angezeigt",
+    "cta": {
+      "eyebrow": "Bereit zu bauen?",
+      "title": "Lass uns etwas erschaffen,",
+      "titleHighlight": "das es wert ist.",
+      "subtitle": "Von Web-Apps bis zu vollständigen Markenpräsenzen — buche eine kostenlose Beratung.",
+      "button": "Projekt starten"
+    },
     "filters": {
       "webApps": "Web-Apps",
       "websites": "Websites"

@@ -3,23 +3,26 @@
 import { useState } from "react";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import Image from "next/image";
-import { ChevronLeft, ChevronRight, Layers, Monitor, ExternalLink, Code, Clock, Pause, Circle } from "lucide-react";
+import { Link } from "@/navigation";
+import { ChevronLeft, ChevronRight, Layers, Monitor, ExternalLink, ArrowRight, Code, Clock, Pause, Circle } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { projects } from "./projects";
-
 import type { Project } from "./projects";
 
-const EASE = [0.16, 1, 0.3, 1] as const;
-const VP   = { once: true, margin: "0px 0px -80px 0px" } as const;
+const EASE   = [0.16, 1, 0.3, 1] as const;
+const VP     = { once: true, margin: "0px 0px -80px 0px" } as const;
+const SPRING = { type: "spring", stiffness: 320, damping: 22 } as const;
 
 // ── ProjectCard ─────────────────────────────────────────────────────────────
 function ProjectCard({
     project,
     idx,
+    isFeatured,
     t,
 }: {
     project: Project;
     idx: number;
+    isFeatured: boolean;
     t: ReturnType<typeof import("next-intl").useTranslations>;
 }) {
     return (
@@ -28,8 +31,8 @@ function ProjectCard({
             {/* Inner card */}
             <div className="h-full flex flex-col overflow-hidden rounded-[calc(2rem-1px)] bg-white/[0.06] shadow-[inset_0_1px_1px_rgba(255,255,255,0.07)] transition-colors duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:bg-white/[0.09]">
 
-                {/* Image */}
-                <div className="relative aspect-[4/3] overflow-hidden rounded-t-[calc(2rem-1px)]">
+                {/* Image — 16:9 for featured, 4:3 for standard */}
+                <div className={`relative overflow-hidden rounded-t-[calc(2rem-1px)] ${isFeatured ? "aspect-[16/9]" : "aspect-[4/3]"}`}>
                     <Image
                         src={project.image}
                         alt={t(`projects.${project.slug}.title`)}
@@ -38,10 +41,10 @@ function ProjectCard({
                         priority={idx < 3}
                         className="object-cover transition-transform duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:scale-105"
                     />
-                    {/* Overlay — #080d1a unified */}
+                    {/* Overlay */}
                     <div className="absolute inset-0 bg-gradient-to-t from-[#080d1a] via-[#080d1a]/30 to-transparent opacity-70 group-hover:opacity-50 transition-opacity duration-500 ease-[cubic-bezier(0.32,0.72,0,1)]" />
 
-                    {/* Status badges — no backdrop-blur */}
+                    {/* Status badges */}
                     {project.link && !project.isInDevelopment && !project.isOnHold && (
                         <div className="absolute top-4 right-4 px-3 py-1 bg-emerald-500/90 rounded-full text-white text-xs font-bold flex items-center gap-1">
                             <Circle className="w-2.5 h-2.5 fill-current" />
@@ -89,6 +92,22 @@ function ProjectCard({
                     <p className="text-sm text-slate-400 line-clamp-2 flex-1">
                         {t(`projects.${project.slug}.description`)}
                     </p>
+
+                    {/* #9 — Card footer meta row */}
+                    <div className="mt-4 pt-4 border-t border-white/5 flex items-center">
+                        {project.link ? (
+                            <span className="text-xs font-semibold text-cyan-400 flex items-center gap-1 transition-gap duration-300 group-hover:gap-1.5">
+                                {t("badges.viewProject")}
+                                <ExternalLink className="w-3 h-3" />
+                            </span>
+                        ) : project.isInDevelopment ? (
+                            <span className="text-xs text-slate-600 uppercase tracking-wider">{t("badges.inDevelopment")}</span>
+                        ) : project.isOnHold ? (
+                            <span className="text-xs text-slate-600 uppercase tracking-wider">{t("badges.onHold")}</span>
+                        ) : (
+                            <span className="text-xs text-slate-600 uppercase tracking-wider">{t("badges.comingSoon")}</span>
+                        )}
+                    </div>
                 </div>
             </div>
         </div>
@@ -109,6 +128,12 @@ export default function PortfolioContent() {
     const totalPages        = Math.ceil(filteredProjects.length / itemsPerPage);
     const startIndex        = (currentPage - 1) * itemsPerPage;
     const paginatedProjects = filteredProjects.slice(startIndex, startIndex + itemsPerPage);
+
+    // #5 — Stats computed from source of truth
+    const totalProjects  = projects.length;
+    const liveCount      = projects.filter(p => p.link && !p.isInDevelopment && !p.isOnHold).length;
+    const webAppsCount   = projects.filter(p => p.type === "web-app").length;
+    const websitesCount  = projects.filter(p => p.type === "website").length;
 
     const handleFilterChange = (filter: "web-app" | "website") => {
         setActiveFilter(filter);
@@ -159,16 +184,17 @@ export default function PortfolioContent() {
 
                 {/* ── Hero ──────────────────────────────────────────────── */}
                 <div className="text-center mb-20">
-                    {/* Site-standard badge — no icon, no blur */}
                     <motion.div {...fadeIn(0)}>
                         <div className="inline-block px-3 py-1 rounded-full bg-white/5 text-slate-400 font-semibold text-[10px] uppercase tracking-[0.2em] mb-6 border border-white/10">
                             {t("badge")}
                         </div>
                     </motion.div>
 
+                    {/* #3 — tight tracking on large display */}
                     <motion.h1
                         {...fadeIn(0.1)}
                         className="font-[family-name:var(--font-display)] text-5xl md:text-7xl font-extrabold mb-6 text-white"
+                        style={{ letterSpacing: "-0.02em" }}
                     >
                         {t("title")}{" "}
                         <span className="text-transparent bg-clip-text bg-gradient-to-br from-cyan-400 to-violet-500">
@@ -182,20 +208,39 @@ export default function PortfolioContent() {
                     <motion.p {...fadeIn(0.25)} className="text-lg text-slate-500 max-w-3xl mx-auto">
                         {t("subtitleSecondary")}
                     </motion.p>
+
+                    {/* #5 — Stats strip */}
+                    <motion.div {...fadeIn(0.32)} className="flex items-center justify-center gap-8 mt-10">
+                        {[
+                            { value: totalProjects,  label: t("stats.projects") },
+                            { value: liveCount,      label: t("stats.live")     },
+                            { value: webAppsCount,   label: t("stats.webApps")  },
+                            { value: websitesCount,  label: t("stats.websites") },
+                        ].map(({ value, label }, i) => (
+                            <div key={label} className="flex items-center gap-8">
+                                <div className="text-center">
+                                    <span className="block font-[family-name:var(--font-display)] text-2xl font-extrabold text-white" style={{ letterSpacing: "-0.02em" }}>
+                                        {value}
+                                    </span>
+                                    <span className="block text-[10px] text-slate-500 uppercase tracking-[0.18em] mt-0.5">
+                                        {label}
+                                    </span>
+                                </div>
+                                {i < 3 && <div aria-hidden="true" className="h-8 w-px bg-white/8" />}
+                            </div>
+                        ))}
+                    </motion.div>
                 </div>
 
                 {/* Hairline visual pause */}
                 <div aria-hidden="true" className="h-px bg-gradient-to-r from-transparent via-white/8 to-transparent mb-10" />
 
                 {/* ── Filter Toggle ─────────────────────────────────────── */}
-                <motion.div
-                    {...fadeIn(0.3)}
-                    className="flex justify-center mb-12"
-                >
+                <motion.div {...fadeIn(0.3)} className="flex justify-center mb-6">
                     <div className="relative inline-flex p-1 bg-white/5 rounded-full border border-white/10">
                         <button
                             onClick={() => handleFilterChange("web-app")}
-                            className={`relative z-10 px-6 py-3 rounded-full font-semibold transition-colors duration-300 flex items-center gap-2 text-sm ${
+                            className={`relative z-10 px-6 py-3 rounded-full font-semibold transition-colors duration-300 flex items-center gap-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-[#080d1a] ${
                                 activeFilter === "web-app" ? "text-white" : "text-slate-400 hover:text-white"
                             }`}
                         >
@@ -204,14 +249,14 @@ export default function PortfolioContent() {
                         </button>
                         <button
                             onClick={() => handleFilterChange("website")}
-                            className={`relative z-10 px-6 py-3 rounded-full font-semibold transition-colors duration-300 flex items-center gap-2 text-sm ${
+                            className={`relative z-10 px-6 py-3 rounded-full font-semibold transition-colors duration-300 flex items-center gap-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-[#080d1a] ${
                                 activeFilter === "website" ? "text-white" : "text-slate-400 hover:text-white"
                             }`}
                         >
                             <Monitor className="w-4 h-4" />
                             {t("filters.websites")}
                         </button>
-                        {/* Sliding pill — no backdrop-blur */}
+                        {/* Sliding pill */}
                         <div
                             className={`absolute top-1 bottom-1 w-[calc(50%-4px)] bg-gradient-to-r from-cyan-500 to-violet-600 rounded-full transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] ${
                                 activeFilter === "website" ? "translate-x-[calc(100%+4px)]" : "translate-x-0"
@@ -219,6 +264,22 @@ export default function PortfolioContent() {
                         />
                     </div>
                 </motion.div>
+
+                {/* #8 + #10 — Animated result count */}
+                <div className="flex justify-center mb-10">
+                    <AnimatePresence mode="wait">
+                        <motion.span
+                            key={`count-${activeFilter}`}
+                            initial={{ opacity: 0, y: -6 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: 6 }}
+                            transition={{ duration: 0.22, ease: EASE }}
+                            className="text-[11px] text-slate-600 uppercase tracking-[0.18em]"
+                        >
+                            {t("resultsCount", { count: filteredProjects.length })}
+                        </motion.span>
+                    </AnimatePresence>
+                </div>
 
                 {/* ── Projects Grid ─────────────────────────────────────── */}
                 <AnimatePresence mode="wait">
@@ -230,32 +291,42 @@ export default function PortfolioContent() {
                         transition={{ duration: 0.3, ease: EASE }}
                         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12"
                     >
-                        {paginatedProjects.map((project, idx) => (
-                            <motion.div
-                                key={project.slug}
-                                initial={{ opacity: 0, ...(shouldAnimate ? { y: 24, filter: "blur(8px)" } : {}) }}
-                                whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-                                viewport={VP}
-                                transition={{ duration: 0.7, delay: (idx % 3) * 0.08, ease: EASE }}
-                                className="h-full"
-                            >
-                                {/* Outer wrapper: external link if available, otherwise inert */}
-                                {project.link ? (
-                                    <a
-                                        href={project.link}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="group block h-full"
-                                    >
-                                        <ProjectCard project={project} idx={idx} t={t} />
-                                    </a>
-                                ) : (
-                                    <div className="group block h-full cursor-default">
-                                        <ProjectCard project={project} idx={idx} t={t} />
-                                    </div>
-                                )}
-                            </motion.div>
-                        ))}
+                        {paginatedProjects.map((project, idx) => {
+                            // #4 — first card is the featured magazine card
+                            const isFeatured = idx === 0;
+
+                            return (
+                                // Outer motion.div handles scroll-reveal (whileInView)
+                                // Inner motion.a/div handles hover lift — no y conflict
+                                <motion.div
+                                    key={project.slug}
+                                    initial={{ opacity: 0, ...(shouldAnimate ? { y: 24, filter: "blur(8px)" } : {}) }}
+                                    whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+                                    viewport={VP}
+                                    transition={{ duration: 0.7, delay: (idx % 3) * 0.08, ease: EASE }}
+                                    className={`h-full ${isFeatured ? "md:col-span-2" : ""}`}
+                                >
+                                    {/* #1 + #2 — hover lift + press on linked cards */}
+                                    {project.link ? (
+                                        <motion.a
+                                            href={project.link}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="group block h-full"
+                                            whileHover={{ y: -6 }}
+                                            whileTap={{ scale: 0.97 }}
+                                            transition={SPRING}
+                                        >
+                                            <ProjectCard project={project} idx={idx} isFeatured={isFeatured} t={t} />
+                                        </motion.a>
+                                    ) : (
+                                        <div className="group block h-full cursor-default">
+                                            <ProjectCard project={project} idx={idx} isFeatured={isFeatured} t={t} />
+                                        </div>
+                                    )}
+                                </motion.div>
+                            );
+                        })}
                     </motion.div>
                 </AnimatePresence>
 
@@ -270,7 +341,7 @@ export default function PortfolioContent() {
                         <button
                             onClick={() => goToPage(currentPage - 1)}
                             disabled={currentPage === 1}
-                            className="p-3 rounded-full bg-white/5 border border-white/10 text-white hover:bg-white/10 transition-colors duration-300 disabled:opacity-30 disabled:cursor-not-allowed"
+                            className="p-3 rounded-full bg-white/5 border border-white/10 text-white hover:bg-white/10 transition-colors duration-300 disabled:opacity-30 disabled:cursor-not-allowed focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/60"
                             aria-label="Previous page"
                         >
                             <ChevronLeft className="w-5 h-5" />
@@ -281,7 +352,7 @@ export default function PortfolioContent() {
                                 <button
                                     key={page}
                                     onClick={() => goToPage(page)}
-                                    className={`w-10 h-10 rounded-full font-semibold transition-colors duration-300 ${
+                                    className={`w-10 h-10 rounded-full font-semibold transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/60 ${
                                         page === currentPage
                                             ? "bg-gradient-to-r from-cyan-500 to-violet-600 text-white"
                                             : "bg-white/5 border border-white/10 text-slate-400 hover:bg-white/10 hover:text-white"
@@ -297,13 +368,60 @@ export default function PortfolioContent() {
                         <button
                             onClick={() => goToPage(currentPage + 1)}
                             disabled={currentPage === totalPages}
-                            className="p-3 rounded-full bg-white/5 border border-white/10 text-white hover:bg-white/10 transition-colors duration-300 disabled:opacity-30 disabled:cursor-not-allowed"
+                            className="p-3 rounded-full bg-white/5 border border-white/10 text-white hover:bg-white/10 transition-colors duration-300 disabled:opacity-30 disabled:cursor-not-allowed focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/60"
                             aria-label="Next page"
                         >
                             <ChevronRight className="w-5 h-5" />
                         </button>
                     </motion.div>
                 )}
+
+                {/* ── #6 — Bottom CTA ───────────────────────────────────── */}
+                <motion.div
+                    initial={{ opacity: 0, ...(shouldAnimate ? { y: 32, filter: "blur(8px)" } : {}) }}
+                    whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+                    viewport={VP}
+                    transition={{ duration: 0.8, ease: EASE }}
+                    className="mt-24 text-center"
+                >
+                    <div aria-hidden="true" className="h-px bg-gradient-to-r from-transparent via-white/8 to-transparent mb-16" />
+
+                    <div className="inline-block px-3 py-1 rounded-full bg-white/5 text-slate-400 font-semibold text-[10px] uppercase tracking-[0.2em] mb-6 border border-white/10">
+                        {t("cta.eyebrow")}
+                    </div>
+
+                    <h2
+                        className="font-[family-name:var(--font-display)] text-4xl md:text-5xl font-extrabold text-white mb-4"
+                        style={{ letterSpacing: "-0.02em" }}
+                    >
+                        {t("cta.title")}{" "}
+                        <span className="text-transparent bg-clip-text bg-gradient-to-br from-cyan-400 to-violet-500">
+                            {t("cta.titleHighlight")}
+                        </span>
+                    </h2>
+
+                    <p className="text-lg text-slate-400 mb-10 max-w-xl mx-auto">
+                        {t("cta.subtitle")}
+                    </p>
+
+                    <motion.div
+                        whileHover={{ scale: 1.03 }}
+                        whileTap={{ scale: 0.97 }}
+                        transition={SPRING}
+                        className="inline-block"
+                    >
+                        <Link
+                            href="/contact"
+                            className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-cyan-500 to-violet-600 text-white font-semibold text-base"
+                        >
+                            {t("cta.button")}
+                            <span className="w-8 h-8 rounded-full bg-black/20 flex items-center justify-center">
+                                <ArrowRight className="w-4 h-4" />
+                            </span>
+                        </Link>
+                    </motion.div>
+                </motion.div>
+
             </div>
         </section>
     );

@@ -1330,6 +1330,20 @@
     "titleHighlight": "Excellence Digitale",
     "subtitle": "Notre portfolio représente une fusion de solutions robustes construites pour des clients ambitieux et de projets propriétaires développés en interne.",
     "subtitleSecondary": "Des tableaux de bord CRM de niveau entreprise aux expériences de marque immersives, notre portfolio reflète notre engagement envers la précision suisse et l'innovation.",
+    "stats": {
+      "projects": "projets",
+      "live": "en ligne",
+      "webApps": "apps web",
+      "websites": "sites web"
+    },
+    "resultsCount": "Affichage de {count} projets",
+    "cta": {
+      "eyebrow": "Prêt à construire?",
+      "title": "Créons quelque chose",
+      "titleHighlight": "qui en vaut la peine.",
+      "subtitle": "Des applications web aux présences de marque complètes — réservez une consultation gratuite.",
+      "button": "Démarrer un projet"
+    },
     "filters": {
       "webApps": "Applications Web",
       "websites": "Sites Web"

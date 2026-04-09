@@ -1230,6 +1230,20 @@
     "titleHighlight": "Excelência Digital",
     "subtitle": "O nosso portfólio representa uma fusão de soluções robustas construídas para clientes ambiciosos e projetos proprietários desenvolvidos internamente.",
     "subtitleSecondary": "De dashboards CRM empresariais a experiências de marca imersivas, o nosso portfólio reflete o nosso compromisso com a precisão suíça e a inovação.",
+    "stats": {
+      "projects": "projetos",
+      "live": "ao vivo",
+      "webApps": "web apps",
+      "websites": "websites"
+    },
+    "resultsCount": "A mostrar {count} projetos",
+    "cta": {
+      "eyebrow": "Pronto para construir?",
+      "title": "Vamos criar algo",
+      "titleHighlight": "que valha a pena.",
+      "subtitle": "De web apps a presenças de marca completas — marque uma consulta gratuita.",
+      "button": "Iniciar Projeto"
+    },
     "filters": {
       "webApps": "Apps Web",
       "websites": "Websites"
