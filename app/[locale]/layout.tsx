@@ -49,13 +49,14 @@ export const metadata: Metadata = {
   authors: [{ name: "Paulo R. Lopes" }],
   metadataBase: new URL("https://lopes2tech.ch"),
   alternates: {
+    canonical: 'https://lopes2tech.ch/en',
     languages: {
-      'en': '/en',
-      'de': '/de',
-      'pt': '/pt',
-      'fr': '/fr',
-      'it': '/it',
-      'x-default': '/en',
+      'en': 'https://lopes2tech.ch/en',
+      'de': 'https://lopes2tech.ch/de',
+      'pt': 'https://lopes2tech.ch/pt',
+      'fr': 'https://lopes2tech.ch/fr',
+      'it': 'https://lopes2tech.ch/it',
+      'x-default': 'https://lopes2tech.ch/en',
     },
   },
   openGraph: {
