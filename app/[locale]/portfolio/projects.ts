@@ -29,7 +29,7 @@ export const projects: Project[] = [
     { slug: "apex-consulting", image: "/proj/apex_consulting_mockup.webp", type: "website", link: "https://apex-consulting-iota.vercel.app/", isShowcase: true },
     { slug: "nexus-accounting", image: "/proj/nexus_accounting_mockup.webp", type: "website", link: "https://nexus-accounting-l2t.vercel.app/", isShowcase: true },
     { slug: "elite-estates", image: "/proj/elite_estates_mockup.webp", type: "website", link: "https://elite-estates-l2t.vercel.app/", isShowcase: true },
-    { slug: "serene-spa", image: "/proj/serene_spa_mockup.webp", type: "website", link: "https://serene-spa-tawny.vercel.app/", isShowcase: true },
+    { slug: "serene-spa", image: "/proj/serene_spa_mockup.webp", type: "website", link: "https://serene-spa-l2t.vercel.app/", isShowcase: true },
 ];
 
 export function getProjectBySlug(slug: string): Project | undefined {
