@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-const BASE_URL = "https://lopes2tech.ch";
+const BASE_URL = "https://www.lopes2tech.ch";
 
 const META: Record<string, { title: string; description: string }> = {
   en: {

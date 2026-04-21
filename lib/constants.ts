@@ -2,7 +2,7 @@
 
 export const BOOKING_URL = 'https://cal.com/lopes2tech/initial-consult';
 export const CONTACT_EMAIL = 'paulo@lopes2tech.ch';
-export const SITE_URL = 'https://lopes2tech.ch';
+export const SITE_URL = 'https://www.lopes2tech.ch';
 export const INSTAGRAM_URL = 'https://www.instagram.com/paulo_reizinho/';
 
 const WHATSAPP_NUMBER = '41787989533';

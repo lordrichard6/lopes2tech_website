@@ -192,7 +192,7 @@ function buildEbookEmail(params: {
             <td align="center" style="padding-top:28px;">
               <p style="margin:0;font-size:11px;color:#475569;">
                 © ${new Date().getFullYear()} Lopes2Tech · Zurich, Switzerland ·
-                <a href="https://lopes2tech.ch/en/ebooks" style="color:#475569;text-decoration:none;">Browse more books</a>
+                <a href="https://www.lopes2tech.ch/en/ebooks" style="color:#475569;text-decoration:none;">Browse more books</a>
               </p>
             </td>
           </tr>

@@ -13,7 +13,7 @@ import Footer from "@/components/Footer";
 import ErrorBoundary from "@/components/ErrorBoundary";
 import LogoTicker from "@/components/LogoTicker";
 
-const BASE_URL = "https://lopes2tech.ch";
+const BASE_URL = "https://www.lopes2tech.ch";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;

@@ -1,7 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
 
-const BASE_URL = "https://lopes2tech.ch";
+const BASE_URL = "https://www.lopes2tech.ch";
 
 // ─── Shared catalog (mirrors page.tsx — update both together) ──────────────
 const EBOOKS = [
@@ -61,12 +61,12 @@ function buildJsonLd(locale: string) {
                 author: {
                     "@type": "Person",
                     name: "Paulo Lopes",
-                    url: "https://lopes2tech.ch",
+                    url: "https://www.lopes2tech.ch",
                 },
                 publisher: {
                     "@type": "Organization",
                     name: "Lopes2Tech",
-                    url: "https://lopes2tech.ch",
+                    url: "https://www.lopes2tech.ch",
                 },
                 image: `${BASE_URL}${book.cover}`,
                 url: `${BASE_URL}/${locale}/ebooks`,

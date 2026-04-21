@@ -192,7 +192,7 @@ export async function submitWebsiteOnboarding(
   <div style="max-width:560px;margin:0 auto;padding:40px 24px;">
 
     <div style="text-align:center;margin-bottom:32px;">
-      <img src="https://lopes2tech.ch/logo_b.svg" alt="Lopes2Tech" width="140" style="display:inline-block;" />
+      <img src="https://www.lopes2tech.ch/logo_b.svg" alt="Lopes2Tech" width="140" style="display:inline-block;" />
     </div>
 
     <h1 style="margin:0 0 12px 0;font-size:22px;font-weight:800;color:#0f172a;text-align:center;">
@@ -229,7 +229,7 @@ export async function submitWebsiteOnboarding(
 
     <p style="margin:32px 0 0 0;font-size:13px;color:#94a3b8;text-align:center;border-top:1px solid #e2e8f0;padding-top:24px;">
       Lopes2Tech &mdash; Rüschlikon, Switzerland<br/>
-      <a href="https://lopes2tech.ch" style="color:#0891b2;text-decoration:none;">lopes2tech.ch</a>
+      <a href="https://www.lopes2tech.ch" style="color:#0891b2;text-decoration:none;">lopes2tech.ch</a>
     </p>
 
   </div>

@@ -90,7 +90,7 @@ export default function Impressum() {
                                 </div>
                                 <div className="flex gap-4">
                                     <span className="text-slate-400 min-w-[80px]">{t("contact.websiteLabel")}:</span>
-                                    <a href="https://lopes2tech.ch" className="text-cyan-400 hover:underline transition-colors duration-300 ease-[cubic-bezier(0.32,0.72,0,1)]">
+                                    <a href="https://www.lopes2tech.ch" className="text-cyan-400 hover:underline transition-colors duration-300 ease-[cubic-bezier(0.32,0.72,0,1)]">
                                         www.lopes2tech.ch
                                     </a>
                                 </div>

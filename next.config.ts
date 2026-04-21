@@ -56,7 +56,7 @@ const nextConfig: NextConfig = {
             "style-src 'self' 'unsafe-inline' fonts.googleapis.com",
             "img-src 'self' data: https: blob:",
             "font-src 'self' data: fonts.gstatic.com",
-            "connect-src 'self' *.google-analytics.com *.analytics.google.com *.googletagmanager.com *.clarity.ms *.vercel.app vitals.vercel-insights.com lopes2tech.ch app.lopes2tech.ch",
+            "connect-src 'self' *.google-analytics.com *.analytics.google.com *.googletagmanager.com *.clarity.ms *.vercel.app vitals.vercel-insights.com www.lopes2tech.ch app.lopes2tech.ch",
             "frame-src 'self' https://cal.com",
             "object-src 'none'",
             "base-uri 'self'",

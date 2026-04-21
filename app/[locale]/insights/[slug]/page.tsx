@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import BlogPostContent from "./BlogPostContent";
 import { blogPostsByLocale } from "@/lib/blog";
 
-const BASE_URL = "https://lopes2tech.ch";
+const BASE_URL = "https://www.lopes2tech.ch";
 
 export async function generateStaticParams() {
     return Object.entries(blogPostsByLocale).flatMap(([locale, posts]) =>

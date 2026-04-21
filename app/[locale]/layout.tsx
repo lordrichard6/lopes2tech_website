@@ -47,22 +47,16 @@ export const metadata: Metadata = {
   },
   // keywords meta is ignored by Google since 2009 — removed
   authors: [{ name: "Paulo R. Lopes" }],
-  metadataBase: new URL("https://lopes2tech.ch"),
-  alternates: {
-    canonical: 'https://lopes2tech.ch/en',
-    languages: {
-      'en': 'https://lopes2tech.ch/en',
-      'de': 'https://lopes2tech.ch/de',
-      'pt': 'https://lopes2tech.ch/pt',
-      'fr': 'https://lopes2tech.ch/fr',
-      'it': 'https://lopes2tech.ch/it',
-      'x-default': 'https://lopes2tech.ch/en',
-    },
-  },
+  metadataBase: new URL("https://www.lopes2tech.ch"),
+  // NOTE: No `alternates.canonical` at the root layout on purpose — each page
+  // sets its own locale-specific canonical via its own generateMetadata. A
+  // root-level canonical would be inherited by any page missing an override
+  // and point every locale at the English homepage (the exact bug that caused
+  // "Alternative page with proper canonical tag" errors in Search Console).
   openGraph: {
     title: "Lopes2Tech — Premium Websites, Automation & Digital Marketing for Swiss Businesses",
     description: "Premium websites, automation, AI, and digital marketing for Swiss SMEs. More leads, less admin — built fast and priced below Zurich market rates.",
-    url: "https://lopes2tech.ch",
+    url: "https://www.lopes2tech.ch",
     siteName: "Lopes2Tech",
     images: [
       {

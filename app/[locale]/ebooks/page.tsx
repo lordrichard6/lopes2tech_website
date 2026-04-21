@@ -370,7 +370,7 @@ export default function EbooksPage() {
                         "@context": "https://schema.org",
                         "@type": "ItemList",
                         name: "Ebooks by Lopes2Tech",
-                        url: `https://lopes2tech.ch/${locale}/ebooks`,
+                        url: `https://www.lopes2tech.ch/${locale}/ebooks`,
                         itemListElement: EBOOKS.filter(b => !b.isFree).map((book, i) => ({
                             "@type": "ListItem",
                             position: i + 1,
@@ -380,8 +380,8 @@ export default function EbooksPage() {
                                 description: book.description,
                                 bookFormat: "https://schema.org/EBook",
                                 inLanguage: "en",
-                                author: { "@type": "Person", name: "Paulo Lopes", url: "https://lopes2tech.ch" },
-                                image: `https://lopes2tech.ch${book.cover}`,
+                                author: { "@type": "Person", name: "Paulo Lopes", url: "https://www.lopes2tech.ch" },
+                                image: `https://www.lopes2tech.ch${book.cover}`,
                                 offers: {
                                     "@type": "Offer",
                                     price: book.price.toFixed(2),

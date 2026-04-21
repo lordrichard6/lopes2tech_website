@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 
-const BASE_URL = "https://lopes2tech.ch";
+const BASE_URL = "https://www.lopes2tech.ch";
 
 const metaByLocale: Record<string, { title: string; description: string; ogTitle: string; ogDesc: string }> = {
   en: {

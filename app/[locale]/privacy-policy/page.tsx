@@ -75,7 +75,7 @@ export default function PrivacyPolicy() {
                                 <p className="mb-2">{t("sections.controller.text")}</p>
                                 <p className="font-semibold text-white">Lopes2Tech / Paulo Lopes</p>
                                 <p>Email: <a href="mailto:paulo@lopes2tech.ch" className="text-cyan-400 hover:underline transition-colors duration-300 ease-[cubic-bezier(0.32,0.72,0,1)]">paulo@lopes2tech.ch</a></p>
-                                <p>Website: <a href="https://lopes2tech.ch" className="text-cyan-400 hover:underline transition-colors duration-300 ease-[cubic-bezier(0.32,0.72,0,1)]">www.lopes2tech.ch</a></p>
+                                <p>Website: <a href="https://www.lopes2tech.ch" className="text-cyan-400 hover:underline transition-colors duration-300 ease-[cubic-bezier(0.32,0.72,0,1)]">www.lopes2tech.ch</a></p>
                             </div>
                         </div>
                     </motion.section>

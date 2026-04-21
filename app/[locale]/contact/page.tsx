@@ -133,8 +133,8 @@ export default function ContactPage() {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Home", item: "https://lopes2tech.ch" },
-            { "@type": "ListItem", position: 2, name: "Contact", item: "https://lopes2tech.ch/en/contact" },
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://www.lopes2tech.ch" },
+            { "@type": "ListItem", position: 2, name: "Contact", item: "https://www.lopes2tech.ch/en/contact" },
         ],
     };
 

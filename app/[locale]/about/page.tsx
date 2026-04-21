@@ -93,9 +93,9 @@ const personSchema = {
     givenName: "Paulo",
     familyName: "Lopes Reizinho",
     jobTitle: "Founder & Full-Stack Developer",
-    worksFor: { "@type": "Organization", name: "Lopes2Tech", url: "https://lopes2tech.ch" },
-    url: "https://lopes2tech.ch/en/about",
-    image: "https://lopes2tech.ch/founder.jpg",
+    worksFor: { "@type": "Organization", name: "Lopes2Tech", url: "https://www.lopes2tech.ch" },
+    url: "https://www.lopes2tech.ch/en/about",
+    image: "https://www.lopes2tech.ch/founder.jpg",
     sameAs: [
         "https://www.linkedin.com/in/pauloreizinho/",
         "https://x.com/paulo_reizinho4",
@@ -110,8 +110,8 @@ const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home",  item: "https://lopes2tech.ch" },
-        { "@type": "ListItem", position: 2, name: "About", item: "https://lopes2tech.ch/en/about" },
+        { "@type": "ListItem", position: 1, name: "Home",  item: "https://www.lopes2tech.ch" },
+        { "@type": "ListItem", position: 2, name: "About", item: "https://www.lopes2tech.ch/en/about" },
     ],
 };
 

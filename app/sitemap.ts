@@ -2,7 +2,7 @@ import type { MetadataRoute } from 'next';
 import { blogPostsByLocale } from '@/lib/blog';
 import { projects } from './[locale]/portfolio/projects';
 
-const BASE_URL = 'https://lopes2tech.ch';
+const BASE_URL = 'https://www.lopes2tech.ch';
 const LOCALES = ['en', 'pt', 'de', 'fr', 'it'] as const;
 
 /** Build the hreflang alternates object for a given path (e.g. "/services") */
@@ -76,19 +76,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
 
     // ── Portfolio projects ───────────────────────────────────────────────────
-    projects.forEach((project) => {
-        const langs: Record<string, string> = { 'x-default': `${BASE_URL}/en/portfolio/${project.slug}` };
-        LOCALES.forEach((l) => { langs[l] = `${BASE_URL}/${l}/portfolio/${project.slug}`; });
-        LOCALES.forEach((locale) => {
-            routes.push({
-                url: `${BASE_URL}/${locale}/portfolio/${project.slug}`,
-                lastModified: new Date('2026-03-23'),
-                changeFrequency: 'monthly',
-                priority: 0.7,
-                alternates: { languages: langs },
-            });
-        });
-    });
+    // Detail routes (app/[locale]/portfolio/[slug]/) don't exist yet — only the
+    // listing page does. Do NOT emit per-project URLs until detail pages are
+    // built, otherwise Google records 404s and hurts the domain's crawl budget.
+    // The unused `projects` import is intentionally kept to flag this when the
+    // detail routes are added back.
+    void projects;
 
     return routes;
 }

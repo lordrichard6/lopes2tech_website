@@ -25,9 +25,9 @@ export default function TagArchivePage() {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": `https://lopes2tech.ch/${locale}` },
-            { "@type": "ListItem", "position": 2, "name": "Insights", "item": `https://lopes2tech.ch/${locale}/insights` },
-            { "@type": "ListItem", "position": 3, "name": tag, "item": `https://lopes2tech.ch/${locale}/insights/tag/${rawTag}` },
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": `https://www.lopes2tech.ch/${locale}` },
+            { "@type": "ListItem", "position": 2, "name": "Insights", "item": `https://www.lopes2tech.ch/${locale}/insights` },
+            { "@type": "ListItem", "position": 3, "name": tag, "item": `https://www.lopes2tech.ch/${locale}/insights/tag/${rawTag}` },
         ]
     };
 

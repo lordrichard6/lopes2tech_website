@@ -1,6 +1,6 @@
 import { blogPostsByLocale } from "@/lib/blog";
 
-const BASE_URL = "https://lopes2tech.ch";
+const BASE_URL = "https://www.lopes2tech.ch";
 
 export async function GET(
   _request: Request,

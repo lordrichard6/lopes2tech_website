@@ -9,7 +9,7 @@ interface ServiceBreadcrumbProps {
 
 export default function ServiceBreadcrumb({ serviceName, serviceSlug }: ServiceBreadcrumbProps) {
     const locale = useLocale();
-    const base = "https://lopes2tech.ch";
+    const base = "https://www.lopes2tech.ch";
 
     const schema = {
         "@context": "https://schema.org",
