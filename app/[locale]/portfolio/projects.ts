@@ -13,6 +13,7 @@ export const projects: Project[] = [
     { slug: "clinika-os", image: "/proj/clinika_os_mockup.webp", type: "web-app", link: "https://www.clinika-os.ch/" },
     { slug: "dark-monkey", image: "/proj/dark_monkey_mockup.webp", type: "web-app", link: "https://www.dark-monkey.ch/" },
     { slug: "menteiq", image: "/proj/menteiq_mockup.webp", type: "web-app", link: "https://menteiq.ch/", isInDevelopment: true },
+    { slug: "sparkd", image: "/proj/sparkd_mockup.webp", type: "web-app", link: "https://sparkd.ch/", isInDevelopment: true },
     { slug: "mimesa", image: "/proj/mimesa_mockup.webp", type: "web-app", link: "https://www.mimesa.ch/", isInDevelopment: true },
     { slug: "pali-ai", image: "/proj/pali_mockup.webp", type: "web-app", isInDevelopment: true },
     { slug: "theraflow", image: "/proj/theraflow_mockup.webp", type: "web-app", link: "https://www.theraflow-crm.ch/", isOnHold: true },
@@ -20,6 +21,7 @@ export const projects: Project[] = [
     { slug: "noff", image: "/proj/noff_mockup.webp", type: "web-app", link: "https://noff.ch/" },
     { slug: "draftmode", image: "/proj/draftmode_mockup.webp", type: "web-app", isInDevelopment: true },
     // Websites (real clients first, newest → oldest, then showcase projects)
+    { slug: "danysweets", image: "/proj/danysweets_mockup.webp", type: "website", link: "https://danysweets.vercel.app/", isInDevelopment: true },
     { slug: "safira-reinigung", image: "/proj/safira_reinigung_mockup.webp", type: "website", link: "https://www.safira-reinigung.ch/" },
     { slug: "silvio-photography", image: "/proj/silvio_mockup.webp", type: "website", link: "https://www.silviovalentt.pt/" },
     { slug: "ribeiro-consulting", image: "/proj/ribeiro_mockup.webp", type: "website", link: "https://ribeiroconsulting.ch/pt" },

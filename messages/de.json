@@ -1173,6 +1173,20 @@
           "5": "DSGVO-ready: Einzel-Klick-Datenexport & -löschung",
           "6": "Vertikalpakete: Berater, Versicherung, Buchhaltung (v2)"
         }
+      },
+      "sparkd": {
+        "industryLabel": "Für Reinigungsfirmen",
+        "tagline": "Betriebssoftware für Schweizer Reinigungsunternehmen",
+        "description": "Sparkd ist die All-in-One-Plattform für Schweizer Reinigungsfirmen — Jobs planen, Teams verwalten, Ausgaben tracken und Schweizer QR-Rechnungen versenden, alles an einem Ort.",
+        "features": {
+          "0": "Drag-and-drop Einsatzplanung für mehrere Teams",
+          "1": "Mobile Checklisten mit Fotonachweis pro Auftrag",
+          "2": "Integrierte Schweizer QR-Rechnung (DSG / DSGVO-konform)",
+          "3": "Kundendatenbank mit Verträgen, Adressen & Servicehistorie",
+          "4": "Arbeitszeit- und Spesenerfassung für Teams",
+          "5": "Mehrsprachig: Deutsch, Französisch, Italienisch, Englisch",
+          "6": "Live-Auftragsstatus und Fortschrittsübersicht für Inhaber"
+        }
       }
     }
   },
@@ -1278,6 +1292,16 @@
         "title": "miMesa - Restaurant-Betriebssystem",
         "description": "Das Betriebssystem für moderne Restaurants. Verwalten Sie Reservierungen, Tische und Gäste mit Eleganz. Entwickelt, um Zeit zu sparen und den Umsatz zu steigern.",
         "category": "Gastronomie & Reservierungen"
+      },
+      "sparkd": {
+        "title": "Sparkd",
+        "description": "Betriebssoftware für Schweizer Reinigungsunternehmen. Jobs planen, Teams verwalten, QR-Rechnungen senden und Spesen erfassen — alles an einem Ort.",
+        "category": "SaaS für Reinigungsunternehmen"
+      },
+      "danysweets": {
+        "title": "Dany'Sweets",
+        "description": "Digitaler Shop eines Zürcher Konditorei-Ateliers. Handgefertigte 3D-, Hochzeits- und Geburtstagstorten sowie luxuriöse Schokoladendesserts — online verkauft und individualisiert.",
+        "category": "E-Commerce / Konditorei-Atelier"
       },
       "draftmode": {
         "title": "DraftMode CRM",

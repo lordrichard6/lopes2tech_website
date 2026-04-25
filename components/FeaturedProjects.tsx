@@ -69,6 +69,21 @@ const projectsConfig = [
         cardBorder: "rgba(124,58,237,0.35)",
         checkColor: "#7C3AED",
     },
+    {
+        id: "sparkd",
+        name: "Sparkd",
+        industryEmoji: "🧹",
+        industryColor: "#F97316",
+        logo: "/logos/sparkd_logo.png",
+        logoSize: { w: 36, h: 36 },
+        mockup: "/proj/sparkd_mockup.webp",
+        version: "v0.9",
+        stage: "Beta",
+        websiteUrl: "https://sparkd.ch/",
+        accent: "#F97316",
+        cardBorder: "rgba(249,115,22,0.35)",
+        checkColor: "#F97316",
+    },
 ];
 
 type ProjectConfig = (typeof projectsConfig)[0];
@@ -358,7 +373,7 @@ export default function FeaturedProjects() {
     const [active, setActive] = useState<string | null>(null);
 
     const projects: Project[] = projectsConfig.map((cfg) => {
-        const pid = cfg.id as "mimesa" | "clinika" | "darkmonkey" | "menteiq";
+        const pid = cfg.id as "mimesa" | "clinika" | "darkmonkey" | "menteiq" | "sparkd";
         return {
             ...cfg,
             industryLabel: t(`projects.${pid}.industryLabel`),
@@ -429,8 +444,9 @@ export default function FeaturedProjects() {
                         </motion.p>
                     </div>
 
-                    {/* 2×2 Grid */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    {/* Responsive grid: 1 col mobile, 2 cols tablet, 3 cols desktop. */}
+                    {/* Currently 5 cards → 3 + 2 on desktop. Will become a clean 3×2 when the 6th SaaS ships. */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                         {projects.map((project, index) => (
                             <ProjectCard
                                 key={project.id}

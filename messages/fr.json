@@ -1286,6 +1286,20 @@
           "5": "Prêt RGPD : export & suppression de données en un clic",
           "6": "Packs verticaux : Consultant, Assurance, Comptabilité (v2)"
         }
+      },
+      "sparkd": {
+        "industryLabel": "Pour les Entreprises de Nettoyage",
+        "tagline": "Logiciel d'Exploitation pour Entreprises de Nettoyage Suisses",
+        "description": "Sparkd est la plateforme tout-en-un pour les entreprises de nettoyage suisses — planifiez les missions, gérez les équipes, suivez les dépenses et envoyez des QR-factures suisses depuis un seul endroit.",
+        "features": {
+          "0": "Planification des missions par glisser-déposer pour plusieurs équipes",
+          "1": "Checklists mobiles avec preuves photo par mission",
+          "2": "QR-facture suisse intégrée (conforme LPD / RGPD)",
+          "3": "Base clients avec contrats, adresses et historique de service",
+          "4": "Suivi des heures d'équipe et gestion des dépenses",
+          "5": "Multilingue : allemand, français, italien, anglais",
+          "6": "Statut des missions en temps réel pour les dirigeants"
+        }
       }
     }
   },
@@ -1378,6 +1392,16 @@
         "title": "miMesa - OS Restaurant",
         "description": "Le système d'exploitation pour les restaurants modernes. Gérez réservations, tables et clients avec élégance. Conçu pour économiser du temps et augmenter les revenus.",
         "category": "Gastronomie & Réservations"
+      },
+      "sparkd": {
+        "title": "Sparkd",
+        "description": "Logiciel d'exploitation pour entreprises de nettoyage suisses. Planifiez les missions, gérez les équipes, envoyez des QR-factures et suivez les dépenses — tout en un.",
+        "category": "SaaS pour Entreprises de Nettoyage"
+      },
+      "danysweets": {
+        "title": "Dany'Sweets",
+        "description": "Boutique en ligne d'un atelier de pâtisserie artisanale à Zurich. Gâteaux 3D, de mariage et d'anniversaire faits main et desserts au chocolat de luxe — vendus et personnalisés en ligne.",
+        "category": "E-Commerce / Atelier de Pâtisserie"
       },
       "draftmode": {
         "title": "DraftMode CRM",

@@ -1173,6 +1173,20 @@
           "5": "GDPR-ready: one-click data export & deletion",
           "6": "Vertical packs: Consultant, Insurance, Accounting (v2)"
         }
+      },
+      "sparkd": {
+        "industryLabel": "For Cleaning Services",
+        "tagline": "Operations Software for Swiss Cleaning Companies",
+        "description": "Sparkd is the all-in-one operations platform for Swiss cleaning companies — schedule jobs, manage crews, track expenses, and send Swiss QR-Bill invoices from one place.",
+        "features": {
+          "0": "Drag-and-drop job scheduling across multiple crews",
+          "1": "Mobile checklists with photo evidence per job",
+          "2": "Swiss QR-Bill invoicing built-in (FADP / GDPR compliant)",
+          "3": "Client database with contracts, addresses & service history",
+          "4": "Crew time tracking and expense logging",
+          "5": "Multi-locale: German, French, Italian, English",
+          "6": "Live job status and progress visibility for owners"
+        }
       }
     }
   },
@@ -1278,6 +1292,16 @@
         "title": "miMesa - Restaurant OS",
         "description": "The operating system for modern restaurants. Handle reservations, tables, and guests with elegance. Designed to save time and increase revenue.",
         "category": "Gastronomy & Reservations"
+      },
+      "sparkd": {
+        "title": "Sparkd",
+        "description": "Operations software for Swiss cleaning companies. Schedule jobs, manage crews, send Swiss QR invoices and track expenses — all in one place.",
+        "category": "SaaS for Cleaning Companies"
+      },
+      "danysweets": {
+        "title": "Dany'Sweets",
+        "description": "Digital storefront for a Zurich-based artisan cake atelier. Handcrafted 3D, wedding and birthday cakes plus luxury chocolate desserts, sold and customised online.",
+        "category": "E-Commerce / Pastry Atelier"
       },
       "draftmode": {
         "title": "DraftMode CRM",

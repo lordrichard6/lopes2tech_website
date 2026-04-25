@@ -1173,6 +1173,20 @@
           "5": "Pronto para RGPD: exportação de dados e eliminação com um clique",
           "6": "Pacotes verticais: Consultor, Seguros, Contabilidade (v2)"
         }
+      },
+      "sparkd": {
+        "industryLabel": "Para Empresas de Limpeza",
+        "tagline": "Software de Gestão para Empresas de Limpeza Suíças",
+        "description": "Sparkd é a plataforma completa de operações para empresas de limpeza suíças — agenda trabalhos, gere equipas, controla despesas e envia faturas QR suíças num só lugar.",
+        "features": {
+          "0": "Agendamento de trabalhos drag-and-drop para várias equipas",
+          "1": "Checklists móveis com prova fotográfica por trabalho",
+          "2": "Faturação QR-Bill suíça integrada (conforme LPD / RGPD)",
+          "3": "Base de dados de clientes com contratos, moradas e histórico",
+          "4": "Registo de horas das equipas e controlo de despesas",
+          "5": "Multilíngue: alemão, francês, italiano, inglês",
+          "6": "Estado dos trabalhos em tempo real para os donos"
+        }
       }
     }
   },
@@ -1278,6 +1292,16 @@
         "title": "miMesa - Sistema Operativo para Restaurantes",
         "description": "O sistema operativo para restaurantes modernos. Gerencie reservas, mesas e clientes com elegância. Projetado para poupar tempo e aumentar receitas.",
         "category": "Gastronomia & Reservas"
+      },
+      "sparkd": {
+        "title": "Sparkd",
+        "description": "Software de gestão para empresas de limpeza suíças. Agenda trabalhos, gere equipas, envia faturas QR e controla despesas — tudo num só lugar.",
+        "category": "SaaS para Empresas de Limpeza"
+      },
+      "danysweets": {
+        "title": "Dany'Sweets",
+        "description": "Loja online de um atelier artesanal de pastelaria em Zurique. Bolos 3D, de casamento e de aniversário feitos à mão e sobremesas de chocolate luxuosas — vendidos e personalizados online.",
+        "category": "E-Commerce / Atelier de Pastelaria"
       },
       "draftmode": {
         "title": "DraftMode CRM",
