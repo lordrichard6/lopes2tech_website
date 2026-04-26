@@ -238,8 +238,11 @@
     },
     "cta": "Lire plus d'avis"
   },
+  "LogoTicker": {
+    "trustedBy": "Ils nous font confiance"
+  },
   "Newsletter": {
-    "description": "Recevez des insights sur l'IA, le SEO et le développement web directement dans votre boîte mail.",
+    "description": "Conseils mensuels sur les sites web, l'automatisation et l'IA pour les PME suisses. Pas de spam — désinscription à tout moment.",
     "placeholder": "votre@email.com",
     "success": "Merci pour votre inscription !",
     "error": "Une erreur s'est produite. Veuillez réessayer."
@@ -727,8 +730,10 @@
         "title": "Message Envoyé !",
         "message": "Merci pour votre message. Je vous répondrai prochainement.",
         "button": "Envoyer un Autre",
-        "responseTime": "Je réponds généralement sous 24 heures."
+        "responseTime": "Je réponds généralement sous 24 heures.",
+        "referralCta": "Déjà client ? Gagnez de l'argent en parrainant un ami"
       },
+      "responseBadge": "Réponse sous 24h",
       "eyebrow": "Envoyer un message"
     },
     "location": "Zurich, Suisse",
@@ -2431,7 +2436,9 @@
       "badgeOneTime": "Unique",
       "badgeRecurring": "Mensuel",
       "viewService": "Voir la page du service",
-      "footerNote": "Tous les prix en CHF (Francs suisses). Les dépenses publicitaires sont facturées directement par Meta/Google. Les coûts des plateformes IA sont répercutés."
+      "footerNote": "Tous les prix en CHF (Francs suisses). Les dépenses publicitaires sont facturées directement par Meta/Google. Les coûts des plateformes IA sont répercutés.",
+      "questionsLink": "Des questions ? Discutez sur WhatsApp",
+      "referralLink": "Déjà client ? Gagnez de l'argent en parrainant un ami"
     },
     "paymentPlans": {
       "label": "Financement flexible",

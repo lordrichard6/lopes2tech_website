@@ -560,8 +560,11 @@
     },
     "cta": "Read more reviews"
   },
+  "LogoTicker": {
+    "trustedBy": "Trusted by"
+  },
   "Newsletter": {
-    "description": "Get insights on AI, SEO & web dev delivered to your inbox.",
+    "description": "Monthly tips on websites, automation & AI for Swiss SMEs. No spam — unsubscribe anytime.",
     "placeholder": "your@email.com",
     "success": "Thanks for subscribing!",
     "error": "Something went wrong. Try again."
@@ -654,8 +657,10 @@
         "title": "Message Sent!",
         "message": "Thanks for reaching out. I'll get back to you shortly.",
         "button": "Send Another",
-        "responseTime": "I typically respond within 24 hours."
+        "responseTime": "I typically respond within 24 hours.",
+        "referralCta": "Already a client? Earn cash by referring a friend"
       },
+      "responseBadge": "Replies within 24h",
       "eyebrow": "Send a Message"
     },
     "location": "Zurich, Switzerland",
@@ -2431,7 +2436,9 @@
       "badgeOneTime": "One-time",
       "badgeRecurring": "Monthly",
       "viewService": "View service page",
-      "footerNote": "All prices in CHF (Swiss Francs). Ad spend billed directly by Meta/Google. AI platform costs are pass-through."
+      "footerNote": "All prices in CHF (Swiss Francs). Ad spend billed directly by Meta/Google. AI platform costs are pass-through.",
+      "questionsLink": "Questions? Chat on WhatsApp",
+      "referralLink": "Already a client? Earn cash by referring a friend"
     },
     "paymentPlans": {
       "label": "Flexible financing",

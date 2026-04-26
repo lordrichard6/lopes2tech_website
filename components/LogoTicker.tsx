@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const tickerItems = [
   { type: "logo" as const, src: "/logos/clinika_logo.svg",       alt: "ClíniKa OS",         w: 96,  h: 32 },
@@ -48,8 +49,15 @@ function TickerItem({ item }: { item: TickerItemType }) {
  * Items are duplicated for seamless infinite loop.
  */
 export default function LogoTicker() {
+  const t = useTranslations("LogoTicker");
+
   return (
-    <div className="relative py-5 bg-[#080d1a] border-y border-white/[0.06] overflow-hidden">
+    <div className="relative bg-[#080d1a] border-y border-white/[0.06] overflow-hidden">
+      <p className="text-center text-[10px] uppercase tracking-[0.25em] text-white/35 font-semibold pt-5 pb-3">
+        {t("trustedBy")}
+      </p>
+
+      <div className="relative pb-5 overflow-hidden">
       {/* Left fade */}
       <div className="absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-[#080d1a] to-transparent z-10 pointer-events-none" />
       {/* Right fade */}
@@ -71,6 +79,7 @@ export default function LogoTicker() {
           to   { transform: translateX(-50%); }
         }
       `}</style>
+      </div>
     </div>
   );
 }

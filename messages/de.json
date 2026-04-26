@@ -560,8 +560,11 @@
     },
     "cta": "Mehr Bewertungen lesen"
   },
+  "LogoTicker": {
+    "trustedBy": "Vertraut von"
+  },
   "Newsletter": {
-    "description": "Erhalten Sie Einblicke zu KI, SEO & Webentwicklung in Ihrem Posteingang.",
+    "description": "Monatliche Tipps zu Websites, Automatisierung & KI für Schweizer KMU. Kein Spam — jederzeit kündbar.",
     "placeholder": "ihre@email.com",
     "success": "Danke fürs Abonnieren!",
     "error": "Etwas ist schiefgelaufen. Versuchen Sie es erneut."
@@ -654,8 +657,10 @@
         "title": "Nachricht Gesendet!",
         "message": "Danke für Ihre Nachricht. Ich werde mich in Kürze bei Ihnen melden.",
         "button": "Weitere Senden",
-        "responseTime": "Ich antworte in der Regel innerhalb von 24 Stunden."
+        "responseTime": "Ich antworte in der Regel innerhalb von 24 Stunden.",
+        "referralCta": "Bereits Kunde? Verdienen Sie Geld mit Empfehlungen"
       },
+      "responseBadge": "Antwort in 24h",
       "eyebrow": "Nachricht senden"
     },
     "location": "Zürich, Schweiz",
@@ -2431,7 +2436,9 @@
       "badgeOneTime": "Einmalig",
       "badgeRecurring": "Monatlich",
       "viewService": "Zur Leistungsseite",
-      "footerNote": "Alle Preise in CHF (Schweizer Franken). Werbeausgaben werden direkt von Meta/Google verrechnet. KI-Plattformkosten werden weitergegeben."
+      "footerNote": "Alle Preise in CHF (Schweizer Franken). Werbeausgaben werden direkt von Meta/Google verrechnet. KI-Plattformkosten werden weitergegeben.",
+      "questionsLink": "Fragen? Schreiben Sie uns auf WhatsApp",
+      "referralLink": "Bereits Kunde? Verdienen Sie Geld mit Empfehlungen"
     },
     "paymentPlans": {
       "label": "Flexible Finanzierung",

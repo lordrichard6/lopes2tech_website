@@ -65,6 +65,28 @@
 - **Never `echo VAR_VALUE | vercel env add`** — trailing `\n` corrupts the value (breaks Stripe keys, URLs). Use `printf` or the Vercel REST API.
 - **Scope stays tight.** If lint/build breaks something outside the task, stop and ask rather than fanning out fixes.
 
+## Hidden-by-design pages — DO NOT surface
+
+The following routes are intentionally **excluded from the navbar AND from `app/sitemap.ts`**:
+
+- `/ebooks` — store is live with real Stripe links, but kept off public navigation by owner's choice
+- `/referral-portugal` — geo-targeted variant of `/referral`, served only via direct link
+- `/pricing-portugal` — geo-targeted variant of `/pricing`, served only via direct link
+
+Do NOT add them to the navbar, sitemap, or footer "discover more" sections. If you find yourself "fixing" the missing nav entry, stop — it is intentional.
+
+## Newsletter — no persistent list
+
+`components/NewsletterSignup.tsx` + `app/actions/contact.ts` send a Resend email notification to Paulo on every signup. There is **no Mailchimp / ConvertKit / Resend Audiences integration** — subscribers are not stored anywhere. Treat this as a notification flow, not a mailing list. If the owner wants a real list, that's a build, not a config tweak.
+
+## Ebooks catalog — hardcoded
+
+The book catalog lives directly in `app/[locale]/ebooks/page.tsx` as a `const EBOOKS` array (titles, prices, Stripe links, covers). There is no CMS or data file. Stripe buy links are hardcoded URLs (not env vars) — pointing at live Stripe hosted-payment pages — so a refactor that swaps URLs into env will break the live store.
+
+## cal.com is deprecated
+
+The owner stopped using cal.com. `components/HireMeSection.tsx` previously linked to `cal.com/lopes2tech/initial-consult`; that URL has been replaced with `WHATSAPP_URL`. Do not re-introduce cal.com embeds or links anywhere.
+
 ## Update this file
 
 When a new landmine is discovered, add it here with the date and a one-line description of the symptom. The top-level CLAUDE.md calls this "self-anneal on failure" — a bug found once should not bite twice.

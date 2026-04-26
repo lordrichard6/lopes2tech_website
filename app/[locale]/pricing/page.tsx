@@ -400,9 +400,18 @@ export default function PricingPage() {
                       <div className="rounded-[calc(2rem-1px)] overflow-hidden bg-white/[0.06] shadow-[inset_0_1px_1px_rgba(255,255,255,0.07)]">
 
                         {/* Category header */}
-                        <div className={`flex items-center gap-3 px-6 py-4 border-b border-white/10 ${c.header}`}>
+                        <div className={`flex flex-wrap items-center gap-3 px-6 py-4 border-b border-white/10 ${c.header}`}>
                           <cat.icon className={`w-5 h-5 ${c.icon}`} />
                           <span className="font-bold text-white text-sm uppercase tracking-wider">{cat.title}</span>
+                          <a
+                            href={WHATSAPP_URL}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="hidden md:inline-flex items-center gap-1 text-[11px] text-slate-500 hover:text-cyan-400 transition-colors ml-2"
+                          >
+                            {t("tables.questionsLink")}
+                            <ArrowRight className="w-3 h-3" />
+                          </a>
                           <span className={`ml-auto inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold border ${c.badge}`}>
                             {cat.type === "recurring" && <Repeat className="w-3 h-3" />}
                             {cat.type === "one-time" ? t("tables.badgeOneTime") : t("tables.badgeRecurring")}
@@ -503,6 +512,16 @@ export default function PricingPage() {
             </div>
 
             <p className="text-center text-xs text-slate-600 mt-6">{t("tables.footerNote")}</p>
+
+            <div className="text-center mt-4">
+              <a
+                href="/referral"
+                className="inline-flex items-center gap-1.5 text-xs text-slate-500 hover:text-cyan-400 transition-colors"
+              >
+                {t("tables.referralLink")}
+                <ArrowRight className="w-3 h-3" />
+              </a>
+            </div>
           </div>
         </section>
 

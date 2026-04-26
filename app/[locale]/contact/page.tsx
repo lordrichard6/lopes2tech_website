@@ -5,8 +5,9 @@ import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { MapPin } from "lucide-react";
+import { MapPin, Clock } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { Link } from "@/navigation";
 import { sendContactEmail } from "@/app/actions/contact";
 import { trackFormSubmission } from "@/lib/analytics";
 
@@ -255,8 +256,14 @@ export default function ContactPage() {
                                             >
                                                 {/* Form eyebrow + display-font title */}
                                                 <div className="mb-8">
-                                                    <div className="inline-block px-3 py-1 rounded-full bg-white/5 text-slate-400 font-semibold text-[10px] uppercase tracking-[0.2em] mb-4 border border-white/10">
-                                                        {t("form.eyebrow")}
+                                                    <div className="flex flex-wrap items-center gap-2 mb-4">
+                                                        <div className="inline-block px-3 py-1 rounded-full bg-white/5 text-slate-400 font-semibold text-[10px] uppercase tracking-[0.2em] border border-white/10">
+                                                            {t("form.eyebrow")}
+                                                        </div>
+                                                        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 font-semibold text-[10px] uppercase tracking-[0.2em] border border-emerald-500/20">
+                                                            <Clock className="w-3 h-3" />
+                                                            {t("form.responseBadge")}
+                                                        </div>
                                                     </div>
                                                     <h2 className="font-[family-name:var(--font-display)] text-3xl font-bold text-white mb-2">
                                                         {t("form.title")}
@@ -554,6 +561,16 @@ export default function ContactPage() {
                                                         >
                                                             {t("form.success.button")}
                                                         </motion.button>
+                                                    </motion.div>
+
+                                                    <motion.div variants={successItem} className="mt-8">
+                                                        <Link
+                                                            href="/referral"
+                                                            className="inline-flex items-center gap-1.5 text-xs text-slate-500 hover:text-cyan-400 transition-colors"
+                                                        >
+                                                            {t("form.success.referralCta")}
+                                                            <span aria-hidden="true">→</span>
+                                                        </Link>
                                                     </motion.div>
                                                 </motion.div>
                                             </motion.div>

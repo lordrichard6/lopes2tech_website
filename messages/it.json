@@ -238,8 +238,11 @@
     },
     "cta": "Leggi altre recensioni"
   },
+  "LogoTicker": {
+    "trustedBy": "Si fidano di noi"
+  },
   "Newsletter": {
-    "description": "Ricevete insights su IA, SEO e sviluppo web direttamente nella vostra casella di posta.",
+    "description": "Consigli mensili su siti web, automazione e IA per le PMI svizzere. Niente spam — disiscriviti quando vuoi.",
     "placeholder": "vostro@email.com",
     "success": "Grazie per l'iscrizione!",
     "error": "Si è verificato un errore. Riprovateci."
@@ -727,8 +730,10 @@
         "title": "Messaggio Inviato!",
         "message": "Grazie per averci contattato. Vi risponderemo a breve.",
         "button": "Invia un Altro",
-        "responseTime": "Di solito rispondo entro 24 ore."
+        "responseTime": "Di solito rispondo entro 24 ore.",
+        "referralCta": "Sei già cliente? Guadagna raccomandandoci"
       },
+      "responseBadge": "Risposta in 24h",
       "eyebrow": "Invia un Messaggio"
     },
     "location": "Zurigo, Svizzera",
@@ -2431,7 +2436,9 @@
       "badgeOneTime": "Una tantum",
       "badgeRecurring": "Mensile",
       "viewService": "Vedi pagina del servizio",
-      "footerNote": "Tutti i prezzi in CHF (Franchi Svizzeri). Le spese pubblicitarie sono fatturate direttamente da Meta/Google. I costi delle piattaforme AI sono trasferiti."
+      "footerNote": "Tutti i prezzi in CHF (Franchi Svizzeri). Le spese pubblicitarie sono fatturate direttamente da Meta/Google. I costi delle piattaforme AI sono trasferiti.",
+      "questionsLink": "Hai domande? Scrivici su WhatsApp",
+      "referralLink": "Sei già cliente? Guadagna raccomandandoci"
     },
     "paymentPlans": {
       "label": "Finanziamento flessibile",

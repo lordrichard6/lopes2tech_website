@@ -4,6 +4,7 @@ import { motion, useReducedMotion } from "framer-motion";
 import { ArrowRight, Briefcase } from "lucide-react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { WHATSAPP_URL } from "@/lib/constants";
 
 const EASE   = [0.16, 1, 0.3, 1] as const;
 const SPRING = { type: "spring", stiffness: 320, damping: 22 } as const;
@@ -90,7 +91,7 @@ export default function HireMeSection() {
 
                             {/* CTA — rounded-full pill + spring physics */}
                             <motion.a
-                                href="https://cal.com/lopes2tech/initial-consult"
+                                href={WHATSAPP_URL}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 whileHover={{ scale: 1.03 }}
