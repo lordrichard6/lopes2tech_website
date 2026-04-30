@@ -1,14 +1,19 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Mail, ArrowRight, Check } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { sendNewsletterSubscriptionEmail } from "@/app/actions/contact";
 
 export default function NewsletterSignup() {
     const [email, setEmail] = useState("");
+    const [website, setWebsite] = useState(""); // honeypot
     const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
     const t = useTranslations('Newsletter');
+
+    // Track form mount time so server can reject sub-second submits.
+    const formLoadedAtRef = useRef<number>(0);
+    useEffect(() => { formLoadedAtRef.current = Date.now(); }, []);
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
@@ -17,7 +22,10 @@ export default function NewsletterSignup() {
         setStatus("loading");
 
         try {
-            const result = await sendNewsletterSubscriptionEmail(email);
+            const result = await sendNewsletterSubscriptionEmail(email, {
+                website,
+                formLoadedAt: formLoadedAtRef.current,
+            });
             if (result.success) {
                 setStatus("success");
                 setEmail("");
@@ -46,6 +54,19 @@ export default function NewsletterSignup() {
             <p className="text-white/50 text-sm mb-3">
                 {t('description')}
             </p>
+            {/* Honeypot — hidden from humans, bots fill it. */}
+            <div aria-hidden="true" style={{ position: "absolute", left: "-10000px", width: 1, height: 1, overflow: "hidden", opacity: 0 }}>
+                <label htmlFor="newsletter-website">Website</label>
+                <input
+                    type="text"
+                    id="newsletter-website"
+                    name="website"
+                    value={website}
+                    onChange={(e) => setWebsite(e.target.value)}
+                    tabIndex={-1}
+                    autoComplete="off"
+                />
+            </div>
             <div className="flex gap-2">
                 <div className="relative flex-1">
                     <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-white/30" />

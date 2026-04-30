@@ -10,10 +10,12 @@ const intlMiddleware = createMiddleware({
 export default function middleware(request: NextRequest) {
     const response = intlMiddleware(request);
 
-    // Set currency cookie based on visitor country (provided by Vercel automatically)
-    // Only CH (Switzerland) and LI (Liechtenstein) use CHF — everyone else gets EUR
+    // Set currency cookie based on visitor country (Vercel injects the header).
+    // Only CH (Switzerland) and LI (Liechtenstein) use CHF — everyone else,
+    // including local dev and self-hosted (where the header is missing), gets
+    // EUR as a neutral default.
     if (!request.cookies.has('currency')) {
-        const country = request.headers.get('x-vercel-ip-country') ?? 'CH';
+        const country = request.headers.get('x-vercel-ip-country');
         const currency = (country === 'CH' || country === 'LI') ? 'CHF' : 'EUR';
         response.cookies.set('currency', currency, {
             maxAge: 60 * 60 * 24, // 24 hours

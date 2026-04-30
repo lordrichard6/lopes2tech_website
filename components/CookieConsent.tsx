@@ -28,11 +28,23 @@ export default function CookieConsent() {
     }, []);
 
     const updateConsent = (granted: boolean) => {
-        if (typeof window.gtag === "function") {
-            window.gtag("consent", "update", {
-                analytics_storage: granted ? "granted" : "denied",
-                ad_storage: granted ? "granted" : "denied",
-            });
+        const v = granted ? "granted" : "denied";
+        // Consent Mode v2 — push to dataLayer so this works even before gtag
+        // loads (with `wait_for_update: 500` in defaults, gtag replays events
+        // with the updated state).
+        if (typeof window !== "undefined" && Array.isArray(window.dataLayer)) {
+            window.dataLayer.push([
+                "consent",
+                "update",
+                {
+                    ad_storage: v,
+                    ad_user_data: v,
+                    ad_personalization: v,
+                    analytics_storage: v,
+                    functionality_storage: v,
+                    personalization_storage: v,
+                },
+            ]);
         }
     };
 

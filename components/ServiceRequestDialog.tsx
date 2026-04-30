@@ -103,7 +103,7 @@ export default function ServiceRequestDialog({ isOpen, onClose, packageContext, 
                 setStatus("error");
             }
         } catch (error) {
-            console.error("Failed to submit request:", error);
+            if (process.env.NODE_ENV !== "production") console.error("Failed to submit request:", error);
             setStatus("error");
         }
     };

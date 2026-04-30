@@ -1,14 +1,21 @@
 "use client";
 
+// Footer stays a client component because every page that imports it is
+// `'use client'` (21 of them). Converting to async/server breaks all of them.
+// The bigger architectural fix — making page.tsx files server components and
+// extracting client islands — is out of scope.
+
 import { Link } from "@/navigation";
 import Image from "next/image";
 import { Mail, Linkedin, Instagram, FileText } from "lucide-react";
 import { useTranslations } from "next-intl";
 import NewsletterSignup from "@/components/NewsletterSignup";
 
+// Computed once at module load, not per render.
+const COPYRIGHT_YEAR = new Date().getFullYear();
+
 export default function Footer() {
     const t = useTranslations('Footer');
-    const currentYear = new Date().getFullYear(); // module-level would be ideal but this is fine for SSR
 
     return (
         <footer className="relative pt-16 pb-8 bg-[#080d1a] text-white overflow-hidden text-center">
@@ -133,7 +140,7 @@ export default function Footer() {
                 <div className="mt-8 pt-8 relative text-center">
                     <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[60%] h-[1px] bg-gradient-to-r from-transparent via-white/20 to-transparent" />
                     <p className="text-white/60 text-sm tracking-wide">
-                        &copy; {currentYear} Lopes2Tech. {t('copyright')}
+                        &copy; {COPYRIGHT_YEAR} Lopes2Tech. {t('copyright')}
                     </p>
                 </div>
             </div>

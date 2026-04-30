@@ -1111,7 +1111,12 @@ export default function WebsiteOnboardingForm() {
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState("");
   const [showResumeBanner, setShowResumeBanner] = useState(false);
+  const [website, setWebsite] = useState(""); // honeypot
+  const formLoadedAtRef = useRef<number>(0);
   const saveTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  // Track form mount time so server can reject sub-5s submissions.
+  useEffect(() => { formLoadedAtRef.current = Date.now(); }, []);
   const scrollRef = useRef<HTMLDivElement>(null);
 
   // Restore draft
@@ -1176,7 +1181,10 @@ export default function WebsiteOnboardingForm() {
   const handleSubmit = useCallback(async () => {
     setIsSubmitting(true);
     try {
-      const result = await submitWebsiteOnboarding(formData);
+      const result = await submitWebsiteOnboarding(formData, {
+        website,
+        formLoadedAt: formLoadedAtRef.current,
+      });
       if (!result.success) {
         setErrorMessage(result.error ?? "An unexpected error occurred.");
         setStatus("error");
@@ -1300,6 +1308,19 @@ export default function WebsiteOnboardingForm() {
   // ── Main form ───────────────────────────────────────────────────────────────
   return (
     <div className="min-h-screen relative">
+      {/* Honeypot — hidden from humans, bots fill it. */}
+      <div aria-hidden="true" style={{ position: "absolute", left: "-10000px", width: 1, height: 1, overflow: "hidden", opacity: 0 }}>
+        <label htmlFor="onboarding-website">Website</label>
+        <input
+          type="text"
+          id="onboarding-website"
+          name="website"
+          value={website}
+          onChange={(e) => setWebsite(e.target.value)}
+          tabIndex={-1}
+          autoComplete="off"
+        />
+      </div>
       {/* Video background */}
       <div className="fixed inset-0 z-0">
         <video

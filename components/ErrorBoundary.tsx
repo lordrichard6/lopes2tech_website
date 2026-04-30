@@ -22,7 +22,7 @@ export default class ErrorBoundary extends Component<Props, State> {
     }
 
     override componentDidCatch(error: Error, info: { componentStack: string }) {
-        console.error("Section render error:", error, info.componentStack);
+        if (process.env.NODE_ENV !== "production") console.error("Section render error:", error, info.componentStack);
     }
 
     override render() {

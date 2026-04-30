@@ -13,12 +13,28 @@ function alternates(path: string): { languages: Record<string, string> } {
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const now = new Date().toISOString();
+    // Stable lastMod for the home page — bump only when content meaningfully
+    // changes. Using `new Date()` makes Google re-crawl on every deploy and
+    // wastes their crawl budget.
+    const HOME_LAST_MOD = '2026-04-26';
+
+    // For /insights we use the most recent NON-future-dated post date.
+    // A draft post with a future date shouldn't make Google think /insights
+    // was just updated — we'd lie to crawlers.
+    const latestPostDate = (() => {
+        const today = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
+        const allPosts = Object.values(blogPostsByLocale).flat();
+        const dates = allPosts
+            .map(p => (p as { date?: string }).date)
+            .filter((d): d is string => Boolean(d))
+            .filter(d => d <= today) // exclude drafts dated in the future
+            .sort();
+        return dates.length > 0 ? dates[dates.length - 1] : HOME_LAST_MOD;
+    })();
 
     // NOTE: Update lastMod manually when page content meaningfully changes.
-    // Using `now` for every deploy wastes Google's crawl budget.
     const pages = [
-        { path: '',                              changeFrequency: 'daily'   as const, priority: 1.0, lastMod: now },
+        { path: '',                              changeFrequency: 'daily'   as const, priority: 1.0, lastMod: HOME_LAST_MOD },
         { path: '/services',                     changeFrequency: 'monthly' as const, priority: 0.9, lastMod: '2026-03-23' },
         { path: '/services/web-design',          changeFrequency: 'monthly' as const, priority: 0.9, lastMod: '2026-03-23' },
         { path: '/services/seo-development',     changeFrequency: 'monthly' as const, priority: 0.9, lastMod: '2026-03-23' },
@@ -32,7 +48,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         { path: '/pricing',                      changeFrequency: 'monthly' as const, priority: 0.9, lastMod: '2026-03-28' },
         { path: '/portfolio',                    changeFrequency: 'monthly' as const, priority: 0.8, lastMod: '2026-03-23' },
         { path: '/about',                        changeFrequency: 'monthly' as const, priority: 0.8, lastMod: '2026-03-23' },
-        { path: '/insights',                     changeFrequency: 'weekly'  as const, priority: 0.8, lastMod: now },
+        { path: '/insights',                     changeFrequency: 'weekly'  as const, priority: 0.8, lastMod: latestPostDate },
         { path: '/faq',                          changeFrequency: 'monthly' as const, priority: 0.7, lastMod: '2026-03-23' },
         { path: '/referral',                     changeFrequency: 'monthly' as const, priority: 0.7, lastMod: '2026-03-28' },
         // Legal — very low priority, rarely change

@@ -2,24 +2,23 @@
 
 import { useEffect } from "react";
 
+/**
+ * Service worker DEREGISTRATION component.
+ *
+ * The previous /sw.js was half-implemented — cached two assets, raced
+ * cache-vs-network, and offered no offline fallback. Removed 2026-04-30.
+ *
+ * This component now unregisters any leftover SW from older deploys so
+ * existing users don't get stuck on cached old JS. Keep mounted until
+ * ~2026-08-01, then delete this file and its import in
+ * `app/[locale]/layout.tsx`.
+ */
 export default function ServiceWorkerRegister() {
     useEffect(() => {
         if (!("serviceWorker" in navigator)) return;
-
-        // In dev, localhost:3000 is shared with every other Next.js project we
-        // run locally. A SW registered here would intercept requests for
-        // sparkd, nexus, dark-monkey, etc. and block them via its baked-in
-        // CSP. So: only register in production, and defensively unregister
-        // any leftover SW from older dev builds that predate this guard.
-        if (process.env.NODE_ENV === "production") {
-            navigator.serviceWorker.register("/sw.js").catch(() => {
-                // Registration failed silently
-            });
-        } else {
-            navigator.serviceWorker.getRegistrations?.().then((regs) => {
-                regs.forEach((r) => r.unregister());
-            });
-        }
+        navigator.serviceWorker.getRegistrations?.().then((regs) => {
+            regs.forEach((r) => r.unregister());
+        });
     }, []);
 
     return null;

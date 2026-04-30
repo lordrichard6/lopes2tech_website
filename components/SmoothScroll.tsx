@@ -20,6 +20,10 @@ export default function SmoothScroll({ children }: { children: React.ReactNode }
     const lenisRef = useRef<Lenis | null>(null);
 
     useEffect(() => {
+        // Respect user's motion preference — skip Lenis entirely for users
+        // who prefer reduced motion. They get native browser scrolling.
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
         const lenis = new Lenis({
             lerp: 0.08,
             duration: 1.4,

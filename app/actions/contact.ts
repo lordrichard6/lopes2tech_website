@@ -7,12 +7,23 @@
 import { Resend } from "resend";
 import { BOOKING_URL, CONTACT_EMAIL } from "@/lib/constants";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+// Lazy-init: must NOT touch env at module scope (CLAUDE.md landmine #7).
+let _resend: Resend | null = null;
+function getResend(): Resend {
+    if (!_resend) _resend = new Resend(process.env.RESEND_API_KEY);
+    return _resend;
+}
 
-// In-memory rate limit store (resets on cold start — fine for Vercel serverless)
+// Best-effort in-memory rate limit. On Vercel serverless this resets per
+// instance, so it's a soft brake rather than a real shield. The honeypot +
+// time-based check below are the actual anti-spam — replace with Vercel KV /
+// Upstash if real per-IP rate limiting is required.
 const rateLimitMap = new Map<string, { count: number; resetAt: number }>();
-const RATE_LIMIT_MAX = 5;        // max submissions
-const RATE_LIMIT_WINDOW = 60_000; // per 60 seconds
+const RATE_LIMIT_MAX = 5;        // max submissions per instance per window
+const RATE_LIMIT_WINDOW = 60_000; // 60 seconds
+
+// Honeypot + time-based bot heuristics.
+const MIN_FILL_TIME_MS = 1500; // humans take >1.5s to fill the form
 
 function checkRateLimit(key: string): boolean {
     const now = Date.now();
@@ -45,10 +56,24 @@ export async function sendContactEmail(formData: {
     company: string;
     phone: string;
     message: string;
+    /** Honeypot — must remain empty. Hidden from humans via CSS + aria-hidden. */
+    website?: string;
+    /** Client-set timestamp when the form mounted (Date.now()). */
+    formLoadedAt?: number;
 }) {
     if (!process.env.RESEND_API_KEY) {
         console.error("Missing RESEND_API_KEY environment variable");
         return { success: false, error: "Server configuration error" };
+    }
+
+    // Bot heuristic 1: honeypot. Silently succeed so bots don't retry.
+    if (formData.website && formData.website.trim().length > 0) {
+        return { success: true, data: null };
+    }
+
+    // Bot heuristic 2: time-to-fill. Bots submit instantly; humans take >1.5s.
+    if (formData.formLoadedAt && Date.now() - formData.formLoadedAt < MIN_FILL_TIME_MS) {
+        return { success: true, data: null };
     }
 
     if (!checkRateLimit(`contact:${formData.email}`)) {
@@ -62,7 +87,7 @@ export async function sendContactEmail(formData: {
         const phone = escapeHtml(formData.phone);
         const message = escapeHtml(formData.message).replace(/\n/g, "<br/>");
 
-        const { data, error } = await resend.emails.send({
+        const { data, error } = await getResend().emails.send({
             from: `Lopes2Tech Contact Form <${process.env.RESEND_FROM_EMAIL || "onboarding@resend.dev"}>`,
             to: process.env.CONTACT_EMAIL || CONTACT_EMAIL,
             subject: `New Contact Request from ${name}`,
@@ -112,7 +137,7 @@ export async function sendBookingNotificationEmail() {
             timeStyle: "short",
         });
 
-        const { data, error } = await resend.emails.send({
+        const { data, error } = await getResend().emails.send({
             from: `Lopes2Tech Website <${process.env.RESEND_FROM_EMAIL || "onboarding@resend.dev"}>`,
             to: process.env.CONTACT_EMAIL || CONTACT_EMAIL,
             subject: `📅 Someone wants to schedule a meeting`,
@@ -161,7 +186,7 @@ export async function sendServiceRequestEmail(formData: {
         const message = escapeHtml(formData.message).replace(/\n/g, "<br/>");
         const context = escapeHtml(formData.context);
 
-        const { data, error } = await resend.emails.send({
+        const { data, error } = await getResend().emails.send({
             from: `Lopes2Tech Service Request <${process.env.RESEND_FROM_EMAIL || "onboarding@resend.dev"}>`,
             to: process.env.CONTACT_EMAIL || CONTACT_EMAIL,
             subject: `New Service Request: ${formData.context} from ${formData.name}`,
@@ -198,10 +223,22 @@ ${formData.message}
     }
 }
 
-export async function sendNewsletterSubscriptionEmail(subscriberEmail: string) {
+export async function sendNewsletterSubscriptionEmail(
+    subscriberEmail: string,
+    spamCheck?: { website?: string; formLoadedAt?: number }
+) {
     if (!process.env.RESEND_API_KEY) {
         console.error("Missing RESEND_API_KEY environment variable");
         return { success: false, error: "Server configuration error" };
+    }
+
+    // Honeypot — silently succeed so bots don't retry.
+    if (spamCheck?.website && spamCheck.website.trim().length > 0) {
+        return { success: true, data: null };
+    }
+    // Time-to-fill — bots submit instantly.
+    if (spamCheck?.formLoadedAt && Date.now() - spamCheck.formLoadedAt < MIN_FILL_TIME_MS) {
+        return { success: true, data: null };
     }
 
     if (!checkRateLimit(`newsletter:${subscriberEmail}`)) {
@@ -216,7 +253,7 @@ export async function sendNewsletterSubscriptionEmail(subscriberEmail: string) {
             timeStyle: "short",
         });
 
-        const { data, error } = await resend.emails.send({
+        const { data, error } = await getResend().emails.send({
             from: `Lopes2Tech Website <${process.env.RESEND_FROM_EMAIL || "onboarding@resend.dev"}>`,
             to: process.env.CONTACT_EMAIL || CONTACT_EMAIL,
             subject: `📬 New Newsletter Subscriber: ${subscriberEmail}`,

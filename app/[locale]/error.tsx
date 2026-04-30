@@ -13,7 +13,7 @@ export default function Error({ error, reset }: ErrorProps) {
     const t = useTranslations("ErrorPage");
 
     useEffect(() => {
-        console.error("Page error:", error);
+        if (process.env.NODE_ENV !== "production") console.error("Page error:", error);
     }, [error]);
 
     return (

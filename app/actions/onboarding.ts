@@ -3,7 +3,12 @@
 import { Resend } from "resend";
 import { CONTACT_EMAIL } from "@/lib/constants";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+// Lazy-init: must NOT touch env at module scope (CLAUDE.md landmine #7).
+let _resend: Resend | null = null;
+function getResend(): Resend {
+  if (!_resend) _resend = new Resend(process.env.RESEND_API_KEY);
+  return _resend;
+}
 
 /** Escapes user input for safe use inside HTML email bodies */
 function escapeHtml(str: string): string {
@@ -73,12 +78,25 @@ function section(title: string, rows: string): string {
   `;
 }
 
+// Bots fill the form instantly. Humans take longer than this on a 5-step form.
+const MIN_FILL_TIME_MS = 5000;
+
 export async function submitWebsiteOnboarding(
-  data: WebsiteOnboardingData
+  data: WebsiteOnboardingData,
+  spamCheck?: { website?: string; formLoadedAt?: number }
 ): Promise<{ success: boolean; error?: string }> {
   if (!process.env.RESEND_API_KEY) {
     console.error("Missing RESEND_API_KEY environment variable");
     return { success: false, error: "Server configuration error" };
+  }
+
+  // Honeypot — silently succeed so bots don't retry.
+  if (spamCheck?.website && spamCheck.website.trim().length > 0) {
+    return { success: true };
+  }
+  // Time-to-fill heuristic — a 5-step form takes way more than 5 seconds.
+  if (spamCheck?.formLoadedAt && Date.now() - spamCheck.formLoadedAt < MIN_FILL_TIME_MS) {
+    return { success: true };
   }
 
   try {
@@ -171,7 +189,7 @@ export async function submitWebsiteOnboarding(
     `;
 
     // 1. Internal notification → Paulo
-    const { error: internalError } = await resend.emails.send({
+    const { error: internalError } = await getResend().emails.send({
       from: `Lopes2Tech Onboarding <${process.env.RESEND_FROM_EMAIL || "onboarding@resend.dev"}>`,
       to: process.env.CONTACT_EMAIL || CONTACT_EMAIL,
       subject: `🌐 New Website Onboarding — ${data.businessName} (${data.fullName})`,
@@ -237,7 +255,7 @@ export async function submitWebsiteOnboarding(
 </html>
     `;
 
-    const { error: clientError } = await resend.emails.send({
+    const { error: clientError } = await getResend().emails.send({
       from: `Paulo @ Lopes2Tech <${process.env.RESEND_FROM_EMAIL || "onboarding@resend.dev"}>`,
       to: data.email,
       subject: `We received your onboarding — ${data.businessName}`,

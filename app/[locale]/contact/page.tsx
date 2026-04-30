@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
@@ -24,11 +24,16 @@ export default function ContactPage() {
         company: "",
         phone: "",
         message: "",
+        website: "", // honeypot — must remain empty
     });
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
     const [submitError, setSubmitError] = useState<string>("");
     const [errors, setErrors] = useState<Record<string, string>>({});
+
+    // Track when the form mounted so server can reject sub-second submissions.
+    const formLoadedAtRef = useRef<number>(0);
+    useEffect(() => { formLoadedAtRef.current = Date.now(); }, []);
 
     // Page-level entrance helper (blur-up)
     const fadeUp = (delay = 0) =>
@@ -100,18 +105,20 @@ export default function ContactPage() {
                 company: formData.company,
                 phone: formData.phone,
                 message: formData.message,
+                website: formData.website,
+                formLoadedAt: formLoadedAtRef.current,
             });
             if (!result.success) {
-                console.error("Server Action Error:", result.error);
+                if (process.env.NODE_ENV !== "production") console.error("Server Action Error:", result.error);
                 setSubmitError(result.error || t("form.errors.general"));
                 setSubmitStatus("error");
                 return;
             }
             setSubmitStatus("success");
             trackFormSubmission("contact_form");
-            setFormData({ name: "", email: "", company: "", phone: "", message: "" });
+            setFormData({ name: "", email: "", company: "", phone: "", message: "", website: "" });
         } catch (error) {
-            console.error("Contact form submission error:", error);
+            if (process.env.NODE_ENV !== "production") console.error("Contact form submission error:", error);
             setSubmitError(t("form.errors.general"));
             setSubmitStatus("error");
         } finally {
@@ -127,7 +134,7 @@ export default function ContactPage() {
 
     const resetForm = () => {
         setSubmitStatus("idle");
-        setFormData({ name: "", email: "", company: "", phone: "", message: "" });
+        setFormData({ name: "", email: "", company: "", phone: "", message: "", website: "" });
     };
 
     const breadcrumbSchema = {
@@ -272,6 +279,19 @@ export default function ContactPage() {
                                                 </div>
 
                                                 <form onSubmit={handleSubmit} noValidate>
+                                                    {/* Honeypot — hidden from humans, bots fill it. Do not remove. */}
+                                                    <div aria-hidden="true" style={{ position: "absolute", left: "-10000px", width: 1, height: 1, overflow: "hidden", opacity: 0 }}>
+                                                        <label htmlFor="website">Website</label>
+                                                        <input
+                                                            type="text"
+                                                            id="website"
+                                                            name="website"
+                                                            value={formData.website}
+                                                            onChange={handleChange}
+                                                            tabIndex={-1}
+                                                            autoComplete="off"
+                                                        />
+                                                    </div>
                                                     {/* Stagger parent for all field rows */}
                                                     <motion.div
                                                         variants={formStaggerParent}

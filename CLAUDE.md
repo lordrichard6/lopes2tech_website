@@ -90,3 +90,6 @@ The owner stopped using cal.com. `components/HireMeSection.tsx` previously linke
 ## Update this file
 
 When a new landmine is discovered, add it here with the date and a one-line description of the symptom. The top-level CLAUDE.md calls this "self-anneal on failure" — a bug found once should not bite twice.
+
+
+11. **Service worker (sw.js) was removed 2026-04-30.** The half-baked SW (cached only 2 assets, racey cache-then-network) caused more 'why isn't my deploy live' pain than benefit. `components/ServiceWorkerRegister.tsx` now exists solely to *unregister* leftover SWs from older deploys. Delete the component and its import after ~2026-08-01 once existing users have visited at least once.
